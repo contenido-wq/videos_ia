@@ -1,0 +1,160 @@
+{
+  "slug": "mundial-2026-resumen",
+  "topic": "Resumen del Mundial 2026",
+  "voiceId": "htFfPSZGJwjBv1CL0aMD",
+  "style": "collage",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "El Mundial 2026 hizo historia.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "silhouette-collage",
+      "collageImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/93/Kylian_Mbappe_-_France_v_Senegal_-_16_June_2026.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Lamine_Yamal_France_v_Spain_7.24.26-142.jpg/1920px-Lamine_Yamal_France_v_Spain_7.24.26-142.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ferran_Torres_France_v_Spain_7.24.26-230.jpg/1920px-Ferran_Torres_France_v_Spain_7.24.26-230.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg/960px-Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Fue el primero con cuarenta y ocho selecciones.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "flags-cascade",
+      "collageImageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Spain.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Argentina.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Brazil.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_England.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Portugal.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Netherlands.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Italy.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Belgium.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Croatia.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Morocco.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Korea.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_States.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mexico.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Canada.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Colombia.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Uruguay.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Senegal.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nigeria.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Australia.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Saudi_Arabia.svg?width=300",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ecuador.svg?width=300"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Se jugó entre Estados Unidos, México y Canadá.",
+      "visual": "A vintage hand-illustrated style map of North America drawn like an old atlas engraving, sepia tones, with the United States, Mexico and Canada regions glowing with a bold bright orange highlight color, decorative compass rose, stylized cartography art, no photorealism",
+      "imageSource": "ai",
+      "layout": "full"
+    },
+    {
+      "id": "s04",
+      "text": "México venció dos a cero a Sudáfrica en la fase de grupos.",
+      "visual": "Photorealistic wide-angle photo of a generic soccer match action moment, players seen from behind or in motion blur with no identifiable faces, stadium floodlights, documentary sports photography, no illustration",
+      "imageSource": "ai",
+      "layout": "full"
+    },
+    {
+      "id": "s05",
+      "text": "Estados Unidos goleó cuatro a uno a Paraguay.",
+      "visual": "Photorealistic photo of an ecstatic generic soccer stadium crowd celebrating, arms raised, confetti in the air, no single face in clear focus, cinematic photography, no illustration",
+      "imageSource": "ai",
+      "layout": "full"
+    },
+    {
+      "id": "s06",
+      "text": "La FIFA, presidida por Gianni Infantino, organizó el torneo más grande de la historia.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "full",
+      "badgeLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/FIFA_logo_without_slogan.svg/3840px-FIFA_logo_without_slogan.svg.png",
+      "realImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gianni_Infantino%2C_President_of_FIFA_%2852390379929%29.jpg/960px-Gianni_Infantino%2C_President_of_FIFA_%2852390379929%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Gianni_Infantino_-_55062516828.jpg"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "La gran final se jugó en un estadio repleto de Nueva York.",
+      "visual": "Photorealistic wide photo of a massive modern stadium packed with fans at night under bright floodlights, cinematic aerial angle, no illustration",
+      "imageSource": "ai",
+      "layout": "full"
+    },
+    {
+      "id": "s08",
+      "text": "España venció uno a cero a Argentina, en tiempo extra.",
+      "visual": "Photorealistic dramatic photo of a soccer ball crossing a goal line in a stadium at night, generic goalkeeper diving with motion blur and no identifiable face, documentary sports photography, no illustration",
+      "imageSource": "ai",
+      "layout": "full",
+      "sfxPrompt": "a loud stadium crowd roar and cheer sound effect"
+    },
+    {
+      "id": "s09",
+      "text": "El gol decisivo lo anotó Ferran Torres, para el delirio total.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "full",
+      "realImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ferran_Torres_France_v_Spain_7.24.26-230.jpg/1920px-Ferran_Torres_France_v_Spain_7.24.26-230.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ferran_Torres_France_v_Spain_7.24.26-237_%28cropped%29.jpg"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Kylian Mbappé se quedó con la Bota de Oro: veintidós goles, el máximo anotador en la historia de los Mundiales.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "stat-reveal",
+      "statNumber": "22",
+      "statLabel": "goles",
+      "realImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/93/Kylian_Mbappe_-_France_v_Senegal_-_16_June_2026.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Kylian_Mbappe_-_France_v_Norway_-_26_June_2026.jpg"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Los más veteranos no lograron repetir el título. Una nueva generación levantó la copa.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "vs-battle",
+      "collageImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/1920px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Lamine_Yamal_France_v_Spain_7.24.26-187.jpg"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "España se coronó campeona del mundo por segunda vez.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "full",
+      "realImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Spain_World_Cup_Winners_Argentina_v_Spain_19_July_2026-1.jpg/3840px-Spain_World_Cup_Winners_Argentina_v_Spain_19_July_2026-1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Spain_as_winner_of_the_2026_FIFA_World_Cup_2.jpg"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Si te gustó este resumen, sígueme.",
+      "visual": "",
+      "imageSource": "real",
+      "layout": "logo-cta",
+      "ctaSubtext": "SÍGUEME",
+      "realImageUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Instagram-Logo-Round-Color.png"
+      ],
+      "sfxPrompt": "a soft ui click tap sound effect"
+    }
+  ]
+}

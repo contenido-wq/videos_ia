@@ -8,3 +8,6 @@ out
 
 # Videos crudos subidos por el usuario (pesados, personales, no son assets finales)
 content/raw
+
+# Claude Code local state (git worktrees, local-only permissions)
+.claude/

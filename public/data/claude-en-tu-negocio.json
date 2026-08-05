@@ -1,0 +1,233 @@
+{
+  "slug": "claude-en-tu-negocio",
+  "topic": "Cómo usar Claude en tu negocio",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Muchos negocios siguen igual que hace veinte años.",
+      "visual": "Place this exact same glowing light character standing in a dim empty traditional office with old paper files stacked around, same lighting style and proportions, dark background, subtle orange glow, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s01.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s01-pose0.png",
+          "durationInSeconds": 2.873469387755102
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s01-pose1.png",
+          "durationInSeconds": 2.873469387755102
+        }
+      ],
+      "durationInSeconds": 2.873469387755102
+    },
+    {
+      "id": "s02",
+      "text": "Todo a mano: cuentas, inventario, clientes.",
+      "visual": "",
+      "imageSource": "real",
+      "apifyQuery": "traditional small family owned shop storefront real photo",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s02.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s02-0.jpg",
+          "durationInSeconds": 2.7689795918367346
+        }
+      ],
+      "durationInSeconds": 2.7689795918367346
+    },
+    {
+      "id": "s03",
+      "text": "Blockbuster no se adaptó. Y desapareció.",
+      "visual": "",
+      "imageSource": "real",
+      "logo": true,
+      "apifyQuery": "Blockbuster logo official transparent png",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s03.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s03-0.png",
+          "durationInSeconds": 2.5861224489795918
+        }
+      ],
+      "durationInSeconds": 2.5861224489795918
+    },
+    {
+      "id": "s04",
+      "text": "Tú no tienes que repetir ese error.",
+      "visual": "Place this exact same glowing light character standing confidently facing forward with arms relaxed at its sides, plain dark minimalist background, orange neon rim light, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s04.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s04-pose0.png",
+          "durationInSeconds": 2.0375510204081633
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s04-pose1.png",
+          "durationInSeconds": 2.0375510204081633
+        }
+      ],
+      "durationInSeconds": 2.0375510204081633
+    },
+    {
+      "id": "s05",
+      "text": "Cada hora perdida no vuelve.",
+      "visual": "Flat-vector illustration of a golden hourglass with sand falling away into darkness, dark navy background, orange neon glow accents, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s05.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s05-0.png",
+          "durationInSeconds": 1.8024489795918368
+        }
+      ],
+      "durationInSeconds": 1.8024489795918368
+    },
+    {
+      "id": "s06",
+      "text": "Claude puede ser el empleado que nunca duerme.",
+      "visual": "Place this exact same glowing light character standing beside a glowing orange holographic chat bubble interface floating in the air, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s06.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s06-pose0.png",
+          "durationInSeconds": 2.3248979591836734
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s06-pose1.png",
+          "durationInSeconds": 2.3248979591836734
+        }
+      ],
+      "durationInSeconds": 2.3248979591836734
+    },
+    {
+      "id": "s07",
+      "text": "Responde a tus clientes en segundos.",
+      "visual": "Place this exact same glowing light character standing next to a floating holographic customer support chat window with quick reply icons, orange neon accents, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s07.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s07-pose0.png",
+          "durationInSeconds": 2.089795918367347
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s07-pose1.png",
+          "durationInSeconds": 2.089795918367347
+        }
+      ],
+      "durationInSeconds": 2.089795918367347
+    },
+    {
+      "id": "s08",
+      "text": "Ordena tus números y descubre qué mejorar.",
+      "visual": "Place this exact same glowing light character standing next to a floating holographic bar chart with an upward arrow, orange neon accents, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s08.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s08-pose0.png",
+          "durationInSeconds": 2.5861224489795918
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s08-pose1.png",
+          "durationInSeconds": 2.5861224489795918
+        }
+      ],
+      "durationInSeconds": 2.5861224489795918
+    },
+    {
+      "id": "s09",
+      "text": "Y crea el contenido de tu próxima campaña.",
+      "visual": "Place this exact same glowing light character standing next to a floating holographic clapperboard and script page icon, orange neon accents, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s09.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s09-pose0.png",
+          "durationInSeconds": 2.3248979591836734
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s09-pose1.png",
+          "durationInSeconds": 2.3248979591836734
+        }
+      ],
+      "durationInSeconds": 2.3248979591836734
+    },
+    {
+      "id": "s10",
+      "text": "Amazon lo entendió primero: usar IA no es opcional.",
+      "visual": "",
+      "imageSource": "real",
+      "logo": true,
+      "apifyQuery": "Amazon logo official transparent png",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s10.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s10-0.png",
+          "durationInSeconds": 1.619591836734694
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s10-1.png",
+          "durationInSeconds": 1.619591836734694
+        }
+      ],
+      "durationInSeconds": 3.239183673469388
+    },
+    {
+      "id": "s11",
+      "text": "No necesitas ser gigante para aplicarlo.",
+      "visual": "Place this exact same glowing light character standing next to a small glowing storefront icon, showing it works at small scale, dark background, orange neon accents, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s11.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s11-pose0.png",
+          "durationInSeconds": 2.220408163265306
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s11-pose1.png",
+          "durationInSeconds": 2.220408163265306
+        }
+      ],
+      "durationInSeconds": 2.220408163265306
+    },
+    {
+      "id": "s12",
+      "text": "Empieza hoy, gratis, en tu negocio.",
+      "visual": "Place this exact same glowing light character standing with one arm raised forward inviting the viewer, glowing orange particles rising around it, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s12.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s12-pose0.png",
+          "durationInSeconds": 2.220408163265306
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s12-pose1.png",
+          "durationInSeconds": 2.220408163265306
+        }
+      ],
+      "durationInSeconds": 2.220408163265306
+    },
+    {
+      "id": "s13",
+      "text": "Guarda este video y aplícalo ya.",
+      "visual": "Place this exact same glowing light character standing next to a glowing orange bookmark icon, dark background, vertical composition, no text, documentary editorial style",
+      "imageSource": "character",
+      "audioPath": "assets/claude-en-tu-negocio/audio/s13.mp3",
+      "images": [
+        {
+          "path": "assets/claude-en-tu-negocio/images/s13-pose0.png",
+          "durationInSeconds": 1.9853061224489796
+        },
+        {
+          "path": "assets/claude-en-tu-negocio/images/s13-pose1.png",
+          "durationInSeconds": 1.9853061224489796
+        }
+      ],
+      "durationInSeconds": 1.9853061224489796
+    }
+  ]
+}

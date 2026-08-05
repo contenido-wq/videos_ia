@@ -1,0 +1,96 @@
+{
+  "slug": "historias-no-venden-ig",
+  "topic": "Por qué tus historias no venden en Instagram",
+  "voiceId": "htFfPSZGJwjBv1CL0aMD",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Subes historias en Instagram todos los días.",
+      "visual": "Photorealistic close-up photo of real human hands holding a smartphone recording a vertical video story, warm natural window light, shallow depth of field, cinematic photography, realistic skin texture, no illustration, no cartoon",
+      "imageSource": "ai",
+      "sfxPrompt": "a single soft camera phone shutter click sound"
+    },
+    {
+      "id": "s02",
+      "text": "Y nadie compra.",
+      "visual": "Photorealistic photo of a real small business owner sitting behind an empty counter in a quiet shop, looking at their phone with a disappointed expression, no customers around, natural lighting, documentary photography, realistic, no illustration",
+      "imageSource": "ai",
+      "sfxPrompt": "a soft muted low disappointing tone, subtle failure sound"
+    },
+    {
+      "id": "s03",
+      "text": "No es tu producto. Es cómo cuentas la historia.",
+      "visual": "Photorealistic photo of a real person talking directly to the camera, confident expression, warm indoor lighting, documentary vlog style, shallow depth of field, realistic skin texture, cinematic photography, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s04",
+      "text": "La mayoría muestra el producto y olvida el problema.",
+      "visual": "",
+      "imageSource": "real",
+      "realImageUrls": [
+        "https://www.socialmediaexaminer.com/wp-content/uploads/2020/07/instagram-stories-offer-conveying-scarcity-1-700.png"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "La gente no compra productos. Compra soluciones a su dolor.",
+      "visual": "Photorealistic photo of one real person comforting another real person, a warm empathetic hand on the shoulder, genuine emotional moment, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s06",
+      "text": "Aquí está lo que sí funciona.",
+      "visual": "Photorealistic photo of a confident real person gesturing with their hand while explaining something, talking to camera, warm lighting, documentary photography, realistic, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s07",
+      "text": "Primero: muestra el problema antes que la solución.",
+      "visual": "Photorealistic photo of a real frustrated small business owner looking at a laptop screen showing a declining sales chart, real office desk, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s08",
+      "text": "Segundo: usa el sticker de link, no solo la bio.",
+      "visual": "",
+      "imageSource": "real",
+      "realImageUrls": [
+        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/11/add-instagram-stories-link-sticker-step-2.png"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Tercero: una historia, una sola idea.",
+      "visual": "Photorealistic extreme close-up photo of a real person's focused face, single clear expression, shallow depth of field, natural lighting, cinematic photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s10",
+      "text": "Cuarto: cierra siempre con una acción clara.",
+      "visual": "Photorealistic close-up photo of a real human hand swiping up on a smartphone screen, natural lighting, shallow depth of field, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai",
+      "sfxPrompt": "a quick soft swipe whoosh sound effect"
+    },
+    {
+      "id": "s11",
+      "text": "Así una historia deja de ser contenido y se vuelve una venta.",
+      "visual": "Photorealistic photo of one real person handing physical cash money directly to another real person's hand, a genuine small business transaction, natural daylight, documentary photography, realistic skin texture, no illustration, no cartoon",
+      "imageSource": "ai",
+      "sfxPrompt": "a cash register cha-ching sale sound effect"
+    },
+    {
+      "id": "s12",
+      "text": "Aplica esto en tu próxima historia.",
+      "visual": "Photorealistic photo of a real confident person holding a smartphone ready to post, slight smile, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s13",
+      "text": "Guárdalo y compártelo con tu equipo.",
+      "visual": "Photorealistic photo of a small team of three real people gathered around a table looking at a laptop screen together, genuine collaborative moment, natural office lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai",
+      "sfxPrompt": "a short positive success chime bell sound"
+    }
+  ]
+}

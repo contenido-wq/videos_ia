@@ -1,0 +1,109 @@
+{
+  "slug": "validar-idea-48h",
+  "topic": "Cómo validar una idea de negocio en 48 horas",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "La mayoría de los negocios no fracasan por mala idea.",
+      "visual": "Editorial flat-vector illustration of a lightbulb cracking in half, dark navy background, neon orange accent lighting, minimalist, high contrast, vertical composition, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s02",
+      "text": "Fracasan porque nadie valida antes de construir.",
+      "visual": "Flat-vector illustration of a person stacking a tall tower of blocks alone in the dark, one block glowing orange, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s03",
+      "text": "Meses de trabajo, para lanzar y escuchar silencio.",
+      "visual": "Flat-vector illustration of a rocket launching into an empty dark sky with no stars, one small orange spark trailing behind, minimalist, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s04",
+      "text": "Dinero perdido. Tiempo perdido. Motivación perdida.",
+      "visual": "Flat-vector illustration of a wallet, an hourglass and a deflated battery falling through dark space with orange neon glow edges, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s05",
+      "text": "¿Y si pudieras saber la respuesta en cuarenta y ocho horas?",
+      "visual": "Flat-vector illustration of a glowing orange clock face showing 48, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s06",
+      "text": "Sin programar nada. Sin gastar en inventario.",
+      "visual": "Flat-vector illustration of a laptop with a crossed-out code icon and a crossed-out warehouse box icon floating beside it, dark background, neon orange accents, minimalist, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s07",
+      "text": "Airbnb no empezó con una app, empezó con fotos publicadas en Craigslist.",
+      "visual": "",
+      "imageSource": "real",
+      "apifyQuery": "Airbnb founders early Craigslist listing photo real"
+    },
+    {
+      "id": "s08",
+      "text": "Paso uno: define el problema en una sola frase.",
+      "visual": "Flat-vector illustration of a single glowing orange sentence written on a dark notebook page, pen resting beside it, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s09",
+      "text": "Paso dos: crea una landing page simple.",
+      "visual": "Flat-vector illustration of a minimal single-page website mockup glowing on a phone screen, dark background, orange accent button, minimalist, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s10",
+      "text": "Paso tres: comparte el enlace con veinte personas reales.",
+      "visual": "Flat-vector illustration of a glowing orange link icon branching out to twenty small human silhouette icons, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s11",
+      "text": "Paso cuatro: cuenta cuántos dejan su correo o preguntan precio.",
+      "visual": "Flat-vector illustration of an envelope and a price tag glowing orange on a dark counter with a tally counter, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s12",
+      "text": "Si tres de cada diez reaccionan, tienes una señal real.",
+      "visual": "Flat-vector illustration of ten human silhouette icons in a row, three of them glowing bright orange, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s13",
+      "text": "Eso es validación. No opiniones, comportamiento.",
+      "visual": "Flat-vector illustration of a speech bubble crossed out next to a glowing orange footprint trail, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s14",
+      "text": "Así ahorras meses de trabajo innecesario.",
+      "visual": "Flat-vector illustration of a calendar with most months crossed out and one glowing orange checkmark, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s15",
+      "text": "La próxima idea que tengas, no la construyas primero.",
+      "visual": "Flat-vector illustration of a hand stopping before pressing a glowing orange build button, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s16",
+      "text": "Valídala en cuarenta y ocho horas.",
+      "visual": "Flat-vector illustration of a glowing orange 48 hour countdown timer with a checkmark, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s17",
+      "text": "Guarda este video y aplícalo hoy.",
+      "visual": "Flat-vector illustration of a glowing orange bookmark icon saving onto a phone screen, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "slug": "validar-idea-48h",
+  "topic": "C\u00f3mo validar una idea de negocio en 48 horas",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "La mayor\u00eda de los negocios no fracasan por mala idea.",
+      "visual": "Editorial flat-vector illustration of a lightbulb cracking in half, dark navy background, neon orange accent lighting, minimalist, high contrast, vertical composition, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s01.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s01-0.png",
+          "durationInSeconds": 1.7110204081632654
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s01-1.png",
+          "durationInSeconds": 1.7110204081632654
+        }
+      ],
+      "durationInSeconds": 3.422040816326531
+    },
+    {
+      "id": "s02",
+      "text": "Fracasan porque nadie valida antes de construir.",
+      "visual": "Flat-vector illustration of a person stacking a tall tower of blocks alone in the dark, one block glowing orange, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s02.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s02-0.png",
+          "durationInSeconds": 1.5020408163265306
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s02-1.png",
+          "durationInSeconds": 1.5020408163265306
+        }
+      ],
+      "durationInSeconds": 3.0040816326530613
+    },
+    {
+      "id": "s03",
+      "text": "Meses de trabajo, para lanzar y escuchar silencio.",
+      "visual": "Flat-vector illustration of a rocket launching into an empty dark sky with no stars, one small orange spark trailing behind, minimalist, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s03.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s03-0.png",
+          "durationInSeconds": 1.8938775510204082
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s03-1.png",
+          "durationInSeconds": 1.8938775510204082
+        }
+      ],
+      "durationInSeconds": 3.7877551020408164
+    },
+    {
+      "id": "s04",
+      "text": "Dinero perdido. Tiempo perdido. Motivaci\u00f3n perdida.",
+      "visual": "Flat-vector illustration of a wallet, an hourglass and a deflated battery falling through dark space with orange neon glow edges, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s04.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s04-0.png",
+          "durationInSeconds": 1.737142857142857
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s04-1.png",
+          "durationInSeconds": 1.737142857142857
+        }
+      ],
+      "durationInSeconds": 3.474285714285714
+    },
+    {
+      "id": "s05",
+      "text": "\u00bfY si pudieras saber la respuesta en cuarenta y ocho horas?",
+      "visual": "Flat-vector illustration of a glowing orange clock face showing 48, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s05.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s05-0.png",
+          "durationInSeconds": 1.7110204081632654
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s05-1.png",
+          "durationInSeconds": 1.7110204081632654
+        }
+      ],
+      "durationInSeconds": 3.422040816326531
+    },
+    {
+      "id": "s06",
+      "text": "Sin programar nada. Sin gastar en inventario.",
+      "visual": "Flat-vector illustration of a laptop with a crossed-out code icon and a crossed-out warehouse box icon floating beside it, dark background, neon orange accents, minimalist, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s06.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s06-0.png",
+          "durationInSeconds": 1.763265306122449
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s06-1.png",
+          "durationInSeconds": 1.763265306122449
+        }
+      ],
+      "durationInSeconds": 3.526530612244898
+    },
+    {
+      "id": "s07",
+      "text": "Airbnb no empez\u00f3 con una app, empez\u00f3 con fotos publicadas en Craigslist.",
+      "visual": "",
+      "imageSource": "real",
+      "apifyQuery": "Airbnb founders early Craigslist listing photo real",
+      "audioPath": "assets/validar-idea-48h/audio/s07.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s07-0.jpg",
+          "durationInSeconds": 2.5208163265306123
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s07-1.jpg",
+          "durationInSeconds": 2.5208163265306123
+        }
+      ],
+      "durationInSeconds": 5.0416326530612245
+    },
+    {
+      "id": "s08",
+      "text": "Paso uno: define el problema en una sola frase.",
+      "visual": "Flat-vector illustration of a single glowing orange sentence written on a dark notebook page, pen resting beside it, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s08.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s08-0.png",
+          "durationInSeconds": 1.8285714285714285
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s08-1.png",
+          "durationInSeconds": 1.8285714285714285
+        }
+      ],
+      "durationInSeconds": 3.657142857142857
+    },
+    {
+      "id": "s09",
+      "text": "Paso dos: crea una landing page simple.",
+      "visual": "Flat-vector illustration of a minimal single-page website mockup glowing on a phone screen, dark background, orange accent button, minimalist, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s09.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s09-0.png",
+          "durationInSeconds": 2.6383673469387756
+        }
+      ],
+      "durationInSeconds": 2.6383673469387756
+    },
+    {
+      "id": "s10",
+      "text": "Paso tres: comparte el enlace con veinte personas reales.",
+      "visual": "Flat-vector illustration of a glowing orange link icon branching out to twenty small human silhouette icons, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s10.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s10-0.png",
+          "durationInSeconds": 1.8024489795918368
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s10-1.png",
+          "durationInSeconds": 1.8024489795918368
+        }
+      ],
+      "durationInSeconds": 3.6048979591836736
+    },
+    {
+      "id": "s11",
+      "text": "Paso cuatro: cuenta cu\u00e1ntos dejan su correo o preguntan precio.",
+      "visual": "Flat-vector illustration of an envelope and a price tag glowing orange on a dark counter with a tally counter, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s11.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s11-0.png",
+          "durationInSeconds": 2.1551020408163266
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s11-1.png",
+          "durationInSeconds": 2.1551020408163266
+        }
+      ],
+      "durationInSeconds": 4.310204081632653
+    },
+    {
+      "id": "s12",
+      "text": "Si tres de cada diez reaccionan, tienes una se\u00f1al real.",
+      "visual": "Flat-vector illustration of ten human silhouette icons in a row, three of them glowing bright orange, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s12.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s12-0.png",
+          "durationInSeconds": 1.6457142857142857
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s12-1.png",
+          "durationInSeconds": 1.6457142857142857
+        }
+      ],
+      "durationInSeconds": 3.2914285714285714
+    },
+    {
+      "id": "s13",
+      "text": "Eso es validaci\u00f3n. No opiniones, comportamiento.",
+      "visual": "Flat-vector illustration of a speech bubble crossed out next to a glowing orange footprint trail, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s13.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s13-0.png",
+          "durationInSeconds": 1.9461224489795919
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s13-1.png",
+          "durationInSeconds": 1.9461224489795919
+        }
+      ],
+      "durationInSeconds": 3.8922448979591837
+    },
+    {
+      "id": "s14",
+      "text": "As\u00ed ahorras meses de trabajo innecesario.",
+      "visual": "Flat-vector illustration of a calendar with most months crossed out and one glowing orange checkmark, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s14.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s14-0.png",
+          "durationInSeconds": 2.3248979591836734
+        }
+      ],
+      "durationInSeconds": 2.3248979591836734
+    },
+    {
+      "id": "s15",
+      "text": "La pr\u00f3xima idea que tengas, no la construyas primero.",
+      "visual": "Flat-vector illustration of a hand stopping before pressing a glowing orange build button, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s15.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s15-0.png",
+          "durationInSeconds": 1.7110204081632654
+        },
+        {
+          "path": "assets/validar-idea-48h/images/s15-1.png",
+          "durationInSeconds": 1.7110204081632654
+        }
+      ],
+      "durationInSeconds": 3.422040816326531
+    },
+    {
+      "id": "s16",
+      "text": "Val\u00eddala en cuarenta y ocho horas.",
+      "visual": "Flat-vector illustration of a glowing orange 48 hour countdown timer with a checkmark, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s16.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s16-0.png",
+          "durationInSeconds": 2.115918367346939
+        }
+      ],
+      "durationInSeconds": 2.115918367346939
+    },
+    {
+      "id": "s17",
+      "text": "Guarda este video y apl\u00edcalo hoy.",
+      "visual": "Flat-vector illustration of a glowing orange bookmark icon saving onto a phone screen, dark background, minimalist editorial style, vertical, no text",
+      "imageSource": "ai",
+      "audioPath": "assets/validar-idea-48h/audio/s17.mp3",
+      "images": [
+        {
+          "path": "assets/validar-idea-48h/images/s17-0.png",
+          "durationInSeconds": 1.8024489795918368
+        }
+      ],
+      "durationInSeconds": 1.8024489795918368
+    }
+  ]
+}
