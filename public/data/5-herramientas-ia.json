@@ -3,14 +3,14 @@
   "slug": "5-herramientas-ia",
   "topic": "5 herramientas de IA para tu negocio",
   "videoPath": "assets/5-herramientas-ia/video/trimmed.mov",
-  "durationInSeconds": 62.64,
+  "durationInSeconds": 67.318,
   "listTitle": "5 HERRAMIENTAS DE IA PARA HACER CRECER TU NEGOCIO EN 2026",
   "items": [
     {
       "id": "1",
       "label": "Claude",
       "logoQuery": "Claude Anthropic AI logo",
-      "startSeconds": 9.31056825,
+      "startSeconds": 11.464141,
       "matched": false,
       "logoPath": "assets/5-herramientas-ia/images/item-1.png"
     },
@@ -18,7 +18,7 @@
       "id": "2",
       "label": "AIVI",
       "logoQuery": "AIVI logo",
-      "startSeconds": 18.6211365,
+      "startSeconds": 22.928282,
       "matched": false,
       "logoPath": "assets/5-herramientas-ia/images/item-2.png"
     },
@@ -26,15 +26,15 @@
       "id": "3",
       "label": "Lovable",
       "logoQuery": "Lovable logo",
-      "startSeconds": 27.931704749999998,
+      "startSeconds": 34.392423,
       "matched": false,
       "logoPath": "assets/5-herramientas-ia/images/item-3.png"
     },
     {
       "id": "4",
       "label": "ManyChat",
-      "logoQuery": "ManyChat logo",
-      "startSeconds": 37.242273,
+      "logoQuery": "ManyChat chatbot messaging platform icon",
+      "startSeconds": 45.856564,
       "matched": true,
       "logoPath": "assets/5-herramientas-ia/images/item-4.png"
     },
@@ -42,7 +42,7 @@
       "id": "5",
       "label": "Claude Code",
       "logoQuery": "Claude Anthropic AI logo",
-      "startSeconds": 49.9411365,
+      "startSeconds": 56.587282,
       "matched": false,
       "logoPath": "assets/5-herramientas-ia/images/item-5.png"
     }

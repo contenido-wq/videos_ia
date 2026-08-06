@@ -7,7 +7,10 @@ import type { TranscribedWord } from "./checklistSyncService";
 const execFileAsync = promisify(execFile);
 
 const SILENCE_NOISE_DB = "-20dB";
-const SILENCE_MIN_DURATION_SECONDS = 0.3;
+// 300ms detectaba "silencios" a 27-96ms del borde de palabras reales (evidencia:
+// corte justo antes de "Número dos" en un video de prueba real) — con solo 120ms
+// de padding eso alcanza a comerse el inicio/fin de la palabra. 500ms deja margen.
+const SILENCE_MIN_DURATION_SECONDS = 0.5;
 
 export interface CutRange {
   start: number;
@@ -114,6 +117,10 @@ function normalizeWord(text: string): string {
     .replace(/[^a-z0-9]/g, "");
 }
 
+// No se cortan palabras repetidas inmediatas: en contenido real, repetir el nombre
+// de la herramienta ("ManyChat. ManyChat te va a ayudar...", "Lobbo. Lobbo es
+// absurdo...") es un recurso retórico deliberado del guion, no un titubeo — cortarlo
+// borraba palabras reales del audio. Solo se cortan muletillas de esta lista fija.
 export function detectFillerRanges(words: TranscribedWord[]): CutRange[] {
   const ranges: CutRange[] = [];
   const normalized = words.map((w) => normalizeWord(w.text));
@@ -134,32 +141,33 @@ export function detectFillerRanges(words: TranscribedWord[]): CutRange[] {
     }
   });
 
-  for (let i = 0; i < words.length - 1; i++) {
-    if (normalized[i].length > 0 && normalized[i] === normalized[i + 1]) {
-      ranges.push({ start: words[i].start, end: words[i].end });
-    }
-  }
-
   return ranges;
 }
 
-export function remapWords(words: TranscribedWord[], cutRanges: CutRange[]): TranscribedWord[] {
-  const merged = mergeCutRanges(cutRanges);
+// Re-mapea cada palabra a su posición en el video ya recortado. Usa exactamente los
+// mismos `keepSegments` que arma `trimVideoToSegments` (no los `cutRanges` crudos):
+// computeKeepSegments deja `paddingSeconds` de aire a cada lado de un corte, así que
+// la duración realmente eliminada de cada corte es `(end-start) - 2*padding`, no
+// `(end-start)`. Restar la duración cruda del corte desincroniza el resultado — con
+// 24 cortes antes de una palabra y 120ms de padding, el error acumulado llega a
+// varios segundos (bug real detectado: un item aparecía ~5.6s antes de lo que se
+// decía en el video).
+export function remapWords(words: TranscribedWord[], keepSegments: KeepRange[]): TranscribedWord[] {
+  const sorted = [...keepSegments].sort((a, b) => a.start - b.start);
   const result: TranscribedWord[] = [];
+  let cumulativeKeptBefore = 0;
 
-  for (const word of words) {
-    const isCut = merged.some((r) => word.start >= r.start && word.start < r.end);
-    if (isCut) continue;
-
-    const removedBefore = merged
-      .filter((r) => r.end <= word.start)
-      .reduce((acc, r) => acc + (r.end - r.start), 0);
-
-    result.push({
-      text: word.text,
-      start: word.start - removedBefore,
-      end: word.end - removedBefore,
-    });
+  for (const segment of sorted) {
+    for (const word of words) {
+      if (word.start >= segment.start && word.start < segment.end) {
+        result.push({
+          text: word.text,
+          start: word.start - segment.start + cumulativeKeptBefore,
+          end: Math.min(word.end, segment.end) - segment.start + cumulativeKeptBefore,
+        });
+      }
+    }
+    cumulativeKeptBefore += segment.end - segment.start;
   }
 
   return result;

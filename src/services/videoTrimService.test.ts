@@ -104,7 +104,7 @@ describe("detectFillerRanges", () => {
     expect(detectFillerRanges(words)).toEqual([{ start: 0.6, end: 0.8 }]);
   });
 
-  it("no detecta nada si no hay muletillas ni repeticiones", () => {
+  it("no detecta nada si no hay muletillas", () => {
     const words = [w("Hola", 0, 0.3), w("mundo", 0.4, 0.7)];
     expect(detectFillerRanges(words)).toEqual([]);
   });
@@ -114,43 +114,47 @@ describe("detectFillerRanges", () => {
     expect(detectFillerRanges(words)).toEqual([{ start: 1, end: 1.3 }]);
   });
 
-  it("detecta una palabra inmediatamente repetida y corta solo la primera", () => {
-    const words = [w("la", 0, 0.2), w("la", 0.2, 0.4), w("puerta", 0.4, 0.7)];
-    expect(detectFillerRanges(words)).toEqual([{ start: 0, end: 0.2 }]);
-  });
-
-  it("ignora mayúsculas/acentos al detectar repeticiones", () => {
-    const words = [w("La", 0, 0.2), w("la", 0.2, 0.4)];
-    expect(detectFillerRanges(words)).toEqual([{ start: 0, end: 0.2 }]);
+  // OJO: no se detectan ni cortan palabras repetidas (ej. "ManyChat. ManyChat te va
+  // a ayudar...", "Lobbo. Lobbo es absurdo..."). Se probó contra contenido real y esa
+  // repetición es un recurso retórico deliberado del guion, no un titubeo — cortarla
+  // borraba palabras reales del audio. Solo se cortan las muletillas de la lista fija.
+  it("no corta una palabra real repetida a propósito (recurso retórico, no titubeo)", () => {
+    const words = [w("ManyChat.", 0, 0.5), w("ManyChat", 0.5, 1.0), w("te", 1.0, 1.2)];
+    expect(detectFillerRanges(words)).toEqual([]);
   });
 });
 
 describe("remapWords", () => {
-  it("sin cortes, las palabras quedan igual", () => {
+  it("con un solo segmento que cubre todo, las palabras quedan igual", () => {
     const words = [w("Hola", 1, 1.5)];
-    expect(remapWords(words, [])).toEqual(words);
+    expect(remapWords(words, [{ start: 0, end: 10 }])).toEqual(words);
   });
 
-  it("una palabra dentro de un rango cortado se descarta", () => {
-    const words = [w("antes", 0, 0.5), w("eh", 0.6, 0.9), w("despues", 1, 1.5)];
-    const result = remapWords(words, [{ start: 0.6, end: 0.9 }]);
+  it("una palabra que cae en el hueco entre dos segmentos a conservar se descarta", () => {
+    const words = [w("antes", 0, 0.4), w("eh", 0.6, 0.9), w("despues", 1.2, 1.6)];
+    const keepSegments = [{ start: 0, end: 0.5 }, { start: 1.0, end: 2.0 }];
+    const result = remapWords(words, keepSegments);
     expect(result.map((word) => word.text)).toEqual(["antes", "despues"]);
   });
 
-  it("las palabras después de un corte se desplazan hacia atrás por su duración", () => {
-    const words = [w("antes", 0, 0.5), w("despues", 2, 2.5)];
-    const result = remapWords(words, [{ start: 0.5, end: 1.5 }]);
-    expect(result).toEqual([
-      { text: "antes", start: 0, end: 0.5 },
-      { text: "despues", start: 1, end: 1.5 },
-    ]);
+  it("una palabra en el segundo segmento se re-mapea sumando la duración conservada del primero (no la del corte crudo)", () => {
+    // Este es el caso que estaba mal: remapWords debe usar exactamente los mismos
+    // segmentos que trimVideoToSegments (con el padding ya aplicado), no la duración
+    // cruda del rango cortado — si no, el timestamp final no calza con el video real.
+    const words = [w("despues", 1.2, 1.6)];
+    const keepSegments = [{ start: 0, end: 0.5 }, { start: 1.0, end: 2.0 }];
+    const result = remapWords(words, keepSegments);
+    expect(result).toEqual([{ text: "despues", start: 0.7, end: 1.1 }]);
   });
 
-  it("varios cortes antes de una palabra se acumulan", () => {
-    const words = [w("final", 10, 10.5)];
-    const cuts = [{ start: 1, end: 2 }, { start: 5, end: 6 }];
-    const result = remapWords(words, cuts);
-    expect(result).toEqual([{ text: "final", start: 8, end: 8.5 }]);
+  it("varios segmentos antes de una palabra acumulan su duración conservada", () => {
+    const words = [w("final", 9.2, 9.7)];
+    const keepSegments = [{ start: 0, end: 1 }, { start: 4, end: 6 }, { start: 9, end: 11 }];
+    const result = remapWords(words, keepSegments);
+    expect(result).toHaveLength(1);
+    expect(result[0].text).toBe("final");
+    expect(result[0].start).toBeCloseTo(3.2, 9);
+    expect(result[0].end).toBeCloseTo(3.7, 9);
   });
 });
 

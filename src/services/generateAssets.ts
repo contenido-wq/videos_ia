@@ -37,6 +37,10 @@ const MAX_CUT_SECONDS = 2.5;
 // van cross-fadeando en loop durante toda la escena (simula un micro-gesto).
 const CHARACTER_POSE_VARIANTS = 2;
 
+// Aire que se deja a cada lado de un silencio/titubeo cortado en social-checklist,
+// para no comerse el inicio/fin de la palabra siguiente/anterior.
+const TRIM_PADDING_SECONDS = 0.18;
+
 async function getAudioDurationInSeconds(filePath: string): Promise<number> {
   const metadata = await parseFile(filePath);
   return metadata.format.duration ?? 0;
@@ -328,13 +332,16 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   const fillerRanges = detectFillerRanges(rawWords);
   console.log(`  ${silenceRanges.length} silencio(s), ${fillerRanges.length} titubeo(s)/muletilla(s)`);
   const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges]);
-  const words = remapWords(rawWords, cutRanges);
+  const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, TRIM_PADDING_SECONDS);
+  // remapWords usa los mismos keepSegments que trimVideoToSegments (no cutRanges
+  // crudos) para que el timestamp de cada palabra calce exactamente con el video
+  // ya recortado, padding incluido.
+  const words = remapWords(rawWords, keepSegments);
 
   const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `trimmed${rawExt}`);
   if (fs.existsSync(trimmedVideoAbsPath)) {
     console.log("video recortado ya existe, se reutiliza");
   } else {
-    const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, 0.12);
     console.log(`recortando video (${keepSegments.length} segmento(s) a conservar de ${cutRanges.length} corte(s))...`);
     await trimVideoToSegments(rawVideoAbsPath, trimmedVideoAbsPath, keepSegments);
   }

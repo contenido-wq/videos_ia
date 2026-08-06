@@ -8,7 +8,7 @@
     { "id": "1", "label": "Claude", "logoQuery": "Claude Anthropic AI logo" },
     { "id": "2", "label": "AIVI", "logoQuery": "AIVI logo" },
     { "id": "3", "label": "Lovable", "logoQuery": "Lovable logo" },
-    { "id": "4", "label": "ManyChat", "logoQuery": "ManyChat logo" },
+    { "id": "4", "label": "ManyChat", "logoQuery": "ManyChat chatbot messaging platform icon" },
     { "id": "5", "label": "Claude Code", "logoQuery": "Claude Anthropic AI logo" }
   ]
 }
