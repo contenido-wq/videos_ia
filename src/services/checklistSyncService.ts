@@ -6,6 +6,10 @@ export interface TranscribedWord {
   end: number;
 }
 
+export interface DiarizedWord extends TranscribedWord {
+  speakerId: string;
+}
+
 export interface MatchedItem {
   item: ChecklistItem;
   startSeconds: number;

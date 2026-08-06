@@ -2,7 +2,7 @@ import { execFile } from "child_process";
 import { promisify } from "util";
 import fs from "fs";
 import path from "path";
-import type { TranscribedWord } from "./checklistSyncService";
+import type { TranscribedWord, DiarizedWord } from "./checklistSyncService";
 
 const execFileAsync = promisify(execFile);
 
@@ -200,4 +200,33 @@ export async function trimVideoToSegments(
     "-map", "[outa]",
     outputPath,
   ]);
+}
+
+export function findPrimarySpeakerId(words: DiarizedWord[]): string {
+  if (words.length === 0) {
+    throw new Error("findPrimarySpeakerId: no hay palabras para determinar el hablante principal");
+  }
+  return words[0].speakerId;
+}
+
+export function detectOtherSpeakerRanges(words: DiarizedWord[], primarySpeakerId: string): CutRange[] {
+  const ranges: CutRange[] = [];
+  let runStart: number | null = null;
+  let runEnd: number | null = null;
+
+  for (const word of words) {
+    if (word.speakerId !== primarySpeakerId) {
+      if (runStart === null) runStart = word.start;
+      runEnd = word.end;
+    } else if (runStart !== null) {
+      ranges.push({ start: runStart, end: runEnd as number });
+      runStart = null;
+      runEnd = null;
+    }
+  }
+  if (runStart !== null) {
+    ranges.push({ start: runStart, end: runEnd as number });
+  }
+
+  return ranges;
 }

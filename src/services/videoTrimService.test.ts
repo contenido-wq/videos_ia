@@ -10,8 +10,10 @@ import {
   detectFillerRanges,
   remapWords,
   trimVideoToSegments,
+  findPrimarySpeakerId,
+  detectOtherSpeakerRanges,
 } from "./videoTrimService";
-import type { TranscribedWord } from "./checklistSyncService";
+import type { TranscribedWord, DiarizedWord } from "./checklistSyncService";
 import { getVideoDurationInSeconds } from "./ffmpegService";
 
 const execFileAsync = promisify(execFile);
@@ -194,5 +196,56 @@ describe("trimVideoToSegments", () => {
     await expect(
       trimVideoToSegments(TRIM_FIXTURE_VIDEO, path.join(TRIM_FIXTURE_DIR, "empty.mp4"), []),
     ).rejects.toThrow();
+  });
+});
+
+function dw(text: string, start: number, end: number, speakerId: string): DiarizedWord {
+  return { text, start, end, speakerId };
+}
+
+describe("findPrimarySpeakerId", () => {
+  it("devuelve el speakerId de la primera palabra", () => {
+    const words = [dw("Hola", 0, 0.3, "speaker_0"), dw("Chao", 5, 5.3, "speaker_1")];
+    expect(findPrimarySpeakerId(words)).toBe("speaker_0");
+  });
+
+  it("lanza un error si no hay palabras", () => {
+    expect(() => findPrimarySpeakerId([])).toThrow();
+  });
+});
+
+describe("detectOtherSpeakerRanges", () => {
+  it("no detecta nada si todas las palabras son del hablante principal", () => {
+    const words = [dw("Hola", 0, 0.3, "speaker_0"), dw("mundo", 0.4, 0.7, "speaker_0")];
+    expect(detectOtherSpeakerRanges(words, "speaker_0")).toEqual([]);
+  });
+
+  it("agrupa un tramo consecutivo del otro hablante en un solo rango", () => {
+    const words = [
+      dw("Hola", 0, 0.3, "speaker_0"),
+      dw("Repite", 0.5, 0.8, "speaker_1"),
+      dw("esto", 0.8, 1.1, "speaker_1"),
+      dw("chao", 1.5, 1.8, "speaker_0"),
+    ];
+    expect(detectOtherSpeakerRanges(words, "speaker_0")).toEqual([{ start: 0.5, end: 1.1 }]);
+  });
+
+  it("detecta varios tramos separados del otro hablante", () => {
+    const words = [
+      dw("Hola", 0, 0.3, "speaker_0"),
+      dw("eco", 0.5, 0.8, "speaker_1"),
+      dw("sigo", 1.0, 1.3, "speaker_0"),
+      dw("otro", 1.5, 1.8, "speaker_2"),
+      dw("fin", 2.0, 2.3, "speaker_0"),
+    ];
+    expect(detectOtherSpeakerRanges(words, "speaker_0")).toEqual([
+      { start: 0.5, end: 0.8 },
+      { start: 1.5, end: 1.8 },
+    ]);
+  });
+
+  it("incluye un tramo del otro hablante que llega hasta el final", () => {
+    const words = [dw("Hola", 0, 0.3, "speaker_0"), dw("eco", 0.5, 0.8, "speaker_1")];
+    expect(detectOtherSpeakerRanges(words, "speaker_0")).toEqual([{ start: 0.5, end: 0.8 }]);
   });
 });
