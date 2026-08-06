@@ -40,7 +40,10 @@ export interface GuionScene {
 
 export type VisualStyle = "neon" | "collage";
 
-export interface Guion {
+export type GuionType = "vox" | "social-checklist" | "youtube";
+
+export interface VoxGuion {
+  type?: "vox";
   slug: string;
   topic: string;
   voiceId?: string;
@@ -49,6 +52,26 @@ export interface Guion {
   style?: VisualStyle;
   scenes: GuionScene[];
 }
+
+export interface ChecklistItem {
+  id: string;
+  /** Texto a buscar en la transcripción del video (no se muestra en pantalla). */
+  label: string;
+  /** Query para buscar el logo/ícono en Wikimedia Commons, con fallback a kie.ai. */
+  logoQuery: string;
+}
+
+export interface SocialChecklistGuion {
+  type: "social-checklist";
+  slug: string;
+  topic: string;
+  /** Ruta al video crudo del usuario hablando a cámara, ej. "content/raw/video-1-jhei.mov". */
+  rawVideoPath: string;
+  listTitle: string;
+  items: ChecklistItem[];
+}
+
+export type Guion = VoxGuion | SocialChecklistGuion;
 
 export interface SceneImage {
   path: string;
@@ -69,4 +92,21 @@ export interface RenderedGuion {
   topic: string;
   style?: VisualStyle;
   scenes: RenderedScene[];
+}
+
+export interface RenderedChecklistItem extends ChecklistItem {
+  startSeconds: number;
+  /** false = no se encontró el label en la transcripción, se usó tiempo estimado. */
+  matched: boolean;
+  logoPath: string;
+}
+
+export interface RenderedSocialChecklistGuion {
+  type: "social-checklist";
+  slug: string;
+  topic: string;
+  videoPath: string;
+  durationInSeconds: number;
+  listTitle: string;
+  items: RenderedChecklistItem[];
 }

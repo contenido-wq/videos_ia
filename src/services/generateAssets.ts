@@ -5,7 +5,7 @@ import { generateVoice, generateSoundEffect } from "./elevenlabsService";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
-import type { Guion, RenderedGuion, RenderedScene, SceneImage } from "../types/guion";
+import type { Guion, VoxGuion, GuionScene, RenderedGuion, RenderedScene, SceneImage } from "../types/guion";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
@@ -43,8 +43,8 @@ async function downloadImageFromUrlWithRetry(url: string, outputPath: string, at
 }
 
 async function generateScene(
-  guion: Guion,
-  scene: Guion["scenes"][number],
+  guion: VoxGuion,
+  scene: GuionScene,
   characterImageUrl: string | null,
 ): Promise<RenderedScene> {
   const audioRelPath = path.join("assets", guion.slug, "audio", `${scene.id}.mp3`);
@@ -235,14 +235,7 @@ async function generateScene(
   };
 }
 
-async function main() {
-  const guionPath = process.argv[2];
-  if (!guionPath) {
-    console.error("Uso: tsx src/services/generateAssets.ts content/guiones/<slug>.json");
-    process.exit(1);
-  }
-
-  const guion = JSON.parse(fs.readFileSync(guionPath, "utf-8")) as Guion;
+async function generateVoxAssets(guion: VoxGuion): Promise<void> {
   console.log(`Generando recursos para "${guion.topic}" (${guion.scenes.length} escenas)`);
 
   const needsCharacterUpload = guion.scenes.some(
@@ -277,6 +270,23 @@ async function main() {
   const totalCuts = renderedScenes.reduce((acc, s) => acc + s.images.length, 0);
   console.log(`\nListo. Duración total: ${totalDuration.toFixed(1)}s en ${totalCuts} cortes visuales.`);
   console.log(`Datos guardados en ${outputPath}`);
+}
+
+async function main() {
+  const guionPath = process.argv[2];
+  if (!guionPath) {
+    console.error("Uso: tsx src/services/generateAssets.ts content/guiones/<slug>.json");
+    process.exit(1);
+  }
+
+  const guion = JSON.parse(fs.readFileSync(guionPath, "utf-8")) as Guion;
+
+  if (guion.type === "social-checklist") {
+    console.error(`El tipo "social-checklist" todavía no está implementado (Task 5 de este plan).`);
+    process.exit(1);
+  }
+
+  await generateVoxAssets(guion);
 }
 
 main().catch((err) => {
