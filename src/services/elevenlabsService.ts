@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { env } from "./env";
-import type { TranscribedWord } from "./checklistSyncService";
+import type { TranscribedWord, DiarizedWord } from "./checklistSyncService";
 
 const BASE_URL = "https://api.elevenlabs.io/v1";
 
@@ -118,4 +118,31 @@ export async function transcribeWithTimestamps(audioFilePath: string): Promise<T
   return data.words
     .filter((w) => w.type === "word")
     .map((w) => ({ text: w.text, start: w.start, end: w.end }));
+}
+
+export async function transcribeWithSpeakers(audioFilePath: string): Promise<DiarizedWord[]> {
+  const fileBuffer = fs.readFileSync(audioFilePath);
+  const form = new FormData();
+  form.append("model_id", "scribe_v1");
+  form.append("timestamps_granularity", "word");
+  form.append("diarize", "true");
+  form.append("file", new Blob([fileBuffer]), audioFilePath.split("/").pop() ?? "audio.mp3");
+
+  const res = await fetch(`${BASE_URL}/speech-to-text`, {
+    method: "POST",
+    headers: { "xi-api-key": env.elevenLabsApiKey },
+    body: form,
+  });
+
+  if (!res.ok) {
+    throw new Error(`ElevenLabs transcribeWithSpeakers falló: ${res.status} ${await res.text()}`);
+  }
+
+  const data = (await res.json()) as {
+    words: { text: string; start: number; end: number; type: string; speaker_id?: string }[];
+  };
+
+  return data.words
+    .filter((w) => w.type === "word")
+    .map((w) => ({ text: w.text, start: w.start, end: w.end, speakerId: w.speaker_id ?? "unknown" }));
 }
