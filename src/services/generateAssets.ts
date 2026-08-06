@@ -1,11 +1,23 @@
 import fs from "fs";
 import path from "path";
 import { parseFile } from "music-metadata";
-import { generateVoice, generateSoundEffect } from "./elevenlabsService";
+import { generateVoice, generateSoundEffect, transcribeWithTimestamps } from "./elevenlabsService";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
-import type { Guion, VoxGuion, GuionScene, RenderedGuion, RenderedScene, SceneImage } from "../types/guion";
+import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
+import { matchItemTimestamps, type TranscribedWord } from "./checklistSyncService";
+import type {
+  Guion,
+  VoxGuion,
+  SocialChecklistGuion,
+  RenderedChecklistItem,
+  RenderedSocialChecklistGuion,
+  GuionScene,
+  RenderedGuion,
+  RenderedScene,
+  SceneImage,
+} from "../types/guion";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
@@ -272,6 +284,89 @@ async function generateVoxAssets(guion: VoxGuion): Promise<void> {
   console.log(`Datos guardados en ${outputPath}`);
 }
 
+async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promise<void> {
+  console.log(`Generando recursos para "${guion.topic}" (social-checklist, ${guion.items.length} items)`);
+
+  const rawExt = path.extname(guion.rawVideoPath) || ".mov";
+  const videoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `source${rawExt}`);
+
+  if (fs.existsSync(videoAbsPath)) {
+    console.log("video ya copiado, se reutiliza");
+  } else {
+    console.log(`copiando video crudo desde ${guion.rawVideoPath}...`);
+    fs.mkdirSync(path.dirname(videoAbsPath), { recursive: true });
+    fs.copyFileSync(guion.rawVideoPath, videoAbsPath);
+  }
+
+  const durationInSeconds = await getVideoDurationInSeconds(videoAbsPath);
+  console.log(`duración del video: ${durationInSeconds.toFixed(1)}s`);
+
+  const transcriptPath = path.join(PUBLIC_DIR, "assets", guion.slug, "transcript.json");
+  let words: TranscribedWord[];
+  if (fs.existsSync(transcriptPath)) {
+    console.log("transcripción ya existe, se reutiliza");
+    words = JSON.parse(fs.readFileSync(transcriptPath, "utf-8")) as TranscribedWord[];
+  } else {
+    const audioTmpPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio-for-transcription.mp3");
+    console.log("extrayendo audio para transcribir...");
+    await extractAudioTrack(videoAbsPath, audioTmpPath);
+    console.log("transcribiendo con ElevenLabs Scribe...");
+    words = await transcribeWithTimestamps(audioTmpPath);
+    fs.writeFileSync(transcriptPath, JSON.stringify(words, null, 2));
+    fs.rmSync(audioTmpPath);
+  }
+
+  const matches = matchItemTimestamps(words, guion.items, durationInSeconds);
+
+  const renderedItems: RenderedChecklistItem[] = [];
+  for (const { item, startSeconds, matched } of matches) {
+    if (!matched) {
+      console.log(
+        `[${item.id}] no se encontró "${item.label}" en la transcripción, usando tiempo estimado (${startSeconds.toFixed(1)}s)`,
+      );
+    }
+
+    const logoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `item-${item.id}.png`);
+    if (fs.existsSync(logoAbsPath)) {
+      console.log(`[${item.id}] logo ya existe, se reutiliza`);
+    } else {
+      const wikimediaUrls = await findWikimediaImageUrls(item.logoQuery, 1);
+      if (wikimediaUrls.length > 0) {
+        console.log(`[${item.id}] descargando logo de Wikimedia...`);
+        await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
+      } else {
+        console.log(`[${item.id}] sin resultados en Wikimedia, generando logo con kie.ai...`);
+        await generateImage(
+          `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
+          logoAbsPath,
+          { aspectRatio: "1:1" },
+        );
+      }
+    }
+
+    renderedItems.push({ ...item, startSeconds, matched, logoPath: toPublicRelPath(logoAbsPath) });
+  }
+
+  const rendered: RenderedSocialChecklistGuion = {
+    type: "social-checklist",
+    slug: guion.slug,
+    topic: guion.topic,
+    videoPath: toPublicRelPath(videoAbsPath),
+    durationInSeconds,
+    listTitle: guion.listTitle,
+    items: renderedItems,
+  };
+
+  const dataDir = path.join(PUBLIC_DIR, "data");
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(path.join(dataDir, `${guion.slug}.json`), JSON.stringify(rendered, null, 2));
+
+  const matchedCount = renderedItems.filter((i) => i.matched).length;
+  console.log(
+    `\nListo. Duración: ${durationInSeconds.toFixed(1)}s, ${renderedItems.length} items (${matchedCount} encontrados en transcripción).`,
+  );
+}
+
 async function main() {
   const guionPath = process.argv[2];
   if (!guionPath) {
@@ -282,8 +377,8 @@ async function main() {
   const guion = JSON.parse(fs.readFileSync(guionPath, "utf-8")) as Guion;
 
   if (guion.type === "social-checklist") {
-    console.error(`El tipo "social-checklist" todavía no está implementado (Task 5 de este plan).`);
-    process.exit(1);
+    await generateSocialChecklistAssets(guion);
+    return;
   }
 
   await generateVoxAssets(guion);
