@@ -1,0 +1,90 @@
+{
+  "slug": "mitos-claude-negocio",
+  "topic": "4 mitos que te impiden usar Claude en tu negocio",
+  "voiceId": "htFfPSZGJwjBv1CL0aMD",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Hay 4 excusas que escucho todos los días para no usar IA en tu negocio.",
+      "visual": "Photorealistic photo of a real small business owner sitting behind a counter, arms crossed, skeptical expression looking directly at camera, natural lighting, documentary photography, realistic skin texture, no illustration, no cartoon",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s02",
+      "text": "Y las cuatro te están costando dinero y tiempo.",
+      "visual": "Photorealistic photo of a real person looking stressed at a pile of paperwork and a calculator on a desk, natural window light, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s03",
+      "text": "Mito uno: 'Es muy caro para mi negocio.'",
+      "visual": "Photorealistic close-up photo of real hands holding an open empty wallet, worried expression blurred in the background, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s04",
+      "text": "Realidad: Claude tiene plan gratis, y el de pago cuesta menos que un café al día.",
+      "visual": "Photorealistic photo of a smartphone screen showing a chat app resting next to a cup of coffee on a wooden table, warm morning light, documentary photography, realistic, no illustration",
+      "imageSource": "ai",
+      "wikipediaQuery": "Claude Anthropic AI logo",
+      "logo": true,
+      "sfxPrompt": "a short soft positive chime notification sound"
+    },
+    {
+      "id": "s05",
+      "text": "Mito dos: 'Es muy complicado, no soy técnico.'",
+      "visual": "Photorealistic photo of a real person looking confused at a laptop screen full of dense complex text, scratching their head, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s06",
+      "text": "Realidad: le escribes como le hablas a un empleado. Nada de código.",
+      "visual": "Photorealistic photo of a real person casually typing on a smartphone with a relaxed genuine smile, sitting comfortably on a couch, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s07",
+      "text": "Mito tres: 'Mi negocio es muy pequeño para esto.'",
+      "visual": "Photorealistic photo of a real small family shop owner standing inside their tiny modest store surrounded by products, natural daylight, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s08",
+      "text": "Realidad: entre más pequeño seas, más tiempo te ahorra cada tarea que automatizas.",
+      "visual": "Photorealistic photo of a real small business owner closing their shop early, smiling, checking their wristwatch, warm afternoon light, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai",
+      "sfxPrompt": "a soft light relief whoosh sound"
+    },
+    {
+      "id": "s09",
+      "text": "Mito cuatro: 'Le va a quitar el toque humano a mi marca.'",
+      "visual": "Photorealistic photo of a real person staring blankly at a cold automated chatbot screen, unimpressed flat expression, sterile office lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s10",
+      "text": "Realidad: te libera de lo repetitivo para que pongas el toque humano donde sí importa.",
+      "visual": "Photorealistic photo of a real business owner genuinely laughing and connecting face to face with a customer across a counter, warm natural light, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s11",
+      "text": "Ya no te quedan excusas.",
+      "visual": "Photorealistic photo of a real confident person looking directly at the camera with a determined expression, arms relaxed at their sides, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s12",
+      "text": "Empieza hoy, gratis, en tu negocio.",
+      "visual": "Photorealistic photo of a real person opening a laptop with an eager genuine smile, morning light through a window, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai"
+    },
+    {
+      "id": "s13",
+      "text": "Guarda este video para cuando te vuelva la excusa.",
+      "visual": "Photorealistic close-up photo of real hands tapping the save bookmark icon on a smartphone screen, natural lighting, documentary photography, realistic skin texture, no illustration",
+      "imageSource": "ai",
+      "sfxPrompt": "a short positive success chime bell sound"
+    }
+  ]
+}

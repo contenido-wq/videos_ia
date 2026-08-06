@@ -178,7 +178,7 @@ const FullBleedVisual: React.FC<{ scene: RenderedScene }> = ({ scene }) => {
 export const Scene: React.FC<{ scene: RenderedScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const isLogo = scene.imageSource === "real" && scene.logo;
+  const isLogo = (scene.imageSource === "real" || !!scene.wikipediaQuery) && scene.logo;
 
   const captionEntrance = spring({
     frame: frame - 2,

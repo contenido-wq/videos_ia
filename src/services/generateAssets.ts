@@ -4,6 +4,7 @@ import { parseFile } from "music-metadata";
 import { generateVoice, generateSoundEffect } from "./elevenlabsService";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
+import { findWikimediaImageUrls } from "./wikimediaService";
 import type { Guion, RenderedGuion, RenderedScene, SceneImage } from "../types/guion";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
@@ -149,19 +150,51 @@ async function generateScene(
       images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: poseDuration });
     }
   } else {
-    for (let i = 0; i < numCuts; i++) {
-      const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-${i}.${ext}`);
-      if (fs.existsSync(imageAbsPath)) {
-        console.log(`[${scene.id}] corte ${i} (ai) ya existe, se reutiliza`);
-      } else {
-        const prompt =
-          numCuts > 1
-            ? `${scene.visual}, alternate camera angle / closer framing, cut ${i + 1} of ${numCuts} in the same documentary sequence, same subject and art style`
-            : scene.visual;
-        console.log(`[${scene.id}] generando corte ${i} (ai)...`);
-        await generateImage(prompt, imageAbsPath, { aspectRatio: "9:16" });
+    // Si la escena es sobre algo real e identificable, primero intenta una foto
+    // real y gratis en Wikimedia Commons antes de gastar créditos en kie.ai.
+    let wikimediaUrls: string[] = [];
+    if (scene.wikipediaQuery) {
+      console.log(`[${scene.id}] buscando en Wikimedia Commons: "${scene.wikipediaQuery}"...`);
+      wikimediaUrls = await findWikimediaImageUrls(scene.wikipediaQuery, numCuts);
+      if (wikimediaUrls.length === 0) {
+        console.log(`[${scene.id}] sin resultados en Wikimedia Commons, cae a kie.ai`);
       }
-      images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+    }
+
+    if (wikimediaUrls.length > 0) {
+      const urlToPath = new Map<string, string>();
+      for (let i = 0; i < numCuts; i++) {
+        const url = wikimediaUrls[i];
+        let imageAbsPath = urlToPath.get(url);
+        if (!imageAbsPath) {
+          imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-${i}.${ext}`);
+          if (fs.existsSync(imageAbsPath)) {
+            console.log(`[${scene.id}] corte ${i} (wikimedia) ya existe, se reutiliza`);
+          } else {
+            console.log(`[${scene.id}] descargando corte ${i} (wikimedia)...`);
+            await downloadImageFromUrlWithRetry(url, imageAbsPath);
+          }
+          urlToPath.set(url, imageAbsPath);
+        } else {
+          console.log(`[${scene.id}] corte ${i} (wikimedia) es la misma URL que un corte anterior, reutiliza el mismo archivo`);
+        }
+        images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+      }
+    } else {
+      for (let i = 0; i < numCuts; i++) {
+        const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-${i}.${ext}`);
+        if (fs.existsSync(imageAbsPath)) {
+          console.log(`[${scene.id}] corte ${i} (ai) ya existe, se reutiliza`);
+        } else {
+          const prompt =
+            numCuts > 1
+              ? `${scene.visual}, alternate camera angle / closer framing, cut ${i + 1} of ${numCuts} in the same documentary sequence, same subject and art style`
+              : scene.visual;
+          console.log(`[${scene.id}] generando corte ${i} (ai)...`);
+          await generateImage(prompt, imageAbsPath, { aspectRatio: "9:16" });
+        }
+        images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+      }
     }
   }
 

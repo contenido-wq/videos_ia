@@ -6,6 +6,10 @@ export interface GuionScene {
   visual: string;
   imageSource: ImageSource;
   apifyQuery?: string;
+  /** Solo aplica a imageSource "ai": si la escena es sobre algo real e identificable
+   * (persona, empresa, lugar, evento), busca primero una foto real en Wikimedia Commons
+   * antes de generar con kie.ai (gratis y más fiel). Si no encuentra nada, cae a kie.ai. */
+  wikipediaQuery?: string;
   /** URL exacta ya verificada (evita pagar otra búsqueda de Apify): se descarga directo. */
   realImageUrls?: string[];
   /** Logos reales (fondo transparente, se muestran en tarjeta) en vez de foto de escena a pantalla completa. */
