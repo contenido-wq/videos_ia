@@ -7,6 +7,14 @@ import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
 import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
 import { matchItemTimestamps, type TranscribedWord } from "./checklistSyncService";
+import {
+  detectSilenceRanges,
+  detectFillerRanges,
+  mergeCutRanges,
+  computeKeepSegments,
+  trimVideoToSegments,
+  remapWords,
+} from "./videoTrimService";
 import type {
   Guion,
   VoxGuion,
@@ -288,33 +296,51 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   console.log(`Generando recursos para "${guion.topic}" (social-checklist, ${guion.items.length} items)`);
 
   const rawExt = path.extname(guion.rawVideoPath) || ".mov";
-  const videoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `source${rawExt}`);
+  const rawVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `source${rawExt}`);
 
-  if (fs.existsSync(videoAbsPath)) {
-    console.log("video ya copiado, se reutiliza");
+  if (fs.existsSync(rawVideoAbsPath)) {
+    console.log("video crudo ya copiado, se reutiliza");
   } else {
     console.log(`copiando video crudo desde ${guion.rawVideoPath}...`);
-    fs.mkdirSync(path.dirname(videoAbsPath), { recursive: true });
-    fs.copyFileSync(guion.rawVideoPath, videoAbsPath);
+    fs.mkdirSync(path.dirname(rawVideoAbsPath), { recursive: true });
+    fs.copyFileSync(guion.rawVideoPath, rawVideoAbsPath);
   }
 
-  const durationInSeconds = await getVideoDurationInSeconds(videoAbsPath);
-  console.log(`duración del video: ${durationInSeconds.toFixed(1)}s`);
+  const rawDurationInSeconds = await getVideoDurationInSeconds(rawVideoAbsPath);
 
   const transcriptPath = path.join(PUBLIC_DIR, "assets", guion.slug, "transcript.json");
-  let words: TranscribedWord[];
+  let rawWords: TranscribedWord[];
   if (fs.existsSync(transcriptPath)) {
     console.log("transcripción ya existe, se reutiliza");
-    words = JSON.parse(fs.readFileSync(transcriptPath, "utf-8")) as TranscribedWord[];
+    rawWords = JSON.parse(fs.readFileSync(transcriptPath, "utf-8")) as TranscribedWord[];
   } else {
     const audioTmpPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio-for-transcription.mp3");
     console.log("extrayendo audio para transcribir...");
-    await extractAudioTrack(videoAbsPath, audioTmpPath);
+    await extractAudioTrack(rawVideoAbsPath, audioTmpPath);
     console.log("transcribiendo con ElevenLabs Scribe...");
-    words = await transcribeWithTimestamps(audioTmpPath);
-    fs.writeFileSync(transcriptPath, JSON.stringify(words, null, 2));
+    rawWords = await transcribeWithTimestamps(audioTmpPath);
+    fs.writeFileSync(transcriptPath, JSON.stringify(rawWords, null, 2));
     fs.rmSync(audioTmpPath);
   }
+
+  console.log("detectando silencios y titubeos...");
+  const silenceRanges = await detectSilenceRanges(rawVideoAbsPath, rawDurationInSeconds);
+  const fillerRanges = detectFillerRanges(rawWords);
+  console.log(`  ${silenceRanges.length} silencio(s), ${fillerRanges.length} titubeo(s)/muletilla(s)`);
+  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges]);
+  const words = remapWords(rawWords, cutRanges);
+
+  const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `trimmed${rawExt}`);
+  if (fs.existsSync(trimmedVideoAbsPath)) {
+    console.log("video recortado ya existe, se reutiliza");
+  } else {
+    const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, 0.12);
+    console.log(`recortando video (${keepSegments.length} segmento(s) a conservar de ${cutRanges.length} corte(s))...`);
+    await trimVideoToSegments(rawVideoAbsPath, trimmedVideoAbsPath, keepSegments);
+  }
+
+  const durationInSeconds = await getVideoDurationInSeconds(trimmedVideoAbsPath);
+  console.log(`duración final: ${durationInSeconds.toFixed(1)}s (crudo: ${rawDurationInSeconds.toFixed(1)}s)`);
 
   const matches = matchItemTimestamps(words, guion.items, durationInSeconds);
 
@@ -351,7 +377,7 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     type: "social-checklist",
     slug: guion.slug,
     topic: guion.topic,
-    videoPath: toPublicRelPath(videoAbsPath),
+    videoPath: toPublicRelPath(trimmedVideoAbsPath),
     durationInSeconds,
     listTitle: guion.listTitle,
     items: renderedItems,
