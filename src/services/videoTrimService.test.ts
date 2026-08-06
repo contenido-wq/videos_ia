@@ -1,5 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { parseSilenceDetectOutput, mergeCutRanges, computeKeepSegments } from "./videoTrimService";
+import {
+  parseSilenceDetectOutput,
+  mergeCutRanges,
+  computeKeepSegments,
+  detectFillerRanges,
+  remapWords,
+} from "./videoTrimService";
+import type { TranscribedWord } from "./checklistSyncService";
 
 describe("parseSilenceDetectOutput", () => {
   it("empareja silence_start con silence_end e ignora otras líneas de ffmpeg", () => {
@@ -76,5 +83,65 @@ describe("computeKeepSegments", () => {
   it("corte que llega hasta el final no genera un tramo vacío al final", () => {
     const result = computeKeepSegments(10, [{ start: 8, end: 10 }], 0.12);
     expect(result).toEqual([{ start: 0, end: 8.12 }]);
+  });
+});
+
+function w(text: string, start: number, end: number): TranscribedWord {
+  return { text, start, end };
+}
+
+describe("detectFillerRanges", () => {
+  it("detecta una muletilla de una sola palabra", () => {
+    const words = [w("Entonces", 0, 0.5), w("eh", 0.6, 0.8), w("vamos", 0.9, 1.2)];
+    expect(detectFillerRanges(words)).toEqual([{ start: 0.6, end: 0.8 }]);
+  });
+
+  it("no detecta nada si no hay muletillas ni repeticiones", () => {
+    const words = [w("Hola", 0, 0.3), w("mundo", 0.4, 0.7)];
+    expect(detectFillerRanges(words)).toEqual([]);
+  });
+
+  it("detecta una muletilla de dos palabras (\"o sea\")", () => {
+    const words = [w("o", 1, 1.1), w("sea", 1.1, 1.3), w("que", 1.4, 1.5)];
+    expect(detectFillerRanges(words)).toEqual([{ start: 1, end: 1.3 }]);
+  });
+
+  it("detecta una palabra inmediatamente repetida y corta solo la primera", () => {
+    const words = [w("la", 0, 0.2), w("la", 0.2, 0.4), w("puerta", 0.4, 0.7)];
+    expect(detectFillerRanges(words)).toEqual([{ start: 0, end: 0.2 }]);
+  });
+
+  it("ignora mayúsculas/acentos al detectar repeticiones", () => {
+    const words = [w("La", 0, 0.2), w("la", 0.2, 0.4)];
+    expect(detectFillerRanges(words)).toEqual([{ start: 0, end: 0.2 }]);
+  });
+});
+
+describe("remapWords", () => {
+  it("sin cortes, las palabras quedan igual", () => {
+    const words = [w("Hola", 1, 1.5)];
+    expect(remapWords(words, [])).toEqual(words);
+  });
+
+  it("una palabra dentro de un rango cortado se descarta", () => {
+    const words = [w("antes", 0, 0.5), w("eh", 0.6, 0.9), w("despues", 1, 1.5)];
+    const result = remapWords(words, [{ start: 0.6, end: 0.9 }]);
+    expect(result.map((word) => word.text)).toEqual(["antes", "despues"]);
+  });
+
+  it("las palabras después de un corte se desplazan hacia atrás por su duración", () => {
+    const words = [w("antes", 0, 0.5), w("despues", 2, 2.5)];
+    const result = remapWords(words, [{ start: 0.5, end: 1.5 }]);
+    expect(result).toEqual([
+      { text: "antes", start: 0, end: 0.5 },
+      { text: "despues", start: 1, end: 1.5 },
+    ]);
+  });
+
+  it("varios cortes antes de una palabra se acumulan", () => {
+    const words = [w("final", 10, 10.5)];
+    const cuts = [{ start: 1, end: 2 }, { start: 5, end: 6 }];
+    const result = remapWords(words, cuts);
+    expect(result).toEqual([{ text: "final", start: 8, end: 8.5 }]);
   });
 });

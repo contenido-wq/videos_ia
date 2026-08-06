@@ -1,5 +1,6 @@
 import { execFile } from "child_process";
 import { promisify } from "util";
+import type { TranscribedWord } from "./checklistSyncService";
 
 const execFileAsync = promisify(execFile);
 
@@ -98,4 +99,66 @@ export function computeKeepSegments(
   }
 
   return keep.filter((r) => r.end > r.start);
+}
+
+const FILLER_WORDS = ["eh", "ehh", "eeh", "este", "esteee", "digo", "em", "emm", "mmm"];
+const FILLER_PHRASES = ["o sea"];
+
+function normalizeWord(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
+export function detectFillerRanges(words: TranscribedWord[]): CutRange[] {
+  const ranges: CutRange[] = [];
+  const normalized = words.map((w) => normalizeWord(w.text));
+
+  for (const phrase of FILLER_PHRASES) {
+    const phraseWords = phrase.split(" ").map(normalizeWord);
+    for (let i = 0; i <= normalized.length - phraseWords.length; i++) {
+      const window = normalized.slice(i, i + phraseWords.length);
+      if (window.every((word, j) => word === phraseWords[j])) {
+        ranges.push({ start: words[i].start, end: words[i + phraseWords.length - 1].end });
+      }
+    }
+  }
+
+  normalized.forEach((word, i) => {
+    if (FILLER_WORDS.includes(word)) {
+      ranges.push({ start: words[i].start, end: words[i].end });
+    }
+  });
+
+  for (let i = 0; i < words.length - 1; i++) {
+    if (normalized[i].length > 0 && normalized[i] === normalized[i + 1]) {
+      ranges.push({ start: words[i].start, end: words[i].end });
+    }
+  }
+
+  return ranges;
+}
+
+export function remapWords(words: TranscribedWord[], cutRanges: CutRange[]): TranscribedWord[] {
+  const merged = mergeCutRanges(cutRanges);
+  const result: TranscribedWord[] = [];
+
+  for (const word of words) {
+    const isCut = merged.some((r) => word.start >= r.start && word.start < r.end);
+    if (isCut) continue;
+
+    const removedBefore = merged
+      .filter((r) => r.end <= word.start)
+      .reduce((acc, r) => acc + (r.end - r.start), 0);
+
+    result.push({
+      text: word.text,
+      start: word.start - removedBefore,
+      end: word.end - removedBefore,
+    });
+  }
+
+  return result;
 }
