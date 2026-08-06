@@ -1,5 +1,7 @@
 import { execFile } from "child_process";
 import { promisify } from "util";
+import fs from "fs";
+import path from "path";
 import type { TranscribedWord } from "./checklistSyncService";
 
 const execFileAsync = promisify(execFile);
@@ -161,4 +163,33 @@ export function remapWords(words: TranscribedWord[], cutRanges: CutRange[]): Tra
   }
 
   return result;
+}
+
+export async function trimVideoToSegments(
+  inputPath: string,
+  outputPath: string,
+  segments: KeepRange[],
+): Promise<void> {
+  if (segments.length === 0) {
+    throw new Error(`trimVideoToSegments: no hay segmentos para conservar de ${inputPath}`);
+  }
+
+  const filterParts: string[] = [];
+  segments.forEach((seg, i) => {
+    filterParts.push(`[0:v]trim=start=${seg.start}:end=${seg.end},setpts=PTS-STARTPTS[v${i}]`);
+    filterParts.push(`[0:a]atrim=start=${seg.start}:end=${seg.end},asetpts=PTS-STARTPTS[a${i}]`);
+  });
+  const concatInputs = segments.map((_, i) => `[v${i}][a${i}]`).join("");
+  filterParts.push(`${concatInputs}concat=n=${segments.length}:v=1:a=1[outv][outa]`);
+
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+
+  await execFileAsync("ffmpeg", [
+    "-y",
+    "-i", inputPath,
+    "-filter_complex", filterParts.join(";"),
+    "-map", "[outv]",
+    "-map", "[outa]",
+    outputPath,
+  ]);
 }

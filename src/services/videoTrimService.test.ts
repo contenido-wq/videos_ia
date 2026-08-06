@@ -1,12 +1,20 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeAll, afterAll } from "vitest";
+import { execFile } from "child_process";
+import { promisify } from "util";
+import fs from "fs";
+import path from "path";
 import {
   parseSilenceDetectOutput,
   mergeCutRanges,
   computeKeepSegments,
   detectFillerRanges,
   remapWords,
+  trimVideoToSegments,
 } from "./videoTrimService";
 import type { TranscribedWord } from "./checklistSyncService";
+import { getVideoDurationInSeconds } from "./ffmpegService";
+
+const execFileAsync = promisify(execFile);
 
 describe("parseSilenceDetectOutput", () => {
   it("empareja silence_start con silence_end e ignora otras líneas de ffmpeg", () => {
@@ -143,5 +151,44 @@ describe("remapWords", () => {
     const cuts = [{ start: 1, end: 2 }, { start: 5, end: 6 }];
     const result = remapWords(words, cuts);
     expect(result).toEqual([{ text: "final", start: 8, end: 8.5 }]);
+  });
+});
+
+const TRIM_FIXTURE_DIR = path.join(__dirname, "__fixtures__-trim");
+const TRIM_FIXTURE_VIDEO = path.join(TRIM_FIXTURE_DIR, "source.mp4");
+
+beforeAll(async () => {
+  fs.mkdirSync(TRIM_FIXTURE_DIR, { recursive: true });
+  await execFileAsync("ffmpeg", [
+    "-y",
+    "-f", "lavfi", "-i", "color=c=black:s=64x64:d=4",
+    "-f", "lavfi", "-i", "sine=frequency=440:duration=4",
+    "-shortest",
+    TRIM_FIXTURE_VIDEO,
+  ]);
+}, 20000);
+
+afterAll(() => {
+  fs.rmSync(TRIM_FIXTURE_DIR, { recursive: true, force: true });
+});
+
+describe("trimVideoToSegments", () => {
+  it("concatena los segmentos indicados y la duración final es la suma de sus tramos", async () => {
+    const outputPath = path.join(TRIM_FIXTURE_DIR, "trimmed.mp4");
+    await trimVideoToSegments(TRIM_FIXTURE_VIDEO, outputPath, [
+      { start: 0, end: 1 },
+      { start: 2, end: 3.5 },
+    ]);
+
+    expect(fs.existsSync(outputPath)).toBe(true);
+    const duration = await getVideoDurationInSeconds(outputPath);
+    expect(duration).toBeGreaterThan(2.3);
+    expect(duration).toBeLessThan(2.7);
+  });
+
+  it("rechaza si no hay segmentos para conservar", async () => {
+    await expect(
+      trimVideoToSegments(TRIM_FIXTURE_VIDEO, path.join(TRIM_FIXTURE_DIR, "empty.mp4"), []),
+    ).rejects.toThrow();
   });
 });
