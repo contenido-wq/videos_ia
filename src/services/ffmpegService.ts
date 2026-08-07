@@ -37,8 +37,11 @@ export async function extractAudioTrack(videoPath: string, outputMp3Path: string
 }
 
 export async function measureMaxVolumeDb(filePath: string): Promise<number> {
+  // -map 0:a: solo lee el stream de audio, sin decodificar video. Sobre un
+  // video 4K esto es la diferencia entre ~0.2s y más de 1 minuto por corrida.
   const { stderr } = await execFileAsync("ffmpeg", [
     "-i", filePath,
+    "-map", "0:a",
     "-af", "volumedetect",
     "-f", "null",
     "-",

@@ -7,10 +7,12 @@ import { measureMaxVolumeDb } from "./ffmpegService";
 
 const execFileAsync = promisify(execFile);
 
-// 300ms detectaba "silencios" a 27-96ms del borde de palabras reales (evidencia:
-// corte justo antes de "Número dos" en un video de prueba real) — con solo 120ms
-// de padding eso alcanza a comerse el inicio/fin de la palabra. 500ms deja margen.
-const SILENCE_MIN_DURATION_SECONDS = 0.5;
+// 300ms detectaba "silencios" a 27-96ms del borde de palabras reales cuando el
+// umbral de dB todavía era fijo (evidencia: corte justo antes de "Número dos").
+// Con el umbral de dB ya adaptativo (calibrado por archivo, ver
+// computeAdaptiveNoiseFloorDb) ese riesgo baja bastante, así que 350ms recorta
+// más pausas cortas sin repetir el problema original.
+const SILENCE_MIN_DURATION_SECONDS = 0.35;
 // Margen por debajo del pico de volumen del archivo para considerar "silencio".
 const NOISE_FLOOR_MARGIN_DB = 25;
 const NOISE_FLOOR_MIN_DB = -50;
@@ -70,8 +72,11 @@ export async function detectSilenceRanges(
 ): Promise<CutRange[]> {
   const maxVolumeDb = await measureMaxVolumeDb(videoPath);
   const noiseFloorDb = computeAdaptiveNoiseFloorDb(maxVolumeDb);
+  // -map 0:a: solo lee el stream de audio, sin decodificar video (ver nota en
+  // measureMaxVolumeDb) — evita decodificar 4K completo solo para leer audio.
   const { stderr } = await execFileAsync("ffmpeg", [
     "-i", videoPath,
+    "-map", "0:a",
     "-af", `silencedetect=noise=${noiseFloorDb}dB:d=${SILENCE_MIN_DURATION_SECONDS}`,
     "-f", "null", "-",
   ]);

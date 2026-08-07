@@ -42,7 +42,7 @@ const CHARACTER_POSE_VARIANTS = 2;
 
 // Aire que se deja a cada lado de un silencio/titubeo cortado en social-checklist,
 // para no comerse el inicio/fin de la palabra siguiente/anterior.
-const TRIM_PADDING_SECONDS = 0.18;
+const TRIM_PADDING_SECONDS = 0.15;
 
 async function getAudioDurationInSeconds(filePath: string): Promise<number> {
   const metadata = await parseFile(filePath);
