@@ -44,9 +44,9 @@ function computeZoomScale(frame: number, fps: number, items: RenderedChecklistIt
   return 1;
 }
 
-const RevealCard: React.FC<{ item: RenderedChecklistItem; index: number; total: number }> = ({
+const RevealCard: React.FC<{ item: RenderedChecklistItem; rowIndex: number; total: number }> = ({
   item,
-  index,
+  rowIndex,
   total,
 }) => {
   const frame = useCurrentFrame();
@@ -76,7 +76,7 @@ const RevealCard: React.FC<{ item: RenderedChecklistItem; index: number; total: 
   const bigCenterX = width * 0.7;
   const bigCenterY = height * 0.45;
   const bigSize = width * 0.36;
-  const target = getRowGeometry(index, total, width, height);
+  const target = getRowGeometry(rowIndex, total, width, height);
 
   const currentSize = bigSize + (target.size - bigSize) * transitionProgress;
   const currentCenterX = bigCenterX + (target.centerX - bigCenterX) * transitionProgress;
@@ -99,7 +99,7 @@ const RevealCard: React.FC<{ item: RenderedChecklistItem; index: number; total: 
             textShadow: "0 2px 12px rgba(0,0,0,0.6)",
           }}
         >
-          {index + 1}. {item.label}
+          {rowIndex + 1}. {item.label}
         </div>
       )}
       <div
@@ -120,14 +120,14 @@ const RevealCard: React.FC<{ item: RenderedChecklistItem; index: number; total: 
 };
 
 const ChecklistRow: React.FC<{
-  index: number;
+  rowIndex: number;
   total: number;
   landFrame: number;
   logoPath: string;
-}> = ({ index, total, landFrame, logoPath }) => {
+}> = ({ rowIndex, total, landFrame, logoPath }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
-  const geometry = getRowGeometry(index, total, width, height);
+  const geometry = getRowGeometry(rowIndex, total, width, height);
 
   const localFrame = frame - landFrame;
   const hasArrived = localFrame >= 0;
@@ -151,7 +151,7 @@ const ChecklistRow: React.FC<{
         fontSize: geometry.size * 0.5,
       }}
     >
-      {index + 1}
+      {rowIndex + 1}
       <div
         className="absolute flex items-center justify-center overflow-hidden rounded-2xl bg-white"
         style={{
@@ -214,18 +214,18 @@ export const SocialChecklist: React.FC<{ slug: string; guion: RenderedSocialChec
         </p>
       </div>
 
-      {guion.items.map((item, i) => (
+      {guion.items.map((item) => (
         <ChecklistRow
           key={item.id}
-          index={i}
+          rowIndex={Number(item.id) - 1}
           total={guion.items.length}
           landFrame={Math.round(item.startSeconds * fps) + REVEAL_HOLD_FRAMES + TRANSITION_FRAMES}
           logoPath={item.logoPath}
         />
       ))}
 
-      {guion.items.map((item, i) => (
-        <RevealCard key={`reveal-${item.id}`} item={item} index={i} total={guion.items.length} />
+      {guion.items.map((item) => (
+        <RevealCard key={`reveal-${item.id}`} item={item} rowIndex={Number(item.id) - 1} total={guion.items.length} />
       ))}
     </AbsoluteFill>
   );

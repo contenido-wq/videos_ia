@@ -3,14 +3,27 @@ import { promisify } from "util";
 import fs from "fs";
 import path from "path";
 import type { TranscribedWord, DiarizedWord } from "./checklistSyncService";
+import { measureMaxVolumeDb } from "./ffmpegService";
 
 const execFileAsync = promisify(execFile);
 
-const SILENCE_NOISE_DB = "-20dB";
 // 300ms detectaba "silencios" a 27-96ms del borde de palabras reales (evidencia:
 // corte justo antes de "Número dos" en un video de prueba real) — con solo 120ms
 // de padding eso alcanza a comerse el inicio/fin de la palabra. 500ms deja margen.
 const SILENCE_MIN_DURATION_SECONDS = 0.5;
+// Margen por debajo del pico de volumen del archivo para considerar "silencio".
+const NOISE_FLOOR_MARGIN_DB = 25;
+const NOISE_FLOOR_MIN_DB = -50;
+
+// Un umbral fijo (ej. -20dB) solo funciona para grabaciones con un nivel de
+// audio parecido al que se usó para calibrarlo. Evidencia real: un video con
+// max_volume -2.2dB andaba bien con ~-20dB; otro con max_volume -11.5dB (mic
+// más flojo) con ese mismo -20dB clasificaba el 85% del video como silencio,
+// porque casi ninguna palabra llegaba a superarlo. Calcular el umbral como un
+// margen fijo por debajo del pico de CADA archivo resuelve ambos casos.
+export function computeAdaptiveNoiseFloorDb(maxVolumeDb: number): number {
+  return Math.max(maxVolumeDb - NOISE_FLOOR_MARGIN_DB, NOISE_FLOOR_MIN_DB);
+}
 
 export interface CutRange {
   start: number;
@@ -55,9 +68,11 @@ export async function detectSilenceRanges(
   videoPath: string,
   totalDurationSeconds: number,
 ): Promise<CutRange[]> {
+  const maxVolumeDb = await measureMaxVolumeDb(videoPath);
+  const noiseFloorDb = computeAdaptiveNoiseFloorDb(maxVolumeDb);
   const { stderr } = await execFileAsync("ffmpeg", [
     "-i", videoPath,
-    "-af", `silencedetect=noise=${SILENCE_NOISE_DB}:d=${SILENCE_MIN_DURATION_SECONDS}`,
+    "-af", `silencedetect=noise=${noiseFloorDb}dB:d=${SILENCE_MIN_DURATION_SECONDS}`,
     "-f", "null", "-",
   ]);
   return parseSilenceDetectOutput(stderr, totalDurationSeconds);

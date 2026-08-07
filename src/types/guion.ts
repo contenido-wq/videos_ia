@@ -69,6 +69,10 @@ export interface SocialChecklistGuion {
   rawVideoPath: string;
   listTitle: string;
   items: ChecklistItem[];
+  /** Si hay una segunda persona hablando de fondo (eco/apuntador), se transcribe con
+   * diarización y se corta todo lo que no diga el hablante principal (quien habla
+   * primero en el video). Default: false. */
+  removeOtherSpeakers?: boolean;
 }
 
 export type Guion = VoxGuion | SocialChecklistGuion;

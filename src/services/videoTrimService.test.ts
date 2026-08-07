@@ -12,6 +12,7 @@ import {
   trimVideoToSegments,
   findPrimarySpeakerId,
   detectOtherSpeakerRanges,
+  computeAdaptiveNoiseFloorDb,
 } from "./videoTrimService";
 import type { TranscribedWord, DiarizedWord } from "./checklistSyncService";
 import { getVideoDurationInSeconds } from "./ffmpegService";
@@ -247,5 +248,25 @@ describe("detectOtherSpeakerRanges", () => {
   it("incluye un tramo del otro hablante que llega hasta el final", () => {
     const words = [dw("Hola", 0, 0.3, "speaker_0"), dw("eco", 0.5, 0.8, "speaker_1")];
     expect(detectOtherSpeakerRanges(words, "speaker_0")).toEqual([{ start: 0.5, end: 0.8 }]);
+  });
+});
+
+describe("computeAdaptiveNoiseFloorDb", () => {
+  // Evidencia real: un video con max_volume -2.2dB (grabación "normal") necesitaba
+  // ~-20dB de umbral para funcionar bien; otro con max_volume -11.5dB (grabación
+  // más floja) con ese mismo -20dB fijo clasificaba el 85% del video como
+  // "silencio" porque casi ningún fragmento de voz llegaba a superar ese piso.
+  // Restar un margen fijo al max_volume del archivo, en vez de usar un número
+  // absoluto, resuelve ambos casos.
+  it("resta 25dB al max_volume del archivo", () => {
+    expect(computeAdaptiveNoiseFloorDb(-11.5)).toBeCloseTo(-36.5, 5);
+  });
+
+  it("no baja del piso de -50dB aunque el archivo sea muy fuerte", () => {
+    expect(computeAdaptiveNoiseFloorDb(-1)).toBe(-26);
+  });
+
+  it("se limita al piso de -50dB si el cálculo daría algo más bajo", () => {
+    expect(computeAdaptiveNoiseFloorDb(-30)).toBe(-50);
   });
 });

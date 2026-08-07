@@ -1,0 +1,15 @@
+{
+  "type": "social-checklist",
+  "slug": "5-herramientas-ranking",
+  "topic": "Ranking de 5 herramientas de IA",
+  "rawVideoPath": "content/raw/5-herramientas-ranking.mov",
+  "removeOtherSpeakers": true,
+  "listTitle": "5 HERRAMIENTAS DE IA QUE USTED VA A NECESITAR PARA NO SER UN DINOSAURIO",
+  "items": [
+    { "id": "5", "label": "ChatGPT", "logoQuery": "ChatGPT logo" },
+    { "id": "4", "label": "Gamma", "logoQuery": "Gamma app logo" },
+    { "id": "3", "label": "Notebook LM", "logoQuery": "Google NotebookLM logo" },
+    { "id": "2", "label": "Claude Code", "logoQuery": "Claude Anthropic AI logo" },
+    { "id": "1", "label": "AiVi", "logoQuery": "AIVI logo" }
+  ]
+}

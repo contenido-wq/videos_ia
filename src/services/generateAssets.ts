@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
 import { parseFile } from "music-metadata";
-import { generateVoice, generateSoundEffect, transcribeWithTimestamps } from "./elevenlabsService";
+import { generateVoice, generateSoundEffect, transcribeWithTimestamps, transcribeWithSpeakers } from "./elevenlabsService";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
 import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
-import { matchItemTimestamps, type TranscribedWord } from "./checklistSyncService";
+import { matchItemTimestamps, type TranscribedWord, type DiarizedWord } from "./checklistSyncService";
 import {
   detectSilenceRanges,
   detectFillerRanges,
@@ -14,6 +14,9 @@ import {
   computeKeepSegments,
   trimVideoToSegments,
   remapWords,
+  findPrimarySpeakerId,
+  detectOtherSpeakerRanges,
+  type CutRange,
 } from "./videoTrimService";
 import type {
   Guion,
@@ -321,8 +324,13 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     const audioTmpPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio-for-transcription.mp3");
     console.log("extrayendo audio para transcribir...");
     await extractAudioTrack(rawVideoAbsPath, audioTmpPath);
-    console.log("transcribiendo con ElevenLabs Scribe...");
-    rawWords = await transcribeWithTimestamps(audioTmpPath);
+    if (guion.removeOtherSpeakers) {
+      console.log("transcribiendo con ElevenLabs Scribe (con diarización)...");
+      rawWords = await transcribeWithSpeakers(audioTmpPath);
+    } else {
+      console.log("transcribiendo con ElevenLabs Scribe...");
+      rawWords = await transcribeWithTimestamps(audioTmpPath);
+    }
     fs.writeFileSync(transcriptPath, JSON.stringify(rawWords, null, 2));
     fs.rmSync(audioTmpPath);
   }
@@ -330,8 +338,15 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   console.log("detectando silencios y titubeos...");
   const silenceRanges = await detectSilenceRanges(rawVideoAbsPath, rawDurationInSeconds);
   const fillerRanges = detectFillerRanges(rawWords);
+  let otherSpeakerRanges: CutRange[] = [];
+  if (guion.removeOtherSpeakers) {
+    const diarizedWords = rawWords as DiarizedWord[];
+    const primarySpeakerId = findPrimarySpeakerId(diarizedWords);
+    otherSpeakerRanges = detectOtherSpeakerRanges(diarizedWords, primarySpeakerId);
+    console.log(`  hablante principal: ${primarySpeakerId}, ${otherSpeakerRanges.length} tramo(s) de otra voz`);
+  }
   console.log(`  ${silenceRanges.length} silencio(s), ${fillerRanges.length} titubeo(s)/muletilla(s)`);
-  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges]);
+  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges, ...otherSpeakerRanges]);
   const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, TRIM_PADDING_SECONDS);
   // remapWords usa los mismos keepSegments que trimVideoToSegments (no cutRanges
   // crudos) para que el timestamp de cada palabra calce exactamente con el video

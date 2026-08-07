@@ -35,3 +35,17 @@ export async function extractAudioTrack(videoPath: string, outputMp3Path: string
   ]);
   return outputMp3Path;
 }
+
+export async function measureMaxVolumeDb(filePath: string): Promise<number> {
+  const { stderr } = await execFileAsync("ffmpeg", [
+    "-i", filePath,
+    "-af", "volumedetect",
+    "-f", "null",
+    "-",
+  ]);
+  const match = stderr.match(/max_volume:\s*(-?[\d.]+)\s*dB/);
+  if (!match) {
+    throw new Error(`measureMaxVolumeDb: no se pudo leer max_volume de ${filePath}`);
+  }
+  return parseFloat(match[1]);
+}
