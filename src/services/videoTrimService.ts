@@ -217,11 +217,31 @@ export async function trimVideoToSegments(
   ]);
 }
 
+// "Quien habla primero" no es confiable: en contenido real, otra persona
+// puede decir algo ("Listo.") de referencia antes de que el hablante
+// principal empiece. Quien más habla en total sí lo es de forma consistente
+// — la entrega completa (con asides, interacciones, etc.) siempre pesa más
+// que una lectura de referencia o interjecciones puntuales.
 export function findPrimarySpeakerId(words: DiarizedWord[]): string {
   if (words.length === 0) {
     throw new Error("findPrimarySpeakerId: no hay palabras para determinar el hablante principal");
   }
-  return words[0].speakerId;
+
+  const durationBySpeaker = new Map<string, number>();
+  for (const word of words) {
+    durationBySpeaker.set(word.speakerId, (durationBySpeaker.get(word.speakerId) ?? 0) + (word.end - word.start));
+  }
+
+  let primarySpeakerId = words[0].speakerId;
+  let maxDuration = -Infinity;
+  for (const [speakerId, duration] of durationBySpeaker) {
+    if (duration > maxDuration) {
+      maxDuration = duration;
+      primarySpeakerId = speakerId;
+    }
+  }
+
+  return primarySpeakerId;
 }
 
 export function detectOtherSpeakerRanges(words: DiarizedWord[], primarySpeakerId: string): CutRange[] {

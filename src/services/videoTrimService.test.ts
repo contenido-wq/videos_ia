@@ -205,9 +205,21 @@ function dw(text: string, start: number, end: number, speakerId: string): Diariz
 }
 
 describe("findPrimarySpeakerId", () => {
-  it("devuelve el speakerId de la primera palabra", () => {
-    const words = [dw("Hola", 0, 0.3, "speaker_0"), dw("Chao", 5, 5.3, "speaker_1")];
-    expect(findPrimarySpeakerId(words)).toBe("speaker_0");
+  // "Quien habla primero" no sirve como heurística: en un video real, la otra
+  // persona decía "Listo." como referencia/cue antes de que el usuario empezara
+  // a hablar, y terminaba quedándose con la voz equivocada. "Quien habla más en
+  // total" sí lo identificó bien en ese mismo video (131.5s del usuario vs
+  // 120.1s de la otra persona), porque el hablante principal hace la entrega
+  // completa (incluye asides, interacciones, etc.), no solo lee la línea limpia.
+  it("devuelve el speakerId con más duración total hablada, sin importar quién habla primero", () => {
+    const words = [
+      dw("Listo", 0, 0.3, "speaker_0"),
+      dw("Hola", 1, 1.3, "speaker_1"),
+      dw("mundo", 1.3, 1.6, "speaker_1"),
+      dw("como", 1.6, 1.9, "speaker_1"),
+      dw("estan", 1.9, 2.2, "speaker_1"),
+    ];
+    expect(findPrimarySpeakerId(words)).toBe("speaker_1");
   });
 
   it("lanza un error si no hay palabras", () => {
