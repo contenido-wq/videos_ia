@@ -13,6 +13,7 @@ export const RemotionRoot: React.FC = () => {
       <DocumentalComposition id="Mundial2026Resumen" slug="mundial-2026-resumen" />
       <DocumentalComposition id="MitosClaudeNegocio" slug="mitos-claude-negocio" />
       <SocialChecklistComposition id="CincoHerramientasIA" slug="5-herramientas-ia" />
+      <SocialChecklistComposition id="CincoHerramientasRanking" slug="5-herramientas-ranking" />
     </>
   );
 };
