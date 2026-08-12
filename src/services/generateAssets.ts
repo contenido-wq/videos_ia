@@ -7,6 +7,8 @@ import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
 import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
 import { matchItemTimestamps, type TranscribedWord, type DiarizedWord } from "./checklistSyncService";
+import { detectRetakeCandidates, type RetakeCandidate } from "./retakeDetectionService";
+import { reviewRetakeCandidates } from "./retakeReviewCli";
 import {
   detectSilenceRanges,
   detectFillerRanges,
@@ -335,6 +337,8 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     fs.rmSync(audioTmpPath);
   }
 
+  const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `trimmed${rawExt}`);
+
   console.log("detectando silencios y titubeos...");
   const silenceRanges = await detectSilenceRanges(rawVideoAbsPath, rawDurationInSeconds);
   const fillerRanges = detectFillerRanges(rawWords);
@@ -346,14 +350,35 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     console.log(`  hablante principal: ${primarySpeakerId}, ${otherSpeakerRanges.length} tramo(s) de otra voz`);
   }
   console.log(`  ${silenceRanges.length} silencio(s), ${fillerRanges.length} titubeo(s)/muletilla(s)`);
-  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges, ...otherSpeakerRanges]);
+
+  // Solo se detecta/pregunta si el video recortado todavía no existe — mismo
+  // gate de caché que ya protege el resto del pipeline. Una vez recortado, no
+  // se vuelve a llamar al LLM ni a preguntar nada.
+  let approvedRetakeRanges: CutRange[] = [];
+  if (!fs.existsSync(trimmedVideoAbsPath)) {
+    const retakeCandidatesPath = path.join(PUBLIC_DIR, "assets", guion.slug, "retake-candidates.json");
+    let retakeCandidates: RetakeCandidate[];
+    if (fs.existsSync(retakeCandidatesPath)) {
+      console.log("candidatos a retake ya existen, se reutilizan");
+      retakeCandidates = JSON.parse(fs.readFileSync(retakeCandidatesPath, "utf-8")) as RetakeCandidate[];
+    } else {
+      console.log("detectando retakes y asides fuera de guion con Claude...");
+      retakeCandidates = await detectRetakeCandidates(rawWords);
+      fs.mkdirSync(path.dirname(retakeCandidatesPath), { recursive: true });
+      fs.writeFileSync(retakeCandidatesPath, JSON.stringify(retakeCandidates, null, 2));
+    }
+    console.log(`  ${retakeCandidates.length} candidato(s) a retake/aside`);
+    approvedRetakeRanges = await reviewRetakeCandidates(retakeCandidates);
+    console.log(`  ${approvedRetakeRanges.length} aprobado(s) para cortar`);
+  }
+
+  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges, ...otherSpeakerRanges, ...approvedRetakeRanges]);
   const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, TRIM_PADDING_SECONDS);
   // remapWords usa los mismos keepSegments que trimVideoToSegments (no cutRanges
   // crudos) para que el timestamp de cada palabra calce exactamente con el video
   // ya recortado, padding incluido.
   const words = remapWords(rawWords, keepSegments);
 
-  const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `trimmed${rawExt}`);
   if (fs.existsSync(trimmedVideoAbsPath)) {
     console.log("video recortado ya existe, se reutiliza");
   } else {
