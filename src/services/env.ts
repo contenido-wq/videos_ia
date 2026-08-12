@@ -23,4 +23,7 @@ export const env = {
   get apifyGoogleImagesTask() {
     return required("APIFY_GOOGLE_IMAGES_TASK");
   },
+  get anthropicApiKey() {
+    return required("ANTHROPIC_API_KEY");
+  },
 };

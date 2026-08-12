@@ -1,6 +1,7 @@
 import { getAccountCredits } from "./kieAiService";
 import { getAccountInfo } from "./apifyService";
 import { listVoices } from "./elevenlabsService";
+import { verifyAnthropicConnection } from "./retakeDetectionService";
 
 async function main() {
   console.log("== ElevenLabs ==");
@@ -14,6 +15,10 @@ async function main() {
   console.log("== Apify ==");
   const account = await getAccountInfo();
   console.log(`OK - usuario ${account.username}, plan ${account.plan}`);
+
+  console.log("== Anthropic ==");
+  await verifyAnthropicConnection();
+  console.log("OK - API key válida");
 }
 
 main().catch((err) => {
