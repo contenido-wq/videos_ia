@@ -9,5 +9,8 @@ out
 # Videos crudos subidos por el usuario (pesados, personales, no son assets finales)
 content/raw
 
-# Claude Code local state (git worktrees, local-only permissions)
-.claude/
+# Claude Code local state (git worktrees, local-only permissions) —
+# excepto .claude/skills/, que sí se versiona: son las Skills por estilo
+# de video que se comparten con el repo (ver .claude/skills/*/SKILL.md).
+.claude/*
+!.claude/skills/
