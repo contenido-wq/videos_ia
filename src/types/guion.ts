@@ -40,7 +40,7 @@ export interface GuionScene {
 
 export type VisualStyle = "neon" | "collage";
 
-export type GuionType = "vox" | "social-checklist" | "youtube";
+export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida";
 
 export interface VoxGuion {
   type?: "vox";
@@ -75,7 +75,7 @@ export interface SocialChecklistGuion {
   removeOtherSpeakers?: boolean;
 }
 
-export type Guion = VoxGuion | SocialChecklistGuion;
+export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion;
 
 export interface SceneImage {
   path: string;
@@ -113,4 +113,46 @@ export interface RenderedSocialChecklistGuion {
   durationInSeconds: number;
   listTitle: string;
   items: RenderedChecklistItem[];
+}
+
+export interface PantallaDivididaScene {
+  id: string;
+  /** Debe existir literalmente (substring normalizado) en la transcripción real del video. */
+  text: string;
+  act: "split" | "closing";
+  /** Solo aplica a act "split". Imágenes ya generadas a mano (ChatGPT), en orden.
+   * Se ciclan cada MAX_CUT_SECONDS dentro de la duración real de la escena. */
+  localImagePaths?: string[];
+}
+
+export interface PantallaDivididaGuion {
+  type: "pantalla-dividida";
+  slug: string;
+  topic: string;
+  /** Ruta al video crudo del presentador, ej. "content/raw/pantalla-dividida.mp4". */
+  rawVideoPath: string;
+  /** Igual semántica que en SocialChecklistGuion: corta cualquier tramo de otro hablante. */
+  removeOtherSpeakers?: boolean;
+  scenes: PantallaDivididaScene[];
+}
+
+export interface RenderedPantallaDivididaScene {
+  id: string;
+  text: string;
+  act: "split" | "closing";
+  startSeconds: number;
+  durationInSeconds: number;
+  /** false = no se encontró el texto en la transcripción, se usó tiempo estimado. */
+  matched: boolean;
+  /** Vacío en escenas "closing". */
+  images: SceneImage[];
+}
+
+export interface RenderedPantallaDivididaGuion {
+  type: "pantalla-dividida";
+  slug: string;
+  topic: string;
+  videoPath: string;
+  durationInSeconds: number;
+  scenes: RenderedPantallaDivididaScene[];
 }
