@@ -640,21 +640,18 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
   const sfxDir = path.join(PUBLIC_DIR, "assets", guion.slug, "sfx");
   fs.mkdirSync(sfxDir, { recursive: true });
 
-  const tensionBedPrompt =
-    guion.soundDesign?.tensionBedPrompt ??
-    "low ominous cinematic tension drone, suspenseful ambient pad, subtle rising dread, seamless loop, no melody, no percussion";
   const whooshPrompt =
     guion.soundDesign?.whooshPrompt ?? "quick cinematic whoosh transition sound effect, sharp and short, trailer style";
   const stingPrompt =
     guion.soundDesign?.stingPrompt ??
     "dramatic cinematic impact hit, deep bass boom with a sharp metallic edge, trailer sting";
 
-  const tensionBedAbsPath = path.join(sfxDir, "tension-bed.mp3");
-  if (fs.existsSync(tensionBedAbsPath)) {
-    console.log("cama de tensión ya existe, se reutiliza");
+  const musicAbsPath = path.join(sfxDir, "background-music.mp3");
+  if (fs.existsSync(musicAbsPath)) {
+    console.log("música de fondo ya copiada, se reutiliza");
   } else {
-    console.log("generando cama de tensión...");
-    await generateSoundEffect(tensionBedPrompt, tensionBedAbsPath, 7);
+    console.log(`copiando música de fondo desde ${guion.backgroundMusicPath}...`);
+    fs.copyFileSync(guion.backgroundMusicPath, musicAbsPath);
   }
 
   const whooshAbsPath = path.join(sfxDir, "whoosh.mp3");
@@ -684,7 +681,7 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
     durationInSeconds,
     scenes: renderedScenes,
     sfx: {
-      tensionBedPath: toPublicRelPath(tensionBedAbsPath),
+      backgroundMusicPath: toPublicRelPath(musicAbsPath),
       whooshPath: toPublicRelPath(whooshAbsPath),
       whooshDurationInSeconds,
       stingPath: toPublicRelPath(stingAbsPath),
