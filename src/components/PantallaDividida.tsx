@@ -11,18 +11,13 @@ import {
   interpolate,
 } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Poppins";
-import { computeCutFrames, computeActTwoStartFrame } from "../services/pantallaDivididaTiming";
+import { computeActTwoStartFrame } from "../services/pantallaDivididaTiming";
 import type { RenderedPantallaDivididaGuion, RenderedPantallaDivididaScene } from "../types/guion";
 
 const { fontFamily } = loadFont("normal", { weights: ["700", "800"] });
 
 const ENTRANCE_FRAMES = 6;
 const CUT_TRANSITION_FRAMES = 6;
-// Zoom "punch" sincronizado con el whoosh de cada corte: arranca ampliado y
-// cae rápido a tamaño normal, con un rebote leve (damping bajo, stiffness alto).
-const ZOOM_PUNCH_START_SCALE = 1.18;
-const ZOOM_PUNCH_FRAMES = 18;
-const ZOOM_PUNCH_SPRING_CONFIG = { damping: 9, stiffness: 180, mass: 0.7 };
 // Zoom sutil y continuo sobre el presentador durante todo el cierre.
 const CLOSING_ZOOM_MAX_SCALE = 1.06;
 
@@ -45,8 +40,7 @@ function findActiveScene(
 
 // Mismo algoritmo de ciclado por duración con crossfade que FullBleedVisual
 // en components/Scene.tsx, adaptado a frame local de la escena activa (no
-// hay TransitionSeries acá: el video de abajo es continuo). Cada corte suma
-// un zoom "punch" sincronizado con su whoosh (ver ZOOM_PUNCH_* arriba).
+// hay TransitionSeries acá: el video de abajo es continuo).
 const SceneIllustration: React.FC<{ scene: RenderedPantallaDivididaScene; localFrame: number; fps: number }> = ({
   scene,
   localFrame,
@@ -83,20 +77,12 @@ const SceneIllustration: React.FC<{ scene: RenderedPantallaDivididaScene; localF
           );
         }
 
-        const punchSpring = spring({
-          frame: localFrame - cut.startFrame,
-          fps,
-          config: ZOOM_PUNCH_SPRING_CONFIG,
-          durationInFrames: ZOOM_PUNCH_FRAMES,
-        });
-        const scale = ZOOM_PUNCH_START_SCALE - (ZOOM_PUNCH_START_SCALE - 1) * punchSpring;
-
         return (
           <Img
             key={cut.path}
             src={staticFile(cut.path)}
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ opacity, transform: `scale(${scale})` }}
+            style={{ opacity }}
           />
         );
       })}
@@ -156,9 +142,7 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
     active && !isSplit ? Math.min(localFrame / (active.scene.durationInSeconds * fps), 1) : 0;
   const videoScale = 1 + (CLOSING_ZOOM_MAX_SCALE - 1) * closingProgress;
 
-  const cutFrames = computeCutFrames(guion.scenes, fps);
   const actTwoStartFrame = computeActTwoStartFrame(guion.scenes, fps);
-  const whooshDurationInFrames = Math.round(guion.sfx.whooshDurationInSeconds * fps);
   const stingDurationInFrames = Math.round(guion.sfx.stingDurationInSeconds * fps);
 
   return (
@@ -193,12 +177,6 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
           volume={(f) => interpolate(f, [0, actTwoStartFrame], [0.08, 0.22], { extrapolateRight: "clamp" })}
         />
       </Sequence>
-
-      {cutFrames.map((cutFrame) => (
-        <Sequence key={cutFrame} from={cutFrame} durationInFrames={whooshDurationInFrames} layout="none">
-          <Audio src={staticFile(guion.sfx.whooshPath)} volume={0.4} />
-        </Sequence>
-      ))}
 
       <Sequence from={actTwoStartFrame} durationInFrames={stingDurationInFrames} layout="none">
         <Audio src={staticFile(guion.sfx.stingPath)} volume={0.5} />

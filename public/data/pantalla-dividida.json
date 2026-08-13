@@ -3,13 +3,13 @@
   "slug": "pantalla-dividida",
   "topic": "El mito de la perfección en redes sociales",
   "videoPath": "assets/pantalla-dividida/video/trimmed.mp4",
-  "durationInSeconds": 34.251,
+  "durationInSeconds": 29.856,
   "scenes": [
     {
       "id": "s1",
       "text": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado.",
       "act": "split",
-      "startSeconds": 1.7193339999999995,
+      "startSeconds": 0.060000000000002274,
       "durationInSeconds": 4.643456999999987,
       "matched": true,
       "images": [
@@ -27,7 +27,7 @@
       "id": "s2",
       "text": "Lo que quieren las redes sociales es acción masiva.",
       "act": "split",
-      "startSeconds": 6.362790999999987,
+      "startSeconds": 4.70345699999999,
       "durationInSeconds": 3.2785629999999983,
       "matched": true,
       "images": [
@@ -45,7 +45,7 @@
       "id": "s3",
       "text": "No les importa la perfección, les importa la constancia.",
       "act": "split",
-      "startSeconds": 9.641353999999986,
+      "startSeconds": 7.982019999999988,
       "durationInSeconds": 3.8487089999999995,
       "matched": true,
       "images": [
@@ -63,7 +63,7 @@
       "id": "s4",
       "text": "Es como si fueras al gym una semana y esperaras tener el cuerpo de tus sueños.",
       "act": "split",
-      "startSeconds": 13.490062999999985,
+      "startSeconds": 11.830728999999987,
       "durationInSeconds": 4.940000000000005,
       "matched": true,
       "images": [
@@ -81,7 +81,7 @@
       "id": "s5",
       "text": "Así no funciona esto.",
       "act": "split",
-      "startSeconds": 18.43006299999999,
+      "startSeconds": 16.770728999999992,
       "durationInSeconds": 1.974250000000012,
       "matched": true,
       "images": [
@@ -95,7 +95,7 @@
       "id": "s6",
       "text": "No es difícil, pero ¿quién te dijo que sería fácil?",
       "act": "split",
-      "startSeconds": 20.404313000000002,
+      "startSeconds": 18.744979000000004,
       "durationInSeconds": 3.592562000000015,
       "matched": true,
       "images": [
@@ -113,26 +113,26 @@
       "id": "s7",
       "text": "La clave está en la acción constante.",
       "act": "split",
-      "startSeconds": 23.996875000000017,
-      "durationInSeconds": 4.736291000000037,
+      "startSeconds": 22.33754100000002,
+      "durationInSeconds": 3.059999999999988,
       "matched": true,
       "images": [
         {
           "path": "assets/pantalla-dividida/images/s7-local0.png",
-          "durationInSeconds": 2.3681455000000184
+          "durationInSeconds": 1.529999999999994
         },
         {
           "path": "assets/pantalla-dividida/images/s7-local1.png",
-          "durationInSeconds": 2.3681455000000184
+          "durationInSeconds": 1.529999999999994
         }
       ]
     },
     {
       "id": "s8",
-      "text": "Comenta la palabra «creador» si estás dispuesto a cambiar todo lo que has venido haciendo.",
+      "text": "Comenta la palabra \"CREADOR\" si estás dispuesto a cambiar todo lo que has venido haciendo.",
       "act": "closing",
-      "startSeconds": 28.733166000000054,
-      "durationInSeconds": 5.517833999999944,
+      "startSeconds": 25.397541000000007,
+      "durationInSeconds": 4.458458999999994,
       "matched": true,
       "images": []
     }
