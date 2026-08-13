@@ -8,6 +8,7 @@ import {
   mergeCutRanges,
   computeKeepSegments,
   detectFillerRanges,
+  detectRepeatedPhrases,
   remapWords,
   trimVideoToSegments,
   findPrimarySpeakerId,
@@ -124,6 +125,43 @@ describe("detectFillerRanges", () => {
   it("no corta una palabra real repetida a propósito (recurso retórico, no titubeo)", () => {
     const words = [w("ManyChat.", 0, 0.5), w("ManyChat", 0.5, 1.0), w("te", 1.0, 1.2)];
     expect(detectFillerRanges(words)).toEqual([]);
+  });
+});
+
+describe("detectRepeatedPhrases", () => {
+  // Caso real detectado en producción: un retake se cortó a medias — se quitó
+  // el tartamudeo "in--" pero no "Estas son las cinco" que lo precedía, y esas
+  // palabras vuelven a aparecer cuando arranca el segundo intento limpio.
+  it("detecta una frase de 4 palabras repetida de forma consecutiva", () => {
+    const words = [
+      w("Estas", 21.76, 21.94),
+      w("son", 21.95, 22.06),
+      w("las", 22.08, 22.22),
+      w("cinco", 22.26, 22.52),
+      w("estas", 22.98, 23.16),
+      w("son", 23.18, 23.30),
+      w("las", 23.32, 23.48),
+      w("cinco", 23.56, 23.76),
+      w("herramientas", 23.78, 24.22),
+    ];
+    expect(detectRepeatedPhrases(words)).toEqual([
+      { start: 21.76, end: 23.76, phrase: "Estas son las cinco estas son las cinco" },
+    ]);
+  });
+
+  it("no detecta nada si no hay repetición", () => {
+    const words = [w("Hola", 0, 0.3), w("mundo", 0.4, 0.7), w("como", 0.8, 1.0), w("estas", 1.1, 1.3)];
+    expect(detectRepeatedPhrases(words)).toEqual([]);
+  });
+
+  it("no detecta una sola palabra repetida a propósito (recurso retórico protegido)", () => {
+    const words = [w("ManyChat.", 0, 0.5), w("ManyChat", 0.5, 1.0), w("te", 1.0, 1.2), w("ayuda", 1.2, 1.4)];
+    expect(detectRepeatedPhrases(words)).toEqual([]);
+  });
+
+  it("con menos palabras que 2*minWords no revienta, devuelve []", () => {
+    const words = [w("Hola", 0, 0.3), w("mundo", 0.4, 0.7)];
+    expect(detectRepeatedPhrases(words)).toEqual([]);
   });
 });
 

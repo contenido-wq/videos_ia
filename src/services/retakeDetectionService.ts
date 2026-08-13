@@ -67,6 +67,8 @@ IMPORTANTE — NO marques como candidato:
 - Repetición retórica deliberada de una palabra o frase (ej. "ManyChat. ManyChat te va a ayudar..." es un recurso de guion, no un error).
 - Cualquier tramo sin una señal clara de autocorrección, muletilla o cambio de tema/tono. Ante la duda, no lo marques.
 
+CUIDADO CON LOS LÍMITES DEL CORTE en un "retake": si la persona corta una palabra a medias (ej. "in--") y esa palabra cortada es la continuación de unas palabras iniciales de la frase (ej. "Estas son las cinco in--"), y el segundo intento limpio que sigue vuelve a decir esas mismas palabras iniciales completas, el candidato tiene que incluir TODA la frase repetida desde su inicio (startIndex debe apuntar a la primera de esas palabras iniciales, no solo a la palabra cortada) — si no, el video final queda con esas palabras iniciales dichas dos veces seguidas ("Estas son las cinco... estas son las cinco herramientas...").
+
 Para cada candidato devolvé el rango de ÍNDICES de palabra (no segundos) que hay que cortar — startIndex y endIndex son inclusivos y se refieren a la lista indexada de arriba.`;
 }
 

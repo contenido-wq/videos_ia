@@ -18,6 +18,7 @@ import {
   remapWords,
   findPrimarySpeakerId,
   detectOtherSpeakerRanges,
+  detectRepeatedPhrases,
   type CutRange,
 } from "./videoTrimService";
 import type {
@@ -378,6 +379,19 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   // crudos) para que el timestamp de cada palabra calce exactamente con el video
   // ya recortado, padding incluido.
   const words = remapWords(rawWords, keepSegments);
+
+  // Señal automática de "brincos" mal cortados: un retake que se cortó a medias
+  // deja las palabras iniciales de la frase duplicadas cuando arranca el segundo
+  // intento limpio justo después. No corta nada solo, es una alerta para revisar
+  // el video a mano en ese punto.
+  const repeatedPhrases = detectRepeatedPhrases(words);
+  if (repeatedPhrases.length > 0) {
+    console.log(`\n⚠️  ${repeatedPhrases.length} frase(s) posiblemente duplicada(s) en el video final (revisar):`);
+    for (const r of repeatedPhrases) {
+      console.log(`  ${r.start.toFixed(1)}s-${r.end.toFixed(1)}s: "${r.phrase}"`);
+    }
+    console.log("");
+  }
 
   if (fs.existsSync(trimmedVideoAbsPath)) {
     console.log("video recortado ya existe, se reutiliza");

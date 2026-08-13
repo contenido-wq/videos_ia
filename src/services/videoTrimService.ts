@@ -164,6 +164,51 @@ export function detectFillerRanges(words: TranscribedWord[]): CutRange[] {
   return ranges;
 }
 
+// Detecta frases de 3+ palabras que quedan repetidas de forma consecutiva en el
+// video YA recortado — señal de que un retake se cortó a medias (se quitó el
+// tartamudeo pero no las palabras iniciales de la frase, que vuelven a aparecer
+// cuando arranca el segundo intento limpio). No corta nada automáticamente, solo
+// avisa para revisión manual: 3+ palabras es lo bastante largo para no confundirse
+// con la repetición retórica deliberada de una sola palabra que sí se protege en
+// detectFillerRanges (ej. "ManyChat. ManyChat te va a ayudar...").
+export function detectRepeatedPhrases(
+  words: TranscribedWord[],
+  minWords = 3,
+  maxWords = 8,
+): { start: number; end: number; phrase: string }[] {
+  const normalized = words.map((w) => normalizeWord(w.text));
+  const found: { start: number; end: number; phrase: string }[] = [];
+
+  let i = 0;
+  while (i < normalized.length) {
+    let matchLength = 0;
+    const longestPossible = Math.min(maxWords, Math.floor((normalized.length - i) / 2));
+    // Se prueba de más largo a más corto: un match largo es mucho menos probable
+    // que sea coincidencia que uno corto, así que gana el más largo disponible.
+    for (let len = longestPossible; len >= minWords; len--) {
+      const a = normalized.slice(i, i + len);
+      const b = normalized.slice(i + len, i + 2 * len);
+      if (a.every((word) => word.length > 0) && a.every((word, j) => word === b[j])) {
+        matchLength = len;
+        break;
+      }
+    }
+
+    if (matchLength > 0) {
+      found.push({
+        start: words[i].start,
+        end: words[i + 2 * matchLength - 1].end,
+        phrase: words.slice(i, i + 2 * matchLength).map((w) => w.text).join(" "),
+      });
+      i += 2 * matchLength;
+    } else {
+      i++;
+    }
+  }
+
+  return found;
+}
+
 // Re-mapea cada palabra a su posición en el video ya recortado. Usa exactamente los
 // mismos `keepSegments` que arma `trimVideoToSegments` (no los `cutRanges` crudos):
 // computeKeepSegments deja `paddingSeconds` de aire a cada lado de un corte, así que
