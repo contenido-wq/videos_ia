@@ -305,32 +305,46 @@ async function generateVoxAssets(guion: VoxGuion): Promise<void> {
   console.log(`Datos guardados en ${outputPath}`);
 }
 
-async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promise<void> {
-  console.log(`Generando recursos para "${guion.topic}" (social-checklist, ${guion.items.length} items)`);
+interface PrepareTrimmedVideoParams {
+  slug: string;
+  rawVideoPath: string;
+  removeOtherSpeakers?: boolean;
+}
 
-  const rawExt = path.extname(guion.rawVideoPath) || ".mov";
-  const rawVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `source${rawExt}`);
+interface TrimmedVideoResult {
+  words: TranscribedWord[];
+  videoPath: string;
+  durationInSeconds: number;
+}
+
+async function prepareTrimmedVideo({
+  slug,
+  rawVideoPath,
+  removeOtherSpeakers,
+}: PrepareTrimmedVideoParams): Promise<TrimmedVideoResult> {
+  const rawExt = path.extname(rawVideoPath) || ".mov";
+  const rawVideoAbsPath = path.join(PUBLIC_DIR, "assets", slug, "video", `source${rawExt}`);
 
   if (fs.existsSync(rawVideoAbsPath)) {
     console.log("video crudo ya copiado, se reutiliza");
   } else {
-    console.log(`copiando video crudo desde ${guion.rawVideoPath}...`);
+    console.log(`copiando video crudo desde ${rawVideoPath}...`);
     fs.mkdirSync(path.dirname(rawVideoAbsPath), { recursive: true });
-    fs.copyFileSync(guion.rawVideoPath, rawVideoAbsPath);
+    fs.copyFileSync(rawVideoPath, rawVideoAbsPath);
   }
 
   const rawDurationInSeconds = await getVideoDurationInSeconds(rawVideoAbsPath);
 
-  const transcriptPath = path.join(PUBLIC_DIR, "assets", guion.slug, "transcript.json");
+  const transcriptPath = path.join(PUBLIC_DIR, "assets", slug, "transcript.json");
   let rawWords: TranscribedWord[];
   if (fs.existsSync(transcriptPath)) {
     console.log("transcripción ya existe, se reutiliza");
     rawWords = JSON.parse(fs.readFileSync(transcriptPath, "utf-8")) as TranscribedWord[];
   } else {
-    const audioTmpPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio-for-transcription.mp3");
+    const audioTmpPath = path.join(PUBLIC_DIR, "assets", slug, "audio-for-transcription.mp3");
     console.log("extrayendo audio para transcribir...");
     await extractAudioTrack(rawVideoAbsPath, audioTmpPath);
-    if (guion.removeOtherSpeakers) {
+    if (removeOtherSpeakers) {
       console.log("transcribiendo con ElevenLabs Scribe (con diarización)...");
       rawWords = await transcribeWithSpeakers(audioTmpPath);
     } else {
@@ -341,13 +355,13 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     fs.rmSync(audioTmpPath);
   }
 
-  const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "video", `trimmed${rawExt}`);
+  const trimmedVideoAbsPath = path.join(PUBLIC_DIR, "assets", slug, "video", `trimmed${rawExt}`);
 
   console.log("detectando silencios y titubeos...");
   const silenceRanges = await detectSilenceRanges(rawVideoAbsPath, rawDurationInSeconds);
   const fillerRanges = detectFillerRanges(rawWords);
   let otherSpeakerRanges: CutRange[] = [];
-  if (guion.removeOtherSpeakers) {
+  if (removeOtherSpeakers) {
     const diarizedWords = rawWords as DiarizedWord[];
     const primarySpeakerId = findPrimarySpeakerId(diarizedWords);
     otherSpeakerRanges = detectOtherSpeakerRanges(diarizedWords, primarySpeakerId);
@@ -364,13 +378,13 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   // aunque el video real sí los tuviera cortados — desincronizaba el timing de
   // las tarjetas y generaba falsos positivos en detectRepeatedPhrases (bug
   // real: encontrado al re-correr el pipeline solo para arreglar logos).
-  const approvedRetakeRangesPath = path.join(PUBLIC_DIR, "assets", guion.slug, "approved-retake-ranges.json");
+  const approvedRetakeRangesPath = path.join(PUBLIC_DIR, "assets", slug, "approved-retake-ranges.json");
   let approvedRetakeRanges: CutRange[];
   if (fs.existsSync(approvedRetakeRangesPath)) {
     console.log("rangos de retake ya aprobados, se reutilizan");
     approvedRetakeRanges = JSON.parse(fs.readFileSync(approvedRetakeRangesPath, "utf-8")) as CutRange[];
   } else {
-    const retakeCandidatesPath = path.join(PUBLIC_DIR, "assets", guion.slug, "retake-candidates.json");
+    const retakeCandidatesPath = path.join(PUBLIC_DIR, "assets", slug, "retake-candidates.json");
     let retakeCandidates: RetakeCandidate[];
     if (fs.existsSync(retakeCandidatesPath)) {
       console.log("candidatos a retake ya existen, se reutilizan");
@@ -431,6 +445,18 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
 
   const durationInSeconds = await getVideoDurationInSeconds(trimmedVideoAbsPath);
   console.log(`duración final: ${durationInSeconds.toFixed(1)}s (crudo: ${rawDurationInSeconds.toFixed(1)}s)`);
+
+  return { words, videoPath: toPublicRelPath(trimmedVideoAbsPath), durationInSeconds };
+}
+
+async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promise<void> {
+  console.log(`Generando recursos para "${guion.topic}" (social-checklist, ${guion.items.length} items)`);
+
+  const { words, videoPath, durationInSeconds } = await prepareTrimmedVideo({
+    slug: guion.slug,
+    rawVideoPath: guion.rawVideoPath,
+    removeOtherSpeakers: guion.removeOtherSpeakers,
+  });
 
   const matches = matchItemTimestamps(words, guion.items, durationInSeconds);
 
@@ -515,7 +541,7 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     type: "social-checklist",
     slug: guion.slug,
     topic: guion.topic,
-    videoPath: toPublicRelPath(trimmedVideoAbsPath),
+    videoPath,
     durationInSeconds,
     listTitle: guion.listTitle,
     items: renderedItems,
