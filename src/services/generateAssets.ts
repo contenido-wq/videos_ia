@@ -353,11 +353,21 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   }
   console.log(`  ${silenceRanges.length} silencio(s), ${fillerRanges.length} titubeo(s)/muletilla(s)`);
 
-  // Solo se detecta/pregunta si el video recortado todavía no existe — mismo
-  // gate de caché que ya protege el resto del pipeline. Una vez recortado, no
-  // se vuelve a llamar al LLM ni a preguntar nada.
-  let approvedRetakeRanges: CutRange[] = [];
-  if (!fs.existsSync(trimmedVideoAbsPath)) {
+  // Los rangos APROBADOS se persisten en su propio archivo, separado de
+  // trimmedVideoAbsPath: ese gate solo controla si hace falta volver a correr
+  // ffmpeg, pero words/matches/duración se recalculan en CADA corrida (incluso
+  // si el video ya está recortado — ej. para regenerar solo un logo). Si
+  // approvedRetakeRanges dependiera de que el video NO exista, cualquier
+  // corrida posterior a la primera calculaba words sin restar los retakes,
+  // aunque el video real sí los tuviera cortados — desincronizaba el timing de
+  // las tarjetas y generaba falsos positivos en detectRepeatedPhrases (bug
+  // real: encontrado al re-correr el pipeline solo para arreglar logos).
+  const approvedRetakeRangesPath = path.join(PUBLIC_DIR, "assets", guion.slug, "approved-retake-ranges.json");
+  let approvedRetakeRanges: CutRange[];
+  if (fs.existsSync(approvedRetakeRangesPath)) {
+    console.log("rangos de retake ya aprobados, se reutilizan");
+    approvedRetakeRanges = JSON.parse(fs.readFileSync(approvedRetakeRangesPath, "utf-8")) as CutRange[];
+  } else {
     const retakeCandidatesPath = path.join(PUBLIC_DIR, "assets", guion.slug, "retake-candidates.json");
     let retakeCandidates: RetakeCandidate[];
     if (fs.existsSync(retakeCandidatesPath)) {
@@ -372,6 +382,8 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     console.log(`  ${retakeCandidates.length} candidato(s) a retake/aside`);
     approvedRetakeRanges = await reviewRetakeCandidates(retakeCandidates);
     console.log(`  ${approvedRetakeRanges.length} aprobado(s) para cortar`);
+    fs.mkdirSync(path.dirname(approvedRetakeRangesPath), { recursive: true });
+    fs.writeFileSync(approvedRetakeRangesPath, JSON.stringify(approvedRetakeRanges, null, 2));
   }
 
   // Los cortes de retake/aside y de otro-hablante NO entran al merge+padding general:
@@ -432,17 +444,36 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     if (fs.existsSync(logoAbsPath)) {
       console.log(`[${item.id}] logo ya existe, se reutiliza`);
     } else {
-      const wikimediaUrls = await findWikimediaImageUrls(item.logoQuery, 1);
-      if (wikimediaUrls.length > 0) {
-        console.log(`[${item.id}] descargando logo de Wikimedia...`);
-        await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
+      // Google Images (vía Apify) primero: Wikimedia Commons es un repositorio de
+      // medios libres, no un catálogo de logos de SaaS — para productos como
+      // Gamma o NotebookLM no tiene el logo real y su búsqueda de texto devuelve
+      // cualquier archivo que coincida por palabra (bug real: "Gamma" devolvió el
+      // logo de una fraternidad universitaria). findRealImageUrls ya está pensada
+      // para esto ("úsalo para logos", ver apifyService.ts) y es lo que ya usa el
+      // resto del pipeline para fotos reales.
+      let logoUrl: string | null = null;
+      try {
+        [logoUrl] = await findRealImageUrls(item.logoQuery, 1);
+      } catch {
+        logoUrl = null;
+      }
+
+      if (logoUrl) {
+        console.log(`[${item.id}] descargando logo (Google Images)...`);
+        await downloadImageFromUrlWithRetry(logoUrl, logoAbsPath);
       } else {
-        console.log(`[${item.id}] sin resultados en Wikimedia, generando logo con kie.ai...`);
-        await generateImage(
-          `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
-          logoAbsPath,
-          { aspectRatio: "1:1" },
-        );
+        const wikimediaUrls = await findWikimediaImageUrls(item.logoQuery, 1);
+        if (wikimediaUrls.length > 0) {
+          console.log(`[${item.id}] sin resultados en Google Images, descargando logo de Wikimedia...`);
+          await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
+        } else {
+          console.log(`[${item.id}] sin resultados, generando logo con kie.ai...`);
+          await generateImage(
+            `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
+            logoAbsPath,
+            { aspectRatio: "1:1" },
+          );
+        }
       }
     }
 
