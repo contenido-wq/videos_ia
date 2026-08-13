@@ -97,6 +97,28 @@ describe("computeKeepSegments", () => {
     const result = computeKeepSegments(10, [{ start: 8, end: 10 }], 0.12);
     expect(result).toEqual([{ start: 0, end: 8.12 }]);
   });
+
+  // Bug real encontrado en producción: un corte de duración menor a 2*padding
+  // (acá 0.1s de corte con padding 0.15s) hacía que el tramo "a conservar" antes
+  // y después de ese corte se solaparan entre sí. trimVideoToSegments concatena
+  // cada tramo tal cual, así que el pedacito solapado terminaba en el video dos
+  // veces seguidas (se escuchaba "lo que" repetido). Los tramos devueltos nunca
+  // deben solaparse.
+  it("un corte más corto que 2*padding no produce tramos solapados", () => {
+    const result = computeKeepSegments(10, [
+      { start: 2, end: 3 },
+      { start: 3.1, end: 3.2 },
+      { start: 4, end: 5 },
+    ], 0.15);
+    expect(result).toEqual([
+      { start: 0, end: 2.15 },
+      { start: 2.85, end: 4.15 },
+      { start: 4.85, end: 10 },
+    ]);
+    for (let i = 1; i < result.length; i++) {
+      expect(result[i].start).toBeGreaterThanOrEqual(result[i - 1].end);
+    }
+  });
 });
 
 describe("subtractRanges", () => {

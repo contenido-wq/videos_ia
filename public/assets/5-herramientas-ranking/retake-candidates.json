@@ -35,6 +35,13 @@
     "reason": "Primer intento de la frase del quinto lugar, repetida después"
   },
   {
+    "start": 41.92,
+    "end": 43.0,
+    "quote": "porque sea un apego,",
+    "type": "retake",
+    "reason": "Intento fallido 'porque sea un apego,' dentro de la toma buena, corregido por 'porque sea malo,' inmediatamente después (agregado manualmente: el modelo no lo detectó)"
+  },
+  {
     "start": 42.44,
     "end": 43,
     "quote": "un apego,",

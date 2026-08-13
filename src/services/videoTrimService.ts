@@ -123,7 +123,12 @@ export function computeKeepSegments(
     keep.push({ start: cursor, end: totalDurationSeconds });
   }
 
-  return keep.filter((r) => r.end > r.start);
+  // Cuando dos cortes quedan más cerca entre sí que 2*paddingSeconds, el padding
+  // agregado a cada lado hace que el tramo "a conservar" del hueco entre ambos se
+  // solape con el siguiente (bug real: causaba que trimVideoToSegments duplicara
+  // ese pedacito de video en el resultado — "lo que" sonaba dos veces seguidas).
+  // Se re-fusiona acá mismo, igual que ya hace mergeCutRanges con los cortes.
+  return mergeCutRanges(keep.filter((r) => r.end > r.start));
 }
 
 // Resta `cuts` (sin padding, exactos) de `base` (tramos ya calculados con
@@ -198,16 +203,18 @@ export function detectFillerRanges(words: TranscribedWord[]): CutRange[] {
   return ranges;
 }
 
-// Detecta frases de 3+ palabras que quedan repetidas de forma consecutiva en el
+// Detecta frases de 2+ palabras que quedan repetidas de forma consecutiva en el
 // video YA recortado — señal de que un retake se cortó a medias (se quitó el
 // tartamudeo pero no las palabras iniciales de la frase, que vuelven a aparecer
 // cuando arranca el segundo intento limpio). No corta nada automáticamente, solo
-// avisa para revisión manual: 3+ palabras es lo bastante largo para no confundirse
-// con la repetición retórica deliberada de una sola palabra que sí se protege en
-// detectFillerRanges (ej. "ManyChat. ManyChat te va a ayudar...").
+// avisa para revisión manual. minWords=2 (no 1) para no confundirse con la
+// repetición retórica deliberada de una sola palabra que sí se protege en
+// detectFillerRanges (ej. "ManyChat. ManyChat te va a ayudar...") — probado
+// contra contenido real, casos de 2 palabras repetidas ("lo que lo que me
+// gusta") sí son señal real de corte a medias, no recurso retórico.
 export function detectRepeatedPhrases(
   words: TranscribedWord[],
-  minWords = 3,
+  minWords = 2,
   maxWords = 8,
 ): { start: number; end: number; phrase: string }[] {
   const normalized = words.map((w) => normalizeWord(w.text));
