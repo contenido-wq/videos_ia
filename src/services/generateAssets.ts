@@ -19,6 +19,7 @@ import {
   findPrimarySpeakerId,
   detectOtherSpeakerRanges,
   detectRepeatedPhrases,
+  subtractRanges,
   type CutRange,
 } from "./videoTrimService";
 import type {
@@ -373,8 +374,19 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     console.log(`  ${approvedRetakeRanges.length} aprobado(s) para cortar`);
   }
 
-  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges, ...otherSpeakerRanges, ...approvedRetakeRanges]);
-  const keepSegments = computeKeepSegments(rawDurationInSeconds, cutRanges, TRIM_PADDING_SECONDS);
+  // Los cortes de retake/aside NO entran al merge+padding general: computeKeepSegments
+  // encoge cada corte por TRIM_PADDING_SECONDS de cada lado (pensado para silencios,
+  // donde ese aire de más es inofensivo), y ese mismo aire deja pasar un fragmento del
+  // contenido MALO en el borde de un retake. Sumarlos ya "ensanchados" para cancelar
+  // ese encogimiento tampoco sirve: en tramos con retakes muy pegados entre sí, el
+  // ensanchado se fusiona con el corte vecino y se traga tomas buenas cortas enteras
+  // (bug real: así se perdió la única mención de "Notebook LM"). Se calculan los
+  // tramos a conservar solo con silencio/muletillas/otro-hablante (con su padding de
+  // siempre) y recién ahí se restan los retakes aprobados de forma exacta, sin padding
+  // ni fusión con nada más.
+  const cutRanges = mergeCutRanges([...silenceRanges, ...fillerRanges, ...otherSpeakerRanges]);
+  const keepSegmentsBeforeRetakes = computeKeepSegments(rawDurationInSeconds, cutRanges, TRIM_PADDING_SECONDS);
+  const keepSegments = subtractRanges(keepSegmentsBeforeRetakes, approvedRetakeRanges);
   // remapWords usa los mismos keepSegments que trimVideoToSegments (no cutRanges
   // crudos) para que el timestamp de cada palabra calce exactamente con el video
   // ya recortado, padding incluido.
@@ -396,7 +408,9 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
   if (fs.existsSync(trimmedVideoAbsPath)) {
     console.log("video recortado ya existe, se reutiliza");
   } else {
-    console.log(`recortando video (${keepSegments.length} segmento(s) a conservar de ${cutRanges.length} corte(s))...`);
+    console.log(
+      `recortando video (${keepSegments.length} segmento(s) a conservar de ${cutRanges.length + approvedRetakeRanges.length} corte(s): ${cutRanges.length} de silencio/muletilla/otro-hablante, ${approvedRetakeRanges.length} de retake/aside)...`,
+    );
     await trimVideoToSegments(rawVideoAbsPath, trimmedVideoAbsPath, keepSegments);
   }
 

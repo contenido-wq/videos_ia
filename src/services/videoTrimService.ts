@@ -126,6 +126,40 @@ export function computeKeepSegments(
   return keep.filter((r) => r.end > r.start);
 }
 
+// Resta `cuts` (sin padding, exactos) de `base` (tramos ya calculados con
+// computeKeepSegments). Se usa para los cortes de retake/aside: sumarlos al
+// merge general de computeKeepSegments (junto con silencios/muletillas) hace
+// que el padding de esa función filtre de más y deje pasar un fragmento del
+// contenido MALO en el borde del corte — pero ensanchar el rango del retake
+// para cancelar ese padding tiene su propio problema: en tramos con retakes
+// muy pegados entre sí (ej. una toma buena de solo 2-3s entre dos cortes), el
+// ensanchado se fusiona con el corte vecino y se traga la toma buena entera
+// (bug real: así se perdió la única mención de "Notebook LM" en un video de
+// prueba). Restar directo, sin padding ni fusión con otros cortes, corta
+// exactamente lo aprobado sin arriesgar tomas buenas vecinas.
+export function subtractRanges(base: KeepRange[], cuts: CutRange[]): KeepRange[] {
+  const sortedCuts = [...cuts].sort((a, b) => a.start - b.start);
+  const result: KeepRange[] = [];
+
+  for (const segment of base) {
+    let cursor = segment.start;
+    for (const cut of sortedCuts) {
+      if (cut.end <= cursor || cut.start >= segment.end) continue;
+      const cutStart = Math.max(cut.start, cursor);
+      const cutEnd = Math.min(cut.end, segment.end);
+      if (cutStart > cursor) {
+        result.push({ start: cursor, end: cutStart });
+      }
+      cursor = Math.max(cursor, cutEnd);
+    }
+    if (cursor < segment.end) {
+      result.push({ start: cursor, end: segment.end });
+    }
+  }
+
+  return result.filter((r) => r.end > r.start);
+}
+
 const FILLER_WORDS = ["eh", "ehh", "eeh", "este", "esteee", "digo", "em", "emm", "mmm"];
 const FILLER_PHRASES = ["o sea"];
 

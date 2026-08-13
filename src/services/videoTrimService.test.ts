@@ -9,6 +9,7 @@ import {
   computeKeepSegments,
   detectFillerRanges,
   detectRepeatedPhrases,
+  subtractRanges,
   remapWords,
   trimVideoToSegments,
   findPrimarySpeakerId,
@@ -95,6 +96,70 @@ describe("computeKeepSegments", () => {
   it("corte que llega hasta el final no genera un tramo vacío al final", () => {
     const result = computeKeepSegments(10, [{ start: 8, end: 10 }], 0.12);
     expect(result).toEqual([{ start: 0, end: 8.12 }]);
+  });
+});
+
+describe("subtractRanges", () => {
+  it("sin cortes, devuelve los tramos base sin cambios", () => {
+    expect(subtractRanges([{ start: 0, end: 10 }], [])).toEqual([{ start: 0, end: 10 }]);
+  });
+
+  it("resta un corte exacto en el medio, sin padding", () => {
+    const result = subtractRanges([{ start: 0, end: 10 }], [{ start: 4, end: 6 }]);
+    expect(result).toEqual([
+      { start: 0, end: 4 },
+      { start: 6, end: 10 },
+    ]);
+  });
+
+  it("una toma buena muy corta entre dos cortes pegados sobrevive intacta", () => {
+    // Caso real: "Notebook LM." (120.38-122.92) a 0.04s del siguiente corte
+    // (122.96-126.22) — con el approach anterior (ensanchar y re-fusionar) esto
+    // se comía la toma completa; restando exacto, sobrevive.
+    const base = [{ start: 100, end: 150 }];
+    const cuts = [
+      { start: 100, end: 120.38 },
+      { start: 122.96, end: 126.22 },
+    ];
+    const result = subtractRanges(base, cuts);
+    expect(result).toEqual([
+      { start: 120.38, end: 122.96 },
+      { start: 126.22, end: 150 },
+    ]);
+  });
+
+  it("un corte que no toca ningún tramo base no cambia nada", () => {
+    const result = subtractRanges([{ start: 0, end: 5 }], [{ start: 10, end: 12 }]);
+    expect(result).toEqual([{ start: 0, end: 5 }]);
+  });
+
+  it("varios cortes en el mismo tramo se aplican todos", () => {
+    const result = subtractRanges([{ start: 0, end: 20 }], [
+      { start: 2, end: 4 },
+      { start: 8, end: 10 },
+      { start: 15, end: 18 },
+    ]);
+    expect(result).toEqual([
+      { start: 0, end: 2 },
+      { start: 4, end: 8 },
+      { start: 10, end: 15 },
+      { start: 18, end: 20 },
+    ]);
+  });
+
+  it("un corte que cubre todo el tramo lo elimina por completo", () => {
+    expect(subtractRanges([{ start: 5, end: 8 }], [{ start: 0, end: 20 }])).toEqual([]);
+  });
+
+  it("cortes solapados entre sí se manejan sin duplicar tramos", () => {
+    const result = subtractRanges([{ start: 0, end: 10 }], [
+      { start: 2, end: 5 },
+      { start: 4, end: 7 },
+    ]);
+    expect(result).toEqual([
+      { start: 0, end: 2 },
+      { start: 7, end: 10 },
+    ]);
   });
 });
 
