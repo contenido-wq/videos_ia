@@ -6,6 +6,7 @@ import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
 import { findSimpleIconSvg, renderSimpleIconToPng } from "./simpleIconsService";
+import { findLogoDevUrl } from "./logoDevService";
 import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
 import { matchItemTimestamps, type TranscribedWord, type DiarizedWord } from "./checklistSyncService";
 import { detectRetakeCandidates, type RetakeCandidate } from "./retakeDetectionService";
@@ -451,10 +452,19 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
       // marcas conocidas pero no todas (ej. Gamma, AiVi no están) — para esas
       // cae a la búsqueda real de abajo.
       const simpleIcon = findSimpleIconSvg(item.label);
+      // Logo.dev: gratis (hasta 500K/mes) y hecho específicamente para logos
+      // (busca por nombre de marca, no por texto libre), pero requiere una key
+      // propia (LOGO_DEV_API_KEY) — findLogoDevUrl devuelve null y no rompe
+      // nada si no está configurada. Cubre ~50M empresas, más que simple-icons.
+      const logoDevUrl = simpleIcon ? null : await findLogoDevUrl(item.label);
+
       if (simpleIcon) {
         console.log(`[${item.id}] logo encontrado en simple-icons...`);
         fs.mkdirSync(path.dirname(logoAbsPath), { recursive: true });
         fs.writeFileSync(logoAbsPath, renderSimpleIconToPng(simpleIcon.svg, simpleIcon.hex));
+      } else if (logoDevUrl) {
+        console.log(`[${item.id}] logo encontrado en Logo.dev...`);
+        await downloadImageFromUrlWithRetry(logoDevUrl, logoAbsPath);
       } else {
         // Google Images (vía Apify) después: Wikimedia Commons es un repositorio de
         // medios libres, no un catálogo de logos de SaaS — para productos como

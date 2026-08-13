@@ -26,4 +26,10 @@ export const env = {
   get anthropicApiKey() {
     return required("ANTHROPIC_API_KEY");
   },
+  // Opcional a propósito (a diferencia de las de arriba): si no está
+  // configurada, logoDevService simplemente se salta y cae al siguiente
+  // eslabón de la cadena de búsqueda de logos (Google Images vía Apify).
+  get logoDevApiKey() {
+    return process.env.LOGO_DEV_API_KEY;
+  },
 };
