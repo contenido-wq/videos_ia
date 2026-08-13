@@ -1,0 +1,93 @@
+[
+  {
+    "start": 0.1,
+    "end": 3.74,
+    "quote": "Grabando. Sí. Grabando. Creo que sigue.",
+    "type": "aside",
+    "reason": "Coordinación de grabación fuera de cámara ('Grabando. Sí. Grabando. Creo que sigue.')"
+  },
+  {
+    "start": 4.46,
+    "end": 7.92,
+    "quote": "¿Pensaste que eres malo o que las redes no te quieren? Estás equivocado.",
+    "type": "retake",
+    "reason": "Primer intento incompleto (falta 'sociales'), repetido después completo"
+  },
+  {
+    "start": 8.26,
+    "end": 20.24,
+    "quote": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado. Lo que quieren las redes es acción- Calma, calma. Con la intencionalidad. Calma, no se acelere mucho, que eso... Voy a volverlo a hacer.",
+    "type": "retake",
+    "reason": "Intento interrumpido por la persona fuera de cámara ('Calma, calma...') y anuncio de repetirlo"
+  },
+  {
+    "start": 21.5,
+    "end": 28.66,
+    "quote": "¿Pensaste que eres malo o que las redes sociales no te quieren? Se me olvidó ahí qué seguía. Estás equivocado. Eso.",
+    "type": "retake",
+    "reason": "Intento fallido con olvido del guion y comentario fuera de cámara"
+  },
+  {
+    "start": 34.88,
+    "end": 36.92,
+    "quote": "Lo que quieren las redes es acción masiva.",
+    "type": "retake",
+    "reason": "Intento incompleto (falta 'sociales'), repetido completo después"
+  },
+  {
+    "start": 40.6,
+    "end": 43.5,
+    "quote": "No les importa la perfección, les importa la constancia.",
+    "type": "retake",
+    "reason": "Primer intento de la línea, repetido igual inmediatamente después"
+  },
+  {
+    "start": 48.82,
+    "end": 63.26,
+    "quote": "Es como si fueras al gym una semana y esperar tener el cuerpo de tus sueños. Es como si fueras al gimnasio una semana y esperar tener... Es como si fueras al gym una semana y esperaras tener... ¿Y esperas? Y esperaras tener el cuerpo. Esperaras, ah bueno.",
+    "type": "retake",
+    "reason": "Varios intentos fallidos de la frase del gym, con corrección dictada fuera de cámara"
+  },
+  {
+    "start": 68.22,
+    "end": 69.38,
+    "quote": "Así no funciona.",
+    "type": "retake",
+    "reason": "Intento incompleto, corregido a 'Así no funciona esto.'"
+  },
+  {
+    "start": 72.4,
+    "end": 74.84,
+    "quote": "No es difícil, pero ¿quién te dijo que sería fácil?",
+    "type": "retake",
+    "reason": "Primer intento de la línea, repetido después"
+  },
+  {
+    "start": 78.84,
+    "end": 81.03,
+    "quote": "La clave está en la acción constante.",
+    "type": "retake",
+    "reason": "Primer intento de la línea, repetido después"
+  },
+  {
+    "start": 85.9,
+    "end": 125.74,
+    "quote": "Comenta «voy a crear» si estás listo para comenzar a crear contenido ahora mismo. Comen... «Ya voy a crear», dice. ¿Será que eso los dejo sin el call to action? Eso no me gusta. No, yo le pondría como algo que le hiciste, a que, a que necesite que como que comenten. Como no sé, como: «¿Y tú? ¿Y tú cómo...?» Comenta «yo» si estás dispuesto a empezar a crear. Es que no quiero meter como te metes porque es como algo que más, más que todo que conecta, siento que es como más bien como que ellos- Cuéntame qué. Piensen que, pues comenten qué opinan o qué. Listo. Pase, pero- Ay, ahora era, pues... Espere, espere, espere. Siéntese. Entonces, ¿cómo estaba ahí?",
+    "type": "aside",
+    "reason": "Intento cortado y larga discusión fuera de cámara sobre el call to action"
+  },
+  {
+    "start": 126.3,
+    "end": 133.88,
+    "quote": "Comenta «voy a crear» si estás listo para comenzar a crear contenido ahora mismo. ¿Comenta? «Voy a crear». Entonces, hagámoslo.",
+    "type": "aside",
+    "reason": "Repaso del guion con la persona fuera de cámara antes del intento final"
+  },
+  {
+    "start": 140.02,
+    "end": 141.88,
+    "quote": "Listo.",
+    "type": "aside",
+    "reason": "'Listo' dirigido a la producción, no a la audiencia"
+  }
+]

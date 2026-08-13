@@ -1,0 +1,56 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "pantalla-dividida",
+  "topic": "El mito de la perfección en redes sociales",
+  "rawVideoPath": "content/raw/pantalla-dividida.mp4",
+  "removeOtherSpeakers": true,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s1-a.png", "content/personajes/pantalla-dividida/s1-b.png"]
+    },
+    {
+      "id": "s2",
+      "text": "Lo que quieren las redes sociales es acción masiva.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s2-a.png", "content/personajes/pantalla-dividida/s2-b.png"]
+    },
+    {
+      "id": "s3",
+      "text": "No les importa la perfección, les importa la constancia.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s3-a.png", "content/personajes/pantalla-dividida/s3-b.png"]
+    },
+    {
+      "id": "s4",
+      "text": "Es como si fueras al gym una semana y esperaras tener el cuerpo de tus sueños.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s4-a.png", "content/personajes/pantalla-dividida/s4-b.png"]
+    },
+    {
+      "id": "s5",
+      "text": "Así no funciona esto.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s5-a.png"]
+    },
+    {
+      "id": "s6",
+      "text": "No es difícil, pero ¿quién te dijo que sería fácil?",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s6-a.png", "content/personajes/pantalla-dividida/s6-b.png"]
+    },
+    {
+      "id": "s7",
+      "text": "La clave está en la acción constante.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pantalla-dividida/s7-a.png", "content/personajes/pantalla-dividida/s7-b.png"]
+    },
+    {
+      "id": "s8",
+      "text": "Comenta la palabra «creador» si estás dispuesto a cambiar todo lo que has venido haciendo.",
+      "act": "closing"
+    }
+  ]
+}

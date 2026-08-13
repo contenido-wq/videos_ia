@@ -127,7 +127,10 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
   return (
     <AbsoluteFill className="bg-black">
       <div className="absolute inset-x-0 overflow-hidden" style={isSplit ? { bottom: 0, height: "50%" } : { inset: 0 }}>
-        <OffthreadVideo src={staticFile(guion.videoPath)} className="absolute inset-0 h-full w-full object-cover" />
+        <OffthreadVideo
+          src={staticFile(guion.videoPath)}
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+        />
       </div>
 
       {active && isSplit && (

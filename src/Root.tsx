@@ -15,6 +15,7 @@ export const RemotionRoot: React.FC = () => {
       <DocumentalComposition id="MitosClaudeNegocio" slug="mitos-claude-negocio" />
       <SocialChecklistComposition id="CincoHerramientasIA" slug="5-herramientas-ia" />
       <SocialChecklistComposition id="CincoHerramientasRanking" slug="5-herramientas-ranking" />
+      <PantallaDivididaComposition id="PantallaDividida" slug="pantalla-dividida" />
       <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
     </>
   );
