@@ -4,6 +4,7 @@
   "topic": "El mito de la perfección en redes sociales",
   "rawVideoPath": "content/raw/pantalla-dividida.mp4",
   "removeOtherSpeakers": true,
+  "backgroundMusicPath": "content/musica/motivation-paulyudin.mp3",
   "scenes": [
     {
       "id": "s1",
