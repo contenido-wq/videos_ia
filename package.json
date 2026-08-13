@@ -10,11 +10,13 @@
     "@remotion/google-fonts": "^4.0.498",
     "@remotion/tailwind-v4": "4.0.498",
     "@remotion/transitions": "^4.0.498",
+    "@resvg/resvg-js": "^2.6.2",
     "dotenv": "^17.4.2",
     "music-metadata": "^11.14.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.498",
+    "simple-icons": "^16.28.0",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {

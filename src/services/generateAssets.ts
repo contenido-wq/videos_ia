@@ -5,6 +5,7 @@ import { generateVoice, generateSoundEffect, transcribeWithTimestamps, transcrib
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
+import { findSimpleIconSvg, renderSimpleIconToPng } from "./simpleIconsService";
 import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
 import { matchItemTimestamps, type TranscribedWord, type DiarizedWord } from "./checklistSyncService";
 import { detectRetakeCandidates, type RetakeCandidate } from "./retakeDetectionService";
@@ -444,35 +445,47 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
     if (fs.existsSync(logoAbsPath)) {
       console.log(`[${item.id}] logo ya existe, se reutiliza`);
     } else {
-      // Google Images (vía Apify) primero: Wikimedia Commons es un repositorio de
-      // medios libres, no un catálogo de logos de SaaS — para productos como
-      // Gamma o NotebookLM no tiene el logo real y su búsqueda de texto devuelve
-      // cualquier archivo que coincida por palabra (bug real: "Gamma" devolvió el
-      // logo de una fraternidad universitaria). findRealImageUrls ya está pensada
-      // para esto ("úsalo para logos", ver apifyService.ts) y es lo que ya usa el
-      // resto del pipeline para fotos reales.
-      let logoUrl: string | null = null;
-      try {
-        [logoUrl] = await findRealImageUrls(item.logoQuery, 1);
-      } catch {
-        logoUrl = null;
-      }
-
-      if (logoUrl) {
-        console.log(`[${item.id}] descargando logo (Google Images)...`);
-        await downloadImageFromUrlWithRetry(logoUrl, logoAbsPath);
+      // simple-icons primero: biblioteca curada a mano (MIT, ~3400 marcas), sin
+      // llamadas a ninguna API — gratis, instantánea, y cero riesgo de traer el
+      // logo equivocado (a diferencia de una búsqueda de texto). Cubre muchas
+      // marcas conocidas pero no todas (ej. Gamma, AiVi no están) — para esas
+      // cae a la búsqueda real de abajo.
+      const simpleIcon = findSimpleIconSvg(item.label);
+      if (simpleIcon) {
+        console.log(`[${item.id}] logo encontrado en simple-icons...`);
+        fs.mkdirSync(path.dirname(logoAbsPath), { recursive: true });
+        fs.writeFileSync(logoAbsPath, renderSimpleIconToPng(simpleIcon.svg, simpleIcon.hex));
       } else {
-        const wikimediaUrls = await findWikimediaImageUrls(item.logoQuery, 1);
-        if (wikimediaUrls.length > 0) {
-          console.log(`[${item.id}] sin resultados en Google Images, descargando logo de Wikimedia...`);
-          await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
+        // Google Images (vía Apify) después: Wikimedia Commons es un repositorio de
+        // medios libres, no un catálogo de logos de SaaS — para productos como
+        // Gamma o NotebookLM no tiene el logo real y su búsqueda de texto devuelve
+        // cualquier archivo que coincida por palabra (bug real: "Gamma" devolvió el
+        // logo de una fraternidad universitaria). findRealImageUrls ya está pensada
+        // para esto ("úsalo para logos", ver apifyService.ts) y es lo que ya usa el
+        // resto del pipeline para fotos reales.
+        let logoUrl: string | null = null;
+        try {
+          [logoUrl] = await findRealImageUrls(item.logoQuery, 1);
+        } catch {
+          logoUrl = null;
+        }
+
+        if (logoUrl) {
+          console.log(`[${item.id}] descargando logo (Google Images)...`);
+          await downloadImageFromUrlWithRetry(logoUrl, logoAbsPath);
         } else {
-          console.log(`[${item.id}] sin resultados, generando logo con kie.ai...`);
-          await generateImage(
-            `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
-            logoAbsPath,
-            { aspectRatio: "1:1" },
-          );
+          const wikimediaUrls = await findWikimediaImageUrls(item.logoQuery, 1);
+          if (wikimediaUrls.length > 0) {
+            console.log(`[${item.id}] sin resultados en Google Images, descargando logo de Wikimedia...`);
+            await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
+          } else {
+            console.log(`[${item.id}] sin resultados, generando logo con kie.ai...`);
+            await generateImage(
+              `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
+              logoAbsPath,
+              { aspectRatio: "1:1" },
+            );
+          }
         }
       }
     }
