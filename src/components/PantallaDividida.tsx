@@ -114,13 +114,10 @@ const Caption: React.FC<{ text: string; localFrame: number; fps: number; variant
   }
 
   return (
-    <div
-      className="absolute inset-x-0 top-1/2 flex justify-center px-10"
-      style={{ opacity: entrance, transform: `translateY(-50%)` }}
-    >
+    <div className="absolute inset-x-0 flex justify-center px-10" style={{ top: "64%", opacity: entrance }}>
       <p
         className="text-center text-white"
-        style={{ fontFamily, fontWeight: 800, fontSize: 54, lineHeight: 1.2, textShadow: "0 2px 18px rgba(0,0,0,0.65)" }}
+        style={{ fontFamily, fontWeight: 800, fontSize: 64, lineHeight: 1.2, textShadow: "0 2px 18px rgba(0,0,0,0.65)" }}
       >
         {text}
       </p>
@@ -164,11 +161,13 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
       {active && isSplit && (
         <div className="absolute inset-x-0 top-0 overflow-hidden" style={{ height: "50%" }}>
           <SceneIllustration scene={active.scene} localFrame={localFrame} fps={fps} />
-          <Caption text={active.scene.text} localFrame={localFrame} fps={fps} variant="bar" />
+          <Caption text={active.scene.displayText} localFrame={localFrame} fps={fps} variant="bar" />
         </div>
       )}
 
-      {active && !isSplit && <Caption text={active.scene.text} localFrame={localFrame} fps={fps} variant="overlay" />}
+      {active && !isSplit && (
+        <Caption text={active.scene.displayText} localFrame={localFrame} fps={fps} variant="overlay" />
+      )}
 
       <Sequence durationInFrames={actTwoStartFrame} layout="none">
         <Audio

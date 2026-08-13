@@ -21,7 +21,8 @@
           "path": "assets/pantalla-dividida/images/s1-local1.png",
           "durationInSeconds": 2.3217284999999936
         }
-      ]
+      ],
+      "displayText": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado."
     },
     {
       "id": "s2",
@@ -39,7 +40,8 @@
           "path": "assets/pantalla-dividida/images/s2-local1.png",
           "durationInSeconds": 1.6392814999999992
         }
-      ]
+      ],
+      "displayText": "Lo que quieren las redes sociales es acción masiva."
     },
     {
       "id": "s3",
@@ -57,7 +59,8 @@
           "path": "assets/pantalla-dividida/images/s3-local1.png",
           "durationInSeconds": 1.9243544999999997
         }
-      ]
+      ],
+      "displayText": "No les importa la perfección, les importa la constancia."
     },
     {
       "id": "s4",
@@ -75,7 +78,8 @@
           "path": "assets/pantalla-dividida/images/s4-local1.png",
           "durationInSeconds": 2.4700000000000024
         }
-      ]
+      ],
+      "displayText": "Es como si fueras al gym una semana y esperaras tener el cuerpo de tus sueños."
     },
     {
       "id": "s5",
@@ -89,7 +93,8 @@
           "path": "assets/pantalla-dividida/images/s5-local0.png",
           "durationInSeconds": 1.974250000000012
         }
-      ]
+      ],
+      "displayText": "Así no funciona esto."
     },
     {
       "id": "s6",
@@ -107,7 +112,8 @@
           "path": "assets/pantalla-dividida/images/s6-local1.png",
           "durationInSeconds": 1.7962810000000076
         }
-      ]
+      ],
+      "displayText": "No es difícil, pero ¿quién te dijo que sería fácil?"
     },
     {
       "id": "s7",
@@ -125,7 +131,8 @@
           "path": "assets/pantalla-dividida/images/s7-local1.png",
           "durationInSeconds": 1.529999999999994
         }
-      ]
+      ],
+      "displayText": "La clave está en la acción constante."
     },
     {
       "id": "s8",
@@ -134,7 +141,8 @@
       "startSeconds": 25.397541000000007,
       "durationInSeconds": 4.458458999999994,
       "matched": true,
-      "images": []
+      "images": [],
+      "displayText": "\"CREADOR\""
     }
   ],
   "sfx": {

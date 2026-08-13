@@ -50,7 +50,8 @@
     {
       "id": "s8",
       "text": "Comenta la palabra \"CREADOR\" si estás dispuesto a cambiar todo lo que has venido haciendo.",
-      "act": "closing"
+      "act": "closing",
+      "displayText": "\"CREADOR\""
     }
   ]
 }

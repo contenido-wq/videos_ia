@@ -12,6 +12,7 @@
       "startSeconds": 0,
       "durationInSeconds": 5,
       "matched": true,
+      "displayText": "Había una vez un rey que buscaba sabiduría.",
       "images": [
         { "path": "assets/pantalla-dividida-demo/images/s1-a.png", "durationInSeconds": 2.5 },
         { "path": "assets/pantalla-dividida-demo/images/s1-b.png", "durationInSeconds": 2.5 }
@@ -24,6 +25,7 @@
       "startSeconds": 5,
       "durationInSeconds": 2,
       "matched": true,
+      "displayText": "Un día, un mendigo tocó su puerta.",
       "images": [{ "path": "assets/pantalla-dividida-demo/images/s2-a.png", "durationInSeconds": 2 }]
     },
     {
@@ -33,6 +35,7 @@
       "startSeconds": 7,
       "durationInSeconds": 2,
       "matched": true,
+      "displayText": "\"COMPARTE\"",
       "images": []
     }
   ],

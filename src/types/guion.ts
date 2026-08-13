@@ -123,6 +123,10 @@ export interface PantallaDivididaScene {
   /** Solo aplica a act "split". Imágenes ya generadas a mano (ChatGPT), en orden.
    * Se ciclan cada MAX_CUT_SECONDS dentro de la duración real de la escena. */
   localImagePaths?: string[];
+  /** Texto que se muestra en pantalla, si difiere del texto real matcheado
+   * contra la transcripción (ej. mostrar solo la palabra clave en vez de la
+   * frase completa). Si no está, se muestra `text` tal cual. */
+  displayText?: string;
 }
 
 export interface PantallaDivididaGuion {
@@ -153,6 +157,8 @@ export interface RenderedPantallaDivididaScene {
   matched: boolean;
   /** Vacío en escenas "closing". */
   images: SceneImage[];
+  /** Texto a mostrar en pantalla; ya resuelto a `text` si el guion no definía uno distinto. */
+  displayText: string;
 }
 
 export interface RenderedPantallaDivididaGuion {

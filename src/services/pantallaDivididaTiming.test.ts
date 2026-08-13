@@ -11,6 +11,7 @@ function scene(overrides: Partial<RenderedPantallaDivididaScene>): RenderedPanta
     durationInSeconds: 0,
     matched: true,
     images: [],
+    displayText: "",
     ...overrides,
   };
 }

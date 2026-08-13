@@ -633,6 +633,7 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
       durationInSeconds: sceneDuration,
       matched,
       images,
+      displayText: scene.displayText ?? scene.text,
     });
   }
 
