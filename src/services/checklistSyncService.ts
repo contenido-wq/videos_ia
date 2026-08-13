@@ -1,4 +1,4 @@
-import type { ChecklistItem } from "../types/guion";
+import type { ChecklistItem, PantallaDivididaScene } from "../types/guion";
 
 export interface TranscribedWord {
   text: string;
@@ -16,6 +16,13 @@ export interface MatchedItem {
   matched: boolean;
 }
 
+export interface MatchedScene {
+  scene: PantallaDivididaScene;
+  startSeconds: number;
+  durationInSeconds: number;
+  matched: boolean;
+}
+
 function normalize(text: string): string {
   return text
     .normalize("NFD")
@@ -24,13 +31,13 @@ function normalize(text: string): string {
     .replace(/[^a-z0-9]/g, "");
 }
 
-function findFirstMatch(item: ChecklistItem, words: TranscribedWord[], normalizedWords: string[]): number | null {
-  const labelWords = item.label.split(/\s+/).filter(Boolean).map(normalize);
-  if (labelWords.length === 0) return null;
+function findFirstMatchForText(text: string, words: TranscribedWord[], normalizedWords: string[]): number | null {
+  const targetWords = text.split(/\s+/).filter(Boolean).map(normalize);
+  if (targetWords.length === 0) return null;
 
-  const target = labelWords.join("");
-  for (let i = 0; i <= normalizedWords.length - labelWords.length; i++) {
-    const windowText = normalizedWords.slice(i, i + labelWords.length).join("");
+  const target = targetWords.join("");
+  for (let i = 0; i <= normalizedWords.length - targetWords.length; i++) {
+    const windowText = normalizedWords.slice(i, i + targetWords.length).join("");
     if (windowText === target) {
       return words[i].start;
     }
@@ -39,22 +46,16 @@ function findFirstMatch(item: ChecklistItem, words: TranscribedWord[], normalize
 }
 
 /**
- * Por cada item busca su primera mención en la transcripción. Si el match sale
- * antes que el del item anterior aceptado (falso positivo / fuera de orden),
- * se descarta. A los items sin match aceptado se les asigna un tiempo estimado,
- * interpolado entre el timestamp aceptado anterior y el siguiente (o el final
- * del video si no hay uno siguiente) — así el resultado nunca falla y los
- * timestamps finales siempre quedan en orden no decreciente.
+ * Dada una lista de candidatos (uno por item/escena, en el orden en que deben aparecer),
+ * descarta los que salen antes que el candidato aceptado anterior (falso positivo / fuera
+ * de orden) y a los sin match aceptado les asigna un tiempo estimado, interpolado entre el
+ * aceptado anterior y el siguiente (o el final del video si no hay uno siguiente) — el
+ * resultado nunca falla y los timestamps finales siempre quedan en orden no decreciente.
  */
-export function matchItemTimestamps(
-  words: TranscribedWord[],
-  items: ChecklistItem[],
+function resolveTimestamps(
+  rawMatches: (number | null)[],
   totalDurationSeconds: number,
-): MatchedItem[] {
-  const normalizedWords = words.map((w) => normalize(w.text));
-
-  const rawMatches = items.map((item) => findFirstMatch(item, words, normalizedWords));
-
+): { startSeconds: number; matched: boolean }[] {
   const accepted: (number | null)[] = [];
   let lastAccepted = -Infinity;
   for (const candidate of rawMatches) {
@@ -86,9 +87,47 @@ export function matchItemTimestamps(
     i = j;
   }
 
+  return resolved.map((startSeconds, idx) => ({ startSeconds, matched: accepted[idx] !== null }));
+}
+
+export function matchItemTimestamps(
+  words: TranscribedWord[],
+  items: ChecklistItem[],
+  totalDurationSeconds: number,
+): MatchedItem[] {
+  const normalizedWords = words.map((w) => normalize(w.text));
+  const rawMatches = items.map((item) => findFirstMatchForText(item.label, words, normalizedWords));
+  const results = resolveTimestamps(rawMatches, totalDurationSeconds);
+
   return items.map((item, idx) => ({
     item,
-    startSeconds: resolved[idx],
-    matched: accepted[idx] !== null,
+    startSeconds: results[idx].startSeconds,
+    matched: results[idx].matched,
   }));
+}
+
+/**
+ * Igual que matchItemTimestamps, pero matcheando el texto completo de cada escena (no un
+ * label corto) y devolviendo también la duración de cada escena: el tiempo hasta que
+ * arranca la siguiente (o hasta el final del video para la última).
+ */
+export function matchSceneTimestamps(
+  words: TranscribedWord[],
+  scenes: PantallaDivididaScene[],
+  totalDurationSeconds: number,
+): MatchedScene[] {
+  const normalizedWords = words.map((w) => normalize(w.text));
+  const rawMatches = scenes.map((scene) => findFirstMatchForText(scene.text, words, normalizedWords));
+  const results = resolveTimestamps(rawMatches, totalDurationSeconds);
+
+  return scenes.map((scene, idx) => {
+    const startSeconds = results[idx].startSeconds;
+    const nextStart = idx + 1 < results.length ? results[idx + 1].startSeconds : totalDurationSeconds;
+    return {
+      scene,
+      startSeconds,
+      durationInSeconds: Math.max(nextStart - startSeconds, 0),
+      matched: results[idx].matched,
+    };
+  });
 }

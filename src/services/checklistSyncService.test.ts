@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { matchItemTimestamps, type TranscribedWord } from "./checklistSyncService";
-import type { ChecklistItem } from "../types/guion";
+import { matchItemTimestamps, matchSceneTimestamps, type TranscribedWord } from "./checklistSyncService";
+import type { ChecklistItem, PantallaDivididaScene } from "../types/guion";
 
 function w(text: string, start: number, end: number): TranscribedWord {
   return { text, start, end };
@@ -93,5 +93,63 @@ describe("matchItemTimestamps", () => {
       expect(result[i].startSeconds).toBeGreaterThanOrEqual(result[i - 1].startSeconds);
     }
     expect(result[1]).toEqual({ item: items[1], startSeconds: 8, matched: true });
+  });
+});
+
+describe("matchSceneTimestamps", () => {
+  it("encuentra una escena y calcula su duración hasta que arranca la siguiente", () => {
+    const words = [w("Había", 0, 0.3), w("una", 0.3, 0.5), w("vez", 0.5, 0.8), w("un", 5, 5.2), w("rey", 5.2, 5.6)];
+    const scenes: PantallaDivididaScene[] = [
+      { id: "s1", text: "Había una vez", act: "split" },
+      { id: "s2", text: "un rey", act: "split" },
+    ];
+
+    const result = matchSceneTimestamps(words, scenes, 10);
+
+    expect(result[0]).toEqual({ scene: scenes[0], startSeconds: 0, durationInSeconds: 5, matched: true });
+    expect(result[1]).toEqual({ scene: scenes[1], startSeconds: 5, durationInSeconds: 5, matched: true });
+  });
+
+  it("la última escena dura hasta el final del video", () => {
+    const words = [w("Fin", 8, 8.5)];
+    const scenes: PantallaDivididaScene[] = [{ id: "s1", text: "Fin", act: "closing" }];
+
+    const result = matchSceneTimestamps(words, scenes, 12);
+
+    expect(result[0]).toEqual({ scene: scenes[0], startSeconds: 8, durationInSeconds: 4, matched: true });
+  });
+
+  it("si no encuentra el texto de una escena, le asigna tiempo estimado sin fallar", () => {
+    const words = [w("hola", 0, 0.3)];
+    const scenes: PantallaDivididaScene[] = [{ id: "s1", text: "texto que no está en la transcripción", act: "split" }];
+
+    const result = matchSceneTimestamps(words, scenes, 20);
+
+    expect(result[0].matched).toBe(false);
+    expect(result[0].durationInSeconds).toBeGreaterThan(0);
+    expect(result[0].startSeconds).toBeLessThanOrEqual(20);
+  });
+
+  it("funciona igual para escenas de cierre (act closing)", () => {
+    const words = [w("moraleja", 9, 9.6)];
+    const scenes: PantallaDivididaScene[] = [{ id: "s1", text: "moraleja", act: "closing" }];
+
+    const result = matchSceneTimestamps(words, scenes, 10);
+
+    expect(result[0]).toEqual({ scene: scenes[0], startSeconds: 9, durationInSeconds: 1, matched: true });
+  });
+
+  it("descarta un match fuera de orden y re-estima esa escena", () => {
+    const words = [w("Segunda", 0, 0.5), w("luego", 0.5, 0.8), w("Primera", 5, 5.5)];
+    const scenes: PantallaDivididaScene[] = [
+      { id: "s1", text: "Primera", act: "split" },
+      { id: "s2", text: "Segunda", act: "split" },
+    ];
+
+    const result = matchSceneTimestamps(words, scenes, 10);
+
+    expect(result[0]).toEqual({ scene: scenes[0], startSeconds: 5, durationInSeconds: expect.any(Number), matched: true });
+    expect(result[1].matched).toBe(false);
+    expect(result[1].startSeconds).toBeGreaterThanOrEqual(5);
   });
 });
