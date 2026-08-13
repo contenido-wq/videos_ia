@@ -1,0 +1,39 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "pantalla-dividida-demo",
+  "topic": "Demo de pantalla dividida (fixture de prueba, sin audio real)",
+  "videoPath": "assets/pantalla-dividida-demo/video/demo.mp4",
+  "durationInSeconds": 9,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Había una vez un rey que buscaba sabiduría.",
+      "act": "split",
+      "startSeconds": 0,
+      "durationInSeconds": 5,
+      "matched": true,
+      "images": [
+        { "path": "assets/pantalla-dividida-demo/images/s1-a.png", "durationInSeconds": 2.5 },
+        { "path": "assets/pantalla-dividida-demo/images/s1-b.png", "durationInSeconds": 2.5 }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Un día, un mendigo tocó su puerta.",
+      "act": "split",
+      "startSeconds": 5,
+      "durationInSeconds": 2,
+      "matched": true,
+      "images": [{ "path": "assets/pantalla-dividida-demo/images/s2-a.png", "durationInSeconds": 2 }]
+    },
+    {
+      "id": "s3",
+      "text": "La verdadera riqueza no está en lo que tienes, sino en lo que compartes.",
+      "act": "closing",
+      "startSeconds": 7,
+      "durationInSeconds": 2,
+      "matched": true,
+      "images": []
+    }
+  ]
+}

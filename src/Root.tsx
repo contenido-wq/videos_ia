@@ -2,6 +2,7 @@ import "./index.css";
 import { MyComposition } from "./Composition";
 import { DocumentalComposition } from "./DocumentalComposition";
 import { SocialChecklistComposition } from "./SocialChecklistComposition";
+import { PantallaDivididaComposition } from "./PantallaDivididaComposition";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ export const RemotionRoot: React.FC = () => {
       <DocumentalComposition id="MitosClaudeNegocio" slug="mitos-claude-negocio" />
       <SocialChecklistComposition id="CincoHerramientasIA" slug="5-herramientas-ia" />
       <SocialChecklistComposition id="CincoHerramientasRanking" slug="5-herramientas-ranking" />
+      <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
     </>
   );
 };
