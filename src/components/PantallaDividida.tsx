@@ -20,6 +20,10 @@ const ENTRANCE_FRAMES = 6;
 const CUT_TRANSITION_FRAMES = 6;
 // Zoom sutil y continuo sobre el presentador durante todo el cierre.
 const CLOSING_ZOOM_MAX_SCALE = 1.06;
+// Música de fondo: nunca arranca ni corta seco.
+const MUSIC_VOLUME = 0.15;
+const MUSIC_FADE_IN_FRAMES = 20;
+const MUSIC_FADE_OUT_FRAMES = 45;
 
 function findActiveScene(
   scenes: RenderedPantallaDivididaScene[],
@@ -127,7 +131,7 @@ const Caption: React.FC<{ text: string; localFrame: number; fps: number; variant
 
 export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaDivididaGuion | null }> = ({ guion }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
 
   if (!guion) return null;
 
@@ -169,11 +173,17 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
         <Caption text={active.scene.displayText} localFrame={localFrame} fps={fps} variant="overlay" />
       )}
 
-      <Sequence durationInFrames={actTwoStartFrame} layout="none">
+      <Sequence durationInFrames={durationInFrames} layout="none">
         <Audio
-          src={staticFile(guion.sfx.tensionBedPath)}
-          loop
-          volume={(f) => interpolate(f, [0, actTwoStartFrame], [0.08, 0.22], { extrapolateRight: "clamp" })}
+          src={staticFile(guion.sfx.backgroundMusicPath)}
+          volume={(f) =>
+            Math.min(
+              interpolate(f, [0, MUSIC_FADE_IN_FRAMES], [0, MUSIC_VOLUME], { extrapolateRight: "clamp" }),
+              interpolate(f, [durationInFrames - MUSIC_FADE_OUT_FRAMES, durationInFrames], [MUSIC_VOLUME, 0], {
+                extrapolateLeft: "clamp",
+              }),
+            )
+          }
         />
       </Sequence>
 
