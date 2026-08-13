@@ -138,10 +138,13 @@ export interface PantallaDivididaGuion {
   /** Igual semántica que en SocialChecklistGuion: corta cualquier tramo de otro hablante. */
   removeOtherSpeakers?: boolean;
   scenes: PantallaDivididaScene[];
-  /** Prompts para las 3 capas de sonido cinematográfico, generadas una vez por
-   * video. Todos opcionales: si se omite alguno, se usa un prompt por defecto. */
+  /** Ruta a un archivo de música de fondo ya elegido y con licencia
+   * verificada por el usuario, ej. "content/musica/motivation-paulyudin.mp3".
+   * Se reproduce desde el segundo 0, cortado a la duración total del video. */
+  backgroundMusicPath: string;
+  /** Prompts para whoosh/sting, generados una vez por video. Ambos opcionales:
+   * si se omite alguno, se usa un prompt por defecto. */
   soundDesign?: {
-    tensionBedPrompt?: string;
     whooshPrompt?: string;
     stingPrompt?: string;
   };
@@ -169,7 +172,7 @@ export interface RenderedPantallaDivididaGuion {
   durationInSeconds: number;
   scenes: RenderedPantallaDivididaScene[];
   sfx: {
-    tensionBedPath: string;
+    backgroundMusicPath: string;
     whooshPath: string;
     whooshDurationInSeconds: number;
     stingPath: string;
