@@ -134,6 +134,13 @@ export interface PantallaDivididaGuion {
   /** Igual semántica que en SocialChecklistGuion: corta cualquier tramo de otro hablante. */
   removeOtherSpeakers?: boolean;
   scenes: PantallaDivididaScene[];
+  /** Prompts para las 3 capas de sonido cinematográfico, generadas una vez por
+   * video. Todos opcionales: si se omite alguno, se usa un prompt por defecto. */
+  soundDesign?: {
+    tensionBedPrompt?: string;
+    whooshPrompt?: string;
+    stingPrompt?: string;
+  };
 }
 
 export interface RenderedPantallaDivididaScene {
@@ -155,4 +162,11 @@ export interface RenderedPantallaDivididaGuion {
   videoPath: string;
   durationInSeconds: number;
   scenes: RenderedPantallaDivididaScene[];
+  sfx: {
+    tensionBedPath: string;
+    whooshPath: string;
+    whooshDurationInSeconds: number;
+    stingPath: string;
+    stingDurationInSeconds: number;
+  };
 }
