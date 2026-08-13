@@ -3,14 +3,14 @@
   "slug": "5-herramientas-ranking",
   "topic": "Ranking de 5 herramientas de IA",
   "videoPath": "assets/5-herramientas-ranking/video/trimmed.mov",
-  "durationInSeconds": 168.634,
+  "durationInSeconds": 134.722,
   "listTitle": "5 HERRAMIENTAS DE IA QUE USTED VA A NECESITAR PARA NO SER UN DINOSAURIO",
   "items": [
     {
       "id": "5",
       "label": "ChatGPT",
       "logoQuery": "ChatGPT logo",
-      "startSeconds": 9.107541999999997,
+      "startSeconds": 6.993958999999997,
       "matched": true,
       "logoPath": "assets/5-herramientas-ranking/images/item-5.png"
     },
@@ -18,7 +18,7 @@
       "id": "4",
       "label": "Gamma",
       "logoQuery": "Gamma app logo",
-      "startSeconds": 25.751978999999977,
+      "startSeconds": 23.63839599999998,
       "matched": true,
       "logoPath": "assets/5-herramientas-ranking/images/item-4.png"
     },
@@ -26,7 +26,7 @@
       "id": "3",
       "label": "Notebook LM",
       "logoQuery": "Google NotebookLM logo",
-      "startSeconds": 51.41803900000012,
+      "startSeconds": 43.573040000000084,
       "matched": true,
       "logoPath": "assets/5-herramientas-ranking/images/item-3.png"
     },
@@ -34,7 +34,7 @@
       "id": "2",
       "label": "Claude Code",
       "logoQuery": "Claude Anthropic AI logo",
-      "startSeconds": 70.68052850000021,
+      "startSeconds": 61.630134000000155,
       "matched": false,
       "logoPath": "assets/5-herramientas-ranking/images/item-2.png"
     },
@@ -42,7 +42,7 @@
       "id": "1",
       "label": "AiVi",
       "logoQuery": "AIVI logo",
-      "startSeconds": 89.9430180000003,
+      "startSeconds": 79.68722800000023,
       "matched": true,
       "logoPath": "assets/5-herramientas-ranking/images/item-1.png"
     }

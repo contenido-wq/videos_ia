@@ -69,6 +69,8 @@ IMPORTANTE — NO marques como candidato:
 
 CUIDADO CON LOS LÍMITES DEL CORTE en un "retake": si la persona corta una palabra a medias (ej. "in--") y esa palabra cortada es la continuación de unas palabras iniciales de la frase (ej. "Estas son las cinco in--"), y el segundo intento limpio que sigue vuelve a decir esas mismas palabras iniciales completas, el candidato tiene que incluir TODA la frase repetida desde su inicio (startIndex debe apuntar a la primera de esas palabras iniciales, no solo a la palabra cortada) — si no, el video final queda con esas palabras iniciales dichas dos veces seguidas ("Estas son las cinco... estas son las cinco herramientas...").
 
+CUIDADO CON NO CORTAR LA ÚNICA VERSIÓN DISPONIBLE de una línea: cuando hay varios intentos seguidos de la misma frase y NINGUNO de ellos queda perfectamente limpio (ej. el último intento todavía tiene un tartamudeo menor, como "Puesto nu-puesto número tres, Notebook LM."), marcá como retake SOLO los intentos anteriores a ese — nunca marques también el último intento disponible, aunque tenga una imperfección menor, salvo que exista un intento posterior más limpio. Es preferible dejar un tartamudeo leve en el video final a borrar por completo la única vez que se menciona algo importante (ej. el nombre de una herramienta).
+
 Para cada candidato devolvé el rango de ÍNDICES de palabra (no segundos) que hay que cortar — startIndex y endIndex son inclusivos y se refieren a la lista indexada de arriba.`;
 }
 

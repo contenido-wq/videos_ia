@@ -1,0 +1,324 @@
+[
+  {
+    "start": 0.46,
+    "end": 20.84,
+    "quote": "Listo. Estas son las cinco herramientas de inteligencia artificial que usted va a necesitar sí o sí para no ser un dinosaurio. ¿Sí decimos dinosaurio? Sí. Va. Si no ves que lo otro decía en este 2026, pues ya vamos a mitad de año. Va, listo.",
+    "type": "aside",
+    "reason": "Primer intento más consulta fuera de cámara ('¿Sí decimos dinosaurio?', 'Va, listo') antes del intento limpio"
+  },
+  {
+    "start": 21.76,
+    "end": 22.64,
+    "quote": "Estas son las cinco in--",
+    "type": "retake",
+    "reason": "Intento cortado 'Estas son las cinco in--' repetido completo después"
+  },
+  {
+    "start": 28.76,
+    "end": 29.36,
+    "quote": "Pa no ser.",
+    "type": "retake",
+    "reason": "Repetición fallida 'Pa no ser.'"
+  },
+  {
+    "start": 29.9,
+    "end": 31.78,
+    "quote": "Bueno, puesto número cinco, ChatGPT.",
+    "type": "retake",
+    "reason": "Primer intento de la línea del puesto cinco, repetida mejor después"
+  },
+  {
+    "start": 34.86,
+    "end": 40.18,
+    "quote": "Ocupa el quinto lugar no porque sea malo, sino porque hoy apenas es el punto de partida.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 46.12,
+    "end": 48.86,
+    "quote": "Es bueno para dar ideas y para una ayuda rápida.",
+    "type": "retake",
+    "reason": "Primer intento de 'Es bueno para dar ideas', repetido después"
+  },
+  {
+    "start": 53.36,
+    "end": 59.46,
+    "quote": "Pero el trabajo real tod-- pero en el trabajo real todavía toca copiar, pegar y adaptar todo a mano.",
+    "type": "retake",
+    "reason": "Intento con corte 'tod--' y versión más completa después"
+  },
+  {
+    "start": 64.94,
+    "end": 66.94,
+    "quote": "Listo. Puesto número cuatro, Gamma.",
+    "type": "retake",
+    "reason": "Primer intento del puesto cuatro, repetido después"
+  },
+  {
+    "start": 69.58,
+    "end": 82.94,
+    "quote": "Si todavía- Espera que va a pasar Lina. Hágale, Lina. Lina, muchas gracias. De nada. Puesto número cuatro, Gamma. Eso ya lo dije.",
+    "type": "aside",
+    "reason": "Interrupción y coordinación con Lina fuera de cámara más comentario 'Eso ya lo dije'"
+  },
+  {
+    "start": 83.82,
+    "end": 88,
+    "quote": "Si todavía haces presentaciones en PowerPoint, esto te va a sorprender.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión ampliada"
+  },
+  {
+    "start": 93.62,
+    "end": 98.26,
+    "quote": "Solamente necesitas escribirle un prompt y Gamma crea una presentación completa.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 105.94,
+    "end": 111.56,
+    "quote": "Eh, lo que antes te tomaba hora, horas, ahora lo puedes hacer en cuestión de minutos.",
+    "type": "retake",
+    "reason": "Intento con muletilla y tartamudeo 'hora, horas', repetido después"
+  },
+  {
+    "start": 111.62,
+    "end": 114.35,
+    "quote": "Lo que antes te tomaba muchísimas horas, eh, lo que antes te to--",
+    "type": "retake",
+    "reason": "Intento cortado 'lo que antes te to--', repetido completo"
+  },
+  {
+    "start": 120.38,
+    "end": 122.92,
+    "quote": "Puesto número tres, Notebook LM.",
+    "type": "retake",
+    "reason": "Primer intento del puesto tres, sustituido (aunque el siguiente tenga tartamudeo leve)"
+  },
+  {
+    "start": 127.08,
+    "end": 129.539,
+    "quote": "Esta es para quienes necesitas investig-- investig--",
+    "type": "retake",
+    "reason": "Intento con cortes 'investig-- investig--', repetido limpio"
+  },
+  {
+    "start": 135.36,
+    "end": 138.42,
+    "quote": "Que buscan información actualizada. Ah, no, espere.",
+    "type": "retake",
+    "reason": "Frase abandonada con aside 'Ah, no, espere'"
+  },
+  {
+    "start": 138.44,
+    "end": 143.359,
+    "quote": "Busca información actualizada, la resume, cita fuentes y te entrega respuestas claras.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 149.3,
+    "end": 154.54,
+    "quote": "En lugar de abrir diez pestañas, encuentras, encuentras prácticamente todo en una sola búsqueda.",
+    "type": "retake",
+    "reason": "Intento con tartamudeo 'encuentras, encuentras', repetido después"
+  },
+  {
+    "start": 160.14,
+    "end": 162.019,
+    "quote": "Listo. Puesto número dos, CloudCode.",
+    "type": "retake",
+    "reason": "Primer intento del puesto dos, repetido después"
+  },
+  {
+    "start": 164.52,
+    "end": 167.78,
+    "quote": "Esto la verdad que no es un chat para preguntar bobadas.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 171.64,
+    "end": 176.959,
+    "quote": "Es una herramienta de ingeniería para meterse en los archivos, investigar por usted.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 182.72,
+    "end": 187.06,
+    "quote": "Necesitas... Espere, que organiz-- le doy en este.",
+    "type": "aside",
+    "reason": "Frase abandonada e instrucción fuera de cámara 'Espere, que organiz-- le doy en este'"
+  },
+  {
+    "start": 187.09,
+    "end": 198.3,
+    "quote": "¿Necesita arreglar un error en su página o montar una función nueva? Usted solo tiene que decir, usted solo le tiene que decir qué quiere y CloudCode analiza todo el proyecto y lo crea.",
+    "type": "retake",
+    "reason": "Intento con autocorrección 'usted solo tiene que decir', rehecho en frases posteriores"
+  },
+  {
+    "start": 199.2,
+    "end": 201.64,
+    "quote": "Si necesitas arreglar un error en tu página...",
+    "type": "retake",
+    "reason": "Intento incompleto repetido después"
+  },
+  {
+    "start": 205.04,
+    "end": 206.34,
+    "quote": "O montar una función nueva...",
+    "type": "retake",
+    "reason": "Intento repetido después con 'incluso'"
+  },
+  {
+    "start": 208.6,
+    "end": 213.22,
+    "quote": "Solamente le tienes que decir qué quieres y CloudCode analiza todo y lo crea de una.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 218.94,
+    "end": 223.71,
+    "quote": "Okey. Y puesto número uno, AiVi. Y puesto número uno, y puesto número uno,",
+    "type": "retake",
+    "reason": "Muletilla 'Okey' e intento cortado del puesto uno, repetido"
+  },
+  {
+    "start": 224.92,
+    "end": 226.44,
+    "quote": "Y esta es mi favorita.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 228.44,
+    "end": 232.64,
+    "quote": "AiVi no es una, no solo es una inteligencia artificial.",
+    "type": "retake",
+    "reason": "Intento con autocorrección 'no es una, no solo es una'"
+  },
+  {
+    "start": 235,
+    "end": 237.46,
+    "quote": "Es un equipo completo de agentes trabajando para ti.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión ampliada"
+  },
+  {
+    "start": 241.54,
+    "end": 251.71,
+    "quote": "Investiga tendencias, crea guiones, genera estrategia. Muy largo. Investiga tendencia, crea g-- investiga guion, investiga guiones, crea ten- Investiga tendencias, crea guiones.",
+    "type": "retake",
+    "reason": "Intentos fallidos con aside 'Muy largo' y varios cortes, rehecho después"
+  },
+  {
+    "start": 257.88,
+    "end": 264.9,
+    "quote": "Eh, analiza resultados y diseña carruseles que realmente venden. ¿Qué era lo de resultados?",
+    "type": "retake",
+    "reason": "Muletilla y pregunta fuera de cámara '¿Qué era lo de resultados?'"
+  },
+  {
+    "start": 264.96,
+    "end": 268.32,
+    "quote": "Analiza resultados y diseña carruseles que realmente venden.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 268.67,
+    "end": 270.95,
+    "quote": "Analiza resultados y crea r--",
+    "type": "retake",
+    "reason": "Intento cortado 'crea r--', repetido después"
+  },
+  {
+    "start": 275.56,
+    "end": 280.46,
+    "quote": "En un, en un, en lugar de aprender a usar diez herramientas diferentes...",
+    "type": "retake",
+    "reason": "Intento con tartamudeo 'En un, en un', rehecho después"
+  },
+  {
+    "start": 281.2,
+    "end": 282.93,
+    "quote": "Lo que me gusta es que en lugar de, eh,",
+    "type": "retake",
+    "reason": "Intento cortado con muletilla, repetido completo"
+  },
+  {
+    "start": 286.64,
+    "end": 291.58,
+    "quote": "Aquí tienes trabajando, aquí las tienes trabajando juntas para hacer crecer tu negocio en redes.",
+    "type": "retake",
+    "reason": "Intento con autocorrección 'Aquí tienes trabajando, aquí las tienes', rehecho después"
+  },
+  {
+    "start": 292.08,
+    "end": 294.11,
+    "quote": "En esta herramienta tienes todas las inteligencias,",
+    "type": "retake",
+    "reason": "Intento incompleto repetido completo después"
+  },
+  {
+    "start": 299.8,
+    "end": 303.4,
+    "quote": "Síguenos si quieres a-aprender a dominar la inteligencia artificial.",
+    "type": "retake",
+    "reason": "Intento con tartamudeo 'a-aprender', repetido limpio"
+  },
+  {
+    "start": 307.42,
+    "end": 313.64,
+    "quote": "Comenta la palabra AiVi si quieres usar la herramienta de IA que te ayudará a crecer tu negocio en redes sociales.",
+    "type": "retake",
+    "reason": "Primer intento reemplazado por versión posterior"
+  },
+  {
+    "start": 319.16,
+    "end": 326.7,
+    "quote": "Toca el botón si quieres aprender a usar una herramienta para mejorar-- una herramienta de inteligencia artificial para mejorar tu presencia en redes.",
+    "type": "retake",
+    "reason": "Intento con corte 'mejorar--', rehecho después"
+  },
+  {
+    "start": 327.34,
+    "end": 331.05,
+    "quote": "Toca el botón de aba-- toca el botón de aquí abajo si quieres aprender a utilizar una herram--",
+    "type": "retake",
+    "reason": "Intentos cortados 'de aba--' y 'una herram--', rehecho después"
+  },
+  {
+    "start": 335.02,
+    "end": 336.68,
+    "quote": "que te va a ayudar a mejorar tu,",
+    "type": "retake",
+    "reason": "Intento incompleto (corregido manualmente: el candidato original del modelo se comía la versión completa 'que te va a ayudar a mejorar tu presencia en redes sociales.' que viene justo después)"
+  },
+  {
+    "start": 339.96,
+    "end": 340.44,
+    "quote": "Va a ser otra.",
+    "type": "aside",
+    "reason": "Indicación fuera de cámara (separado manualmente del corte anterior)"
+  },
+  {
+    "start": 346.08,
+    "end": 350.78,
+    "quote": "inscríbete en un, inscríbete en alguno de nuestros talleres que te van a funcionar y te van a...",
+    "type": "retake",
+    "reason": "Intento con tartamudeo 'en un, inscríbete' y frase abandonada"
+  },
+  {
+    "start": 352.4,
+    "end": 354.7,
+    "quote": "Inscríbete en alguno de nuestros talleres prácticos los--",
+    "type": "retake",
+    "reason": "Intento cortado 'los--', repetido completo después"
+  }
+]
