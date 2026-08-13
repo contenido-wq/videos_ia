@@ -452,19 +452,11 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
       // marcas conocidas pero no todas (ej. Gamma, AiVi no están) — para esas
       // cae a la búsqueda real de abajo.
       const simpleIcon = findSimpleIconSvg(item.label);
-      // Logo.dev: gratis (hasta 500K/mes) y hecho específicamente para logos
-      // (busca por nombre de marca, no por texto libre), pero requiere una key
-      // propia (LOGO_DEV_API_KEY) — findLogoDevUrl devuelve null y no rompe
-      // nada si no está configurada. Cubre ~50M empresas, más que simple-icons.
-      const logoDevUrl = simpleIcon ? null : await findLogoDevUrl(item.label);
 
       if (simpleIcon) {
         console.log(`[${item.id}] logo encontrado en simple-icons...`);
         fs.mkdirSync(path.dirname(logoAbsPath), { recursive: true });
         fs.writeFileSync(logoAbsPath, renderSimpleIconToPng(simpleIcon.svg, simpleIcon.hex));
-      } else if (logoDevUrl) {
-        console.log(`[${item.id}] logo encontrado en Logo.dev...`);
-        await downloadImageFromUrlWithRetry(logoDevUrl, logoAbsPath);
       } else {
         // Google Images (vía Apify) después: Wikimedia Commons es un repositorio de
         // medios libres, no un catálogo de logos de SaaS — para productos como
@@ -489,12 +481,28 @@ async function generateSocialChecklistAssets(guion: SocialChecklistGuion): Promi
             console.log(`[${item.id}] sin resultados en Google Images, descargando logo de Wikimedia...`);
             await downloadImageFromUrlWithRetry(wikimediaUrls[0], logoAbsPath);
           } else {
-            console.log(`[${item.id}] sin resultados, generando logo con kie.ai...`);
-            await generateImage(
-              `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
-              logoAbsPath,
-              { aspectRatio: "1:1" },
-            );
+            // Logo.dev al final, no como segunda opción: es gratis y hecho
+            // específicamente para logos, pero su endpoint de imagen por nombre
+            // NUNCA da error — si no encuentra la marca, devuelve una letra
+            // genérica en vez de la nada (comprobado en vivo: un nombre
+            // inventado dio 200 OK con una "J" sola, del mismo tamaño de
+            // archivo que un logo real — no hay forma de distinguirlos sin la
+            // Search API, que pide una key aparte que no tenemos). Por eso va
+            // acá, como una alternativa más antes de generar con IA — no como
+            // fuente temprana y confiable, para no arriesgar los casos que
+            // Google Images ya resuelve bien.
+            console.log(`[${item.id}] sin resultados en Wikimedia, probando Logo.dev...`);
+            const logoDevUrl = await findLogoDevUrl(item.label);
+            if (logoDevUrl) {
+              await downloadImageFromUrlWithRetry(logoDevUrl, logoAbsPath);
+            } else {
+              console.log(`[${item.id}] sin resultados, generando logo con kie.ai...`);
+              await generateImage(
+                `${item.logoQuery}, flat icon logo, centered, plain white background, no text`,
+                logoAbsPath,
+                { aspectRatio: "1:1" },
+              );
+            }
           }
         }
       }
