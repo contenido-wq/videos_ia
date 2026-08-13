@@ -399,6 +399,19 @@ async function prepareTrimmedVideo({
       fs.writeFileSync(retakeCandidatesPath, JSON.stringify(retakeCandidates, null, 2));
     }
     console.log(`  ${retakeCandidates.length} candidato(s) a retake/aside`);
+    // Sin terminal interactiva (ej. corrida desde una herramienta que no expone
+    // stdin) reviewRetakeCandidates se quedaría esperando input que nunca llega.
+    // En ese caso paramos acá con instrucciones claras en vez de colgar el proceso:
+    // los candidatos ya quedaron cacheados en retakeCandidatesPath para revisarlos
+    // aparte (a mano o por otro medio) y escribir las aprobaciones directamente en
+    // approvedRetakeRangesPath, formato CutRange[] ({ start, end }).
+    if (!process.stdin.isTTY) {
+      throw new Error(
+        `Hay ${retakeCandidates.length} candidato(s) a retake/aside pendientes de revisión en ${retakeCandidatesPath}, ` +
+          `pero no hay una terminal interactiva para revisarlos uno por uno. Revisalos y escribí las aprobaciones en ` +
+          `${approvedRetakeRangesPath} (array de { start, end }), o volvé a correr este comando en una terminal interactiva.`,
+      );
+    }
     approvedRetakeRanges = await reviewRetakeCandidates(retakeCandidates);
     console.log(`  ${approvedRetakeRanges.length} aprobado(s) para cortar`);
     fs.mkdirSync(path.dirname(approvedRetakeRangesPath), { recursive: true });
