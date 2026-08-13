@@ -136,5 +136,12 @@
       "matched": true,
       "images": []
     }
-  ]
+  ],
+  "sfx": {
+    "tensionBedPath": "assets/pantalla-dividida/sfx/tension-bed.mp3",
+    "whooshPath": "assets/pantalla-dividida/sfx/whoosh.mp3",
+    "whooshDurationInSeconds": 2.0375510204081633,
+    "stingPath": "assets/pantalla-dividida/sfx/sting.mp3",
+    "stingDurationInSeconds": 0.5224489795918368
+  }
 }

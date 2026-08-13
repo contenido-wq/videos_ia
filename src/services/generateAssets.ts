@@ -636,6 +636,45 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
     });
   }
 
+  const sfxDir = path.join(PUBLIC_DIR, "assets", guion.slug, "sfx");
+  fs.mkdirSync(sfxDir, { recursive: true });
+
+  const tensionBedPrompt =
+    guion.soundDesign?.tensionBedPrompt ??
+    "low ominous cinematic tension drone, suspenseful ambient pad, subtle rising dread, seamless loop, no melody, no percussion";
+  const whooshPrompt =
+    guion.soundDesign?.whooshPrompt ?? "quick cinematic whoosh transition sound effect, sharp and short, trailer style";
+  const stingPrompt =
+    guion.soundDesign?.stingPrompt ??
+    "dramatic cinematic impact hit, deep bass boom with a sharp metallic edge, trailer sting";
+
+  const tensionBedAbsPath = path.join(sfxDir, "tension-bed.mp3");
+  if (fs.existsSync(tensionBedAbsPath)) {
+    console.log("cama de tensión ya existe, se reutiliza");
+  } else {
+    console.log("generando cama de tensión...");
+    await generateSoundEffect(tensionBedPrompt, tensionBedAbsPath, 7);
+  }
+
+  const whooshAbsPath = path.join(sfxDir, "whoosh.mp3");
+  if (fs.existsSync(whooshAbsPath)) {
+    console.log("whoosh ya existe, se reutiliza");
+  } else {
+    console.log("generando whoosh...");
+    await generateSoundEffect(whooshPrompt, whooshAbsPath);
+  }
+
+  const stingAbsPath = path.join(sfxDir, "sting.mp3");
+  if (fs.existsSync(stingAbsPath)) {
+    console.log("sting ya existe, se reutiliza");
+  } else {
+    console.log("generando sting...");
+    await generateSoundEffect(stingPrompt, stingAbsPath);
+  }
+
+  const whooshDurationInSeconds = await getAudioDurationInSeconds(whooshAbsPath);
+  const stingDurationInSeconds = await getAudioDurationInSeconds(stingAbsPath);
+
   const rendered: RenderedPantallaDivididaGuion = {
     type: "pantalla-dividida",
     slug: guion.slug,
@@ -643,6 +682,13 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
     videoPath,
     durationInSeconds,
     scenes: renderedScenes,
+    sfx: {
+      tensionBedPath: toPublicRelPath(tensionBedAbsPath),
+      whooshPath: toPublicRelPath(whooshAbsPath),
+      whooshDurationInSeconds,
+      stingPath: toPublicRelPath(stingAbsPath),
+      stingDurationInSeconds,
+    },
   };
 
   const dataDir = path.join(PUBLIC_DIR, "data");
