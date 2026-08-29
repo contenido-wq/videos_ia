@@ -40,7 +40,7 @@ export interface GuionScene {
 
 export type VisualStyle = "neon" | "collage";
 
-export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida";
+export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida" | "youtube-noticias-avatar";
 
 export interface VoxGuion {
   type?: "vox";
@@ -75,7 +75,7 @@ export interface SocialChecklistGuion {
   removeOtherSpeakers?: boolean;
 }
 
-export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion;
+export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion | YoutubeNoticiasAvatarGuion;
 
 export interface SceneImage {
   path: string;
@@ -178,4 +178,58 @@ export interface RenderedPantallaDivididaGuion {
     stingPath: string;
     stingDurationInSeconds: number;
   };
+}
+
+export interface YoutubeNoticiasAvatarScene {
+  id: string;
+  /** Debe existir literalmente (substring normalizado) en la transcripción real del video. */
+  text: string;
+  /** Imágenes ya preparadas por el usuario, en orden. Se ciclan cada NEWS_AVATAR_CUT_SECONDS (4s)
+   * dentro de la duración real de la escena. */
+  localImagePaths: string[];
+}
+
+export interface YoutubeNoticiasAvatarGuion {
+  type: "youtube-noticias-avatar";
+  slug: string;
+  topic: string;
+  /** Ruta al video crudo del experto, ej. "content/raw/mi-noticia.mp4". */
+  rawVideoPath: string;
+  removeOtherSpeakers?: boolean;
+  scenes: YoutubeNoticiasAvatarScene[];
+  /** Default false. Se pregunta explícitamente en cada video, no va fijo. */
+  subscribeButton?: boolean;
+}
+
+export interface RenderedYoutubeNoticiasAvatarScene {
+  id: string;
+  text: string;
+  startSeconds: number;
+  durationInSeconds: number;
+  /** false = no se encontró el texto en la transcripción, se usó tiempo estimado. */
+  matched: boolean;
+  images: SceneImage[];
+}
+
+export interface CaptionWord {
+  text: string;
+  start: number;
+  end: number;
+}
+
+export interface CaptionChunk {
+  words: CaptionWord[];
+  startSeconds: number;
+  endSeconds: number;
+}
+
+export interface RenderedYoutubeNoticiasAvatarGuion {
+  type: "youtube-noticias-avatar";
+  slug: string;
+  topic: string;
+  videoPath: string;
+  durationInSeconds: number;
+  subscribeButton: boolean;
+  scenes: RenderedYoutubeNoticiasAvatarScene[];
+  captionChunks: CaptionChunk[];
 }

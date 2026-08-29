@@ -718,6 +718,11 @@ async function main() {
     return;
   }
 
+  if (guion.type === "youtube-noticias-avatar") {
+    console.log("youtube-noticias-avatar processing not yet implemented");
+    return;
+  }
+
   await generateVoxAssets(guion);
 }
 
