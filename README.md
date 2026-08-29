@@ -1,10 +1,11 @@
 # videos-ia — AIVI
 
-Proyecto [Remotion](https://www.remotion.dev) para generar videos con IA en 3
+Proyecto [Remotion](https://www.remotion.dev) para generar videos con IA en 4
 estilos: narración documental (**vox**), lista numerada con logos
-(**ranking**) y narrativa a dos pantallas (**pantalla dividida**).
+(**ranking**), narrativa a dos pantallas (**pantalla dividida**) y noticiero
+horizontal con experto (**youtube noticias avatar**).
 
-Si abrís este repo en [Claude Code](https://claude.com/claude-code), las 3
+Si abrís este repo en [Claude Code](https://claude.com/claude-code), las 4
 skills en `.claude/skills/` se activan solas — solo pedile en español el
 video que querés y Claude te va a guiar paso a paso. El resto de este README
 es para setear el proyecto la primera vez.
@@ -23,8 +24,8 @@ las variables que necesites según el estilo de video que vayas a hacer:
 
 | Variable | Para qué sirve | La necesitás si... |
 |---|---|---|
-| `ELEVENLABS_API_KEY` | Transcripción de audio y generación de voz | Siempre — la usan los 3 estilos |
-| `ANTHROPIC_API_KEY` | Detecta y corta automáticamente tomas fallidas/muletillas | `ranking` y `pantalla dividida` (video grabado por vos) |
+| `ELEVENLABS_API_KEY` | Transcripción de audio y generación de voz | Siempre — la usan los 4 estilos |
+| `ANTHROPIC_API_KEY` | Detecta y corta automáticamente tomas fallidas/muletillas | `ranking`, `pantalla dividida` y `youtube noticias avatar` (video grabado por vos) |
 | `KIE_AI_API_KEY` | Genera imágenes con IA como último recurso | `vox` con imágenes de IA/personaje, o `ranking` si no encuentra el logo en ninguna otra fuente |
 | `APIFY_API_TOKEN` + `APIFY_GOOGLE_IMAGES_TASK` | Busca fotos/logos reales | `vox` con fotos reales, o `ranking` en la cascada de búsqueda de logos |
 
@@ -32,7 +33,7 @@ Conseguí las claves en [elevenlabs.io](https://elevenlabs.io),
 [console.anthropic.com](https://console.anthropic.com), [kie.ai](https://kie.ai)
 y [apify.com](https://apify.com) respectivamente.
 
-## Los 3 estilos de video
+## Los 4 estilos de video
 
 - **`vox`** — narrado por una voz generada con IA, sin grabarte a cámara.
   Estilos visuales `neon` (fotorrealista, oscuro) o `collage` (recorte de
@@ -42,6 +43,11 @@ y [apify.com](https://apify.com) respectivamente.
 - **`pantalla dividida`** — te grabás contando una historia; arriba una
   ilustración en silueta que va cambiando con la narración, abajo vos
   hablando, y cierra a pantalla completa con la reflexión/CTA final.
+- **`youtube noticias avatar`** — te grabás como experto hablando de una
+  noticia; a la izquierda una ilustración de fondo va cambiando cada 4
+  segundos junto con lo que se dice, a la derecha vos en una franja
+  vertical, con subtítulos palabra por palabra. Horizontal (16:9), a
+  diferencia de los otros 3 estilos (verticales 9:16).
 
 El detalle completo de cada uno (qué necesitás antes de empezar, el flujo
 paso a paso, la estructura del guion) está en

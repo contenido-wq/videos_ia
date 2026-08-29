@@ -1,5 +1,8 @@
 import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { loadFont } from "@remotion/google-fonts/Poppins";
 import type { RenderedYoutubeNoticiasAvatarGuion, RenderedYoutubeNoticiasAvatarScene, CaptionChunk } from "../types/guion";
+
+const { fontFamily } = loadFont("normal", { weights: ["800"] });
 
 const CUT_TRANSITION_FRAMES = 6;
 
@@ -89,7 +92,7 @@ const WordHighlightCaption: React.FC<{ chunk: CaptionChunk; currentSeconds: numb
 
   return (
     <div className="absolute inset-x-0 bottom-16 flex justify-center px-10">
-      <p className="text-center uppercase" style={{ fontWeight: 800, fontSize: 56, lineHeight: 1.2 }}>
+      <p className="text-center uppercase" style={{ fontFamily, fontWeight: 800, fontSize: 56, lineHeight: 1.2 }}>
         {chunk.words.map((word, i) => (
           <span
             key={`${word.text}-${word.start}`}
@@ -136,7 +139,10 @@ export const YoutubeNoticiasAvatar: React.FC<{ slug: string; guion: RenderedYout
       </div>
 
       <div className="absolute inset-0 overflow-hidden" style={{ left: "62%" }}>
-        <OffthreadVideo src={staticFile(guion.videoPath)} className="absolute inset-0 h-full w-full object-cover" />
+        <OffthreadVideo
+          src={staticFile(guion.videoPath)}
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+        />
       </div>
     </AbsoluteFill>
   );
