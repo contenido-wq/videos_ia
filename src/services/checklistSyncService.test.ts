@@ -152,4 +152,13 @@ describe("matchSceneTimestamps", () => {
     expect(result[1].matched).toBe(false);
     expect(result[1].startSeconds).toBeGreaterThanOrEqual(5);
   });
+
+  it("funciona con cualquier forma de escena que tenga id y text (reuso genérico)", () => {
+    const words = [w("Terremoto", 0, 0.5), w("en", 0.5, 0.6), w("Chile", 0.6, 1.0)];
+    const scenes = [{ id: "s1", text: "Terremoto en Chile", localImagePaths: ["a.png"] }];
+
+    const result = matchSceneTimestamps(words, scenes, 10);
+
+    expect(result[0]).toEqual({ scene: scenes[0], startSeconds: 0, durationInSeconds: 10, matched: true });
+  });
 });

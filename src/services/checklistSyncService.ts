@@ -1,4 +1,4 @@
-import type { ChecklistItem, PantallaDivididaScene } from "../types/guion";
+import type { ChecklistItem } from "../types/guion";
 
 export interface TranscribedWord {
   text: string;
@@ -16,8 +16,8 @@ export interface MatchedItem {
   matched: boolean;
 }
 
-export interface MatchedScene {
-  scene: PantallaDivididaScene;
+export interface MatchedScene<T> {
+  scene: T;
   startSeconds: number;
   durationInSeconds: number;
   matched: boolean;
@@ -109,13 +109,14 @@ export function matchItemTimestamps(
 /**
  * Igual que matchItemTimestamps, pero matcheando el texto completo de cada escena (no un
  * label corto) y devolviendo también la duración de cada escena: el tiempo hasta que
- * arranca la siguiente (o hasta el final del video para la última).
+ * arranca la siguiente (o hasta el final del video para la última). Genérico en T para
+ * reusarse con cualquier tipo de escena que tenga `text` (pantalla-dividida, youtube-noticias-avatar).
  */
-export function matchSceneTimestamps(
+export function matchSceneTimestamps<T extends { text: string }>(
   words: TranscribedWord[],
-  scenes: PantallaDivididaScene[],
+  scenes: T[],
   totalDurationSeconds: number,
-): MatchedScene[] {
+): MatchedScene<T>[] {
   const normalizedWords = words.map((w) => normalize(w.text));
   const rawMatches = scenes.map((scene) => findFirstMatchForText(scene.text, words, normalizedWords));
   const results = resolveTimestamps(rawMatches, totalDurationSeconds);
