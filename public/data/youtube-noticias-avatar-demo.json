@@ -1,0 +1,56 @@
+{
+  "type": "youtube-noticias-avatar",
+  "slug": "youtube-noticias-avatar-demo",
+  "topic": "Demo de youtube-noticias-avatar (fixture de prueba, sin audio real)",
+  "videoPath": "assets/youtube-noticias-avatar-demo/video/demo.mp4",
+  "durationInSeconds": 9,
+  "subscribeButton": true,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Terremoto sacude la costa",
+      "startSeconds": 0,
+      "durationInSeconds": 6,
+      "matched": true,
+      "images": [
+        { "path": "assets/youtube-noticias-avatar-demo/images/s1-local0.png", "durationInSeconds": 3 },
+        { "path": "assets/youtube-noticias-avatar-demo/images/s1-local1.png", "durationInSeconds": 3 }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Autoridades piden calma",
+      "startSeconds": 6,
+      "durationInSeconds": 3,
+      "matched": true,
+      "images": [{ "path": "assets/youtube-noticias-avatar-demo/images/s2-local0.png", "durationInSeconds": 3 }]
+    }
+  ],
+  "captionChunks": [
+    {
+      "words": [
+        { "text": "TERREMOTO", "start": 0, "end": 0.6 },
+        { "text": "SACUDE", "start": 0.6, "end": 1.1 }
+      ],
+      "startSeconds": 0,
+      "endSeconds": 1.1
+    },
+    {
+      "words": [
+        { "text": "LA", "start": 1.1, "end": 1.3 },
+        { "text": "COSTA", "start": 1.3, "end": 1.9 }
+      ],
+      "startSeconds": 1.1,
+      "endSeconds": 1.9
+    },
+    {
+      "words": [
+        { "text": "AUTORIDADES", "start": 6, "end": 6.8 },
+        { "text": "PIDEN", "start": 6.8, "end": 7.2 },
+        { "text": "CALMA", "start": 7.2, "end": 7.8 }
+      ],
+      "startSeconds": 6,
+      "endSeconds": 7.8
+    }
+  ]
+}
