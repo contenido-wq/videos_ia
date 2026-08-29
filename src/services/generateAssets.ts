@@ -11,6 +11,7 @@ import { getVideoDurationInSeconds, extractAudioTrack } from "./ffmpegService";
 import { matchItemTimestamps, matchSceneTimestamps, type TranscribedWord, type DiarizedWord } from "./checklistSyncService";
 import { detectRetakeCandidates, type RetakeCandidate } from "./retakeDetectionService";
 import { reviewRetakeCandidates } from "./retakeReviewCli";
+import { buildCaptionChunks } from "./captionChunkService";
 import {
   detectSilenceRanges,
   detectFillerRanges,
@@ -33,6 +34,9 @@ import type {
   PantallaDivididaGuion,
   RenderedPantallaDivididaScene,
   RenderedPantallaDivididaGuion,
+  YoutubeNoticiasAvatarGuion,
+  RenderedYoutubeNoticiasAvatarScene,
+  RenderedYoutubeNoticiasAvatarGuion,
   GuionScene,
   RenderedGuion,
   RenderedScene,
@@ -44,6 +48,10 @@ const PUBLIC_DIR = path.join(process.cwd(), "public");
 // Ningún corte visual dura más de esto: si la narración es más larga,
 // se generan varias imágenes que se van cortando dentro de la misma escena.
 const MAX_CUT_SECONDS = 2.5;
+
+// Cadencia propia de youtube-noticias-avatar (no confundir con MAX_CUT_SECONDS,
+// que usan vox/pantalla-dividida): una imagen de fondo nueva cada 4 segundos.
+const NEWS_AVATAR_CUT_SECONDS = 4;
 
 // Para el personaje: en vez de cortes secuenciales, generamos N poses que se
 // van cross-fadeando en loop durante toda la escena (simula un micro-gesto).
@@ -699,6 +707,96 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
   );
 }
 
+async function generateYoutubeNoticiasAvatarAssets(guion: YoutubeNoticiasAvatarGuion): Promise<void> {
+  console.log(`Generando recursos para "${guion.topic}" (youtube-noticias-avatar, ${guion.scenes.length} escena(s))`);
+
+  const { words, videoPath, durationInSeconds } = await prepareTrimmedVideo({
+    slug: guion.slug,
+    rawVideoPath: guion.rawVideoPath,
+    removeOtherSpeakers: guion.removeOtherSpeakers,
+  });
+
+  const matches = matchSceneTimestamps(words, guion.scenes, durationInSeconds);
+
+  const missing: string[] = [];
+  for (const { scene, durationInSeconds: sceneDuration } of matches) {
+    if (scene.localImagePaths && scene.localImagePaths.length > 0) continue;
+    const numCuts = Math.max(1, Math.ceil(sceneDuration / NEWS_AVATAR_CUT_SECONDS));
+    missing.push(`  [${scene.id}] necesita ${numCuts} imagen(es) en "localImagePaths" (dura ${sceneDuration.toFixed(1)}s)`);
+  }
+  if (missing.length > 0) {
+    throw new Error(
+      `Faltan imágenes locales para ${missing.length} escena(s) antes de generar el video:\n${missing.join("\n")}`,
+    );
+  }
+
+  if (guion.subscribeButton) {
+    const subscribeButtonAbsPath = path.join(PUBLIC_DIR, "assets", "youtube-noticias-avatar", "subscribe-button.png");
+    if (!fs.existsSync(subscribeButtonAbsPath)) {
+      throw new Error(
+        `subscribeButton está en true pero falta el asset compartido en ${subscribeButtonAbsPath}. Colocalo ahí una vez (se reusa en todos los videos de este tipo).`,
+      );
+    }
+  }
+
+  const renderedScenes: RenderedYoutubeNoticiasAvatarScene[] = [];
+  for (const { scene, startSeconds, durationInSeconds: sceneDuration, matched } of matches) {
+    if (!matched) {
+      console.log(
+        `[${scene.id}] no se encontró el texto en la transcripción, usando tiempo estimado (${startSeconds.toFixed(1)}s)`,
+      );
+    }
+
+    const numCuts = Math.max(1, Math.ceil(sceneDuration / NEWS_AVATAR_CUT_SECONDS));
+    const cutDuration = sceneDuration / numCuts;
+    const images: SceneImage[] = [];
+    for (let i = 0; i < numCuts; i++) {
+      const sourcePath = scene.localImagePaths[i % scene.localImagePaths.length];
+      const ext = path.extname(sourcePath) || ".png";
+      const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-local${i}${ext}`);
+      if (fs.existsSync(imageAbsPath)) {
+        console.log(`[${scene.id}] corte ${i} ya existe, se reutiliza`);
+      } else {
+        console.log(`[${scene.id}] copiando corte ${i}: ${sourcePath}`);
+        fs.mkdirSync(path.dirname(imageAbsPath), { recursive: true });
+        fs.copyFileSync(sourcePath, imageAbsPath);
+      }
+      images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+    }
+
+    renderedScenes.push({
+      id: scene.id,
+      text: scene.text,
+      startSeconds,
+      durationInSeconds: sceneDuration,
+      matched,
+      images,
+    });
+  }
+
+  const captionChunks = buildCaptionChunks(words, 4, 0.6);
+
+  const rendered: RenderedYoutubeNoticiasAvatarGuion = {
+    type: "youtube-noticias-avatar",
+    slug: guion.slug,
+    topic: guion.topic,
+    videoPath,
+    durationInSeconds,
+    subscribeButton: guion.subscribeButton ?? false,
+    scenes: renderedScenes,
+    captionChunks,
+  };
+
+  const dataDir = path.join(PUBLIC_DIR, "data");
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(path.join(dataDir, `${guion.slug}.json`), JSON.stringify(rendered, null, 2));
+
+  const matchedCount = renderedScenes.filter((s) => s.matched).length;
+  console.log(
+    `\nListo. Duración: ${durationInSeconds.toFixed(1)}s, ${renderedScenes.length} escena(s) (${matchedCount} encontrada(s) en transcripción), ${captionChunks.length} bloque(s) de subtítulo.`,
+  );
+}
+
 async function main() {
   const guionPath = process.argv[2];
   if (!guionPath) {
@@ -719,7 +817,7 @@ async function main() {
   }
 
   if (guion.type === "youtube-noticias-avatar") {
-    console.log("youtube-noticias-avatar processing not yet implemented");
+    await generateYoutubeNoticiasAvatarAssets(guion);
     return;
   }
 
