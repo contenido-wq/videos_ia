@@ -5,26 +5,31 @@ import type { RenderedYoutubeNoticiasAvatarGuion, RenderedYoutubeNoticiasAvatarS
 const { fontFamily } = loadFont("normal", { weights: ["800"] });
 
 const CUT_TRANSITION_FRAMES = 6;
-// Zoom sutil tipo Ken Burns por imagen: alterna dirección (in/out) para que
-// no se sienta repetitivo entre cortes consecutivos. Rango chico a propósito
-// (4%) para que sea dinámico sin llamar la atención.
+// Zoom sutil tipo Ken Burns, uno por ESCENA completa (no por corte): cuando una
+// escena necesita más de una imagen (numCuts > 1 en generateAssets.ts) y son
+// cortes de la misma imagen repetida, el zoom sigue corriendo continuo a lo
+// largo de toda la escena en vez de reiniciarse en cada corte — si reiniciara
+// por corte se vería como un salto/pulso en vez de un zoom suave. Alterna
+// dirección (in/out) por escena para que no se sienta repetitivo. Rango chico
+// a propósito (4%) para que sea dinámico sin llamar la atención.
 const ZOOM_SCALE_DELTA = 0.04;
 
 function findActiveScene(
   scenes: RenderedYoutubeNoticiasAvatarScene[],
   fps: number,
   frame: number,
-): { scene: RenderedYoutubeNoticiasAvatarScene; sceneStartFrame: number } | null {
+): { scene: RenderedYoutubeNoticiasAvatarScene; sceneStartFrame: number; sceneIndex: number } | null {
   let cursorSeconds = 0;
-  for (const scene of scenes) {
+  for (let i = 0; i < scenes.length; i++) {
+    const scene = scenes[i];
     const sceneStartFrame = Math.round(cursorSeconds * fps);
     cursorSeconds += scene.durationInSeconds;
     const sceneEndFrame = Math.round(cursorSeconds * fps);
     if (frame >= sceneStartFrame && frame < sceneEndFrame) {
-      return { scene, sceneStartFrame };
+      return { scene, sceneStartFrame, sceneIndex: i };
     }
   }
-  return scenes.length > 0 ? { scene: scenes[scenes.length - 1], sceneStartFrame: 0 } : null;
+  return scenes.length > 0 ? { scene: scenes[scenes.length - 1], sceneStartFrame: 0, sceneIndex: scenes.length - 1 } : null;
 }
 
 function findActiveChunk(chunks: CaptionChunk[], currentSeconds: number): CaptionChunk | null {
@@ -39,17 +44,25 @@ function findActiveChunk(chunks: CaptionChunk[], currentSeconds: number): Captio
 // Mismo algoritmo de ciclado por duración con crossfade que SceneIllustration
 // en components/PantallaDividida.tsx, adaptado a este layout (panel izquierdo
 // en vez de mitad superior).
-const BackgroundIllustration: React.FC<{ scene: RenderedYoutubeNoticiasAvatarScene; localFrame: number; fps: number }> = ({
-  scene,
-  localFrame,
-  fps,
-}) => {
+const BackgroundIllustration: React.FC<{
+  scene: RenderedYoutubeNoticiasAvatarScene;
+  localFrame: number;
+  fps: number;
+  sceneIndex: number;
+}> = ({ scene, localFrame, fps, sceneIndex }) => {
   let cursorSeconds = 0;
   const cuts = scene.images.map((image) => {
     const startFrame = Math.round(cursorSeconds * fps);
     cursorSeconds += image.durationInSeconds;
     const endFrame = Math.round(cursorSeconds * fps);
     return { ...image, startFrame, endFrame };
+  });
+
+  const sceneDurationFrames = Math.round(scene.durationInSeconds * fps);
+  const zoomIn = sceneIndex % 2 === 0;
+  const scale = interpolate(localFrame, [0, sceneDurationFrames], zoomIn ? [1, 1 + ZOOM_SCALE_DELTA] : [1 + ZOOM_SCALE_DELTA, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
   });
 
   return (
@@ -75,15 +88,9 @@ const BackgroundIllustration: React.FC<{ scene: RenderedYoutubeNoticiasAvatarSce
           );
         }
 
-        const zoomIn = i % 2 === 0;
-        const scale = interpolate(localFrame, [cut.startFrame, cut.endFrame], zoomIn ? [1, 1 + ZOOM_SCALE_DELTA] : [1 + ZOOM_SCALE_DELTA, 1], {
-          extrapolateLeft: "clamp",
-          extrapolateRight: "clamp",
-        });
-
         return (
           <Img
-            key={cut.path}
+            key={`${cut.path}-${i}`}
             src={staticFile(cut.path)}
             className="absolute inset-0 h-full w-full object-cover"
             style={{ opacity, transform: `scale(${scale})` }}
@@ -137,7 +144,9 @@ export const YoutubeNoticiasAvatar: React.FC<{ slug: string; guion: RenderedYout
   return (
     <AbsoluteFill className="bg-black">
       <div className="absolute inset-0 overflow-hidden" style={{ right: "38%" }}>
-        {active && <BackgroundIllustration scene={active.scene} localFrame={localFrame} fps={fps} />}
+        {active && (
+          <BackgroundIllustration scene={active.scene} localFrame={localFrame} fps={fps} sceneIndex={active.sceneIndex} />
+        )}
         {activeChunk && <WordHighlightCaption chunk={activeChunk} currentSeconds={currentSeconds} />}
         {guion.subscribeButton && (
           <Img
