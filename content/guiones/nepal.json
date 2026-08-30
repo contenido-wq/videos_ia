@@ -1,0 +1,1186 @@
+{
+  "type": "youtube-noticias-avatar",
+  "slug": "nepal",
+  "topic": "Colapso de glaciar en la frontera Nepal-Tíbet confundido con terremoto",
+  "rawVideoPath": "content/raw/nepal.mp4",
+  "removeOtherSpeakers": false,
+  "subscribeButton": true,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "El miércoles 26 de agosto de 2026, la frontera entre Nepal y el Tíbet",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_000.png"
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "en China vivió una tragedia que en cuestión de horas cambió de nombre tres",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_001.png"
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "veces. Primero se reportó como un terremoto. Después, las autoridades nepalíes lo vincularon a",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_002.png"
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "un posible sismo que habría provocado un deslizamiento. Y finalmente, un análisis detallado del",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_003.png"
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Servicio Geológico de Estados Unidos, el USGS, determinó algo completamente distinto: no hubo ningún",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_004.png"
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "terremoto. Lo que golpeó a comunidades en Nepal, en el Tíbet y que activó",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_005.png"
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "alertas de inundación hasta en estados del norte de la India, fue el colapso",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_006.png"
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "repentino de un glaciar de alta montaña en una zona que ya había vivido",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_007.png"
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "tragedias similares antes. Hoy vamos a reconstruir exactamente qué pasó, por qué los primeros",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_008.png"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "reportes se equivocaron y por qué este lugar específico del Himalaya parece estar convirtiéndose",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_009.png"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "en un punto crítico que se repite cada pocos años. Sin especular, solo los",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_010.png"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "hechos confirmados hasta este momento. Déjame un comentario ahora mismo. ¿Habías escuchado hablar de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_011.png"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "un colapso glaciar como este antes de hoy? Suscríbete al canal para no perderte",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_012.png"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "la próxima actualización sobre este tipo de desastres y vamos por dos mil likes",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_013.png"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "en este video para que más gente entienda lo que de verdad está pasando",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_014.png"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "en las montañas más altas del planeta. A las 08:37 de la mañana, hora",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_015.png"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "local de Nepal, el USGS registró inicialmente una señal sísmica cerca de la localidad",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_016.png"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "de Kodari, en la frontera con China, y la clasificó de forma preliminar como",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_017.png"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "un terremoto de magnitud cuatro punto cuatro. El gobierno de Nepal, a través de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_018.png"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "su ministro de Asuntos Exteriores, Shishir Khanal, señaló que ese supuesto sismo habría provocado",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_019.png"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "un gran deslizamiento de tierra que bloqueó el cauce del río Bhote Koshi. Pero",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_020.png"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "horas después, un análisis más detallado de las ondas sísmicas cambió por completo la",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_021.png"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "historia. Los sismólogos del USGS explicaron que las ondas registradas eran de largo periodo",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_022.png"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "y no impulsivas, una firma característica de un deslizamiento masivo de terreno, no de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_023.png"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "la ruptura de una falla geológica. Para entender cómo hacen esta distinción, un terremoto",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_024.png"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "genera ondas sísmicas impulsivas y de corta duración, producidas por la ruptura repentina de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_025.png"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "una falla. Un deslizamiento masivo, en cambio, genera una señal mucho más prolongada y",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_026.png"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "de menor frecuencia, porque la energía se libera de forma gradual mientras la masa",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_027.png"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "de hielo y roca se desplaza y golpea el terreno en su camino hacia",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_028.png"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "el valle. Esa diferencia en la forma de la señal, invisible para cualquier persona",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_029.png"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "sin entrenamiento, fue exactamente lo que le permitió al USGS corregir su clasificación inicial",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_030.png"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "horas después del evento. Lo que realmente ocurrió fue esto: un enorme bloque de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_031.png"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "hielo y roca se desprendió de un glaciar de alta montaña, cerca de la",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_032.png"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "frontera entre Nepal y China, y cayó en caída libre por más de un",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_033.png"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "kilómetro de desnivel hasta el fondo del valle. La zona donde ocurrió este colapso",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_034.png"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "se encuentra en una cadena montañosa conocida por sus glaciares colgantes, masas de hielo",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_035.png"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "suspendidas en pendientes extremadamente pronunciadas, que por su propia naturaleza son más propensas a",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_036.png"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "desprenderse repentinamente que los glaciares asentados sobre terreno más estable. Ese impacto se convirtió",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_037.png"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "en una avalancha de hielo, roca y lodo que se precipitó sobre el río",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_038.png"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Lende Kola, un afluente que alimenta tanto al Bhote Koshi como al Trishuli, ríos",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_039.png"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "que bajan desde China hacia Nepal a través de profundos cañones. El material desprendido",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_040.png"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "formó una represa temporal, un dique natural de escombros que bloqueó por completo el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_041.png"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "cauce del río. Y como suele pasar con este tipo de diques improvisados, no",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_042.png"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "aguantó. Cedió de forma repentina, liberando un muro de agua, lodo y escombros que",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_043.png"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "arrasó todo lo que encontró río abajo. El USGS terminó reclasificando el evento como",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_044.png"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "un deslizamiento equivalente en energía a un sismo de magnitud cinco punto dos, con",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_045.png"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "origen a unos cincuenta y cinco kilómetros al noroeste de Kodari. El resultado fue",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_046.png"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "una riada catastrófica que golpeó comunidades en ambos lados de la frontera. En Nepal,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_047.png"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "las localidades de Timure y Syabrubesi, dentro de la municipalidad rural de Gosaikunda, en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_048.png"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "el distrito de Rasuwa, provincia de Bagmati, quedaron devastadas. Carreteras, mercados, asentamientos y proyectos",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_049.png"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "hidroeléctricos fueron arrastrados por la corriente. Del otro lado de la frontera, en el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_050.png"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Tíbet, el puesto fronterizo de Gyirong, incluyendo su puerto fluvial, quedó prácticamente arrasado. Las",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_051.png"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "cifras de víctimas cambiaron drásticamente a lo largo de ese mismo miércoles conforme llegaba",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_052.png"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "más información, y estas cifras siguen siendo preliminares. Los primeros reportes de la mañana",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_053.png"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "hablaban de dieciséis personas fallecidas y trescientas ochenta y cuatro desaparecidas, entre ellas doscientos",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_054.png"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "noventa y un extranjeros. Para la tarde, la cifra de fallecidos había subido a",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_055.png"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "noventa y ocho, con más de setecientas personas desaparecidas, incluyendo turistas de varios países,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_056.png"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "entre ellos dos ciudadanos españoles, además de personal militar y trabajadores de proyectos hidroeléctricos.",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_057.png"
+      ]
+    },
+    {
+      "id": "s59",
+      "text": "Los reportes más recientes hablan de cerca de ciento sesenta muertos y casi mil",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_058.png"
+      ]
+    },
+    {
+      "id": "s60",
+      "text": "personas desaparecidas, aunque estas cifras probablemente sigan cambiando conforme avancen las labores de rescate.",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_059.png"
+      ]
+    },
+    {
+      "id": "s61",
+      "text": "Esta no es una zona cualquiera. El distrito de Rasuwa alberga el valle de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_060.png"
+      ]
+    },
+    {
+      "id": "s62",
+      "text": "Langtang, uno de los tres destinos de trekking más visitados de todo Nepal, con",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_061.png"
+      ]
+    },
+    {
+      "id": "s63",
+      "text": "miles de extranjeros recorriendo sus senderos cada temporada, además de proyectos hidroeléctricos binacionales entre",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_062.png"
+      ]
+    },
+    {
+      "id": "s64",
+      "text": "Nepal y China que emplean a cientos de trabajadores locales y extranjeros. Eso explica",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_063.png"
+      ]
+    },
+    {
+      "id": "s65",
+      "text": "por qué entre los desaparecidos hay ciudadanos de tantas nacionalidades distintas. Las labores de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_064.png"
+      ]
+    },
+    {
+      "id": "s66",
+      "text": "búsqueda y rescate se han visto seriamente complicadas por el terreno. La zona afectada",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_065.png"
+      ]
+    },
+    {
+      "id": "s67",
+      "text": "se encuentra en cañones profundos de difícil acceso, a gran altitud, con carreteras destruidas",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_066.png"
+      ]
+    },
+    {
+      "id": "s68",
+      "text": "y comunicaciones limitadas. Equipos de rescate de Nepal, apoyados por asistencia internacional, continúan trabajando,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_067.png"
+      ]
+    },
+    {
+      "id": "s69",
+      "text": "aunque las autoridades han reconocido que la posibilidad de encontrar con vida a la",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_068.png"
+      ]
+    },
+    {
+      "id": "s70",
+      "text": "mayoría de los desaparecidos disminuye con cada día que pasa. Y aquí está el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_069.png"
+      ]
+    },
+    {
+      "id": "s71",
+      "text": "dato que la mayoría de la cobertura internacional no mencionó. Este no es el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_070.png"
+      ]
+    },
+    {
+      "id": "s72",
+      "text": "primer desastre de este tipo que golpea exactamente este mismo distrito. En abril de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_071.png"
+      ]
+    },
+    {
+      "id": "s73",
+      "text": "2015, el terremoto de magnitud siete punto ocho que devastó Nepal, conocido como el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_072.png"
+      ]
+    },
+    {
+      "id": "s74",
+      "text": "terremoto de Gorkha, provocó en ese mismo distrito de Rasuwa una avalancha masiva de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_073.png"
+      ]
+    },
+    {
+      "id": "s75",
+      "text": "nieve, hielo y roca que sepultó por completo el pueblo de Langtang, uno de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_074.png"
+      ]
+    },
+    {
+      "id": "s76",
+      "text": "los destinos de trekking más populares del Himalaya. Imágenes satelitales de la NASA confirmaron",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_075.png"
+      ]
+    },
+    {
+      "id": "s77",
+      "text": "la magnitud de la destrucción y los reportes oficiales hablaron de al menos doscientas",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_076.png"
+      ]
+    },
+    {
+      "id": "s78",
+      "text": "personas fallecidas, entre ellas turistas extranjeros que se encontraban recorriendo la ruta en ese",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_077.png"
+      ]
+    },
+    {
+      "id": "s79",
+      "text": "momento. Diez años después, en julio de 2025, el Departamento de Hidrología y Meteorología",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_078.png"
+      ]
+    },
+    {
+      "id": "s80",
+      "text": "de Nepal confirmó que otra inundación devastadora, esta vez en el cauce del río",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_079.png"
+      ]
+    },
+    {
+      "id": "s81",
+      "text": "Lende, en el mismo distrito de Rasuwa, había sido causada por el estallido de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_080.png"
+      ]
+    },
+    {
+      "id": "s82",
+      "text": "un lago supraglaciar ubicado a unos treinta y seis kilómetros al norte de la",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_081.png"
+      ]
+    },
+    {
+      "id": "s83",
+      "text": "frontera, cerca de Rasuwagadhi, a más de cinco coma ciento cincuenta metros de altitud.",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_082.png"
+      ]
+    },
+    {
+      "id": "s84",
+      "text": "Los datos satelitales mostraron que ese lago pasó de cubrir cero punto setenta y",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_083.png"
+      ]
+    },
+    {
+      "id": "s85",
+      "text": "cuatro kilómetros cuadrados a solo cero punto sesenta después del evento, confirmando la liberación",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_084.png"
+      ]
+    },
+    {
+      "id": "s86",
+      "text": "repentina de agua como la causa. Y ahora, en agosto de 2026, un tercer",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_085.png"
+      ]
+    },
+    {
+      "id": "s87",
+      "text": "desastre relacionado con hielo de alta montaña vuelve a golpear el mismo distrito, en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_086.png"
+      ]
+    },
+    {
+      "id": "s88",
+      "text": "la misma cuenca hidrográfica del río Lende Kola. Tres eventos catastróficos en el mismo",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_087.png"
+      ]
+    },
+    {
+      "id": "s89",
+      "text": "distrito de Rasuwa en poco más de una década. Esto no es una coincidencia",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_088.png"
+      ]
+    },
+    {
+      "id": "s90",
+      "text": "geográfica, es un patrón. Cuando ves el mismo tipo de desastre repetirse en el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_089.png"
+      ]
+    },
+    {
+      "id": "s91",
+      "text": "mismo lugar con esta frecuencia, la pregunta relevante deja de ser: ¿qué tan raro",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_090.png"
+      ]
+    },
+    {
+      "id": "s92",
+      "text": "fue esto? Y se convierte en: ¿qué está cambiando en esta zona para que",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_091.png"
+      ]
+    },
+    {
+      "id": "s93",
+      "text": "esto ocurra cada vez más seguido? La respuesta tiene un nombre técnico para el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_092.png"
+      ]
+    },
+    {
+      "id": "s94",
+      "text": "fenómeno más reciente: inundación por desborde de lago glaciar, conocida internacionalmente por sus siglas",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_093.png"
+      ]
+    },
+    {
+      "id": "s95",
+      "text": "en inglés GLOF. Ocurre cuando el agua de deshielo se acumula detrás de una",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_094.png"
+      ]
+    },
+    {
+      "id": "s96",
+      "text": "barrera natural de hielo, roca suelta o morrena glaciar, y esa barrera finalmente cede,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_095.png"
+      ]
+    },
+    {
+      "id": "s97",
+      "text": "liberando de golpe un volumen de agua que ningún cauce río abajo está preparado",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_096.png"
+      ]
+    },
+    {
+      "id": "s98",
+      "text": "para recibir. Nepal, por su geografía, concentra miles de lagos glaciares de este tipo",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_097.png"
+      ]
+    },
+    {
+      "id": "s99",
+      "text": "en el Himalaya, muchos de ellos monitoreados de forma limitada por la dificultad de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_098.png"
+      ]
+    },
+    {
+      "id": "s100",
+      "text": "acceso a esas altitudes. El Himalaya, junto con los Andes y algunas zonas de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_099.png"
+      ]
+    },
+    {
+      "id": "s101",
+      "text": "los Alpes, es una de las regiones del planeta donde el retroceso glaciar se",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_100.png"
+      ]
+    },
+    {
+      "id": "s102",
+      "text": "está acelerando con mayor velocidad. Y esto no es la primera vez que un",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_101.png"
+      ]
+    },
+    {
+      "id": "s103",
+      "text": "colapso de este tipo hace noticia internacional en los últimos años. El 4 de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_102.png"
+      ]
+    },
+    {
+      "id": "s104",
+      "text": "octubre de 2023, en el estado indio de Sikkim, a menos de doscientos kilómetros",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_103.png"
+      ]
+    },
+    {
+      "id": "s105",
+      "text": "de donde ocurrió el evento en Nepal, el desborde repentino del lago glaciar South",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_104.png"
+      ]
+    },
+    {
+      "id": "s106",
+      "text": "Lhonak provocó lo que organismos internacionales de montaña describieron como un tsunami desde el",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_105.png"
+      ]
+    },
+    {
+      "id": "s107",
+      "text": "cielo. La inundación dejó al menos ochenta y dos personas muertas, más de siete",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_106.png"
+      ]
+    },
+    {
+      "id": "s108",
+      "text": "mil seiscientos desplazados y arrasó un proyecto hidroeléctrico de mil doscientos megavatios, junto con",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_107.png"
+      ]
+    },
+    {
+      "id": "s109",
+      "text": "carreteras y puentes completos. Ese mismo año, solo dos meses antes, otra secuencia de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_108.png"
+      ]
+    },
+    {
+      "id": "s110",
+      "text": "deslizamientos en los estados indios de Himachal Pradesh y Uttarakhand dejó ochenta y un",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_109.png"
+      ]
+    },
+    {
+      "id": "s111",
+      "text": "muertos adicionales. Nepal en 2015, Nepal en 2025, Sikkim en 2023 y ahora Nepal",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_110.png"
+      ]
+    },
+    {
+      "id": "s112",
+      "text": "otra vez en 2026. Estudios científicos publicados en revistas especializadas confirman que las inundaciones",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_111.png"
+      ]
+    },
+    {
+      "id": "s113",
+      "text": "por desborde de lagos glaciares están proyectadas a aumentar en las próximas décadas como",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_112.png"
+      ]
+    },
+    {
+      "id": "s114",
+      "text": "consecuencia directa del calentamiento causado por la actividad humana después de más de medio",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_113.png"
+      ]
+    },
+    {
+      "id": "s115",
+      "text": "siglo de relativa estabilidad. El este del Himalaya está identificado hoy como el punto",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_114.png"
+      ]
+    },
+    {
+      "id": "s116",
+      "text": "más peligroso de esta tendencia, aunque los investigadores advierten que el riesgo podría desplazarse",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_115.png"
+      ]
+    },
+    {
+      "id": "s117",
+      "text": "hacia el oeste de la cordillera en los próximos años. Este mismo fenómeno no",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_116.png"
+      ]
+    },
+    {
+      "id": "s118",
+      "text": "es exclusivo del Himalaya. Los Andes, la cordillera que atraviesa gran parte de Sudamérica,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_117.png"
+      ]
+    },
+    {
+      "id": "s119",
+      "text": "incluyendo Perú, Bolivia, Ecuador y Chile, también concentran miles de glaciares en retroceso acelerado,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_118.png"
+      ]
+    },
+    {
+      "id": "s120",
+      "text": "con sus propios lagos glaciares de alto riesgo. Perú, en particular, ha registrado históricamente",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_119.png"
+      ]
+    },
+    {
+      "id": "s121",
+      "text": "varios desastres de este tipo en su propia cordillera, lo que convierte a este",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_120.png"
+      ]
+    },
+    {
+      "id": "s122",
+      "text": "fenómeno en una amenaza que aunque hoy la vimos en Nepal, no le es",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_121.png"
+      ]
+    },
+    {
+      "id": "s123",
+      "text": "ajena en absoluto a nuestra propia región. Esto no significa que cada colapso individual",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_122.png"
+      ]
+    },
+    {
+      "id": "s124",
+      "text": "esté causado directamente por el cambio climático de forma aislada. Significa que la frecuencia",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_123.png"
+      ]
+    },
+    {
+      "id": "s125",
+      "text": "general de este tipo de eventos en la región está documentada como una tendencia",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_124.png"
+      ]
+    },
+    {
+      "id": "s126",
+      "text": "real al alza, no como una casualidad estadística. La geología y la física de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_125.png"
+      ]
+    },
+    {
+      "id": "s127",
+      "text": "estas montañas siempre estuvieron ahí. Lo que está cambiando es el ritmo al que",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_126.png"
+      ]
+    },
+    {
+      "id": "s128",
+      "text": "el hielo se derrite y cuánta infraestructura, cuántos pueblos y cuántos proyectos hidroeléctricos se",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_127.png"
+      ]
+    },
+    {
+      "id": "s129",
+      "text": "han construido río abajo de estas zonas de riesgo en las últimas décadas. La",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_128.png"
+      ]
+    },
+    {
+      "id": "s130",
+      "text": "buena noticia, si se puede llamar así, es que la tecnología de monitoreo está",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_129.png"
+      ]
+    },
+    {
+      "id": "s131",
+      "text": "avanzando. Investigadores especializados en percepción remota están desarrollando sistemas basados en radar satelital e",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_130.png"
+      ]
+    },
+    {
+      "id": "s132",
+      "text": "inteligencia artificial capaces de identificar automáticamente lagos glaciares peligrosos y detectar cambios sutiles en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_131.png"
+      ]
+    },
+    {
+      "id": "s133",
+      "text": "su tamaño antes de que ocurra un colapso. El problema es que estos sistemas",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_132.png"
+      ]
+    },
+    {
+      "id": "s134",
+      "text": "todavía están en fase de desarrollo y cobertura parcial, mientras la cantidad de lagos",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_133.png"
+      ]
+    },
+    {
+      "id": "s135",
+      "text": "glaciares nuevos sigue creciendo cada año en toda la cordillera. Si vives, trabajas o",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_134.png"
+      ]
+    },
+    {
+      "id": "s136",
+      "text": "planeas viajar por zonas de alta montaña cerca de cuencas glaciares, hay señales de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_135.png"
+      ]
+    },
+    {
+      "id": "s137",
+      "text": "alerta que puedes aprender a reconocer: un aumento repentino y sin razón aparente en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_136.png"
+      ]
+    },
+    {
+      "id": "s138",
+      "text": "el caudal de un río, ruido inusual proveniente de la parte alta de la",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_137.png"
+      ]
+    },
+    {
+      "id": "s139",
+      "text": "montaña o cambios abruptos en el color del agua, que puede volverse más turbia",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_138.png"
+      ]
+    },
+    {
+      "id": "s140",
+      "text": "de golpe. A diferencia de un terremoto, que llega sin ningún aviso perceptible,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_139.png"
+      ]
+    },
+    {
+      "id": "s141",
+      "text": "un colapso glaciar y la inundación que provoca suelen dar, en algunos casos,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_140.png"
+      ]
+    },
+    {
+      "id": "s142",
+      "text": "minutos de margen entre el colapso inicial río arriba y la llegada de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_141.png"
+      ]
+    },
+    {
+      "id": "s143",
+      "text": "la crecida a los asentamientos más cercanos. Ese margen de tiempo es exactamente",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_142.png"
+      ]
+    },
+    {
+      "id": "s144",
+      "text": "lo que buscan aprovechar los sistemas de alerta temprana específicos para este tipo",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_143.png"
+      ]
+    },
+    {
+      "id": "s145",
+      "text": "de fenómeno, y es la razón por la que invertir en sensores de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_144.png"
+      ]
+    },
+    {
+      "id": "s146",
+      "text": "nivel de agua río arriba puede salvar vidas incluso sin predecir el colapso",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_145.png"
+      ]
+    },
+    {
+      "id": "s147",
+      "text": "mismo. Para las comunidades que ya viven río abajo de zonas glaciares conocidas",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_146.png"
+      ]
+    },
+    {
+      "id": "s148",
+      "text": "y para viajeros y agencias de turismo que operan rutas de montañismo en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_147.png"
+      ]
+    },
+    {
+      "id": "s149",
+      "text": "el Himalaya, esto implica revisar los protocolos de seguridad de las rutas que",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_148.png"
+      ]
+    },
+    {
+      "id": "s150",
+      "text": "atraviesan cuencas con lagos glaciares conocidos, algo que hasta hace pocos años no",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_149.png"
+      ]
+    },
+    {
+      "id": "s151",
+      "text": "formaba parte de las evaluaciones de riesgo estándar para el trekking recreativo. Si",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_150.png"
+      ]
+    },
+    {
+      "id": "s152",
+      "text": "conoces a alguien viajando por rutas de montañismo en Nepal o el Tíbet",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_151.png"
+      ]
+    },
+    {
+      "id": "s153",
+      "text": "en este momento, este es un buen momento para preguntarle si está al",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_152.png"
+      ]
+    },
+    {
+      "id": "s154",
+      "text": "tanto de la situación en la región de Rasuwa. Lo que empezó como",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_153.png"
+      ]
+    },
+    {
+      "id": "s155",
+      "text": "el reporte de un terremoto terminó revelando algo distinto y, en cierto modo,",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_154.png"
+      ]
+    },
+    {
+      "id": "s156",
+      "text": "más inquietante. En las montañas más altas del planeta, el hielo, que durante",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_155.png"
+      ]
+    },
+    {
+      "id": "s157",
+      "text": "generaciones se consideró parte permanente del paisaje, se está convirtiendo en una amenaza",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_156.png"
+      ]
+    },
+    {
+      "id": "s158",
+      "text": "activa y recurrente. No fue una falla geológica la que rompió el silencio",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_157.png"
+      ]
+    },
+    {
+      "id": "s159",
+      "text": "de esa mañana de miércoles en la frontera entre Nepal y China. Fue",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_158.png"
+      ]
+    },
+    {
+      "id": "s160",
+      "text": "una montaña de hielo cediendo ante un proceso que lleva años acelerándose en",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_159.png"
+      ]
+    },
+    {
+      "id": "s161",
+      "text": "el mismo distrito que ya había sufrido tragedias casi idénticas en 2015 y",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_160.png"
+      ]
+    },
+    {
+      "id": "s162",
+      "text": "en 2025. Vamos a seguir esta historia de cerca. Las cifras finales de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_161.png"
+      ]
+    },
+    {
+      "id": "s163",
+      "text": "víctimas, si se confirma un vínculo directo con el retroceso glaciar en esa",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_162.png"
+      ]
+    },
+    {
+      "id": "s164",
+      "text": "cuenca específica y qué medidas tomen Nepal y China para prevenir que esto",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_163.png"
+      ]
+    },
+    {
+      "id": "s165",
+      "text": "se repita una cuarta vez en la misma zona. Suscríbete para no perderte",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_164.png"
+      ]
+    },
+    {
+      "id": "s166",
+      "text": "la actualización y déjame en los comentarios: ¿crees que este tipo de desastres",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_165.png"
+      ]
+    },
+    {
+      "id": "s167",
+      "text": "van a volverse más comunes en las próximas décadas en las zonas de",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_166.png"
+      ]
+    },
+    {
+      "id": "s168",
+      "text": "montaña? Vamos por esos dos mil likes. Nos vemos en el próximo video.",
+      "localImagePaths": [
+        "content/personajes/nepal/escena_167.png"
+      ]
+    }
+  ]
+}

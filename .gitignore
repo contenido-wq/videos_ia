@@ -13,6 +13,13 @@ content/raw
 # finales — sacados del historial una vez porque bloqueaban el push a GitHub)
 public/assets/*/video/
 
+# Video "nepal" (youtube-noticias-avatar): 168 imágenes en alta resolución,
+# ~4.4GB entre el original y la copia que hace el pipeline — no se comitea
+# (decisión explícita, 2026-08-30). Regenerable con generate:assets si se
+# tiene el guion (sí versionado) + las imágenes originales a mano.
+content/personajes/nepal/
+public/assets/nepal/images/
+
 # Claude Code local state (git worktrees, local-only permissions) —
 # excepto .claude/skills/, que sí se versiona: son las Skills por estilo
 # de video que se comparten con el repo (ver .claude/skills/*/SKILL.md).

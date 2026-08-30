@@ -19,6 +19,7 @@ export const RemotionRoot: React.FC = () => {
       <PantallaDivididaComposition id="PantallaDividida" slug="pantalla-dividida" />
       <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
       <YoutubeNoticiasAvatarComposition id="YoutubeNoticiasAvatarDemo" slug="youtube-noticias-avatar-demo" />
+      <YoutubeNoticiasAvatarComposition id="NepalGlaciar" slug="nepal" />
     </>
   );
 };
