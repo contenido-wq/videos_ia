@@ -5,6 +5,10 @@ import type { RenderedYoutubeNoticiasAvatarGuion, RenderedYoutubeNoticiasAvatarS
 const { fontFamily } = loadFont("normal", { weights: ["800"] });
 
 const CUT_TRANSITION_FRAMES = 6;
+// Zoom sutil tipo Ken Burns por imagen: alterna dirección (in/out) para que
+// no se sienta repetitivo entre cortes consecutivos. Rango chico a propósito
+// (4%) para que sea dinámico sin llamar la atención.
+const ZOOM_SCALE_DELTA = 0.04;
 
 function findActiveScene(
   scenes: RenderedYoutubeNoticiasAvatarScene[],
@@ -71,12 +75,18 @@ const BackgroundIllustration: React.FC<{ scene: RenderedYoutubeNoticiasAvatarSce
           );
         }
 
+        const zoomIn = i % 2 === 0;
+        const scale = interpolate(localFrame, [cut.startFrame, cut.endFrame], zoomIn ? [1, 1 + ZOOM_SCALE_DELTA] : [1 + ZOOM_SCALE_DELTA, 1], {
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        });
+
         return (
           <Img
             key={cut.path}
             src={staticFile(cut.path)}
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ opacity }}
+            style={{ opacity, transform: `scale(${scale})` }}
           />
         );
       })}
