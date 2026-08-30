@@ -165,7 +165,11 @@ export function subtractRanges(base: KeepRange[], cuts: CutRange[]): KeepRange[]
   return result.filter((r) => r.end > r.start);
 }
 
-const FILLER_WORDS = ["eh", "ehh", "eeh", "este", "esteee", "digo", "em", "emm", "mmm"];
+// "este"/"esteee" NO están acá a propósito: colisionan con el pronombre demostrativo
+// legítimo ("este glaciar", "este tipo de desastres") — probado contra contenido real
+// (guion de Nepal) donde las 21 apariciones de "este" eran todas demostrativo, ninguna
+// muletilla, y se estaban cortando palabras reales del audio.
+const FILLER_WORDS = ["eh", "ehh", "eeh", "digo", "em", "emm", "mmm"];
 const FILLER_PHRASES = ["o sea"];
 
 function normalizeWord(text: string): string {

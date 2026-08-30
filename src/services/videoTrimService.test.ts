@@ -213,6 +213,14 @@ describe("detectFillerRanges", () => {
     const words = [w("ManyChat.", 0, 0.5), w("ManyChat", 0.5, 1.0), w("te", 1.0, 1.2)];
     expect(detectFillerRanges(words)).toEqual([]);
   });
+
+  // Caso real detectado en producción (guion de Nepal): "este" como pronombre
+  // demostrativo ("este glaciar", "este tipo de desastres") es altísimamente común
+  // en español y no es una muletilla — no debe estar en FILLER_WORDS.
+  it("no corta \"este\" como pronombre demostrativo (palabra real, no muletilla)", () => {
+    const words = [w("por", 0, 0.2), w("qué", 0.2, 0.4), w("este", 0.4, 0.6), w("glaciar", 0.6, 1.0)];
+    expect(detectFillerRanges(words)).toEqual([]);
+  });
 });
 
 describe("detectRepeatedPhrases", () => {
