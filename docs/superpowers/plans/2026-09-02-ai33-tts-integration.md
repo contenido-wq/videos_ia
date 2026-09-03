@@ -113,9 +113,14 @@ export interface GenerateSpeechResult {
 
 interface Ai33TaskData {
   status: "pending" | "processing" | "done" | "failed";
-  audio_url?: string;
-  json_url?: string;
   error?: string;
+  // audio_url/json_url viven anidados en metadata (confirmado con una
+  // llamada real: no son hermanos de `status` como parecería a simple
+  // vista — la API los devuelve dentro de `data.metadata`, no en `data`).
+  metadata?: {
+    audio_url?: string;
+    json_url?: string;
+  };
 }
 
 async function submitTtsTask(text: string, options: GenerateSpeechOptions): Promise<string> {
@@ -160,10 +165,11 @@ export async function generateSpeech(text: string, options: GenerateSpeechOption
   const taskId = await submitTtsTask(text, options);
   const task = await pollTask(taskId);
 
-  if (!task.audio_url) {
+  const audioUrl = task.metadata?.audio_url;
+  if (!audioUrl) {
     throw new Error(`ai33 task ${taskId} terminó "done" pero sin audio_url`);
   }
-  const audioRes = await fetch(task.audio_url);
+  const audioRes = await fetch(audioUrl);
   if (!audioRes.ok) {
     throw new Error(`Descarga de audio ai33 falló: ${audioRes.status}`);
   }
@@ -173,10 +179,11 @@ export async function generateSpeech(text: string, options: GenerateSpeechOption
 
   let words: TranscribedWord[] = [];
   if (options.withTranscript) {
-    if (!task.json_url) {
+    const jsonUrl = task.metadata?.json_url;
+    if (!jsonUrl) {
       throw new Error(`ai33 task ${taskId} pidió with_transcript pero no devolvió json_url`);
     }
-    const transcriptRes = await fetch(task.json_url);
+    const transcriptRes = await fetch(jsonUrl);
     if (!transcriptRes.ok) {
       throw new Error(`Descarga de transcript ai33 falló: ${transcriptRes.status}`);
     }
