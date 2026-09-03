@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { parseFile } from "music-metadata";
-import { generateVoice, generateSoundEffect, transcribeWithTimestamps, transcribeWithSpeakers } from "./elevenlabsService";
+import { generateSoundEffect, transcribeWithTimestamps, transcribeWithSpeakers } from "./elevenlabsService";
+import { generateSpeech } from "./ai33Service";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
@@ -105,7 +106,7 @@ async function generateScene(
     console.log(`[${scene.id}] voz ya existe, se reutiliza`);
   } else {
     console.log(`[${scene.id}] generando voz...`);
-    await generateVoice(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId });
+    await generateSpeech(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId, withTranscript: false });
   }
 
   const durationInSeconds = await getAudioDurationInSeconds(audioAbsPath);
@@ -821,17 +822,17 @@ async function generateDocumentalDoodleAssets(guion: DocumentalDoodleGuion): Pro
   for (const scene of guion.scenes) {
     const audioAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio", `${scene.id}.mp3`);
 
+    let words: TranscribedWord[] = [];
     if (fs.existsSync(audioAbsPath)) {
-      console.log(`[${scene.id}] voz ya existe, se reutiliza`);
+      console.log(`[${scene.id}] voz ya existe, se reutiliza (sin re-transcribir)`);
     } else {
-      console.log(`[${scene.id}] generando voz...`);
-      await generateVoice(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId });
+      console.log(`[${scene.id}] generando voz + transcript...`);
+      const result = await generateSpeech(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId, withTranscript: true });
+      words = result.words;
     }
 
     const durationInSeconds = await getAudioDurationInSeconds(audioAbsPath);
 
-    console.log(`[${scene.id}] transcribiendo para timestamps de subtítulo...`);
-    const words = await transcribeWithTimestamps(audioAbsPath);
     for (const word of words) {
       allWords.push({ text: word.text, start: word.start + cursorSeconds, end: word.end + cursorSeconds });
     }
