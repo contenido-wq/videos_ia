@@ -1,0 +1,66 @@
+{
+  "type": "documental-doodle",
+  "slug": "documental-doodle-demo",
+  "topic": "Demo de documental-doodle (fixture de prueba, sin audio real)",
+  "durationInSeconds": 17,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "La oscuridad forjó a la humanidad",
+      "startSeconds": 0,
+      "durationInSeconds": 10,
+      "images": [
+        { "path": "assets/documental-doodle-demo/images/s1-0.png", "durationInSeconds": 5 },
+        { "path": "assets/documental-doodle-demo/images/s1-1.png", "durationInSeconds": 5 }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Hoy encendés la luz sin pensarlo",
+      "startSeconds": 10,
+      "durationInSeconds": 7,
+      "images": [
+        { "path": "assets/documental-doodle-demo/images/s2-0.png", "durationInSeconds": 3.5 },
+        { "path": "assets/documental-doodle-demo/images/s2-1.png", "durationInSeconds": 3.5 }
+      ]
+    }
+  ],
+  "captionChunks": [
+    {
+      "words": [
+        { "text": "LA", "start": 0, "end": 0.2 },
+        { "text": "OSCURIDAD", "start": 0.2, "end": 0.9 },
+        { "text": "FORJÓ", "start": 0.9, "end": 1.3 },
+        { "text": "A", "start": 1.3, "end": 1.4 }
+      ],
+      "startSeconds": 0,
+      "endSeconds": 1.4
+    },
+    {
+      "words": [
+        { "text": "LA", "start": 1.4, "end": 1.5 },
+        { "text": "HUMANIDAD", "start": 1.5, "end": 2.3 }
+      ],
+      "startSeconds": 1.4,
+      "endSeconds": 2.3
+    },
+    {
+      "words": [
+        { "text": "HOY", "start": 10, "end": 10.3 },
+        { "text": "ENCENDÉS", "start": 10.3, "end": 10.9 },
+        { "text": "LA", "start": 10.9, "end": 11.0 },
+        { "text": "LUZ", "start": 11.0, "end": 11.3 }
+      ],
+      "startSeconds": 10,
+      "endSeconds": 11.3
+    },
+    {
+      "words": [
+        { "text": "SIN", "start": 11.3, "end": 11.5 },
+        { "text": "PENSARLO", "start": 11.5, "end": 12.2 }
+      ],
+      "startSeconds": 11.3,
+      "endSeconds": 12.2
+    }
+  ]
+}

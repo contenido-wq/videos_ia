@@ -4,6 +4,7 @@ import { DocumentalComposition } from "./DocumentalComposition";
 import { SocialChecklistComposition } from "./SocialChecklistComposition";
 import { PantallaDivididaComposition } from "./PantallaDivididaComposition";
 import { YoutubeNoticiasAvatarComposition } from "./YoutubeNoticiasAvatarComposition";
+import { DocumentalDoodleComposition } from "./DocumentalDoodleComposition";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ export const RemotionRoot: React.FC = () => {
       <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
       <YoutubeNoticiasAvatarComposition id="YoutubeNoticiasAvatarDemo" slug="youtube-noticias-avatar-demo" />
       <YoutubeNoticiasAvatarComposition id="NepalGlaciar" slug="nepal" />
+      <DocumentalDoodleComposition id="DocumentalDoodleDemo" slug="documental-doodle-demo" />
     </>
   );
 };
