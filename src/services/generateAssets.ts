@@ -37,6 +37,9 @@ import type {
   YoutubeNoticiasAvatarGuion,
   RenderedYoutubeNoticiasAvatarScene,
   RenderedYoutubeNoticiasAvatarGuion,
+  DocumentalDoodleGuion,
+  RenderedDocumentalDoodleScene,
+  RenderedDocumentalDoodleGuion,
   GuionScene,
   RenderedGuion,
   RenderedScene,
@@ -52,6 +55,10 @@ const MAX_CUT_SECONDS = 2.5;
 // Cadencia propia de youtube-noticias-avatar (no confundir con MAX_CUT_SECONDS,
 // que usan vox/pantalla-dividida): una imagen de fondo nueva cada 4 segundos.
 const NEWS_AVATAR_CUT_SECONDS = 4;
+
+// Cadencia propia de documental-doodle (no confundir con MAX_CUT_SECONDS ni
+// NEWS_AVATAR_CUT_SECONDS): una imagen doodle nueva cada 5 segundos.
+const DOODLE_CUT_SECONDS = 5;
 
 // Para el personaje: en vez de cortes secuenciales, generamos N poses que se
 // van cross-fadeando en loop durante toda la escena (simula un micro-gesto).
@@ -797,6 +804,88 @@ async function generateYoutubeNoticiasAvatarAssets(guion: YoutubeNoticiasAvatarG
   );
 }
 
+async function generateDocumentalDoodleAssets(guion: DocumentalDoodleGuion): Promise<void> {
+  console.log(`Generando recursos para "${guion.topic}" (documental-doodle, ${guion.scenes.length} escena(s))`);
+
+  const missingText = guion.scenes.filter((s) => s.text.trim().length === 0);
+  if (missingText.length > 0) {
+    throw new Error(
+      `${missingText.length} escena(s) sin texto para narrar: ${missingText.map((s) => s.id).join(", ")}`,
+    );
+  }
+
+  const renderedScenes: RenderedDocumentalDoodleScene[] = [];
+  const allWords: TranscribedWord[] = [];
+  let cursorSeconds = 0;
+
+  for (const scene of guion.scenes) {
+    const audioAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "audio", `${scene.id}.mp3`);
+
+    if (fs.existsSync(audioAbsPath)) {
+      console.log(`[${scene.id}] voz ya existe, se reutiliza`);
+    } else {
+      console.log(`[${scene.id}] generando voz...`);
+      await generateVoice(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId });
+    }
+
+    const durationInSeconds = await getAudioDurationInSeconds(audioAbsPath);
+
+    console.log(`[${scene.id}] transcribiendo para timestamps de subtítulo...`);
+    const words = await transcribeWithTimestamps(audioAbsPath);
+    for (const word of words) {
+      allWords.push({ text: word.text, start: word.start + cursorSeconds, end: word.end + cursorSeconds });
+    }
+
+    const numCuts = Math.max(1, Math.ceil(durationInSeconds / DOODLE_CUT_SECONDS));
+    const cutDuration = durationInSeconds / numCuts;
+    const images: SceneImage[] = [];
+    for (let i = 0; i < numCuts; i++) {
+      const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-${i}.png`);
+      if (fs.existsSync(imageAbsPath)) {
+        console.log(`[${scene.id}] corte ${i} ya existe, se reutiliza`);
+      } else {
+        const prompt =
+          numCuts > 1
+            ? `${scene.visual}, alternate camera angle / closer framing, cut ${i + 1} of ${numCuts} in the same documentary sequence, same subject and art style`
+            : scene.visual;
+        console.log(`[${scene.id}] generando corte ${i} (doodle)...`);
+        await generateImage(prompt, imageAbsPath, { aspectRatio: "16:9" });
+      }
+      images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+    }
+
+    renderedScenes.push({
+      id: scene.id,
+      text: scene.text,
+      startSeconds: cursorSeconds,
+      durationInSeconds,
+      images,
+    });
+
+    cursorSeconds += durationInSeconds;
+  }
+
+  const captionChunks = buildCaptionChunks(allWords, 4, 0.6);
+
+  const rendered: RenderedDocumentalDoodleGuion = {
+    type: "documental-doodle",
+    slug: guion.slug,
+    topic: guion.topic,
+    durationInSeconds: cursorSeconds,
+    scenes: renderedScenes,
+    captionChunks,
+  };
+
+  const dataDir = path.join(PUBLIC_DIR, "data");
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(path.join(dataDir, `${guion.slug}.json`), JSON.stringify(rendered, null, 2));
+
+  const totalCuts = renderedScenes.reduce((acc, s) => acc + s.images.length, 0);
+  console.log(
+    `\nListo. Duración total: ${cursorSeconds.toFixed(1)}s en ${renderedScenes.length} escena(s), ${totalCuts} corte(s) visuales, ${captionChunks.length} bloque(s) de subtítulo.`,
+  );
+}
+
 async function main() {
   const guionPath = process.argv[2];
   if (!guionPath) {
@@ -818,6 +907,11 @@ async function main() {
 
   if (guion.type === "youtube-noticias-avatar") {
     await generateYoutubeNoticiasAvatarAssets(guion);
+    return;
+  }
+
+  if (guion.type === "documental-doodle") {
+    await generateDocumentalDoodleAssets(guion);
     return;
   }
 
