@@ -22,6 +22,7 @@ export const RemotionRoot: React.FC = () => {
       <YoutubeNoticiasAvatarComposition id="YoutubeNoticiasAvatarDemo" slug="youtube-noticias-avatar-demo" />
       <YoutubeNoticiasAvatarComposition id="NepalGlaciar" slug="nepal" />
       <DocumentalDoodleComposition id="DocumentalDoodleDemo" slug="documental-doodle-demo" />
+      <DocumentalDoodleComposition id="PrimerosHumanosDeNoche" slug="primeros-humanos-de-noche" />
     </>
   );
 };
