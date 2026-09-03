@@ -824,7 +824,14 @@ async function generateDocumentalDoodleAssets(guion: DocumentalDoodleGuion): Pro
 
     let words: TranscribedWord[] = [];
     if (fs.existsSync(audioAbsPath)) {
-      console.log(`[${scene.id}] voz ya existe, se reutiliza (sin re-transcribir)`);
+      // No re-genera la voz (ya está en disco), pero SÍ necesita las palabras
+      // con timestamp para los subtítulos — como esta corrida no tiene el
+      // transcript en memoria (se perdió si el proceso se cortó antes de
+      // escribir el JSON final), lo saca transcribiendo el audio ya
+      // descargado con ElevenLabs en vez de volver a pagar la generación de
+      // voz completa en ai33.
+      console.log(`[${scene.id}] voz ya existe, transcribiendo el audio ya generado...`);
+      words = await transcribeWithTimestamps(audioAbsPath);
     } else {
       console.log(`[${scene.id}] generando voz + transcript...`);
       const result = await generateSpeech(scene.text, { outputPath: audioAbsPath, voiceId: guion.voiceId, withTranscript: true });
