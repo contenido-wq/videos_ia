@@ -20,6 +20,12 @@ public/assets/*/video/
 content/personajes/nepal/
 public/assets/nepal/images/
 
+# Video "primeros-humanos-de-noche" (documental-doodle): 224 imágenes IA +
+# 19 audios generados, ~237MB — no se comitea (decisión explícita,
+# 2026-09-02). Regenerable con generate:assets a partir del guion (sí
+# versionado en content/guiones/).
+public/assets/primeros-humanos-de-noche/
+
 # Claude Code local state (git worktrees, local-only permissions) —
 # excepto .claude/skills/, que sí se versiona: son las Skills por estilo
 # de video que se comparten con el repo (ver .claude/skills/*/SKILL.md).

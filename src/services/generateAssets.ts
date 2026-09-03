@@ -865,6 +865,7 @@ async function generateDocumentalDoodleAssets(guion: DocumentalDoodleGuion): Pro
     renderedScenes.push({
       id: scene.id,
       text: scene.text,
+      audioPath: toPublicRelPath(audioAbsPath),
       startSeconds: cursorSeconds,
       durationInSeconds,
       images,

@@ -256,6 +256,7 @@ export interface DocumentalDoodleGuion {
 export interface RenderedDocumentalDoodleScene {
   id: string;
   text: string;
+  audioPath: string;
   startSeconds: number;
   durationInSeconds: number;
   images: SceneImage[]; // se ciclan cada DOODLE_CUT_SECONDS (5s)

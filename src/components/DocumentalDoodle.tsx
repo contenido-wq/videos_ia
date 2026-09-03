@@ -1,4 +1,4 @@
-import { AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { AbsoluteFill, Audio, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Poppins";
 import type { RenderedDocumentalDoodleGuion, RenderedDocumentalDoodleScene, CaptionChunk } from "../types/guion";
 
@@ -139,7 +139,19 @@ export const DocumentalDoodle: React.FC<{ slug: string; guion: RenderedDocumenta
   return (
     <AbsoluteFill className="bg-black">
       {active && (
-        <SceneIllustration scene={active.scene} localFrame={localFrame} fps={fps} sceneIndex={active.sceneIndex} />
+        <>
+          <SceneIllustration scene={active.scene} localFrame={localFrame} fps={fps} sceneIndex={active.sceneIndex} />
+          {/* Sequence remapea el frame local a 0 en sceneStartFrame, así el Audio
+              arranca desde el principio de SU propio archivo en vez de saltar a
+              mitad del clip cuando la escena empieza en un frame > 0 del video. */}
+          <Sequence
+            key={active.scene.id}
+            from={active.sceneStartFrame}
+            durationInFrames={Math.round(active.scene.durationInSeconds * fps)}
+          >
+            <Audio src={staticFile(active.scene.audioPath)} />
+          </Sequence>
+        </>
       )}
       {activeChunk && <WordHighlightCaption chunk={activeChunk} currentSeconds={currentSeconds} />}
     </AbsoluteFill>

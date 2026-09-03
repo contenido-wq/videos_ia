@@ -1,12 +1,13 @@
 {
   "type": "documental-doodle",
   "slug": "documental-doodle-demo",
-  "topic": "Demo de documental-doodle (fixture de prueba, sin audio real)",
+  "topic": "Demo de documental-doodle (fixture de prueba, audio de tono sintético)",
   "durationInSeconds": 17,
   "scenes": [
     {
       "id": "s1",
       "text": "La oscuridad forjó a la humanidad",
+      "audioPath": "assets/documental-doodle-demo/audio/s1.mp3",
       "startSeconds": 0,
       "durationInSeconds": 10,
       "images": [
@@ -17,6 +18,7 @@
     {
       "id": "s2",
       "text": "Hoy encendés la luz sin pensarlo",
+      "audioPath": "assets/documental-doodle-demo/audio/s2.mp3",
       "startSeconds": 10,
       "durationInSeconds": 7,
       "images": [
