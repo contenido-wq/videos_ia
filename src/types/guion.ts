@@ -40,7 +40,7 @@ export interface GuionScene {
 
 export type VisualStyle = "neon" | "collage";
 
-export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida" | "youtube-noticias-avatar";
+export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida" | "youtube-noticias-avatar" | "documental-doodle";
 
 export interface VoxGuion {
   type?: "vox";
@@ -75,7 +75,7 @@ export interface SocialChecklistGuion {
   removeOtherSpeakers?: boolean;
 }
 
-export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion | YoutubeNoticiasAvatarGuion;
+export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion | YoutubeNoticiasAvatarGuion | DocumentalDoodleGuion;
 
 export interface SceneImage {
   path: string;
@@ -231,5 +231,41 @@ export interface RenderedYoutubeNoticiasAvatarGuion {
   durationInSeconds: number;
   subscribeButton: boolean;
   scenes: RenderedYoutubeNoticiasAvatarScene[];
+  captionChunks: CaptionChunk[];
+}
+
+export interface DocumentalDoodleScene {
+  id: string;
+  /** Texto que se narra en esta escena — se convierte a voz con ElevenLabs. */
+  text: string;
+  /** Descripción de la escena para generar la(s) imagen(es) con IA. El estilo
+   * doodle/cartoon (contorno negro grueso, colores planos, etc.) se escribe
+   * acá explícitamente al redactar el guion — no hay un sufijo automático. */
+  visual: string;
+}
+
+export interface DocumentalDoodleGuion {
+  type: "documental-doodle";
+  slug: string;
+  topic: string;
+  /** Voz de ElevenLabs a usar; default si se omite (mismo default que vox). */
+  voiceId?: string;
+  scenes: DocumentalDoodleScene[];
+}
+
+export interface RenderedDocumentalDoodleScene {
+  id: string;
+  text: string;
+  startSeconds: number;
+  durationInSeconds: number;
+  images: SceneImage[]; // se ciclan cada DOODLE_CUT_SECONDS (5s)
+}
+
+export interface RenderedDocumentalDoodleGuion {
+  type: "documental-doodle";
+  slug: string;
+  topic: string;
+  durationInSeconds: number;
+  scenes: RenderedDocumentalDoodleScene[];
   captionChunks: CaptionChunk[];
 }
