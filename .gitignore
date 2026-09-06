@@ -34,3 +34,8 @@ public/assets/primeros-humanos-de-noche/
 
 # Git worktrees usados para aislar trabajo de implementación (superpowers:using-git-worktrees).
 .worktrees/
+
+# Carpeta de trabajo suelta "Nepal/" en la raíz (imágenes + video de avatar,
+# ~1.7GB incluyendo un .mp4 de 248MB) — supera el límite de 100MB de GitHub
+# y son assets crudos regenerables, no assets finales versionados.
+/Nepal/
