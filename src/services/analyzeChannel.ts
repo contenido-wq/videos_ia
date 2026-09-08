@@ -46,16 +46,20 @@ async function main() {
   fs.mkdirSync(outputDir, { recursive: true });
 
   let imageGenerated = false;
+  let promptSaved = false;
   if (analysis.character.present && analysis.character.description) {
-    console.log("Generando imagen de referencia del personaje...");
+    const prompt = buildCharacterImagePrompt(analysis.character.description);
     const referenceUrls = videos.slice(0, CHARACTER_REFERENCE_COUNT).map((v) => v.thumbnailUrl);
+
+    const promptFileContent = `${prompt}\n\nURLs de referencia usadas (pasalas como image_urls si lo generás manualmente en kie.ai u otra herramienta de edición de imagen con referencia):\n${referenceUrls
+      .map((u) => `- ${u}`)
+      .join("\n")}\n`;
+    fs.writeFileSync(path.join(outputDir, "personaje-prompt.txt"), promptFileContent);
+    promptSaved = true;
+
+    console.log("Generando imagen de referencia del personaje...");
     try {
-      await editImage(
-        buildCharacterImagePrompt(analysis.character.description),
-        referenceUrls,
-        path.join(outputDir, "personaje.png"),
-        { aspectRatio: "3:2" },
-      );
+      await editImage(prompt, referenceUrls, path.join(outputDir, "personaje.png"), { aspectRatio: "3:2" });
       imageGenerated = true;
     } catch (err) {
       console.error("No se pudo generar la imagen del personaje:", (err as Error).message);
@@ -81,6 +85,7 @@ async function main() {
   console.log(`\nListo. Archivos guardados en ${outputDir}/:`);
   console.log(`  - analisis.json`);
   console.log(`  - personaje.md`);
+  if (promptSaved) console.log(`  - personaje-prompt.txt`);
   if (imageGenerated) console.log(`  - personaje.png`);
   console.log(`\nTemas encontrados: ${analysis.topics.join(", ")}`);
 }
