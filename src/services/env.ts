@@ -29,6 +29,9 @@ export const env = {
   get ai33ApiKey() {
     return required("AI33_API_KEY");
   },
+  get youtubeApiKey() {
+    return required("YOUTUBE_API_KEY");
+  },
   // Opcional a propósito (a diferencia de las de arriba): si no está
   // configurada, logoDevService simplemente se salta y cae al siguiente
   // eslabón de la cadena de búsqueda de logos (Google Images vía Apify).

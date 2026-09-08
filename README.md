@@ -28,6 +28,7 @@ las variables que necesites según el estilo de video que vayas a hacer:
 | `ANTHROPIC_API_KEY` | Detecta y corta automáticamente tomas fallidas/muletillas | `ranking`, `pantalla dividida` y `youtube noticias avatar` (video grabado por vos) |
 | `KIE_AI_API_KEY` | Genera imágenes con IA como último recurso | `vox` con imágenes de IA/personaje, o `ranking` si no encuentra el logo en ninguna otra fuente |
 | `APIFY_API_TOKEN` + `APIFY_GOOGLE_IMAGES_TASK` | Busca fotos/logos reales | `vox` con fotos reales, o `ranking` en la cascada de búsqueda de logos |
+| `YOUTUBE_API_KEY` | Trae videos/metadatos de un canal de YouTube | Vas a correr `npm run analyze:channel` |
 
 Conseguí las claves en [elevenlabs.io](https://elevenlabs.io),
 [console.anthropic.com](https://console.anthropic.com), [kie.ai](https://kie.ai)
