@@ -1,8 +1,10 @@
 import fs from "fs";
+import os from "os";
 import path from "path";
 import { resolveChannel, listRecentVideos } from "./youtubeService";
 import { analyzeChannel as analyzeChannelWithClaude } from "./channelAnalysisService";
 import { editImage } from "./kieAiService";
+import { buildChannelReportPdf } from "./channelReportPdfService";
 
 const CHARACTER_REFERENCE_COUNT = 3;
 
@@ -38,55 +40,41 @@ async function main() {
     }.`,
   );
 
-  console.log("Analizando temas y personaje con Claude...");
+  console.log("Analizando temas, personaje y títulos con Claude...");
   const analysis = await analyzeChannelWithClaude(videos);
 
-  const slug = slugify(channel.title);
-  const outputDir = path.join("content", "canales", slug);
-  fs.mkdirSync(outputDir, { recursive: true });
-
-  let imageGenerated = false;
-  let promptSaved = false;
+  let characterImageBuffer: Buffer | null = null;
+  let characterImagePrompt: string | null = null;
   if (analysis.character.present && analysis.character.description) {
-    const prompt = buildCharacterImagePrompt(analysis.character.description);
+    characterImagePrompt = buildCharacterImagePrompt(analysis.character.description);
     const referenceUrls = videos.slice(0, CHARACTER_REFERENCE_COUNT).map((v) => v.thumbnailUrl);
-
-    const promptFileContent = `${prompt}\n\nURLs de referencia usadas (pasalas como image_urls si lo generás manualmente en kie.ai u otra herramienta de edición de imagen con referencia):\n${referenceUrls
-      .map((u) => `- ${u}`)
-      .join("\n")}\n`;
-    fs.writeFileSync(path.join(outputDir, "personaje-prompt.txt"), promptFileContent);
-    promptSaved = true;
+    const tempImagePath = path.join(os.tmpdir(), `personaje-${Date.now()}.png`);
 
     console.log("Generando imagen de referencia del personaje...");
     try {
-      await editImage(prompt, referenceUrls, path.join(outputDir, "personaje.png"), { aspectRatio: "3:2" });
-      imageGenerated = true;
+      await editImage(characterImagePrompt, referenceUrls, tempImagePath, { aspectRatio: "3:2" });
+      characterImageBuffer = fs.readFileSync(tempImagePath);
+      fs.unlinkSync(tempImagePath);
     } catch (err) {
       console.error("No se pudo generar la imagen del personaje:", (err as Error).message);
     }
   }
 
-  const personajeMd = analysis.character.present
-    ? `# Personaje — ${channel.title}\n\n${analysis.character.description}\n\n---\n\nEsta imagen fue generada a partir de las miniaturas reales de este canal. Si el canal no es tuyo, es solo referencia interna de moodboard — no publiques esta imagen ni una copia visualmente idéntica; usala para inspirarte en un personaje propio y distinto.\n`
-    : `# Personaje — ${channel.title}\n\nEste canal no muestra un personaje visual consistente en la muestra analizada.\n`;
-  fs.writeFileSync(path.join(outputDir, "personaje.md"), personajeMd);
+  console.log("Armando el PDF del reporte...");
+  const pdfBuffer = await buildChannelReportPdf({
+    channel,
+    analysis,
+    characterImageBuffer,
+    characterImagePrompt,
+  });
 
-  const analisisJson = {
-    channel: { channelId: channel.channelId, title: channel.title, handle: channel.handle ?? null },
-    videosAnalyzed: videos.map((v) => ({ videoId: v.videoId, title: v.title, publishedAt: v.publishedAt })),
-    usedFallback,
-    topics: analysis.topics,
-    disclaimer: analysis.disclaimer,
-    disclaimerNote:
-      'Este texto complementa la descripción del video, pero NO reemplaza activar el toggle "Contenido alterado o sintético" en YouTube Studio al subir el video.',
-  };
-  fs.writeFileSync(path.join(outputDir, "analisis.json"), JSON.stringify(analisisJson, null, 2));
+  const slug = slugify(channel.title);
+  const outputDir = path.join("content", "canales", slug);
+  fs.mkdirSync(outputDir, { recursive: true });
+  const outputPath = path.join(outputDir, "reporte.pdf");
+  fs.writeFileSync(outputPath, pdfBuffer);
 
-  console.log(`\nListo. Archivos guardados en ${outputDir}/:`);
-  console.log(`  - analisis.json`);
-  console.log(`  - personaje.md`);
-  if (promptSaved) console.log(`  - personaje-prompt.txt`);
-  if (imageGenerated) console.log(`  - personaje.png`);
+  console.log(`\nListo. Reporte guardado en ${outputPath}`);
   console.log(`\nTemas encontrados: ${analysis.topics.join(", ")}`);
 }
 
