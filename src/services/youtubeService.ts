@@ -9,6 +9,14 @@ export interface ChannelInfo {
   title: string;
   handle?: string;
   uploadsPlaylistId: string;
+  description: string;
+  profileImageUrl: string;
+  bannerUrl: string | null;
+  subscriberCount: number;
+  viewCount: number;
+  videoCount: number;
+  publishedAt: string;
+  country?: string;
 }
 
 export interface ChannelVideo {
@@ -18,6 +26,7 @@ export interface ChannelVideo {
   tags: string[];
   publishedAt: string;
   thumbnailUrl: string;
+  viewCount: number;
 }
 
 export interface ChannelVideosResult {
@@ -75,9 +84,13 @@ export function selectVideosForAnalysis(
   return { selected: items.slice(0, FALLBACK_VIDEO_COUNT), usedFallback: true };
 }
 
+export function selectTopVideosByViews(videos: ChannelVideo[], count: number): ChannelVideo[] {
+  return [...videos].sort((a, b) => b.viewCount - a.viewCount).slice(0, count);
+}
+
 async function fetchChannelInfo(parsed: ParsedChannelInput): Promise<ChannelInfo | null> {
   const params = new URLSearchParams({
-    part: "snippet,contentDetails",
+    part: "snippet,contentDetails,brandingSettings,statistics",
     key: env.youtubeApiKey,
   });
   if (parsed.forHandle) params.set("forHandle", parsed.forHandle);
@@ -92,8 +105,17 @@ async function fetchChannelInfo(parsed: ParsedChannelInput): Promise<ChannelInfo
   const data = (await res.json()) as {
     items: {
       id: string;
-      snippet: { title: string; customUrl?: string };
+      snippet: {
+        title: string;
+        customUrl?: string;
+        description: string;
+        thumbnails: { high?: { url: string }; default: { url: string } };
+        publishedAt: string;
+        country?: string;
+      };
       contentDetails: { relatedPlaylists: { uploads: string } };
+      brandingSettings?: { image?: { bannerExternalUrl?: string } };
+      statistics: { subscriberCount: string; viewCount: string; videoCount: string };
     }[];
   };
   const item = data.items[0];
@@ -104,6 +126,14 @@ async function fetchChannelInfo(parsed: ParsedChannelInput): Promise<ChannelInfo
     title: item.snippet.title,
     handle: item.snippet.customUrl,
     uploadsPlaylistId: item.contentDetails.relatedPlaylists.uploads,
+    description: item.snippet.description,
+    profileImageUrl: item.snippet.thumbnails.high?.url ?? item.snippet.thumbnails.default.url,
+    bannerUrl: item.brandingSettings?.image?.bannerExternalUrl ?? null,
+    subscriberCount: Number(item.statistics.subscriberCount),
+    viewCount: Number(item.statistics.viewCount),
+    videoCount: Number(item.statistics.videoCount),
+    publishedAt: item.snippet.publishedAt,
+    country: item.snippet.country,
   };
 }
 
@@ -142,7 +172,7 @@ export async function resolveChannel(input: string): Promise<ChannelInfo> {
 
 async function fetchVideoDetails(videoIds: string[]): Promise<ChannelVideo[]> {
   const params = new URLSearchParams({
-    part: "snippet",
+    part: "snippet,statistics",
     id: videoIds.join(","),
     key: env.youtubeApiKey,
   });
@@ -160,6 +190,7 @@ async function fetchVideoDetails(videoIds: string[]): Promise<ChannelVideo[]> {
         publishedAt: string;
         thumbnails: { high?: { url: string }; default: { url: string } };
       };
+      statistics: { viewCount: string };
     }[];
   };
 
@@ -170,6 +201,7 @@ async function fetchVideoDetails(videoIds: string[]): Promise<ChannelVideo[]> {
     tags: item.snippet.tags ?? [],
     publishedAt: item.snippet.publishedAt,
     thumbnailUrl: item.snippet.thumbnails.high?.url ?? item.snippet.thumbnails.default.url,
+    viewCount: Number(item.statistics.viewCount),
   }));
 }
 

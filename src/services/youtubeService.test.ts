@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { parseChannelInput, selectVideosForAnalysis } from "./youtubeService";
+import { parseChannelInput, selectVideosForAnalysis, selectTopVideosByViews } from "./youtubeService";
+import type { ChannelVideo } from "./youtubeService";
 
 describe("parseChannelInput", () => {
   it("reconoce un @handle suelto", () => {
@@ -58,5 +59,40 @@ describe("selectVideosForAnalysis", () => {
     expect(result.usedFallback).toBe(true);
     expect(result.selected).toHaveLength(10);
     expect(result.selected).toEqual(items.slice(0, 10));
+  });
+});
+
+describe("selectTopVideosByViews", () => {
+  function video(overrides: Partial<ChannelVideo>): ChannelVideo {
+    return {
+      videoId: "v",
+      title: "t",
+      description: "",
+      tags: [],
+      publishedAt: "2026-01-01T00:00:00Z",
+      thumbnailUrl: "https://example.com/thumb.jpg",
+      viewCount: 0,
+      ...overrides,
+    };
+  }
+
+  it("ordena por vistas descendente y corta a count", () => {
+    const videos = [
+      video({ videoId: "a", viewCount: 10 }),
+      video({ videoId: "b", viewCount: 100 }),
+      video({ videoId: "c", viewCount: 50 }),
+    ];
+
+    const result = selectTopVideosByViews(videos, 2);
+
+    expect(result.map((v) => v.videoId)).toEqual(["b", "c"]);
+  });
+
+  it("no rompe si count es mayor a la cantidad de videos", () => {
+    const videos = [video({ videoId: "a", viewCount: 5 })];
+
+    const result = selectTopVideosByViews(videos, 5);
+
+    expect(result.map((v) => v.videoId)).toEqual(["a"]);
   });
 });
