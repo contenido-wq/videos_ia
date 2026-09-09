@@ -206,7 +206,6 @@ export function matchViralTitleReasons(
 ```ts
 export interface ChannelReportData {
   channel: ChannelInfo;
-  videos: ChannelVideo[];
   analysis: ChannelAnalysisResult;
   characterImageBuffer: Buffer | null; // null si editImage falló
   characterImagePrompt: string | null; // null si character.present es false
