@@ -19,6 +19,8 @@ export const RemotionRoot: React.FC = () => {
       <SocialChecklistComposition id="CincoHerramientasRanking" slug="5-herramientas-ranking" />
       <PantallaDivididaComposition id="PantallaDividida" slug="pantalla-dividida" />
       <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
+      <PantallaDivididaComposition id="C0012" slug="c0012" />
+      <PantallaDivididaComposition id="PastorJhonatan" slug="pastor-jhonatan" />
       <YoutubeNoticiasAvatarComposition id="YoutubeNoticiasAvatarDemo" slug="youtube-noticias-avatar-demo" />
       <YoutubeNoticiasAvatarComposition id="NepalGlaciar" slug="nepal" />
       <DocumentalDoodleComposition id="DocumentalDoodleDemo" slug="documental-doodle-demo" />

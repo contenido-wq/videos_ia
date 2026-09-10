@@ -1,0 +1,271 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "c0012",
+  "topic": "Ánimo para quien ya subió su primer video pero le da miedo seguir",
+  "videoPath": "assets/c0012/video/trimmed.MP4",
+  "durationInSeconds": 68.526792,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Hay días donde todo parece complicado y pueden agobiarte, pero hoy quiero que me escuches.",
+      "act": "split",
+      "startSeconds": 0.020000000000003126,
+      "durationInSeconds": 5.481188000000003,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s1-local0.png",
+          "durationInSeconds": 1.8270626666666676
+        },
+        {
+          "path": "assets/c0012/images/s1-local1.png",
+          "durationInSeconds": 1.8270626666666676
+        },
+        {
+          "path": "assets/c0012/images/s1-local2.png",
+          "durationInSeconds": 1.8270626666666676
+        }
+      ],
+      "displayText": "Hay días donde todo parece complicado y pueden agobiarte, pero hoy quiero que me escuches."
+    },
+    {
+      "id": "s2",
+      "text": "Sé que has tenido días pesados en los que dudas y has pensado si todo esto que has hecho vale la pena.",
+      "act": "split",
+      "startSeconds": 5.501188000000006,
+      "durationInSeconds": 6.108729000000011,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s2-local0.png",
+          "durationInSeconds": 2.036243000000004
+        },
+        {
+          "path": "assets/c0012/images/s2-local1.png",
+          "durationInSeconds": 2.036243000000004
+        },
+        {
+          "path": "assets/c0012/images/s2-local2.png",
+          "durationInSeconds": 2.036243000000004
+        }
+      ],
+      "displayText": "Sé que has tenido días pesados en los que dudas y has pensado si todo esto que has hecho vale la pena."
+    },
+    {
+      "id": "s3",
+      "text": "Pero hoy quiero que sepas algo. Ya has dado un paso enorme.",
+      "act": "split",
+      "startSeconds": 11.609917000000017,
+      "durationInSeconds": 4.1200000000000045,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s3-local0.png",
+          "durationInSeconds": 2.0600000000000023
+        },
+        {
+          "path": "assets/c0012/images/s3-local1.png",
+          "durationInSeconds": 2.0600000000000023
+        }
+      ],
+      "displayText": "Pero hoy quiero que sepas algo. Ya has dado un paso enorme."
+    },
+    {
+      "id": "s4",
+      "text": "Ya te atreviste a hacer el primer video para redes sociales para tu negocio y eso es algo de aplaudir, es algo grandioso,",
+      "act": "split",
+      "startSeconds": 15.729917000000022,
+      "durationInSeconds": 7.868354000000011,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s4-local0.png",
+          "durationInSeconds": 1.9670885000000027
+        },
+        {
+          "path": "assets/c0012/images/s4-local1.png",
+          "durationInSeconds": 1.9670885000000027
+        },
+        {
+          "path": "assets/c0012/images/s4-local2.png",
+          "durationInSeconds": 1.9670885000000027
+        },
+        {
+          "path": "assets/c0012/images/s4-local3.png",
+          "durationInSeconds": 1.9670885000000027
+        }
+      ],
+      "displayText": "Ya te atreviste a hacer el primer video para redes sociales para tu negocio y eso es algo de aplaudir, es algo grandioso,"
+    },
+    {
+      "id": "s5",
+      "text": "ya que no es fácil ponerte frente a la cámara y entiendo que te da pena,",
+      "act": "split",
+      "startSeconds": 23.598271000000032,
+      "durationInSeconds": 4.0871250000000146,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s5-local0.png",
+          "durationInSeconds": 2.0435625000000073
+        },
+        {
+          "path": "assets/c0012/images/s5-local1.png",
+          "durationInSeconds": 2.0435625000000073
+        }
+      ],
+      "displayText": "ya que no es fácil ponerte frente a la cámara y entiendo que te da pena,"
+    },
+    {
+      "id": "s6",
+      "text": "pero la verdad es que las personas necesitan conocerte, necesitan saber lo que ofreces y más aún cómo puedes ayudarles.",
+      "act": "split",
+      "startSeconds": 27.685396000000047,
+      "durationInSeconds": 8.215958999999998,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s6-local0.png",
+          "durationInSeconds": 2.0539897499999995
+        },
+        {
+          "path": "assets/c0012/images/s6-local1.png",
+          "durationInSeconds": 2.0539897499999995
+        },
+        {
+          "path": "assets/c0012/images/s6-local2.png",
+          "durationInSeconds": 2.0539897499999995
+        },
+        {
+          "path": "assets/c0012/images/s6-local3.png",
+          "durationInSeconds": 2.0539897499999995
+        }
+      ],
+      "displayText": "pero la verdad es que las personas necesitan conocerte, necesitan saber lo que ofreces y más aún cómo puedes ayudarles."
+    },
+    {
+      "id": "s7",
+      "text": "Es natural tener miedo al principio, pero si no lo haces, ¿cómo vas a crecer? ¿Cómo vas a dejar ese legado que tanto sueñas?",
+      "act": "split",
+      "startSeconds": 35.901355000000045,
+      "durationInSeconds": 8.575542000000013,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s7-local0.png",
+          "durationInSeconds": 2.143885500000003
+        },
+        {
+          "path": "assets/c0012/images/s7-local1.png",
+          "durationInSeconds": 2.143885500000003
+        },
+        {
+          "path": "assets/c0012/images/s7-local2.png",
+          "durationInSeconds": 2.143885500000003
+        },
+        {
+          "path": "assets/c0012/images/s7-local3.png",
+          "durationInSeconds": 2.143885500000003
+        }
+      ],
+      "displayText": "Es natural tener miedo al principio, pero si no lo haces, ¿cómo vas a crecer? ¿Cómo vas a dejar ese legado que tanto sueñas?"
+    },
+    {
+      "id": "s8",
+      "text": "Yo creo en ti y para eso estoy aquí, para decirte que todo lo que estás haciendo tiene un propósito.",
+      "act": "split",
+      "startSeconds": 44.47689700000006,
+      "durationInSeconds": 5.732916999999986,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s8-local0.png",
+          "durationInSeconds": 1.9109723333333288
+        },
+        {
+          "path": "assets/c0012/images/s8-local1.png",
+          "durationInSeconds": 1.9109723333333288
+        },
+        {
+          "path": "assets/c0012/images/s8-local2.png",
+          "durationInSeconds": 1.9109723333333288
+        }
+      ],
+      "displayText": "Yo creo en ti y para eso estoy aquí, para decirte que todo lo que estás haciendo tiene un propósito."
+    },
+    {
+      "id": "s9",
+      "text": "Cada paso, cada video te acerca más a esos sueños que Dios te dio.",
+      "act": "split",
+      "startSeconds": 50.209814000000044,
+      "durationInSeconds": 3.75252100000003,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s9-local0.png",
+          "durationInSeconds": 1.876260500000015
+        },
+        {
+          "path": "assets/c0012/images/s9-local1.png",
+          "durationInSeconds": 1.876260500000015
+        }
+      ],
+      "displayText": "Cada paso, cada video te acerca más a esos sueños que Dios te dio."
+    },
+    {
+      "id": "s10",
+      "text": "Así que te animo a que sigas dando pasos así sean pequeños.",
+      "act": "split",
+      "startSeconds": 53.962335000000074,
+      "durationInSeconds": 3.782895999999994,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s10-local0.png",
+          "durationInSeconds": 1.891447999999997
+        },
+        {
+          "path": "assets/c0012/images/s10-local1.png",
+          "durationInSeconds": 1.891447999999997
+        }
+      ],
+      "displayText": "Así que te animo a que sigas dando pasos así sean pequeños."
+    },
+    {
+      "id": "s11",
+      "text": "No dejes que el miedo te frene porque sé que puedes lograrlo.",
+      "act": "split",
+      "startSeconds": 57.74523100000007,
+      "durationInSeconds": 3.7583749999999725,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0012/images/s11-local0.png",
+          "durationInSeconds": 1.8791874999999862
+        },
+        {
+          "path": "assets/c0012/images/s11-local1.png",
+          "durationInSeconds": 1.8791874999999862
+        }
+      ],
+      "displayText": "No dejes que el miedo te frene porque sé que puedes lograrlo."
+    },
+    {
+      "id": "s12",
+      "text": "Y si alguna vez te sientes solo, recuerda que aquí estoy para apoyarte. Estoy para ayudarte a crecer, para ayudarte a dejar esa huella.",
+      "act": "closing",
+      "startSeconds": 61.50360600000004,
+      "durationInSeconds": 7.02318599999996,
+      "matched": true,
+      "images": [],
+      "displayText": "\"SIGUE ADELANTE\""
+    }
+  ],
+  "sfx": {
+    "backgroundMusicPath": "assets/c0012/sfx/background-music.mp3",
+    "whooshPath": "assets/c0012/sfx/whoosh.mp3",
+    "whooshDurationInSeconds": 3.030204081632653,
+    "stingPath": "assets/c0012/sfx/sting.mp3",
+    "stingDurationInSeconds": 4.048979591836734
+  }
+}

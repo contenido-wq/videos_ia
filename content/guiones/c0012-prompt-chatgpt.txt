@@ -1,0 +1,39 @@
+Necesito que generes 29 ilustraciones para un video, todas con el MISMO estilo visual consistente en las 29:
+
+ESTILO (aplicar a todas): black paper-cut silhouette illustration (sombras chinas style), a single human silhouette in dramatic black, backlit against a warm golden amber textured background with visible paper/canvas texture, dramatic ink-drip streaks running down from the top, subtle ink splatter accents scattered around, warm rim-light glow around the silhouette edges, moody and emotional, no color other than black silhouette and warm amber/gold background, no text or watermarks in the image.
+
+FORMATO: cuadrada o casi cuadrada (1:1), con el sujeto principal centrado — la imagen se va a recortar a un rectángulo horizontal, así que dejá aire arriba/abajo y mantené lo importante en el centro.
+
+Generalas una por una, en este orden, y decime el nombre de archivo antes de cada una para que yo las vaya guardando:
+
+1. s1-a.png — Person sitting hunched on the ground, knees to chest, head down, overwhelmed under a dark heavy sky
+2. s1-b.png — Same person standing under a large dark storm cloud pressing down on their shoulders like a weight
+3. s2-a.png — Person walking forward while dragging heavy chained weights behind them
+4. s2-b.png — Person sitting at a desk, head in hands, papers scattered, exhausted
+5. s2-c.png — Person staring at a large clock/hourglass, doubtful expression
+6. s3-a.png — Person taking a determined step forward, footprint glowing brightly on the ground behind them
+7. s3-b.png — Close-up of a single glowing giant footprint radiating light
+8. s4-a.png — Person holding up a phone recording themselves, bright light beaming out of the screen
+9. s4-b.png — Silhouette of a crowd of hands applauding
+10. s4-c.png — Person standing triumphantly in a spotlight on a small stage
+11. s4-d.png — A glowing trophy/star bursting with light rays
+12. s5-a.png — Person nervously facing a large intimidating camera lens, shrinking back slightly
+13. s5-b.png — Person partially covering their face with their hands, camera visible in front
+14. s6-a.png — Silhouette reaching a hand toward a crowd of small silhouettes in the distance
+15. s6-b.png — Person glowing like a lighthouse, beams guiding tiny distant figures
+16. s6-c.png — Web of glowing connecting lines between one person and many others, constellation-like
+17. s6-d.png — Person offering a glowing lightbulb toward another silhouette reaching back
+18. s7-a.png — A small glowing seed sprouting into a tall tree, shown as a growth sequence in one frame
+19. s7-b.png — Person climbing a steep mountain path toward a bright peak
+20. s7-c.png — Person standing tall on a hill, casting an enormous long shadow across the land
+21. s8-a.png — Two silhouettes, one gently pushing/supporting the other forward
+22. s8-b.png — A glowing compass pointing toward a bright light on the horizon
+23. s8-c.png — A puzzle piece glowing as it fits into a larger puzzle
+24. s9-a.png — A trail of glowing footprints leading toward a bright sunrise
+25. s9-b.png — Person walking a path made of stars/light toward a distant glowing horizon
+26. s10-a.png — Small footprints along a long winding path
+27. s10-b.png — Person taking one small determined step forward, chin up
+28. s11-a.png — Person breaking through a cracking wall/chain, arms raised
+29. s11-b.png — Person standing triumphant, fist raised, breaking free of a dark shadow around them
+
+Empezá por la número 1 y seguí en orden.

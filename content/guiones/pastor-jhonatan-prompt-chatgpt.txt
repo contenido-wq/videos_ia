@@ -1,0 +1,45 @@
+Necesito que generes 31 ilustraciones para un video, todas con el MISMO estilo visual consistente en las 31:
+
+ESTILO (aplicar a todas): black paper-cut silhouette illustration (sombras chinas style), dramatic black silhouettes, backlit against a warm golden amber textured background with visible paper/canvas texture, dramatic ink-drip streaks running down from the top, subtle ink splatter accents scattered around, warm rim-light glow around silhouette edges, moody and emotional, no color other than black silhouette and warm amber/gold background, no text or watermarks in the image.
+
+FORMATO: horizontal (más ancha que alta, casi cuadrada), con el sujeto principal centrado — dejá aire arriba/abajo y mantené lo importante en el centro.
+
+TEMA GENERAL: son ilustraciones sobre relaciones de pareja — amor, comunicación, trabajo en equipo. Cuando la descripción diga "dos siluetas" o "pareja", mostrá dos siluetas humanas (sin distinguir género), nunca texto ni caras con detalle, todo en silueta.
+
+Generalas una por una, en este orden, y decime el nombre de archivo antes de cada una para que yo las vaya guardando.
+
+IMPORTANTE al descargar cada imagen: renombrala exactamente al nombre de archivo indicado (ej. "s1a-a.png") antes de guardarla — no la dejes con el nombre genérico que pone ChatGPT por defecto.
+
+1. s1a-a.png — Two silhouettes facing each other, hands almost touching, warm glow radiating from the space between them
+2. s1a-b.png — Three glowing keys floating in the air above two joined silhouette hands
+3. s1b-a.png — Two silhouettes standing back to back, a jagged crack of light running between them, tension in their posture
+4. s1b-b.png — The same two silhouettes now turning to face each other, the crack of light softening into a warm glow
+5. s1b-c.png — Three glowing ornate scrolls floating side by side, like ancient declarations
+6. s2-a.png — A large glowing numeral "3" silhouette with light bursting outward behind it
+7. s2-b.png — A single glowing ornate key unlocking a large heart-shaped lock
+8. s3-a.png — A silhouette hand reaching to pick up one glowing heart among several dim, unlit hearts scattered around it
+9. s4-a.png — A wall calendar with a glowing heart stamped on today's date
+10. s4-b.png — A silhouette placing a glowing heart onto one side of a balance scale, weighing it carefully
+11. s5-a.png — Two silhouettes surrounded by an explosive burst of sparks and light, like fireworks of early romance
+12. s5-b.png — The same two silhouettes calmly stacking glowing building blocks together
+13. s6-a.png — A silhouette looking into a mirror, a glowing heart-shaped thought bubble above their head
+14. s6-b.png — A silhouette writing at a desk by candlelight, a glowing heart hovering above the paper
+15. s6-c.png — A silhouette handing a small glowing gift box to another silhouette
+16. s7-a.png — Two silhouettes laying glowing bricks together, building a heart-shaped structure
+17. s7-b.png — A completed glowing heart-shaped house, two silhouettes standing before it holding hands
+18. s8-a.png — A large glowing numeral "2" with two silhouettes connected by a glowing speech-bubble line
+19. s8-b.png — A silhouette with a tangled, foggy thought-cloud above their head, another silhouette looking on confused
+20. s9-a.png — A silhouette opening their mouth with a clear beam of glowing light streaming out like words
+21. s9-b.png — Two silhouettes sitting facing each other, a clear glowing bridge of light connecting them
+22. s9-c.png — A tangled knot of dark threads dissolving into strands of clear glowing light
+23. s10-a.png — A large glowing numeral "3" with two silhouettes standing side by side facing the same direction
+24. s10-b.png — Two silhouettes pulling the same rope together in the same direction, unified
+25. s11-a.png — Two silhouettes on opposite sides of a chessboard, reaching across to shake hands instead of playing against each other
+26. s11-b.png — Two silhouettes lifting a single glowing trophy together
+27. s12-a.png — Two silhouettes on an unbalanced seesaw, one high one low, cracks forming in the ground beneath
+28. s12-b.png — A glowing heart cracking in half as two silhouettes pull away from each other
+29. s13-a.png — A silhouette pointing an accusing finger at another silhouette, dark stormy clouds behind them
+30. s13-b.png — Two silhouettes standing together looking up at a single glowing lightbulb floating above them
+31. s13-c.png — Two silhouettes embracing with arms around each other, calm and unified
+
+Empezá por la número 1 y seguí en orden.

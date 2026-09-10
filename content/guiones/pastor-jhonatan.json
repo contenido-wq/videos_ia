@@ -1,0 +1,98 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "pastor-jhonatan",
+  "topic": "Tres declaraciones para transformar tu relación de pareja",
+  "rawVideoPath": "content/raw/pastor-jhonatan.mp4",
+  "scenes": [
+    {
+      "id": "s1a",
+      "text": "Tres declaraciones que transformarán tu relación.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s1a-a.png", "content/personajes/pastor-jhonatan/s1a-b.png"]
+    },
+    {
+      "id": "s1b",
+      "text": "Si tu relación está en problemas o quieres fortalecerla, necesitas recordar estas tres declaraciones.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s1b-a.png", "content/personajes/pastor-jhonatan/s1b-b.png", "content/personajes/pastor-jhonatan/s1b-c.png"]
+    },
+    {
+      "id": "s2",
+      "text": "La número tres puede cambiarlo todo.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s2-a.png", "content/personajes/pastor-jhonatan/s2-b.png"]
+    },
+    {
+      "id": "s3",
+      "text": "Número uno: amor como elección.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s3-a.png"]
+    },
+    {
+      "id": "s4",
+      "text": "El amor no es solo un sentimiento, es una decisión diaria.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s4-a.png", "content/personajes/pastor-jhonatan/s4-b.png"]
+    },
+    {
+      "id": "s5",
+      "text": "Al inicio, todo es emoción, pero después el amor se demuestra con acciones.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s5-a.png", "content/personajes/pastor-jhonatan/s5-b.png"]
+    },
+    {
+      "id": "s6",
+      "text": "Pregúntate cada día: ¿qué puedo hacer hoy para que mi pareja se sienta amada?",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s6-a.png", "content/personajes/pastor-jhonatan/s6-b.png", "content/personajes/pastor-jhonatan/s6-c.png"]
+    },
+    {
+      "id": "s7",
+      "text": "El amor se construye todos los días.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s7-a.png", "content/personajes/pastor-jhonatan/s7-b.png"]
+    },
+    {
+      "id": "s8",
+      "text": "Número dos: comunicación clara. Tu pareja no puede leer tu mente.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s8-a.png", "content/personajes/pastor-jhonatan/s8-b.png"]
+    },
+    {
+      "id": "s9",
+      "text": "Si algo te molesta, dilo. Hablar claro evita problemas innecesarios.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s9-a.png", "content/personajes/pastor-jhonatan/s9-b.png", "content/personajes/pastor-jhonatan/s9-c.png"]
+    },
+    {
+      "id": "s10",
+      "text": "Número tres: en una relación no hay rivales, solo un equipo.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s10-a.png", "content/personajes/pastor-jhonatan/s10-b.png"]
+    },
+    {
+      "id": "s11",
+      "text": "No se trata de ganar una discusión, sino de ganar como equipo.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s11-a.png", "content/personajes/pastor-jhonatan/s11-b.png"]
+    },
+    {
+      "id": "s12",
+      "text": "Si uno gana y el otro pierde, la relación pierde.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s12-a.png", "content/personajes/pastor-jhonatan/s12-b.png"]
+    },
+    {
+      "id": "s13",
+      "text": "Enfócate en encontrar soluciones, no en quién tiene la razón. No luches contra tu pareja.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/pastor-jhonatan/s13-a.png", "content/personajes/pastor-jhonatan/s13-b.png", "content/personajes/pastor-jhonatan/s13-c.png"]
+    },
+    {
+      "id": "s14",
+      "text": "Ahora dime: ¿cuál de estas declaraciones necesitas aplicar más a tu relación? Nos vemos pronto. Chao.",
+      "act": "closing",
+      "displayText": "\"¿CUÁL NECESITAS HOY?\""
+    }
+  ]
+}

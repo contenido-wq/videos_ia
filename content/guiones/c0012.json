@@ -1,0 +1,82 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "c0012",
+  "topic": "Ánimo para quien ya subió su primer video pero le da miedo seguir",
+  "rawVideoPath": "content/raw/c0012.MP4",
+  "removeOtherSpeakers": true,
+  "backgroundMusicPath": "content/musica/motivation-paulyudin.mp3",
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Hay días donde todo parece complicado y pueden agobiarte, pero hoy quiero que me escuches.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s1-a.png", "content/personajes/c0012/s1-b.png"]
+    },
+    {
+      "id": "s2",
+      "text": "Sé que has tenido días pesados en los que dudas y has pensado si todo esto que has hecho vale la pena.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s2-a.png", "content/personajes/c0012/s2-b.png", "content/personajes/c0012/s2-c.png"]
+    },
+    {
+      "id": "s3",
+      "text": "Pero hoy quiero que sepas algo. Ya has dado un paso enorme.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s3-a.png", "content/personajes/c0012/s3-b.png"]
+    },
+    {
+      "id": "s4",
+      "text": "Ya te atreviste a hacer el primer video para redes sociales para tu negocio y eso es algo de aplaudir, es algo grandioso,",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s4-a.png", "content/personajes/c0012/s4-b.png", "content/personajes/c0012/s4-c.png", "content/personajes/c0012/s4-d.png"]
+    },
+    {
+      "id": "s5",
+      "text": "ya que no es fácil ponerte frente a la cámara y entiendo que te da pena,",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s5-a.png", "content/personajes/c0012/s5-b.png"]
+    },
+    {
+      "id": "s6",
+      "text": "pero la verdad es que las personas necesitan conocerte, necesitan saber lo que ofreces y más aún cómo puedes ayudarles.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s6-a.png", "content/personajes/c0012/s6-b.png", "content/personajes/c0012/s6-c.png", "content/personajes/c0012/s6-d.png"]
+    },
+    {
+      "id": "s7",
+      "text": "Es natural tener miedo al principio, pero si no lo haces, ¿cómo vas a crecer? ¿Cómo vas a dejar ese legado que tanto sueñas?",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s7-a.png", "content/personajes/c0012/s7-b.png", "content/personajes/c0012/s7-c.png"]
+    },
+    {
+      "id": "s8",
+      "text": "Yo creo en ti y para eso estoy aquí, para decirte que todo lo que estás haciendo tiene un propósito.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s8-a.png", "content/personajes/c0012/s8-b.png", "content/personajes/c0012/s8-c.png"]
+    },
+    {
+      "id": "s9",
+      "text": "Cada paso, cada video te acerca más a esos sueños que Dios te dio.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s9-a.png", "content/personajes/c0012/s9-b.png"]
+    },
+    {
+      "id": "s10",
+      "text": "Así que te animo a que sigas dando pasos así sean pequeños.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s10-a.png", "content/personajes/c0012/s10-b.png"]
+    },
+    {
+      "id": "s11",
+      "text": "No dejes que el miedo te frene porque sé que puedes lograrlo.",
+      "act": "split",
+      "localImagePaths": ["content/personajes/c0012/s11-a.png", "content/personajes/c0012/s11-b.png"]
+    },
+    {
+      "id": "s12",
+      "text": "Y si alguna vez te sientes solo, recuerda que aquí estoy para apoyarte. Estoy para ayudarte a crecer, para ayudarte a dejar esa huella.",
+      "act": "closing",
+      "displayText": "\"SIGUE ADELANTE\""
+    }
+  ]
+}

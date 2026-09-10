@@ -1,0 +1,307 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "pastor-jhonatan",
+  "topic": "Tres declaraciones para transformar tu relación de pareja",
+  "videoPath": "assets/pastor-jhonatan/video/trimmed.mp4",
+  "durationInSeconds": 71.661667,
+  "scenes": [
+    {
+      "id": "s1a",
+      "text": "Tres declaraciones que transformarán tu relación.",
+      "act": "split",
+      "startSeconds": 0.11739000000000033,
+      "durationInSeconds": 3.7404780000000013,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s1a-local0.png",
+          "durationInSeconds": 1.8702390000000007
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s1a-local1.png",
+          "durationInSeconds": 1.8702390000000007
+        }
+      ],
+      "displayText": "Tres declaraciones que transformarán tu relación."
+    },
+    {
+      "id": "s1b",
+      "text": "Si tu relación está en problemas o quieres fortalecerla, necesitas recordar estas tres declaraciones.",
+      "act": "split",
+      "startSeconds": 3.8578680000000016,
+      "durationInSeconds": 7.100428000000001,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s1b-local0.png",
+          "durationInSeconds": 2.3668093333333338
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s1b-local1.png",
+          "durationInSeconds": 2.3668093333333338
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s1b-local2.png",
+          "durationInSeconds": 2.3668093333333338
+        }
+      ],
+      "displayText": "Si tu relación está en problemas o quieres fortalecerla, necesitas recordar estas tres declaraciones."
+    },
+    {
+      "id": "s2",
+      "text": "La número tres puede cambiarlo todo.",
+      "act": "split",
+      "startSeconds": 10.958296000000002,
+      "durationInSeconds": 2.759115999999999,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s2-local0.png",
+          "durationInSeconds": 1.3795579999999994
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s2-local1.png",
+          "durationInSeconds": 1.3795579999999994
+        }
+      ],
+      "displayText": "La número tres puede cambiarlo todo."
+    },
+    {
+      "id": "s3",
+      "text": "Número uno: amor como elección.",
+      "act": "split",
+      "startSeconds": 13.717412000000001,
+      "durationInSeconds": 2.445487999999992,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s3-local0.png",
+          "durationInSeconds": 2.445487999999992
+        }
+      ],
+      "displayText": "Número uno: amor como elección."
+    },
+    {
+      "id": "s4",
+      "text": "El amor no es solo un sentimiento, es una decisión diaria.",
+      "act": "split",
+      "startSeconds": 16.162899999999993,
+      "durationInSeconds": 4.126916999999999,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s4-local0.png",
+          "durationInSeconds": 2.0634584999999994
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s4-local1.png",
+          "durationInSeconds": 2.0634584999999994
+        }
+      ],
+      "displayText": "El amor no es solo un sentimiento, es una decisión diaria."
+    },
+    {
+      "id": "s5",
+      "text": "Al inicio, todo es emoción, pero después el amor se demuestra con acciones.",
+      "act": "split",
+      "startSeconds": 20.289816999999992,
+      "durationInSeconds": 5.064056999999995,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s5-local0.png",
+          "durationInSeconds": 1.6880189999999982
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s5-local1.png",
+          "durationInSeconds": 1.6880189999999982
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s5-local2.png",
+          "durationInSeconds": 1.6880189999999982
+        }
+      ],
+      "displayText": "Al inicio, todo es emoción, pero después el amor se demuestra con acciones."
+    },
+    {
+      "id": "s6",
+      "text": "Pregúntate cada día: ¿qué puedo hacer hoy para que mi pareja se sienta amada?",
+      "act": "split",
+      "startSeconds": 25.353873999999987,
+      "durationInSeconds": 5.920524,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s6-local0.png",
+          "durationInSeconds": 1.973508
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s6-local1.png",
+          "durationInSeconds": 1.973508
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s6-local2.png",
+          "durationInSeconds": 1.973508
+        }
+      ],
+      "displayText": "Pregúntate cada día: ¿qué puedo hacer hoy para que mi pareja se sienta amada?"
+    },
+    {
+      "id": "s7",
+      "text": "El amor se construye todos los días.",
+      "act": "split",
+      "startSeconds": 31.274397999999987,
+      "durationInSeconds": 3.7144670000000026,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s7-local0.png",
+          "durationInSeconds": 1.8572335000000013
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s7-local1.png",
+          "durationInSeconds": 1.8572335000000013
+        }
+      ],
+      "displayText": "El amor se construye todos los días."
+    },
+    {
+      "id": "s8",
+      "text": "Número dos: comunicación clara. Tu pareja no puede leer tu mente.",
+      "act": "split",
+      "startSeconds": 34.98886499999999,
+      "durationInSeconds": 4.362424999999988,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s8-local0.png",
+          "durationInSeconds": 2.181212499999994
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s8-local1.png",
+          "durationInSeconds": 2.181212499999994
+        }
+      ],
+      "displayText": "Número dos: comunicación clara. Tu pareja no puede leer tu mente."
+    },
+    {
+      "id": "s9",
+      "text": "Si algo te molesta, dilo. Hablar claro evita problemas innecesarios.",
+      "act": "split",
+      "startSeconds": 39.35128999999998,
+      "durationInSeconds": 5.864447999999982,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s9-local0.png",
+          "durationInSeconds": 1.954815999999994
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s9-local1.png",
+          "durationInSeconds": 1.954815999999994
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s9-local2.png",
+          "durationInSeconds": 1.954815999999994
+        }
+      ],
+      "displayText": "Si algo te molesta, dilo. Hablar claro evita problemas innecesarios."
+    },
+    {
+      "id": "s10",
+      "text": "Número tres: en una relación no hay rivales, solo un equipo.",
+      "act": "split",
+      "startSeconds": 45.21573799999996,
+      "durationInSeconds": 4.740881999999992,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s10-local0.png",
+          "durationInSeconds": 2.370440999999996
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s10-local1.png",
+          "durationInSeconds": 2.370440999999996
+        }
+      ],
+      "displayText": "Número tres: en una relación no hay rivales, solo un equipo."
+    },
+    {
+      "id": "s11",
+      "text": "No se trata de ganar una discusión, sino de ganar como equipo.",
+      "act": "split",
+      "startSeconds": 49.95661999999995,
+      "durationInSeconds": 4.6388880000000015,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s11-local0.png",
+          "durationInSeconds": 2.3194440000000007
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s11-local1.png",
+          "durationInSeconds": 2.3194440000000007
+        }
+      ],
+      "displayText": "No se trata de ganar una discusión, sino de ganar como equipo."
+    },
+    {
+      "id": "s12",
+      "text": "Si uno gana y el otro pierde, la relación pierde.",
+      "act": "split",
+      "startSeconds": 54.59550799999995,
+      "durationInSeconds": 3.421360000000014,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s12-local0.png",
+          "durationInSeconds": 1.710680000000007
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s12-local1.png",
+          "durationInSeconds": 1.710680000000007
+        }
+      ],
+      "displayText": "Si uno gana y el otro pierde, la relación pierde."
+    },
+    {
+      "id": "s13",
+      "text": "Enfócate en encontrar soluciones, no en quién tiene la razón. No luches contra tu pareja.",
+      "act": "split",
+      "startSeconds": 58.01686799999997,
+      "durationInSeconds": 6.891746000000019,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/pastor-jhonatan/images/s13-local0.png",
+          "durationInSeconds": 2.297248666666673
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s13-local1.png",
+          "durationInSeconds": 2.297248666666673
+        },
+        {
+          "path": "assets/pastor-jhonatan/images/s13-local2.png",
+          "durationInSeconds": 2.297248666666673
+        }
+      ],
+      "displayText": "Enfócate en encontrar soluciones, no en quién tiene la razón. No luches contra tu pareja."
+    },
+    {
+      "id": "s14",
+      "text": "Ahora dime: ¿cuál de estas declaraciones necesitas aplicar más a tu relación? Nos vemos pronto. Chao.",
+      "act": "closing",
+      "startSeconds": 64.90861399999999,
+      "durationInSeconds": 6.753053000000008,
+      "matched": true,
+      "images": [],
+      "displayText": "\"¿CUÁL NECESITAS HOY?\""
+    }
+  ],
+  "sfx": {
+    "whooshPath": "assets/pastor-jhonatan/sfx/whoosh.mp3",
+    "whooshDurationInSeconds": 1.0448979591836736,
+    "stingPath": "assets/pastor-jhonatan/sfx/sting.mp3",
+    "stingDurationInSeconds": 1.0448979591836736
+  }
+}
