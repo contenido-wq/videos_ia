@@ -173,19 +173,21 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
         <Caption text={active.scene.displayText} localFrame={localFrame} fps={fps} variant="overlay" />
       )}
 
-      <Sequence durationInFrames={durationInFrames} layout="none">
-        <Audio
-          src={staticFile(guion.sfx.backgroundMusicPath)}
-          volume={(f) =>
-            Math.min(
-              interpolate(f, [0, MUSIC_FADE_IN_FRAMES], [0, MUSIC_VOLUME], { extrapolateRight: "clamp" }),
-              interpolate(f, [durationInFrames - MUSIC_FADE_OUT_FRAMES, durationInFrames], [MUSIC_VOLUME, 0], {
-                extrapolateLeft: "clamp",
-              }),
-            )
-          }
-        />
-      </Sequence>
+      {guion.sfx.backgroundMusicPath && (
+        <Sequence durationInFrames={durationInFrames} layout="none">
+          <Audio
+            src={staticFile(guion.sfx.backgroundMusicPath)}
+            volume={(f) =>
+              Math.min(
+                interpolate(f, [0, MUSIC_FADE_IN_FRAMES], [0, MUSIC_VOLUME], { extrapolateRight: "clamp" }),
+                interpolate(f, [durationInFrames - MUSIC_FADE_OUT_FRAMES, durationInFrames], [MUSIC_VOLUME, 0], {
+                  extrapolateLeft: "clamp",
+                }),
+              )
+            }
+          />
+        </Sequence>
+      )}
 
       <Sequence from={actTwoStartFrame} durationInFrames={stingDurationInFrames} layout="none">
         <Audio src={staticFile(guion.sfx.stingPath)} volume={0.5} />

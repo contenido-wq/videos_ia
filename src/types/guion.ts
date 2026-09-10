@@ -140,8 +140,10 @@ export interface PantallaDivididaGuion {
   scenes: PantallaDivididaScene[];
   /** Ruta a un archivo de música de fondo ya elegido y con licencia
    * verificada por el usuario, ej. "content/musica/motivation-paulyudin.mp3".
-   * Se reproduce desde el segundo 0, cortado a la duración total del video. */
-  backgroundMusicPath: string;
+   * Se reproduce desde el segundo 0, cortado a la duración total del video.
+   * Opcional: si se omite, el video queda sin música de fondo (el whoosh/sting
+   * de los cortes de acto sí se generan igual). */
+  backgroundMusicPath?: string;
   /** Prompts para whoosh/sting, generados una vez por video. Ambos opcionales:
    * si se omite alguno, se usa un prompt por defecto. */
   soundDesign?: {
@@ -172,7 +174,7 @@ export interface RenderedPantallaDivididaGuion {
   durationInSeconds: number;
   scenes: RenderedPantallaDivididaScene[];
   sfx: {
-    backgroundMusicPath: string;
+    backgroundMusicPath?: string;
     whooshPath: string;
     whooshDurationInSeconds: number;
     stingPath: string;

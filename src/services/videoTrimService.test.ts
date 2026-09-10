@@ -11,6 +11,7 @@ import {
   detectRepeatedPhrases,
   subtractRanges,
   remapWords,
+  dropWordlessSegments,
   trimVideoToSegments,
   findPrimarySpeakerId,
   detectOtherSpeakerRanges,
@@ -257,6 +258,34 @@ describe("detectRepeatedPhrases", () => {
   it("con menos palabras que 2*minWords no revienta, devuelve []", () => {
     const words = [w("Hola", 0, 0.3), w("mundo", 0.4, 0.7)];
     expect(detectRepeatedPhrases(words)).toEqual([]);
+  });
+});
+
+describe("dropWordlessSegments", () => {
+  it("descarta un segmento que no contiene ninguna palabra", () => {
+    const words = [w("Hola", 0, 0.4), w("mundo", 5, 5.4)];
+    const segments = [
+      { start: 0, end: 1 },
+      { start: 2, end: 3 }, // sin palabras
+      { start: 4.8, end: 6 },
+    ];
+    const result = dropWordlessSegments(segments, words);
+    expect(result).toEqual([
+      { start: 0, end: 1 },
+      { start: 4.8, end: 6 },
+    ]);
+  });
+
+  it("conserva un segmento cuya palabra empieza justo en el borde", () => {
+    const words = [w("borde", 1, 1.4)];
+    const segments = [{ start: 1, end: 2 }];
+    expect(dropWordlessSegments(segments, words)).toEqual(segments);
+  });
+
+  it("no rompe si no hay ningún segmento con palabras", () => {
+    const words = [w("lejos", 100, 100.4)];
+    const segments = [{ start: 0, end: 1 }, { start: 2, end: 3 }];
+    expect(dropWordlessSegments(segments, words)).toEqual([]);
   });
 });
 

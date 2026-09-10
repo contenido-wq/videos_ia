@@ -262,6 +262,19 @@ export function detectRepeatedPhrases(
 // 24 cortes antes de una palabra y 120ms de padding, el error acumulado llega a
 // varios segundos (bug real detectado: un item aparecía ~5.6s antes de lo que se
 // decía en el video).
+// subtractRanges puede dejar segmentos "conservados" que no contienen ninguna
+// palabra: son sobras de TRIM_PADDING_SECONDS entre dos cortes que quedaron muy
+// cerca uno del otro, o tramos de aire/respiración entre intentos fallidos que
+// nunca calificaron como silencio para ffmpeg (ruido de fondo, respiración,
+// manipulación del micrófono) pero tampoco tienen texto real. Sin descartarlos,
+// el video final queda con "aire muerto" perceptible aunque técnicamente no haya
+// silencio digital (bug real: un video con varios intentos fallidos al inicio
+// quedó con ~3s de nada antes de la primera palabra, y más pausas de 1-2s entre
+// escenas, porque esos fragmentos vacíos sí se conservaban).
+export function dropWordlessSegments(segments: KeepRange[], words: TranscribedWord[]): KeepRange[] {
+  return segments.filter((segment) => words.some((w) => w.start >= segment.start && w.start < segment.end));
+}
+
 export function remapWords(words: TranscribedWord[], keepSegments: KeepRange[]): TranscribedWord[] {
   const sorted = [...keepSegments].sort((a, b) => a.start - b.start);
   const result: TranscribedWord[] = [];

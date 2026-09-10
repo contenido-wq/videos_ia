@@ -39,3 +39,8 @@ public/assets/primeros-humanos-de-noche/
 # ~1.7GB incluyendo un .mp4 de 248MB) — supera el límite de 100MB de GitHub
 # y son assets crudos regenerables, no assets finales versionados.
 /Nepal/
+
+# Output de `analyze:channel` (reporte.pdf, imágenes de personaje, guías
+# derivadas) — regenerable corriendo el comando de nuevo, y a veces es de
+# canales de terceros usados solo como referencia/prueba, no assets propios.
+content/canales/
