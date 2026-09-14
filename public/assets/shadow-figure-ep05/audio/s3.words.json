@@ -1,0 +1,657 @@
+[
+  {
+    "text": "The",
+    "start": 0.259,
+    "end": 0.34
+  },
+  {
+    "text": "first",
+    "start": 0.439,
+    "end": 0.699
+  },
+  {
+    "text": "law:",
+    "start": 0.779,
+    "end": 1.019
+  },
+  {
+    "text": "institutions",
+    "start": 1.519,
+    "end": 2.399
+  },
+  {
+    "text": "trust",
+    "start": 2.799,
+    "end": 3.059
+  },
+  {
+    "text": "the",
+    "start": 3.119,
+    "end": 3.179
+  },
+  {
+    "text": "paperwork",
+    "start": 3.259,
+    "end": 3.799
+  },
+  {
+    "text": "in",
+    "start": 3.839,
+    "end": 3.919
+  },
+  {
+    "text": "front",
+    "start": 4,
+    "end": 4.219
+  },
+  {
+    "text": "of",
+    "start": 4.259,
+    "end": 4.339
+  },
+  {
+    "text": "them",
+    "start": 4.4,
+    "end": 4.579
+  },
+  {
+    "text": "far",
+    "start": 5,
+    "end": 5.139
+  },
+  {
+    "text": "more",
+    "start": 5.279,
+    "end": 5.46
+  },
+  {
+    "text": "than",
+    "start": 5.539,
+    "end": 5.659
+  },
+  {
+    "text": "they",
+    "start": 5.719,
+    "end": 5.859
+  },
+  {
+    "text": "trust",
+    "start": 5.92,
+    "end": 6.179
+  },
+  {
+    "text": "their",
+    "start": 6.219,
+    "end": 6.359
+  },
+  {
+    "text": "own",
+    "start": 6.44,
+    "end": 6.559
+  },
+  {
+    "text": "eyes.",
+    "start": 6.659,
+    "end": 7
+  },
+  {
+    "text": "When",
+    "start": 7.699,
+    "end": 7.819
+  },
+  {
+    "text": "Demara",
+    "start": 7.879,
+    "end": 8.38
+  },
+  {
+    "text": "showed",
+    "start": 8.439,
+    "end": 8.659
+  },
+  {
+    "text": "up",
+    "start": 8.739,
+    "end": 8.899
+  },
+  {
+    "text": "with",
+    "start": 8.96,
+    "end": 9.059
+  },
+  {
+    "text": "a",
+    "start": 9.119,
+    "end": 9.159
+  },
+  {
+    "text": "medical",
+    "start": 9.22,
+    "end": 9.559
+  },
+  {
+    "text": "degree,",
+    "start": 9.659,
+    "end": 10.039
+  },
+  {
+    "text": "a",
+    "start": 10.439,
+    "end": 10.479
+  },
+  {
+    "text": "service",
+    "start": 10.619,
+    "end": 10.939
+  },
+  {
+    "text": "record,",
+    "start": 11.019,
+    "end": 11.42
+  },
+  {
+    "text": "a",
+    "start": 11.819,
+    "end": 11.859
+  },
+  {
+    "text": "name,",
+    "start": 11.979,
+    "end": 12.279
+  },
+  {
+    "text": "the",
+    "start": 12.739,
+    "end": 12.819
+  },
+  {
+    "text": "institution",
+    "start": 12.899,
+    "end": 13.559
+  },
+  {
+    "text": "around",
+    "start": 13.659,
+    "end": 13.96
+  },
+  {
+    "text": "him",
+    "start": 14.019,
+    "end": 14.199
+  },
+  {
+    "text": "stopped",
+    "start": 14.559,
+    "end": 14.859
+  },
+  {
+    "text": "looking",
+    "start": 14.939,
+    "end": 15.199
+  },
+  {
+    "text": "at",
+    "start": 15.259,
+    "end": 15.339
+  },
+  {
+    "text": "the",
+    "start": 15.399,
+    "end": 15.46
+  },
+  {
+    "text": "man",
+    "start": 15.539,
+    "end": 15.799
+  },
+  {
+    "text": "and",
+    "start": 16.159,
+    "end": 16.279
+  },
+  {
+    "text": "started",
+    "start": 16.34,
+    "end": 16.699
+  },
+  {
+    "text": "looking",
+    "start": 16.779,
+    "end": 17.02
+  },
+  {
+    "text": "at",
+    "start": 17.079,
+    "end": 17.159
+  },
+  {
+    "text": "the",
+    "start": 17.219,
+    "end": 17.299
+  },
+  {
+    "text": "documents.",
+    "start": 17.359,
+    "end": 18
+  },
+  {
+    "text": "Once",
+    "start": 19,
+    "end": 19.199
+  },
+  {
+    "text": "the",
+    "start": 19.239,
+    "end": 19.299
+  },
+  {
+    "text": "credential",
+    "start": 19.399,
+    "end": 19.879
+  },
+  {
+    "text": "is",
+    "start": 19.92,
+    "end": 20.02
+  },
+  {
+    "text": "accepted,",
+    "start": 20.119,
+    "end": 20.659
+  },
+  {
+    "text": "everything",
+    "start": 21.199,
+    "end": 21.559
+  },
+  {
+    "text": "that",
+    "start": 21.619,
+    "end": 21.739
+  },
+  {
+    "text": "follows",
+    "start": 21.859,
+    "end": 22.479
+  },
+  {
+    "text": "gets",
+    "start": 22.559,
+    "end": 22.76
+  },
+  {
+    "text": "filtered",
+    "start": 22.859,
+    "end": 23.279
+  },
+  {
+    "text": "through",
+    "start": 23.539,
+    "end": 23.68
+  },
+  {
+    "text": "the",
+    "start": 23.739,
+    "end": 23.799
+  },
+  {
+    "text": "assumption",
+    "start": 23.859,
+    "end": 24.639
+  },
+  {
+    "text": "that",
+    "start": 24.699,
+    "end": 24.819
+  },
+  {
+    "text": "the",
+    "start": 24.859,
+    "end": 24.92
+  },
+  {
+    "text": "credential",
+    "start": 25.019,
+    "end": 25.519
+  },
+  {
+    "text": "is",
+    "start": 25.579,
+    "end": 25.699
+  },
+  {
+    "text": "real.",
+    "start": 25.779,
+    "end": 26.059
+  },
+  {
+    "text": "A",
+    "start": 26.84,
+    "end": 26.899
+  },
+  {
+    "text": "confident",
+    "start": 26.979,
+    "end": 27.459
+  },
+  {
+    "text": "diagnosis",
+    "start": 27.539,
+    "end": 28.279
+  },
+  {
+    "text": "reads",
+    "start": 28.519,
+    "end": 28.779
+  },
+  {
+    "text": "as",
+    "start": 28.84,
+    "end": 28.92
+  },
+  {
+    "text": "competence.",
+    "start": 29.019,
+    "end": 29.679
+  },
+  {
+    "text": "A",
+    "start": 30.379,
+    "end": 30.399
+  },
+  {
+    "text": "hesitant",
+    "start": 30.479,
+    "end": 30.939
+  },
+  {
+    "text": "one",
+    "start": 31.059,
+    "end": 31.26
+  },
+  {
+    "text": "reads",
+    "start": 31.559,
+    "end": 31.78
+  },
+  {
+    "text": "as",
+    "start": 31.819,
+    "end": 31.899
+  },
+  {
+    "text": "a",
+    "start": 31.979,
+    "end": 32.04
+  },
+  {
+    "text": "bad",
+    "start": 32.099,
+    "end": 32.34
+  },
+  {
+    "text": "day,",
+    "start": 32.399,
+    "end": 32.659
+  },
+  {
+    "text": "not",
+    "start": 33.2,
+    "end": 33.38
+  },
+  {
+    "text": "a",
+    "start": 33.439,
+    "end": 33.479
+  },
+  {
+    "text": "red",
+    "start": 33.54,
+    "end": 33.739
+  },
+  {
+    "text": "flag.",
+    "start": 33.799,
+    "end": 34.139
+  },
+  {
+    "text": "This",
+    "start": 35,
+    "end": 35.159
+  },
+  {
+    "text": "is",
+    "start": 35.219,
+    "end": 35.319
+  },
+  {
+    "text": "precisely",
+    "start": 35.399,
+    "end": 36
+  },
+  {
+    "text": "why",
+    "start": 36.059,
+    "end": 36.2
+  },
+  {
+    "text": "credential",
+    "start": 36.319,
+    "end": 36.88
+  },
+  {
+    "text": "fraud",
+    "start": 36.939,
+    "end": 37.519
+  },
+  {
+    "text": "so",
+    "start": 37.639,
+    "end": 37.799
+  },
+  {
+    "text": "often",
+    "start": 37.879,
+    "end": 38.18
+  },
+  {
+    "text": "goes",
+    "start": 38.259,
+    "end": 38.539
+  },
+  {
+    "text": "undetected",
+    "start": 38.619,
+    "end": 39.299
+  },
+  {
+    "text": "for",
+    "start": 39.36,
+    "end": 39.52
+  },
+  {
+    "text": "so",
+    "start": 39.579,
+    "end": 39.719
+  },
+  {
+    "text": "long.",
+    "start": 39.779,
+    "end": 40.059
+  },
+  {
+    "text": "Nobody",
+    "start": 40.619,
+    "end": 41.059
+  },
+  {
+    "text": "re-verifies",
+    "start": 41.119,
+    "end": 41.86
+  },
+  {
+    "text": "a",
+    "start": 41.919,
+    "end": 41.959
+  },
+  {
+    "text": "document",
+    "start": 42.02,
+    "end": 42.839
+  },
+  {
+    "text": "once",
+    "start": 42.939,
+    "end": 43.119
+  },
+  {
+    "text": "it’s",
+    "start": 43.18,
+    "end": 43.36
+  },
+  {
+    "text": "been",
+    "start": 43.379,
+    "end": 43.5
+  },
+  {
+    "text": "accepted",
+    "start": 43.559,
+    "end": 44.079
+  },
+  {
+    "text": "the",
+    "start": 44.119,
+    "end": 44.239
+  },
+  {
+    "text": "first",
+    "start": 44.279,
+    "end": 44.539
+  },
+  {
+    "text": "time.",
+    "start": 44.599,
+    "end": 44.919
+  },
+  {
+    "text": "The",
+    "start": 45.52,
+    "end": 45.619
+  },
+  {
+    "text": "paperwork",
+    "start": 45.659,
+    "end": 46.219
+  },
+  {
+    "text": "becomes",
+    "start": 46.279,
+    "end": 46.68
+  },
+  {
+    "text": "the",
+    "start": 46.719,
+    "end": 46.84
+  },
+  {
+    "text": "truth,",
+    "start": 46.899,
+    "end": 47.239
+  },
+  {
+    "text": "and",
+    "start": 47.719,
+    "end": 47.84
+  },
+  {
+    "text": "the",
+    "start": 47.86,
+    "end": 47.919
+  },
+  {
+    "text": "truth",
+    "start": 48.039,
+    "end": 48.279
+  },
+  {
+    "text": "becomes",
+    "start": 48.34,
+    "end": 49.099
+  },
+  {
+    "text": "whatever",
+    "start": 49.159,
+    "end": 49.539
+  },
+  {
+    "text": "the",
+    "start": 49.579,
+    "end": 49.7
+  },
+  {
+    "text": "paperwork",
+    "start": 49.739,
+    "end": 50.279
+  },
+  {
+    "text": "says,",
+    "start": 50.34,
+    "end": 50.68
+  },
+  {
+    "text": "long",
+    "start": 51.34,
+    "end": 51.52
+  },
+  {
+    "text": "after",
+    "start": 51.599,
+    "end": 51.819
+  },
+  {
+    "text": "the",
+    "start": 51.86,
+    "end": 51.959
+  },
+  {
+    "text": "person",
+    "start": 52.02,
+    "end": 52.379
+  },
+  {
+    "text": "holding",
+    "start": 52.439,
+    "end": 52.779
+  },
+  {
+    "text": "it",
+    "start": 52.84,
+    "end": 53.299
+  },
+  {
+    "text": "should",
+    "start": 53.399,
+    "end": 53.54
+  },
+  {
+    "text": "have",
+    "start": 53.559,
+    "end": 53.7
+  },
+  {
+    "text": "been",
+    "start": 53.719,
+    "end": 53.919
+  },
+  {
+    "text": "questioned",
+    "start": 53.959,
+    "end": 54.399
+  },
+  {
+    "text": "directly.",
+    "start": 54.439,
+    "end": 54.959
+  }
+]

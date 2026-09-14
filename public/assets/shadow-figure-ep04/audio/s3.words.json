@@ -1,0 +1,1442 @@
+[
+  {
+    "text": "The",
+    "start": 0.26,
+    "end": 0.4
+  },
+  {
+    "text": "first",
+    "start": 0.46,
+    "end": 0.72
+  },
+  {
+    "text": "law,",
+    "start": 0.76,
+    "end": 1.02
+  },
+  {
+    "text": "earn",
+    "start": 1.64,
+    "end": 1.86
+  },
+  {
+    "text": "real",
+    "start": 1.96,
+    "end": 2.22
+  },
+  {
+    "text": "trust",
+    "start": 2.28,
+    "end": 2.66
+  },
+  {
+    "text": "before",
+    "start": 2.88,
+    "end": 3.19
+  },
+  {
+    "text": "you",
+    "start": 3.26,
+    "end": 3.42
+  },
+  {
+    "text": "ever",
+    "start": 3.5,
+    "end": 3.74
+  },
+  {
+    "text": "need",
+    "start": 3.8,
+    "end": 4
+  },
+  {
+    "text": "to",
+    "start": 4.06,
+    "end": 4.12
+  },
+  {
+    "text": "abuse",
+    "start": 4.18,
+    "end": 4.54
+  },
+  {
+    "text": "it.",
+    "start": 4.58,
+    "end": 4.76
+  },
+  {
+    "text": "Nothing",
+    "start": 5.44,
+    "end": 5.78
+  },
+  {
+    "text": "about",
+    "start": 5.86,
+    "end": 6.17
+  },
+  {
+    "text": "Jones'",
+    "start": 6.22,
+    "end": 6.6
+  },
+  {
+    "text": "early",
+    "start": 6.82,
+    "end": 7.06
+  },
+  {
+    "text": "legitimacy",
+    "start": 7.14,
+    "end": 7.86
+  },
+  {
+    "text": "was",
+    "start": 7.94,
+    "end": 8.12
+  },
+  {
+    "text": "fake.",
+    "start": 8.16,
+    "end": 8.46
+  },
+  {
+    "text": "The",
+    "start": 9.08,
+    "end": 9.18
+  },
+  {
+    "text": "soup",
+    "start": 9.22,
+    "end": 9.44
+  },
+  {
+    "text": "kitchens",
+    "start": 9.48,
+    "end": 9.9
+  },
+  {
+    "text": "were",
+    "start": 9.96,
+    "end": 10.27
+  },
+  {
+    "text": "real.",
+    "start": 10.27,
+    "end": 10.46
+  },
+  {
+    "text": "The",
+    "start": 11.03,
+    "end": 11.16
+  },
+  {
+    "text": "nursing",
+    "start": 11.2,
+    "end": 11.58
+  },
+  {
+    "text": "homes",
+    "start": 11.62,
+    "end": 11.96
+  },
+  {
+    "text": "were",
+    "start": 12,
+    "end": 12.16
+  },
+  {
+    "text": "real.",
+    "start": 12.2,
+    "end": 12.5
+  },
+  {
+    "text": "The",
+    "start": 13.09,
+    "end": 13.24
+  },
+  {
+    "text": "integration",
+    "start": 13.32,
+    "end": 14.01
+  },
+  {
+    "text": "was",
+    "start": 14.06,
+    "end": 14.2
+  },
+  {
+    "text": "real.",
+    "start": 14.26,
+    "end": 15.1
+  },
+  {
+    "text": "At",
+    "start": 15.14,
+    "end": 15.24
+  },
+  {
+    "text": "a",
+    "start": 15.25,
+    "end": 15.34
+  },
+  {
+    "text": "moment",
+    "start": 15.4,
+    "end": 15.9
+  },
+  {
+    "text": "in",
+    "start": 15.94,
+    "end": 16.02
+  },
+  {
+    "text": "American",
+    "start": 16.08,
+    "end": 16.6
+  },
+  {
+    "text": "history",
+    "start": 16.64,
+    "end": 17.63
+  },
+  {
+    "text": "when",
+    "start": 17.66,
+    "end": 17.85
+  },
+  {
+    "text": "very",
+    "start": 17.88,
+    "end": 18.18
+  },
+  {
+    "text": "few",
+    "start": 18.24,
+    "end": 18.45
+  },
+  {
+    "text": "institutions",
+    "start": 18.5,
+    "end": 19.48
+  },
+  {
+    "text": "were",
+    "start": 19.5,
+    "end": 19.67
+  },
+  {
+    "text": "willing",
+    "start": 19.7,
+    "end": 19.94
+  },
+  {
+    "text": "to",
+    "start": 20,
+    "end": 20.13
+  },
+  {
+    "text": "attempt",
+    "start": 20.13,
+    "end": 20.56
+  },
+  {
+    "text": "it,",
+    "start": 20.62,
+    "end": 20.78
+  },
+  {
+    "text": "people",
+    "start": 21.52,
+    "end": 21.86
+  },
+  {
+    "text": "who",
+    "start": 21.9,
+    "end": 22.04
+  },
+  {
+    "text": "joined",
+    "start": 22.1,
+    "end": 22.42
+  },
+  {
+    "text": "People's",
+    "start": 22.44,
+    "end": 22.8
+  },
+  {
+    "text": "Temple",
+    "start": 22.9,
+    "end": 23.36
+  },
+  {
+    "text": "in",
+    "start": 23.4,
+    "end": 23.48
+  },
+  {
+    "text": "its",
+    "start": 23.52,
+    "end": 23.7
+  },
+  {
+    "text": "first",
+    "start": 23.74,
+    "end": 24
+  },
+  {
+    "text": "decade",
+    "start": 24.01,
+    "end": 24.8
+  },
+  {
+    "text": "were",
+    "start": 24.82,
+    "end": 24.96
+  },
+  {
+    "text": "not",
+    "start": 25.02,
+    "end": 25.24
+  },
+  {
+    "text": "joining",
+    "start": 25.3,
+    "end": 25.6
+  },
+  {
+    "text": "a",
+    "start": 25.62,
+    "end": 25.68
+  },
+  {
+    "text": "con.",
+    "start": 25.78,
+    "end": 26.02
+  },
+  {
+    "text": "They",
+    "start": 26.64,
+    "end": 26.74
+  },
+  {
+    "text": "were",
+    "start": 26.78,
+    "end": 26.94
+  },
+  {
+    "text": "joining",
+    "start": 26.98,
+    "end": 27.36
+  },
+  {
+    "text": "one",
+    "start": 27.74,
+    "end": 27.88
+  },
+  {
+    "text": "of",
+    "start": 27.92,
+    "end": 28.02
+  },
+  {
+    "text": "the",
+    "start": 28.06,
+    "end": 28.12
+  },
+  {
+    "text": "only",
+    "start": 28.3,
+    "end": 28.6
+  },
+  {
+    "text": "places",
+    "start": 28.64,
+    "end": 29.06
+  },
+  {
+    "text": "in",
+    "start": 29.1,
+    "end": 29.2
+  },
+  {
+    "text": "their",
+    "start": 29.24,
+    "end": 29.35
+  },
+  {
+    "text": "city",
+    "start": 29.46,
+    "end": 29.76
+  },
+  {
+    "text": "that",
+    "start": 30.14,
+    "end": 30.34
+  },
+  {
+    "text": "treated",
+    "start": 30.4,
+    "end": 30.76
+  },
+  {
+    "text": "them",
+    "start": 30.77,
+    "end": 31.42
+  },
+  {
+    "text": "visibly",
+    "start": 31.43,
+    "end": 31.92
+  },
+  {
+    "text": "and",
+    "start": 32.32,
+    "end": 32.53
+  },
+  {
+    "text": "consistently",
+    "start": 32.56,
+    "end": 33.72
+  },
+  {
+    "text": "as",
+    "start": 33.78,
+    "end": 33.9
+  },
+  {
+    "text": "equals.",
+    "start": 33.96,
+    "end": 34.4
+  },
+  {
+    "text": "That's",
+    "start": 35.08,
+    "end": 35.36
+  },
+  {
+    "text": "precisely",
+    "start": 35.38,
+    "end": 36.36
+  },
+  {
+    "text": "what",
+    "start": 36.4,
+    "end": 36.57
+  },
+  {
+    "text": "made",
+    "start": 36.62,
+    "end": 36.81
+  },
+  {
+    "text": "the",
+    "start": 36.84,
+    "end": 36.92
+  },
+  {
+    "text": "later",
+    "start": 36.96,
+    "end": 37.28
+  },
+  {
+    "text": "manipulation",
+    "start": 37.32,
+    "end": 38.53
+  },
+  {
+    "text": "so",
+    "start": 38.56,
+    "end": 38.78
+  },
+  {
+    "text": "hard",
+    "start": 38.8,
+    "end": 39.06
+  },
+  {
+    "text": "to",
+    "start": 39.1,
+    "end": 39.2
+  },
+  {
+    "text": "detect",
+    "start": 39.22,
+    "end": 39.66
+  },
+  {
+    "text": "from",
+    "start": 39.68,
+    "end": 39.82
+  },
+  {
+    "text": "inside.",
+    "start": 39.86,
+    "end": 40.46
+  },
+  {
+    "text": "When",
+    "start": 41.08,
+    "end": 41.3
+  },
+  {
+    "text": "someone",
+    "start": 41.32,
+    "end": 41.72
+  },
+  {
+    "text": "has",
+    "start": 41.74,
+    "end": 42
+  },
+  {
+    "text": "already",
+    "start": 42.08,
+    "end": 42.43
+  },
+  {
+    "text": "given",
+    "start": 42.54,
+    "end": 42.8
+  },
+  {
+    "text": "you",
+    "start": 42.84,
+    "end": 42.9
+  },
+  {
+    "text": "something",
+    "start": 43.02,
+    "end": 43.38
+  },
+  {
+    "text": "true",
+    "start": 43.52,
+    "end": 43.7
+  },
+  {
+    "text": "and",
+    "start": 43.72,
+    "end": 43.83
+  },
+  {
+    "text": "valuable,",
+    "start": 43.92,
+    "end": 44.43
+  },
+  {
+    "text": "your",
+    "start": 44.96,
+    "end": 45.1
+  },
+  {
+    "text": "mind",
+    "start": 45.16,
+    "end": 45.449
+  },
+  {
+    "text": "files",
+    "start": 45.56,
+    "end": 45.88
+  },
+  {
+    "text": "them",
+    "start": 45.94,
+    "end": 46.08
+  },
+  {
+    "text": "under",
+    "start": 46.16,
+    "end": 46.36
+  },
+  {
+    "text": "trustworthy",
+    "start": 46.44,
+    "end": 47.58
+  },
+  {
+    "text": "and",
+    "start": 47.64,
+    "end": 47.78
+  },
+  {
+    "text": "stops",
+    "start": 47.86,
+    "end": 48.14
+  },
+  {
+    "text": "reevaluating",
+    "start": 48.24,
+    "end": 49.12
+  },
+  {
+    "text": "them",
+    "start": 49.16,
+    "end": 49.34
+  },
+  {
+    "text": "every",
+    "start": 49.66,
+    "end": 49.93
+  },
+  {
+    "text": "time",
+    "start": 49.93,
+    "end": 50.2
+  },
+  {
+    "text": "their",
+    "start": 50.21,
+    "end": 50.4
+  },
+  {
+    "text": "behavior",
+    "start": 50.44,
+    "end": 50.92
+  },
+  {
+    "text": "shifts.",
+    "start": 50.94,
+    "end": 51.4
+  },
+  {
+    "text": "The",
+    "start": 52.05,
+    "end": 52.2
+  },
+  {
+    "text": "trust",
+    "start": 52.24,
+    "end": 52.7
+  },
+  {
+    "text": "isn't",
+    "start": 52.78,
+    "end": 53.1
+  },
+  {
+    "text": "reearned",
+    "start": 53.14,
+    "end": 53.62
+  },
+  {
+    "text": "each",
+    "start": 53.68,
+    "end": 53.9
+  },
+  {
+    "text": "day.",
+    "start": 53.96,
+    "end": 54.72
+  },
+  {
+    "text": "It's",
+    "start": 54.78,
+    "end": 54.91
+  },
+  {
+    "text": "inherited",
+    "start": 54.96,
+    "end": 55.6
+  },
+  {
+    "text": "from",
+    "start": 55.64,
+    "end": 55.81
+  },
+  {
+    "text": "the",
+    "start": 55.84,
+    "end": 55.97
+  },
+  {
+    "text": "past",
+    "start": 56,
+    "end": 56.62
+  },
+  {
+    "text": "and",
+    "start": 56.66,
+    "end": 56.8
+  },
+  {
+    "text": "extended",
+    "start": 56.84,
+    "end": 57.47
+  },
+  {
+    "text": "quietly",
+    "start": 57.96,
+    "end": 59.01
+  },
+  {
+    "text": "into",
+    "start": 59.06,
+    "end": 59.29
+  },
+  {
+    "text": "a",
+    "start": 59.34,
+    "end": 59.44
+  },
+  {
+    "text": "present",
+    "start": 59.46,
+    "end": 59.88
+  },
+  {
+    "text": "that",
+    "start": 60.28,
+    "end": 60.44
+  },
+  {
+    "text": "no",
+    "start": 60.449,
+    "end": 60.64
+  },
+  {
+    "text": "longer",
+    "start": 60.68,
+    "end": 61.04
+  },
+  {
+    "text": "deserves",
+    "start": 61.05,
+    "end": 61.49
+  },
+  {
+    "text": "it.",
+    "start": 61.56,
+    "end": 61.69
+  },
+  {
+    "text": "This",
+    "start": 62.61,
+    "end": 62.8
+  },
+  {
+    "text": "is",
+    "start": 62.86,
+    "end": 62.98
+  },
+  {
+    "text": "why",
+    "start": 63.04,
+    "end": 63.35
+  },
+  {
+    "text": "the",
+    "start": 63.38,
+    "end": 63.46
+  },
+  {
+    "text": "most",
+    "start": 63.5,
+    "end": 63.769
+  },
+  {
+    "text": "dangerous",
+    "start": 63.8,
+    "end": 64.32
+  },
+  {
+    "text": "manipulators",
+    "start": 64.36,
+    "end": 65.48
+  },
+  {
+    "text": "are",
+    "start": 65.54,
+    "end": 65.68
+  },
+  {
+    "text": "rarely",
+    "start": 65.72,
+    "end": 66.08
+  },
+  {
+    "text": "the",
+    "start": 66.12,
+    "end": 66.22
+  },
+  {
+    "text": "ones",
+    "start": 66.32,
+    "end": 66.57
+  },
+  {
+    "text": "who",
+    "start": 66.6,
+    "end": 66.72
+  },
+  {
+    "text": "lie",
+    "start": 66.76,
+    "end": 67.06
+  },
+  {
+    "text": "from",
+    "start": 67.1,
+    "end": 67.27
+  },
+  {
+    "text": "the",
+    "start": 67.3,
+    "end": 67.39
+  },
+  {
+    "text": "very",
+    "start": 67.4,
+    "end": 67.68
+  },
+  {
+    "text": "first",
+    "start": 67.72,
+    "end": 68
+  },
+  {
+    "text": "meeting.",
+    "start": 68.04,
+    "end": 68.88
+  },
+  {
+    "text": "They're",
+    "start": 68.89,
+    "end": 69.11
+  },
+  {
+    "text": "the",
+    "start": 69.12,
+    "end": 69.22
+  },
+  {
+    "text": "ones",
+    "start": 69.26,
+    "end": 69.54
+  },
+  {
+    "text": "who",
+    "start": 69.56,
+    "end": 69.64
+  },
+  {
+    "text": "spend",
+    "start": 69.76,
+    "end": 70.06
+  },
+  {
+    "text": "years",
+    "start": 70.14,
+    "end": 70.56
+  },
+  {
+    "text": "being",
+    "start": 70.6,
+    "end": 70.84
+  },
+  {
+    "text": "genuinely,",
+    "start": 70.88,
+    "end": 71.55
+  },
+  {
+    "text": "verifiably",
+    "start": 71.9,
+    "end": 72.66
+  },
+  {
+    "text": "good",
+    "start": 72.76,
+    "end": 72.94
+  },
+  {
+    "text": "to",
+    "start": 73,
+    "end": 73.1
+  },
+  {
+    "text": "you",
+    "start": 73.14,
+    "end": 73.26
+  },
+  {
+    "text": "first,",
+    "start": 73.34,
+    "end": 73.72
+  },
+  {
+    "text": "so",
+    "start": 74.3,
+    "end": 74.42
+  },
+  {
+    "text": "that",
+    "start": 74.48,
+    "end": 74.62
+  },
+  {
+    "text": "by",
+    "start": 74.66,
+    "end": 74.78
+  },
+  {
+    "text": "the",
+    "start": 74.82,
+    "end": 74.94
+  },
+  {
+    "text": "time",
+    "start": 75,
+    "end": 75.24
+  },
+  {
+    "text": "the",
+    "start": 75.25,
+    "end": 75.36
+  },
+  {
+    "text": "behavior",
+    "start": 75.4,
+    "end": 75.9
+  },
+  {
+    "text": "changes,",
+    "start": 75.94,
+    "end": 76.44
+  },
+  {
+    "text": "you're",
+    "start": 76.94,
+    "end": 77.16
+  },
+  {
+    "text": "arguing",
+    "start": 77.26,
+    "end": 77.68
+  },
+  {
+    "text": "with",
+    "start": 77.72,
+    "end": 77.88
+  },
+  {
+    "text": "your",
+    "start": 77.92,
+    "end": 78.1
+  },
+  {
+    "text": "own",
+    "start": 78.18,
+    "end": 78.36
+  },
+  {
+    "text": "memory",
+    "start": 78.4,
+    "end": 79.04
+  },
+  {
+    "text": "of",
+    "start": 79.12,
+    "end": 79.2
+  },
+  {
+    "text": "who",
+    "start": 79.24,
+    "end": 79.36
+  },
+  {
+    "text": "they",
+    "start": 79.4,
+    "end": 79.59
+  },
+  {
+    "text": "used",
+    "start": 79.62,
+    "end": 79.8
+  },
+  {
+    "text": "to",
+    "start": 79.84,
+    "end": 79.94
+  },
+  {
+    "text": "be,",
+    "start": 79.98,
+    "end": 80.16
+  },
+  {
+    "text": "not",
+    "start": 80.82,
+    "end": 81.02
+  },
+  {
+    "text": "just",
+    "start": 81.08,
+    "end": 81.3
+  },
+  {
+    "text": "with",
+    "start": 81.34,
+    "end": 81.46
+  },
+  {
+    "text": "the",
+    "start": 81.5,
+    "end": 81.55
+  },
+  {
+    "text": "person",
+    "start": 81.62,
+    "end": 81.96
+  },
+  {
+    "text": "in",
+    "start": 82,
+    "end": 82.08
+  },
+  {
+    "text": "front",
+    "start": 82.16,
+    "end": 82.38
+  },
+  {
+    "text": "of",
+    "start": 82.42,
+    "end": 82.48
+  },
+  {
+    "text": "you",
+    "start": 82.54,
+    "end": 82.62
+  },
+  {
+    "text": "now.",
+    "start": 82.68,
+    "end": 82.94
+  },
+  {
+    "text": "Family",
+    "start": 83.68,
+    "end": 83.96
+  },
+  {
+    "text": "members",
+    "start": 84.04,
+    "end": 84.44
+  },
+  {
+    "text": "of",
+    "start": 84.5,
+    "end": 84.57
+  },
+  {
+    "text": "People's",
+    "start": 84.66,
+    "end": 85.02
+  },
+  {
+    "text": "Temple",
+    "start": 85.1,
+    "end": 85.42
+  },
+  {
+    "text": "members",
+    "start": 85.52,
+    "end": 85.94
+  },
+  {
+    "text": "often",
+    "start": 86.2,
+    "end": 86.48
+  },
+  {
+    "text": "describe",
+    "start": 86.52,
+    "end": 87.1
+  },
+  {
+    "text": "this",
+    "start": 87.11,
+    "end": 87.28
+  },
+  {
+    "text": "exact",
+    "start": 87.38,
+    "end": 87.78
+  },
+  {
+    "text": "confusion",
+    "start": 87.82,
+    "end": 88.78
+  },
+  {
+    "text": "when",
+    "start": 88.82,
+    "end": 88.93
+  },
+  {
+    "text": "they",
+    "start": 88.98,
+    "end": 89.12
+  },
+  {
+    "text": "tried",
+    "start": 89.14,
+    "end": 89.44
+  },
+  {
+    "text": "to",
+    "start": 89.5,
+    "end": 89.56
+  },
+  {
+    "text": "raise",
+    "start": 89.62,
+    "end": 89.82
+  },
+  {
+    "text": "concerns",
+    "start": 89.9,
+    "end": 90.48
+  },
+  {
+    "text": "in",
+    "start": 90.52,
+    "end": 90.62
+  },
+  {
+    "text": "the",
+    "start": 90.66,
+    "end": 90.74
+  },
+  {
+    "text": "mid-1970s,",
+    "start": 90.8,
+    "end": 92.04
+  },
+  {
+    "text": "being",
+    "start": 92.62,
+    "end": 92.86
+  },
+  {
+    "text": "told",
+    "start": 92.92,
+    "end": 93.24
+  },
+  {
+    "text": "by",
+    "start": 93.7,
+    "end": 93.88
+  },
+  {
+    "text": "people",
+    "start": 93.92,
+    "end": 94.2
+  },
+  {
+    "text": "who",
+    "start": 94.24,
+    "end": 94.32
+  },
+  {
+    "text": "loved",
+    "start": 94.42,
+    "end": 94.62
+  },
+  {
+    "text": "them",
+    "start": 94.66,
+    "end": 95.28
+  },
+  {
+    "text": "that",
+    "start": 95.3,
+    "end": 95.44
+  },
+  {
+    "text": "they",
+    "start": 95.48,
+    "end": 95.57
+  },
+  {
+    "text": "simply",
+    "start": 95.68,
+    "end": 96.06
+  },
+  {
+    "text": "didn't",
+    "start": 96.1,
+    "end": 96.38
+  },
+  {
+    "text": "understand",
+    "start": 96.44,
+    "end": 97.04
+  },
+  {
+    "text": "how",
+    "start": 97.1,
+    "end": 97.26
+  },
+  {
+    "text": "much",
+    "start": 97.3,
+    "end": 97.54
+  },
+  {
+    "text": "good",
+    "start": 97.6,
+    "end": 97.82
+  },
+  {
+    "text": "the",
+    "start": 98.2,
+    "end": 98.34
+  },
+  {
+    "text": "church",
+    "start": 98.38,
+    "end": 98.68
+  },
+  {
+    "text": "was",
+    "start": 98.72,
+    "end": 98.84
+  },
+  {
+    "text": "still",
+    "start": 98.9,
+    "end": 99.13
+  },
+  {
+    "text": "doing,",
+    "start": 99.18,
+    "end": 99.5
+  },
+  {
+    "text": "pointing",
+    "start": 100.08,
+    "end": 100.47
+  },
+  {
+    "text": "back",
+    "start": 100.56,
+    "end": 100.8
+  },
+  {
+    "text": "to",
+    "start": 100.86,
+    "end": 100.98
+  },
+  {
+    "text": "real",
+    "start": 101.02,
+    "end": 101.2
+  },
+  {
+    "text": "programs,",
+    "start": 101.32,
+    "end": 101.92
+  },
+  {
+    "text": "real",
+    "start": 102.48,
+    "end": 102.76
+  },
+  {
+    "text": "meals",
+    "start": 102.8,
+    "end": 103.1
+  },
+  {
+    "text": "served,",
+    "start": 103.2,
+    "end": 103.54
+  },
+  {
+    "text": "real",
+    "start": 104.02,
+    "end": 104.26
+  },
+  {
+    "text": "lives",
+    "start": 104.32,
+    "end": 104.7
+  },
+  {
+    "text": "visibly",
+    "start": 104.74,
+    "end": 105.18
+  },
+  {
+    "text": "improved.",
+    "start": 105.24,
+    "end": 106.36
+  },
+  {
+    "text": "Both",
+    "start": 106.44,
+    "end": 106.68
+  },
+  {
+    "text": "things",
+    "start": 106.74,
+    "end": 107.02
+  },
+  {
+    "text": "were",
+    "start": 107.06,
+    "end": 107.22
+  },
+  {
+    "text": "true",
+    "start": 107.3,
+    "end": 107.48
+  },
+  {
+    "text": "at",
+    "start": 107.54,
+    "end": 107.63
+  },
+  {
+    "text": "once.",
+    "start": 107.72,
+    "end": 108.14
+  },
+  {
+    "text": "The",
+    "start": 108.76,
+    "end": 108.82
+  },
+  {
+    "text": "help",
+    "start": 108.92,
+    "end": 109.14
+  },
+  {
+    "text": "was",
+    "start": 109.26,
+    "end": 109.4
+  },
+  {
+    "text": "real,",
+    "start": 109.44,
+    "end": 109.72
+  },
+  {
+    "text": "and",
+    "start": 110.22,
+    "end": 110.32
+  },
+  {
+    "text": "the",
+    "start": 110.4,
+    "end": 110.48
+  },
+  {
+    "text": "harm",
+    "start": 110.54,
+    "end": 110.82
+  },
+  {
+    "text": "was",
+    "start": 110.86,
+    "end": 111.12
+  },
+  {
+    "text": "also",
+    "start": 111.22,
+    "end": 111.46
+  },
+  {
+    "text": "becoming",
+    "start": 111.54,
+    "end": 112.02
+  },
+  {
+    "text": "real,",
+    "start": 112.06,
+    "end": 112.34
+  },
+  {
+    "text": "growing",
+    "start": 112.88,
+    "end": 113.26
+  },
+  {
+    "text": "quietly",
+    "start": 113.32,
+    "end": 114.22
+  },
+  {
+    "text": "in",
+    "start": 114.28,
+    "end": 114.36
+  },
+  {
+    "text": "the",
+    "start": 114.4,
+    "end": 114.48
+  },
+  {
+    "text": "space",
+    "start": 114.6,
+    "end": 114.94
+  },
+  {
+    "text": "that",
+    "start": 115,
+    "end": 115.12
+  },
+  {
+    "text": "the",
+    "start": 115.16,
+    "end": 115.3
+  },
+  {
+    "text": "earlier",
+    "start": 115.36,
+    "end": 115.68
+  },
+  {
+    "text": "goodwill",
+    "start": 115.78,
+    "end": 116.22
+  },
+  {
+    "text": "had",
+    "start": 116.28,
+    "end": 116.46
+  },
+  {
+    "text": "opened",
+    "start": 116.54,
+    "end": 116.82
+  },
+  {
+    "text": "up",
+    "start": 116.92,
+    "end": 117.44
+  },
+  {
+    "text": "and",
+    "start": 117.48,
+    "end": 117.6
+  },
+  {
+    "text": "never",
+    "start": 117.66,
+    "end": 117.88
+  },
+  {
+    "text": "fully",
+    "start": 118.02,
+    "end": 118.28
+  },
+  {
+    "text": "closed.",
+    "start": 118.34,
+    "end": 118.8
+  }
+]

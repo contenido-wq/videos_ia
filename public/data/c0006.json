@@ -1,0 +1,155 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "c0006",
+  "topic": "El mito de la perfección en redes sociales",
+  "videoPath": "assets/c0006/video/trimmed.MP4",
+  "durationInSeconds": 32.24,
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado.",
+      "act": "split",
+      "startSeconds": 0.4937289999999983,
+      "durationInSeconds": 4.214915999999995,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s1-local0.png",
+          "durationInSeconds": 2.1074579999999976
+        },
+        {
+          "path": "assets/c0006/images/s1-local1.png",
+          "durationInSeconds": 2.1074579999999976
+        }
+      ],
+      "displayText": "¿Pensaste que eres malo o que las redes sociales no te quieren? Estás equivocado."
+    },
+    {
+      "id": "s2",
+      "text": "Lo que quieren las redes sociales es acción masiva.",
+      "act": "split",
+      "startSeconds": 4.7086449999999935,
+      "durationInSeconds": 3.142541999999999,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s2-local0.png",
+          "durationInSeconds": 1.5712709999999994
+        },
+        {
+          "path": "assets/c0006/images/s2-local1.png",
+          "durationInSeconds": 1.5712709999999994
+        }
+      ],
+      "displayText": "Lo que quieren las redes sociales es acción masiva."
+    },
+    {
+      "id": "s3",
+      "text": "No les importa la perfección, les importa la constancia.",
+      "act": "split",
+      "startSeconds": 7.851186999999992,
+      "durationInSeconds": 3.600417,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s3-local0.png",
+          "durationInSeconds": 1.8002085
+        },
+        {
+          "path": "assets/c0006/images/s3-local1.png",
+          "durationInSeconds": 1.8002085
+        }
+      ],
+      "displayText": "No les importa la perfección, les importa la constancia."
+    },
+    {
+      "id": "s4",
+      "text": "Es como si fueras al gym una semana y esperaras tener el cuerpo de tus sueños.",
+      "act": "split",
+      "startSeconds": 11.451603999999993,
+      "durationInSeconds": 4.600999999999992,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s4-local0.png",
+          "durationInSeconds": 2.300499999999996
+        },
+        {
+          "path": "assets/c0006/images/s4-local1.png",
+          "durationInSeconds": 2.300499999999996
+        }
+      ],
+      "displayText": "Es como si fueras al gym una semana y esperaras tener el cuerpo de tus sueños."
+    },
+    {
+      "id": "s5",
+      "text": "Así no funciona esto.",
+      "act": "split",
+      "startSeconds": 16.052603999999985,
+      "durationInSeconds": 1.7958330000000018,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s5-local0.png",
+          "durationInSeconds": 1.7958330000000018
+        }
+      ],
+      "displayText": "Así no funciona esto."
+    },
+    {
+      "id": "s6",
+      "text": "No es difícil, pero ¿quién te dijo que sería fácil?",
+      "act": "split",
+      "startSeconds": 17.848436999999986,
+      "durationInSeconds": 3.0884790000000066,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s6-local0.png",
+          "durationInSeconds": 1.5442395000000033
+        },
+        {
+          "path": "assets/c0006/images/s6-local1.png",
+          "durationInSeconds": 1.5442395000000033
+        }
+      ],
+      "displayText": "No es difícil, pero ¿quién te dijo que sería fácil?"
+    },
+    {
+      "id": "s7",
+      "text": "La clave está en la acción constante.",
+      "act": "split",
+      "startSeconds": 20.936915999999993,
+      "durationInSeconds": 4.024812000000026,
+      "matched": true,
+      "images": [
+        {
+          "path": "assets/c0006/images/s7-local0.png",
+          "durationInSeconds": 2.012406000000013
+        },
+        {
+          "path": "assets/c0006/images/s7-local1.png",
+          "durationInSeconds": 2.012406000000013
+        }
+      ],
+      "displayText": "La clave está en la acción constante."
+    },
+    {
+      "id": "s8",
+      "text": "Comenta la palabra \"CREADOR\" si estás dispuesto a cambiar todo lo que has venido haciendo.",
+      "act": "closing",
+      "startSeconds": 24.96172800000002,
+      "durationInSeconds": 7.278271999999983,
+      "matched": true,
+      "images": [],
+      "displayText": "\"CREADOR\""
+    }
+  ],
+  "sfx": {
+    "backgroundMusicPath": "assets/c0006/sfx/background-music.mp3",
+    "whooshPath": "assets/c0006/sfx/whoosh.mp3",
+    "whooshDurationInSeconds": 0.5224489795918368,
+    "stingPath": "assets/c0006/sfx/sting.mp3",
+    "stingDurationInSeconds": 14.027755102040816
+  }
+}

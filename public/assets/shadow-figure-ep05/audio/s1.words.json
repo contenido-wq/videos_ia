@@ -1,0 +1,302 @@
+[
+  {
+    "text": "A",
+    "start": 0.219,
+    "end": 0.319
+  },
+  {
+    "text": "man",
+    "start": 0.359,
+    "end": 0.56
+  },
+  {
+    "text": "with",
+    "start": 0.639,
+    "end": 0.779
+  },
+  {
+    "text": "no",
+    "start": 0.899,
+    "end": 0.979
+  },
+  {
+    "text": "medical",
+    "start": 1.079,
+    "end": 1.419
+  },
+  {
+    "text": "degree,",
+    "start": 1.519,
+    "end": 1.919
+  },
+  {
+    "text": "no",
+    "start": 2.5,
+    "end": 2.599
+  },
+  {
+    "text": "surgical",
+    "start": 2.7,
+    "end": 3.159
+  },
+  {
+    "text": "training,",
+    "start": 3.279,
+    "end": 3.679
+  },
+  {
+    "text": "and",
+    "start": 4.079,
+    "end": 4.219
+  },
+  {
+    "text": "no",
+    "start": 4.279,
+    "end": 4.36
+  },
+  {
+    "text": "license",
+    "start": 4.48,
+    "end": 5.019
+  },
+  {
+    "text": "walked",
+    "start": 5.559,
+    "end": 5.779
+  },
+  {
+    "text": "onto",
+    "start": 5.819,
+    "end": 6.079
+  },
+  {
+    "text": "a",
+    "start": 6.119,
+    "end": 6.179
+  },
+  {
+    "text": "warship",
+    "start": 6.239,
+    "end": 6.699
+  },
+  {
+    "text": "in",
+    "start": 6.759,
+    "end": 6.839
+  },
+  {
+    "text": "the",
+    "start": 6.879,
+    "end": 6.919
+  },
+  {
+    "text": "middle",
+    "start": 7,
+    "end": 7.219
+  },
+  {
+    "text": "of",
+    "start": 7.259,
+    "end": 7.379
+  },
+  {
+    "text": "a",
+    "start": 7.419,
+    "end": 7.48
+  },
+  {
+    "text": "war",
+    "start": 7.539,
+    "end": 7.799
+  },
+  {
+    "text": "and",
+    "start": 8.279,
+    "end": 8.42
+  },
+  {
+    "text": "performed",
+    "start": 8.46,
+    "end": 8.92
+  },
+  {
+    "text": "surgery",
+    "start": 8.979,
+    "end": 9.539
+  },
+  {
+    "text": "on",
+    "start": 9.619,
+    "end": 9.739
+  },
+  {
+    "text": "wounded",
+    "start": 9.8,
+    "end": 10.179
+  },
+  {
+    "text": "soldiers.",
+    "start": 10.239,
+    "end": 10.8
+  },
+  {
+    "text": "Not",
+    "start": 11.279,
+    "end": 11.48
+  },
+  {
+    "text": "one",
+    "start": 11.539,
+    "end": 11.659
+  },
+  {
+    "text": "of",
+    "start": 11.679,
+    "end": 11.8
+  },
+  {
+    "text": "them",
+    "start": 11.819,
+    "end": 12
+  },
+  {
+    "text": "died",
+    "start": 12.059,
+    "end": 12.559
+  },
+  {
+    "text": "from",
+    "start": 12.619,
+    "end": 12.779
+  },
+  {
+    "text": "what",
+    "start": 12.799,
+    "end": 12.94
+  },
+  {
+    "text": "he",
+    "start": 12.979,
+    "end": 13.099
+  },
+  {
+    "text": "did",
+    "start": 13.139,
+    "end": 13.319
+  },
+  {
+    "text": "to",
+    "start": 13.359,
+    "end": 13.46
+  },
+  {
+    "text": "them.",
+    "start": 13.5,
+    "end": 13.679
+  },
+  {
+    "text": "This",
+    "start": 14.42,
+    "end": 14.579
+  },
+  {
+    "text": "is",
+    "start": 14.619,
+    "end": 14.739
+  },
+  {
+    "text": "the",
+    "start": 14.779,
+    "end": 14.859
+  },
+  {
+    "text": "psychology",
+    "start": 14.899,
+    "end": 15.539
+  },
+  {
+    "text": "of",
+    "start": 15.579,
+    "end": 15.68
+  },
+  {
+    "text": "a",
+    "start": 15.699,
+    "end": 15.759
+  },
+  {
+    "text": "man",
+    "start": 15.819,
+    "end": 16.319
+  },
+  {
+    "text": "who",
+    "start": 16.359,
+    "end": 16.42
+  },
+  {
+    "text": "spent",
+    "start": 16.579,
+    "end": 16.819
+  },
+  {
+    "text": "his",
+    "start": 16.859,
+    "end": 16.96
+  },
+  {
+    "text": "entire",
+    "start": 17,
+    "end": 17.399
+  },
+  {
+    "text": "life",
+    "start": 17.539,
+    "end": 18.279
+  },
+  {
+    "text": "being",
+    "start": 18.34,
+    "end": 18.559
+  },
+  {
+    "text": "whoever",
+    "start": 18.6,
+    "end": 19
+  },
+  {
+    "text": "the",
+    "start": 19.039,
+    "end": 19.1
+  },
+  {
+    "text": "moment",
+    "start": 19.18,
+    "end": 19.479
+  },
+  {
+    "text": "required.",
+    "start": 19.539,
+    "end": 20.119
+  },
+  {
+    "text": "This",
+    "start": 20.879,
+    "end": 21.059
+  },
+  {
+    "text": "is",
+    "start": 21.119,
+    "end": 21.239
+  },
+  {
+    "text": "Shadow",
+    "start": 21.279,
+    "end": 21.579
+  },
+  {
+    "text": "Figure",
+    "start": 21.719,
+    "end": 22.04
+  }
+]

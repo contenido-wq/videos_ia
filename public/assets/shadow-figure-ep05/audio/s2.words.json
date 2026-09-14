@@ -1,0 +1,3317 @@
+[
+  {
+    "text": "In",
+    "start": 0.26,
+    "end": 0.36
+  },
+  {
+    "text": "nineteen",
+    "start": 0.38,
+    "end": 0.8
+  },
+  {
+    "text": "fifty-one,",
+    "start": 0.9,
+    "end": 1.39
+  },
+  {
+    "text": "during",
+    "start": 1.76,
+    "end": 2
+  },
+  {
+    "text": "the",
+    "start": 2.06,
+    "end": 2.14
+  },
+  {
+    "text": "Korean",
+    "start": 2.18,
+    "end": 2.56
+  },
+  {
+    "text": "War,",
+    "start": 2.66,
+    "end": 2.92
+  },
+  {
+    "text": "a",
+    "start": 3.4,
+    "end": 3.46
+  },
+  {
+    "text": "young",
+    "start": 3.5,
+    "end": 3.66
+  },
+  {
+    "text": "man",
+    "start": 3.76,
+    "end": 4
+  },
+  {
+    "text": "walked",
+    "start": 4.22,
+    "end": 4.52
+  },
+  {
+    "text": "aboard",
+    "start": 4.56,
+    "end": 4.9
+  },
+  {
+    "text": "a",
+    "start": 4.94,
+    "end": 5
+  },
+  {
+    "text": "Canadian",
+    "start": 5.04,
+    "end": 5.51
+  },
+  {
+    "text": "destroyer,",
+    "start": 5.58,
+    "end": 6.11
+  },
+  {
+    "text": "the",
+    "start": 6.64,
+    "end": 6.72
+  },
+  {
+    "text": "HMCS",
+    "start": 6.76,
+    "end": 7.28
+  },
+  {
+    "text": "Cayuga,",
+    "start": 7.34,
+    "end": 7.82
+  },
+  {
+    "text": "wearing",
+    "start": 8.34,
+    "end": 8.66
+  },
+  {
+    "text": "the",
+    "start": 8.7,
+    "end": 8.77
+  },
+  {
+    "text": "uniform",
+    "start": 8.86,
+    "end": 9.6
+  },
+  {
+    "text": "and",
+    "start": 9.64,
+    "end": 9.73
+  },
+  {
+    "text": "the",
+    "start": 9.78,
+    "end": 9.84
+  },
+  {
+    "text": "identity",
+    "start": 9.94,
+    "end": 10.52
+  },
+  {
+    "text": "of",
+    "start": 10.82,
+    "end": 10.9
+  },
+  {
+    "text": "a",
+    "start": 10.94,
+    "end": 11
+  },
+  {
+    "text": "naval",
+    "start": 11.04,
+    "end": 11.32
+  },
+  {
+    "text": "surgeon",
+    "start": 11.4,
+    "end": 11.86
+  },
+  {
+    "text": "named",
+    "start": 12.1,
+    "end": 12.34
+  },
+  {
+    "text": "Dr.",
+    "start": 12.38,
+    "end": 12.46
+  },
+  {
+    "text": "Joseph",
+    "start": 12.8,
+    "end": 13.16
+  },
+  {
+    "text": "Cyr.",
+    "start": 13.22,
+    "end": 13.5
+  },
+  {
+    "text": "His",
+    "start": 14.1,
+    "end": 14.24
+  },
+  {
+    "text": "name",
+    "start": 14.28,
+    "end": 14.44
+  },
+  {
+    "text": "was",
+    "start": 14.52,
+    "end": 14.66
+  },
+  {
+    "text": "actually",
+    "start": 14.72,
+    "end": 15.12
+  },
+  {
+    "text": "Ferdinand",
+    "start": 15.46,
+    "end": 16.1
+  },
+  {
+    "text": "Waldo",
+    "start": 16.34,
+    "end": 16.72
+  },
+  {
+    "text": "Demara.",
+    "start": 16.78,
+    "end": 17.22
+  },
+  {
+    "text": "He",
+    "start": 17.9,
+    "end": 17.98
+  },
+  {
+    "text": "had",
+    "start": 18.02,
+    "end": 18.13
+  },
+  {
+    "text": "never",
+    "start": 18.2,
+    "end": 18.42
+  },
+  {
+    "text": "attended",
+    "start": 18.5,
+    "end": 18.9
+  },
+  {
+    "text": "medical",
+    "start": 18.96,
+    "end": 19.28
+  },
+  {
+    "text": "school.",
+    "start": 19.38,
+    "end": 19.7
+  },
+  {
+    "text": "He",
+    "start": 20.28,
+    "end": 20.36
+  },
+  {
+    "text": "had",
+    "start": 20.4,
+    "end": 20.52
+  },
+  {
+    "text": "never",
+    "start": 20.64,
+    "end": 20.79
+  },
+  {
+    "text": "held",
+    "start": 20.84,
+    "end": 21.1
+  },
+  {
+    "text": "a",
+    "start": 21.14,
+    "end": 21.22
+  },
+  {
+    "text": "scalpel",
+    "start": 21.3,
+    "end": 21.72
+  },
+  {
+    "text": "over",
+    "start": 21.88,
+    "end": 22.1
+  },
+  {
+    "text": "a",
+    "start": 22.16,
+    "end": 22.18
+  },
+  {
+    "text": "real",
+    "start": 22.26,
+    "end": 22.48
+  },
+  {
+    "text": "patient.",
+    "start": 22.5,
+    "end": 22.96
+  },
+  {
+    "text": "And",
+    "start": 23.52,
+    "end": 23.64
+  },
+  {
+    "text": "for",
+    "start": 23.68,
+    "end": 23.84
+  },
+  {
+    "text": "months,",
+    "start": 23.86,
+    "end": 24.3
+  },
+  {
+    "text": "he",
+    "start": 24.62,
+    "end": 24.7
+  },
+  {
+    "text": "was",
+    "start": 24.78,
+    "end": 24.9
+  },
+  {
+    "text": "the",
+    "start": 24.94,
+    "end": 25.08
+  },
+  {
+    "text": "only",
+    "start": 25.16,
+    "end": 25.38
+  },
+  {
+    "text": "doctor",
+    "start": 25.48,
+    "end": 25.92
+  },
+  {
+    "text": "on",
+    "start": 25.98,
+    "end": 26.1
+  },
+  {
+    "text": "that",
+    "start": 26.14,
+    "end": 26.3
+  },
+  {
+    "text": "ship.",
+    "start": 26.38,
+    "end": 26.66
+  },
+  {
+    "text": "When",
+    "start": 27.24,
+    "end": 27.38
+  },
+  {
+    "text": "wounded",
+    "start": 27.44,
+    "end": 27.76
+  },
+  {
+    "text": "soldiers",
+    "start": 27.88,
+    "end": 28.29
+  },
+  {
+    "text": "came",
+    "start": 28.38,
+    "end": 28.56
+  },
+  {
+    "text": "aboard",
+    "start": 28.6,
+    "end": 29
+  },
+  {
+    "text": "needing",
+    "start": 29.06,
+    "end": 29.33
+  },
+  {
+    "text": "surgery,",
+    "start": 29.44,
+    "end": 29.92
+  },
+  {
+    "text": "Demara",
+    "start": 30.44,
+    "end": 30.92
+  },
+  {
+    "text": "didn't",
+    "start": 30.93,
+    "end": 31.24
+  },
+  {
+    "text": "run.",
+    "start": 31.28,
+    "end": 31.52
+  },
+  {
+    "text": "He",
+    "start": 32.08,
+    "end": 32.2
+  },
+  {
+    "text": "locked",
+    "start": 32.24,
+    "end": 32.5
+  },
+  {
+    "text": "himself",
+    "start": 32.52,
+    "end": 32.94
+  },
+  {
+    "text": "away",
+    "start": 33.02,
+    "end": 33.3
+  },
+  {
+    "text": "with",
+    "start": 33.34,
+    "end": 33.449
+  },
+  {
+    "text": "a",
+    "start": 33.449,
+    "end": 33.58
+  },
+  {
+    "text": "textbook,",
+    "start": 33.62,
+    "end": 34.17
+  },
+  {
+    "text": "studied",
+    "start": 34.6,
+    "end": 34.92
+  },
+  {
+    "text": "the",
+    "start": 34.93,
+    "end": 35.04
+  },
+  {
+    "text": "procedure",
+    "start": 35.08,
+    "end": 35.96
+  },
+  {
+    "text": "in",
+    "start": 36.02,
+    "end": 36.1
+  },
+  {
+    "text": "the",
+    "start": 36.14,
+    "end": 36.26
+  },
+  {
+    "text": "hours",
+    "start": 36.34,
+    "end": 36.62
+  },
+  {
+    "text": "he",
+    "start": 36.68,
+    "end": 36.78
+  },
+  {
+    "text": "had,",
+    "start": 36.82,
+    "end": 37.62
+  },
+  {
+    "text": "and",
+    "start": 37.66,
+    "end": 37.79
+  },
+  {
+    "text": "then",
+    "start": 37.82,
+    "end": 38.05
+  },
+  {
+    "text": "operated,",
+    "start": 38.12,
+    "end": 38.71
+  },
+  {
+    "text": "extracting",
+    "start": 39.3,
+    "end": 39.949
+  },
+  {
+    "text": "bullets,",
+    "start": 39.96,
+    "end": 40.34
+  },
+  {
+    "text": "treating",
+    "start": 40.82,
+    "end": 41.2
+  },
+  {
+    "text": "chest",
+    "start": 41.21,
+    "end": 41.5
+  },
+  {
+    "text": "wounds,",
+    "start": 41.56,
+    "end": 41.92
+  },
+  {
+    "text": "closing",
+    "start": 42.44,
+    "end": 42.79
+  },
+  {
+    "text": "incisions",
+    "start": 42.86,
+    "end": 43.48
+  },
+  {
+    "text": "he",
+    "start": 43.88,
+    "end": 44.02
+  },
+  {
+    "text": "had",
+    "start": 44.08,
+    "end": 44.18
+  },
+  {
+    "text": "only",
+    "start": 44.24,
+    "end": 44.51
+  },
+  {
+    "text": "ever",
+    "start": 44.56,
+    "end": 44.76
+  },
+  {
+    "text": "read",
+    "start": 44.8,
+    "end": 44.94
+  },
+  {
+    "text": "about.",
+    "start": 45.04,
+    "end": 45.37
+  },
+  {
+    "text": "By",
+    "start": 46.38,
+    "end": 46.54
+  },
+  {
+    "text": "multiple",
+    "start": 46.6,
+    "end": 47.04
+  },
+  {
+    "text": "accounts,",
+    "start": 47.12,
+    "end": 47.62
+  },
+  {
+    "text": "every",
+    "start": 48.1,
+    "end": 48.38
+  },
+  {
+    "text": "patient",
+    "start": 48.42,
+    "end": 48.8
+  },
+  {
+    "text": "he",
+    "start": 48.84,
+    "end": 48.98
+  },
+  {
+    "text": "treated",
+    "start": 49.02,
+    "end": 49.62
+  },
+  {
+    "text": "survived",
+    "start": 49.66,
+    "end": 50.15
+  },
+  {
+    "text": "his",
+    "start": 50.18,
+    "end": 50.36
+  },
+  {
+    "text": "care.",
+    "start": 50.4,
+    "end": 50.64
+  },
+  {
+    "text": "Picture",
+    "start": 51.34,
+    "end": 51.74
+  },
+  {
+    "text": "the",
+    "start": 51.75,
+    "end": 51.88
+  },
+  {
+    "text": "actual",
+    "start": 51.98,
+    "end": 52.32
+  },
+  {
+    "text": "mechanics",
+    "start": 52.36,
+    "end": 52.9
+  },
+  {
+    "text": "of",
+    "start": 52.94,
+    "end": 53.04
+  },
+  {
+    "text": "that",
+    "start": 53.08,
+    "end": 53.28
+  },
+  {
+    "text": "moment.",
+    "start": 53.32,
+    "end": 54.24
+  },
+  {
+    "text": "A",
+    "start": 54.34,
+    "end": 54.42
+  },
+  {
+    "text": "wounded",
+    "start": 54.44,
+    "end": 54.8
+  },
+  {
+    "text": "man",
+    "start": 54.86,
+    "end": 55.4
+  },
+  {
+    "text": "is",
+    "start": 55.46,
+    "end": 55.63
+  },
+  {
+    "text": "carried",
+    "start": 55.66,
+    "end": 56
+  },
+  {
+    "text": "below",
+    "start": 56.04,
+    "end": 56.36
+  },
+  {
+    "text": "deck.",
+    "start": 56.4,
+    "end": 56.66
+  },
+  {
+    "text": "The",
+    "start": 57.11,
+    "end": 57.2
+  },
+  {
+    "text": "only",
+    "start": 57.28,
+    "end": 57.53
+  },
+  {
+    "text": "doctor",
+    "start": 57.56,
+    "end": 57.9
+  },
+  {
+    "text": "on",
+    "start": 57.96,
+    "end": 58.11
+  },
+  {
+    "text": "board",
+    "start": 58.12,
+    "end": 58.8
+  },
+  {
+    "text": "excuses",
+    "start": 58.86,
+    "end": 59.43
+  },
+  {
+    "text": "himself",
+    "start": 59.46,
+    "end": 59.92
+  },
+  {
+    "text": "for",
+    "start": 59.93,
+    "end": 60.06
+  },
+  {
+    "text": "a",
+    "start": 60.07,
+    "end": 60.18
+  },
+  {
+    "text": "few",
+    "start": 60.22,
+    "end": 60.4
+  },
+  {
+    "text": "minutes,",
+    "start": 60.42,
+    "end": 60.81
+  },
+  {
+    "text": "not",
+    "start": 61.38,
+    "end": 61.55
+  },
+  {
+    "text": "to",
+    "start": 61.56,
+    "end": 61.65
+  },
+  {
+    "text": "prepare",
+    "start": 61.72,
+    "end": 62.08
+  },
+  {
+    "text": "instruments,",
+    "start": 62.12,
+    "end": 62.71
+  },
+  {
+    "text": "but",
+    "start": 63.18,
+    "end": 63.33
+  },
+  {
+    "text": "to",
+    "start": 63.36,
+    "end": 63.48
+  },
+  {
+    "text": "speed-read",
+    "start": 63.5,
+    "end": 64.46
+  },
+  {
+    "text": "the",
+    "start": 64.5,
+    "end": 64.599
+  },
+  {
+    "text": "relevant",
+    "start": 64.64,
+    "end": 65.04
+  },
+  {
+    "text": "chapter",
+    "start": 65.099,
+    "end": 65.88
+  },
+  {
+    "text": "of",
+    "start": 65.94,
+    "end": 66.02
+  },
+  {
+    "text": "a",
+    "start": 66.03,
+    "end": 66.14
+  },
+  {
+    "text": "surgical",
+    "start": 66.18,
+    "end": 66.7
+  },
+  {
+    "text": "textbook",
+    "start": 66.74,
+    "end": 67.24
+  },
+  {
+    "text": "he",
+    "start": 67.28,
+    "end": 67.42
+  },
+  {
+    "text": "keeps",
+    "start": 67.48,
+    "end": 67.7
+  },
+  {
+    "text": "in",
+    "start": 67.76,
+    "end": 67.82
+  },
+  {
+    "text": "his",
+    "start": 67.86,
+    "end": 68.04
+  },
+  {
+    "text": "quarters",
+    "start": 68.08,
+    "end": 68.55
+  },
+  {
+    "text": "for",
+    "start": 69,
+    "end": 69.12
+  },
+  {
+    "text": "exactly",
+    "start": 69.18,
+    "end": 69.73
+  },
+  {
+    "text": "this",
+    "start": 69.76,
+    "end": 69.95
+  },
+  {
+    "text": "reason.",
+    "start": 69.98,
+    "end": 70.82
+  },
+  {
+    "text": "Then",
+    "start": 70.86,
+    "end": 71.11
+  },
+  {
+    "text": "he",
+    "start": 71.16,
+    "end": 71.3
+  },
+  {
+    "text": "walks",
+    "start": 71.34,
+    "end": 71.6
+  },
+  {
+    "text": "back",
+    "start": 71.66,
+    "end": 71.86
+  },
+  {
+    "text": "out,",
+    "start": 71.92,
+    "end": 72.18
+  },
+  {
+    "text": "scrubs",
+    "start": 72.6,
+    "end": 73
+  },
+  {
+    "text": "in,",
+    "start": 73.04,
+    "end": 73.22
+  },
+  {
+    "text": "and",
+    "start": 73.64,
+    "end": 73.74
+  },
+  {
+    "text": "performs",
+    "start": 73.82,
+    "end": 74.3
+  },
+  {
+    "text": "the",
+    "start": 74.34,
+    "end": 74.44
+  },
+  {
+    "text": "procedure",
+    "start": 74.48,
+    "end": 75.04
+  },
+  {
+    "text": "as",
+    "start": 75.46,
+    "end": 75.56
+  },
+  {
+    "text": "if",
+    "start": 75.62,
+    "end": 75.74
+  },
+  {
+    "text": "he",
+    "start": 75.78,
+    "end": 75.88
+  },
+  {
+    "text": "had",
+    "start": 75.9,
+    "end": 76.06
+  },
+  {
+    "text": "done",
+    "start": 76.08,
+    "end": 76.28
+  },
+  {
+    "text": "it",
+    "start": 76.32,
+    "end": 76.5
+  },
+  {
+    "text": "a",
+    "start": 76.58,
+    "end": 76.64
+  },
+  {
+    "text": "hundred",
+    "start": 76.7,
+    "end": 77.02
+  },
+  {
+    "text": "times",
+    "start": 77.12,
+    "end": 77.42
+  },
+  {
+    "text": "before,",
+    "start": 77.46,
+    "end": 77.86
+  },
+  {
+    "text": "because",
+    "start": 78.4,
+    "end": 78.78
+  },
+  {
+    "text": "by",
+    "start": 78.82,
+    "end": 78.96
+  },
+  {
+    "text": "that",
+    "start": 79,
+    "end": 79.2
+  },
+  {
+    "text": "point",
+    "start": 79.26,
+    "end": 79.48
+  },
+  {
+    "text": "in",
+    "start": 79.52,
+    "end": 79.6
+  },
+  {
+    "text": "his",
+    "start": 79.66,
+    "end": 79.8
+  },
+  {
+    "text": "life,",
+    "start": 79.86,
+    "end": 80.18
+  },
+  {
+    "text": "bluffing",
+    "start": 80.66,
+    "end": 81
+  },
+  {
+    "text": "competence",
+    "start": 81.12,
+    "end": 81.66
+  },
+  {
+    "text": "under",
+    "start": 81.74,
+    "end": 82.04
+  },
+  {
+    "text": "pressure",
+    "start": 82.05,
+    "end": 82.88
+  },
+  {
+    "text": "was",
+    "start": 82.89,
+    "end": 83.06
+  },
+  {
+    "text": "the",
+    "start": 83.1,
+    "end": 83.2
+  },
+  {
+    "text": "one",
+    "start": 83.3,
+    "end": 83.4
+  },
+  {
+    "text": "skill",
+    "start": 83.58,
+    "end": 83.92
+  },
+  {
+    "text": "he",
+    "start": 83.93,
+    "end": 84.16
+  },
+  {
+    "text": "actually",
+    "start": 84.26,
+    "end": 84.62
+  },
+  {
+    "text": "had",
+    "start": 84.66,
+    "end": 84.83
+  },
+  {
+    "text": "done",
+    "start": 84.86,
+    "end": 85.21
+  },
+  {
+    "text": "a",
+    "start": 85.28,
+    "end": 85.36
+  },
+  {
+    "text": "hundred",
+    "start": 85.4,
+    "end": 85.76
+  },
+  {
+    "text": "times",
+    "start": 85.77,
+    "end": 86.14
+  },
+  {
+    "text": "before.",
+    "start": 86.18,
+    "end": 87.18
+  },
+  {
+    "text": "This",
+    "start": 87.19,
+    "end": 87.41
+  },
+  {
+    "text": "wasn't",
+    "start": 87.5,
+    "end": 87.75
+  },
+  {
+    "text": "his",
+    "start": 87.82,
+    "end": 87.99
+  },
+  {
+    "text": "first",
+    "start": 88.02,
+    "end": 88.26
+  },
+  {
+    "text": "identity,",
+    "start": 88.34,
+    "end": 89.47
+  },
+  {
+    "text": "and",
+    "start": 89.48,
+    "end": 89.58
+  },
+  {
+    "text": "it",
+    "start": 89.62,
+    "end": 89.77
+  },
+  {
+    "text": "wouldn't",
+    "start": 89.78,
+    "end": 90.1
+  },
+  {
+    "text": "be",
+    "start": 90.12,
+    "end": 90.26
+  },
+  {
+    "text": "his",
+    "start": 90.32,
+    "end": 90.49
+  },
+  {
+    "text": "last.",
+    "start": 90.54,
+    "end": 90.94
+  },
+  {
+    "text": "Over",
+    "start": 91.72,
+    "end": 91.9
+  },
+  {
+    "text": "the",
+    "start": 91.92,
+    "end": 92.02
+  },
+  {
+    "text": "course",
+    "start": 92.08,
+    "end": 92.32
+  },
+  {
+    "text": "of",
+    "start": 92.36,
+    "end": 92.44
+  },
+  {
+    "text": "his",
+    "start": 92.46,
+    "end": 92.62
+  },
+  {
+    "text": "life,",
+    "start": 92.66,
+    "end": 92.98
+  },
+  {
+    "text": "Demara",
+    "start": 93.36,
+    "end": 93.76
+  },
+  {
+    "text": "impersonated",
+    "start": 93.9,
+    "end": 94.63
+  },
+  {
+    "text": "a",
+    "start": 94.68,
+    "end": 94.74
+  },
+  {
+    "text": "monk,",
+    "start": 94.78,
+    "end": 95.08
+  },
+  {
+    "text": "an",
+    "start": 95.62,
+    "end": 95.7
+  },
+  {
+    "text": "assistant",
+    "start": 95.76,
+    "end": 96.28
+  },
+  {
+    "text": "prison",
+    "start": 96.3,
+    "end": 96.58
+  },
+  {
+    "text": "warden,",
+    "start": 96.66,
+    "end": 97.02
+  },
+  {
+    "text": "a",
+    "start": 97.54,
+    "end": 97.62
+  },
+  {
+    "text": "psychology",
+    "start": 97.64,
+    "end": 98.3
+  },
+  {
+    "text": "PhD,",
+    "start": 98.36,
+    "end": 99.36
+  },
+  {
+    "text": "a",
+    "start": 99.42,
+    "end": 99.52
+  },
+  {
+    "text": "schoolteacher,",
+    "start": 99.54,
+    "end": 100.66
+  },
+  {
+    "text": "and",
+    "start": 100.7,
+    "end": 100.79
+  },
+  {
+    "text": "a",
+    "start": 100.82,
+    "end": 100.92
+  },
+  {
+    "text": "doctor",
+    "start": 100.94,
+    "end": 101.72
+  },
+  {
+    "text": "more",
+    "start": 101.76,
+    "end": 101.92
+  },
+  {
+    "text": "than",
+    "start": 101.94,
+    "end": 102.12
+  },
+  {
+    "text": "once,",
+    "start": 102.2,
+    "end": 102.49
+  },
+  {
+    "text": "using",
+    "start": 103.07,
+    "end": 103.4
+  },
+  {
+    "text": "credentials",
+    "start": 103.44,
+    "end": 104.12
+  },
+  {
+    "text": "borrowed",
+    "start": 104.16,
+    "end": 104.54
+  },
+  {
+    "text": "or",
+    "start": 104.58,
+    "end": 104.72
+  },
+  {
+    "text": "stolen",
+    "start": 104.78,
+    "end": 105.16
+  },
+  {
+    "text": "from",
+    "start": 105.2,
+    "end": 105.39
+  },
+  {
+    "text": "real",
+    "start": 105.42,
+    "end": 105.66
+  },
+  {
+    "text": "people,",
+    "start": 105.7,
+    "end": 106.04
+  },
+  {
+    "text": "an",
+    "start": 106.66,
+    "end": 106.74
+  },
+  {
+    "text": "extraordinary",
+    "start": 106.8,
+    "end": 107.55
+  },
+  {
+    "text": "memory,",
+    "start": 107.56,
+    "end": 108.45
+  },
+  {
+    "text": "and",
+    "start": 108.48,
+    "end": 108.59
+  },
+  {
+    "text": "a",
+    "start": 108.62,
+    "end": 108.68
+  },
+  {
+    "text": "level",
+    "start": 108.74,
+    "end": 109.03
+  },
+  {
+    "text": "of",
+    "start": 109.08,
+    "end": 109.23
+  },
+  {
+    "text": "social",
+    "start": 109.26,
+    "end": 109.65
+  },
+  {
+    "text": "confidence",
+    "start": 109.66,
+    "end": 110.7
+  },
+  {
+    "text": "that",
+    "start": 110.71,
+    "end": 110.91
+  },
+  {
+    "text": "made",
+    "start": 110.96,
+    "end": 111.2
+  },
+  {
+    "text": "almost",
+    "start": 111.28,
+    "end": 111.67
+  },
+  {
+    "text": "no",
+    "start": 111.72,
+    "end": 111.88
+  },
+  {
+    "text": "one",
+    "start": 111.96,
+    "end": 112.12
+  },
+  {
+    "text": "stop",
+    "start": 112.2,
+    "end": 112.44
+  },
+  {
+    "text": "to",
+    "start": 112.48,
+    "end": 112.52
+  },
+  {
+    "text": "check",
+    "start": 112.64,
+    "end": 112.84
+  },
+  {
+    "text": "his",
+    "start": 112.85,
+    "end": 113.04
+  },
+  {
+    "text": "paperwork.",
+    "start": 113.08,
+    "end": 114.12
+  },
+  {
+    "text": "He",
+    "start": 114.18,
+    "end": 114.28
+  },
+  {
+    "text": "was",
+    "start": 114.36,
+    "end": 114.52
+  },
+  {
+    "text": "finally",
+    "start": 114.58,
+    "end": 114.96
+  },
+  {
+    "text": "exposed",
+    "start": 115,
+    "end": 115.9
+  },
+  {
+    "text": "not",
+    "start": 115.96,
+    "end": 116.14
+  },
+  {
+    "text": "by",
+    "start": 116.2,
+    "end": 116.32
+  },
+  {
+    "text": "a",
+    "start": 116.4,
+    "end": 116.42
+  },
+  {
+    "text": "hospital",
+    "start": 116.48,
+    "end": 117.08
+  },
+  {
+    "text": "audit",
+    "start": 117.14,
+    "end": 117.68
+  },
+  {
+    "text": "or",
+    "start": 117.74,
+    "end": 117.81
+  },
+  {
+    "text": "a",
+    "start": 117.86,
+    "end": 117.94
+  },
+  {
+    "text": "background",
+    "start": 118.04,
+    "end": 118.37
+  },
+  {
+    "text": "check,",
+    "start": 118.48,
+    "end": 118.74
+  },
+  {
+    "text": "but",
+    "start": 119.18,
+    "end": 119.34
+  },
+  {
+    "text": "by",
+    "start": 119.38,
+    "end": 119.52
+  },
+  {
+    "text": "the",
+    "start": 119.56,
+    "end": 119.66
+  },
+  {
+    "text": "mother",
+    "start": 119.7,
+    "end": 120.26
+  },
+  {
+    "text": "of",
+    "start": 120.32,
+    "end": 120.43
+  },
+  {
+    "text": "the",
+    "start": 120.48,
+    "end": 120.52
+  },
+  {
+    "text": "real",
+    "start": 120.62,
+    "end": 120.9
+  },
+  {
+    "text": "Dr.",
+    "start": 120.92,
+    "end": 121.01
+  },
+  {
+    "text": "Cyr,",
+    "start": 121.32,
+    "end": 121.58
+  },
+  {
+    "text": "who",
+    "start": 121.9,
+    "end": 121.98
+  },
+  {
+    "text": "recognized",
+    "start": 122.06,
+    "end": 122.72
+  },
+  {
+    "text": "his",
+    "start": 122.78,
+    "end": 122.88
+  },
+  {
+    "text": "photograph",
+    "start": 122.94,
+    "end": 123.6
+  },
+  {
+    "text": "in",
+    "start": 123.9,
+    "end": 123.98
+  },
+  {
+    "text": "a",
+    "start": 124.02,
+    "end": 124.06
+  },
+  {
+    "text": "Life",
+    "start": 124.12,
+    "end": 124.36
+  },
+  {
+    "text": "magazine",
+    "start": 124.46,
+    "end": 124.88
+  },
+  {
+    "text": "story",
+    "start": 125.02,
+    "end": 125.68
+  },
+  {
+    "text": "and",
+    "start": 125.72,
+    "end": 125.82
+  },
+  {
+    "text": "alerted",
+    "start": 125.9,
+    "end": 126.3
+  },
+  {
+    "text": "the",
+    "start": 126.36,
+    "end": 126.44
+  },
+  {
+    "text": "authorities.",
+    "start": 126.5,
+    "end": 127.22
+  },
+  {
+    "text": "His",
+    "start": 128.199,
+    "end": 128.36
+  },
+  {
+    "text": "life",
+    "start": 128.42,
+    "end": 128.72
+  },
+  {
+    "text": "became",
+    "start": 129.039,
+    "end": 129.38
+  },
+  {
+    "text": "the",
+    "start": 129.42,
+    "end": 129.479
+  },
+  {
+    "text": "subject",
+    "start": 129.58,
+    "end": 130.08
+  },
+  {
+    "text": "of",
+    "start": 130.34,
+    "end": 130.42
+  },
+  {
+    "text": "a",
+    "start": 130.46,
+    "end": 130.52
+  },
+  {
+    "text": "nineteen",
+    "start": 130.56,
+    "end": 130.94
+  },
+  {
+    "text": "fifty-nine",
+    "start": 131.06,
+    "end": 131.6
+  },
+  {
+    "text": "book,",
+    "start": 131.66,
+    "end": 131.92
+  },
+  {
+    "text": "The",
+    "start": 132.28,
+    "end": 132.36
+  },
+  {
+    "text": "Great",
+    "start": 132.42,
+    "end": 132.66
+  },
+  {
+    "text": "Impostor,",
+    "start": 132.72,
+    "end": 133.29
+  },
+  {
+    "text": "and",
+    "start": 133.82,
+    "end": 133.95
+  },
+  {
+    "text": "a",
+    "start": 134.02,
+    "end": 134.06
+  },
+  {
+    "text": "nineteen",
+    "start": 134.07,
+    "end": 134.46
+  },
+  {
+    "text": "sixty-one",
+    "start": 134.58,
+    "end": 135.109
+  },
+  {
+    "text": "film",
+    "start": 135.24,
+    "end": 135.5
+  },
+  {
+    "text": "starring",
+    "start": 135.86,
+    "end": 136.28
+  },
+  {
+    "text": "Tony",
+    "start": 136.32,
+    "end": 136.62
+  },
+  {
+    "text": "Curtis.",
+    "start": 136.66,
+    "end": 137.14
+  },
+  {
+    "text": "A",
+    "start": 138.06,
+    "end": 138.07
+  },
+  {
+    "text": "man",
+    "start": 138.16,
+    "end": 138.42
+  },
+  {
+    "text": "with",
+    "start": 138.46,
+    "end": 138.59
+  },
+  {
+    "text": "zero",
+    "start": 138.72,
+    "end": 138.94
+  },
+  {
+    "text": "qualifications",
+    "start": 139.08,
+    "end": 140.02
+  },
+  {
+    "text": "had,",
+    "start": 140.06,
+    "end": 140.34
+  },
+  {
+    "text": "by",
+    "start": 140.68,
+    "end": 140.829
+  },
+  {
+    "text": "that",
+    "start": 140.86,
+    "end": 141.08
+  },
+  {
+    "text": "point,",
+    "start": 141.12,
+    "end": 141.92
+  },
+  {
+    "text": "already",
+    "start": 142.02,
+    "end": 142.4
+  },
+  {
+    "text": "held",
+    "start": 142.44,
+    "end": 142.74
+  },
+  {
+    "text": "more",
+    "start": 142.78,
+    "end": 143
+  },
+  {
+    "text": "professional",
+    "start": 143.02,
+    "end": 143.62
+  },
+  {
+    "text": "titles",
+    "start": 143.66,
+    "end": 144.16
+  },
+  {
+    "text": "than",
+    "start": 144.2,
+    "end": 144.35
+  },
+  {
+    "text": "most",
+    "start": 144.38,
+    "end": 144.68
+  },
+  {
+    "text": "people",
+    "start": 144.72,
+    "end": 145.049
+  },
+  {
+    "text": "hold",
+    "start": 145.08,
+    "end": 145.34
+  },
+  {
+    "text": "in",
+    "start": 145.4,
+    "end": 145.46
+  },
+  {
+    "text": "a",
+    "start": 145.52,
+    "end": 145.53
+  },
+  {
+    "text": "lifetime,",
+    "start": 145.6,
+    "end": 146.12
+  },
+  {
+    "text": "and",
+    "start": 146.7,
+    "end": 146.82
+  },
+  {
+    "text": "it",
+    "start": 146.88,
+    "end": 146.96
+  },
+  {
+    "text": "had",
+    "start": 147.02,
+    "end": 147.14
+  },
+  {
+    "text": "worked",
+    "start": 147.2,
+    "end": 147.53
+  },
+  {
+    "text": "over",
+    "start": 148.04,
+    "end": 148.67
+  },
+  {
+    "text": "and",
+    "start": 148.7,
+    "end": 148.84
+  },
+  {
+    "text": "over",
+    "start": 148.94,
+    "end": 149.78
+  },
+  {
+    "text": "because",
+    "start": 149.82,
+    "end": 150.15
+  },
+  {
+    "text": "of",
+    "start": 150.2,
+    "end": 150.31
+  },
+  {
+    "text": "what",
+    "start": 150.34,
+    "end": 150.53
+  },
+  {
+    "text": "he",
+    "start": 150.58,
+    "end": 150.66
+  },
+  {
+    "text": "understood",
+    "start": 150.73591836734693,
+    "end": 151.25591836734694
+  },
+  {
+    "text": "about",
+    "start": 151.33591836734692,
+    "end": 151.57591836734693
+  },
+  {
+    "text": "how",
+    "start": 151.61591836734692,
+    "end": 151.82591836734693
+  },
+  {
+    "text": "trust",
+    "start": 151.85591836734693,
+    "end": 152.29591836734693
+  },
+  {
+    "text": "actually",
+    "start": 152.39591836734692,
+    "end": 152.79591836734693
+  },
+  {
+    "text": "gets",
+    "start": 152.81591836734694,
+    "end": 153.06591836734694
+  },
+  {
+    "text": "granted.",
+    "start": 153.07591836734693,
+    "end": 154.27591836734692
+  },
+  {
+    "text": "Before",
+    "start": 154.31591836734694,
+    "end": 154.63591836734693
+  },
+  {
+    "text": "the",
+    "start": 154.65591836734694,
+    "end": 154.78591836734694
+  },
+  {
+    "text": "ship,",
+    "start": 154.79591836734693,
+    "end": 155.05591836734692
+  },
+  {
+    "text": "Demara",
+    "start": 155.55591836734692,
+    "end": 156.01591836734693
+  },
+  {
+    "text": "had",
+    "start": 156.05591836734692,
+    "end": 156.19591836734693
+  },
+  {
+    "text": "already",
+    "start": 156.25591836734694,
+    "end": 156.63591836734693
+  },
+  {
+    "text": "spent",
+    "start": 156.71591836734694,
+    "end": 156.95591836734692
+  },
+  {
+    "text": "years",
+    "start": 157.05591836734692,
+    "end": 157.42591836734692
+  },
+  {
+    "text": "perfecting",
+    "start": 157.45591836734692,
+    "end": 158.00591836734694
+  },
+  {
+    "text": "the",
+    "start": 158.00591836734694,
+    "end": 158.13591836734693
+  },
+  {
+    "text": "pattern.",
+    "start": 158.17591836734692,
+    "end": 158.55591836734692
+  },
+  {
+    "text": "He",
+    "start": 159.23591836734693,
+    "end": 159.35591836734693
+  },
+  {
+    "text": "joined",
+    "start": 159.39591836734692,
+    "end": 159.64591836734692
+  },
+  {
+    "text": "a",
+    "start": 159.65591836734694,
+    "end": 159.73591836734693
+  },
+  {
+    "text": "monastery",
+    "start": 159.77591836734692,
+    "end": 160.43591836734691
+  },
+  {
+    "text": "under",
+    "start": 160.51591836734693,
+    "end": 160.73591836734693
+  },
+  {
+    "text": "a",
+    "start": 160.79591836734693,
+    "end": 160.8759183673469
+  },
+  {
+    "text": "false",
+    "start": 160.91591836734693,
+    "end": 161.17591836734692
+  },
+  {
+    "text": "identity",
+    "start": 161.25591836734694,
+    "end": 162.20591836734692
+  },
+  {
+    "text": "and",
+    "start": 162.20591836734692,
+    "end": 162.35591836734693
+  },
+  {
+    "text": "nearly",
+    "start": 162.41591836734693,
+    "end": 162.73591836734693
+  },
+  {
+    "text": "became",
+    "start": 162.75591836734694,
+    "end": 163.1259183673469
+  },
+  {
+    "text": "a",
+    "start": 163.17591836734692,
+    "end": 163.18591836734691
+  },
+  {
+    "text": "monk.",
+    "start": 163.25591836734694,
+    "end": 163.55591836734692
+  },
+  {
+    "text": "He",
+    "start": 164.14591836734692,
+    "end": 164.31591836734694
+  },
+  {
+    "text": "talked",
+    "start": 164.3759183673469,
+    "end": 164.61591836734692
+  },
+  {
+    "text": "his",
+    "start": 164.65591836734694,
+    "end": 164.81591836734694
+  },
+  {
+    "text": "way",
+    "start": 164.8759183673469,
+    "end": 165.27591836734692
+  },
+  {
+    "text": "into",
+    "start": 165.31591836734694,
+    "end": 165.55591836734692
+  },
+  {
+    "text": "running",
+    "start": 165.61591836734692,
+    "end": 165.96591836734694
+  },
+  {
+    "text": "the",
+    "start": 165.96591836734694,
+    "end": 166.09591836734694
+  },
+  {
+    "text": "psychology",
+    "start": 166.11591836734692,
+    "end": 166.75591836734694
+  },
+  {
+    "text": "department",
+    "start": 166.79591836734693,
+    "end": 167.57591836734693
+  },
+  {
+    "text": "of",
+    "start": 167.61591836734692,
+    "end": 167.71591836734694
+  },
+  {
+    "text": "a",
+    "start": 167.73591836734693,
+    "end": 167.75591836734694
+  },
+  {
+    "text": "small",
+    "start": 167.81591836734694,
+    "end": 168.19591836734693
+  },
+  {
+    "text": "Canadian",
+    "start": 168.23591836734693,
+    "end": 168.77591836734692
+  },
+  {
+    "text": "college,",
+    "start": 168.81591836734694,
+    "end": 169.21591836734694
+  },
+  {
+    "text": "teaching",
+    "start": 169.68591836734691,
+    "end": 170.11591836734692
+  },
+  {
+    "text": "real",
+    "start": 170.13591836734693,
+    "end": 170.32591836734693
+  },
+  {
+    "text": "students",
+    "start": 170.47591836734694,
+    "end": 171.25591836734694
+  },
+  {
+    "text": "with",
+    "start": 171.26591836734693,
+    "end": 171.40591836734694
+  },
+  {
+    "text": "a",
+    "start": 171.45591836734692,
+    "end": 171.51591836734693
+  },
+  {
+    "text": "stolen",
+    "start": 171.59591836734694,
+    "end": 171.93591836734691
+  },
+  {
+    "text": "doctorate",
+    "start": 171.99591836734692,
+    "end": 172.71591836734694
+  },
+  {
+    "text": "he",
+    "start": 172.75591836734694,
+    "end": 172.85591836734693
+  },
+  {
+    "text": "had",
+    "start": 172.93591836734691,
+    "end": 173.05591836734692
+  },
+  {
+    "text": "never",
+    "start": 173.11591836734692,
+    "end": 173.39591836734692
+  },
+  {
+    "text": "earned.",
+    "start": 173.47591836734694,
+    "end": 174.33591836734692
+  },
+  {
+    "text": "He",
+    "start": 174.39591836734692,
+    "end": 174.55591836734692
+  },
+  {
+    "text": "served",
+    "start": 174.59591836734694,
+    "end": 174.93591836734691
+  },
+  {
+    "text": "as",
+    "start": 175.01591836734693,
+    "end": 175.10591836734693
+  },
+  {
+    "text": "an",
+    "start": 175.13591836734693,
+    "end": 175.19591836734693
+  },
+  {
+    "text": "assistant",
+    "start": 175.25591836734694,
+    "end": 175.99591836734692
+  },
+  {
+    "text": "to",
+    "start": 176.00591836734694,
+    "end": 176.11591836734692
+  },
+  {
+    "text": "a",
+    "start": 176.17591836734692,
+    "end": 176.27591836734692
+  },
+  {
+    "text": "prison",
+    "start": 176.29591836734693,
+    "end": 176.65591836734694
+  },
+  {
+    "text": "warden",
+    "start": 176.69591836734693,
+    "end": 177.03591836734694
+  },
+  {
+    "text": "and,",
+    "start": 177.57591836734693,
+    "end": 177.73591836734693
+  },
+  {
+    "text": "by",
+    "start": 177.77591836734692,
+    "end": 177.85591836734693
+  },
+  {
+    "text": "some",
+    "start": 177.99591836734692,
+    "end": 178.15591836734694
+  },
+  {
+    "text": "accounts,",
+    "start": 178.19591836734693,
+    "end": 178.67591836734692
+  },
+  {
+    "text": "introduced",
+    "start": 179.09591836734694,
+    "end": 179.72591836734694
+  },
+  {
+    "text": "genuinely",
+    "start": 180.03591836734694,
+    "end": 180.55591836734692
+  },
+  {
+    "text": "progressive",
+    "start": 180.65591836734694,
+    "end": 181.17591836734692
+  },
+  {
+    "text": "reforms",
+    "start": 181.23591836734693,
+    "end": 181.77591836734692
+  },
+  {
+    "text": "to",
+    "start": 182.13591836734693,
+    "end": 182.19591836734693
+  },
+  {
+    "text": "how",
+    "start": 182.27591836734692,
+    "end": 182.42491836734692
+  },
+  {
+    "text": "inmates",
+    "start": 182.57591836734693,
+    "end": 182.95591836734692
+  },
+  {
+    "text": "were",
+    "start": 182.99591836734692,
+    "end": 183.13591836734693
+  },
+  {
+    "text": "treated,",
+    "start": 183.17591836734692,
+    "end": 183.58591836734692
+  },
+  {
+    "text": "competent",
+    "start": 184.15591836734694,
+    "end": 184.63591836734693
+  },
+  {
+    "text": "work",
+    "start": 184.73591836734693,
+    "end": 184.97591836734694
+  },
+  {
+    "text": "built",
+    "start": 185.57591836734693,
+    "end": 185.89591836734692
+  },
+  {
+    "text": "entirely",
+    "start": 185.95591836734692,
+    "end": 186.53591836734694
+  },
+  {
+    "text": "on",
+    "start": 186.59591836734694,
+    "end": 186.68591836734691
+  },
+  {
+    "text": "top",
+    "start": 186.77591836734692,
+    "end": 187.27591836734692
+  },
+  {
+    "text": "of",
+    "start": 187.31591836734694,
+    "end": 187.39591836734692
+  },
+  {
+    "text": "a",
+    "start": 187.43591836734691,
+    "end": 187.51591836734693
+  },
+  {
+    "text": "fabricated",
+    "start": 187.57591836734693,
+    "end": 188.22591836734694
+  },
+  {
+    "text": "resume.",
+    "start": 188.25591836734694,
+    "end": 188.71591836734694
+  },
+  {
+    "text": "Each",
+    "start": 189.30591836734692,
+    "end": 189.61591836734692
+  },
+  {
+    "text": "identity",
+    "start": 189.67591836734692,
+    "end": 190.31591836734694
+  },
+  {
+    "text": "taught",
+    "start": 190.32591836734693,
+    "end": 190.57591836734693
+  },
+  {
+    "text": "him",
+    "start": 190.61591836734692,
+    "end": 190.79591836734693
+  },
+  {
+    "text": "something",
+    "start": 190.85591836734693,
+    "end": 191.28591836734694
+  },
+  {
+    "text": "the",
+    "start": 191.55591836734692,
+    "end": 191.67591836734692
+  },
+  {
+    "text": "last",
+    "start": 191.71591836734694,
+    "end": 191.99591836734692
+  },
+  {
+    "text": "one",
+    "start": 192.05591836734692,
+    "end": 192.23591836734693
+  },
+  {
+    "text": "hadn't,",
+    "start": 192.29591836734693,
+    "end": 192.70591836734692
+  },
+  {
+    "text": "which",
+    "start": 193.35591836734693,
+    "end": 193.55591836734692
+  },
+  {
+    "text": "questions",
+    "start": 193.61591836734692,
+    "end": 194.11591836734692
+  },
+  {
+    "text": "people",
+    "start": 194.15591836734694,
+    "end": 194.61591836734692
+  },
+  {
+    "text": "actually",
+    "start": 194.69591836734693,
+    "end": 195.13591836734693
+  },
+  {
+    "text": "ask",
+    "start": 195.25591836734694,
+    "end": 195.79591836734693
+  },
+  {
+    "text": "before",
+    "start": 195.8759183673469,
+    "end": 196.20591836734692
+  },
+  {
+    "text": "trusting",
+    "start": 196.23591836734693,
+    "end": 196.6259183673469
+  },
+  {
+    "text": "a",
+    "start": 196.67591836734692,
+    "end": 196.68591836734691
+  },
+  {
+    "text": "stranger,",
+    "start": 196.81591836734694,
+    "end": 197.97591836734694
+  },
+  {
+    "text": "and",
+    "start": 198.01591836734693,
+    "end": 198.15591836734694
+  },
+  {
+    "text": "which",
+    "start": 198.19591836734693,
+    "end": 198.3759183673469
+  },
+  {
+    "text": "ones",
+    "start": 198.43591836734691,
+    "end": 198.75591836734694
+  },
+  {
+    "text": "they",
+    "start": 199.03591836734694,
+    "end": 199.15591836734694
+  },
+  {
+    "text": "never",
+    "start": 199.21591836734694,
+    "end": 199.45591836734692
+  },
+  {
+    "text": "think",
+    "start": 199.55591836734692,
+    "end": 199.79591836734693
+  },
+  {
+    "text": "to",
+    "start": 199.83591836734692,
+    "end": 199.95591836734692
+  },
+  {
+    "text": "ask",
+    "start": 200.05591836734692,
+    "end": 200.25591836734694
+  },
+  {
+    "text": "at",
+    "start": 200.31591836734694,
+    "end": 200.39591836734692
+  },
+  {
+    "text": "all.",
+    "start": 200.51591836734693,
+    "end": 200.67591836734692
+  },
+  {
+    "text": "What",
+    "start": 201.41591836734693,
+    "end": 201.58591836734692
+  },
+  {
+    "text": "makes",
+    "start": 201.67591836734692,
+    "end": 201.91591836734693
+  },
+  {
+    "text": "the",
+    "start": 201.95591836734692,
+    "end": 202.05591836734692
+  },
+  {
+    "text": "naval",
+    "start": 202.09591836734694,
+    "end": 202.3759183673469
+  },
+  {
+    "text": "surgeon",
+    "start": 202.45591836734692,
+    "end": 202.85591836734693
+  },
+  {
+    "text": "episode",
+    "start": 202.97591836734694,
+    "end": 203.47491836734693
+  },
+  {
+    "text": "remarkable",
+    "start": 203.51591836734693,
+    "end": 204.15591836734694
+  },
+  {
+    "text": "isn't",
+    "start": 204.65591836734694,
+    "end": 204.91591836734693
+  },
+  {
+    "text": "just",
+    "start": 204.97591836734694,
+    "end": 205.15591836734694
+  },
+  {
+    "text": "the",
+    "start": 205.21591836734694,
+    "end": 205.27591836734695
+  },
+  {
+    "text": "audacity",
+    "start": 205.33591836734695,
+    "end": 205.93591836734691
+  },
+  {
+    "text": "of",
+    "start": 206.01591836734693,
+    "end": 206.09591836734694
+  },
+  {
+    "text": "it.",
+    "start": 206.15591836734694,
+    "end": 206.3159183673469
+  },
+  {
+    "text": "It's",
+    "start": 206.97591836734694,
+    "end": 207.15591836734694
+  },
+  {
+    "text": "that",
+    "start": 207.19591836734693,
+    "end": 207.35591836734693
+  },
+  {
+    "text": "Demara",
+    "start": 207.3759183673469,
+    "end": 207.85591836734693
+  },
+  {
+    "text": "had",
+    "start": 207.93591836734691,
+    "end": 208.09591836734694
+  },
+  {
+    "text": "prepared",
+    "start": 208.13591836734693,
+    "end": 208.57591836734693
+  },
+  {
+    "text": "for",
+    "start": 208.63591836734693,
+    "end": 208.73591836734693
+  },
+  {
+    "text": "exactly",
+    "start": 208.77591836734695,
+    "end": 209.2559183673469
+  },
+  {
+    "text": "this",
+    "start": 209.33591836734695,
+    "end": 209.47591836734694
+  },
+  {
+    "text": "kind",
+    "start": 209.57591836734693,
+    "end": 209.77591836734695
+  },
+  {
+    "text": "of",
+    "start": 209.8159183673469,
+    "end": 209.89591836734692
+  },
+  {
+    "text": "moment",
+    "start": 209.97591836734694,
+    "end": 210.35591836734693
+  },
+  {
+    "text": "his",
+    "start": 210.65591836734694,
+    "end": 210.8159183673469
+  },
+  {
+    "text": "whole",
+    "start": 210.85591836734693,
+    "end": 211.03591836734694
+  },
+  {
+    "text": "life.",
+    "start": 211.11591836734692,
+    "end": 211.43591836734691
+  },
+  {
+    "text": "A",
+    "start": 211.95591836734692,
+    "end": 212.03591836734694
+  },
+  {
+    "text": "voracious",
+    "start": 212.05591836734692,
+    "end": 212.57591836734693
+  },
+  {
+    "text": "reader",
+    "start": 212.67591836734692,
+    "end": 213.43591836734691
+  },
+  {
+    "text": "with",
+    "start": 213.47591836734694,
+    "end": 213.61591836734692
+  },
+  {
+    "text": "what",
+    "start": 213.65591836734694,
+    "end": 213.85591836734693
+  },
+  {
+    "text": "colleagues",
+    "start": 213.91591836734693,
+    "end": 214.29591836734693
+  },
+  {
+    "text": "described",
+    "start": 214.33591836734695,
+    "end": 214.93591836734691
+  },
+  {
+    "text": "as",
+    "start": 215.35591836734693,
+    "end": 215.43591836734691
+  },
+  {
+    "text": "a",
+    "start": 215.51591836734693,
+    "end": 215.57591836734693
+  },
+  {
+    "text": "near-photographic",
+    "start": 215.63591836734693,
+    "end": 216.55591836734692
+  },
+  {
+    "text": "memory,",
+    "start": 216.63591836734693,
+    "end": 216.99591836734692
+  },
+  {
+    "text": "he",
+    "start": 217.59591836734694,
+    "end": 217.69591836734693
+  },
+  {
+    "text": "had",
+    "start": 217.73591836734693,
+    "end": 217.89591836734692
+  },
+  {
+    "text": "spent",
+    "start": 217.97591836734694,
+    "end": 218.21591836734694
+  },
+  {
+    "text": "years",
+    "start": 218.3759183673469,
+    "end": 218.67591836734692
+  },
+  {
+    "text": "absorbing",
+    "start": 218.73591836734693,
+    "end": 219.2559183673469
+  },
+  {
+    "text": "medical",
+    "start": 219.26591836734693,
+    "end": 219.69591836734693
+  },
+  {
+    "text": "textbooks",
+    "start": 219.73591836734693,
+    "end": 220.34591836734694
+  },
+  {
+    "text": "the",
+    "start": 220.8159183673469,
+    "end": 220.93591836734691
+  },
+  {
+    "text": "way",
+    "start": 220.97591836734694,
+    "end": 221.10591836734693
+  },
+  {
+    "text": "another",
+    "start": 221.17591836734692,
+    "end": 221.52591836734695
+  },
+  {
+    "text": "person",
+    "start": 221.55591836734692,
+    "end": 221.93591836734691
+  },
+  {
+    "text": "might",
+    "start": 221.97591836734694,
+    "end": 222.17591836734692
+  },
+  {
+    "text": "absorb",
+    "start": 222.23591836734693,
+    "end": 222.57591836734693
+  },
+  {
+    "text": "a",
+    "start": 222.63591836734693,
+    "end": 222.67591836734692
+  },
+  {
+    "text": "hobby,",
+    "start": 222.71591836734694,
+    "end": 223.02591836734695
+  },
+  {
+    "text": "not",
+    "start": 223.60591836734693,
+    "end": 223.84591836734694
+  },
+  {
+    "text": "because",
+    "start": 223.85591836734693,
+    "end": 224.18591836734691
+  },
+  {
+    "text": "he",
+    "start": 224.21591836734694,
+    "end": 224.3159183673469
+  },
+  {
+    "text": "was",
+    "start": 224.35591836734693,
+    "end": 224.52591836734695
+  },
+  {
+    "text": "training",
+    "start": 224.55591836734692,
+    "end": 224.90591836734694
+  },
+  {
+    "text": "to",
+    "start": 224.93591836734691,
+    "end": 225.01591836734693
+  },
+  {
+    "text": "be",
+    "start": 225.05591836734692,
+    "end": 225.13591836734693
+  },
+  {
+    "text": "a",
+    "start": 225.2559183673469,
+    "end": 225.27591836734695
+  },
+  {
+    "text": "surgeon,",
+    "start": 225.3159183673469,
+    "end": 226.23591836734693
+  },
+  {
+    "text": "but",
+    "start": 226.2559183673469,
+    "end": 226.40591836734694
+  },
+  {
+    "text": "because",
+    "start": 226.45591836734692,
+    "end": 226.74591836734692
+  },
+  {
+    "text": "knowledge",
+    "start": 226.79591836734693,
+    "end": 227.11591836734692
+  },
+  {
+    "text": "itself",
+    "start": 227.17591836734692,
+    "end": 227.95591836734692
+  },
+  {
+    "text": "was",
+    "start": 228.01591836734693,
+    "end": 228.09591836734694
+  },
+  {
+    "text": "the",
+    "start": 228.16591836734693,
+    "end": 228.2559183673469
+  },
+  {
+    "text": "raw",
+    "start": 228.29591836734693,
+    "end": 228.47591836734694
+  },
+  {
+    "text": "material",
+    "start": 228.53591836734694,
+    "end": 229.09591836734694
+  },
+  {
+    "text": "he",
+    "start": 229.49591836734692,
+    "end": 229.67591836734692
+  },
+  {
+    "text": "used",
+    "start": 229.77591836734695,
+    "end": 229.99591836734692
+  },
+  {
+    "text": "to",
+    "start": 230.03591836734694,
+    "end": 230.11591836734692
+  },
+  {
+    "text": "build",
+    "start": 230.17591836734692,
+    "end": 230.63591836734693
+  },
+  {
+    "text": "every",
+    "start": 230.71591836734694,
+    "end": 230.96591836734694
+  },
+  {
+    "text": "identity",
+    "start": 231.07591836734693,
+    "end": 231.63591836734693
+  },
+  {
+    "text": "that",
+    "start": 231.69591836734693,
+    "end": 231.82591836734693
+  },
+  {
+    "text": "came",
+    "start": 231.8759183673469,
+    "end": 232.13591836734693
+  },
+  {
+    "text": "after.",
+    "start": 232.19591836734693,
+    "end": 232.55591836734692
+  },
+  {
+    "text": "As",
+    "start": 233.35591836734693,
+    "end": 233.45591836734692
+  },
+  {
+    "text": "the",
+    "start": 233.49591836734692,
+    "end": 233.59591836734694
+  },
+  {
+    "text": "assistant",
+    "start": 233.65591836734694,
+    "end": 234.21591836734694
+  },
+  {
+    "text": "to",
+    "start": 234.22591836734694,
+    "end": 234.33591836734695
+  },
+  {
+    "text": "a",
+    "start": 234.3759183673469,
+    "end": 234.47591836734694
+  },
+  {
+    "text": "prison",
+    "start": 234.49591836734692,
+    "end": 234.8759183673469
+  },
+  {
+    "text": "warden,",
+    "start": 234.91591836734693,
+    "end": 235.29591836734693
+  },
+  {
+    "text": "he",
+    "start": 235.71591836734694,
+    "end": 235.77591836734695
+  },
+  {
+    "text": "reportedly",
+    "start": 235.85591836734693,
+    "end": 236.61591836734692
+  },
+  {
+    "text": "pushed",
+    "start": 236.67591836734692,
+    "end": 236.93591836734691
+  },
+  {
+    "text": "through",
+    "start": 236.97591836734694,
+    "end": 237.23591836734693
+  },
+  {
+    "text": "education",
+    "start": 237.3159183673469,
+    "end": 238.21591836734694
+  },
+  {
+    "text": "and",
+    "start": 238.28591836734694,
+    "end": 238.35591836734693
+  },
+  {
+    "text": "rehabilitation",
+    "start": 238.39591836734692,
+    "end": 239.33591836734695
+  },
+  {
+    "text": "programs",
+    "start": 239.43591836734691,
+    "end": 240.01591836734693
+  },
+  {
+    "text": "that",
+    "start": 240.3159183673469,
+    "end": 240.42591836734692
+  },
+  {
+    "text": "outperformed",
+    "start": 240.57591836734693,
+    "end": 241.51591836734693
+  },
+  {
+    "text": "what",
+    "start": 241.57591836734693,
+    "end": 241.71591836734694
+  },
+  {
+    "text": "the",
+    "start": 241.77591836734695,
+    "end": 241.89591836734692
+  },
+  {
+    "text": "previous,",
+    "start": 241.93591836734691,
+    "end": 242.47591836734694
+  },
+  {
+    "text": "genuinely",
+    "start": 242.89591836734692,
+    "end": 243.47591836734694
+  },
+  {
+    "text": "credentialed",
+    "start": 243.53591836734694,
+    "end": 244.14591836734692
+  },
+  {
+    "text": "administration",
+    "start": 244.19591836734693,
+    "end": 245.05591836734692
+  },
+  {
+    "text": "had",
+    "start": 245.11591836734692,
+    "end": 245.27591836734695
+  },
+  {
+    "text": "managed.",
+    "start": 245.3159183673469,
+    "end": 245.80591836734692
+  },
+  {
+    "text": "Inmates",
+    "start": 246.29591836734693,
+    "end": 246.71591836734694
+  },
+  {
+    "text": "under",
+    "start": 246.89591836734692,
+    "end": 247.13591836734693
+  },
+  {
+    "text": "his",
+    "start": 247.19591836734693,
+    "end": 247.36591836734692
+  },
+  {
+    "text": "supervision,",
+    "start": 247.39591836734692,
+    "end": 248.02591836734695
+  },
+  {
+    "text": "by",
+    "start": 248.41591836734693,
+    "end": 248.57591836734693
+  },
+  {
+    "text": "some",
+    "start": 248.59591836734694,
+    "end": 248.79591836734693
+  },
+  {
+    "text": "accounts,",
+    "start": 248.85591836734693,
+    "end": 249.33591836734695
+  },
+  {
+    "text": "responded",
+    "start": 249.69591836734693,
+    "end": 250.29591836734693
+  },
+  {
+    "text": "to",
+    "start": 250.30591836734692,
+    "end": 250.41591836734693
+  },
+  {
+    "text": "a",
+    "start": 250.47591836734694,
+    "end": 250.55591836734692
+  },
+  {
+    "text": "system",
+    "start": 250.57591836734693,
+    "end": 251.01591836734693
+  },
+  {
+    "text": "that",
+    "start": 251.3159183673469,
+    "end": 251.45591836734692
+  },
+  {
+    "text": "treated",
+    "start": 251.51591836734693,
+    "end": 251.85591836734693
+  },
+  {
+    "text": "them",
+    "start": 251.89591836734692,
+    "end": 252.07591836734693
+  },
+  {
+    "text": "with",
+    "start": 252.13591836734693,
+    "end": 252.29591836734693
+  },
+  {
+    "text": "more",
+    "start": 252.35591836734693,
+    "end": 252.53591836734694
+  },
+  {
+    "text": "structure",
+    "start": 252.61591836734692,
+    "end": 253.09591836734694
+  },
+  {
+    "text": "and",
+    "start": 253.45591836734692,
+    "end": 253.5659183673469
+  },
+  {
+    "text": "more",
+    "start": 253.65591836734694,
+    "end": 253.77591836734695
+  },
+  {
+    "text": "respect",
+    "start": 253.83591836734695,
+    "end": 254.59591836734694
+  },
+  {
+    "text": "than",
+    "start": 254.65591836734694,
+    "end": 254.79591836734693
+  },
+  {
+    "text": "they'd",
+    "start": 254.83591836734695,
+    "end": 255.01591836734693
+  },
+  {
+    "text": "experienced",
+    "start": 255.07591836734693,
+    "end": 255.77591836734695
+  },
+  {
+    "text": "before.",
+    "start": 255.8159183673469,
+    "end": 256.8759183673469
+  },
+  {
+    "text": "As",
+    "start": 256.9359183673469,
+    "end": 257.0159183673469
+  },
+  {
+    "text": "a",
+    "start": 257.07591836734696,
+    "end": 257.1359183673469
+  },
+  {
+    "text": "psychology",
+    "start": 257.15591836734694,
+    "end": 257.69591836734696
+  },
+  {
+    "text": "professor,",
+    "start": 257.77591836734695,
+    "end": 258.3159183673469
+  },
+  {
+    "text": "he",
+    "start": 258.66591836734693,
+    "end": 258.7559183673469
+  },
+  {
+    "text": "lectured",
+    "start": 258.85591836734693,
+    "end": 259.2359183673469
+  },
+  {
+    "text": "from",
+    "start": 259.27591836734695,
+    "end": 259.3959183673469
+  },
+  {
+    "text": "textbooks",
+    "start": 259.4959183673469,
+    "end": 260.0559183673469
+  },
+  {
+    "text": "he",
+    "start": 260.09591836734694,
+    "end": 260.19591836734696
+  },
+  {
+    "text": "had",
+    "start": 260.21591836734694,
+    "end": 260.33591836734695
+  },
+  {
+    "text": "memorized",
+    "start": 260.3759183673469,
+    "end": 260.9959183673469
+  },
+  {
+    "text": "almost",
+    "start": 261.35591836734693,
+    "end": 261.6759183673469
+  },
+  {
+    "text": "word",
+    "start": 261.7359183673469,
+    "end": 261.95591836734695
+  },
+  {
+    "text": "for",
+    "start": 261.97591836734694,
+    "end": 262.09591836734694
+  },
+  {
+    "text": "word,",
+    "start": 262.15591836734694,
+    "end": 262.45591836734695
+  },
+  {
+    "text": "staying",
+    "start": 263.0559183673469,
+    "end": 263.3959183673469
+  },
+  {
+    "text": "exactly",
+    "start": 263.47591836734694,
+    "end": 263.9959183673469
+  },
+  {
+    "text": "one",
+    "start": 264.09591836734694,
+    "end": 264.19591836734696
+  },
+  {
+    "text": "chapter",
+    "start": 264.2959183673469,
+    "end": 264.65591836734694
+  },
+  {
+    "text": "ahead",
+    "start": 264.71591836734694,
+    "end": 264.9359183673469
+  },
+  {
+    "text": "of",
+    "start": 264.9959183673469,
+    "end": 265.0459183673469
+  },
+  {
+    "text": "students",
+    "start": 265.1359183673469,
+    "end": 265.91591836734693
+  },
+  {
+    "text": "who",
+    "start": 265.95591836734695,
+    "end": 266.0549183673469
+  },
+  {
+    "text": "had",
+    "start": 266.09591836734694,
+    "end": 266.2659183673469
+  },
+  {
+    "text": "no",
+    "start": 266.2959183673469,
+    "end": 266.4359183673469
+  },
+  {
+    "text": "reason",
+    "start": 266.5159183673469,
+    "end": 266.85591836734693
+  },
+  {
+    "text": "to",
+    "start": 266.8959183673469,
+    "end": 266.99491836734694
+  },
+  {
+    "text": "suspect",
+    "start": 267.03591836734694,
+    "end": 267.53591836734694
+  },
+  {
+    "text": "the",
+    "start": 267.8349183673469,
+    "end": 267.8959183673469
+  },
+  {
+    "text": "man",
+    "start": 267.91591836734693,
+    "end": 268.1359183673469
+  },
+  {
+    "text": "at",
+    "start": 268.15591836734694,
+    "end": 268.2559183673469
+  },
+  {
+    "text": "the",
+    "start": 268.2959183673469,
+    "end": 268.3959183673469
+  },
+  {
+    "text": "front",
+    "start": 268.4359183673469,
+    "end": 268.65591836734694
+  },
+  {
+    "text": "of",
+    "start": 268.69591836734696,
+    "end": 268.7959183673469
+  },
+  {
+    "text": "the",
+    "start": 268.8049183673469,
+    "end": 268.8859183673469
+  },
+  {
+    "text": "room",
+    "start": 268.9359183673469,
+    "end": 269.53591836734694
+  },
+  {
+    "text": "held",
+    "start": 269.59591836734694,
+    "end": 269.81591836734697
+  },
+  {
+    "text": "no",
+    "start": 269.8759183673469,
+    "end": 270.03591836734694
+  },
+  {
+    "text": "real",
+    "start": 270.09591836734694,
+    "end": 270.2959183673469
+  },
+  {
+    "text": "doctorate",
+    "start": 270.31591836734697,
+    "end": 270.7759183673469
+  },
+  {
+    "text": "at",
+    "start": 270.81591836734697,
+    "end": 270.8959183673469
+  },
+  {
+    "text": "all.",
+    "start": 270.97591836734694,
+    "end": 271.1759183673469
+  },
+  {
+    "text": "In",
+    "start": 272.1759183673469,
+    "end": 272.2559183673469
+  },
+  {
+    "text": "both",
+    "start": 272.31591836734697,
+    "end": 272.4959183673469
+  },
+  {
+    "text": "cases,",
+    "start": 272.6159183673469,
+    "end": 273.0559183673469
+  },
+  {
+    "text": "the",
+    "start": 273.5159183673469,
+    "end": 273.6159183673469
+  },
+  {
+    "text": "work",
+    "start": 273.6759183673469,
+    "end": 273.8659183673469
+  },
+  {
+    "text": "itself",
+    "start": 273.9359183673469,
+    "end": 274.35591836734693
+  },
+  {
+    "text": "held",
+    "start": 274.41591836734693,
+    "end": 274.6359183673469
+  },
+  {
+    "text": "up.",
+    "start": 274.7359183673469,
+    "end": 274.8959183673469
+  },
+  {
+    "text": "Only",
+    "start": 275.47591836734694,
+    "end": 275.6859183673469
+  },
+  {
+    "text": "the",
+    "start": 275.7559183673469,
+    "end": 275.83591836734695
+  },
+  {
+    "text": "man's",
+    "start": 275.8759183673469,
+    "end": 276.15591836734694
+  },
+  {
+    "text": "right",
+    "start": 276.19591836734696,
+    "end": 276.3959183673469
+  },
+  {
+    "text": "to",
+    "start": 276.4359183673469,
+    "end": 276.5159183673469
+  },
+  {
+    "text": "be",
+    "start": 276.5559183673469,
+    "end": 276.6159183673469
+  },
+  {
+    "text": "doing",
+    "start": 276.69591836734696,
+    "end": 276.95591836734695
+  },
+  {
+    "text": "it",
+    "start": 276.9959183673469,
+    "end": 277.1359183673469
+  },
+  {
+    "text": "didn't.",
+    "start": 277.3959183673469,
+    "end": 277.7559183673469
+  }
+]

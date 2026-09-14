@@ -1,0 +1,927 @@
+[
+  {
+    "text": "You",
+    "start": 0.259,
+    "end": 0.34
+  },
+  {
+    "text": "don't",
+    "start": 0.399,
+    "end": 0.639
+  },
+  {
+    "text": "need",
+    "start": 0.699,
+    "end": 0.859
+  },
+  {
+    "text": "to",
+    "start": 0.899,
+    "end": 0.959
+  },
+  {
+    "text": "become",
+    "start": 1.019,
+    "end": 1.299
+  },
+  {
+    "text": "suspicious",
+    "start": 1.419,
+    "end": 1.979
+  },
+  {
+    "text": "of",
+    "start": 2.019,
+    "end": 2.139
+  },
+  {
+    "text": "everyone",
+    "start": 2.279,
+    "end": 2.639
+  },
+  {
+    "text": "around",
+    "start": 2.74,
+    "end": 3.019
+  },
+  {
+    "text": "you.",
+    "start": 3.079,
+    "end": 3.199
+  },
+  {
+    "text": "You",
+    "start": 3.819,
+    "end": 3.899
+  },
+  {
+    "text": "need",
+    "start": 3.939,
+    "end": 4.079
+  },
+  {
+    "text": "to",
+    "start": 4.119,
+    "end": 4.199
+  },
+  {
+    "text": "stop",
+    "start": 4.299,
+    "end": 4.519
+  },
+  {
+    "text": "being",
+    "start": 4.599,
+    "end": 4.759
+  },
+  {
+    "text": "embarrassed",
+    "start": 4.819,
+    "end": 5.42
+  },
+  {
+    "text": "by",
+    "start": 5.48,
+    "end": 5.579
+  },
+  {
+    "text": "your",
+    "start": 5.639,
+    "end": 5.799
+  },
+  {
+    "text": "own",
+    "start": 5.9,
+    "end": 6.039
+  },
+  {
+    "text": "attention",
+    "start": 6.099,
+    "end": 6.599
+  },
+  {
+    "text": "to",
+    "start": 6.639,
+    "end": 6.719
+  },
+  {
+    "text": "detail.",
+    "start": 6.799,
+    "end": 7.259
+  },
+  {
+    "text": "The",
+    "start": 7.879,
+    "end": 8.019
+  },
+  {
+    "text": "people",
+    "start": 8.079,
+    "end": 8.34
+  },
+  {
+    "text": "who",
+    "start": 8.399,
+    "end": 8.5
+  },
+  {
+    "text": "eventually",
+    "start": 8.619,
+    "end": 9.079
+  },
+  {
+    "text": "exposed",
+    "start": 9.199,
+    "end": 9.619
+  },
+  {
+    "text": "Madoff's",
+    "start": 9.699,
+    "end": 10.099
+  },
+  {
+    "text": "fund,",
+    "start": 10.179,
+    "end": 10.439
+  },
+  {
+    "text": "Theranos'",
+    "start": 10.96,
+    "end": 11.5
+  },
+  {
+    "text": "machine,",
+    "start": 11.659,
+    "end": 12.079
+  },
+  {
+    "text": "and",
+    "start": 12.559,
+    "end": 12.659
+  },
+  {
+    "text": "every",
+    "start": 12.819,
+    "end": 13.059
+  },
+  {
+    "text": "case",
+    "start": 13.119,
+    "end": 13.38
+  },
+  {
+    "text": "like",
+    "start": 13.439,
+    "end": 13.619
+  },
+  {
+    "text": "them",
+    "start": 13.679,
+    "end": 13.819
+  },
+  {
+    "text": "before",
+    "start": 13.88,
+    "end": 14.139
+  },
+  {
+    "text": "the",
+    "start": 14.199,
+    "end": 14.239
+  },
+  {
+    "text": "world",
+    "start": 14.359,
+    "end": 14.559
+  },
+  {
+    "text": "caught",
+    "start": 14.679,
+    "end": 14.92
+  },
+  {
+    "text": "on",
+    "start": 14.96,
+    "end": 15.139
+  },
+  {
+    "text": "all",
+    "start": 15.679,
+    "end": 15.819
+  },
+  {
+    "text": "had",
+    "start": 15.92,
+    "end": 16.059
+  },
+  {
+    "text": "one",
+    "start": 16.139,
+    "end": 16.26
+  },
+  {
+    "text": "thing",
+    "start": 16.359,
+    "end": 16.5
+  },
+  {
+    "text": "in",
+    "start": 16.539,
+    "end": 16.659
+  },
+  {
+    "text": "common.",
+    "start": 16.719,
+    "end": 17.079
+  },
+  {
+    "text": "They",
+    "start": 17.639,
+    "end": 17.779
+  },
+  {
+    "text": "noticed",
+    "start": 17.84,
+    "end": 18.18
+  },
+  {
+    "text": "the",
+    "start": 18.239,
+    "end": 18.359
+  },
+  {
+    "text": "same",
+    "start": 18.42,
+    "end": 18.619
+  },
+  {
+    "text": "small",
+    "start": 18.739,
+    "end": 19.019
+  },
+  {
+    "text": "thing",
+    "start": 19.1,
+    "end": 19.279
+  },
+  {
+    "text": "you",
+    "start": 19.34,
+    "end": 19.439
+  },
+  {
+    "text": "already",
+    "start": 19.52,
+    "end": 19.899
+  },
+  {
+    "text": "notice",
+    "start": 19.959,
+    "end": 20.379
+  },
+  {
+    "text": "in",
+    "start": 20.879,
+    "end": 20.959
+  },
+  {
+    "text": "your",
+    "start": 21.02,
+    "end": 21.18
+  },
+  {
+    "text": "own",
+    "start": 21.279,
+    "end": 21.42
+  },
+  {
+    "text": "life",
+    "start": 21.5,
+    "end": 21.84
+  },
+  {
+    "text": "more",
+    "start": 22.439,
+    "end": 22.6
+  },
+  {
+    "text": "often",
+    "start": 22.719,
+    "end": 22.959
+  },
+  {
+    "text": "than",
+    "start": 23.019,
+    "end": 23.159
+  },
+  {
+    "text": "you",
+    "start": 23.219,
+    "end": 23.299
+  },
+  {
+    "text": "give",
+    "start": 23.359,
+    "end": 23.479
+  },
+  {
+    "text": "yourself",
+    "start": 23.539,
+    "end": 23.919
+  },
+  {
+    "text": "credit",
+    "start": 23.979,
+    "end": 24.279
+  },
+  {
+    "text": "for.",
+    "start": 24.359,
+    "end": 24.559
+  },
+  {
+    "text": "They",
+    "start": 25.399,
+    "end": 25.539
+  },
+  {
+    "text": "just",
+    "start": 25.619,
+    "end": 25.779
+  },
+  {
+    "text": "didn't",
+    "start": 25.84,
+    "end": 26.059
+  },
+  {
+    "text": "look",
+    "start": 26.099,
+    "end": 26.239
+  },
+  {
+    "text": "away",
+    "start": 26.34,
+    "end": 26.5
+  },
+  {
+    "text": "from",
+    "start": 26.599,
+    "end": 26.739
+  },
+  {
+    "text": "it",
+    "start": 26.799,
+    "end": 26.899
+  },
+  {
+    "text": "long",
+    "start": 27,
+    "end": 27.159
+  },
+  {
+    "text": "enough",
+    "start": 27.219,
+    "end": 27.739
+  },
+  {
+    "text": "for",
+    "start": 27.819,
+    "end": 27.899
+  },
+  {
+    "text": "it",
+    "start": 27.959,
+    "end": 28.059
+  },
+  {
+    "text": "to",
+    "start": 28.099,
+    "end": 28.18
+  },
+  {
+    "text": "disappear.",
+    "start": 28.239,
+    "end": 28.819
+  },
+  {
+    "text": "None",
+    "start": 29.539,
+    "end": 29.639
+  },
+  {
+    "text": "of",
+    "start": 29.699,
+    "end": 29.779
+  },
+  {
+    "text": "this",
+    "start": 29.819,
+    "end": 30
+  },
+  {
+    "text": "requires",
+    "start": 30.079,
+    "end": 30.639
+  },
+  {
+    "text": "becoming",
+    "start": 30.679,
+    "end": 31.119
+  },
+  {
+    "text": "cold",
+    "start": 31.199,
+    "end": 31.819
+  },
+  {
+    "text": "or",
+    "start": 31.879,
+    "end": 31.939
+  },
+  {
+    "text": "distrustful",
+    "start": 32.02,
+    "end": 32.68
+  },
+  {
+    "text": "by",
+    "start": 32.759,
+    "end": 32.86
+  },
+  {
+    "text": "default.",
+    "start": 32.919,
+    "end": 33.439
+  },
+  {
+    "text": "It",
+    "start": 34.059,
+    "end": 34.159
+  },
+  {
+    "text": "requires",
+    "start": 34.219,
+    "end": 34.779
+  },
+  {
+    "text": "exactly",
+    "start": 35.079,
+    "end": 35.559
+  },
+  {
+    "text": "one",
+    "start": 35.659,
+    "end": 35.779
+  },
+  {
+    "text": "habit.",
+    "start": 35.88,
+    "end": 36.279
+  },
+  {
+    "text": "When",
+    "start": 36.979,
+    "end": 37.099
+  },
+  {
+    "text": "something",
+    "start": 37.219,
+    "end": 37.54
+  },
+  {
+    "text": "small",
+    "start": 37.659,
+    "end": 38
+  },
+  {
+    "text": "doesn't",
+    "start": 38.219,
+    "end": 38.54
+  },
+  {
+    "text": "add",
+    "start": 38.639,
+    "end": 38.759
+  },
+  {
+    "text": "up,",
+    "start": 38.84,
+    "end": 39.04
+  },
+  {
+    "text": "name",
+    "start": 39.599,
+    "end": 39.759
+  },
+  {
+    "text": "it",
+    "start": 39.799,
+    "end": 39.879
+  },
+  {
+    "text": "to",
+    "start": 39.939,
+    "end": 40.02
+  },
+  {
+    "text": "yourself",
+    "start": 40.059,
+    "end": 40.939
+  },
+  {
+    "text": "instead",
+    "start": 41.02,
+    "end": 41.34
+  },
+  {
+    "text": "of",
+    "start": 41.379,
+    "end": 41.5
+  },
+  {
+    "text": "smoothing",
+    "start": 41.559,
+    "end": 41.939
+  },
+  {
+    "text": "it",
+    "start": 41.979,
+    "end": 42.079
+  },
+  {
+    "text": "over",
+    "start": 42.18,
+    "end": 42.599
+  },
+  {
+    "text": "automatically.",
+    "start": 42.68,
+    "end": 43.499
+  },
+  {
+    "text": "You",
+    "start": 44.139,
+    "end": 44.219
+  },
+  {
+    "text": "don't",
+    "start": 44.279,
+    "end": 44.459
+  },
+  {
+    "text": "have",
+    "start": 44.539,
+    "end": 44.659
+  },
+  {
+    "text": "to",
+    "start": 44.7,
+    "end": 44.819
+  },
+  {
+    "text": "act",
+    "start": 44.919,
+    "end": 45.079
+  },
+  {
+    "text": "on",
+    "start": 45.139,
+    "end": 45.299
+  },
+  {
+    "text": "every",
+    "start": 45.399,
+    "end": 45.639
+  },
+  {
+    "text": "single",
+    "start": 45.7,
+    "end": 46
+  },
+  {
+    "text": "one.",
+    "start": 46.119,
+    "end": 46.34
+  },
+  {
+    "text": "You",
+    "start": 47.039,
+    "end": 47.119
+  },
+  {
+    "text": "just",
+    "start": 47.18,
+    "end": 47.36
+  },
+  {
+    "text": "have",
+    "start": 47.439,
+    "end": 47.559
+  },
+  {
+    "text": "to",
+    "start": 47.599,
+    "end": 47.7
+  },
+  {
+    "text": "stop",
+    "start": 47.779,
+    "end": 48.279
+  },
+  {
+    "text": "pretending",
+    "start": 48.34,
+    "end": 49.079
+  },
+  {
+    "text": "you",
+    "start": 49.139,
+    "end": 49.219
+  },
+  {
+    "text": "didn't",
+    "start": 49.279,
+    "end": 49.539
+  },
+  {
+    "text": "notice.",
+    "start": 49.599,
+    "end": 50.079
+  },
+  {
+    "text": "Comment",
+    "start": 50.739,
+    "end": 51.059
+  },
+  {
+    "text": "the",
+    "start": 51.099,
+    "end": 51.18
+  },
+  {
+    "text": "word",
+    "start": 51.239,
+    "end": 51.459
+  },
+  {
+    "text": "signal",
+    "start": 51.619,
+    "end": 52.379
+  },
+  {
+    "text": "if",
+    "start": 52.459,
+    "end": 52.559
+  },
+  {
+    "text": "you've",
+    "start": 52.599,
+    "end": 52.759
+  },
+  {
+    "text": "ever",
+    "start": 52.799,
+    "end": 53.02
+  },
+  {
+    "text": "caught",
+    "start": 53.079,
+    "end": 53.259
+  },
+  {
+    "text": "a",
+    "start": 53.319,
+    "end": 53.379
+  },
+  {
+    "text": "small",
+    "start": 53.479,
+    "end": 53.719
+  },
+  {
+    "text": "inconsistency",
+    "start": 53.779,
+    "end": 54.68
+  },
+  {
+    "text": "in",
+    "start": 54.739,
+    "end": 54.86
+  },
+  {
+    "text": "someone's",
+    "start": 54.919,
+    "end": 55.299
+  },
+  {
+    "text": "story",
+    "start": 55.34,
+    "end": 56.159
+  },
+  {
+    "text": "and",
+    "start": 56.219,
+    "end": 56.38
+  },
+  {
+    "text": "talked",
+    "start": 56.399,
+    "end": 56.639
+  },
+  {
+    "text": "yourself",
+    "start": 56.659,
+    "end": 57.099
+  },
+  {
+    "text": "out",
+    "start": 57.159,
+    "end": 57.279
+  },
+  {
+    "text": "of",
+    "start": 57.319,
+    "end": 57.459
+  },
+  {
+    "text": "following",
+    "start": 57.52,
+    "end": 57.879
+  },
+  {
+    "text": "up",
+    "start": 57.959,
+    "end": 58.079
+  },
+  {
+    "text": "on",
+    "start": 58.139,
+    "end": 58.219
+  },
+  {
+    "text": "it.",
+    "start": 58.279,
+    "end": 59
+  },
+  {
+    "text": "And",
+    "start": 59.039,
+    "end": 59.159
+  },
+  {
+    "text": "if",
+    "start": 59.199,
+    "end": 59.299
+  },
+  {
+    "text": "you",
+    "start": 59.34,
+    "end": 59.439
+  },
+  {
+    "text": "haven't",
+    "start": 59.479,
+    "end": 59.7
+  },
+  {
+    "text": "seen",
+    "start": 59.819,
+    "end": 60.02
+  },
+  {
+    "text": "how",
+    "start": 60.079,
+    "end": 60.219
+  },
+  {
+    "text": "this",
+    "start": 60.279,
+    "end": 60.419
+  },
+  {
+    "text": "exact",
+    "start": 60.539,
+    "end": 60.939
+  },
+  {
+    "text": "pattern",
+    "start": 61,
+    "end": 61.399
+  },
+  {
+    "text": "played",
+    "start": 61.439,
+    "end": 61.68
+  },
+  {
+    "text": "out",
+    "start": 61.739,
+    "end": 61.879
+  },
+  {
+    "text": "in",
+    "start": 61.939,
+    "end": 62.079
+  },
+  {
+    "text": "full,",
+    "start": 62.159,
+    "end": 62.379
+  },
+  {
+    "text": "the",
+    "start": 62.939,
+    "end": 63.039
+  },
+  {
+    "text": "auditor",
+    "start": 63.139,
+    "end": 63.52
+  },
+  {
+    "text": "nobody",
+    "start": 63.579,
+    "end": 63.959
+  },
+  {
+    "text": "questioned,",
+    "start": 64.04,
+    "end": 64.54
+  },
+  {
+    "text": "the",
+    "start": 64.939,
+    "end": 65.059
+  },
+  {
+    "text": "silos",
+    "start": 65.139,
+    "end": 65.599
+  },
+  {
+    "text": "nobody",
+    "start": 65.659,
+    "end": 66.039
+  },
+  {
+    "text": "compared,",
+    "start": 66.08,
+    "end": 66.639
+  },
+  {
+    "text": "go",
+    "start": 67.239,
+    "end": 67.4
+  },
+  {
+    "text": "back",
+    "start": 67.459,
+    "end": 67.959
+  },
+  {
+    "text": "and",
+    "start": 68.019,
+    "end": 68.139
+  },
+  {
+    "text": "watch",
+    "start": 68.22,
+    "end": 68.439
+  },
+  {
+    "text": "how",
+    "start": 68.519,
+    "end": 68.639
+  },
+  {
+    "text": "it",
+    "start": 68.68,
+    "end": 68.799
+  },
+  {
+    "text": "actually",
+    "start": 68.879,
+    "end": 69.319
+  },
+  {
+    "text": "happened",
+    "start": 69.419,
+    "end": 69.76
+  },
+  {
+    "text": "case",
+    "start": 70.18,
+    "end": 70.439
+  },
+  {
+    "text": "by",
+    "start": 70.479,
+    "end": 70.639
+  },
+  {
+    "text": "case.",
+    "start": 70.699,
+    "end": 71.08
+  }
+]

@@ -1,0 +1,1557 @@
+[
+  {
+    "text": "The",
+    "start": 0.26,
+    "end": 0.4
+  },
+  {
+    "text": "fourth",
+    "start": 0.46,
+    "end": 0.7
+  },
+  {
+    "text": "law:",
+    "start": 0.8,
+    "end": 1
+  },
+  {
+    "text": "convince",
+    "start": 1.5,
+    "end": 1.92
+  },
+  {
+    "text": "people",
+    "start": 2.02,
+    "end": 2.34
+  },
+  {
+    "text": "the",
+    "start": 2.4,
+    "end": 2.56
+  },
+  {
+    "text": "outside",
+    "start": 2.64,
+    "end": 3.12
+  },
+  {
+    "text": "world",
+    "start": 3.16,
+    "end": 3.5
+  },
+  {
+    "text": "is",
+    "start": 3.58,
+    "end": 3.68
+  },
+  {
+    "text": "the",
+    "start": 3.72,
+    "end": 3.82
+  },
+  {
+    "text": "danger,",
+    "start": 3.86,
+    "end": 4.28
+  },
+  {
+    "text": "so",
+    "start": 4.86,
+    "end": 4.98
+  },
+  {
+    "text": "that",
+    "start": 5.04,
+    "end": 5.2
+  },
+  {
+    "text": "leaving",
+    "start": 5.24,
+    "end": 5.6
+  },
+  {
+    "text": "feels",
+    "start": 5.66,
+    "end": 5.96
+  },
+  {
+    "text": "like",
+    "start": 6,
+    "end": 6.22
+  },
+  {
+    "text": "walking",
+    "start": 6.26,
+    "end": 6.66
+  },
+  {
+    "text": "toward",
+    "start": 6.7,
+    "end": 7
+  },
+  {
+    "text": "the",
+    "start": 7.06,
+    "end": 7.16
+  },
+  {
+    "text": "threat",
+    "start": 7.2,
+    "end": 7.52
+  },
+  {
+    "text": "instead",
+    "start": 7.8,
+    "end": 8.16
+  },
+  {
+    "text": "of",
+    "start": 8.22,
+    "end": 8.3
+  },
+  {
+    "text": "away",
+    "start": 8.38,
+    "end": 8.64
+  },
+  {
+    "text": "from",
+    "start": 8.68,
+    "end": 8.85
+  },
+  {
+    "text": "it.",
+    "start": 8.88,
+    "end": 9.68
+  },
+  {
+    "text": "Jones",
+    "start": 9.81,
+    "end": 10.12
+  },
+  {
+    "text": "repeatedly",
+    "start": 10.14,
+    "end": 10.72
+  },
+  {
+    "text": "told",
+    "start": 10.84,
+    "end": 11.06
+  },
+  {
+    "text": "his",
+    "start": 11.1,
+    "end": 11.24
+  },
+  {
+    "text": "followers",
+    "start": 11.32,
+    "end": 11.84
+  },
+  {
+    "text": "that",
+    "start": 12.32,
+    "end": 12.479
+  },
+  {
+    "text": "hostile",
+    "start": 12.52,
+    "end": 12.98
+  },
+  {
+    "text": "forces—government",
+    "start": 13.08,
+    "end": 14.6
+  },
+  {
+    "text": "agents,",
+    "start": 14.74,
+    "end": 15.2
+  },
+  {
+    "text": "racist",
+    "start": 15.7,
+    "end": 16.12
+  },
+  {
+    "text": "conspirators,",
+    "start": 16.18,
+    "end": 17
+  },
+  {
+    "text": "journalists",
+    "start": 17.52,
+    "end": 18.12
+  },
+  {
+    "text": "working",
+    "start": 18.6,
+    "end": 18.96
+  },
+  {
+    "text": "for",
+    "start": 19,
+    "end": 19.1
+  },
+  {
+    "text": "those",
+    "start": 19.16,
+    "end": 19.45
+  },
+  {
+    "text": "who",
+    "start": 19.48,
+    "end": 19.6
+  },
+  {
+    "text": "wanted",
+    "start": 19.62,
+    "end": 19.96
+  },
+  {
+    "text": "to",
+    "start": 20,
+    "end": 20.08
+  },
+  {
+    "text": "destroy",
+    "start": 20.12,
+    "end": 20.54
+  },
+  {
+    "text": "what",
+    "start": 20.62,
+    "end": 20.76
+  },
+  {
+    "text": "they'd",
+    "start": 20.8,
+    "end": 21
+  },
+  {
+    "text": "built—were",
+    "start": 21.04,
+    "end": 22.14
+  },
+  {
+    "text": "coming",
+    "start": 22.2,
+    "end": 22.48
+  },
+  {
+    "text": "for",
+    "start": 22.54,
+    "end": 22.62
+  },
+  {
+    "text": "the",
+    "start": 22.68,
+    "end": 22.74
+  },
+  {
+    "text": "community.",
+    "start": 22.8,
+    "end": 23.38
+  },
+  {
+    "text": "In",
+    "start": 24.02,
+    "end": 24.12
+  },
+  {
+    "text": "Jonestown",
+    "start": 24.18,
+    "end": 24.7
+  },
+  {
+    "text": "specifically,",
+    "start": 24.76,
+    "end": 25.48
+  },
+  {
+    "text": "members",
+    "start": 26,
+    "end": 26.37
+  },
+  {
+    "text": "were",
+    "start": 26.44,
+    "end": 26.58
+  },
+  {
+    "text": "subjected",
+    "start": 26.62,
+    "end": 27.22
+  },
+  {
+    "text": "to",
+    "start": 27.26,
+    "end": 27.4
+  },
+  {
+    "text": "periodic",
+    "start": 27.46,
+    "end": 28
+  },
+  {
+    "text": "loudspeaker",
+    "start": 28.04,
+    "end": 28.72
+  },
+  {
+    "text": "drills",
+    "start": 28.8,
+    "end": 29.34
+  },
+  {
+    "text": "late",
+    "start": 29.4,
+    "end": 29.6
+  },
+  {
+    "text": "at",
+    "start": 29.64,
+    "end": 29.76
+  },
+  {
+    "text": "night,",
+    "start": 29.82,
+    "end": 30.12
+  },
+  {
+    "text": "rehearsing",
+    "start": 30.54,
+    "end": 31.06
+  },
+  {
+    "text": "a",
+    "start": 31.1,
+    "end": 31.18
+  },
+  {
+    "text": "coordinated",
+    "start": 31.22,
+    "end": 31.85
+  },
+  {
+    "text": "response",
+    "start": 31.92,
+    "end": 32.46
+  },
+  {
+    "text": "to",
+    "start": 32.5,
+    "end": 32.58
+  },
+  {
+    "text": "an",
+    "start": 32.619,
+    "end": 32.7
+  },
+  {
+    "text": "imagined",
+    "start": 32.74,
+    "end": 33.22
+  },
+  {
+    "text": "coming",
+    "start": 33.28,
+    "end": 33.6
+  },
+  {
+    "text": "attack,",
+    "start": 33.66,
+    "end": 34.06
+  },
+  {
+    "text": "conditioning",
+    "start": 34.58,
+    "end": 35.16
+  },
+  {
+    "text": "the",
+    "start": 35.2,
+    "end": 35.28
+  },
+  {
+    "text": "community",
+    "start": 35.34,
+    "end": 35.86
+  },
+  {
+    "text": "again",
+    "start": 35.96,
+    "end": 36.26
+  },
+  {
+    "text": "and",
+    "start": 36.3,
+    "end": 36.42
+  },
+  {
+    "text": "again",
+    "start": 36.48,
+    "end": 37.16
+  },
+  {
+    "text": "to",
+    "start": 37.22,
+    "end": 37.32
+  },
+  {
+    "text": "treat",
+    "start": 37.38,
+    "end": 37.62
+  },
+  {
+    "text": "crisis",
+    "start": 37.68,
+    "end": 38.14
+  },
+  {
+    "text": "and",
+    "start": 38.18,
+    "end": 38.269
+  },
+  {
+    "text": "death",
+    "start": 38.36,
+    "end": 38.96
+  },
+  {
+    "text": "as",
+    "start": 39.04,
+    "end": 39.12
+  },
+  {
+    "text": "something",
+    "start": 39.18,
+    "end": 39.54
+  },
+  {
+    "text": "that",
+    "start": 39.55,
+    "end": 39.74
+  },
+  {
+    "text": "might",
+    "start": 39.8,
+    "end": 39.98
+  },
+  {
+    "text": "arrive",
+    "start": 39.99,
+    "end": 40.42
+  },
+  {
+    "text": "at",
+    "start": 40.46,
+    "end": 40.62
+  },
+  {
+    "text": "any",
+    "start": 40.68,
+    "end": 40.88
+  },
+  {
+    "text": "moment",
+    "start": 40.92,
+    "end": 41.72
+  },
+  {
+    "text": "and",
+    "start": 41.76,
+    "end": 41.86
+  },
+  {
+    "text": "had",
+    "start": 41.92,
+    "end": 42.11
+  },
+  {
+    "text": "to",
+    "start": 42.14,
+    "end": 42.2
+  },
+  {
+    "text": "be",
+    "start": 42.24,
+    "end": 42.36
+  },
+  {
+    "text": "met",
+    "start": 42.4,
+    "end": 42.62
+  },
+  {
+    "text": "with",
+    "start": 42.68,
+    "end": 42.81
+  },
+  {
+    "text": "immediate,",
+    "start": 42.84,
+    "end": 43.38
+  },
+  {
+    "text": "unified",
+    "start": 43.82,
+    "end": 44.3
+  },
+  {
+    "text": "obedience.",
+    "start": 44.34,
+    "end": 44.93
+  },
+  {
+    "text": "Notice",
+    "start": 46.04,
+    "end": 46.46
+  },
+  {
+    "text": "what",
+    "start": 46.5,
+    "end": 46.67
+  },
+  {
+    "text": "this",
+    "start": 46.72,
+    "end": 46.91
+  },
+  {
+    "text": "narrative",
+    "start": 46.94,
+    "end": 47.35
+  },
+  {
+    "text": "accomplishes.",
+    "start": 47.4,
+    "end": 48.12
+  },
+  {
+    "text": "If",
+    "start": 48.86,
+    "end": 48.97
+  },
+  {
+    "text": "the",
+    "start": 49,
+    "end": 49.1
+  },
+  {
+    "text": "outside",
+    "start": 49.18,
+    "end": 49.62
+  },
+  {
+    "text": "world",
+    "start": 49.68,
+    "end": 49.92
+  },
+  {
+    "text": "is",
+    "start": 49.96,
+    "end": 50.08
+  },
+  {
+    "text": "the",
+    "start": 50.12,
+    "end": 50.2
+  },
+  {
+    "text": "danger,",
+    "start": 50.24,
+    "end": 50.96
+  },
+  {
+    "text": "then",
+    "start": 51,
+    "end": 51.25
+  },
+  {
+    "text": "anyone",
+    "start": 51.32,
+    "end": 51.7
+  },
+  {
+    "text": "suggesting",
+    "start": 51.74,
+    "end": 52.31
+  },
+  {
+    "text": "you",
+    "start": 52.34,
+    "end": 52.44
+  },
+  {
+    "text": "leave",
+    "start": 52.5,
+    "end": 52.76
+  },
+  {
+    "text": "isn't",
+    "start": 53.24,
+    "end": 53.57
+  },
+  {
+    "text": "offering",
+    "start": 53.64,
+    "end": 54
+  },
+  {
+    "text": "rescue.",
+    "start": 54.02,
+    "end": 55.12
+  },
+  {
+    "text": "They're",
+    "start": 55.16,
+    "end": 55.4
+  },
+  {
+    "text": "either",
+    "start": 55.5,
+    "end": 55.8
+  },
+  {
+    "text": "naive",
+    "start": 55.82,
+    "end": 56.24
+  },
+  {
+    "text": "about",
+    "start": 56.34,
+    "end": 56.55
+  },
+  {
+    "text": "the",
+    "start": 56.58,
+    "end": 56.7
+  },
+  {
+    "text": "threat",
+    "start": 56.72,
+    "end": 57.03
+  },
+  {
+    "text": "or",
+    "start": 57.48,
+    "end": 57.55
+  },
+  {
+    "text": "an",
+    "start": 57.6,
+    "end": 57.8
+  },
+  {
+    "text": "agent",
+    "start": 57.88,
+    "end": 58.22
+  },
+  {
+    "text": "of",
+    "start": 58.3,
+    "end": 58.36
+  },
+  {
+    "text": "it.",
+    "start": 58.46,
+    "end": 58.58
+  },
+  {
+    "text": "Concerned",
+    "start": 59.3,
+    "end": 59.86
+  },
+  {
+    "text": "family",
+    "start": 59.92,
+    "end": 60.2
+  },
+  {
+    "text": "members",
+    "start": 60.3,
+    "end": 60.72
+  },
+  {
+    "text": "back",
+    "start": 60.86,
+    "end": 61.08
+  },
+  {
+    "text": "in",
+    "start": 61.12,
+    "end": 61.22
+  },
+  {
+    "text": "the",
+    "start": 61.28,
+    "end": 61.34
+  },
+  {
+    "text": "United",
+    "start": 61.36,
+    "end": 61.79
+  },
+  {
+    "text": "States,",
+    "start": 61.9,
+    "end": 62.29
+  },
+  {
+    "text": "journalists",
+    "start": 62.78,
+    "end": 63.44
+  },
+  {
+    "text": "asking",
+    "start": 63.45,
+    "end": 63.89
+  },
+  {
+    "text": "questions,",
+    "start": 63.94,
+    "end": 64.48
+  },
+  {
+    "text": "defectors",
+    "start": 65.12,
+    "end": 65.82
+  },
+  {
+    "text": "who'd",
+    "start": 65.86,
+    "end": 66.1
+  },
+  {
+    "text": "already",
+    "start": 66.18,
+    "end": 66.54
+  },
+  {
+    "text": "left",
+    "start": 66.58,
+    "end": 67.32
+  },
+  {
+    "text": "and",
+    "start": 67.36,
+    "end": 67.46
+  },
+  {
+    "text": "were",
+    "start": 67.5,
+    "end": 67.66
+  },
+  {
+    "text": "telling",
+    "start": 67.7,
+    "end": 67.99
+  },
+  {
+    "text": "their",
+    "start": 68.02,
+    "end": 68.13
+  },
+  {
+    "text": "story—all",
+    "start": 68.18,
+    "end": 69.34
+  },
+  {
+    "text": "of",
+    "start": 69.4,
+    "end": 69.45
+  },
+  {
+    "text": "it",
+    "start": 69.52,
+    "end": 69.66
+  },
+  {
+    "text": "could",
+    "start": 69.7,
+    "end": 69.86
+  },
+  {
+    "text": "be",
+    "start": 69.9,
+    "end": 70
+  },
+  {
+    "text": "dismissed",
+    "start": 70.04,
+    "end": 70.56
+  },
+  {
+    "text": "inside",
+    "start": 70.7,
+    "end": 71.1
+  },
+  {
+    "text": "the",
+    "start": 71.11,
+    "end": 71.19
+  },
+  {
+    "text": "community",
+    "start": 71.26,
+    "end": 71.86
+  },
+  {
+    "text": "as",
+    "start": 72.4,
+    "end": 72.56
+  },
+  {
+    "text": "evidence",
+    "start": 72.64,
+    "end": 73.08
+  },
+  {
+    "text": "of",
+    "start": 73.12,
+    "end": 73.22
+  },
+  {
+    "text": "the",
+    "start": 73.26,
+    "end": 73.36
+  },
+  {
+    "text": "persecution",
+    "start": 73.4,
+    "end": 74.18
+  },
+  {
+    "text": "Jones",
+    "start": 74.6,
+    "end": 74.92
+  },
+  {
+    "text": "had",
+    "start": 74.96,
+    "end": 75.1
+  },
+  {
+    "text": "already",
+    "start": 75.16,
+    "end": 75.54
+  },
+  {
+    "text": "warned",
+    "start": 75.58,
+    "end": 75.78
+  },
+  {
+    "text": "them",
+    "start": 75.82,
+    "end": 75.94
+  },
+  {
+    "text": "about,",
+    "start": 76.02,
+    "end": 76.38
+  },
+  {
+    "text": "rather",
+    "start": 76.94,
+    "end": 77.22
+  },
+  {
+    "text": "than",
+    "start": 77.26,
+    "end": 77.44
+  },
+  {
+    "text": "evidence",
+    "start": 77.52,
+    "end": 77.88
+  },
+  {
+    "text": "against",
+    "start": 78,
+    "end": 78.36
+  },
+  {
+    "text": "him.",
+    "start": 78.38,
+    "end": 78.58
+  },
+  {
+    "text": "A",
+    "start": 79.21,
+    "end": 79.32
+  },
+  {
+    "text": "persecution",
+    "start": 79.36,
+    "end": 80.01
+  },
+  {
+    "text": "narrative",
+    "start": 80.1,
+    "end": 80.84
+  },
+  {
+    "text": "is",
+    "start": 80.9,
+    "end": 81.02
+  },
+  {
+    "text": "one",
+    "start": 81.06,
+    "end": 81.2
+  },
+  {
+    "text": "of",
+    "start": 81.24,
+    "end": 81.34
+  },
+  {
+    "text": "the",
+    "start": 81.38,
+    "end": 81.44
+  },
+  {
+    "text": "most",
+    "start": 81.48,
+    "end": 81.74
+  },
+  {
+    "text": "efficient",
+    "start": 81.78,
+    "end": 82.19
+  },
+  {
+    "text": "tools",
+    "start": 82.3,
+    "end": 82.66
+  },
+  {
+    "text": "a",
+    "start": 82.94,
+    "end": 83
+  },
+  {
+    "text": "manipulator",
+    "start": 83.02,
+    "end": 83.76
+  },
+  {
+    "text": "has",
+    "start": 83.8,
+    "end": 84.13
+  },
+  {
+    "text": "because",
+    "start": 84.68,
+    "end": 84.95
+  },
+  {
+    "text": "it",
+    "start": 85,
+    "end": 85.09
+  },
+  {
+    "text": "doesn't",
+    "start": 85.12,
+    "end": 85.45
+  },
+  {
+    "text": "just",
+    "start": 85.48,
+    "end": 85.69
+  },
+  {
+    "text": "discourage",
+    "start": 85.72,
+    "end": 86.3
+  },
+  {
+    "text": "questioning.",
+    "start": 86.34,
+    "end": 87.46
+  },
+  {
+    "text": "It",
+    "start": 87.52,
+    "end": 87.6
+  },
+  {
+    "text": "inverts",
+    "start": 87.62,
+    "end": 88.16
+  },
+  {
+    "text": "the",
+    "start": 88.17,
+    "end": 88.28
+  },
+  {
+    "text": "meaning",
+    "start": 88.34,
+    "end": 88.64
+  },
+  {
+    "text": "of",
+    "start": 88.68,
+    "end": 88.79
+  },
+  {
+    "text": "the",
+    "start": 88.82,
+    "end": 88.9
+  },
+  {
+    "text": "question",
+    "start": 88.94,
+    "end": 89.3
+  },
+  {
+    "text": "itself.",
+    "start": 89.36,
+    "end": 89.82
+  },
+  {
+    "text": "The",
+    "start": 90.51,
+    "end": 90.64
+  },
+  {
+    "text": "concerned",
+    "start": 90.68,
+    "end": 91.22
+  },
+  {
+    "text": "outsider",
+    "start": 91.3,
+    "end": 92.16
+  },
+  {
+    "text": "becomes",
+    "start": 92.18,
+    "end": 92.58
+  },
+  {
+    "text": "the",
+    "start": 92.62,
+    "end": 92.72
+  },
+  {
+    "text": "threat.",
+    "start": 92.76,
+    "end": 93.62
+  },
+  {
+    "text": "The",
+    "start": 93.67,
+    "end": 93.78
+  },
+  {
+    "text": "manipulator",
+    "start": 93.8,
+    "end": 94.8
+  },
+  {
+    "text": "becomes",
+    "start": 94.82,
+    "end": 95.22
+  },
+  {
+    "text": "the",
+    "start": 95.26,
+    "end": 95.42
+  },
+  {
+    "text": "only",
+    "start": 95.48,
+    "end": 95.75
+  },
+  {
+    "text": "protection",
+    "start": 95.76,
+    "end": 96.27
+  },
+  {
+    "text": "against",
+    "start": 96.3,
+    "end": 96.7
+  },
+  {
+    "text": "it.",
+    "start": 96.74,
+    "end": 96.88
+  },
+  {
+    "text": "Jones",
+    "start": 97.49,
+    "end": 97.84
+  },
+  {
+    "text": "reinforced",
+    "start": 97.86,
+    "end": 98.46
+  },
+  {
+    "text": "this",
+    "start": 98.48,
+    "end": 98.68
+  },
+  {
+    "text": "with",
+    "start": 98.76,
+    "end": 98.88
+  },
+  {
+    "text": "rehearsal,",
+    "start": 98.94,
+    "end": 99.48
+  },
+  {
+    "text": "not",
+    "start": 99.98,
+    "end": 100.16
+  },
+  {
+    "text": "just",
+    "start": 100.22,
+    "end": 100.4
+  },
+  {
+    "text": "rhetoric.",
+    "start": 100.48,
+    "end": 100.96
+  },
+  {
+    "text": "On",
+    "start": 101.6,
+    "end": 101.69
+  },
+  {
+    "text": "more",
+    "start": 101.74,
+    "end": 101.94
+  },
+  {
+    "text": "than",
+    "start": 101.98,
+    "end": 102.14
+  },
+  {
+    "text": "one",
+    "start": 102.18,
+    "end": 102.3
+  },
+  {
+    "text": "occasion",
+    "start": 102.38,
+    "end": 102.9
+  },
+  {
+    "text": "before",
+    "start": 102.94,
+    "end": 103.26
+  },
+  {
+    "text": "the",
+    "start": 103.3,
+    "end": 103.4
+  },
+  {
+    "text": "final",
+    "start": 103.44,
+    "end": 103.72
+  },
+  {
+    "text": "night,",
+    "start": 103.8,
+    "end": 104.1
+  },
+  {
+    "text": "he",
+    "start": 104.54,
+    "end": 104.68
+  },
+  {
+    "text": "gathered",
+    "start": 104.72,
+    "end": 105.06
+  },
+  {
+    "text": "the",
+    "start": 105.07,
+    "end": 105.18
+  },
+  {
+    "text": "community",
+    "start": 105.24,
+    "end": 105.82
+  },
+  {
+    "text": "for",
+    "start": 105.86,
+    "end": 105.95
+  },
+  {
+    "text": "what",
+    "start": 106.02,
+    "end": 106.14
+  },
+  {
+    "text": "he",
+    "start": 106.2,
+    "end": 106.26
+  },
+  {
+    "text": "called",
+    "start": 106.38,
+    "end": 106.66
+  },
+  {
+    "text": "White",
+    "start": 107,
+    "end": 107.2
+  },
+  {
+    "text": "Nights:",
+    "start": 107.26,
+    "end": 107.69
+  },
+  {
+    "text": "loudspeaker",
+    "start": 108.28,
+    "end": 108.96
+  },
+  {
+    "text": "drills",
+    "start": 108.98,
+    "end": 109.5
+  },
+  {
+    "text": "in",
+    "start": 109.52,
+    "end": 109.62
+  },
+  {
+    "text": "the",
+    "start": 109.66,
+    "end": 109.74
+  },
+  {
+    "text": "middle",
+    "start": 109.78,
+    "end": 110.02
+  },
+  {
+    "text": "of",
+    "start": 110.08,
+    "end": 110.16
+  },
+  {
+    "text": "the",
+    "start": 110.2,
+    "end": 110.28
+  },
+  {
+    "text": "night,",
+    "start": 110.32,
+    "end": 110.62
+  },
+  {
+    "text": "warning",
+    "start": 111.12,
+    "end": 111.48
+  },
+  {
+    "text": "that",
+    "start": 111.52,
+    "end": 111.65
+  },
+  {
+    "text": "attackers",
+    "start": 111.68,
+    "end": 112.24
+  },
+  {
+    "text": "were",
+    "start": 112.28,
+    "end": 112.43
+  },
+  {
+    "text": "closing",
+    "start": 112.48,
+    "end": 112.87
+  },
+  {
+    "text": "in,",
+    "start": 112.94,
+    "end": 113.7
+  },
+  {
+    "text": "sometimes",
+    "start": 113.74,
+    "end": 114.3
+  },
+  {
+    "text": "ending",
+    "start": 114.36,
+    "end": 114.91
+  },
+  {
+    "text": "with",
+    "start": 114.94,
+    "end": 115.13
+  },
+  {
+    "text": "members",
+    "start": 115.14,
+    "end": 115.56
+  },
+  {
+    "text": "drinking",
+    "start": 115.58,
+    "end": 115.94
+  },
+  {
+    "text": "a",
+    "start": 116,
+    "end": 116.04
+  },
+  {
+    "text": "liquid",
+    "start": 116.08,
+    "end": 116.46
+  },
+  {
+    "text": "they",
+    "start": 116.76,
+    "end": 116.9
+  },
+  {
+    "text": "were",
+    "start": 116.92,
+    "end": 117.08
+  },
+  {
+    "text": "told",
+    "start": 117.12,
+    "end": 117.36
+  },
+  {
+    "text": "might",
+    "start": 117.44,
+    "end": 117.64
+  },
+  {
+    "text": "be",
+    "start": 117.68,
+    "end": 117.74
+  },
+  {
+    "text": "poison,",
+    "start": 117.86,
+    "end": 118.3
+  },
+  {
+    "text": "only",
+    "start": 118.98,
+    "end": 119.24
+  },
+  {
+    "text": "to",
+    "start": 119.28,
+    "end": 119.38
+  },
+  {
+    "text": "be",
+    "start": 119.42,
+    "end": 119.52
+  },
+  {
+    "text": "informed",
+    "start": 119.56,
+    "end": 120.08
+  },
+  {
+    "text": "afterward",
+    "start": 120.18,
+    "end": 120.66
+  },
+  {
+    "text": "it",
+    "start": 121.08,
+    "end": 121.16
+  },
+  {
+    "text": "had",
+    "start": 121.24,
+    "end": 121.36
+  },
+  {
+    "text": "been",
+    "start": 121.4,
+    "end": 121.52
+  },
+  {
+    "text": "a",
+    "start": 121.58,
+    "end": 121.68
+  },
+  {
+    "text": "test",
+    "start": 121.72,
+    "end": 122
+  },
+  {
+    "text": "of",
+    "start": 122.06,
+    "end": 122.13
+  },
+  {
+    "text": "their",
+    "start": 122.18,
+    "end": 122.32
+  },
+  {
+    "text": "loyalty.",
+    "start": 122.36,
+    "end": 123.48
+  },
+  {
+    "text": "Each",
+    "start": 123.54,
+    "end": 123.74
+  },
+  {
+    "text": "rehearsal",
+    "start": 123.76,
+    "end": 124.5
+  },
+  {
+    "text": "normalized",
+    "start": 124.52,
+    "end": 125.12
+  },
+  {
+    "text": "the",
+    "start": 125.18,
+    "end": 125.24
+  },
+  {
+    "text": "idea",
+    "start": 125.32,
+    "end": 125.84
+  },
+  {
+    "text": "a",
+    "start": 125.86,
+    "end": 125.92
+  },
+  {
+    "text": "little",
+    "start": 126,
+    "end": 126.2
+  },
+  {
+    "text": "further",
+    "start": 126.32,
+    "end": 126.68
+  },
+  {
+    "text": "that",
+    "start": 127.28,
+    "end": 127.48
+  },
+  {
+    "text": "death",
+    "start": 127.56,
+    "end": 127.9
+  },
+  {
+    "text": "might",
+    "start": 128.12,
+    "end": 128.34
+  },
+  {
+    "text": "be",
+    "start": 128.38,
+    "end": 128.46
+  },
+  {
+    "text": "demanded",
+    "start": 128.52,
+    "end": 129.039
+  },
+  {
+    "text": "of",
+    "start": 129.12,
+    "end": 129.24
+  },
+  {
+    "text": "them",
+    "start": 129.28,
+    "end": 129.64
+  },
+  {
+    "text": "collectively",
+    "start": 129.699,
+    "end": 130.72
+  },
+  {
+    "text": "without",
+    "start": 130.78,
+    "end": 131.16
+  },
+  {
+    "text": "warning,",
+    "start": 131.2,
+    "end": 131.58
+  },
+  {
+    "text": "and",
+    "start": 132.12,
+    "end": 132.22
+  },
+  {
+    "text": "that",
+    "start": 132.28,
+    "end": 132.44
+  },
+  {
+    "text": "the",
+    "start": 132.48,
+    "end": 132.58
+  },
+  {
+    "text": "correct",
+    "start": 132.64,
+    "end": 132.96
+  },
+  {
+    "text": "response",
+    "start": 133.04,
+    "end": 133.64
+  },
+  {
+    "text": "was",
+    "start": 133.7,
+    "end": 133.9
+  },
+  {
+    "text": "calm,",
+    "start": 133.98,
+    "end": 134.3
+  },
+  {
+    "text": "immediate",
+    "start": 134.68,
+    "end": 135.12
+  },
+  {
+    "text": "obedience.",
+    "start": 135.2,
+    "end": 135.859
+  }
+]

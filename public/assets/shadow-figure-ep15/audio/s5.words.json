@@ -1,0 +1,682 @@
+[
+  {
+    "text": "That's",
+    "start": 0.28,
+    "end": 0.559
+  },
+  {
+    "text": "the",
+    "start": 0.599,
+    "end": 0.659
+  },
+  {
+    "text": "first",
+    "start": 0.759,
+    "end": 1.039
+  },
+  {
+    "text": "season",
+    "start": 1.12,
+    "end": 1.419
+  },
+  {
+    "text": "of",
+    "start": 1.459,
+    "end": 1.539
+  },
+  {
+    "text": "Shadow",
+    "start": 1.62,
+    "end": 1.879
+  },
+  {
+    "text": "Figure.",
+    "start": 1.979,
+    "end": 2.319
+  },
+  {
+    "text": "Fourteen",
+    "start": 2.96,
+    "end": 3.379
+  },
+  {
+    "text": "masks,",
+    "start": 3.46,
+    "end": 3.919
+  },
+  {
+    "text": "six",
+    "start": 4.299,
+    "end": 4.559
+  },
+  {
+    "text": "levers,",
+    "start": 4.599,
+    "end": 5.059
+  },
+  {
+    "text": "one",
+    "start": 5.42,
+    "end": 5.559
+  },
+  {
+    "text": "machine.",
+    "start": 5.639,
+    "end": 6.079
+  },
+  {
+    "text": "And",
+    "start": 6.819,
+    "end": 6.919
+  },
+  {
+    "text": "if",
+    "start": 6.98,
+    "end": 7.059
+  },
+  {
+    "text": "you've",
+    "start": 7.099,
+    "end": 7.259
+  },
+  {
+    "text": "watched",
+    "start": 7.299,
+    "end": 7.619
+  },
+  {
+    "text": "all",
+    "start": 7.719,
+    "end": 7.879
+  },
+  {
+    "text": "fourteen,",
+    "start": 7.96,
+    "end": 8.479
+  },
+  {
+    "text": "you",
+    "start": 8.88,
+    "end": 8.96
+  },
+  {
+    "text": "already",
+    "start": 9.039,
+    "end": 9.439
+  },
+  {
+    "text": "have",
+    "start": 9.519,
+    "end": 9.639
+  },
+  {
+    "text": "more",
+    "start": 9.739,
+    "end": 9.939
+  },
+  {
+    "text": "pattern",
+    "start": 10,
+    "end": 10.319
+  },
+  {
+    "text": "recognition",
+    "start": 10.38,
+    "end": 11.039
+  },
+  {
+    "text": "for",
+    "start": 11.079,
+    "end": 11.199
+  },
+  {
+    "text": "this",
+    "start": 11.259,
+    "end": 11.5
+  },
+  {
+    "text": "than",
+    "start": 11.859,
+    "end": 11.979
+  },
+  {
+    "text": "most",
+    "start": 12.079,
+    "end": 12.279
+  },
+  {
+    "text": "people",
+    "start": 12.399,
+    "end": 12.659
+  },
+  {
+    "text": "will",
+    "start": 12.759,
+    "end": 12.939
+  },
+  {
+    "text": "ever",
+    "start": 13.059,
+    "end": 13.199
+  },
+  {
+    "text": "build",
+    "start": 13.319,
+    "end": 13.619
+  },
+  {
+    "text": "in",
+    "start": 14,
+    "end": 14.079
+  },
+  {
+    "text": "a",
+    "start": 14.139,
+    "end": 14.199
+  },
+  {
+    "text": "lifetime",
+    "start": 14.259,
+    "end": 14.739
+  },
+  {
+    "text": "of",
+    "start": 14.799,
+    "end": 14.88
+  },
+  {
+    "text": "learning",
+    "start": 14.96,
+    "end": 15.26
+  },
+  {
+    "text": "it",
+    "start": 15.299,
+    "end": 15.42
+  },
+  {
+    "text": "the",
+    "start": 15.46,
+    "end": 15.539
+  },
+  {
+    "text": "hard",
+    "start": 15.619,
+    "end": 15.819
+  },
+  {
+    "text": "way.",
+    "start": 15.899,
+    "end": 16.099
+  },
+  {
+    "text": "None",
+    "start": 16.68,
+    "end": 16.799
+  },
+  {
+    "text": "of",
+    "start": 16.84,
+    "end": 16.92
+  },
+  {
+    "text": "this",
+    "start": 16.979,
+    "end": 17.159
+  },
+  {
+    "text": "makes",
+    "start": 17.239,
+    "end": 17.44
+  },
+  {
+    "text": "you",
+    "start": 17.479,
+    "end": 17.539
+  },
+  {
+    "text": "immune.",
+    "start": 17.619,
+    "end": 18.02
+  },
+  {
+    "text": "It",
+    "start": 18.68,
+    "end": 18.779
+  },
+  {
+    "text": "makes",
+    "start": 18.859,
+    "end": 19.059
+  },
+  {
+    "text": "you",
+    "start": 19.1,
+    "end": 19.159
+  },
+  {
+    "text": "slower",
+    "start": 19.279,
+    "end": 19.619
+  },
+  {
+    "text": "to",
+    "start": 19.659,
+    "end": 19.76
+  },
+  {
+    "text": "react,",
+    "start": 19.84,
+    "end": 20.279
+  },
+  {
+    "text": "which,",
+    "start": 20.619,
+    "end": 20.919
+  },
+  {
+    "text": "against",
+    "start": 21.279,
+    "end": 21.619
+  },
+  {
+    "text": "this",
+    "start": 21.68,
+    "end": 21.84
+  },
+  {
+    "text": "particular",
+    "start": 21.92,
+    "end": 22.399
+  },
+  {
+    "text": "machine,",
+    "start": 22.479,
+    "end": 22.92
+  },
+  {
+    "text": "is",
+    "start": 23.279,
+    "end": 23.399
+  },
+  {
+    "text": "the",
+    "start": 23.459,
+    "end": 23.519
+  },
+  {
+    "text": "entire",
+    "start": 23.579,
+    "end": 24
+  },
+  {
+    "text": "advantage.",
+    "start": 24.079,
+    "end": 24.739
+  },
+  {
+    "text": "The",
+    "start": 25.359,
+    "end": 25.399
+  },
+  {
+    "text": "manipulator's",
+    "start": 25.479,
+    "end": 26.219
+  },
+  {
+    "text": "whole",
+    "start": 26.279,
+    "end": 26.499
+  },
+  {
+    "text": "strategy",
+    "start": 26.559,
+    "end": 27.319
+  },
+  {
+    "text": "depends",
+    "start": 27.399,
+    "end": 27.739
+  },
+  {
+    "text": "on",
+    "start": 27.799,
+    "end": 27.899
+  },
+  {
+    "text": "you",
+    "start": 27.979,
+    "end": 28.079
+  },
+  {
+    "text": "deciding",
+    "start": 28.139,
+    "end": 28.939
+  },
+  {
+    "text": "before",
+    "start": 29,
+    "end": 29.279
+  },
+  {
+    "text": "you've",
+    "start": 29.319,
+    "end": 29.479
+  },
+  {
+    "text": "had",
+    "start": 29.519,
+    "end": 29.679
+  },
+  {
+    "text": "time",
+    "start": 29.739,
+    "end": 29.999
+  },
+  {
+    "text": "to",
+    "start": 30.039,
+    "end": 30.159
+  },
+  {
+    "text": "name",
+    "start": 30.219,
+    "end": 30.42
+  },
+  {
+    "text": "what's",
+    "start": 30.479,
+    "end": 30.68
+  },
+  {
+    "text": "actually",
+    "start": 30.739,
+    "end": 31.099
+  },
+  {
+    "text": "happening.",
+    "start": 31.219,
+    "end": 31.579
+  },
+  {
+    "text": "Take",
+    "start": 32.159,
+    "end": 32.319
+  },
+  {
+    "text": "the",
+    "start": 32.38,
+    "end": 32.439
+  },
+  {
+    "text": "extra",
+    "start": 32.52,
+    "end": 32.759
+  },
+  {
+    "text": "ten",
+    "start": 32.88,
+    "end": 33.059
+  },
+  {
+    "text": "seconds.",
+    "start": 33.139,
+    "end": 33.599
+  },
+  {
+    "text": "Name",
+    "start": 34.04,
+    "end": 34.239
+  },
+  {
+    "text": "the",
+    "start": 34.299,
+    "end": 34.34
+  },
+  {
+    "text": "lever,",
+    "start": 34.419,
+    "end": 34.7
+  },
+  {
+    "text": "then",
+    "start": 35.139,
+    "end": 35.279
+  },
+  {
+    "text": "decide.",
+    "start": 35.34,
+    "end": 35.899
+  },
+  {
+    "text": "Comment",
+    "start": 36.34,
+    "end": 36.659
+  },
+  {
+    "text": "the",
+    "start": 36.719,
+    "end": 36.779
+  },
+  {
+    "text": "word",
+    "start": 36.86,
+    "end": 37.119
+  },
+  {
+    "text": "\"pattern\"",
+    "start": 37.139,
+    "end": 37.54
+  },
+  {
+    "text": "below",
+    "start": 37.639,
+    "end": 38.199
+  },
+  {
+    "text": "if",
+    "start": 38.299,
+    "end": 38.419
+  },
+  {
+    "text": "you",
+    "start": 38.459,
+    "end": 38.559
+  },
+  {
+    "text": "can",
+    "start": 38.599,
+    "end": 38.739
+  },
+  {
+    "text": "already",
+    "start": 38.799,
+    "end": 39.119
+  },
+  {
+    "text": "spot,",
+    "start": 39.279,
+    "end": 39.619
+  },
+  {
+    "text": "looking",
+    "start": 39.879,
+    "end": 40.18
+  },
+  {
+    "text": "back,",
+    "start": 40.219,
+    "end": 40.54
+  },
+  {
+    "text": "which",
+    "start": 41.079,
+    "end": 41.259
+  },
+  {
+    "text": "lever",
+    "start": 41.34,
+    "end": 41.659
+  },
+  {
+    "text": "got",
+    "start": 41.719,
+    "end": 41.939
+  },
+  {
+    "text": "you",
+    "start": 41.979,
+    "end": 42.059
+  },
+  {
+    "text": "at",
+    "start": 42.119,
+    "end": 42.239
+  },
+  {
+    "text": "some",
+    "start": 42.279,
+    "end": 42.479
+  },
+  {
+    "text": "point",
+    "start": 42.54,
+    "end": 42.779
+  },
+  {
+    "text": "in",
+    "start": 42.84,
+    "end": 42.939
+  },
+  {
+    "text": "your",
+    "start": 43,
+    "end": 43.119
+  },
+  {
+    "text": "own",
+    "start": 43.18,
+    "end": 43.299
+  },
+  {
+    "text": "life.",
+    "start": 43.379,
+    "end": 43.719
+  },
+  {
+    "text": "And",
+    "start": 44.399,
+    "end": 44.52
+  },
+  {
+    "text": "if",
+    "start": 44.579,
+    "end": 44.7
+  },
+  {
+    "text": "you're",
+    "start": 44.739,
+    "end": 44.919
+  },
+  {
+    "text": "new",
+    "start": 44.939,
+    "end": 45.139
+  },
+  {
+    "text": "here,",
+    "start": 45.2,
+    "end": 45.84
+  },
+  {
+    "text": "every",
+    "start": 45.959,
+    "end": 46.18
+  },
+  {
+    "text": "case",
+    "start": 46.239,
+    "end": 46.5
+  },
+  {
+    "text": "we",
+    "start": 46.559,
+    "end": 46.68
+  },
+  {
+    "text": "just",
+    "start": 46.759,
+    "end": 46.919
+  },
+  {
+    "text": "referenced",
+    "start": 46.979,
+    "end": 47.479
+  },
+  {
+    "text": "is",
+    "start": 47.759,
+    "end": 47.88
+  },
+  {
+    "text": "waiting",
+    "start": 47.939,
+    "end": 48.239
+  },
+  {
+    "text": "for",
+    "start": 48.34,
+    "end": 48.439
+  },
+  {
+    "text": "you",
+    "start": 48.539,
+    "end": 48.799
+  },
+  {
+    "text": "in",
+    "start": 48.84,
+    "end": 48.959
+  },
+  {
+    "text": "this",
+    "start": 49,
+    "end": 49.159
+  },
+  {
+    "text": "channel",
+    "start": 49.219,
+    "end": 49.879
+  },
+  {
+    "text": "from",
+    "start": 49.959,
+    "end": 50.119
+  },
+  {
+    "text": "the",
+    "start": 50.139,
+    "end": 50.2
+  },
+  {
+    "text": "very",
+    "start": 50.279,
+    "end": 50.52
+  },
+  {
+    "text": "beginning.",
+    "start": 50.559,
+    "end": 51.02
+  },
+  {
+    "text": "Stay",
+    "start": 51.439,
+    "end": 51.619
+  },
+  {
+    "text": "observant",
+    "start": 51.68,
+    "end": 52.259
+  }
+]

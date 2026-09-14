@@ -5,10 +5,10 @@ import type { TranscribedWord } from "./checklistSyncService";
 
 const BASE_URL = "https://api.ai33.pro/v3";
 
-// Misma voz default que ya usaba el proyecto vía ElevenLabs directo — acá
-// con el prefijo elevenlabs_ que exige el proxy de ai33.pro para elegir ese
-// motor. Mantiene el mismo sonido, solo cambia quién sirve/factura la voz.
-const DEFAULT_VOICE_ID = "elevenlabs_21m00Tcm4TlvDq8ikWAM";
+// Voz "Antonio - Confident, Gentle and Clear", la misma usada en
+// mundial-2026-resumen y otros guiones — con el prefijo elevenlabs_ que
+// exige el proxy de ai33.pro para elegir ese motor.
+const DEFAULT_VOICE_ID = "elevenlabs_htFfPSZGJwjBv1CL0aMD";
 
 const POLL_INTERVAL_MS = 2000;
 const POLL_TIMEOUT_MS = 120000;

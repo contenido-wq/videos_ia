@@ -1,0 +1,377 @@
+[
+  {
+    "text": "A",
+    "start": 0.219,
+    "end": 0.359
+  },
+  {
+    "text": "teenager",
+    "start": 0.399,
+    "end": 0.899
+  },
+  {
+    "text": "with",
+    "start": 1.039,
+    "end": 1.179
+  },
+  {
+    "text": "no",
+    "start": 1.259,
+    "end": 1.36
+  },
+  {
+    "text": "pilot's",
+    "start": 1.48,
+    "end": 1.899
+  },
+  {
+    "text": "license",
+    "start": 1.959,
+    "end": 2.44
+  },
+  {
+    "text": "flew",
+    "start": 2.74,
+    "end": 2.939
+  },
+  {
+    "text": "for",
+    "start": 3,
+    "end": 3.099
+  },
+  {
+    "text": "free",
+    "start": 3.22,
+    "end": 3.72
+  },
+  {
+    "text": "on",
+    "start": 3.799,
+    "end": 3.939
+  },
+  {
+    "text": "more",
+    "start": 4,
+    "end": 4.119
+  },
+  {
+    "text": "than",
+    "start": 4.199,
+    "end": 4.339
+  },
+  {
+    "text": "two",
+    "start": 4.48,
+    "end": 4.599
+  },
+  {
+    "text": "hundred",
+    "start": 4.719,
+    "end": 4.96
+  },
+  {
+    "text": "flights,",
+    "start": 5.099,
+    "end": 5.539
+  },
+  {
+    "text": "sitting",
+    "start": 6.119,
+    "end": 6.399
+  },
+  {
+    "text": "in",
+    "start": 6.46,
+    "end": 6.539
+  },
+  {
+    "text": "the",
+    "start": 6.599,
+    "end": 6.659
+  },
+  {
+    "text": "jump",
+    "start": 6.739,
+    "end": 6.92
+  },
+  {
+    "text": "seat",
+    "start": 7.039,
+    "end": 7.279
+  },
+  {
+    "text": "of",
+    "start": 7.519,
+    "end": 7.619
+  },
+  {
+    "text": "a",
+    "start": 7.679,
+    "end": 7.699
+  },
+  {
+    "text": "uniform",
+    "start": 7.799,
+    "end": 8.34
+  },
+  {
+    "text": "he",
+    "start": 8.599,
+    "end": 8.72
+  },
+  {
+    "text": "had",
+    "start": 8.779,
+    "end": 8.939
+  },
+  {
+    "text": "no",
+    "start": 9,
+    "end": 9.099
+  },
+  {
+    "text": "right",
+    "start": 9.199,
+    "end": 9.399
+  },
+  {
+    "text": "to",
+    "start": 9.46,
+    "end": 9.519
+  },
+  {
+    "text": "wear.",
+    "start": 9.599,
+    "end": 9.84
+  },
+  {
+    "text": "Banks",
+    "start": 10.739,
+    "end": 11.079
+  },
+  {
+    "text": "cashed",
+    "start": 11.139,
+    "end": 11.399
+  },
+  {
+    "text": "his",
+    "start": 11.439,
+    "end": 11.559
+  },
+  {
+    "text": "checks.",
+    "start": 11.659,
+    "end": 12.039
+  },
+  {
+    "text": "Hospitals",
+    "start": 12.539,
+    "end": 13.179
+  },
+  {
+    "text": "let",
+    "start": 13.46,
+    "end": 13.579
+  },
+  {
+    "text": "him",
+    "start": 13.639,
+    "end": 13.779
+  },
+  {
+    "text": "supervise",
+    "start": 13.859,
+    "end": 14.399
+  },
+  {
+    "text": "doctors.",
+    "start": 14.46,
+    "end": 14.959
+  },
+  {
+    "text": "Nobody",
+    "start": 15.92,
+    "end": 16.279
+  },
+  {
+    "text": "asked",
+    "start": 16.379,
+    "end": 16.619
+  },
+  {
+    "text": "to",
+    "start": 16.659,
+    "end": 16.719
+  },
+  {
+    "text": "see",
+    "start": 16.819,
+    "end": 16.959
+  },
+  {
+    "text": "behind",
+    "start": 17.02,
+    "end": 17.359
+  },
+  {
+    "text": "the",
+    "start": 17.399,
+    "end": 17.5
+  },
+  {
+    "text": "costume",
+    "start": 17.559,
+    "end": 18.02
+  },
+  {
+    "text": "because",
+    "start": 18.42,
+    "end": 18.699
+  },
+  {
+    "text": "nobody",
+    "start": 18.779,
+    "end": 19.139
+  },
+  {
+    "text": "ever",
+    "start": 19.219,
+    "end": 19.399
+  },
+  {
+    "text": "does,",
+    "start": 19.479,
+    "end": 19.779
+  },
+  {
+    "text": "not",
+    "start": 20.319,
+    "end": 20.479
+  },
+  {
+    "text": "when",
+    "start": 20.52,
+    "end": 20.659
+  },
+  {
+    "text": "the",
+    "start": 20.699,
+    "end": 20.799
+  },
+  {
+    "text": "costume",
+    "start": 20.859,
+    "end": 21.279
+  },
+  {
+    "text": "is",
+    "start": 21.319,
+    "end": 21.459
+  },
+  {
+    "text": "convincing",
+    "start": 21.5,
+    "end": 22.039
+  },
+  {
+    "text": "enough.",
+    "start": 22.079,
+    "end": 22.459
+  },
+  {
+    "text": "This",
+    "start": 23.279,
+    "end": 23.459
+  },
+  {
+    "text": "is",
+    "start": 23.519,
+    "end": 23.619
+  },
+  {
+    "text": "the",
+    "start": 23.659,
+    "end": 23.719
+  },
+  {
+    "text": "psychology",
+    "start": 23.799,
+    "end": 24.42
+  },
+  {
+    "text": "of",
+    "start": 24.479,
+    "end": 24.559
+  },
+  {
+    "text": "the",
+    "start": 24.6,
+    "end": 24.68
+  },
+  {
+    "text": "boy",
+    "start": 24.779,
+    "end": 24.999
+  },
+  {
+    "text": "the",
+    "start": 25.059,
+    "end": 25.159
+  },
+  {
+    "text": "FBI",
+    "start": 25.319,
+    "end": 25.779
+  },
+  {
+    "text": "spent",
+    "start": 25.819,
+    "end": 26.119
+  },
+  {
+    "text": "years",
+    "start": 26.219,
+    "end": 26.519
+  },
+  {
+    "text": "chasing",
+    "start": 26.559,
+    "end": 26.979
+  },
+  {
+    "text": "across",
+    "start": 27.099,
+    "end": 27.42
+  },
+  {
+    "text": "two",
+    "start": 27.479,
+    "end": 27.639
+  },
+  {
+    "text": "continents.",
+    "start": 27.699,
+    "end": 28.34
+  },
+  {
+    "text": "This",
+    "start": 28.92,
+    "end": 29.099
+  },
+  {
+    "text": "is",
+    "start": 29.179,
+    "end": 29.279
+  },
+  {
+    "text": "Shadow",
+    "start": 29.359,
+    "end": 29.619
+  },
+  {
+    "text": "Figure",
+    "start": 29.719,
+    "end": 30.039
+  }
+]

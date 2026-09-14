@@ -1,0 +1,1897 @@
+[
+  {
+    "text": "Journalist",
+    "start": 0.3,
+    "end": 0.8
+  },
+  {
+    "text": "Maria",
+    "start": 0.9,
+    "end": 1.28
+  },
+  {
+    "text": "Konnikova",
+    "start": 1.4,
+    "end": 2.06
+  },
+  {
+    "text": "spent",
+    "start": 2.42,
+    "end": 2.68
+  },
+  {
+    "text": "years",
+    "start": 2.8,
+    "end": 3.12
+  },
+  {
+    "text": "studying",
+    "start": 3.22,
+    "end": 3.66
+  },
+  {
+    "text": "con",
+    "start": 3.7,
+    "end": 3.9
+  },
+  {
+    "text": "artists",
+    "start": 3.98,
+    "end": 4.46
+  },
+  {
+    "text": "for",
+    "start": 4.56,
+    "end": 4.66
+  },
+  {
+    "text": "her",
+    "start": 4.72,
+    "end": 4.82
+  },
+  {
+    "text": "book",
+    "start": 4.94,
+    "end": 5.34
+  },
+  {
+    "text": "on",
+    "start": 5.38,
+    "end": 5.48
+  },
+  {
+    "text": "the",
+    "start": 5.52,
+    "end": 5.58
+  },
+  {
+    "text": "psychology",
+    "start": 5.66,
+    "end": 6.54
+  },
+  {
+    "text": "of",
+    "start": 6.6,
+    "end": 6.67
+  },
+  {
+    "text": "confidence",
+    "start": 6.78,
+    "end": 7.3
+  },
+  {
+    "text": "games,",
+    "start": 7.4,
+    "end": 7.76
+  },
+  {
+    "text": "and",
+    "start": 8.42,
+    "end": 8.58
+  },
+  {
+    "text": "one",
+    "start": 8.64,
+    "end": 8.86
+  },
+  {
+    "text": "pattern",
+    "start": 8.92,
+    "end": 9.6
+  },
+  {
+    "text": "shows",
+    "start": 9.66,
+    "end": 9.94
+  },
+  {
+    "text": "up",
+    "start": 10,
+    "end": 10.1
+  },
+  {
+    "text": "again",
+    "start": 10.16,
+    "end": 10.72
+  },
+  {
+    "text": "and",
+    "start": 10.74,
+    "end": 10.88
+  },
+  {
+    "text": "again",
+    "start": 10.92,
+    "end": 11.3
+  },
+  {
+    "text": "in",
+    "start": 11.6,
+    "end": 11.68
+  },
+  {
+    "text": "her",
+    "start": 11.72,
+    "end": 11.86
+  },
+  {
+    "text": "research.",
+    "start": 11.9,
+    "end": 12.42
+  },
+  {
+    "text": "The",
+    "start": 13.09,
+    "end": 13.18
+  },
+  {
+    "text": "most",
+    "start": 13.22,
+    "end": 13.4
+  },
+  {
+    "text": "effective",
+    "start": 13.48,
+    "end": 13.94
+  },
+  {
+    "text": "operators",
+    "start": 13.98,
+    "end": 14.64
+  },
+  {
+    "text": "don't",
+    "start": 15.04,
+    "end": 15.29
+  },
+  {
+    "text": "try",
+    "start": 15.32,
+    "end": 15.52
+  },
+  {
+    "text": "to",
+    "start": 15.56,
+    "end": 15.64
+  },
+  {
+    "text": "convince",
+    "start": 15.68,
+    "end": 16.12
+  },
+  {
+    "text": "you",
+    "start": 16.18,
+    "end": 16.26
+  },
+  {
+    "text": "of",
+    "start": 16.32,
+    "end": 16.44
+  },
+  {
+    "text": "anything",
+    "start": 16.5,
+    "end": 16.85
+  },
+  {
+    "text": "complicated",
+    "start": 16.94,
+    "end": 17.88
+  },
+  {
+    "text": "in",
+    "start": 17.94,
+    "end": 18
+  },
+  {
+    "text": "the",
+    "start": 18.06,
+    "end": 18.14
+  },
+  {
+    "text": "first",
+    "start": 18.2,
+    "end": 18.44
+  },
+  {
+    "text": "exchange.",
+    "start": 18.48,
+    "end": 19.04
+  },
+  {
+    "text": "They",
+    "start": 19.68,
+    "end": 19.85
+  },
+  {
+    "text": "just",
+    "start": 19.9,
+    "end": 20.13
+  },
+  {
+    "text": "try",
+    "start": 20.18,
+    "end": 20.42
+  },
+  {
+    "text": "to",
+    "start": 20.43,
+    "end": 20.56
+  },
+  {
+    "text": "make",
+    "start": 20.6,
+    "end": 20.8
+  },
+  {
+    "text": "you",
+    "start": 20.84,
+    "end": 20.94
+  },
+  {
+    "text": "like",
+    "start": 21,
+    "end": 21.22
+  },
+  {
+    "text": "them",
+    "start": 21.26,
+    "end": 21.66
+  },
+  {
+    "text": "fast",
+    "start": 21.72,
+    "end": 22.12
+  },
+  {
+    "text": "using",
+    "start": 22.44,
+    "end": 22.73
+  },
+  {
+    "text": "exactly",
+    "start": 22.76,
+    "end": 23.3
+  },
+  {
+    "text": "the",
+    "start": 23.34,
+    "end": 23.44
+  },
+  {
+    "text": "tools",
+    "start": 23.48,
+    "end": 23.76
+  },
+  {
+    "text": "we've",
+    "start": 23.82,
+    "end": 23.97
+  },
+  {
+    "text": "described:",
+    "start": 24,
+    "end": 24.56
+  },
+  {
+    "text": "matched",
+    "start": 25.12,
+    "end": 25.48
+  },
+  {
+    "text": "energy,",
+    "start": 25.54,
+    "end": 25.96
+  },
+  {
+    "text": "a",
+    "start": 26.4,
+    "end": 26.42
+  },
+  {
+    "text": "name",
+    "start": 26.52,
+    "end": 26.78
+  },
+  {
+    "text": "used",
+    "start": 26.86,
+    "end": 27.08
+  },
+  {
+    "text": "warmly,",
+    "start": 27.12,
+    "end": 27.52
+  },
+  {
+    "text": "a",
+    "start": 28,
+    "end": 28.08
+  },
+  {
+    "text": "claimed",
+    "start": 28.1,
+    "end": 28.5
+  },
+  {
+    "text": "point",
+    "start": 28.54,
+    "end": 28.78
+  },
+  {
+    "text": "of",
+    "start": 28.82,
+    "end": 28.96
+  },
+  {
+    "text": "commonality.",
+    "start": 29,
+    "end": 29.76
+  },
+  {
+    "text": "The",
+    "start": 30.64,
+    "end": 30.74
+  },
+  {
+    "text": "actual",
+    "start": 30.92,
+    "end": 31.25
+  },
+  {
+    "text": "con,",
+    "start": 31.34,
+    "end": 31.64
+  },
+  {
+    "text": "the",
+    "start": 32.06,
+    "end": 32.119
+  },
+  {
+    "text": "request",
+    "start": 32.18,
+    "end": 32.56
+  },
+  {
+    "text": "for",
+    "start": 32.64,
+    "end": 32.72
+  },
+  {
+    "text": "money,",
+    "start": 32.8,
+    "end": 33.08
+  },
+  {
+    "text": "the",
+    "start": 33.48,
+    "end": 33.54
+  },
+  {
+    "text": "pitch,",
+    "start": 33.64,
+    "end": 33.92
+  },
+  {
+    "text": "the",
+    "start": 34.34,
+    "end": 34.46
+  },
+  {
+    "text": "ask",
+    "start": 34.62,
+    "end": 34.92
+  },
+  {
+    "text": "almost",
+    "start": 35.36,
+    "end": 35.76
+  },
+  {
+    "text": "always",
+    "start": 35.84,
+    "end": 36.2
+  },
+  {
+    "text": "comes",
+    "start": 36.24,
+    "end": 36.5
+  },
+  {
+    "text": "later",
+    "start": 36.56,
+    "end": 36.88
+  },
+  {
+    "text": "once",
+    "start": 37.48,
+    "end": 37.66
+  },
+  {
+    "text": "that",
+    "start": 37.7,
+    "end": 37.86
+  },
+  {
+    "text": "initial",
+    "start": 37.92,
+    "end": 38.34
+  },
+  {
+    "text": "warmth",
+    "start": 38.38,
+    "end": 38.7
+  },
+  {
+    "text": "has",
+    "start": 38.74,
+    "end": 38.9
+  },
+  {
+    "text": "been",
+    "start": 38.92,
+    "end": 39.07
+  },
+  {
+    "text": "banked.",
+    "start": 39.16,
+    "end": 40.23
+  },
+  {
+    "text": "The",
+    "start": 40.23,
+    "end": 40.38
+  },
+  {
+    "text": "first",
+    "start": 40.44,
+    "end": 40.72
+  },
+  {
+    "text": "thirty",
+    "start": 40.73,
+    "end": 40.98
+  },
+  {
+    "text": "seconds",
+    "start": 41.1,
+    "end": 41.52
+  },
+  {
+    "text": "were",
+    "start": 41.56,
+    "end": 41.7
+  },
+  {
+    "text": "never",
+    "start": 41.74,
+    "end": 41.98
+  },
+  {
+    "text": "about",
+    "start": 42.06,
+    "end": 42.31
+  },
+  {
+    "text": "the",
+    "start": 42.36,
+    "end": 42.46
+  },
+  {
+    "text": "scheme.",
+    "start": 42.48,
+    "end": 42.85
+  },
+  {
+    "text": "They",
+    "start": 43.54,
+    "end": 43.71
+  },
+  {
+    "text": "were",
+    "start": 43.74,
+    "end": 43.84
+  },
+  {
+    "text": "about",
+    "start": 43.92,
+    "end": 44.2
+  },
+  {
+    "text": "making",
+    "start": 44.24,
+    "end": 44.6
+  },
+  {
+    "text": "sure",
+    "start": 44.66,
+    "end": 45.28
+  },
+  {
+    "text": "that",
+    "start": 45.32,
+    "end": 45.47
+  },
+  {
+    "text": "by",
+    "start": 45.5,
+    "end": 45.64
+  },
+  {
+    "text": "the",
+    "start": 45.68,
+    "end": 45.79
+  },
+  {
+    "text": "time",
+    "start": 45.84,
+    "end": 46.08
+  },
+  {
+    "text": "the",
+    "start": 46.089,
+    "end": 46.24
+  },
+  {
+    "text": "scheme",
+    "start": 46.26,
+    "end": 46.6
+  },
+  {
+    "text": "showed",
+    "start": 46.64,
+    "end": 46.89
+  },
+  {
+    "text": "up,",
+    "start": 46.98,
+    "end": 47.54
+  },
+  {
+    "text": "you",
+    "start": 47.58,
+    "end": 47.66
+  },
+  {
+    "text": "were",
+    "start": 47.68,
+    "end": 47.88
+  },
+  {
+    "text": "already",
+    "start": 47.96,
+    "end": 48.32
+  },
+  {
+    "text": "inclined",
+    "start": 48.38,
+    "end": 48.89
+  },
+  {
+    "text": "to",
+    "start": 48.92,
+    "end": 48.98
+  },
+  {
+    "text": "give",
+    "start": 49.08,
+    "end": 49.22
+  },
+  {
+    "text": "the",
+    "start": 49.24,
+    "end": 49.38
+  },
+  {
+    "text": "benefit",
+    "start": 49.42,
+    "end": 49.8
+  },
+  {
+    "text": "of",
+    "start": 49.86,
+    "end": 49.94
+  },
+  {
+    "text": "the",
+    "start": 50,
+    "end": 50.06
+  },
+  {
+    "text": "doubt",
+    "start": 50.12,
+    "end": 50.78
+  },
+  {
+    "text": "to",
+    "start": 50.79,
+    "end": 50.9
+  },
+  {
+    "text": "the",
+    "start": 50.92,
+    "end": 51.06
+  },
+  {
+    "text": "person",
+    "start": 51.1,
+    "end": 51.48
+  },
+  {
+    "text": "presenting",
+    "start": 51.5,
+    "end": 52.04
+  },
+  {
+    "text": "it.",
+    "start": 52.1,
+    "end": 52.26
+  },
+  {
+    "text": "Konnikova",
+    "start": 52.96,
+    "end": 53.5
+  },
+  {
+    "text": "traces",
+    "start": 53.58,
+    "end": 54.04
+  },
+  {
+    "text": "this",
+    "start": 54.08,
+    "end": 54.28
+  },
+  {
+    "text": "back",
+    "start": 54.32,
+    "end": 54.6
+  },
+  {
+    "text": "to",
+    "start": 54.64,
+    "end": 54.72
+  },
+  {
+    "text": "a",
+    "start": 54.78,
+    "end": 54.8
+  },
+  {
+    "text": "simple",
+    "start": 54.94,
+    "end": 55.26
+  },
+  {
+    "text": "asymmetry.",
+    "start": 55.4,
+    "end": 56.08
+  },
+  {
+    "text": "A",
+    "start": 56.8,
+    "end": 56.86
+  },
+  {
+    "text": "con",
+    "start": 56.92,
+    "end": 57.12
+  },
+  {
+    "text": "artist",
+    "start": 57.22,
+    "end": 57.82
+  },
+  {
+    "text": "only",
+    "start": 57.9,
+    "end": 58.12
+  },
+  {
+    "text": "has",
+    "start": 58.18,
+    "end": 58.33
+  },
+  {
+    "text": "to",
+    "start": 58.42,
+    "end": 58.52
+  },
+  {
+    "text": "run",
+    "start": 58.56,
+    "end": 58.72
+  },
+  {
+    "text": "this",
+    "start": 58.76,
+    "end": 58.93
+  },
+  {
+    "text": "sequence",
+    "start": 59,
+    "end": 59.35
+  },
+  {
+    "text": "successfully",
+    "start": 59.46,
+    "end": 60.19
+  },
+  {
+    "text": "a",
+    "start": 60.48,
+    "end": 60.58
+  },
+  {
+    "text": "handful",
+    "start": 60.64,
+    "end": 61
+  },
+  {
+    "text": "of",
+    "start": 61.06,
+    "end": 61.18
+  },
+  {
+    "text": "times",
+    "start": 61.22,
+    "end": 61.6
+  },
+  {
+    "text": "to",
+    "start": 61.64,
+    "end": 61.72
+  },
+  {
+    "text": "make",
+    "start": 61.78,
+    "end": 61.92
+  },
+  {
+    "text": "a",
+    "start": 61.98,
+    "end": 61.99
+  },
+  {
+    "text": "living,",
+    "start": 62.06,
+    "end": 62.37
+  },
+  {
+    "text": "while",
+    "start": 63.06,
+    "end": 63.24
+  },
+  {
+    "text": "the",
+    "start": 63.28,
+    "end": 63.36
+  },
+  {
+    "text": "rest",
+    "start": 63.38,
+    "end": 63.62
+  },
+  {
+    "text": "of",
+    "start": 63.68,
+    "end": 63.74
+  },
+  {
+    "text": "us",
+    "start": 63.82,
+    "end": 64.36
+  },
+  {
+    "text": "only",
+    "start": 64.44,
+    "end": 64.67
+  },
+  {
+    "text": "encounter",
+    "start": 64.72,
+    "end": 65.26
+  },
+  {
+    "text": "it",
+    "start": 65.34,
+    "end": 65.47
+  },
+  {
+    "text": "rarely",
+    "start": 65.78,
+    "end": 66.08
+  },
+  {
+    "text": "enough",
+    "start": 66.12,
+    "end": 66.72
+  },
+  {
+    "text": "that",
+    "start": 66.76,
+    "end": 66.91
+  },
+  {
+    "text": "we",
+    "start": 66.94,
+    "end": 67.06
+  },
+  {
+    "text": "never",
+    "start": 67.1,
+    "end": 67.4
+  },
+  {
+    "text": "build",
+    "start": 67.44,
+    "end": 67.68
+  },
+  {
+    "text": "the",
+    "start": 67.69,
+    "end": 67.86
+  },
+  {
+    "text": "pattern",
+    "start": 67.9,
+    "end": 68.24
+  },
+  {
+    "text": "recognition",
+    "start": 68.28,
+    "end": 68.96
+  },
+  {
+    "text": "to",
+    "start": 69.26,
+    "end": 69.36
+  },
+  {
+    "text": "catch",
+    "start": 69.42,
+    "end": 69.7
+  },
+  {
+    "text": "it",
+    "start": 69.76,
+    "end": 69.88
+  },
+  {
+    "text": "in",
+    "start": 70,
+    "end": 70.06
+  },
+  {
+    "text": "real",
+    "start": 70.14,
+    "end": 70.32
+  },
+  {
+    "text": "time.",
+    "start": 70.42,
+    "end": 70.74
+  },
+  {
+    "text": "Practice,",
+    "start": 71.42,
+    "end": 71.96
+  },
+  {
+    "text": "in",
+    "start": 72.24,
+    "end": 72.32
+  },
+  {
+    "text": "other",
+    "start": 72.4,
+    "end": 72.58
+  },
+  {
+    "text": "words,",
+    "start": 72.64,
+    "end": 72.96
+  },
+  {
+    "text": "is",
+    "start": 73.3,
+    "end": 73.4
+  },
+  {
+    "text": "entirely",
+    "start": 73.44,
+    "end": 74.03
+  },
+  {
+    "text": "one-sided.",
+    "start": 74.12,
+    "end": 74.84
+  },
+  {
+    "text": "The",
+    "start": 75.5,
+    "end": 75.62
+  },
+  {
+    "text": "operator",
+    "start": 75.7,
+    "end": 76.26
+  },
+  {
+    "text": "has",
+    "start": 76.3,
+    "end": 76.46
+  },
+  {
+    "text": "run",
+    "start": 76.54,
+    "end": 76.72
+  },
+  {
+    "text": "this",
+    "start": 76.76,
+    "end": 76.9
+  },
+  {
+    "text": "exact",
+    "start": 76.98,
+    "end": 77.38
+  },
+  {
+    "text": "opening",
+    "start": 77.46,
+    "end": 77.86
+  },
+  {
+    "text": "hundreds",
+    "start": 78.12,
+    "end": 78.52
+  },
+  {
+    "text": "of",
+    "start": 78.54,
+    "end": 78.64
+  },
+  {
+    "text": "times",
+    "start": 78.74,
+    "end": 79.14
+  },
+  {
+    "text": "and",
+    "start": 79.46,
+    "end": 79.58
+  },
+  {
+    "text": "refined",
+    "start": 79.62,
+    "end": 80.1
+  },
+  {
+    "text": "every",
+    "start": 80.28,
+    "end": 80.52
+  },
+  {
+    "text": "bit",
+    "start": 80.62,
+    "end": 80.82
+  },
+  {
+    "text": "of",
+    "start": 80.88,
+    "end": 80.96
+  },
+  {
+    "text": "it.",
+    "start": 81,
+    "end": 81.18
+  },
+  {
+    "text": "You,",
+    "start": 81.72,
+    "end": 81.92
+  },
+  {
+    "text": "on",
+    "start": 82.3,
+    "end": 82.38
+  },
+  {
+    "text": "the",
+    "start": 82.42,
+    "end": 82.5
+  },
+  {
+    "text": "other",
+    "start": 82.56,
+    "end": 82.72
+  },
+  {
+    "text": "hand,",
+    "start": 82.8,
+    "end": 83.12
+  },
+  {
+    "text": "are",
+    "start": 83.46,
+    "end": 83.58
+  },
+  {
+    "text": "meeting",
+    "start": 83.62,
+    "end": 83.94
+  },
+  {
+    "text": "it",
+    "start": 83.98,
+    "end": 84.08
+  },
+  {
+    "text": "for",
+    "start": 84.16,
+    "end": 84.26
+  },
+  {
+    "text": "what",
+    "start": 84.32,
+    "end": 84.5
+  },
+  {
+    "text": "feels",
+    "start": 84.56,
+    "end": 84.83
+  },
+  {
+    "text": "like",
+    "start": 84.9,
+    "end": 85.18
+  },
+  {
+    "text": "and",
+    "start": 85.56,
+    "end": 85.67
+  },
+  {
+    "text": "might",
+    "start": 85.72,
+    "end": 86
+  },
+  {
+    "text": "actually",
+    "start": 86.1,
+    "end": 86.56
+  },
+  {
+    "text": "be",
+    "start": 86.6,
+    "end": 86.78
+  },
+  {
+    "text": "the",
+    "start": 87.18,
+    "end": 87.28
+  },
+  {
+    "text": "first",
+    "start": 87.34,
+    "end": 87.57
+  },
+  {
+    "text": "time",
+    "start": 87.66,
+    "end": 87.88
+  },
+  {
+    "text": "in",
+    "start": 87.92,
+    "end": 87.98
+  },
+  {
+    "text": "your",
+    "start": 88.04,
+    "end": 88.16
+  },
+  {
+    "text": "life.",
+    "start": 88.21,
+    "end": 88.54
+  },
+  {
+    "text": "That",
+    "start": 89.17,
+    "end": 89.4
+  },
+  {
+    "text": "mismatch",
+    "start": 89.44,
+    "end": 89.9
+  },
+  {
+    "text": "in",
+    "start": 89.94,
+    "end": 90.04
+  },
+  {
+    "text": "repetition",
+    "start": 90.06,
+    "end": 91
+  },
+  {
+    "text": "is",
+    "start": 91.06,
+    "end": 91.18
+  },
+  {
+    "text": "worth",
+    "start": 91.24,
+    "end": 91.5
+  },
+  {
+    "text": "as",
+    "start": 91.56,
+    "end": 91.7
+  },
+  {
+    "text": "much",
+    "start": 91.76,
+    "end": 91.98
+  },
+  {
+    "text": "as",
+    "start": 92.04,
+    "end": 92.25
+  },
+  {
+    "text": "any",
+    "start": 92.34,
+    "end": 92.7
+  },
+  {
+    "text": "individual",
+    "start": 92.78,
+    "end": 93.34
+  },
+  {
+    "text": "line",
+    "start": 93.44,
+    "end": 94
+  },
+  {
+    "text": "or",
+    "start": 94.08,
+    "end": 94.13
+  },
+  {
+    "text": "gesture",
+    "start": 94.24,
+    "end": 94.98
+  },
+  {
+    "text": "in",
+    "start": 95.04,
+    "end": 95.13
+  },
+  {
+    "text": "the",
+    "start": 95.16,
+    "end": 95.28
+  },
+  {
+    "text": "tactic",
+    "start": 95.32,
+    "end": 95.7
+  },
+  {
+    "text": "itself.",
+    "start": 95.76,
+    "end": 96.26
+  },
+  {
+    "text": "This",
+    "start": 96.84,
+    "end": 96.96
+  },
+  {
+    "text": "is",
+    "start": 97.04,
+    "end": 97.14
+  },
+  {
+    "text": "also",
+    "start": 97.22,
+    "end": 97.5
+  },
+  {
+    "text": "why",
+    "start": 97.52,
+    "end": 97.74
+  },
+  {
+    "text": "con",
+    "start": 97.78,
+    "end": 98
+  },
+  {
+    "text": "artists",
+    "start": 98.04,
+    "end": 98.56
+  },
+  {
+    "text": "so",
+    "start": 98.76,
+    "end": 99
+  },
+  {
+    "text": "often",
+    "start": 99.02,
+    "end": 99.36
+  },
+  {
+    "text": "target",
+    "start": 99.42,
+    "end": 99.82
+  },
+  {
+    "text": "people",
+    "start": 99.84,
+    "end": 100.2
+  },
+  {
+    "text": "going",
+    "start": 100.56,
+    "end": 100.86
+  },
+  {
+    "text": "through",
+    "start": 100.88,
+    "end": 101.06
+  },
+  {
+    "text": "a",
+    "start": 101.07,
+    "end": 101.2
+  },
+  {
+    "text": "vulnerable",
+    "start": 101.26,
+    "end": 101.72
+  },
+  {
+    "text": "moment:",
+    "start": 101.78,
+    "end": 102.22
+  },
+  {
+    "text": "grief,",
+    "start": 102.74,
+    "end": 103.12
+  },
+  {
+    "text": "loneliness,",
+    "start": 103.56,
+    "end": 104.18
+  },
+  {
+    "text": "a",
+    "start": 104.56,
+    "end": 104.62
+  },
+  {
+    "text": "recent",
+    "start": 104.7,
+    "end": 105.06
+  },
+  {
+    "text": "loss.",
+    "start": 105.14,
+    "end": 105.52
+  },
+  {
+    "text": "Not",
+    "start": 106.36,
+    "end": 106.54
+  },
+  {
+    "text": "because",
+    "start": 106.58,
+    "end": 106.94
+  },
+  {
+    "text": "vulnerable",
+    "start": 107,
+    "end": 107.42
+  },
+  {
+    "text": "people",
+    "start": 107.52,
+    "end": 107.82
+  },
+  {
+    "text": "are",
+    "start": 107.86,
+    "end": 107.96
+  },
+  {
+    "text": "less",
+    "start": 108,
+    "end": 108.2
+  },
+  {
+    "text": "intelligent,",
+    "start": 108.24,
+    "end": 108.92
+  },
+  {
+    "text": "but",
+    "start": 109.44,
+    "end": 109.56
+  },
+  {
+    "text": "because",
+    "start": 109.62,
+    "end": 109.96
+  },
+  {
+    "text": "the",
+    "start": 110,
+    "end": 110.1
+  },
+  {
+    "text": "instant",
+    "start": 110.24,
+    "end": 110.64
+  },
+  {
+    "text": "intimacy",
+    "start": 110.8,
+    "end": 111.32
+  },
+  {
+    "text": "tactic",
+    "start": 111.4,
+    "end": 112.06
+  },
+  {
+    "text": "lands",
+    "start": 112.08,
+    "end": 112.44
+  },
+  {
+    "text": "harder",
+    "start": 112.46,
+    "end": 112.84
+  },
+  {
+    "text": "on",
+    "start": 112.9,
+    "end": 113.04
+  },
+  {
+    "text": "someone",
+    "start": 113.1,
+    "end": 113.48
+  },
+  {
+    "text": "who's",
+    "start": 113.64,
+    "end": 113.92
+  },
+  {
+    "text": "actively",
+    "start": 114.02,
+    "end": 114.43
+  },
+  {
+    "text": "hungry",
+    "start": 114.52,
+    "end": 114.92
+  },
+  {
+    "text": "for",
+    "start": 115.24,
+    "end": 115.36
+  },
+  {
+    "text": "exactly",
+    "start": 115.38,
+    "end": 115.92
+  },
+  {
+    "text": "the",
+    "start": 115.96,
+    "end": 116.06
+  },
+  {
+    "text": "connection",
+    "start": 116.1,
+    "end": 116.6
+  },
+  {
+    "text": "being",
+    "start": 116.66,
+    "end": 116.84
+  },
+  {
+    "text": "performed.",
+    "start": 116.94,
+    "end": 117.48
+  },
+  {
+    "text": "Konnikova's",
+    "start": 118.5,
+    "end": 119.1
+  },
+  {
+    "text": "research",
+    "start": 119.14,
+    "end": 119.64
+  },
+  {
+    "text": "also",
+    "start": 119.98,
+    "end": 120.26
+  },
+  {
+    "text": "points",
+    "start": 120.38,
+    "end": 120.64
+  },
+  {
+    "text": "to",
+    "start": 120.68,
+    "end": 120.8
+  },
+  {
+    "text": "something",
+    "start": 120.84,
+    "end": 121.15
+  },
+  {
+    "text": "counterintuitive.",
+    "start": 121.26,
+    "end": 122.18
+  },
+  {
+    "text": "The",
+    "start": 122.82,
+    "end": 122.94
+  },
+  {
+    "text": "marks",
+    "start": 122.98,
+    "end": 123.3
+  },
+  {
+    "text": "who",
+    "start": 123.34,
+    "end": 123.42
+  },
+  {
+    "text": "get",
+    "start": 123.48,
+    "end": 123.62
+  },
+  {
+    "text": "taken",
+    "start": 123.72,
+    "end": 124.02
+  },
+  {
+    "text": "most",
+    "start": 124.08,
+    "end": 124.26
+  },
+  {
+    "text": "completely",
+    "start": 124.34,
+    "end": 124.9
+  },
+  {
+    "text": "are",
+    "start": 125.36,
+    "end": 125.48
+  },
+  {
+    "text": "often",
+    "start": 125.54,
+    "end": 125.82
+  },
+  {
+    "text": "not",
+    "start": 125.86,
+    "end": 126.08
+  },
+  {
+    "text": "naive",
+    "start": 126.12,
+    "end": 126.46
+  },
+  {
+    "text": "people",
+    "start": 126.56,
+    "end": 126.88
+  },
+  {
+    "text": "meeting",
+    "start": 127.26,
+    "end": 127.5
+  },
+  {
+    "text": "their",
+    "start": 127.62,
+    "end": 127.74
+  },
+  {
+    "text": "first",
+    "start": 127.75,
+    "end": 128.039
+  },
+  {
+    "text": "stranger.",
+    "start": 128.06,
+    "end": 128.52
+  },
+  {
+    "text": "They're",
+    "start": 129.44,
+    "end": 129.64
+  },
+  {
+    "text": "frequently",
+    "start": 129.68,
+    "end": 130.199
+  },
+  {
+    "text": "intelligent,",
+    "start": 130.24,
+    "end": 130.92
+  },
+  {
+    "text": "socially",
+    "start": 131.3,
+    "end": 131.74
+  },
+  {
+    "text": "confident",
+    "start": 131.78,
+    "end": 132.3
+  },
+  {
+    "text": "people",
+    "start": 132.34,
+    "end": 133.1
+  },
+  {
+    "text": "who",
+    "start": 133.14,
+    "end": 133.28
+  },
+  {
+    "text": "pride",
+    "start": 133.32,
+    "end": 133.56
+  },
+  {
+    "text": "themselves",
+    "start": 133.6,
+    "end": 134.46
+  },
+  {
+    "text": "on",
+    "start": 134.52,
+    "end": 134.66
+  },
+  {
+    "text": "being",
+    "start": 134.7,
+    "end": 134.97
+  },
+  {
+    "text": "good",
+    "start": 135,
+    "end": 135.2
+  },
+  {
+    "text": "judges",
+    "start": 135.24,
+    "end": 135.58
+  },
+  {
+    "text": "of",
+    "start": 135.62,
+    "end": 135.74
+  },
+  {
+    "text": "character,",
+    "start": 135.78,
+    "end": 136.25
+  },
+  {
+    "text": "which",
+    "start": 136.94,
+    "end": 137.12
+  },
+  {
+    "text": "makes",
+    "start": 137.16,
+    "end": 137.38
+  },
+  {
+    "text": "them,",
+    "start": 137.4,
+    "end": 137.6
+  },
+  {
+    "text": "ironically,",
+    "start": 137.92,
+    "end": 138.54
+  },
+  {
+    "text": "more",
+    "start": 139.02,
+    "end": 139.22
+  },
+  {
+    "text": "willing",
+    "start": 139.26,
+    "end": 139.52
+  },
+  {
+    "text": "to",
+    "start": 139.62,
+    "end": 139.72
+  },
+  {
+    "text": "trust",
+    "start": 139.78,
+    "end": 140.08
+  },
+  {
+    "text": "their",
+    "start": 140.12,
+    "end": 140.3
+  },
+  {
+    "text": "own",
+    "start": 140.36,
+    "end": 140.58
+  },
+  {
+    "text": "snap",
+    "start": 140.66,
+    "end": 140.92
+  },
+  {
+    "text": "read",
+    "start": 140.98,
+    "end": 141.16
+  },
+  {
+    "text": "of",
+    "start": 141.18,
+    "end": 141.26
+  },
+  {
+    "text": "a",
+    "start": 141.3,
+    "end": 141.32
+  },
+  {
+    "text": "situation",
+    "start": 141.42,
+    "end": 142.08
+  },
+  {
+    "text": "and",
+    "start": 142.58,
+    "end": 142.68
+  },
+  {
+    "text": "less",
+    "start": 142.74,
+    "end": 142.94
+  },
+  {
+    "text": "likely",
+    "start": 143,
+    "end": 143.4
+  },
+  {
+    "text": "to",
+    "start": 143.46,
+    "end": 143.58
+  },
+  {
+    "text": "slow",
+    "start": 143.62,
+    "end": 143.86
+  },
+  {
+    "text": "down",
+    "start": 143.88,
+    "end": 144.6
+  },
+  {
+    "text": "and",
+    "start": 144.64,
+    "end": 144.73
+  },
+  {
+    "text": "apply",
+    "start": 144.8,
+    "end": 145.14
+  },
+  {
+    "text": "outside",
+    "start": 145.22,
+    "end": 145.64
+  },
+  {
+    "text": "scrutiny",
+    "start": 145.72,
+    "end": 146.56
+  },
+  {
+    "text": "to",
+    "start": 146.6,
+    "end": 146.68
+  },
+  {
+    "text": "a",
+    "start": 146.72,
+    "end": 146.82
+  },
+  {
+    "text": "feeling",
+    "start": 146.84,
+    "end": 147.18
+  },
+  {
+    "text": "they're",
+    "start": 147.22,
+    "end": 147.38
+  },
+  {
+    "text": "used",
+    "start": 147.46,
+    "end": 147.65
+  },
+  {
+    "text": "to",
+    "start": 147.72,
+    "end": 147.78
+  },
+  {
+    "text": "trusting.",
+    "start": 147.84,
+    "end": 148.32
+  },
+  {
+    "text": "Confidence",
+    "start": 148.88,
+    "end": 149.44
+  },
+  {
+    "text": "in",
+    "start": 149.6,
+    "end": 149.67
+  },
+  {
+    "text": "your",
+    "start": 149.74,
+    "end": 149.9
+  },
+  {
+    "text": "own",
+    "start": 149.94,
+    "end": 150.1
+  },
+  {
+    "text": "instincts",
+    "start": 150.2,
+    "end": 150.74
+  },
+  {
+    "text": "is",
+    "start": 151.14,
+    "end": 151.26
+  },
+  {
+    "text": "exactly",
+    "start": 151.28,
+    "end": 151.78
+  },
+  {
+    "text": "what",
+    "start": 151.86,
+    "end": 151.96
+  },
+  {
+    "text": "a",
+    "start": 152,
+    "end": 152.08
+  },
+  {
+    "text": "confidence",
+    "start": 152.14,
+    "end": 152.64
+  },
+  {
+    "text": "game",
+    "start": 152.72,
+    "end": 152.96
+  },
+  {
+    "text": "is",
+    "start": 153,
+    "end": 153.12
+  },
+  {
+    "text": "named",
+    "start": 153.18,
+    "end": 153.44
+  },
+  {
+    "text": "for",
+    "start": 153.5,
+    "end": 153.7
+  },
+  {
+    "text": "and",
+    "start": 154.28,
+    "end": 154.38
+  },
+  {
+    "text": "exactly",
+    "start": 154.44,
+    "end": 154.94
+  },
+  {
+    "text": "what",
+    "start": 155.02,
+    "end": 155.12
+  },
+  {
+    "text": "it's",
+    "start": 155.16,
+    "end": 155.36
+  },
+  {
+    "text": "built",
+    "start": 155.38,
+    "end": 155.62
+  },
+  {
+    "text": "to",
+    "start": 155.66,
+    "end": 155.76
+  },
+  {
+    "text": "exploit.",
+    "start": 155.8,
+    "end": 156.34
+  }
+]

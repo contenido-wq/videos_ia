@@ -1,0 +1,1195 @@
+1
+00:00:00,259 --> 00:00:03,659
+A nineteen-year-old college dropout convinced some of the
+
+2
+00:00:03,720 --> 00:00:06,379
+most powerful men in America that she had
+
+3
+00:00:06,460 --> 00:00:09,559
+reinvented medicine. Cabinet secretaries,
+
+4
+00:00:10,000 --> 00:00:13,420
+four-star generals, media titans, all of
+
+5
+00:00:13,460 --> 00:00:16,040
+them stood behind her, and almost none of
+
+6
+00:00:16,079 --> 00:00:18,839
+them understood the technology they were vouching for.
+
+7
+00:00:19,420 --> 00:00:21,899
+This is the psychology of a nine billion
+
+8
+00:00:21,939 --> 00:00:24,879
+dollar company built on a machine that never
+
+9
+00:00:24,939 --> 00:00:27,730
+worked. This is Shadow Figure. In
+
+10
+00:00:27,770 --> 00:00:31,270
+2003, a nineteen-year-old Stanford sophomore
+
+11
+00:00:31,310 --> 00:00:34,260
+named Elizabeth Holmes dropped out to found a
+
+12
+00:00:34,290 --> 00:00:37,400
+company called Theranos. Her promise was
+
+13
+00:00:37,510 --> 00:00:40,530
+simple, and it was enormous: a machine
+
+14
+00:00:41,130 --> 00:00:43,630
+small enough to sit on a countertop that
+
+15
+00:00:43,670 --> 00:00:46,170
+could run hundreds of medical tests from a
+
+16
+00:00:46,230 --> 00:00:48,950
+single drop of blood pricked from a fingertip.
+
+17
+00:00:49,450 --> 00:00:52,790
+No needles, no vials, no waiting days for
+
+18
+00:00:52,830 --> 00:00:56,140
+a lab. By 2014, Theranos was
+
+19
+00:00:56,170 --> 00:00:59,310
+valued at nine billion dollars. Holmes was on
+
+20
+00:00:59,350 --> 00:01:02,220
+the cover of magazines, compared to Steve Jobs,
+
+21
+00:01:02,650 --> 00:01:05,130
+dressing every single day in the same black
+
+22
+00:01:05,230 --> 00:01:08,490
+turtleneck he made famous. She spoke in an
+
+23
+00:01:08,530 --> 00:01:11,939
+unusually low, deliberate voice that colleagues would
+
+24
+00:01:11,970 --> 00:01:15,050
+later say she performed, dropping it well below
+
+25
+00:01:15,090 --> 00:01:18,530
+her natural register whenever cameras or investors
+
+26
+00:01:18,590 --> 00:01:21,090
+were in the room. The company partnered with
+
+27
+00:01:21,130 --> 00:01:24,010
+Walgreens to roll its testing out into retail
+
+28
+00:01:24,110 --> 00:01:27,310
+pharmacies across the country. Investors poured
+
+29
+00:01:27,370 --> 00:01:30,790
+in over seven hundred million dollars. The board
+
+30
+00:01:30,830 --> 00:01:33,990
+of directors included two former US Secretaries of
+
+31
+00:01:34,050 --> 00:01:37,190
+State, a former Secretary of Defense, a
+
+32
+00:01:37,290 --> 00:01:40,510
+former admiral, and a sitting US senator's father,
+
+33
+00:01:41,110 --> 00:01:44,430
+an extraordinary collection of American power, almost
+
+34
+00:01:44,490 --> 00:01:46,610
+none of whom had a background in laboratory
+
+35
+00:01:46,710 --> 00:01:50,090
+science or medical diagnostics. The machine,
+
+36
+00:01:50,610 --> 00:01:53,870
+internally called the Edison, did not work. It
+
+37
+00:01:53,910 --> 00:01:56,730
+could reliably run only a small handful of
+
+38
+00:01:56,770 --> 00:01:59,210
+the hundreds of tests Theranos claimed it could
+
+39
+00:01:59,230 --> 00:02:01,580
+perform, and even those results were
+
+40
+00:02:01,610 --> 00:02:05,110
+inconsistent. Behind the scenes, the company
+
+41
+00:02:05,150 --> 00:02:08,360
+was secretly running most patient samples on modified
+
+42
+00:02:08,450 --> 00:02:11,370
+commercial blood analyzers bought from an outside
+
+43
+00:02:11,410 --> 00:02:14,830
+manufacturer, the very machines Theranos told
+
+44
+00:02:14,870 --> 00:02:17,590
+the world it had made obsolete. To make
+
+45
+00:02:17,600 --> 00:02:20,180
+the small volume of finger-stick blood work on
+
+46
+00:02:20,210 --> 00:02:23,650
+those standard machines at all, samples reportedly
+
+47
+00:02:23,750 --> 00:02:26,890
+had to be diluted, a workaround that degraded
+
+48
+00:02:26,900 --> 00:02:29,570
+the accuracy of results being sent back to
+
+49
+00:02:29,610 --> 00:02:32,450
+real patients, making real medical decisions.
+
+50
+00:02:32,990 --> 00:02:36,320
+Real patients received real results from a machine
+
+51
+00:02:36,370 --> 00:02:39,470
+that didn't work as advertised on medical tests
+
+52
+00:02:39,870 --> 00:02:43,290
+used to make real healthcare decisions. Theranos had
+
+53
+00:02:43,370 --> 00:02:46,510
+operated in near total secrecy for years
+
+54
+00:02:46,750 --> 00:02:49,790
+before any of this became public. The company
+
+55
+00:02:50,150 --> 00:02:53,270
+avoided detailed technical scrutiny by framing
+
+56
+00:02:53,310 --> 00:02:56,740
+itself as protecting trade secrets, even from
+
+57
+00:02:56,750 --> 00:02:59,450
+the doctors and regulators who might have caught
+
+58
+00:02:59,490 --> 00:03:02,970
+the problem early. The retail rollout with Walgreens
+
+59
+00:03:03,350 --> 00:03:06,310
+eventually reached dozens of stores across Arizona,
+
+60
+00:03:06,850 --> 00:03:09,510
+meaning ordinary people were walking in off the
+
+61
+00:03:09,630 --> 00:03:13,090
+street to get tested on unproven technology
+
+62
+00:03:13,150 --> 00:03:15,230
+with no idea any of this was in
+
+63
+00:03:15,290 --> 00:03:18,493
+question. The first law: build a story
+
+64
+00:03:18,573 --> 00:03:21,533
+so compelling that people stop evaluating the
+
+65
+00:03:21,573 --> 00:03:24,313
+technology and start evaluating the myth.
+
+66
+00:03:24,833 --> 00:03:27,813
+Holmes didn't pitch a blood testing device. She
+
+67
+00:03:27,833 --> 00:03:30,383
+pitched a mission. Nobody should have to say
+
+68
+00:03:30,473 --> 00:03:32,983
+goodbye to a loved one too early because
+
+69
+00:03:33,013 --> 00:03:35,933
+a disease was caught too late. She dressed
+
+70
+00:03:35,993 --> 00:03:39,153
+like Steve Jobs, adopted his all-black uniform,
+
+71
+00:03:39,693 --> 00:03:42,733
+and by multiple former colleagues' accounts, trained
+
+72
+00:03:42,773 --> 00:03:45,613
+herself into a deeper voice that made her
+
+73
+00:03:45,623 --> 00:03:49,113
+sound more authoritative, more certain, more like
+
+74
+00:03:49,153 --> 00:03:52,453
+the visionary founders investors were primed to bet
+
+75
+00:03:52,553 --> 00:03:55,253
+on. This works because venture
+
+76
+00:03:55,293 --> 00:03:58,273
+capital at the highest levels is not
+
+77
+00:03:58,313 --> 00:04:01,663
+primarily a technical evaluation. It is a
+
+78
+00:04:01,673 --> 00:04:05,173
+bet on a person and a narrative. Investors
+
+79
+00:04:05,183 --> 00:04:08,263
+were not funding a diagnostic machine. They were
+
+80
+00:04:08,293 --> 00:04:11,233
+funding the next Apple, the next world-changing
+
+81
+00:04:11,273 --> 00:04:14,653
+founder. And once that story takes hold, the
+
+82
+00:04:14,733 --> 00:04:17,933
+actual product becomes almost secondary to the
+
+83
+00:04:17,993 --> 00:04:21,032
+myth built around the person presenting it. The
+
+84
+00:04:21,073 --> 00:04:24,413
+more emotionally compelling the mission, the less anyone
+
+85
+00:04:24,453 --> 00:04:26,113
+wants to be the one who asks the
+
+86
+00:04:26,173 --> 00:04:29,573
+unglamorous, deflating question: Does the machine
+
+87
+00:04:29,653 --> 00:04:33,093
+actually work? Former employees and journalists
+
+88
+00:04:33,133 --> 00:04:35,993
+who covered her described an almost unnerving
+
+89
+00:04:36,053 --> 00:04:39,353
+intensity in meetings, long, unblinking
+
+90
+00:04:39,433 --> 00:04:42,293
+eye contact held for uncomfortable stretches,
+
+91
+00:04:43,013 --> 00:04:46,273
+a calm certainty that never wavered even when
+
+92
+00:04:46,313 --> 00:04:49,263
+pressed on specifics. Investors and
+
+93
+00:04:49,333 --> 00:04:52,743
+reporters have called it a reality distortion field,
+
+94
+00:04:53,313 --> 00:04:56,163
+the same phrase originally used for Steve Jobs.
+
+95
+00:04:56,743 --> 00:05:00,133
+The sense that in her presence, skepticism
+
+96
+00:05:00,173 --> 00:05:03,253
+felt not just unwelcome but slightly embarrassing,
+
+97
+00:05:03,733 --> 00:05:06,373
+as if doubting the mission revealed a failure
+
+98
+00:05:06,433 --> 00:05:09,733
+of imagination on the doubter's part rather than
+
+99
+00:05:09,813 --> 00:05:13,089
+a reasonable question about the technology. The
+
+100
+00:05:13,189 --> 00:05:15,649
+second law, and you've seen this one before,
+
+101
+00:05:16,349 --> 00:05:18,989
+borrow legitimacy from people who have plenty of
+
+102
+00:05:19,049 --> 00:05:21,529
+it, but not necessarily in your field.
+
+103
+00:05:22,529 --> 00:05:25,969
+Theranos' board read like a cabinet reunion. Two
+
+104
+00:05:26,029 --> 00:05:28,890
+former US Secretaries of State, a former
+
+105
+00:05:29,009 --> 00:05:31,849
+Secretary of Defense, a former head of the
+
+106
+00:05:31,970 --> 00:05:35,269
+Centers for Disease Control, a retired admiral.
+
+107
+00:05:36,109 --> 00:05:39,569
+Extraordinary credentials, real power, real
+
+108
+00:05:39,630 --> 00:05:43,029
+trust built over real careers. Almost none of
+
+109
+00:05:43,069 --> 00:05:46,389
+it in biochemistry, clinical laboratory science,
+
+110
+00:05:46,849 --> 00:05:49,990
+or medical devices. That distinction rarely
+
+111
+00:05:50,049 --> 00:05:53,189
+mattered to outsiders. A journalist, an
+
+112
+00:05:53,249 --> 00:05:56,490
+investor, a potential partner looking at that
+
+113
+00:05:56,569 --> 00:06:00,029
+board saw gravitas, not gaps. The
+
+114
+00:06:00,089 --> 00:06:03,209
+names did the vouching. Nobody stopped to ask
+
+115
+00:06:03,249 --> 00:06:06,130
+whether a former Secretary of State was actually
+
+116
+00:06:06,189 --> 00:06:09,589
+positioned to evaluate whether a blood testing chip
+
+117
+00:06:09,650 --> 00:06:13,009
+met clinical accuracy standards, because that was
+
+118
+00:06:13,089 --> 00:06:15,589
+never really the question the board's presence was
+
+119
+00:06:15,669 --> 00:06:19,010
+answering. It was answering a simpler, older
+
+120
+00:06:19,089 --> 00:06:22,249
+question: Can this person be trusted? And the
+
+121
+00:06:22,349 --> 00:06:25,429
+answer, wrapped in that many decades of institutional
+
+122
+00:06:25,489 --> 00:06:28,509
+prestige, was yes, long before any of the
+
+123
+00:06:28,609 --> 00:06:31,789
+actual science was independently verified. When
+
+124
+00:06:31,849 --> 00:06:34,089
+statesmen of that stature agree to sit on
+
+125
+00:06:34,129 --> 00:06:37,429
+your board, journalists take notice, and coverage
+
+126
+00:06:37,489 --> 00:06:40,769
+follows a predictable shape. Profiles that describe the
+
+127
+00:06:40,830 --> 00:06:43,769
+company through the lens of who's involved, not
+
+128
+00:06:43,809 --> 00:06:47,029
+what's been independently tested. That's the real
+
+129
+00:06:47,089 --> 00:06:50,389
+mechanism of borrowed legitimacy. It doesn't just
+
+130
+00:06:50,470 --> 00:06:53,330
+reassure the people in the room, it reshapes
+
+131
+00:06:53,369 --> 00:06:56,049
+the public story about the company before a
+
+132
+00:06:56,109 --> 00:06:59,199
+single regulator has weighed in. The third law:
+
+133
+00:06:59,879 --> 00:07:01,960
+If no single person can see the whole
+
+134
+00:07:02,039 --> 00:07:04,839
+picture, no single person can raise the whole
+
+135
+00:07:04,919 --> 00:07:07,859
+alarm. Theranos ran on secrecy
+
+136
+00:07:08,359 --> 00:07:11,560
+that went far beyond normal trade secret protection.
+
+137
+00:07:12,239 --> 00:07:15,560
+Employees were organized into isolated silos
+
+138
+00:07:16,019 --> 00:07:19,400
+and discouraged from talking across teams about what
+
+139
+00:07:19,459 --> 00:07:22,939
+they were actually working on. Engineers who built
+
+140
+00:07:22,999 --> 00:07:25,900
+software didn't know what the chemists were struggling
+
+141
+00:07:25,959 --> 00:07:29,039
+with. The people running patient samples on
+
+142
+00:07:29,119 --> 00:07:32,519
+secretly modified commercial machines were kept separate
+
+143
+00:07:32,560 --> 00:07:35,979
+from the people publicly claiming the proprietary Edison
+
+144
+00:07:36,039 --> 00:07:38,699
+device was doing the work. This is a
+
+145
+00:07:38,779 --> 00:07:41,959
+structural form of manipulation, not just a verbal
+
+146
+00:07:42,060 --> 00:07:45,359
+one. When information is compartmentalized tightly
+
+147
+00:07:45,420 --> 00:07:48,819
+enough, honest employees can each hold one
+
+148
+00:07:48,900 --> 00:07:51,479
+true piece of a puzzle without ever seeing
+
+149
+00:07:51,519 --> 00:07:54,579
+the picture it forms. A person who only
+
+150
+00:07:54,639 --> 00:07:57,740
+sees their own narrow slice can reasonably believe
+
+151
+00:07:57,779 --> 00:08:00,459
+the company is fine, because from where they
+
+152
+00:08:00,519 --> 00:08:02,919
+sit, they have no evidence otherwise.
+
+153
+00:08:03,620 --> 00:08:06,999
+Deception at this scale usually isn't sustained
+
+154
+00:08:07,059 --> 00:08:09,919
+by one big lie told to everyone. It's
+
+155
+00:08:09,940 --> 00:08:13,139
+sustained by a hundred small, true-sounding partial
+
+156
+00:08:13,199 --> 00:08:16,419
+pictures, each one incomplete in a different
+
+157
+00:08:16,499 --> 00:08:19,639
+way. Former employees have described entire
+
+158
+00:08:19,760 --> 00:08:22,479
+areas of the company's offices walled off under
+
+159
+00:08:22,539 --> 00:08:25,879
+internal code names, accessible only to specific
+
+160
+00:08:25,919 --> 00:08:29,339
+badge holders, where questions from anyone outside that
+
+161
+00:08:29,379 --> 00:08:32,799
+team were deflected as confidentiality rather than
+
+162
+00:08:32,900 --> 00:08:35,479
+answered. You can work at a company for
+
+163
+00:08:35,539 --> 00:08:38,919
+years, believe genuinely in what you're building, and
+
+164
+00:08:38,999 --> 00:08:41,279
+still never be shown the one room where
+
+165
+00:08:41,319 --> 00:08:44,193
+the actual problem lives. The fourth law:
+
+166
+00:08:44,733 --> 00:08:47,793
+make dissent cost more than silence. When
+
+167
+00:08:47,873 --> 00:08:51,353
+employees raised concerns internally about inaccurate
+
+168
+00:08:51,433 --> 00:08:54,133
+test results, they were met not with an
+
+169
+00:08:54,193 --> 00:08:57,373
+internal investigation, but with the company's legal
+
+170
+00:08:57,494 --> 00:09:00,753
+team. Tyler Schultz, a young employee who
+
+171
+00:09:00,873 --> 00:09:02,973
+happened to be the grandson of board member
+
+172
+00:09:03,093 --> 00:09:05,793
+George Schultz, raised concerns about test
+
+173
+00:09:05,893 --> 00:09:09,273
+accuracy in twenty fourteen and was pursued with
+
+174
+00:09:09,353 --> 00:09:12,173
+such aggressive legal threats that his own family
+
+175
+00:09:12,213 --> 00:09:15,393
+was pulled into the conflict. Another employee,
+
+176
+00:09:15,813 --> 00:09:18,713
+Erika Cheung, faced the same intimidation.
+
+177
+00:09:19,593 --> 00:09:22,553
+This is one of the clearest markers separating
+
+178
+00:09:22,613 --> 00:09:24,994
+an honest mistake from a deliberate
+
+179
+00:09:25,073 --> 00:09:28,174
+cover-up: how an organization treats the
+
+180
+00:09:28,233 --> 00:09:31,693
+person who raises their hand. A company
+
+181
+00:09:31,753 --> 00:09:34,713
+confident in its own numbers investigates a
+
+182
+00:09:34,753 --> 00:09:37,973
+complaint. A company protecting a lie
+
+183
+00:09:38,073 --> 00:09:40,713
+escalates straight to lawyers, non-disclosure
+
+184
+00:09:40,813 --> 00:09:43,693
+agreements, and the implicit threat of ruining the
+
+185
+00:09:43,753 --> 00:09:46,293
+person who spoke up. When the response to,
+
+186
+00:09:46,633 --> 00:09:50,053
+"I think something's wrong," is legal aggression instead
+
+187
+00:09:50,093 --> 00:09:53,393
+of curiosity, that response is itself the
+
+188
+00:09:53,473 --> 00:09:56,853
+evidence. Tyler Schultz's situation was especially
+
+189
+00:09:56,953 --> 00:10:00,433
+brutal because of who his grandfather was. George
+
+190
+00:10:00,514 --> 00:10:03,773
+Schultz, a former US Secretary of State, sat
+
+191
+00:10:03,813 --> 00:10:07,154
+on Theranos's board and, by multiple accounts,
+
+192
+00:10:07,533 --> 00:10:10,153
+initially took the company's side over his own
+
+193
+00:10:10,253 --> 00:10:13,513
+grandson's. A family relationship strained for
+
+194
+00:10:13,633 --> 00:10:16,353
+years over which version of the story he
+
+195
+00:10:16,393 --> 00:10:19,613
+chose to believe. That's how far the intimidation
+
+196
+00:10:19,713 --> 00:10:22,633
+extended. It didn't just target employees
+
+197
+00:10:22,673 --> 00:10:25,873
+directly, it reached into their families and
+
+198
+00:10:25,913 --> 00:10:28,573
+tested loyalties that had nothing to do with
+
+199
+00:10:28,654 --> 00:10:31,109
+blood testing at all. In October
+
+200
+00:10:31,289 --> 00:10:34,629
+2015, Wall Street Journal reporter John
+
+201
+00:10:34,669 --> 00:10:38,139
+Carreyrou published an investigation built on
+
+202
+00:10:38,169 --> 00:10:41,509
+those same whistleblowers accounts, revealing
+
+203
+00:10:41,519 --> 00:10:44,389
+that Theranos was running the vast majority of
+
+204
+00:10:44,429 --> 00:10:47,459
+its tests on outside machines while
+
+205
+00:10:47,489 --> 00:10:50,989
+marketing a proprietary technology that barely
+
+206
+00:10:51,089 --> 00:10:54,369
+functioned. Regulators followed. Federal
+
+207
+00:10:54,449 --> 00:10:57,849
+inspectors found the company's clinical lab posed immediate
+
+208
+00:10:57,929 --> 00:11:01,009
+risk to patient health. Walgreens ended the
+
+209
+00:11:01,029 --> 00:11:03,969
+partnership. The nine billion dollar valuation
+
+210
+00:11:04,349 --> 00:11:07,489
+collapsed toward zero within about a year. In
+
+211
+00:11:07,649 --> 00:11:10,749
+2018, the Securities and Exchange Commission
+
+212
+00:11:10,819 --> 00:11:14,029
+charged Holmes with massive fraud. In January
+
+213
+00:11:14,289 --> 00:11:17,689
+2022, a federal jury convicted her on
+
+214
+00:11:17,749 --> 00:11:21,089
+four counts of defrauding investors. She was sentenced
+
+215
+00:11:21,129 --> 00:11:23,429
+to more than eleven years in federal prison
+
+216
+00:11:23,869 --> 00:11:26,809
+and began serving that sentence in 2023.
+
+217
+00:11:27,509 --> 00:11:30,929
+Her former partner and the company's president, Sunny
+
+218
+00:11:30,949 --> 00:11:34,309
+Balwani, was convicted separately and received a
+
+219
+00:11:34,349 --> 00:11:37,609
+comparable sentence. The damage wasn't contained to
+
+220
+00:11:37,649 --> 00:11:40,829
+investors who could absorb the loss. Real patients
+
+221
+00:11:40,929 --> 00:11:43,769
+had made real medical decisions based on blood
+
+222
+00:11:43,849 --> 00:11:47,169
+tests the company knew, internally, it could not
+
+223
+00:11:47,229 --> 00:11:50,449
+reliably perform. Forbes had once listed
+
+224
+00:11:50,489 --> 00:11:53,749
+Holmes as the youngest self-made female billionaire in
+
+225
+00:11:53,809 --> 00:11:56,929
+America, estimating her stake at four and a
+
+226
+00:11:57,009 --> 00:12:00,429
+half billion dollars. By 2016, the
+
+227
+00:12:00,489 --> 00:12:03,939
+magazine revised that estimate to zero. Federal
+
+228
+00:12:04,029 --> 00:12:07,449
+health inspectors found deficiencies at Theranos's lab
+
+229
+00:12:07,769 --> 00:12:10,669
+serious enough to pose immediate jeopardy to patient
+
+230
+00:12:10,749 --> 00:12:14,209
+safety, and the company's clinical lab license was
+
+231
+00:12:14,249 --> 00:12:17,369
+effectively revoked. Holmes and Balwani's
+
+232
+00:12:17,469 --> 00:12:20,869
+criminal trials, years later, ran on largely the
+
+233
+00:12:20,909 --> 00:12:24,069
+same whistleblower testimony that had first surfaced in
+
+234
+00:12:24,229 --> 00:12:27,649
+2015, the same warnings that had once been
+
+235
+00:12:27,749 --> 00:12:30,389
+answered with lawyers instead of lab audits.
+
+236
+00:12:31,130 --> 00:12:33,910
+Here's what actually matters to you watching this
+
+237
+00:12:33,970 --> 00:12:37,430
+now. Not protection from Elizabeth Holmes, who is
+
+238
+00:12:37,510 --> 00:12:40,270
+already in prison, but from the next founder,
+
+239
+00:12:40,670 --> 00:12:43,710
+leader, or partner running this same structure
+
+240
+00:12:44,090 --> 00:12:47,430
+under a different mission statement. These four levers
+
+241
+00:12:47,530 --> 00:12:50,630
+reinforce each other on purpose. A compelling
+
+242
+00:12:50,790 --> 00:12:53,710
+visionary narrative earns your emotional buy-in
+
+243
+00:12:54,070 --> 00:12:57,470
+before the facts are checked. Borrowed legitimacy from
+
+244
+00:12:57,630 --> 00:13:00,970
+unrelated but impressive names tells you not to
+
+245
+00:13:01,010 --> 00:13:04,470
+check them. Compartmentalized secrecy makes
+
+246
+00:13:04,530 --> 00:13:07,960
+sure no single insider ever has enough of
+
+247
+00:13:07,990 --> 00:13:11,010
+the picture to blow the whistle alone, and
+
+248
+00:13:11,030 --> 00:13:14,450
+aggressive silencing of dissent raises the personal
+
+249
+00:13:14,510 --> 00:13:17,470
+cost of being the one who tries anyway.
+
+250
+00:13:18,170 --> 00:13:20,430
+The habit that cuts through all four is
+
+251
+00:13:20,490 --> 00:13:23,650
+uncomfortable but simple. Ask to see the
+
+252
+00:13:23,770 --> 00:13:27,090
+failure cases, not the success story. Not
+
+253
+00:13:27,150 --> 00:13:29,430
+tell me about your biggest win, but show
+
+254
+00:13:29,450 --> 00:13:31,680
+me the data from when this didn't work
+
+255
+00:13:32,010 --> 00:13:35,510
+and what you changed. A legitimate operation has
+
+256
+00:13:35,570 --> 00:13:38,690
+failure data and a process for handling it.
+
+257
+00:13:38,750 --> 00:13:40,930
+An operation built on a myth has only
+
+258
+00:13:41,030 --> 00:13:44,400
+the myth, defended a little more aggressively every
+
+259
+00:13:44,430 --> 00:13:47,450
+time someone asks to see underneath it. It's
+
+260
+00:13:47,490 --> 00:13:49,390
+worth sitting with how long this took to
+
+261
+00:13:49,430 --> 00:13:52,630
+unravel, given how many smart, credentialed
+
+262
+00:13:52,670 --> 00:13:55,350
+people were in the room. Board members with
+
+263
+00:13:55,390 --> 00:13:58,730
+decades of government experience, investors who had
+
+264
+00:13:58,750 --> 00:14:02,250
+funded dozens of companies before. None of that
+
+265
+00:14:02,310 --> 00:14:05,410
+expertise mattered much because expertise in one
+
+266
+00:14:05,430 --> 00:14:08,810
+domain doesn't automatically transfer to another. A
+
+267
+00:14:08,830 --> 00:14:11,770
+brilliant former Secretary of State is not thereby
+
+268
+00:14:11,790 --> 00:14:14,210
+equipped to catch a flawed blood assay, and
+
+269
+00:14:14,270 --> 00:14:17,190
+a seasoned venture investor is not thereby equipped
+
+270
+00:14:17,230 --> 00:14:20,550
+to catch a fabricated demo. Borrowed credibility
+
+271
+00:14:20,630 --> 00:14:23,930
+only works because we assume competence travels between
+
+272
+00:14:23,990 --> 00:14:27,170
+fields it was never actually tested in. This
+
+273
+00:14:27,250 --> 00:14:30,370
+isn't unique to biotech startups. The same
+
+274
+00:14:30,450 --> 00:14:33,290
+pattern shows up in any leader who asks
+
+275
+00:14:33,350 --> 00:14:35,390
+you to trust the vision instead of the
+
+276
+00:14:35,450 --> 00:14:38,480
+evidence, surrounds themselves with impressive
+
+277
+00:14:38,570 --> 00:14:41,950
+names from unrelated fields, keeps information
+
+278
+00:14:42,070 --> 00:14:45,530
+compartmentalized for confidentiality, and
+
+279
+00:14:45,590 --> 00:14:48,390
+treats the employee who raises a concern as
+
+280
+00:14:48,450 --> 00:14:50,990
+a problem to manage instead of a signal
+
+281
+00:14:51,030 --> 00:14:54,310
+to investigate. Notice, too, what actually
+
+282
+00:14:54,390 --> 00:14:57,330
+broke this case open. Not a regulator's routine
+
+283
+00:14:57,370 --> 00:15:00,870
+inspection, not a competitor's lawsuit, but two
+
+284
+00:15:00,930 --> 00:15:03,970
+young employees willing to risk everything they had
+
+285
+00:15:04,370 --> 00:15:06,890
+to tell a journalist the truth. The system
+
+286
+00:15:06,950 --> 00:15:09,570
+built to protect the lie had a single
+
+287
+00:15:09,590 --> 00:15:12,290
+point of failure it couldn't fully close off.
+
+288
+00:15:12,850 --> 00:15:15,950
+People with a conscience inside the walls who
+
+289
+00:15:15,990 --> 00:15:18,710
+decided the mission wasn't worth the cost of
+
+290
+00:15:18,770 --> 00:15:21,839
+staying silent. So the next time someone sells
+
+291
+00:15:21,879 --> 00:15:24,639
+you a mission so compelling that questioning the
+
+292
+00:15:24,719 --> 00:15:27,779
+mechanism feels almost disloyal, remember,
+
+293
+00:15:28,219 --> 00:15:30,880
+the story was never the evidence. It was
+
+294
+00:15:30,919 --> 00:15:34,039
+the substitute for it. Comment the word vision
+
+295
+00:15:34,079 --> 00:15:36,980
+below if you've ever caught yourself getting swept
+
+296
+00:15:37,059 --> 00:15:40,059
+up in someone's story before you'd actually seen
+
+297
+00:15:40,099 --> 00:15:42,699
+their results. And if you haven't seen our
+
+298
+00:15:42,740 --> 00:15:45,719
+first case yet, the thirty-year lie that fooled
+
+299
+00:15:45,779 --> 00:15:47,839
+Wall Street, it's waiting for you.

@@ -1,0 +1,752 @@
+[
+  {
+    "text": "You've",
+    "start": 0.28,
+    "end": 0.5
+  },
+  {
+    "text": "seen",
+    "start": 0.56,
+    "end": 0.74
+  },
+  {
+    "text": "a",
+    "start": 0.799,
+    "end": 0.819
+  },
+  {
+    "text": "version",
+    "start": 0.879,
+    "end": 1.22
+  },
+  {
+    "text": "of",
+    "start": 1.279,
+    "end": 1.379
+  },
+  {
+    "text": "this",
+    "start": 1.419,
+    "end": 1.559
+  },
+  {
+    "text": "mechanism",
+    "start": 1.62,
+    "end": 2.259
+  },
+  {
+    "text": "already",
+    "start": 2.319,
+    "end": 2.759
+  },
+  {
+    "text": "on",
+    "start": 2.819,
+    "end": 2.919
+  },
+  {
+    "text": "this",
+    "start": 2.96,
+    "end": 3.099
+  },
+  {
+    "text": "channel,",
+    "start": 3.179,
+    "end": 3.559
+  },
+  {
+    "text": "and",
+    "start": 4.059,
+    "end": 4.139
+  },
+  {
+    "text": "it",
+    "start": 4.219,
+    "end": 4.299
+  },
+  {
+    "text": "wasn't",
+    "start": 4.38,
+    "end": 4.699
+  },
+  {
+    "text": "a",
+    "start": 4.759,
+    "end": 4.799
+  },
+  {
+    "text": "romantic",
+    "start": 4.859,
+    "end": 5.359
+  },
+  {
+    "text": "relationship",
+    "start": 5.42,
+    "end": 6.039
+  },
+  {
+    "text": "at",
+    "start": 6.119,
+    "end": 6.199
+  },
+  {
+    "text": "all.",
+    "start": 6.279,
+    "end": 6.48
+  },
+  {
+    "text": "Jim",
+    "start": 7.179,
+    "end": 7.319
+  },
+  {
+    "text": "Jones's",
+    "start": 7.419,
+    "end": 7.859
+  },
+  {
+    "text": "People's",
+    "start": 7.98,
+    "end": 8.34
+  },
+  {
+    "text": "Temple,",
+    "start": 8.42,
+    "end": 8.779
+  },
+  {
+    "text": "the",
+    "start": 9.34,
+    "end": 9.439
+  },
+  {
+    "text": "subject",
+    "start": 9.5,
+    "end": 9.9
+  },
+  {
+    "text": "we",
+    "start": 9.939,
+    "end": 10.059
+  },
+  {
+    "text": "covered",
+    "start": 10.119,
+    "end": 10.46
+  },
+  {
+    "text": "in",
+    "start": 10.519,
+    "end": 10.599
+  },
+  {
+    "text": "an",
+    "start": 10.659,
+    "end": 10.76
+  },
+  {
+    "text": "earlier",
+    "start": 10.84,
+    "end": 11.139
+  },
+  {
+    "text": "episode,",
+    "start": 11.219,
+    "end": 11.739
+  },
+  {
+    "text": "didn't",
+    "start": 12.239,
+    "end": 12.5
+  },
+  {
+    "text": "recruit",
+    "start": 12.559,
+    "end": 12.939
+  },
+  {
+    "text": "people",
+    "start": 13.019,
+    "end": 13.3
+  },
+  {
+    "text": "with",
+    "start": 13.359,
+    "end": 13.52
+  },
+  {
+    "text": "threats",
+    "start": 13.579,
+    "end": 13.899
+  },
+  {
+    "text": "or",
+    "start": 13.939,
+    "end": 14.02
+  },
+  {
+    "text": "control.",
+    "start": 14.099,
+    "end": 14.619
+  },
+  {
+    "text": "It",
+    "start": 15.219,
+    "end": 15.319
+  },
+  {
+    "text": "recruited",
+    "start": 15.38,
+    "end": 15.839
+  },
+  {
+    "text": "them",
+    "start": 15.899,
+    "end": 16.079
+  },
+  {
+    "text": "with",
+    "start": 16.139,
+    "end": 16.26
+  },
+  {
+    "text": "warmth,",
+    "start": 16.359,
+    "end": 16.739
+  },
+  {
+    "text": "a",
+    "start": 17.319,
+    "end": 17.359
+  },
+  {
+    "text": "community",
+    "start": 17.42,
+    "end": 17.959
+  },
+  {
+    "text": "that",
+    "start": 18.02,
+    "end": 18.139
+  },
+  {
+    "text": "made",
+    "start": 18.219,
+    "end": 18.379
+  },
+  {
+    "text": "newcomers",
+    "start": 18.479,
+    "end": 19.039
+  },
+  {
+    "text": "feel",
+    "start": 19.139,
+    "end": 19.339
+  },
+  {
+    "text": "more",
+    "start": 19.399,
+    "end": 19.559
+  },
+  {
+    "text": "welcomed,",
+    "start": 19.619,
+    "end": 20.1
+  },
+  {
+    "text": "more",
+    "start": 20.52,
+    "end": 20.659
+  },
+  {
+    "text": "valued,",
+    "start": 20.76,
+    "end": 21.239
+  },
+  {
+    "text": "more",
+    "start": 21.719,
+    "end": 21.899
+  },
+  {
+    "text": "instantly",
+    "start": 22,
+    "end": 22.5
+  },
+  {
+    "text": "family",
+    "start": 22.619,
+    "end": 23.039
+  },
+  {
+    "text": "than",
+    "start": 23.479,
+    "end": 23.679
+  },
+  {
+    "text": "almost",
+    "start": 23.76,
+    "end": 24.18
+  },
+  {
+    "text": "anything",
+    "start": 24.26,
+    "end": 24.619
+  },
+  {
+    "text": "else",
+    "start": 24.699,
+    "end": 24.899
+  },
+  {
+    "text": "in",
+    "start": 24.959,
+    "end": 25.039
+  },
+  {
+    "text": "their",
+    "start": 25.079,
+    "end": 25.219
+  },
+  {
+    "text": "lives",
+    "start": 25.299,
+    "end": 25.579
+  },
+  {
+    "text": "at",
+    "start": 25.659,
+    "end": 25.719
+  },
+  {
+    "text": "the",
+    "start": 25.76,
+    "end": 25.859
+  },
+  {
+    "text": "time.",
+    "start": 25.939,
+    "end": 26.279
+  },
+  {
+    "text": "That",
+    "start": 27,
+    "end": 27.219
+  },
+  {
+    "text": "overwhelming",
+    "start": 27.34,
+    "end": 27.939
+  },
+  {
+    "text": "early",
+    "start": 28.019,
+    "end": 28.239
+  },
+  {
+    "text": "acceptance",
+    "start": 28.299,
+    "end": 29.359
+  },
+  {
+    "text": "is",
+    "start": 29.439,
+    "end": 29.579
+  },
+  {
+    "text": "love",
+    "start": 29.699,
+    "end": 29.899
+  },
+  {
+    "text": "bombing",
+    "start": 29.979,
+    "end": 30.659
+  },
+  {
+    "text": "at",
+    "start": 30.719,
+    "end": 30.799
+  },
+  {
+    "text": "the",
+    "start": 30.859,
+    "end": 30.92
+  },
+  {
+    "text": "scale",
+    "start": 31.019,
+    "end": 31.299
+  },
+  {
+    "text": "of",
+    "start": 31.34,
+    "end": 31.42
+  },
+  {
+    "text": "a",
+    "start": 31.479,
+    "end": 31.519
+  },
+  {
+    "text": "movement,",
+    "start": 31.579,
+    "end": 32.059
+  },
+  {
+    "text": "not",
+    "start": 32.459,
+    "end": 32.619
+  },
+  {
+    "text": "just",
+    "start": 32.68,
+    "end": 32.86
+  },
+  {
+    "text": "a",
+    "start": 32.919,
+    "end": 32.979
+  },
+  {
+    "text": "couple.",
+    "start": 33.04,
+    "end": 33.38
+  },
+  {
+    "text": "The",
+    "start": 34.279,
+    "end": 34.36
+  },
+  {
+    "text": "control,",
+    "start": 34.459,
+    "end": 35
+  },
+  {
+    "text": "the",
+    "start": 35.38,
+    "end": 35.439
+  },
+  {
+    "text": "isolation,",
+    "start": 35.559,
+    "end": 36.259
+  },
+  {
+    "text": "the",
+    "start": 36.739,
+    "end": 36.779
+  },
+  {
+    "text": "extreme",
+    "start": 36.899,
+    "end": 37.259
+  },
+  {
+    "text": "demands,",
+    "start": 37.34,
+    "end": 37.899
+  },
+  {
+    "text": "all",
+    "start": 38.399,
+    "end": 38.5
+  },
+  {
+    "text": "of",
+    "start": 38.559,
+    "end": 38.639
+  },
+  {
+    "text": "it",
+    "start": 38.659,
+    "end": 38.799
+  },
+  {
+    "text": "came",
+    "start": 38.86,
+    "end": 39.059
+  },
+  {
+    "text": "later,",
+    "start": 39.119,
+    "end": 39.459
+  },
+  {
+    "text": "only",
+    "start": 40.059,
+    "end": 40.299
+  },
+  {
+    "text": "after",
+    "start": 40.419,
+    "end": 40.639
+  },
+  {
+    "text": "that",
+    "start": 40.7,
+    "end": 40.84
+  },
+  {
+    "text": "intense",
+    "start": 40.919,
+    "end": 41.439
+  },
+  {
+    "text": "early",
+    "start": 41.52,
+    "end": 41.779
+  },
+  {
+    "text": "bond",
+    "start": 41.86,
+    "end": 42.159
+  },
+  {
+    "text": "had",
+    "start": 42.219,
+    "end": 42.319
+  },
+  {
+    "text": "already",
+    "start": 42.379,
+    "end": 42.759
+  },
+  {
+    "text": "formed.",
+    "start": 42.819,
+    "end": 43.18
+  },
+  {
+    "text": "That",
+    "start": 44,
+    "end": 44.239
+  },
+  {
+    "text": "ordering",
+    "start": 44.34,
+    "end": 45
+  },
+  {
+    "text": "is",
+    "start": 45.059,
+    "end": 45.219
+  },
+  {
+    "text": "not",
+    "start": 45.259,
+    "end": 45.439
+  },
+  {
+    "text": "an",
+    "start": 45.479,
+    "end": 45.559
+  },
+  {
+    "text": "accident.",
+    "start": 45.639,
+    "end": 46.159
+  },
+  {
+    "text": "It's",
+    "start": 47,
+    "end": 47.159
+  },
+  {
+    "text": "the",
+    "start": 47.2,
+    "end": 47.319
+  },
+  {
+    "text": "whole",
+    "start": 47.36,
+    "end": 47.579
+  },
+  {
+    "text": "strategy.",
+    "start": 47.659,
+    "end": 48.5
+  },
+  {
+    "text": "Nobody",
+    "start": 48.599,
+    "end": 49
+  },
+  {
+    "text": "agrees",
+    "start": 49.139,
+    "end": 49.5
+  },
+  {
+    "text": "to",
+    "start": 49.52,
+    "end": 49.619
+  },
+  {
+    "text": "extreme",
+    "start": 49.719,
+    "end": 50.079
+  },
+  {
+    "text": "demands",
+    "start": 50.139,
+    "end": 50.579
+  },
+  {
+    "text": "from",
+    "start": 50.659,
+    "end": 50.779
+  },
+  {
+    "text": "a",
+    "start": 50.819,
+    "end": 50.879
+  },
+  {
+    "text": "stranger.",
+    "start": 50.939,
+    "end": 51.419
+  },
+  {
+    "text": "People",
+    "start": 52.119,
+    "end": 52.399
+  },
+  {
+    "text": "will",
+    "start": 52.479,
+    "end": 52.599
+  },
+  {
+    "text": "absorb",
+    "start": 52.639,
+    "end": 53.179
+  },
+  {
+    "text": "extraordinary",
+    "start": 53.34,
+    "end": 54.02
+  },
+  {
+    "text": "demands",
+    "start": 54.099,
+    "end": 54.579
+  },
+  {
+    "text": "from",
+    "start": 54.659,
+    "end": 54.799
+  },
+  {
+    "text": "someone",
+    "start": 54.919,
+    "end": 55.419
+  },
+  {
+    "text": "who",
+    "start": 55.479,
+    "end": 55.599
+  },
+  {
+    "text": "has",
+    "start": 55.659,
+    "end": 55.86
+  },
+  {
+    "text": "already",
+    "start": 55.939,
+    "end": 56.34
+  },
+  {
+    "text": "convinced",
+    "start": 56.36,
+    "end": 56.819
+  },
+  {
+    "text": "them",
+    "start": 56.86,
+    "end": 57.379
+  },
+  {
+    "text": "through",
+    "start": 57.459,
+    "end": 57.719
+  },
+  {
+    "text": "overwhelming",
+    "start": 57.819,
+    "end": 58.539
+  },
+  {
+    "text": "early",
+    "start": 58.619,
+    "end": 58.899
+  },
+  {
+    "text": "warmth",
+    "start": 58.959,
+    "end": 59.68
+  },
+  {
+    "text": "that",
+    "start": 59.739,
+    "end": 59.899
+  },
+  {
+    "text": "this",
+    "start": 59.919,
+    "end": 60.119
+  },
+  {
+    "text": "connection",
+    "start": 60.159,
+    "end": 60.719
+  },
+  {
+    "text": "is",
+    "start": 60.979,
+    "end": 61.139
+  },
+  {
+    "text": "different",
+    "start": 61.159,
+    "end": 61.579
+  },
+  {
+    "text": "from",
+    "start": 61.699,
+    "end": 61.939
+  },
+  {
+    "text": "every",
+    "start": 62.02,
+    "end": 62.279
+  },
+  {
+    "text": "other",
+    "start": 62.34,
+    "end": 62.52
+  },
+  {
+    "text": "one",
+    "start": 62.659,
+    "end": 62.879
+  },
+  {
+    "text": "they've",
+    "start": 62.919,
+    "end": 63.18
+  },
+  {
+    "text": "ever",
+    "start": 63.239,
+    "end": 63.459
+  },
+  {
+    "text": "had.",
+    "start": 63.579,
+    "end": 63.799
+  }
+]

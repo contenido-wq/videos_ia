@@ -1,0 +1,1722 @@
+[
+  {
+    "text": "The",
+    "start": 0.26,
+    "end": 0.4
+  },
+  {
+    "text": "fourth",
+    "start": 0.46,
+    "end": 0.74
+  },
+  {
+    "text": "law:",
+    "start": 0.8,
+    "end": 1
+  },
+  {
+    "text": "The",
+    "start": 1.4,
+    "end": 1.48
+  },
+  {
+    "text": "more",
+    "start": 1.58,
+    "end": 1.78
+  },
+  {
+    "text": "official",
+    "start": 1.82,
+    "end": 2.26
+  },
+  {
+    "text": "someone",
+    "start": 2.38,
+    "end": 2.72
+  },
+  {
+    "text": "looks,",
+    "start": 2.78,
+    "end": 3.1
+  },
+  {
+    "text": "the",
+    "start": 3.52,
+    "end": 3.62
+  },
+  {
+    "text": "less",
+    "start": 3.66,
+    "end": 4.04
+  },
+  {
+    "text": "anyone",
+    "start": 4.06,
+    "end": 4.54
+  },
+  {
+    "text": "checks",
+    "start": 4.58,
+    "end": 4.88
+  },
+  {
+    "text": "their",
+    "start": 4.9,
+    "end": 5.06
+  },
+  {
+    "text": "work,",
+    "start": 5.12,
+    "end": 5.42
+  },
+  {
+    "text": "including",
+    "start": 5.94,
+    "end": 6.42
+  },
+  {
+    "text": "the",
+    "start": 6.46,
+    "end": 6.52
+  },
+  {
+    "text": "people",
+    "start": 6.62,
+    "end": 6.96
+  },
+  {
+    "text": "whose",
+    "start": 7.32,
+    "end": 7.5
+  },
+  {
+    "text": "entire",
+    "start": 7.56,
+    "end": 8.04
+  },
+  {
+    "text": "job",
+    "start": 8.1,
+    "end": 8.32
+  },
+  {
+    "text": "is",
+    "start": 8.38,
+    "end": 8.48
+  },
+  {
+    "text": "to",
+    "start": 8.54,
+    "end": 8.66
+  },
+  {
+    "text": "check.",
+    "start": 8.7,
+    "end": 9
+  },
+  {
+    "text": "The",
+    "start": 9.66,
+    "end": 9.8
+  },
+  {
+    "text": "US",
+    "start": 9.88,
+    "end": 10.03
+  },
+  {
+    "text": "Securities",
+    "start": 10.2,
+    "end": 10.96
+  },
+  {
+    "text": "and",
+    "start": 11,
+    "end": 11.13
+  },
+  {
+    "text": "Exchange",
+    "start": 11.16,
+    "end": 11.62
+  },
+  {
+    "text": "Commission",
+    "start": 11.72,
+    "end": 12.21
+  },
+  {
+    "text": "investigated",
+    "start": 12.66,
+    "end": 13.54
+  },
+  {
+    "text": "Madoff",
+    "start": 13.6,
+    "end": 14.2
+  },
+  {
+    "text": "multiple",
+    "start": 14.26,
+    "end": 14.76
+  },
+  {
+    "text": "times,",
+    "start": 14.8,
+    "end": 15.23
+  },
+  {
+    "text": "starting",
+    "start": 15.67,
+    "end": 16.16
+  },
+  {
+    "text": "nearly",
+    "start": 16.2,
+    "end": 16.57
+  },
+  {
+    "text": "a",
+    "start": 16.57,
+    "end": 16.72
+  },
+  {
+    "text": "decade",
+    "start": 16.74,
+    "end": 17.22
+  },
+  {
+    "text": "before",
+    "start": 17.26,
+    "end": 17.59
+  },
+  {
+    "text": "his",
+    "start": 17.6,
+    "end": 17.76
+  },
+  {
+    "text": "arrest.",
+    "start": 17.8,
+    "end": 18.88
+  },
+  {
+    "text": "A",
+    "start": 18.98,
+    "end": 18.99
+  },
+  {
+    "text": "financial",
+    "start": 19.02,
+    "end": 19.48
+  },
+  {
+    "text": "analyst",
+    "start": 19.56,
+    "end": 20
+  },
+  {
+    "text": "named",
+    "start": 20.13,
+    "end": 20.46
+  },
+  {
+    "text": "Harry",
+    "start": 20.52,
+    "end": 20.84
+  },
+  {
+    "text": "Markopolos",
+    "start": 20.88,
+    "end": 21.6
+  },
+  {
+    "text": "submitted",
+    "start": 21.98,
+    "end": 22.56
+  },
+  {
+    "text": "detailed",
+    "start": 22.58,
+    "end": 23.13
+  },
+  {
+    "text": "math-backed",
+    "start": 23.42,
+    "end": 23.98
+  },
+  {
+    "text": "proof",
+    "start": 24.08,
+    "end": 24.6
+  },
+  {
+    "text": "to",
+    "start": 24.64,
+    "end": 24.72
+  },
+  {
+    "text": "the",
+    "start": 24.76,
+    "end": 24.82
+  },
+  {
+    "text": "SEC",
+    "start": 25,
+    "end": 25.9
+  },
+  {
+    "text": "that",
+    "start": 25.91,
+    "end": 26.04
+  },
+  {
+    "text": "the",
+    "start": 26.08,
+    "end": 26.14
+  },
+  {
+    "text": "returns",
+    "start": 26.18,
+    "end": 26.66
+  },
+  {
+    "text": "Madoff",
+    "start": 26.7,
+    "end": 27.08
+  },
+  {
+    "text": "reported",
+    "start": 27.1,
+    "end": 27.84
+  },
+  {
+    "text": "were",
+    "start": 27.86,
+    "end": 28.01
+  },
+  {
+    "text": "statistically",
+    "start": 28.06,
+    "end": 28.68
+  },
+  {
+    "text": "impossible,",
+    "start": 28.72,
+    "end": 29.76
+  },
+  {
+    "text": "not",
+    "start": 29.8,
+    "end": 29.98
+  },
+  {
+    "text": "once,",
+    "start": 30.05,
+    "end": 30.39
+  },
+  {
+    "text": "but",
+    "start": 30.9,
+    "end": 31.06
+  },
+  {
+    "text": "repeatedly",
+    "start": 31.1,
+    "end": 31.73
+  },
+  {
+    "text": "across",
+    "start": 32.22,
+    "end": 32.56
+  },
+  {
+    "text": "years",
+    "start": 32.64,
+    "end": 33.44
+  },
+  {
+    "text": "with",
+    "start": 33.449,
+    "end": 33.58
+  },
+  {
+    "text": "increasing",
+    "start": 33.64,
+    "end": 34.2
+  },
+  {
+    "text": "specificity.",
+    "start": 34.28,
+    "end": 35.68
+  },
+  {
+    "text": "The",
+    "start": 35.69,
+    "end": 35.82
+  },
+  {
+    "text": "SEC",
+    "start": 35.9,
+    "end": 36.32
+  },
+  {
+    "text": "reviewed",
+    "start": 36.36,
+    "end": 36.71
+  },
+  {
+    "text": "the",
+    "start": 36.74,
+    "end": 36.82
+  },
+  {
+    "text": "claims.",
+    "start": 36.86,
+    "end": 37.29
+  },
+  {
+    "text": "Twice",
+    "start": 37.78,
+    "end": 38.32
+  },
+  {
+    "text": "they",
+    "start": 38.36,
+    "end": 38.48
+  },
+  {
+    "text": "moved",
+    "start": 38.52,
+    "end": 38.75
+  },
+  {
+    "text": "on",
+    "start": 38.82,
+    "end": 39.4
+  },
+  {
+    "text": "without",
+    "start": 39.44,
+    "end": 39.79
+  },
+  {
+    "text": "meaningfully",
+    "start": 39.82,
+    "end": 40.28
+  },
+  {
+    "text": "pursuing",
+    "start": 40.34,
+    "end": 40.82
+  },
+  {
+    "text": "them.",
+    "start": 40.83,
+    "end": 41.02
+  },
+  {
+    "text": "Ask",
+    "start": 41.54,
+    "end": 41.74
+  },
+  {
+    "text": "yourself",
+    "start": 41.78,
+    "end": 42.26
+  },
+  {
+    "text": "how",
+    "start": 42.44,
+    "end": 42.64
+  },
+  {
+    "text": "trained",
+    "start": 42.7,
+    "end": 43.06
+  },
+  {
+    "text": "federal",
+    "start": 43.14,
+    "end": 43.48
+  },
+  {
+    "text": "regulators",
+    "start": 43.56,
+    "end": 44.32
+  },
+  {
+    "text": "handed",
+    "start": 44.74,
+    "end": 45.06
+  },
+  {
+    "text": "a",
+    "start": 45.1,
+    "end": 45.16
+  },
+  {
+    "text": "mathematical",
+    "start": 45.22,
+    "end": 45.84
+  },
+  {
+    "text": "case",
+    "start": 45.96,
+    "end": 46.62
+  },
+  {
+    "text": "could",
+    "start": 46.68,
+    "end": 46.8
+  },
+  {
+    "text": "fail",
+    "start": 46.92,
+    "end": 47.16
+  },
+  {
+    "text": "to",
+    "start": 47.2,
+    "end": 47.32
+  },
+  {
+    "text": "act",
+    "start": 47.4,
+    "end": 47.6
+  },
+  {
+    "text": "on",
+    "start": 47.66,
+    "end": 47.74
+  },
+  {
+    "text": "it,",
+    "start": 47.8,
+    "end": 47.94
+  },
+  {
+    "text": "not",
+    "start": 48.52,
+    "end": 48.72
+  },
+  {
+    "text": "by",
+    "start": 48.76,
+    "end": 48.96
+  },
+  {
+    "text": "accident",
+    "start": 49.06,
+    "end": 49.5
+  },
+  {
+    "text": "once,",
+    "start": 49.58,
+    "end": 49.88
+  },
+  {
+    "text": "but",
+    "start": 50.38,
+    "end": 50.58
+  },
+  {
+    "text": "by",
+    "start": 50.62,
+    "end": 50.82
+  },
+  {
+    "text": "pattern",
+    "start": 50.84,
+    "end": 51.3
+  },
+  {
+    "text": "over",
+    "start": 51.62,
+    "end": 51.9
+  },
+  {
+    "text": "years.",
+    "start": 51.92,
+    "end": 52.34
+  },
+  {
+    "text": "The",
+    "start": 52.87,
+    "end": 52.96
+  },
+  {
+    "text": "honest",
+    "start": 53.06,
+    "end": 53.36
+  },
+  {
+    "text": "answer",
+    "start": 53.44,
+    "end": 53.78
+  },
+  {
+    "text": "is",
+    "start": 54.1,
+    "end": 54.22
+  },
+  {
+    "text": "uncomfortable.",
+    "start": 54.26,
+    "end": 54.96
+  },
+  {
+    "text": "Madoff's",
+    "start": 55.54,
+    "end": 55.949
+  },
+  {
+    "text": "stature",
+    "start": 56,
+    "end": 56.72
+  },
+  {
+    "text": "did",
+    "start": 56.78,
+    "end": 56.92
+  },
+  {
+    "text": "the",
+    "start": 56.96,
+    "end": 57.04
+  },
+  {
+    "text": "regulator",
+    "start": 57.08,
+    "end": 57.64
+  },
+  {
+    "text": "skepticism",
+    "start": 57.76,
+    "end": 58.48
+  },
+  {
+    "text": "for",
+    "start": 58.54,
+    "end": 58.68
+  },
+  {
+    "text": "them",
+    "start": 58.72,
+    "end": 58.9
+  },
+  {
+    "text": "before",
+    "start": 59.22,
+    "end": 59.56
+  },
+  {
+    "text": "the",
+    "start": 59.6,
+    "end": 59.66
+  },
+  {
+    "text": "meeting",
+    "start": 59.72,
+    "end": 60.06
+  },
+  {
+    "text": "even",
+    "start": 60.28,
+    "end": 60.5
+  },
+  {
+    "text": "started.",
+    "start": 60.58,
+    "end": 61.1
+  },
+  {
+    "text": "It",
+    "start": 61.66,
+    "end": 61.74
+  },
+  {
+    "text": "is",
+    "start": 61.8,
+    "end": 61.92
+  },
+  {
+    "text": "far",
+    "start": 62,
+    "end": 62.16
+  },
+  {
+    "text": "more",
+    "start": 62.22,
+    "end": 62.4
+  },
+  {
+    "text": "socially",
+    "start": 62.48,
+    "end": 63.04
+  },
+  {
+    "text": "and",
+    "start": 63.32,
+    "end": 63.44
+  },
+  {
+    "text": "professionally",
+    "start": 63.52,
+    "end": 64.18
+  },
+  {
+    "text": "comfortable",
+    "start": 64.3,
+    "end": 64.8
+  },
+  {
+    "text": "to",
+    "start": 65.019,
+    "end": 65.14
+  },
+  {
+    "text": "assume",
+    "start": 65.2,
+    "end": 65.64
+  },
+  {
+    "text": "a",
+    "start": 65.72,
+    "end": 65.8
+  },
+  {
+    "text": "former",
+    "start": 65.86,
+    "end": 66.18
+  },
+  {
+    "text": "Nasdaq",
+    "start": 66.22,
+    "end": 66.66
+  },
+  {
+    "text": "chairman",
+    "start": 66.74,
+    "end": 67.16
+  },
+  {
+    "text": "is",
+    "start": 67.42,
+    "end": 67.54
+  },
+  {
+    "text": "running",
+    "start": 67.6,
+    "end": 67.84
+  },
+  {
+    "text": "something",
+    "start": 67.96,
+    "end": 68.28
+  },
+  {
+    "text": "too",
+    "start": 68.4,
+    "end": 68.5
+  },
+  {
+    "text": "complex",
+    "start": 68.62,
+    "end": 69.14
+  },
+  {
+    "text": "for",
+    "start": 69.24,
+    "end": 69.4
+  },
+  {
+    "text": "outsiders",
+    "start": 69.46,
+    "end": 70.13
+  },
+  {
+    "text": "to",
+    "start": 70.16,
+    "end": 70.3
+  },
+  {
+    "text": "fully",
+    "start": 70.34,
+    "end": 70.6
+  },
+  {
+    "text": "grasp",
+    "start": 70.64,
+    "end": 71.06
+  },
+  {
+    "text": "than",
+    "start": 71.4,
+    "end": 71.6
+  },
+  {
+    "text": "to",
+    "start": 71.62,
+    "end": 71.7
+  },
+  {
+    "text": "assume",
+    "start": 71.76,
+    "end": 72.4
+  },
+  {
+    "text": "he",
+    "start": 72.44,
+    "end": 72.52
+  },
+  {
+    "text": "is",
+    "start": 72.56,
+    "end": 72.67
+  },
+  {
+    "text": "simply",
+    "start": 72.72,
+    "end": 73.08
+  },
+  {
+    "text": "lying",
+    "start": 73.14,
+    "end": 73.48
+  },
+  {
+    "text": "to",
+    "start": 73.52,
+    "end": 73.6
+  },
+  {
+    "text": "your",
+    "start": 73.64,
+    "end": 73.8
+  },
+  {
+    "text": "face.",
+    "start": 73.84,
+    "end": 74.58
+  },
+  {
+    "text": "This",
+    "start": 74.64,
+    "end": 74.78
+  },
+  {
+    "text": "is",
+    "start": 74.84,
+    "end": 74.95
+  },
+  {
+    "text": "authority",
+    "start": 74.98,
+    "end": 75.47
+  },
+  {
+    "text": "bias,",
+    "start": 75.56,
+    "end": 75.96
+  },
+  {
+    "text": "and",
+    "start": 76.38,
+    "end": 76.49
+  },
+  {
+    "text": "its",
+    "start": 76.54,
+    "end": 76.72
+  },
+  {
+    "text": "danger",
+    "start": 76.76,
+    "end": 77.29
+  },
+  {
+    "text": "has",
+    "start": 77.36,
+    "end": 77.51
+  },
+  {
+    "text": "nothing",
+    "start": 77.58,
+    "end": 77.92
+  },
+  {
+    "text": "to",
+    "start": 77.96,
+    "end": 78.06
+  },
+  {
+    "text": "do",
+    "start": 78.1,
+    "end": 78.3
+  },
+  {
+    "text": "with",
+    "start": 78.32,
+    "end": 78.44
+  },
+  {
+    "text": "intelligence.",
+    "start": 78.5,
+    "end": 79.2
+  },
+  {
+    "text": "The",
+    "start": 79.83,
+    "end": 79.98
+  },
+  {
+    "text": "SEC",
+    "start": 80.16,
+    "end": 80.62
+  },
+  {
+    "text": "employees",
+    "start": 80.66,
+    "end": 81.2
+  },
+  {
+    "text": "involved",
+    "start": 81.26,
+    "end": 81.72
+  },
+  {
+    "text": "were",
+    "start": 81.94,
+    "end": 82.06
+  },
+  {
+    "text": "trained",
+    "start": 82.18,
+    "end": 82.44
+  },
+  {
+    "text": "professionals",
+    "start": 82.48,
+    "end": 83.22
+  },
+  {
+    "text": "doing",
+    "start": 83.58,
+    "end": 83.85
+  },
+  {
+    "text": "a",
+    "start": 83.85,
+    "end": 83.98
+  },
+  {
+    "text": "job",
+    "start": 84.02,
+    "end": 84.3
+  },
+  {
+    "text": "whose",
+    "start": 84.32,
+    "end": 84.52
+  },
+  {
+    "text": "entire",
+    "start": 84.58,
+    "end": 85.02
+  },
+  {
+    "text": "purpose",
+    "start": 85.06,
+    "end": 85.76
+  },
+  {
+    "text": "was",
+    "start": 85.82,
+    "end": 85.98
+  },
+  {
+    "text": "catching",
+    "start": 86.04,
+    "end": 86.42
+  },
+  {
+    "text": "exactly",
+    "start": 86.5,
+    "end": 87.04
+  },
+  {
+    "text": "this",
+    "start": 87.08,
+    "end": 87.26
+  },
+  {
+    "text": "kind",
+    "start": 87.3,
+    "end": 87.52
+  },
+  {
+    "text": "of",
+    "start": 87.56,
+    "end": 87.66
+  },
+  {
+    "text": "fraud.",
+    "start": 87.7,
+    "end": 88.68
+  },
+  {
+    "text": "They",
+    "start": 88.74,
+    "end": 88.9
+  },
+  {
+    "text": "still",
+    "start": 88.96,
+    "end": 89.18
+  },
+  {
+    "text": "deferred",
+    "start": 89.2,
+    "end": 89.62
+  },
+  {
+    "text": "to",
+    "start": 89.64,
+    "end": 89.75
+  },
+  {
+    "text": "the",
+    "start": 89.75,
+    "end": 89.88
+  },
+  {
+    "text": "costume",
+    "start": 89.92,
+    "end": 90.38
+  },
+  {
+    "text": "of",
+    "start": 90.46,
+    "end": 90.54
+  },
+  {
+    "text": "legitimacy",
+    "start": 90.62,
+    "end": 91.62
+  },
+  {
+    "text": "over",
+    "start": 91.68,
+    "end": 91.84
+  },
+  {
+    "text": "the",
+    "start": 91.92,
+    "end": 91.97
+  },
+  {
+    "text": "mathematics",
+    "start": 92.04,
+    "end": 92.66
+  },
+  {
+    "text": "in",
+    "start": 92.7,
+    "end": 92.78
+  },
+  {
+    "text": "front",
+    "start": 92.86,
+    "end": 93.08
+  },
+  {
+    "text": "of",
+    "start": 93.14,
+    "end": 93.22
+  },
+  {
+    "text": "them.",
+    "start": 93.26,
+    "end": 93.44
+  },
+  {
+    "text": "If",
+    "start": 94.12,
+    "end": 94.18
+  },
+  {
+    "text": "it",
+    "start": 94.24,
+    "end": 94.32
+  },
+  {
+    "text": "can",
+    "start": 94.36,
+    "end": 94.52
+  },
+  {
+    "text": "happen",
+    "start": 94.58,
+    "end": 94.86
+  },
+  {
+    "text": "to",
+    "start": 94.94,
+    "end": 95.02
+  },
+  {
+    "text": "the",
+    "start": 95.06,
+    "end": 95.11
+  },
+  {
+    "text": "people",
+    "start": 95.2,
+    "end": 95.54
+  },
+  {
+    "text": "paid",
+    "start": 95.92,
+    "end": 96.14
+  },
+  {
+    "text": "specifically",
+    "start": 96.24,
+    "end": 97.22
+  },
+  {
+    "text": "not",
+    "start": 97.3,
+    "end": 97.46
+  },
+  {
+    "text": "to",
+    "start": 97.5,
+    "end": 97.62
+  },
+  {
+    "text": "fall",
+    "start": 97.66,
+    "end": 97.9
+  },
+  {
+    "text": "for",
+    "start": 97.94,
+    "end": 98.08
+  },
+  {
+    "text": "it,",
+    "start": 98.12,
+    "end": 98.26
+  },
+  {
+    "text": "it",
+    "start": 98.76,
+    "end": 98.82
+  },
+  {
+    "text": "is",
+    "start": 98.88,
+    "end": 99
+  },
+  {
+    "text": "not",
+    "start": 99.06,
+    "end": 99.21
+  },
+  {
+    "text": "a",
+    "start": 99.26,
+    "end": 99.28
+  },
+  {
+    "text": "flaw",
+    "start": 99.38,
+    "end": 99.66
+  },
+  {
+    "text": "reserved",
+    "start": 99.96,
+    "end": 100.48
+  },
+  {
+    "text": "for",
+    "start": 100.52,
+    "end": 100.62
+  },
+  {
+    "text": "careless",
+    "start": 100.74,
+    "end": 101.08
+  },
+  {
+    "text": "people.",
+    "start": 101.18,
+    "end": 101.5
+  },
+  {
+    "text": "It's",
+    "start": 102.14,
+    "end": 102.26
+  },
+  {
+    "text": "a",
+    "start": 102.34,
+    "end": 102.38
+  },
+  {
+    "text": "default",
+    "start": 102.42,
+    "end": 102.78
+  },
+  {
+    "text": "setting",
+    "start": 102.86,
+    "end": 103.28
+  },
+  {
+    "text": "in",
+    "start": 103.36,
+    "end": 103.46
+  },
+  {
+    "text": "how",
+    "start": 103.52,
+    "end": 103.72
+  },
+  {
+    "text": "humans",
+    "start": 103.78,
+    "end": 104.12
+  },
+  {
+    "text": "process",
+    "start": 104.24,
+    "end": 104.62
+  },
+  {
+    "text": "status.",
+    "start": 104.7,
+    "end": 105.22
+  },
+  {
+    "text": "Here's",
+    "start": 106.04,
+    "end": 106.3
+  },
+  {
+    "text": "the",
+    "start": 106.36,
+    "end": 106.46
+  },
+  {
+    "text": "detail",
+    "start": 106.5,
+    "end": 106.94
+  },
+  {
+    "text": "that",
+    "start": 106.98,
+    "end": 107.15
+  },
+  {
+    "text": "makes",
+    "start": 107.2,
+    "end": 107.4
+  },
+  {
+    "text": "it",
+    "start": 107.44,
+    "end": 107.53
+  },
+  {
+    "text": "worse.",
+    "start": 107.62,
+    "end": 107.96
+  },
+  {
+    "text": "A",
+    "start": 108.58,
+    "end": 108.6
+  },
+  {
+    "text": "fund",
+    "start": 108.74,
+    "end": 109.02
+  },
+  {
+    "text": "moving",
+    "start": 109.3,
+    "end": 109.64
+  },
+  {
+    "text": "sixty-five",
+    "start": 109.66,
+    "end": 110.26
+  },
+  {
+    "text": "billion",
+    "start": 110.36,
+    "end": 110.7
+  },
+  {
+    "text": "dollars",
+    "start": 110.74,
+    "end": 111.16
+  },
+  {
+    "text": "would",
+    "start": 111.68,
+    "end": 111.82
+  },
+  {
+    "text": "normally",
+    "start": 111.88,
+    "end": 112.28
+  },
+  {
+    "text": "be",
+    "start": 112.32,
+    "end": 112.38
+  },
+  {
+    "text": "audited",
+    "start": 112.56,
+    "end": 113.36
+  },
+  {
+    "text": "by",
+    "start": 113.4,
+    "end": 113.54
+  },
+  {
+    "text": "one",
+    "start": 113.6,
+    "end": 113.72
+  },
+  {
+    "text": "of",
+    "start": 113.78,
+    "end": 113.86
+  },
+  {
+    "text": "the",
+    "start": 113.9,
+    "end": 114.02
+  },
+  {
+    "text": "giant",
+    "start": 114.06,
+    "end": 114.38
+  },
+  {
+    "text": "global",
+    "start": 114.5,
+    "end": 114.84
+  },
+  {
+    "text": "accounting",
+    "start": 114.9,
+    "end": 115.35
+  },
+  {
+    "text": "firms,",
+    "start": 115.46,
+    "end": 115.85
+  },
+  {
+    "text": "the",
+    "start": 116.34,
+    "end": 116.44
+  },
+  {
+    "text": "kind",
+    "start": 116.48,
+    "end": 116.78
+  },
+  {
+    "text": "with",
+    "start": 117.18,
+    "end": 117.36
+  },
+  {
+    "text": "thousands",
+    "start": 117.38,
+    "end": 117.84
+  },
+  {
+    "text": "of",
+    "start": 117.9,
+    "end": 117.96
+  },
+  {
+    "text": "employees",
+    "start": 118,
+    "end": 119.12
+  },
+  {
+    "text": "and",
+    "start": 119.16,
+    "end": 119.25
+  },
+  {
+    "text": "a",
+    "start": 119.28,
+    "end": 119.3
+  },
+  {
+    "text": "reputation",
+    "start": 119.42,
+    "end": 120.04
+  },
+  {
+    "text": "to",
+    "start": 120.12,
+    "end": 120.18
+  },
+  {
+    "text": "protect.",
+    "start": 120.26,
+    "end": 120.76
+  },
+  {
+    "text": "Madoff's",
+    "start": 121.36,
+    "end": 121.82
+  },
+  {
+    "text": "books",
+    "start": 121.86,
+    "end": 122.1
+  },
+  {
+    "text": "were",
+    "start": 122.18,
+    "end": 122.38
+  },
+  {
+    "text": "audited",
+    "start": 122.42,
+    "end": 122.9
+  },
+  {
+    "text": "by",
+    "start": 122.98,
+    "end": 123.12
+  },
+  {
+    "text": "a",
+    "start": 123.18,
+    "end": 123.26
+  },
+  {
+    "text": "three-person",
+    "start": 123.3,
+    "end": 123.94
+  },
+  {
+    "text": "firm",
+    "start": 124.04,
+    "end": 124.56
+  },
+  {
+    "text": "working",
+    "start": 124.66,
+    "end": 124.98
+  },
+  {
+    "text": "out",
+    "start": 125.06,
+    "end": 125.2
+  },
+  {
+    "text": "of",
+    "start": 125.24,
+    "end": 125.32
+  },
+  {
+    "text": "a",
+    "start": 125.36,
+    "end": 125.4
+  },
+  {
+    "text": "strip",
+    "start": 125.52,
+    "end": 125.78
+  },
+  {
+    "text": "mall",
+    "start": 125.82,
+    "end": 126
+  },
+  {
+    "text": "office",
+    "start": 126.08,
+    "end": 126.5
+  },
+  {
+    "text": "in",
+    "start": 126.78,
+    "end": 126.84
+  },
+  {
+    "text": "a",
+    "start": 126.9,
+    "end": 126.98
+  },
+  {
+    "text": "small",
+    "start": 127.04,
+    "end": 127.28
+  },
+  {
+    "text": "town",
+    "start": 127.34,
+    "end": 127.68
+  },
+  {
+    "text": "north",
+    "start": 127.74,
+    "end": 127.98
+  },
+  {
+    "text": "of",
+    "start": 128.039,
+    "end": 128.14
+  },
+  {
+    "text": "New",
+    "start": 128.18,
+    "end": 128.289
+  },
+  {
+    "text": "York",
+    "start": 128.34,
+    "end": 128.52
+  },
+  {
+    "text": "City,",
+    "start": 128.62,
+    "end": 128.9
+  },
+  {
+    "text": "one",
+    "start": 129.46,
+    "end": 129.6
+  },
+  {
+    "text": "of",
+    "start": 129.64,
+    "end": 129.74
+  },
+  {
+    "text": "whom",
+    "start": 129.78,
+    "end": 130.08
+  },
+  {
+    "text": "was",
+    "start": 130.09,
+    "end": 130.31
+  },
+  {
+    "text": "semi-retired",
+    "start": 130.36,
+    "end": 131.54
+  },
+  {
+    "text": "and",
+    "start": 131.56,
+    "end": 131.73
+  },
+  {
+    "text": "living",
+    "start": 131.78,
+    "end": 132.02
+  },
+  {
+    "text": "in",
+    "start": 132.06,
+    "end": 132.2
+  },
+  {
+    "text": "Florida.",
+    "start": 132.24,
+    "end": 132.68
+  },
+  {
+    "text": "Nobody",
+    "start": 133.54,
+    "end": 133.96
+  },
+  {
+    "text": "asked",
+    "start": 134.06,
+    "end": 134.26
+  },
+  {
+    "text": "why.",
+    "start": 134.36,
+    "end": 134.609
+  },
+  {
+    "text": "The",
+    "start": 135.2,
+    "end": 135.28
+  },
+  {
+    "text": "name",
+    "start": 135.32,
+    "end": 135.82
+  },
+  {
+    "text": "auditor",
+    "start": 135.9,
+    "end": 136.72
+  },
+  {
+    "text": "on",
+    "start": 136.76,
+    "end": 136.86
+  },
+  {
+    "text": "the",
+    "start": 136.9,
+    "end": 137
+  },
+  {
+    "text": "paperwork",
+    "start": 137.02,
+    "end": 138.04
+  },
+  {
+    "text": "did",
+    "start": 138.06,
+    "end": 138.2
+  },
+  {
+    "text": "the",
+    "start": 138.24,
+    "end": 138.38
+  },
+  {
+    "text": "same",
+    "start": 138.42,
+    "end": 138.72
+  },
+  {
+    "text": "psychological",
+    "start": 138.74,
+    "end": 139.52
+  },
+  {
+    "text": "work",
+    "start": 139.54,
+    "end": 139.82
+  },
+  {
+    "text": "as",
+    "start": 140.18,
+    "end": 140.34
+  },
+  {
+    "text": "the",
+    "start": 140.4,
+    "end": 140.45
+  },
+  {
+    "text": "name",
+    "start": 140.5,
+    "end": 140.78
+  },
+  {
+    "text": "Nasdaq",
+    "start": 141.12,
+    "end": 141.56
+  },
+  {
+    "text": "chairman.",
+    "start": 141.62,
+    "end": 142.06
+  },
+  {
+    "text": "It",
+    "start": 142.84,
+    "end": 142.98
+  },
+  {
+    "text": "ended",
+    "start": 143.04,
+    "end": 143.32
+  },
+  {
+    "text": "the",
+    "start": 143.329,
+    "end": 143.44
+  },
+  {
+    "text": "conversation",
+    "start": 143.5,
+    "end": 144.22
+  },
+  {
+    "text": "before",
+    "start": 144.6,
+    "end": 144.88
+  },
+  {
+    "text": "it",
+    "start": 144.94,
+    "end": 145.04
+  },
+  {
+    "text": "started,",
+    "start": 145.12,
+    "end": 145.54
+  },
+  {
+    "text": "regardless",
+    "start": 146.04,
+    "end": 146.6
+  },
+  {
+    "text": "of",
+    "start": 146.68,
+    "end": 146.76
+  },
+  {
+    "text": "who",
+    "start": 146.82,
+    "end": 146.9
+  },
+  {
+    "text": "was",
+    "start": 146.98,
+    "end": 147.14
+  },
+  {
+    "text": "actually",
+    "start": 147.22,
+    "end": 147.56
+  },
+  {
+    "text": "standing",
+    "start": 147.68,
+    "end": 148.06
+  },
+  {
+    "text": "behind",
+    "start": 148.1,
+    "end": 148.44
+  },
+  {
+    "text": "the",
+    "start": 148.48,
+    "end": 148.58
+  },
+  {
+    "text": "title.",
+    "start": 148.62,
+    "end": 148.98
+  }
+]

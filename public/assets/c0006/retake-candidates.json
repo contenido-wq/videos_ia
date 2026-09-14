@@ -1,0 +1,86 @@
+[
+  {
+    "start": 0.12,
+    "end": 3.62,
+    "quote": "Grabando. Sí. Grabando. Creo que sigue.",
+    "type": "aside",
+    "reason": "Coordinación con quien graba antes de empezar"
+  },
+  {
+    "start": 4.5,
+    "end": 8.28,
+    "quote": "Pensaste que eres malo o que las redes no te quieren, estás equivocado.",
+    "type": "retake",
+    "reason": "Primer intento sin 'sociales', repetido inmediatamente después"
+  },
+  {
+    "start": 8.32,
+    "end": 20.3,
+    "quote": "Pensaste que eres malo o que las redes sociales no te quieren, estás equivocado. Lo que quieren las redes es acción- Calma, calma. Con la intencionalidad. Calma, no se acelere cucho, que eso... Voy a volverlo a hacer.",
+    "type": "retake",
+    "reason": "Intento interrumpido con asides de dirección ('calma, calma') y anuncio de repetirlo"
+  },
+  {
+    "start": 21.54,
+    "end": 28.02,
+    "quote": "Pensaste que eres malo o que las redes sociales no te quieren... Se me olvidó ahí qué seguía. Estás equivocado. Eso.",
+    "type": "retake",
+    "reason": "Intento fallido con olvido de texto ('se me olvidó qué seguía')"
+  },
+  {
+    "start": 34.88,
+    "end": 36.92,
+    "quote": "Lo que quieren las redes es acción masiva.",
+    "type": "retake",
+    "reason": "Primer intento sin 'sociales', repetido completo después"
+  },
+  {
+    "start": 40.6,
+    "end": 43.5,
+    "quote": "No les importa la perfección, les importa la constancia.",
+    "type": "retake",
+    "reason": "Primer intento repetido idéntico inmediatamente después"
+  },
+  {
+    "start": 48.82,
+    "end": 63.25,
+    "quote": "Es como si fueras al gym una semana y esperar tener el cuerpo de tus sueños. Es como si fueras al gimnasio una semana y esperar tener... Es como si fueras al gym una semana y esperaras tene-- y esperas. Y esperaras tener el cuerpo. Esperaras, ah bueno.",
+    "type": "retake",
+    "reason": "Varios intentos fallidos de la frase del gym, con aside de corrección verbal"
+  },
+  {
+    "start": 68.24,
+    "end": 69.759,
+    "quote": "Así no funciona.",
+    "type": "retake",
+    "reason": "Intento incompleto, repetido con 'esto'"
+  },
+  {
+    "start": 72.38,
+    "end": 74.84,
+    "quote": "No es difícil, pero ¿quién te dijo que sería fácil?",
+    "type": "retake",
+    "reason": "Primer intento repetido idéntico después"
+  },
+  {
+    "start": 78.84,
+    "end": 81.36,
+    "quote": "La clave está en la acción constante.",
+    "type": "retake",
+    "reason": "Primer intento repetido idéntico después"
+  },
+  {
+    "start": 85.9,
+    "end": 126.28,
+    "quote": "Comenta «voy a crear» si estás listo para comenzar a crear contenido ahora mismo. Comen... «Ya voy a crear», dice. ¿Será que eso los dejo sin el call to action? Eso no me gusta. No, yo le pondría como algo que le hic-- al que, al que necesite que como que comente. Como no sé, como: «¿Y tú? ¿Y tú?» Como... Comenta «yo» si estás dispuesto a empezar a crear. Es que no quiero meter como te metes porque es como algo que más, más que todo que conecta, siento que es como más bien como que ellos- Cuéntame qué. Piensen que, pues comenten qué opinan o qué. Listo. Hace, pero- Ay, ahora era, pues... Espere, espere, espere. Siéntese. Entonces, ¿cómo estaba ahí?",
+    "type": "aside",
+    "reason": "Intento del CTA seguido de discusión fuera de cámara sobre cómo formular el call to action"
+  },
+  {
+    "start": 126.3,
+    "end": 133.92,
+    "quote": "Comenta «voy a crear» si estás listo para comenzar a crear contenido ahora mismo. ¿Comenta? «Voy a crear». Entonces, hagámoslo.",
+    "type": "retake",
+    "reason": "Intento del CTA descartado y discusión previa al CTA final"
+  }
+]

@@ -1,0 +1,1143 @@
+1
+00:00:00,280 --> 00:00:02,980
+There is a technique taught for decades to
+
+2
+00:00:03,079 --> 00:00:05,960
+police interrogators across the United States
+
+3
+00:00:06,460 --> 00:00:09,179
+that can make an innocent person confess to
+
+4
+00:00:09,239 --> 00:00:12,199
+a crime they did not commit in under
+
+5
+00:00:12,239 --> 00:00:15,380
+an hour without a single hand ever being
+
+6
+00:00:15,479 --> 00:00:18,180
+laid on them. It doesn't work by force.
+
+7
+00:00:18,739 --> 00:00:21,779
+It works by psychology, and once you understand
+
+8
+00:00:21,819 --> 00:00:24,719
+the structure underneath it, you'll start noticing it
+
+9
+00:00:24,819 --> 00:00:27,680
+everywhere long after the interrogation room.
+
+10
+00:00:28,299 --> 00:00:30,655
+This is Shadow Figure. For much of the
+
+11
+00:00:30,715 --> 00:00:33,824
+last seventy years, one method has dominated
+
+12
+00:00:33,955 --> 00:00:37,395
+police interrogation training in North America: the
+
+13
+00:00:37,475 --> 00:00:40,915
+Reid technique. It isn't one trick. It's a
+
+14
+00:00:40,975 --> 00:00:44,315
+structure built in stages, and each stage
+
+15
+00:00:44,475 --> 00:00:47,515
+exists to make the next one easier. The
+
+16
+00:00:47,555 --> 00:00:50,715
+first stage is presumption. The interrogator
+
+17
+00:00:50,725 --> 00:00:53,795
+doesn't walk in asking whether you did it.
+
+18
+00:00:53,805 --> 00:00:56,775
+They walk in already certain that you did,
+
+19
+00:00:56,795 --> 00:00:59,225
+and the entire conversation is built on that
+
+20
+00:00:59,255 --> 00:01:02,275
+certainty. You are rarely asked, "Did you do
+
+21
+00:01:02,375 --> 00:01:05,395
+this?" You are told directly or through
+
+22
+00:01:05,455 --> 00:01:08,804
+implication that the evidence already exists,
+
+23
+00:01:09,315 --> 00:01:12,365
+that this conversation is about what happens next,
+
+24
+00:01:12,855 --> 00:01:15,595
+not about whether it happened at all. The
+
+25
+00:01:15,655 --> 00:01:19,045
+second stage is moral minimization. Once
+
+26
+00:01:19,135 --> 00:01:22,555
+presumption has done its work, the interrogator stops
+
+27
+00:01:22,655 --> 00:01:25,715
+treating the act as monstrous and starts treating
+
+28
+00:01:25,775 --> 00:01:29,275
+it as understandable. Anyone in your situation
+
+29
+00:01:29,715 --> 00:01:32,235
+might have done the same thing. This doesn't
+
+30
+00:01:32,295 --> 00:01:35,255
+make you a bad person. The specific words
+
+31
+00:01:35,315 --> 00:01:38,555
+change, but the function doesn't. Lower the
+
+32
+00:01:38,575 --> 00:01:41,715
+psychological cost of admitting it. A confession
+
+33
+00:01:41,855 --> 00:01:45,035
+feels far less catastrophic when the person asking
+
+34
+00:01:45,095 --> 00:01:48,055
+for it has just spent ten minutes explaining
+
+35
+00:01:48,115 --> 00:01:51,135
+why it was almost reasonable. The third stage
+
+36
+00:01:51,495 --> 00:01:53,995
+is the false alternative, and this is the
+
+37
+00:01:54,035 --> 00:01:57,315
+part most people never notice because it's disguised
+
+38
+00:01:57,375 --> 00:02:00,115
+as a choice. You are not asked, "Did
+
+39
+00:02:00,135 --> 00:02:02,815
+you do this?" You are asked something like,
+
+40
+00:02:03,175 --> 00:02:05,375
+"Did you plan this, or did it just
+
+41
+00:02:05,455 --> 00:02:08,525
+happen in the moment?" Notice what both branches
+
+42
+00:02:08,575 --> 00:02:11,335
+of that question have in common. Neither one
+
+43
+00:02:11,355 --> 00:02:13,995
+lets you say no. The only real decision
+
+44
+00:02:14,055 --> 00:02:16,155
+left on the table is which flavor of
+
+45
+00:02:16,235 --> 00:02:19,455
+guilty you'd prefer to be. Stacked together:
+
+46
+00:02:20,015 --> 00:02:22,995
+certainty, minimization, false choice.
+
+47
+00:02:23,535 --> 00:02:26,935
+The structure doesn't just make confession easier. Under
+
+48
+00:02:26,995 --> 00:02:30,325
+enough time, fatigue, and psychological pressure,
+
+49
+00:02:30,775 --> 00:02:32,935
+it can make confession feel like the only
+
+50
+00:02:32,975 --> 00:02:35,415
+way out of the room. None of this
+
+51
+00:02:35,455 --> 00:02:38,615
+requires shouting, threats, or physical force.
+
+52
+00:02:39,135 --> 00:02:42,295
+In fact, the technique is built specifically to
+
+53
+00:02:42,335 --> 00:02:45,275
+work without any of that because a calm,
+
+54
+00:02:45,595 --> 00:02:48,895
+patient, endlessly certain interrogator is
+
+55
+00:02:48,955 --> 00:02:51,555
+far harder to resist than an aggressive one.
+
+56
+00:02:52,215 --> 00:02:54,815
+Aggression gives you something to push back against.
+
+57
+00:02:55,475 --> 00:02:58,595
+Calm, total certainty gives you nothing to argue
+
+58
+00:02:58,615 --> 00:03:02,055
+with because the conversation was never framed as
+
+59
+00:03:02,125 --> 00:03:04,963
+a debate about whether it happened. It was
+
+60
+00:03:05,083 --> 00:03:07,982
+only ever framed as a conversation about what
+
+61
+00:03:08,043 --> 00:03:11,303
+happens next. Time itself becomes part of the
+
+62
+00:03:11,402 --> 00:03:14,543
+mechanism. Interrogations built on this structure
+
+63
+00:03:14,803 --> 00:03:17,803
+can run for hours, sometimes many hours,
+
+64
+00:03:18,362 --> 00:03:20,782
+long past the point where a tired, frightened
+
+65
+00:03:20,842 --> 00:03:24,322
+person is thinking clearly about consequences beyond
+
+66
+00:03:24,362 --> 00:03:27,682
+the next five minutes. The goal, whether stated
+
+67
+00:03:27,743 --> 00:03:30,662
+or not, is to keep narrowing the psychological
+
+68
+00:03:30,782 --> 00:03:33,682
+room in that chair until the only exit
+
+69
+00:03:33,782 --> 00:03:36,102
+anyone can still see is the one the
+
+70
+00:03:36,162 --> 00:03:39,403
+interrogator has been pointing to the entire time.
+
+71
+00:03:39,903 --> 00:03:42,482
+Picture how the three stages actually stack in
+
+72
+00:03:42,543 --> 00:03:45,522
+a real room. The first hour is presumption,
+
+73
+00:03:45,842 --> 00:03:49,102
+repeated calmly without ever really engaging with a
+
+74
+00:03:49,162 --> 00:03:52,162
+denial. The denial isn't argued against.
+
+75
+00:03:52,602 --> 00:03:56,102
+It's simply set aside over and over
+
+76
+00:03:56,182 --> 00:03:58,342
+as if it were an interruption rather than
+
+77
+00:03:58,402 --> 00:04:00,942
+an answer. By the second hour,
+
+78
+00:04:01,222 --> 00:04:04,722
+minimization arrives. A softer tone, an offer
+
+79
+00:04:04,762 --> 00:04:07,762
+to understand, a suggestion that this was a
+
+80
+00:04:07,822 --> 00:04:10,882
+mistake rather than a crime, that people make
+
+81
+00:04:10,942 --> 00:04:14,062
+mistakes, that this can be worked through. By
+
+82
+00:04:14,122 --> 00:04:16,902
+then, denial has stopped feeling like it's even
+
+83
+00:04:16,962 --> 00:04:19,582
+being heard, and the exhausted person in the
+
+84
+00:04:19,662 --> 00:04:22,702
+chair starts listening less for whether the accusation
+
+85
+00:04:22,743 --> 00:04:25,222
+is true and more for whatever will make
+
+86
+00:04:25,262 --> 00:04:28,502
+the room stop closing in. The false alternative
+
+87
+00:04:28,622 --> 00:04:31,522
+arrives last, almost like relief.
+
+88
+00:04:31,603 --> 00:04:34,182
+Finally, a question that sounds like it has
+
+89
+00:04:34,203 --> 00:04:37,682
+an answer. It's rarely a coincidence that it
+
+90
+00:04:37,782 --> 00:04:40,802
+arrives only once the first two stages have
+
+91
+00:04:40,842 --> 00:04:44,288
+already done their work. Here is the uncomfortable
+
+92
+00:04:44,428 --> 00:04:47,828
+part. This same structure applied to someone
+
+93
+00:04:47,868 --> 00:04:50,778
+who is actually guilty can produce a truthful
+
+94
+00:04:50,868 --> 00:04:54,128
+confession. Applied to someone who is innocent,
+
+95
+00:04:54,728 --> 00:04:58,148
+someone exhausted, frightened, young, or
+
+96
+00:04:58,208 --> 00:05:01,448
+simply worn down by hours of unwavering certainty
+
+97
+00:05:01,528 --> 00:05:04,128
+aimed at them, it can produce a false
+
+98
+00:05:04,188 --> 00:05:07,648
+one. Organizations that work on wrongful conviction
+
+99
+00:05:07,708 --> 00:05:10,718
+cases, including the Innocence Project, have
+
+100
+00:05:10,748 --> 00:05:13,708
+documented real cases where DNA evidence
+
+101
+00:05:13,888 --> 00:05:16,808
+uncovered years later proved the innocence of
+
+102
+00:05:16,908 --> 00:05:20,108
+people who had confessed under exactly this kind
+
+103
+00:05:20,148 --> 00:05:22,708
+of pressure. Not people who were lying about
+
+104
+00:05:22,748 --> 00:05:25,968
+being pressured. People who, in the moment, could
+
+105
+00:05:25,978 --> 00:05:27,608
+no longer see a path out of the
+
+106
+00:05:27,668 --> 00:05:30,108
+room that didn't run through saying the words
+
+107
+00:05:30,328 --> 00:05:33,328
+the interrogator needed to hear. That should sound
+
+108
+00:05:33,368 --> 00:05:36,168
+impossible to you. How does an innocent person
+
+109
+00:05:36,268 --> 00:05:39,348
+confess to something they didn't do? But sit
+
+110
+00:05:39,428 --> 00:05:42,488
+with the structure again. You are told the
+
+111
+00:05:42,568 --> 00:05:45,888
+evidence already proves you did it, so denial
+
+112
+00:05:46,008 --> 00:05:48,908
+stops feeling like an option that's actually being
+
+113
+00:05:48,988 --> 00:05:51,968
+heard. You are told it wouldn't make you
+
+114
+00:05:52,028 --> 00:05:55,268
+a bad person, so admitting it stops feeling
+
+115
+00:05:55,288 --> 00:05:57,448
+like the end of the world. And the
+
+116
+00:05:57,548 --> 00:06:00,588
+only question left on the table already assumes
+
+117
+00:06:00,628 --> 00:06:03,888
+you did it. Under those conditions, for long
+
+118
+00:06:03,968 --> 00:06:06,428
+enough, just tell them what they want can
+
+119
+00:06:06,438 --> 00:06:08,248
+start to feel like the only way to
+
+120
+00:06:08,288 --> 00:06:10,928
+make the pressure stop, even when what they
+
+121
+00:06:10,948 --> 00:06:13,798
+want is a lie. This isn't a condemnation
+
+122
+00:06:13,848 --> 00:06:16,278
+of every interrogator who has ever used this
+
+123
+00:06:16,328 --> 00:06:18,948
+method, and it isn't a claim that it
+
+124
+00:06:18,988 --> 00:06:21,858
+never produces true confessions. It's a
+
+125
+00:06:21,948 --> 00:06:25,048
+documented, uncomfortable fact. A technique
+
+126
+00:06:25,348 --> 00:06:28,488
+built to extract truth can, under the wrong
+
+127
+00:06:28,528 --> 00:06:31,988
+conditions, extract compliance instead. And
+
+128
+00:06:32,028 --> 00:06:34,708
+the person saying the words often can't tell
+
+129
+00:06:34,728 --> 00:06:37,148
+the difference between the two while it's happening.
+
+130
+00:06:38,188 --> 00:06:40,788
+The people most vulnerable to this aren't the
+
+131
+00:06:40,848 --> 00:06:44,148
+hardened, streetwise suspects the technique was
+
+132
+00:06:44,188 --> 00:06:47,088
+originally imagined for. They're teenagers,
+
+133
+00:06:47,488 --> 00:06:50,948
+people with intellectual or developmental disabilities,
+
+134
+00:06:51,388 --> 00:06:54,548
+and people who are simply exhausted, frightened, or
+
+135
+00:06:54,708 --> 00:06:57,898
+eager, almost desperately, to please the authority
+
+136
+00:06:58,008 --> 00:07:00,448
+figure in front of them. Youth and
+
+137
+00:07:00,508 --> 00:07:03,498
+vulnerability don't make someone more likely to have
+
+138
+00:07:03,508 --> 00:07:06,558
+committed a crime. They make someone more likely
+
+139
+00:07:06,568 --> 00:07:08,988
+to say they did, if saying so is
+
+140
+00:07:09,048 --> 00:07:11,428
+the only thing that seems likely to end
+
+141
+00:07:11,468 --> 00:07:14,708
+the pressure. There's a particular cruelty in how
+
+142
+00:07:14,748 --> 00:07:17,949
+this affects people who are naturally cooperative and
+
+143
+00:07:18,029 --> 00:07:21,509
+trusting of authority. The very traits society
+
+144
+00:07:21,649 --> 00:07:24,909
+usually calls good character become the exact
+
+145
+00:07:24,949 --> 00:07:28,129
+lever the structure exploits. Someone
+
+146
+00:07:28,209 --> 00:07:31,569
+raised to respect authority, to believe honesty
+
+147
+00:07:31,629 --> 00:07:34,809
+is always rewarded, to assume the person across
+
+148
+00:07:34,889 --> 00:07:38,129
+the table is fundamentally fair, walks into that
+
+149
+00:07:38,209 --> 00:07:41,409
+room with far fewer defenses than someone who
+
+150
+00:07:41,489 --> 00:07:44,929
+has learned, often from harder experience, to
+
+151
+00:07:44,969 --> 00:07:48,369
+distrust confident certainty on principle. Age
+
+152
+00:07:48,489 --> 00:07:50,949
+compounds all of this in ways that are
+
+153
+00:07:51,029 --> 00:07:54,409
+easy to underestimate. Adolescents' brains are,
+
+154
+00:07:54,679 --> 00:07:57,989
+on average, less equipped than adults to weigh
+
+155
+00:07:58,049 --> 00:08:01,429
+a distant consequence against an immediate one, which
+
+156
+00:08:01,489 --> 00:08:04,469
+means the promise of this ends now
+
+157
+00:08:04,989 --> 00:08:07,669
+if you just say it can outweigh even
+
+158
+00:08:07,729 --> 00:08:10,729
+a serious future penalty in a way it
+
+159
+00:08:10,769 --> 00:08:13,929
+wouldn't for someone older. A technique that
+
+160
+00:08:14,009 --> 00:08:17,129
+already exploits fatigue and the desire to please
+
+161
+00:08:17,149 --> 00:08:20,509
+authority becomes considerably more effective
+
+162
+00:08:20,589 --> 00:08:23,429
+against a mind that hasn't finished developing the
+
+163
+00:08:23,469 --> 00:08:26,649
+machinery to resist exactly that trade-off.
+
+164
+00:08:27,329 --> 00:08:30,169
+This concern is serious enough that some
+
+165
+00:08:30,209 --> 00:08:32,789
+countries have moved away from this model
+
+166
+00:08:32,829 --> 00:08:36,089
+entirely. The United Kingdom and Ireland, for
+
+167
+00:08:36,149 --> 00:08:39,619
+instance, shifted decades ago toward an approach
+
+168
+00:08:39,909 --> 00:08:43,269
+often called the peace model, built around open
+
+169
+00:08:43,729 --> 00:08:47,229
+information-gathering questions instead of presumed guilt,
+
+170
+00:08:47,729 --> 00:08:49,689
+moral minimization, and false
+
+171
+00:08:49,769 --> 00:08:53,089
+alternatives. The existence of that alternative
+
+172
+00:08:53,189 --> 00:08:56,149
+matters because it proves this isn't the only
+
+173
+00:08:56,249 --> 00:08:59,749
+way to conduct an effective interrogation. It's simply
+
+174
+00:08:59,789 --> 00:09:02,809
+the version that treats extracting a confession as
+
+175
+00:09:02,869 --> 00:09:05,709
+the goal rather than a byproduct of finding
+
+176
+00:09:05,789 --> 00:09:08,549
+out what's actually true. Part of what makes
+
+177
+00:09:08,589 --> 00:09:11,939
+false confessions so dangerous afterward is how
+
+178
+00:09:11,969 --> 00:09:14,878
+convincing they look to everyone who wasn't in
+
+179
+00:09:14,889 --> 00:09:17,789
+the room. A jury hearing, "I did it
+
+180
+00:09:18,069 --> 00:09:21,049
+in my own words on video," rarely stops
+
+181
+00:09:21,089 --> 00:09:23,649
+to ask what happened in the hours before
+
+182
+00:09:23,689 --> 00:09:27,049
+that camera started rolling. A confession sounds
+
+183
+00:09:27,089 --> 00:09:30,459
+like the strongest possible evidence, which is exactly
+
+184
+00:09:30,509 --> 00:09:32,929
+why the pressure to produce one, even a
+
+185
+00:09:32,989 --> 00:09:36,129
+false one, can feel justified to an interrogator
+
+186
+00:09:36,549 --> 00:09:39,609
+convinced they already have the right person. That
+
+187
+00:09:39,649 --> 00:09:42,689
+conviction, held firmly enough, stops being a
+
+188
+00:09:42,749 --> 00:09:46,109
+hypothesis being tested and starts being a conclusion
+
+189
+00:09:46,469 --> 00:09:49,789
+the entire conversation is built to confirm. This
+
+190
+00:09:49,849 --> 00:09:52,449
+is part of why full recording of interrogations,
+
+191
+00:09:52,949 --> 00:09:55,529
+now required in a growing number of jurisdictions,
+
+192
+00:09:56,049 --> 00:09:58,369
+matters so much. It's one of the few
+
+193
+00:09:58,409 --> 00:10:01,789
+tools that can show later exactly which
+
+194
+00:10:01,869 --> 00:10:05,322
+stage produced which words. You are very unlikely
+
+195
+00:10:05,362 --> 00:10:07,912
+to ever sit in a police interrogation room.
+
+196
+00:10:08,542 --> 00:10:10,931
+But the exact same three-stage structure,
+
+197
+00:10:11,482 --> 00:10:14,702
+certainty, minimization, false alternative,
+
+198
+00:10:15,222 --> 00:10:17,762
+shows up far outside it, and that's the
+
+199
+00:10:17,802 --> 00:10:20,802
+part worth carrying with you. A manager who
+
+200
+00:10:20,842 --> 00:10:23,542
+says, "We already know this was your mistake.
+
+201
+00:10:24,102 --> 00:10:26,122
+The only question is whether you're going to
+
+202
+00:10:26,202 --> 00:10:28,122
+own up to it or make this worse,"
+
+203
+00:10:28,642 --> 00:10:31,282
+is running stage one. A partner in an
+
+204
+00:10:31,362 --> 00:10:33,762
+argument who says, "I get why you'd do
+
+205
+00:10:33,802 --> 00:10:37,042
+that. Anyone would be tempted," before asking you
+
+206
+00:10:37,062 --> 00:10:40,212
+to admit something is running stage two. And
+
+207
+00:10:40,262 --> 00:10:42,862
+anyone who offers you two options where both
+
+208
+00:10:42,902 --> 00:10:45,682
+quietly assume the same conclusion, "Are we doing
+
+209
+00:10:45,722 --> 00:10:48,532
+this now or later?" Never, "Are we doing
+
+210
+00:10:48,602 --> 00:10:51,602
+this at all?" is running stage three, whether
+
+211
+00:10:51,662 --> 00:10:53,222
+or not they learned it from a police
+
+212
+00:10:53,282 --> 00:10:56,482
+manual. Sales environments run a gentler version of
+
+213
+00:10:56,542 --> 00:11:00,002
+the same architecture constantly. Presumption becomes,
+
+214
+00:11:00,222 --> 00:11:03,252
+"So when you get started with this," instead
+
+215
+00:11:03,302 --> 00:11:06,762
+of if. Minimization becomes, "Most people
+
+216
+00:11:06,822 --> 00:11:09,192
+in your position would agree this is a
+
+217
+00:11:09,261 --> 00:11:12,542
+no-brainer," lowering the psychological cost of
+
+218
+00:11:12,602 --> 00:11:15,602
+saying yes to something you haven't actually
+
+219
+00:11:15,642 --> 00:11:18,762
+decided on yet. And the false alternative
+
+220
+00:11:18,842 --> 00:11:21,482
+becomes the oldest trick in the closing playbook.
+
+221
+00:11:22,022 --> 00:11:24,242
+"Would you prefer the monthly plan or the
+
+222
+00:11:24,402 --> 00:11:27,592
+annual plan?" A question that has already quietly
+
+223
+00:11:27,662 --> 00:11:30,642
+deleted the option of choosing neither. None of
+
+224
+00:11:30,682 --> 00:11:33,322
+this requires a locked room or a uniform.
+
+225
+00:11:34,122 --> 00:11:36,562
+It only requires you not noticing that a
+
+226
+00:11:36,582 --> 00:11:39,402
+decision got made for you before you realized
+
+227
+00:11:39,442 --> 00:11:42,522
+one was being asked. The defense against all
+
+228
+00:11:42,542 --> 00:11:45,942
+three stages is the same single move. Go
+
+229
+00:11:46,062 --> 00:11:49,462
+back to the assumption nobody let you question.
+
+230
+00:11:49,542 --> 00:11:51,522
+Not which of these two things is true,
+
+231
+00:11:52,142 --> 00:11:54,862
+but wait, is either of these actually true
+
+232
+00:11:54,922 --> 00:11:58,422
+at all? Reclaiming the option that was quietly
+
+233
+00:11:58,442 --> 00:12:01,162
+removed from the table is usually enough to
+
+234
+00:12:01,282 --> 00:12:04,742
+break the entire structure because the whole technique
+
+235
+00:12:04,782 --> 00:12:07,442
+depends on you never noticing it was taken
+
+236
+00:12:07,502 --> 00:12:10,092
+away in the first place. Watch for the
+
+237
+00:12:10,202 --> 00:12:13,362
+specific language too. Minimization
+
+238
+00:12:13,422 --> 00:12:16,772
+often sounds like generosity. "I'm not judging you.
+
+239
+00:12:17,422 --> 00:12:20,022
+I just need to understand," right before a
+
+240
+00:12:20,042 --> 00:12:23,182
+demand that only makes sense if you've already
+
+241
+00:12:23,192 --> 00:12:26,322
+agreed to the premise underneath it. And false
+
+242
+00:12:26,402 --> 00:12:28,952
+alternatives almost always come as a pair of
+
+243
+00:12:29,042 --> 00:12:32,122
+options offered a little too quickly, a little
+
+244
+00:12:32,222 --> 00:12:34,802
+too smoothly, as if the real menu had
+
+245
+00:12:34,862 --> 00:12:37,222
+already been narrowed down for you before you
+
+246
+00:12:37,262 --> 00:12:39,538
+sat at the table. The moment you feel
+
+247
+00:12:39,618 --> 00:12:42,758
+yourself choosing between two paths without remembering
+
+248
+00:12:42,819 --> 00:12:45,078
+deciding you were on either one, that's the
+
+249
+00:12:45,139 --> 00:12:47,338
+signal to stop and ask who built this
+
+250
+00:12:47,418 --> 00:12:50,358
+particular fork in the road and why. There’s
+
+251
+00:12:50,418 --> 00:12:52,858
+a slower version of this worth watching for
+
+252
+00:12:52,958 --> 00:12:56,378
+too, one that plays out over weeks instead
+
+253
+00:12:56,418 --> 00:12:59,639
+of minutes: a business partner who spends a
+
+254
+00:12:59,718 --> 00:13:02,698
+month establishing “we both know this deal is
+
+255
+00:13:02,778 --> 00:13:06,139
+happening” before ever discussing terms, so
+
+256
+00:13:06,179 --> 00:13:08,179
+that by the time the actual numbers come
+
+257
+00:13:08,258 --> 00:13:11,038
+up, backing out feels like betraying an
+
+258
+00:13:11,139 --> 00:13:13,538
+agreement you don’t remember fully making.
+
+259
+00:13:14,398 --> 00:13:17,358
+Presumption doesn’t need a locked room to work.
+
+260
+00:13:17,999 --> 00:13:20,499
+It just needs enough repetition, calmly
+
+261
+00:13:20,558 --> 00:13:23,938
+delivered, that the assumed conclusion starts
+
+262
+00:13:23,958 --> 00:13:26,218
+to feel like a fact you both already
+
+263
+00:13:26,338 --> 00:13:29,536
+settled on together. None of the three stages
+
+264
+00:13:29,837 --> 00:13:33,016
+works in isolation. Presumption alone just
+
+265
+00:13:33,096 --> 00:13:36,576
+sounds like an accusation, easy to reject outright.
+
+266
+00:13:37,376 --> 00:13:40,837
+Minimization alone just sounds like unusual kindness
+
+267
+00:13:40,936 --> 00:13:44,036
+from a stranger. A false alternative alone
+
+268
+00:13:44,437 --> 00:13:47,636
+just sounds like a slightly pushy question. It's
+
+269
+00:13:47,696 --> 00:13:51,017
+the sequence, certainty first, so denial
+
+270
+00:13:51,097 --> 00:13:54,556
+stops landing. Comfort second, so admitting
+
+271
+00:13:54,696 --> 00:13:57,976
+stops feeling catastrophic. And a narrowed choice
+
+272
+00:13:58,076 --> 00:14:01,236
+last, once there's nothing left to argue against.
+
+273
+00:14:01,837 --> 00:14:05,076
+That turns three unremarkable moves into a
+
+274
+00:14:05,156 --> 00:14:07,697
+room almost nobody walks out of the way
+
+275
+00:14:07,776 --> 00:14:10,877
+they walked in. The next time someone offers
+
+276
+00:14:10,936 --> 00:14:13,956
+you a choice that feels oddly narrow, two
+
+277
+00:14:14,056 --> 00:14:16,677
+options both leading to the same place,
+
+278
+00:14:17,357 --> 00:14:20,416
+stop and ask what a third option, the
+
+279
+00:14:20,496 --> 00:14:23,776
+one they didn't offer, would sound like. Comment
+
+280
+00:14:23,816 --> 00:14:26,716
+the word "confess" below if you've ever caught
+
+281
+00:14:26,776 --> 00:14:29,096
+yourself agreeing to something just to make an
+
+282
+00:14:29,177 --> 00:14:32,197
+uncomfortable conversation end. And if you haven't
+
+283
+00:14:32,276 --> 00:14:35,256
+seen how this same psychology plays out in
+
+284
+00:14:35,296 --> 00:14:38,096
+a nine billion dollar company or a thirty-year
+
+285
+00:14:38,216 --> 00:14:41,116
+Ponzi scheme, the rest of Shadow Figure is
+
+286
+00:14:41,156 --> 00:14:41,876
+waiting for you.

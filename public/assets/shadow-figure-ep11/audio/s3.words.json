@@ -1,0 +1,862 @@
+[
+  {
+    "text": "You've",
+    "start": 0.259,
+    "end": 0.419
+  },
+  {
+    "text": "already",
+    "start": 0.479,
+    "end": 0.799
+  },
+  {
+    "text": "seen",
+    "start": 0.939,
+    "end": 1.1
+  },
+  {
+    "text": "a",
+    "start": 1.159,
+    "end": 1.179
+  },
+  {
+    "text": "version",
+    "start": 1.259,
+    "end": 1.599
+  },
+  {
+    "text": "of",
+    "start": 1.659,
+    "end": 1.759
+  },
+  {
+    "text": "this",
+    "start": 1.839,
+    "end": 2.059
+  },
+  {
+    "text": "on",
+    "start": 2.22,
+    "end": 2.319
+  },
+  {
+    "text": "this",
+    "start": 2.379,
+    "end": 2.539
+  },
+  {
+    "text": "channel.",
+    "start": 2.639,
+    "end": 2.96
+  },
+  {
+    "text": "In",
+    "start": 3.619,
+    "end": 3.699
+  },
+  {
+    "text": "our",
+    "start": 3.759,
+    "end": 3.919
+  },
+  {
+    "text": "episode",
+    "start": 4,
+    "end": 4.46
+  },
+  {
+    "text": "on",
+    "start": 4.579,
+    "end": 4.699
+  },
+  {
+    "text": "Elizabeth",
+    "start": 4.759,
+    "end": 5.259
+  },
+  {
+    "text": "Holmes",
+    "start": 5.339,
+    "end": 5.779
+  },
+  {
+    "text": "and",
+    "start": 5.839,
+    "end": 5.94
+  },
+  {
+    "text": "Theranos,",
+    "start": 6.019,
+    "end": 6.619
+  },
+  {
+    "text": "a",
+    "start": 7.199,
+    "end": 7.239
+  },
+  {
+    "text": "young",
+    "start": 7.359,
+    "end": 7.559
+  },
+  {
+    "text": "employee",
+    "start": 7.619,
+    "end": 8.359
+  },
+  {
+    "text": "named",
+    "start": 8.439,
+    "end": 8.64
+  },
+  {
+    "text": "Tyler",
+    "start": 8.72,
+    "end": 9.02
+  },
+  {
+    "text": "Shultz",
+    "start": 9.119,
+    "end": 9.719
+  },
+  {
+    "text": "raised",
+    "start": 9.8,
+    "end": 10.159
+  },
+  {
+    "text": "serious",
+    "start": 10.239,
+    "end": 10.6
+  },
+  {
+    "text": "concerns",
+    "start": 10.659,
+    "end": 11.319
+  },
+  {
+    "text": "about",
+    "start": 11.42,
+    "end": 11.64
+  },
+  {
+    "text": "the",
+    "start": 11.679,
+    "end": 11.759
+  },
+  {
+    "text": "company's",
+    "start": 11.84,
+    "end": 12.319
+  },
+  {
+    "text": "blood",
+    "start": 12.399,
+    "end": 12.619
+  },
+  {
+    "text": "testing",
+    "start": 12.659,
+    "end": 13
+  },
+  {
+    "text": "technology",
+    "start": 13.099,
+    "end": 13.759
+  },
+  {
+    "text": "in",
+    "start": 14.139,
+    "end": 14.259
+  },
+  {
+    "text": "twenty",
+    "start": 14.319,
+    "end": 14.579
+  },
+  {
+    "text": "fourteen.",
+    "start": 14.759,
+    "end": 15.219
+  },
+  {
+    "text": "His",
+    "start": 15.839,
+    "end": 16.039
+  },
+  {
+    "text": "own",
+    "start": 16.139,
+    "end": 16.299
+  },
+  {
+    "text": "grandfather,",
+    "start": 16.359,
+    "end": 16.979
+  },
+  {
+    "text": "George",
+    "start": 17.42,
+    "end": 17.68
+  },
+  {
+    "text": "Shultz,",
+    "start": 17.76,
+    "end": 18.199
+  },
+  {
+    "text": "a",
+    "start": 18.739,
+    "end": 18.799
+  },
+  {
+    "text": "former",
+    "start": 18.879,
+    "end": 19.18
+  },
+  {
+    "text": "US",
+    "start": 19.359,
+    "end": 19.539
+  },
+  {
+    "text": "Secretary",
+    "start": 19.619,
+    "end": 20.139
+  },
+  {
+    "text": "of",
+    "start": 20.199,
+    "end": 20.239
+  },
+  {
+    "text": "State",
+    "start": 20.379,
+    "end": 20.899
+  },
+  {
+    "text": "who",
+    "start": 20.959,
+    "end": 21.099
+  },
+  {
+    "text": "sat",
+    "start": 21.159,
+    "end": 21.34
+  },
+  {
+    "text": "on",
+    "start": 21.399,
+    "end": 21.479
+  },
+  {
+    "text": "Theranos's",
+    "start": 21.559,
+    "end": 22.18
+  },
+  {
+    "text": "board,",
+    "start": 22.239,
+    "end": 22.519
+  },
+  {
+    "text": "reportedly",
+    "start": 23.139,
+    "end": 23.76
+  },
+  {
+    "text": "took",
+    "start": 23.879,
+    "end": 24.039
+  },
+  {
+    "text": "the",
+    "start": 24.079,
+    "end": 24.18
+  },
+  {
+    "text": "company's",
+    "start": 24.26,
+    "end": 24.719
+  },
+  {
+    "text": "side",
+    "start": 24.799,
+    "end": 25.119
+  },
+  {
+    "text": "over",
+    "start": 25.599,
+    "end": 25.799
+  },
+  {
+    "text": "his",
+    "start": 25.859,
+    "end": 26
+  },
+  {
+    "text": "own",
+    "start": 26.079,
+    "end": 26.199
+  },
+  {
+    "text": "grandson's",
+    "start": 26.299,
+    "end": 26.959
+  },
+  {
+    "text": "for",
+    "start": 27.26,
+    "end": 27.359
+  },
+  {
+    "text": "a",
+    "start": 27.439,
+    "end": 27.479
+  },
+  {
+    "text": "significant",
+    "start": 27.539,
+    "end": 28.139
+  },
+  {
+    "text": "stretch",
+    "start": 28.199,
+    "end": 28.479
+  },
+  {
+    "text": "of",
+    "start": 28.519,
+    "end": 28.599
+  },
+  {
+    "text": "time,",
+    "start": 28.719,
+    "end": 29.039
+  },
+  {
+    "text": "a",
+    "start": 29.639,
+    "end": 29.659
+  },
+  {
+    "text": "rift",
+    "start": 29.76,
+    "end": 30.34
+  },
+  {
+    "text": "serious",
+    "start": 30.5,
+    "end": 30.879
+  },
+  {
+    "text": "enough",
+    "start": 30.939,
+    "end": 31.279
+  },
+  {
+    "text": "to",
+    "start": 31.34,
+    "end": 31.399
+  },
+  {
+    "text": "strain",
+    "start": 31.5,
+    "end": 31.799
+  },
+  {
+    "text": "the",
+    "start": 31.84,
+    "end": 31.899
+  },
+  {
+    "text": "family",
+    "start": 32.02,
+    "end": 32.36
+  },
+  {
+    "text": "for",
+    "start": 32.399,
+    "end": 32.52
+  },
+  {
+    "text": "years.",
+    "start": 32.619,
+    "end": 33.02
+  },
+  {
+    "text": "Think",
+    "start": 33.68,
+    "end": 33.88
+  },
+  {
+    "text": "about",
+    "start": 33.979,
+    "end": 34.299
+  },
+  {
+    "text": "what",
+    "start": 34.36,
+    "end": 34.479
+  },
+  {
+    "text": "that",
+    "start": 34.52,
+    "end": 34.7
+  },
+  {
+    "text": "costed",
+    "start": 34.779,
+    "end": 35.18
+  },
+  {
+    "text": "George",
+    "start": 35.279,
+    "end": 35.54
+  },
+  {
+    "text": "Shultz",
+    "start": 35.619,
+    "end": 36
+  },
+  {
+    "text": "to",
+    "start": 36.059,
+    "end": 36.139
+  },
+  {
+    "text": "consider",
+    "start": 36.2,
+    "end": 36.68
+  },
+  {
+    "text": "his",
+    "start": 36.759,
+    "end": 36.899
+  },
+  {
+    "text": "grandson",
+    "start": 36.959,
+    "end": 37.479
+  },
+  {
+    "text": "right.",
+    "start": 37.579,
+    "end": 37.899
+  },
+  {
+    "text": "It",
+    "start": 38.439,
+    "end": 38.54
+  },
+  {
+    "text": "meant",
+    "start": 38.619,
+    "end": 39.119
+  },
+  {
+    "text": "admitting",
+    "start": 39.2,
+    "end": 39.619
+  },
+  {
+    "text": "his",
+    "start": 39.7,
+    "end": 39.819
+  },
+  {
+    "text": "own",
+    "start": 39.899,
+    "end": 40.02
+  },
+  {
+    "text": "judgment,",
+    "start": 40.119,
+    "end": 40.599
+  },
+  {
+    "text": "built",
+    "start": 41.079,
+    "end": 41.319
+  },
+  {
+    "text": "over",
+    "start": 41.399,
+    "end": 41.559
+  },
+  {
+    "text": "a",
+    "start": 41.639,
+    "end": 41.7
+  },
+  {
+    "text": "long",
+    "start": 41.779,
+    "end": 42.36
+  },
+  {
+    "text": "and",
+    "start": 42.419,
+    "end": 42.54
+  },
+  {
+    "text": "decorated",
+    "start": 42.619,
+    "end": 43.2
+  },
+  {
+    "text": "career",
+    "start": 43.259,
+    "end": 43.919
+  },
+  {
+    "text": "reading",
+    "start": 44,
+    "end": 44.34
+  },
+  {
+    "text": "people",
+    "start": 44.399,
+    "end": 44.919
+  },
+  {
+    "text": "and",
+    "start": 44.979,
+    "end": 45.119
+  },
+  {
+    "text": "institutions,",
+    "start": 45.18,
+    "end": 46.059
+  },
+  {
+    "text": "had",
+    "start": 46.5,
+    "end": 46.619
+  },
+  {
+    "text": "been",
+    "start": 46.68,
+    "end": 46.84
+  },
+  {
+    "text": "wrong",
+    "start": 46.899,
+    "end": 47.399
+  },
+  {
+    "text": "about",
+    "start": 47.479,
+    "end": 47.779
+  },
+  {
+    "text": "someone",
+    "start": 47.84,
+    "end": 48.159
+  },
+  {
+    "text": "he'd",
+    "start": 48.219,
+    "end": 48.399
+  },
+  {
+    "text": "vouched",
+    "start": 48.459,
+    "end": 48.799
+  },
+  {
+    "text": "for.",
+    "start": 48.86,
+    "end": 49.079
+  },
+  {
+    "text": "It's",
+    "start": 49.719,
+    "end": 49.879
+  },
+  {
+    "text": "not",
+    "start": 49.939,
+    "end": 50.079
+  },
+  {
+    "text": "that",
+    "start": 50.139,
+    "end": 50.239
+  },
+  {
+    "text": "the",
+    "start": 50.299,
+    "end": 50.379
+  },
+  {
+    "text": "evidence",
+    "start": 50.459,
+    "end": 50.86
+  },
+  {
+    "text": "wasn't",
+    "start": 50.919,
+    "end": 51.199
+  },
+  {
+    "text": "available",
+    "start": 51.299,
+    "end": 51.759
+  },
+  {
+    "text": "to",
+    "start": 51.819,
+    "end": 51.899
+  },
+  {
+    "text": "him.",
+    "start": 51.959,
+    "end": 52.259
+  },
+  {
+    "text": "It's",
+    "start": 52.84,
+    "end": 53.02
+  },
+  {
+    "text": "that",
+    "start": 53.059,
+    "end": 53.219
+  },
+  {
+    "text": "the",
+    "start": 53.259,
+    "end": 53.36
+  },
+  {
+    "text": "evidence",
+    "start": 53.439,
+    "end": 53.86
+  },
+  {
+    "text": "was",
+    "start": 53.939,
+    "end": 54.139
+  },
+  {
+    "text": "more",
+    "start": 54.18,
+    "end": 54.319
+  },
+  {
+    "text": "expensive",
+    "start": 54.399,
+    "end": 54.939
+  },
+  {
+    "text": "to",
+    "start": 55,
+    "end": 55.059
+  },
+  {
+    "text": "accept",
+    "start": 55.18,
+    "end": 55.839
+  },
+  {
+    "text": "than",
+    "start": 55.899,
+    "end": 56.059
+  },
+  {
+    "text": "to",
+    "start": 56.099,
+    "end": 56.219
+  },
+  {
+    "text": "set",
+    "start": 56.279,
+    "end": 56.419
+  },
+  {
+    "text": "aside.",
+    "start": 56.579,
+    "end": 56.979
+  },
+  {
+    "text": "This",
+    "start": 57.799,
+    "end": 58.179
+  },
+  {
+    "text": "is",
+    "start": 58.239,
+    "end": 58.359
+  },
+  {
+    "text": "the",
+    "start": 58.419,
+    "end": 58.479
+  },
+  {
+    "text": "same",
+    "start": 58.619,
+    "end": 58.86
+  },
+  {
+    "text": "mechanism,",
+    "start": 58.899,
+    "end": 59.979
+  },
+  {
+    "text": "just",
+    "start": 60.059,
+    "end": 60.259
+  },
+  {
+    "text": "wearing",
+    "start": 60.359,
+    "end": 60.68
+  },
+  {
+    "text": "a",
+    "start": 60.739,
+    "end": 60.819
+  },
+  {
+    "text": "different",
+    "start": 60.879,
+    "end": 61.239
+  },
+  {
+    "text": "relationship.",
+    "start": 61.319,
+    "end": 62.059
+  },
+  {
+    "text": "Not",
+    "start": 62.559,
+    "end": 62.699
+  },
+  {
+    "text": "a",
+    "start": 62.759,
+    "end": 62.799
+  },
+  {
+    "text": "romantic",
+    "start": 62.859,
+    "end": 63.379
+  },
+  {
+    "text": "partner,",
+    "start": 63.459,
+    "end": 64.279
+  },
+  {
+    "text": "not",
+    "start": 64.36,
+    "end": 64.499
+  },
+  {
+    "text": "a",
+    "start": 64.54,
+    "end": 64.619
+  },
+  {
+    "text": "cult",
+    "start": 64.699,
+    "end": 64.939
+  },
+  {
+    "text": "leader,",
+    "start": 65.019,
+    "end": 65.319
+  },
+  {
+    "text": "but",
+    "start": 65.86,
+    "end": 65.979
+  },
+  {
+    "text": "a",
+    "start": 66.04,
+    "end": 66.099
+  },
+  {
+    "text": "grandfather",
+    "start": 66.159,
+    "end": 67.239
+  },
+  {
+    "text": "whose",
+    "start": 67.299,
+    "end": 67.499
+  },
+  {
+    "text": "own",
+    "start": 67.559,
+    "end": 67.719
+  },
+  {
+    "text": "credibility",
+    "start": 67.779,
+    "end": 68.5
+  },
+  {
+    "text": "was",
+    "start": 68.979,
+    "end": 69.159
+  },
+  {
+    "text": "quietly",
+    "start": 69.239,
+    "end": 69.759
+  },
+  {
+    "text": "tied",
+    "start": 69.819,
+    "end": 70.139
+  },
+  {
+    "text": "to",
+    "start": 70.159,
+    "end": 70.239
+  },
+  {
+    "text": "the",
+    "start": 70.279,
+    "end": 70.399
+  },
+  {
+    "text": "company",
+    "start": 70.439,
+    "end": 70.919
+  },
+  {
+    "text": "being",
+    "start": 70.979,
+    "end": 71.279
+  },
+  {
+    "text": "what",
+    "start": 71.319,
+    "end": 71.439
+  },
+  {
+    "text": "it",
+    "start": 71.5,
+    "end": 71.659
+  },
+  {
+    "text": "claimed",
+    "start": 71.699,
+    "end": 71.999
+  },
+  {
+    "text": "to",
+    "start": 72.019,
+    "end": 72.139
+  },
+  {
+    "text": "be.",
+    "start": 72.18,
+    "end": 72.379
+  }
+]

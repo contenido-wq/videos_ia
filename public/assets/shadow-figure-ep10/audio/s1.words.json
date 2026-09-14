@@ -1,0 +1,412 @@
+[
+  {
+    "text": "Someone",
+    "start": 0.319,
+    "end": 0.639
+  },
+  {
+    "text": "tells",
+    "start": 0.74,
+    "end": 0.999
+  },
+  {
+    "text": "you",
+    "start": 1.059,
+    "end": 1.199
+  },
+  {
+    "text": "three",
+    "start": 1.599,
+    "end": 1.779
+  },
+  {
+    "text": "days",
+    "start": 1.839,
+    "end": 2.099
+  },
+  {
+    "text": "in",
+    "start": 2.119,
+    "end": 2.339
+  },
+  {
+    "text": "that",
+    "start": 2.839,
+    "end": 2.96
+  },
+  {
+    "text": "they've",
+    "start": 3,
+    "end": 3.199
+  },
+  {
+    "text": "never",
+    "start": 3.24,
+    "end": 3.5
+  },
+  {
+    "text": "felt",
+    "start": 3.559,
+    "end": 3.759
+  },
+  {
+    "text": "this",
+    "start": 3.819,
+    "end": 3.98
+  },
+  {
+    "text": "way",
+    "start": 4.039,
+    "end": 4.139
+  },
+  {
+    "text": "about",
+    "start": 4.239,
+    "end": 4.519
+  },
+  {
+    "text": "anyone.",
+    "start": 4.579,
+    "end": 5
+  },
+  {
+    "text": "They",
+    "start": 5.739,
+    "end": 5.899
+  },
+  {
+    "text": "call",
+    "start": 5.96,
+    "end": 6.119
+  },
+  {
+    "text": "you",
+    "start": 6.199,
+    "end": 6.339
+  },
+  {
+    "text": "constantly.",
+    "start": 6.399,
+    "end": 7.019
+  },
+  {
+    "text": "They",
+    "start": 7.539,
+    "end": 7.639
+  },
+  {
+    "text": "shower",
+    "start": 7.799,
+    "end": 8.099
+  },
+  {
+    "text": "you",
+    "start": 8.179,
+    "end": 8.279
+  },
+  {
+    "text": "with",
+    "start": 8.34,
+    "end": 8.5
+  },
+  {
+    "text": "gifts",
+    "start": 8.579,
+    "end": 8.96
+  },
+  {
+    "text": "you",
+    "start": 9.179,
+    "end": 9.3
+  },
+  {
+    "text": "didn't",
+    "start": 9.34,
+    "end": 9.599
+  },
+  {
+    "text": "ask",
+    "start": 9.699,
+    "end": 9.939
+  },
+  {
+    "text": "for.",
+    "start": 10,
+    "end": 10.219
+  },
+  {
+    "text": "They",
+    "start": 10.84,
+    "end": 10.96
+  },
+  {
+    "text": "make",
+    "start": 11.019,
+    "end": 11.179
+  },
+  {
+    "text": "you",
+    "start": 11.239,
+    "end": 11.359
+  },
+  {
+    "text": "feel",
+    "start": 11.439,
+    "end": 11.699
+  },
+  {
+    "text": "almost",
+    "start": 12.239,
+    "end": 12.599
+  },
+  {
+    "text": "overnight",
+    "start": 12.679,
+    "end": 13.239
+  },
+  {
+    "text": "like",
+    "start": 13.699,
+    "end": 13.84
+  },
+  {
+    "text": "the",
+    "start": 13.899,
+    "end": 14.019
+  },
+  {
+    "text": "center",
+    "start": 14.079,
+    "end": 14.519
+  },
+  {
+    "text": "of",
+    "start": 14.579,
+    "end": 14.679
+  },
+  {
+    "text": "their",
+    "start": 14.719,
+    "end": 14.879
+  },
+  {
+    "text": "entire",
+    "start": 14.939,
+    "end": 15.339
+  },
+  {
+    "text": "world.",
+    "start": 15.46,
+    "end": 15.799
+  },
+  {
+    "text": "It",
+    "start": 16.699,
+    "end": 16.84
+  },
+  {
+    "text": "feels",
+    "start": 16.899,
+    "end": 17.159
+  },
+  {
+    "text": "like",
+    "start": 17.239,
+    "end": 17.379
+  },
+  {
+    "text": "fate.",
+    "start": 17.52,
+    "end": 17.819
+  },
+  {
+    "text": "It",
+    "start": 18.299,
+    "end": 18.379
+  },
+  {
+    "text": "is",
+    "start": 18.44,
+    "end": 18.579
+  },
+  {
+    "text": "almost",
+    "start": 18.619,
+    "end": 19.019
+  },
+  {
+    "text": "never",
+    "start": 19.079,
+    "end": 19.299
+  },
+  {
+    "text": "fate.",
+    "start": 19.42,
+    "end": 19.76
+  },
+  {
+    "text": "Fate",
+    "start": 20.479,
+    "end": 20.719
+  },
+  {
+    "text": "doesn't",
+    "start": 20.799,
+    "end": 21.1
+  },
+  {
+    "text": "have",
+    "start": 21.18,
+    "end": 21.299
+  },
+  {
+    "text": "a",
+    "start": 21.34,
+    "end": 21.379
+  },
+  {
+    "text": "strategy.",
+    "start": 21.479,
+    "end": 22.079
+  },
+  {
+    "text": "This",
+    "start": 22.5,
+    "end": 22.719
+  },
+  {
+    "text": "does.",
+    "start": 22.779,
+    "end": 23.119
+  },
+  {
+    "text": "This",
+    "start": 23.859,
+    "end": 24.019
+  },
+  {
+    "text": "is",
+    "start": 24.079,
+    "end": 24.18
+  },
+  {
+    "text": "the",
+    "start": 24.219,
+    "end": 24.34
+  },
+  {
+    "text": "psychology",
+    "start": 24.379,
+    "end": 25.119
+  },
+  {
+    "text": "of",
+    "start": 25.199,
+    "end": 25.299
+  },
+  {
+    "text": "love",
+    "start": 25.399,
+    "end": 25.599
+  },
+  {
+    "text": "bombing",
+    "start": 25.659,
+    "end": 26.519
+  },
+  {
+    "text": "and",
+    "start": 26.599,
+    "end": 26.699
+  },
+  {
+    "text": "why",
+    "start": 26.779,
+    "end": 26.959
+  },
+  {
+    "text": "the",
+    "start": 27,
+    "end": 27.079
+  },
+  {
+    "text": "most",
+    "start": 27.139,
+    "end": 27.359
+  },
+  {
+    "text": "intense",
+    "start": 27.439,
+    "end": 27.859
+  },
+  {
+    "text": "affection",
+    "start": 27.92,
+    "end": 28.459
+  },
+  {
+    "text": "you'll",
+    "start": 28.539,
+    "end": 28.699
+  },
+  {
+    "text": "ever",
+    "start": 28.799,
+    "end": 28.959
+  },
+  {
+    "text": "receive",
+    "start": 29.019,
+    "end": 29.699
+  },
+  {
+    "text": "might",
+    "start": 29.779,
+    "end": 29.999
+  },
+  {
+    "text": "also",
+    "start": 30.079,
+    "end": 30.379
+  },
+  {
+    "text": "be",
+    "start": 30.439,
+    "end": 30.539
+  },
+  {
+    "text": "the",
+    "start": 30.579,
+    "end": 30.679
+  },
+  {
+    "text": "most",
+    "start": 30.719,
+    "end": 30.959
+  },
+  {
+    "text": "dangerous.",
+    "start": 31,
+    "end": 31.639
+  },
+  {
+    "text": "This",
+    "start": 32.159,
+    "end": 32.639
+  },
+  {
+    "text": "is",
+    "start": 32.719,
+    "end": 32.819
+  },
+  {
+    "text": "Shadow",
+    "start": 32.899,
+    "end": 33.2
+  },
+  {
+    "text": "Figure.",
+    "start": 33.279,
+    "end": 33.659
+  }
+]

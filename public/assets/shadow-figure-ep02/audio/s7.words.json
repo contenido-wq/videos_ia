@@ -1,0 +1,1277 @@
+[
+  {
+    "text": "In",
+    "start": 0.26,
+    "end": 0.32
+  },
+  {
+    "text": "October",
+    "start": 0.36,
+    "end": 0.8
+  },
+  {
+    "text": "2015,",
+    "start": 0.98,
+    "end": 1.96
+  },
+  {
+    "text": "Wall",
+    "start": 2.52,
+    "end": 2.68
+  },
+  {
+    "text": "Street",
+    "start": 2.76,
+    "end": 3
+  },
+  {
+    "text": "Journal",
+    "start": 3.1,
+    "end": 3.36
+  },
+  {
+    "text": "reporter",
+    "start": 3.44,
+    "end": 3.94
+  },
+  {
+    "text": "John",
+    "start": 4.08,
+    "end": 4.32
+  },
+  {
+    "text": "Carreyrou",
+    "start": 4.36,
+    "end": 4.86
+  },
+  {
+    "text": "published",
+    "start": 5.34,
+    "end": 5.76
+  },
+  {
+    "text": "an",
+    "start": 5.82,
+    "end": 5.86
+  },
+  {
+    "text": "investigation",
+    "start": 5.92,
+    "end": 7.32
+  },
+  {
+    "text": "built",
+    "start": 7.36,
+    "end": 7.61
+  },
+  {
+    "text": "on",
+    "start": 7.68,
+    "end": 7.83
+  },
+  {
+    "text": "those",
+    "start": 7.86,
+    "end": 8.109
+  },
+  {
+    "text": "same",
+    "start": 8.16,
+    "end": 8.42
+  },
+  {
+    "text": "whistleblowers",
+    "start": 8.46,
+    "end": 9.16
+  },
+  {
+    "text": "accounts,",
+    "start": 9.24,
+    "end": 9.72
+  },
+  {
+    "text": "revealing",
+    "start": 10.26,
+    "end": 11.2
+  },
+  {
+    "text": "that",
+    "start": 11.21,
+    "end": 11.41
+  },
+  {
+    "text": "Theranos",
+    "start": 11.41,
+    "end": 12.34
+  },
+  {
+    "text": "was",
+    "start": 12.35,
+    "end": 12.56
+  },
+  {
+    "text": "running",
+    "start": 12.6,
+    "end": 12.91
+  },
+  {
+    "text": "the",
+    "start": 12.91,
+    "end": 13.04
+  },
+  {
+    "text": "vast",
+    "start": 13.1,
+    "end": 13.34
+  },
+  {
+    "text": "majority",
+    "start": 13.42,
+    "end": 13.95
+  },
+  {
+    "text": "of",
+    "start": 13.98,
+    "end": 14.08
+  },
+  {
+    "text": "its",
+    "start": 14.12,
+    "end": 14.3
+  },
+  {
+    "text": "tests",
+    "start": 14.36,
+    "end": 15.16
+  },
+  {
+    "text": "on",
+    "start": 15.24,
+    "end": 15.38
+  },
+  {
+    "text": "outside",
+    "start": 15.48,
+    "end": 15.9
+  },
+  {
+    "text": "machines",
+    "start": 15.94,
+    "end": 16.9
+  },
+  {
+    "text": "while",
+    "start": 16.94,
+    "end": 17.15
+  },
+  {
+    "text": "marketing",
+    "start": 17.18,
+    "end": 18.11
+  },
+  {
+    "text": "a",
+    "start": 18.16,
+    "end": 18.24
+  },
+  {
+    "text": "proprietary",
+    "start": 18.28,
+    "end": 19
+  },
+  {
+    "text": "technology",
+    "start": 19.04,
+    "end": 20.14
+  },
+  {
+    "text": "that",
+    "start": 20.18,
+    "end": 20.33
+  },
+  {
+    "text": "barely",
+    "start": 20.34,
+    "end": 20.68
+  },
+  {
+    "text": "functioned.",
+    "start": 20.78,
+    "end": 21.28
+  },
+  {
+    "text": "Regulators",
+    "start": 21.92,
+    "end": 22.56
+  },
+  {
+    "text": "followed.",
+    "start": 22.66,
+    "end": 23.08
+  },
+  {
+    "text": "Federal",
+    "start": 23.76,
+    "end": 24.06
+  },
+  {
+    "text": "inspectors",
+    "start": 24.14,
+    "end": 24.78
+  },
+  {
+    "text": "found",
+    "start": 24.88,
+    "end": 25.1
+  },
+  {
+    "text": "the",
+    "start": 25.12,
+    "end": 25.22
+  },
+  {
+    "text": "company's",
+    "start": 25.28,
+    "end": 25.72
+  },
+  {
+    "text": "clinical",
+    "start": 25.76,
+    "end": 26.14
+  },
+  {
+    "text": "lab",
+    "start": 26.24,
+    "end": 26.5
+  },
+  {
+    "text": "posed",
+    "start": 26.78,
+    "end": 27.04
+  },
+  {
+    "text": "immediate",
+    "start": 27.1,
+    "end": 27.54
+  },
+  {
+    "text": "risk",
+    "start": 27.62,
+    "end": 27.9
+  },
+  {
+    "text": "to",
+    "start": 28.02,
+    "end": 28.08
+  },
+  {
+    "text": "patient",
+    "start": 28.18,
+    "end": 28.52
+  },
+  {
+    "text": "health.",
+    "start": 28.56,
+    "end": 28.86
+  },
+  {
+    "text": "Walgreens",
+    "start": 29.5,
+    "end": 30.1
+  },
+  {
+    "text": "ended",
+    "start": 30.3,
+    "end": 30.58
+  },
+  {
+    "text": "the",
+    "start": 30.59,
+    "end": 30.7
+  },
+  {
+    "text": "partnership.",
+    "start": 30.72,
+    "end": 31.38
+  },
+  {
+    "text": "The",
+    "start": 31.89,
+    "end": 31.98
+  },
+  {
+    "text": "nine",
+    "start": 32.08,
+    "end": 32.28
+  },
+  {
+    "text": "billion",
+    "start": 32.38,
+    "end": 32.66
+  },
+  {
+    "text": "dollar",
+    "start": 32.74,
+    "end": 32.949
+  },
+  {
+    "text": "valuation",
+    "start": 33.04,
+    "end": 33.66
+  },
+  {
+    "text": "collapsed",
+    "start": 34.04,
+    "end": 34.43
+  },
+  {
+    "text": "toward",
+    "start": 34.48,
+    "end": 34.699
+  },
+  {
+    "text": "zero",
+    "start": 34.78,
+    "end": 35.12
+  },
+  {
+    "text": "within",
+    "start": 35.38,
+    "end": 35.64
+  },
+  {
+    "text": "about",
+    "start": 35.7,
+    "end": 35.92
+  },
+  {
+    "text": "a",
+    "start": 36,
+    "end": 36.02
+  },
+  {
+    "text": "year.",
+    "start": 36.12,
+    "end": 36.36
+  },
+  {
+    "text": "In",
+    "start": 37.06,
+    "end": 37.18
+  },
+  {
+    "text": "2018,",
+    "start": 37.34,
+    "end": 38.02
+  },
+  {
+    "text": "the",
+    "start": 38.3,
+    "end": 38.4
+  },
+  {
+    "text": "Securities",
+    "start": 38.46,
+    "end": 39.07
+  },
+  {
+    "text": "and",
+    "start": 39.12,
+    "end": 39.2
+  },
+  {
+    "text": "Exchange",
+    "start": 39.26,
+    "end": 39.64
+  },
+  {
+    "text": "Commission",
+    "start": 39.72,
+    "end": 40.44
+  },
+  {
+    "text": "charged",
+    "start": 40.51,
+    "end": 40.88
+  },
+  {
+    "text": "Holmes",
+    "start": 40.94,
+    "end": 41.25
+  },
+  {
+    "text": "with",
+    "start": 41.34,
+    "end": 41.44
+  },
+  {
+    "text": "massive",
+    "start": 41.52,
+    "end": 41.9
+  },
+  {
+    "text": "fraud.",
+    "start": 41.96,
+    "end": 42.34
+  },
+  {
+    "text": "In",
+    "start": 43.1,
+    "end": 43.22
+  },
+  {
+    "text": "January",
+    "start": 43.28,
+    "end": 43.72
+  },
+  {
+    "text": "2022,",
+    "start": 43.98,
+    "end": 44.84
+  },
+  {
+    "text": "a",
+    "start": 45.34,
+    "end": 45.36
+  },
+  {
+    "text": "federal",
+    "start": 45.48,
+    "end": 45.82
+  },
+  {
+    "text": "jury",
+    "start": 45.94,
+    "end": 46.24
+  },
+  {
+    "text": "convicted",
+    "start": 46.38,
+    "end": 46.9
+  },
+  {
+    "text": "her",
+    "start": 46.94,
+    "end": 47.16
+  },
+  {
+    "text": "on",
+    "start": 47.22,
+    "end": 47.38
+  },
+  {
+    "text": "four",
+    "start": 47.44,
+    "end": 47.6
+  },
+  {
+    "text": "counts",
+    "start": 47.72,
+    "end": 48.02
+  },
+  {
+    "text": "of",
+    "start": 48.08,
+    "end": 48.18
+  },
+  {
+    "text": "defrauding",
+    "start": 48.22,
+    "end": 48.71
+  },
+  {
+    "text": "investors.",
+    "start": 48.76,
+    "end": 49.46
+  },
+  {
+    "text": "She",
+    "start": 50.02,
+    "end": 50.14
+  },
+  {
+    "text": "was",
+    "start": 50.18,
+    "end": 50.3
+  },
+  {
+    "text": "sentenced",
+    "start": 50.36,
+    "end": 50.78
+  },
+  {
+    "text": "to",
+    "start": 50.82,
+    "end": 50.94
+  },
+  {
+    "text": "more",
+    "start": 50.96,
+    "end": 51.14
+  },
+  {
+    "text": "than",
+    "start": 51.18,
+    "end": 51.32
+  },
+  {
+    "text": "eleven",
+    "start": 51.4,
+    "end": 51.78
+  },
+  {
+    "text": "years",
+    "start": 51.86,
+    "end": 52.14
+  },
+  {
+    "text": "in",
+    "start": 52.18,
+    "end": 52.3
+  },
+  {
+    "text": "federal",
+    "start": 52.36,
+    "end": 52.66
+  },
+  {
+    "text": "prison",
+    "start": 52.76,
+    "end": 53.12
+  },
+  {
+    "text": "and",
+    "start": 53.56,
+    "end": 53.66
+  },
+  {
+    "text": "began",
+    "start": 53.7,
+    "end": 54.02
+  },
+  {
+    "text": "serving",
+    "start": 54.14,
+    "end": 54.48
+  },
+  {
+    "text": "that",
+    "start": 54.52,
+    "end": 54.68
+  },
+  {
+    "text": "sentence",
+    "start": 54.74,
+    "end": 55.3
+  },
+  {
+    "text": "in",
+    "start": 55.36,
+    "end": 55.48
+  },
+  {
+    "text": "2023.",
+    "start": 55.64,
+    "end": 56.5
+  },
+  {
+    "text": "Her",
+    "start": 57.2,
+    "end": 57.34
+  },
+  {
+    "text": "former",
+    "start": 57.4,
+    "end": 57.67
+  },
+  {
+    "text": "partner",
+    "start": 57.78,
+    "end": 58.16
+  },
+  {
+    "text": "and",
+    "start": 58.64,
+    "end": 58.74
+  },
+  {
+    "text": "the",
+    "start": 58.78,
+    "end": 58.86
+  },
+  {
+    "text": "company's",
+    "start": 58.92,
+    "end": 59.38
+  },
+  {
+    "text": "president,",
+    "start": 59.4,
+    "end": 59.92
+  },
+  {
+    "text": "Sunny",
+    "start": 60.3,
+    "end": 60.62
+  },
+  {
+    "text": "Balwani,",
+    "start": 60.64,
+    "end": 61.2
+  },
+  {
+    "text": "was",
+    "start": 61.66,
+    "end": 61.8
+  },
+  {
+    "text": "convicted",
+    "start": 61.84,
+    "end": 62.34
+  },
+  {
+    "text": "separately",
+    "start": 62.36,
+    "end": 63.3
+  },
+  {
+    "text": "and",
+    "start": 63.34,
+    "end": 63.46
+  },
+  {
+    "text": "received",
+    "start": 63.5,
+    "end": 63.88
+  },
+  {
+    "text": "a",
+    "start": 63.94,
+    "end": 64
+  },
+  {
+    "text": "comparable",
+    "start": 64.04,
+    "end": 64.56
+  },
+  {
+    "text": "sentence.",
+    "start": 64.68,
+    "end": 65.22
+  },
+  {
+    "text": "The",
+    "start": 65.8,
+    "end": 65.94
+  },
+  {
+    "text": "damage",
+    "start": 65.98,
+    "end": 66.38
+  },
+  {
+    "text": "wasn't",
+    "start": 66.42,
+    "end": 66.7
+  },
+  {
+    "text": "contained",
+    "start": 66.74,
+    "end": 67.18
+  },
+  {
+    "text": "to",
+    "start": 67.22,
+    "end": 67.3
+  },
+  {
+    "text": "investors",
+    "start": 67.34,
+    "end": 67.94
+  },
+  {
+    "text": "who",
+    "start": 68.02,
+    "end": 68.14
+  },
+  {
+    "text": "could",
+    "start": 68.16,
+    "end": 68.3
+  },
+  {
+    "text": "absorb",
+    "start": 68.36,
+    "end": 68.74
+  },
+  {
+    "text": "the",
+    "start": 68.78,
+    "end": 68.88
+  },
+  {
+    "text": "loss.",
+    "start": 68.9,
+    "end": 69.26
+  },
+  {
+    "text": "Real",
+    "start": 69.78,
+    "end": 69.94
+  },
+  {
+    "text": "patients",
+    "start": 70.04,
+    "end": 70.52
+  },
+  {
+    "text": "had",
+    "start": 70.62,
+    "end": 70.78
+  },
+  {
+    "text": "made",
+    "start": 70.8,
+    "end": 71
+  },
+  {
+    "text": "real",
+    "start": 71.06,
+    "end": 71.28
+  },
+  {
+    "text": "medical",
+    "start": 71.34,
+    "end": 71.72
+  },
+  {
+    "text": "decisions",
+    "start": 71.8,
+    "end": 72.38
+  },
+  {
+    "text": "based",
+    "start": 72.82,
+    "end": 73.06
+  },
+  {
+    "text": "on",
+    "start": 73.1,
+    "end": 73.22
+  },
+  {
+    "text": "blood",
+    "start": 73.26,
+    "end": 73.46
+  },
+  {
+    "text": "tests",
+    "start": 73.54,
+    "end": 73.92
+  },
+  {
+    "text": "the",
+    "start": 74.04,
+    "end": 74.14
+  },
+  {
+    "text": "company",
+    "start": 74.16,
+    "end": 74.56
+  },
+  {
+    "text": "knew,",
+    "start": 74.6,
+    "end": 74.84
+  },
+  {
+    "text": "internally,",
+    "start": 75.32,
+    "end": 75.9
+  },
+  {
+    "text": "it",
+    "start": 76.38,
+    "end": 76.48
+  },
+  {
+    "text": "could",
+    "start": 76.52,
+    "end": 76.66
+  },
+  {
+    "text": "not",
+    "start": 76.7,
+    "end": 76.86
+  },
+  {
+    "text": "reliably",
+    "start": 76.92,
+    "end": 77.42
+  },
+  {
+    "text": "perform.",
+    "start": 77.46,
+    "end": 77.94
+  },
+  {
+    "text": "Forbes",
+    "start": 78.9,
+    "end": 79.28
+  },
+  {
+    "text": "had",
+    "start": 79.32,
+    "end": 79.48
+  },
+  {
+    "text": "once",
+    "start": 79.52,
+    "end": 79.72
+  },
+  {
+    "text": "listed",
+    "start": 79.8,
+    "end": 80.14
+  },
+  {
+    "text": "Holmes",
+    "start": 80.18,
+    "end": 80.53
+  },
+  {
+    "text": "as",
+    "start": 80.92,
+    "end": 81.1
+  },
+  {
+    "text": "the",
+    "start": 81.14,
+    "end": 81.22
+  },
+  {
+    "text": "youngest",
+    "start": 81.28,
+    "end": 81.72
+  },
+  {
+    "text": "self-made",
+    "start": 81.76,
+    "end": 82.32
+  },
+  {
+    "text": "female",
+    "start": 82.42,
+    "end": 82.74
+  },
+  {
+    "text": "billionaire",
+    "start": 82.84,
+    "end": 83.32
+  },
+  {
+    "text": "in",
+    "start": 83.38,
+    "end": 83.44
+  },
+  {
+    "text": "America,",
+    "start": 83.5,
+    "end": 84.02
+  },
+  {
+    "text": "estimating",
+    "start": 84.62,
+    "end": 85.16
+  },
+  {
+    "text": "her",
+    "start": 85.2,
+    "end": 85.28
+  },
+  {
+    "text": "stake",
+    "start": 85.42,
+    "end": 85.72
+  },
+  {
+    "text": "at",
+    "start": 86.08,
+    "end": 86.22
+  },
+  {
+    "text": "four",
+    "start": 86.28,
+    "end": 86.4
+  },
+  {
+    "text": "and",
+    "start": 86.46,
+    "end": 86.54
+  },
+  {
+    "text": "a",
+    "start": 86.6,
+    "end": 86.62
+  },
+  {
+    "text": "half",
+    "start": 86.7,
+    "end": 86.89
+  },
+  {
+    "text": "billion",
+    "start": 87.02,
+    "end": 87.36
+  },
+  {
+    "text": "dollars.",
+    "start": 87.4,
+    "end": 87.82
+  },
+  {
+    "text": "By",
+    "start": 88.58,
+    "end": 88.76
+  },
+  {
+    "text": "2016,",
+    "start": 89,
+    "end": 89.72
+  },
+  {
+    "text": "the",
+    "start": 90.04,
+    "end": 90.12
+  },
+  {
+    "text": "magazine",
+    "start": 90.18,
+    "end": 90.66
+  },
+  {
+    "text": "revised",
+    "start": 90.68,
+    "end": 91.18
+  },
+  {
+    "text": "that",
+    "start": 91.2,
+    "end": 91.38
+  },
+  {
+    "text": "estimate",
+    "start": 91.44,
+    "end": 91.92
+  },
+  {
+    "text": "to",
+    "start": 92,
+    "end": 92.1
+  },
+  {
+    "text": "zero.",
+    "start": 92.2,
+    "end": 92.52
+  },
+  {
+    "text": "Federal",
+    "start": 93.28,
+    "end": 93.63
+  },
+  {
+    "text": "health",
+    "start": 93.72,
+    "end": 93.94
+  },
+  {
+    "text": "inspectors",
+    "start": 94,
+    "end": 94.66
+  },
+  {
+    "text": "found",
+    "start": 94.96,
+    "end": 95.16
+  },
+  {
+    "text": "deficiencies",
+    "start": 95.22,
+    "end": 95.95
+  },
+  {
+    "text": "at",
+    "start": 95.98,
+    "end": 96.14
+  },
+  {
+    "text": "Theranos's",
+    "start": 96.16,
+    "end": 96.78
+  },
+  {
+    "text": "lab",
+    "start": 96.86,
+    "end": 97.14
+  },
+  {
+    "text": "serious",
+    "start": 97.46,
+    "end": 97.86
+  },
+  {
+    "text": "enough",
+    "start": 97.92,
+    "end": 98.28
+  },
+  {
+    "text": "to",
+    "start": 98.32,
+    "end": 98.37
+  },
+  {
+    "text": "pose",
+    "start": 98.48,
+    "end": 98.78
+  },
+  {
+    "text": "immediate",
+    "start": 98.84,
+    "end": 99.24
+  },
+  {
+    "text": "jeopardy",
+    "start": 99.38,
+    "end": 99.84
+  },
+  {
+    "text": "to",
+    "start": 99.88,
+    "end": 100
+  },
+  {
+    "text": "patient",
+    "start": 100.02,
+    "end": 100.36
+  },
+  {
+    "text": "safety,",
+    "start": 100.44,
+    "end": 100.88
+  },
+  {
+    "text": "and",
+    "start": 101.4,
+    "end": 101.5
+  },
+  {
+    "text": "the",
+    "start": 101.54,
+    "end": 101.58
+  },
+  {
+    "text": "company's",
+    "start": 101.66,
+    "end": 102.16
+  },
+  {
+    "text": "clinical",
+    "start": 102.24,
+    "end": 102.64
+  },
+  {
+    "text": "lab",
+    "start": 102.72,
+    "end": 102.92
+  },
+  {
+    "text": "license",
+    "start": 103,
+    "end": 103.5
+  },
+  {
+    "text": "was",
+    "start": 103.78,
+    "end": 103.9
+  },
+  {
+    "text": "effectively",
+    "start": 103.94,
+    "end": 104.52
+  },
+  {
+    "text": "revoked.",
+    "start": 104.6,
+    "end": 105.2
+  },
+  {
+    "text": "Holmes",
+    "start": 105.92,
+    "end": 106.3
+  },
+  {
+    "text": "and",
+    "start": 106.34,
+    "end": 106.43
+  },
+  {
+    "text": "Balwani's",
+    "start": 106.48,
+    "end": 107.06
+  },
+  {
+    "text": "criminal",
+    "start": 107.16,
+    "end": 107.52
+  },
+  {
+    "text": "trials,",
+    "start": 107.62,
+    "end": 108.06
+  },
+  {
+    "text": "years",
+    "start": 108.36,
+    "end": 108.62
+  },
+  {
+    "text": "later,",
+    "start": 108.66,
+    "end": 108.98
+  },
+  {
+    "text": "ran",
+    "start": 109.32,
+    "end": 109.48
+  },
+  {
+    "text": "on",
+    "start": 109.52,
+    "end": 109.66
+  },
+  {
+    "text": "largely",
+    "start": 109.72,
+    "end": 110.2
+  },
+  {
+    "text": "the",
+    "start": 110.48,
+    "end": 110.56
+  },
+  {
+    "text": "same",
+    "start": 110.6,
+    "end": 110.9
+  },
+  {
+    "text": "whistleblower",
+    "start": 110.92,
+    "end": 111.54
+  },
+  {
+    "text": "testimony",
+    "start": 111.64,
+    "end": 112.42
+  },
+  {
+    "text": "that",
+    "start": 112.44,
+    "end": 112.58
+  },
+  {
+    "text": "had",
+    "start": 112.6,
+    "end": 112.78
+  },
+  {
+    "text": "first",
+    "start": 112.82,
+    "end": 113.06
+  },
+  {
+    "text": "surfaced",
+    "start": 113.14,
+    "end": 113.58
+  },
+  {
+    "text": "in",
+    "start": 113.64,
+    "end": 113.76
+  },
+  {
+    "text": "2015,",
+    "start": 113.92,
+    "end": 114.66
+  },
+  {
+    "text": "the",
+    "start": 115.28,
+    "end": 115.42
+  },
+  {
+    "text": "same",
+    "start": 115.5,
+    "end": 115.72
+  },
+  {
+    "text": "warnings",
+    "start": 115.78,
+    "end": 116.26
+  },
+  {
+    "text": "that",
+    "start": 116.56,
+    "end": 116.64
+  },
+  {
+    "text": "had",
+    "start": 116.68,
+    "end": 116.82
+  },
+  {
+    "text": "once",
+    "start": 116.88,
+    "end": 117.1
+  },
+  {
+    "text": "been",
+    "start": 117.18,
+    "end": 117.34
+  },
+  {
+    "text": "answered",
+    "start": 117.44,
+    "end": 117.84
+  },
+  {
+    "text": "with",
+    "start": 117.88,
+    "end": 117.99
+  },
+  {
+    "text": "lawyers",
+    "start": 118.08,
+    "end": 118.52
+  },
+  {
+    "text": "instead",
+    "start": 118.82,
+    "end": 119.18
+  },
+  {
+    "text": "of",
+    "start": 119.22,
+    "end": 119.3
+  },
+  {
+    "text": "lab",
+    "start": 119.38,
+    "end": 119.6
+  },
+  {
+    "text": "audits.",
+    "start": 119.68,
+    "end": 120.08
+  }
+]

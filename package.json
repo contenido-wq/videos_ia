@@ -39,6 +39,7 @@
     "generate:assets": "tsx src/services/generateAssets.ts",
     "analyze:channel": "tsx src/services/analyzeChannel.ts",
     "clean:video": "tsx src/services/cleanVideo.ts",
+    "build:voiceover-episode": "tsx src/services/buildVoiceOverEpisode.ts",
     "test": "vitest run"
   },
   "sideEffects": [

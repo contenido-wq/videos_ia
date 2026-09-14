@@ -1,0 +1,1222 @@
+[
+  {
+    "text": "The",
+    "start": 0.28,
+    "end": 0.359
+  },
+  {
+    "text": "third",
+    "start": 0.459,
+    "end": 0.68
+  },
+  {
+    "text": "law:",
+    "start": 0.779,
+    "end": 0.979
+  },
+  {
+    "text": "If",
+    "start": 1.659,
+    "end": 1.779
+  },
+  {
+    "text": "no",
+    "start": 1.86,
+    "end": 1.979
+  },
+  {
+    "text": "single",
+    "start": 2.119,
+    "end": 2.399
+  },
+  {
+    "text": "person",
+    "start": 2.539,
+    "end": 2.879
+  },
+  {
+    "text": "can",
+    "start": 2.98,
+    "end": 3.099
+  },
+  {
+    "text": "see",
+    "start": 3.22,
+    "end": 3.339
+  },
+  {
+    "text": "the",
+    "start": 3.399,
+    "end": 3.459
+  },
+  {
+    "text": "whole",
+    "start": 3.539,
+    "end": 3.74
+  },
+  {
+    "text": "picture,",
+    "start": 3.819,
+    "end": 4.199
+  },
+  {
+    "text": "no",
+    "start": 4.679,
+    "end": 4.819
+  },
+  {
+    "text": "single",
+    "start": 4.92,
+    "end": 5.179
+  },
+  {
+    "text": "person",
+    "start": 5.319,
+    "end": 5.659
+  },
+  {
+    "text": "can",
+    "start": 5.779,
+    "end": 5.9
+  },
+  {
+    "text": "raise",
+    "start": 6,
+    "end": 6.219
+  },
+  {
+    "text": "the",
+    "start": 6.299,
+    "end": 6.379
+  },
+  {
+    "text": "whole",
+    "start": 6.44,
+    "end": 6.619
+  },
+  {
+    "text": "alarm.",
+    "start": 6.699,
+    "end": 7.119
+  },
+  {
+    "text": "Theranos",
+    "start": 7.739,
+    "end": 8.319
+  },
+  {
+    "text": "ran",
+    "start": 8.639,
+    "end": 8.84
+  },
+  {
+    "text": "on",
+    "start": 8.88,
+    "end": 9.019
+  },
+  {
+    "text": "secrecy",
+    "start": 9.059,
+    "end": 9.639
+  },
+  {
+    "text": "that",
+    "start": 10.139,
+    "end": 10.26
+  },
+  {
+    "text": "went",
+    "start": 10.319,
+    "end": 10.52
+  },
+  {
+    "text": "far",
+    "start": 10.679,
+    "end": 10.84
+  },
+  {
+    "text": "beyond",
+    "start": 10.939,
+    "end": 11.319
+  },
+  {
+    "text": "normal",
+    "start": 11.5,
+    "end": 11.899
+  },
+  {
+    "text": "trade",
+    "start": 11.979,
+    "end": 12.219
+  },
+  {
+    "text": "secret",
+    "start": 12.359,
+    "end": 12.679
+  },
+  {
+    "text": "protection.",
+    "start": 12.759,
+    "end": 13.34
+  },
+  {
+    "text": "Employees",
+    "start": 14.019,
+    "end": 14.659
+  },
+  {
+    "text": "were",
+    "start": 14.719,
+    "end": 14.88
+  },
+  {
+    "text": "organized",
+    "start": 15,
+    "end": 15.619
+  },
+  {
+    "text": "into",
+    "start": 15.679,
+    "end": 15.92
+  },
+  {
+    "text": "isolated",
+    "start": 16.1,
+    "end": 16.719
+  },
+  {
+    "text": "silos",
+    "start": 16.799,
+    "end": 17.34
+  },
+  {
+    "text": "and",
+    "start": 17.799,
+    "end": 17.899
+  },
+  {
+    "text": "discouraged",
+    "start": 17.979,
+    "end": 18.659
+  },
+  {
+    "text": "from",
+    "start": 18.76,
+    "end": 18.939
+  },
+  {
+    "text": "talking",
+    "start": 19,
+    "end": 19.319
+  },
+  {
+    "text": "across",
+    "start": 19.439,
+    "end": 19.719
+  },
+  {
+    "text": "teams",
+    "start": 19.84,
+    "end": 20.239
+  },
+  {
+    "text": "about",
+    "start": 20.739,
+    "end": 20.959
+  },
+  {
+    "text": "what",
+    "start": 21.039,
+    "end": 21.18
+  },
+  {
+    "text": "they",
+    "start": 21.239,
+    "end": 21.34
+  },
+  {
+    "text": "were",
+    "start": 21.399,
+    "end": 21.539
+  },
+  {
+    "text": "actually",
+    "start": 21.659,
+    "end": 22.099
+  },
+  {
+    "text": "working",
+    "start": 22.159,
+    "end": 22.5
+  },
+  {
+    "text": "on.",
+    "start": 22.6,
+    "end": 22.779
+  },
+  {
+    "text": "Engineers",
+    "start": 23.6,
+    "end": 24.219
+  },
+  {
+    "text": "who",
+    "start": 24.34,
+    "end": 24.439
+  },
+  {
+    "text": "built",
+    "start": 24.5,
+    "end": 24.719
+  },
+  {
+    "text": "software",
+    "start": 24.779,
+    "end": 25.539
+  },
+  {
+    "text": "didn't",
+    "start": 25.619,
+    "end": 25.899
+  },
+  {
+    "text": "know",
+    "start": 25.979,
+    "end": 26.159
+  },
+  {
+    "text": "what",
+    "start": 26.199,
+    "end": 26.319
+  },
+  {
+    "text": "the",
+    "start": 26.359,
+    "end": 26.459
+  },
+  {
+    "text": "chemists",
+    "start": 26.519,
+    "end": 26.979
+  },
+  {
+    "text": "were",
+    "start": 27.039,
+    "end": 27.179
+  },
+  {
+    "text": "struggling",
+    "start": 27.239,
+    "end": 27.68
+  },
+  {
+    "text": "with.",
+    "start": 27.739,
+    "end": 27.999
+  },
+  {
+    "text": "The",
+    "start": 28.68,
+    "end": 28.779
+  },
+  {
+    "text": "people",
+    "start": 28.859,
+    "end": 29.119
+  },
+  {
+    "text": "running",
+    "start": 29.179,
+    "end": 29.479
+  },
+  {
+    "text": "patient",
+    "start": 29.539,
+    "end": 29.92
+  },
+  {
+    "text": "samples",
+    "start": 29.979,
+    "end": 30.599
+  },
+  {
+    "text": "on",
+    "start": 30.679,
+    "end": 30.819
+  },
+  {
+    "text": "secretly",
+    "start": 30.899,
+    "end": 31.379
+  },
+  {
+    "text": "modified",
+    "start": 31.439,
+    "end": 31.979
+  },
+  {
+    "text": "commercial",
+    "start": 32.04,
+    "end": 32.479
+  },
+  {
+    "text": "machines",
+    "start": 32.52,
+    "end": 33.059
+  },
+  {
+    "text": "were",
+    "start": 33.399,
+    "end": 33.54
+  },
+  {
+    "text": "kept",
+    "start": 33.599,
+    "end": 33.819
+  },
+  {
+    "text": "separate",
+    "start": 33.899,
+    "end": 34.299
+  },
+  {
+    "text": "from",
+    "start": 34.34,
+    "end": 34.479
+  },
+  {
+    "text": "the",
+    "start": 34.52,
+    "end": 34.619
+  },
+  {
+    "text": "people",
+    "start": 34.68,
+    "end": 34.979
+  },
+  {
+    "text": "publicly",
+    "start": 35.139,
+    "end": 35.639
+  },
+  {
+    "text": "claiming",
+    "start": 35.7,
+    "end": 36.079
+  },
+  {
+    "text": "the",
+    "start": 36.399,
+    "end": 36.5
+  },
+  {
+    "text": "proprietary",
+    "start": 36.54,
+    "end": 37.239
+  },
+  {
+    "text": "Edison",
+    "start": 37.399,
+    "end": 37.759
+  },
+  {
+    "text": "device",
+    "start": 37.819,
+    "end": 38.519
+  },
+  {
+    "text": "was",
+    "start": 38.579,
+    "end": 38.739
+  },
+  {
+    "text": "doing",
+    "start": 38.799,
+    "end": 39.04
+  },
+  {
+    "text": "the",
+    "start": 39.079,
+    "end": 39.159
+  },
+  {
+    "text": "work.",
+    "start": 39.219,
+    "end": 39.54
+  },
+  {
+    "text": "This",
+    "start": 40.099,
+    "end": 40.239
+  },
+  {
+    "text": "is",
+    "start": 40.319,
+    "end": 40.399
+  },
+  {
+    "text": "a",
+    "start": 40.459,
+    "end": 40.479
+  },
+  {
+    "text": "structural",
+    "start": 40.559,
+    "end": 41.119
+  },
+  {
+    "text": "form",
+    "start": 41.2,
+    "end": 41.379
+  },
+  {
+    "text": "of",
+    "start": 41.439,
+    "end": 41.52
+  },
+  {
+    "text": "manipulation,",
+    "start": 41.579,
+    "end": 42.36
+  },
+  {
+    "text": "not",
+    "start": 42.84,
+    "end": 43
+  },
+  {
+    "text": "just",
+    "start": 43.079,
+    "end": 43.259
+  },
+  {
+    "text": "a",
+    "start": 43.319,
+    "end": 43.34
+  },
+  {
+    "text": "verbal",
+    "start": 43.419,
+    "end": 43.739
+  },
+  {
+    "text": "one.",
+    "start": 43.84,
+    "end": 44.02
+  },
+  {
+    "text": "When",
+    "start": 44.68,
+    "end": 44.799
+  },
+  {
+    "text": "information",
+    "start": 44.879,
+    "end": 45.5
+  },
+  {
+    "text": "is",
+    "start": 45.559,
+    "end": 45.68
+  },
+  {
+    "text": "compartmentalized",
+    "start": 45.739,
+    "end": 46.739
+  },
+  {
+    "text": "tightly",
+    "start": 46.799,
+    "end": 47.139
+  },
+  {
+    "text": "enough,",
+    "start": 47.2,
+    "end": 48
+  },
+  {
+    "text": "honest",
+    "start": 48.079,
+    "end": 48.399
+  },
+  {
+    "text": "employees",
+    "start": 48.459,
+    "end": 49.459
+  },
+  {
+    "text": "can",
+    "start": 49.52,
+    "end": 49.68
+  },
+  {
+    "text": "each",
+    "start": 49.779,
+    "end": 49.939
+  },
+  {
+    "text": "hold",
+    "start": 50.02,
+    "end": 50.319
+  },
+  {
+    "text": "one",
+    "start": 50.419,
+    "end": 50.599
+  },
+  {
+    "text": "true",
+    "start": 50.68,
+    "end": 50.899
+  },
+  {
+    "text": "piece",
+    "start": 50.979,
+    "end": 51.18
+  },
+  {
+    "text": "of",
+    "start": 51.219,
+    "end": 51.299
+  },
+  {
+    "text": "a",
+    "start": 51.36,
+    "end": 51.419
+  },
+  {
+    "text": "puzzle",
+    "start": 51.5,
+    "end": 52.259
+  },
+  {
+    "text": "without",
+    "start": 52.34,
+    "end": 52.659
+  },
+  {
+    "text": "ever",
+    "start": 52.759,
+    "end": 52.979
+  },
+  {
+    "text": "seeing",
+    "start": 53.059,
+    "end": 53.259
+  },
+  {
+    "text": "the",
+    "start": 53.299,
+    "end": 53.379
+  },
+  {
+    "text": "picture",
+    "start": 53.479,
+    "end": 53.779
+  },
+  {
+    "text": "it",
+    "start": 53.819,
+    "end": 53.939
+  },
+  {
+    "text": "forms.",
+    "start": 54,
+    "end": 54.459
+  },
+  {
+    "text": "A",
+    "start": 55.259,
+    "end": 55.319
+  },
+  {
+    "text": "person",
+    "start": 55.399,
+    "end": 55.779
+  },
+  {
+    "text": "who",
+    "start": 55.84,
+    "end": 55.979
+  },
+  {
+    "text": "only",
+    "start": 56.079,
+    "end": 56.359
+  },
+  {
+    "text": "sees",
+    "start": 56.419,
+    "end": 56.659
+  },
+  {
+    "text": "their",
+    "start": 56.719,
+    "end": 56.919
+  },
+  {
+    "text": "own",
+    "start": 57.02,
+    "end": 57.159
+  },
+  {
+    "text": "narrow",
+    "start": 57.259,
+    "end": 57.559
+  },
+  {
+    "text": "slice",
+    "start": 57.639,
+    "end": 58.319
+  },
+  {
+    "text": "can",
+    "start": 58.379,
+    "end": 58.52
+  },
+  {
+    "text": "reasonably",
+    "start": 58.619,
+    "end": 59.079
+  },
+  {
+    "text": "believe",
+    "start": 59.159,
+    "end": 59.52
+  },
+  {
+    "text": "the",
+    "start": 59.559,
+    "end": 59.68
+  },
+  {
+    "text": "company",
+    "start": 59.739,
+    "end": 60.099
+  },
+  {
+    "text": "is",
+    "start": 60.159,
+    "end": 60.299
+  },
+  {
+    "text": "fine,",
+    "start": 60.379,
+    "end": 60.699
+  },
+  {
+    "text": "because",
+    "start": 61.219,
+    "end": 61.52
+  },
+  {
+    "text": "from",
+    "start": 61.619,
+    "end": 61.759
+  },
+  {
+    "text": "where",
+    "start": 61.819,
+    "end": 61.959
+  },
+  {
+    "text": "they",
+    "start": 62.039,
+    "end": 62.239
+  },
+  {
+    "text": "sit,",
+    "start": 62.299,
+    "end": 62.579
+  },
+  {
+    "text": "they",
+    "start": 62.919,
+    "end": 63.059
+  },
+  {
+    "text": "have",
+    "start": 63.119,
+    "end": 63.299
+  },
+  {
+    "text": "no",
+    "start": 63.359,
+    "end": 63.539
+  },
+  {
+    "text": "evidence",
+    "start": 63.659,
+    "end": 64
+  },
+  {
+    "text": "otherwise.",
+    "start": 64.099,
+    "end": 64.699
+  },
+  {
+    "text": "Deception",
+    "start": 65.4,
+    "end": 66.239
+  },
+  {
+    "text": "at",
+    "start": 66.339,
+    "end": 66.439
+  },
+  {
+    "text": "this",
+    "start": 66.479,
+    "end": 66.619
+  },
+  {
+    "text": "scale",
+    "start": 66.68,
+    "end": 67.399
+  },
+  {
+    "text": "usually",
+    "start": 67.54,
+    "end": 67.919
+  },
+  {
+    "text": "isn't",
+    "start": 67.979,
+    "end": 68.22
+  },
+  {
+    "text": "sustained",
+    "start": 68.279,
+    "end": 68.779
+  },
+  {
+    "text": "by",
+    "start": 68.839,
+    "end": 69.019
+  },
+  {
+    "text": "one",
+    "start": 69.119,
+    "end": 69.299
+  },
+  {
+    "text": "big",
+    "start": 69.36,
+    "end": 69.519
+  },
+  {
+    "text": "lie",
+    "start": 69.599,
+    "end": 69.779
+  },
+  {
+    "text": "told",
+    "start": 69.9,
+    "end": 70.119
+  },
+  {
+    "text": "to",
+    "start": 70.159,
+    "end": 70.279
+  },
+  {
+    "text": "everyone.",
+    "start": 70.36,
+    "end": 70.839
+  },
+  {
+    "text": "It's",
+    "start": 71.54,
+    "end": 71.699
+  },
+  {
+    "text": "sustained",
+    "start": 71.72,
+    "end": 72.199
+  },
+  {
+    "text": "by",
+    "start": 72.26,
+    "end": 72.36
+  },
+  {
+    "text": "a",
+    "start": 72.439,
+    "end": 72.499
+  },
+  {
+    "text": "hundred",
+    "start": 72.58,
+    "end": 72.939
+  },
+  {
+    "text": "small,",
+    "start": 73,
+    "end": 73.359
+  },
+  {
+    "text": "true-sounding",
+    "start": 73.76,
+    "end": 74.479
+  },
+  {
+    "text": "partial",
+    "start": 74.559,
+    "end": 74.919
+  },
+  {
+    "text": "pictures,",
+    "start": 74.979,
+    "end": 75.879
+  },
+  {
+    "text": "each",
+    "start": 76,
+    "end": 76.179
+  },
+  {
+    "text": "one",
+    "start": 76.279,
+    "end": 76.799
+  },
+  {
+    "text": "incomplete",
+    "start": 76.9,
+    "end": 77.579
+  },
+  {
+    "text": "in",
+    "start": 77.639,
+    "end": 77.719
+  },
+  {
+    "text": "a",
+    "start": 77.779,
+    "end": 77.819
+  },
+  {
+    "text": "different",
+    "start": 77.879,
+    "end": 78.199
+  },
+  {
+    "text": "way.",
+    "start": 78.279,
+    "end": 78.639
+  },
+  {
+    "text": "Former",
+    "start": 79.199,
+    "end": 79.499
+  },
+  {
+    "text": "employees",
+    "start": 79.559,
+    "end": 80.119
+  },
+  {
+    "text": "have",
+    "start": 80.199,
+    "end": 80.299
+  },
+  {
+    "text": "described",
+    "start": 80.339,
+    "end": 80.899
+  },
+  {
+    "text": "entire",
+    "start": 80.939,
+    "end": 81.419
+  },
+  {
+    "text": "areas",
+    "start": 81.54,
+    "end": 81.879
+  },
+  {
+    "text": "of",
+    "start": 81.9,
+    "end": 81.999
+  },
+  {
+    "text": "the",
+    "start": 82.019,
+    "end": 82.099
+  },
+  {
+    "text": "company's",
+    "start": 82.18,
+    "end": 82.58
+  },
+  {
+    "text": "offices",
+    "start": 82.68,
+    "end": 83.339
+  },
+  {
+    "text": "walled",
+    "start": 83.419,
+    "end": 83.679
+  },
+  {
+    "text": "off",
+    "start": 83.759,
+    "end": 83.979
+  },
+  {
+    "text": "under",
+    "start": 84.04,
+    "end": 84.259
+  },
+  {
+    "text": "internal",
+    "start": 84.319,
+    "end": 84.819
+  },
+  {
+    "text": "code",
+    "start": 84.879,
+    "end": 85.099
+  },
+  {
+    "text": "names,",
+    "start": 85.139,
+    "end": 85.939
+  },
+  {
+    "text": "accessible",
+    "start": 85.979,
+    "end": 86.639
+  },
+  {
+    "text": "only",
+    "start": 86.699,
+    "end": 86.939
+  },
+  {
+    "text": "to",
+    "start": 86.979,
+    "end": 87.059
+  },
+  {
+    "text": "specific",
+    "start": 87.119,
+    "end": 87.659
+  },
+  {
+    "text": "badge",
+    "start": 87.699,
+    "end": 87.959
+  },
+  {
+    "text": "holders,",
+    "start": 88,
+    "end": 88.9
+  },
+  {
+    "text": "where",
+    "start": 88.959,
+    "end": 89.139
+  },
+  {
+    "text": "questions",
+    "start": 89.199,
+    "end": 89.699
+  },
+  {
+    "text": "from",
+    "start": 89.759,
+    "end": 89.959
+  },
+  {
+    "text": "anyone",
+    "start": 90.019,
+    "end": 90.359
+  },
+  {
+    "text": "outside",
+    "start": 90.439,
+    "end": 90.879
+  },
+  {
+    "text": "that",
+    "start": 90.919,
+    "end": 91.119
+  },
+  {
+    "text": "team",
+    "start": 91.159,
+    "end": 91.759
+  },
+  {
+    "text": "were",
+    "start": 91.799,
+    "end": 91.939
+  },
+  {
+    "text": "deflected",
+    "start": 91.979,
+    "end": 92.479
+  },
+  {
+    "text": "as",
+    "start": 92.519,
+    "end": 92.679
+  },
+  {
+    "text": "confidentiality",
+    "start": 92.72,
+    "end": 94.059
+  },
+  {
+    "text": "rather",
+    "start": 94.139,
+    "end": 94.419
+  },
+  {
+    "text": "than",
+    "start": 94.439,
+    "end": 94.579
+  },
+  {
+    "text": "answered.",
+    "start": 94.68,
+    "end": 95.779
+  },
+  {
+    "text": "You",
+    "start": 95.879,
+    "end": 95.979
+  },
+  {
+    "text": "can",
+    "start": 96.019,
+    "end": 96.179
+  },
+  {
+    "text": "work",
+    "start": 96.22,
+    "end": 96.419
+  },
+  {
+    "text": "at",
+    "start": 96.459,
+    "end": 96.519
+  },
+  {
+    "text": "a",
+    "start": 96.559,
+    "end": 96.619
+  },
+  {
+    "text": "company",
+    "start": 96.68,
+    "end": 97.019
+  },
+  {
+    "text": "for",
+    "start": 97.119,
+    "end": 97.259
+  },
+  {
+    "text": "years,",
+    "start": 97.319,
+    "end": 98.119
+  },
+  {
+    "text": "believe",
+    "start": 98.159,
+    "end": 98.519
+  },
+  {
+    "text": "genuinely",
+    "start": 98.579,
+    "end": 99.119
+  },
+  {
+    "text": "in",
+    "start": 99.139,
+    "end": 99.259
+  },
+  {
+    "text": "what",
+    "start": 99.299,
+    "end": 99.439
+  },
+  {
+    "text": "you're",
+    "start": 99.5,
+    "end": 99.639
+  },
+  {
+    "text": "building,",
+    "start": 99.68,
+    "end": 100.479
+  },
+  {
+    "text": "and",
+    "start": 100.54,
+    "end": 100.699
+  },
+  {
+    "text": "still",
+    "start": 100.779,
+    "end": 101.039
+  },
+  {
+    "text": "never",
+    "start": 101.059,
+    "end": 101.339
+  },
+  {
+    "text": "be",
+    "start": 101.36,
+    "end": 101.5
+  },
+  {
+    "text": "shown",
+    "start": 101.559,
+    "end": 101.799
+  },
+  {
+    "text": "the",
+    "start": 101.86,
+    "end": 101.979
+  },
+  {
+    "text": "one",
+    "start": 102.059,
+    "end": 102.179
+  },
+  {
+    "text": "room",
+    "start": 102.299,
+    "end": 102.879
+  },
+  {
+    "text": "where",
+    "start": 102.919,
+    "end": 103.059
+  },
+  {
+    "text": "the",
+    "start": 103.099,
+    "end": 103.199
+  },
+  {
+    "text": "actual",
+    "start": 103.299,
+    "end": 103.699
+  },
+  {
+    "text": "problem",
+    "start": 103.739,
+    "end": 104.099
+  },
+  {
+    "text": "lives.",
+    "start": 104.159,
+    "end": 104.859
+  }
+]
