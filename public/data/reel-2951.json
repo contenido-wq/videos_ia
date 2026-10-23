@@ -8,214 +8,563 @@
     "headline": "La armadura de otro",
     "durationInSeconds": 5.628688
   },
-  "graphics": [
+  "scenes": [
     {
-      "id": "versus",
-      "kind": "versus",
+      "id": "g01-valle",
+      "layout": "full",
       "startSeconds": 6.738584000000003,
-      "durationInSeconds": 4.399416000000002,
-      "note": "el gigante",
-      "noteAtSeconds": 8.038584000000004,
-      "reveals": [
+      "durationInSeconds": 2.319416000000002,
+      "bgPath": "assets/reel-2951/images/g01-valle.png",
+      "mid": [
         {
+          "imagePath": "assets/reel-2951/images/cutouts/david-pastor.png",
+          "atSeconds": 6.918584000000003
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
           "text": "David",
-          "atSeconds": 7.1385840000000025
+          "atSeconds": 7.058584000000002
         },
         {
-          "text": "Goliat",
+          "kind": "pill",
+          "text": "vs. Goliat",
           "atSeconds": 8.618584000000002
         }
       ]
     },
     {
-      "id": "armadura",
-      "kind": "armadura",
-      "startSeconds": 11.138000000000005,
-      "durationInSeconds": 8.389291999999994,
-      "title": "La armadura del rey",
-      "note": "la mejor del reino",
-      "noteAtSeconds": 15.467291999999999,
-      "reveals": []
+      "id": "g02-campamento",
+      "layout": "full",
+      "startSeconds": 9.058000000000005,
+      "durationInSeconds": 2.761624999999997,
+      "bgPath": "assets/reel-2951/images/g02-campamento.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "El campamento de Saúl",
+          "atSeconds": 11.258000000000004
+        }
+      ]
     },
     {
-      "id": "versiculo",
-      "kind": "versiculo",
-      "startSeconds": 21.201645999999997,
-      "durationInSeconds": 9.478373999999995,
-      "title": "1 Samuel 17:38",
-      "body": "Ten mi propia armadura: un casco de bronce y una cota de malla.",
-      "reveals": [
+      "id": "g03-saul",
+      "layout": "full",
+      "startSeconds": 11.819625000000002,
+      "durationInSeconds": 2.667666999999998,
+      "bgPath": "assets/reel-2951/images/g03-saul.png",
+      "mid": [],
+      "front": [
         {
-          "text": "casco de bronce",
+          "kind": "quote",
+          "text": "Te voy a poner mi armadura",
+          "atSeconds": 12.639625000000004
+        }
+      ]
+    },
+    {
+      "id": "g04-armadura-rey",
+      "layout": "full",
+      "startSeconds": 14.487292,
+      "durationInSeconds": 2.6599999999999966,
+      "bgPath": "assets/reel-2951/images/g04-armadura-rey.png",
+      "mid": [
+        {
+          "imagePath": "assets/reel-2951/images/cutouts/casco-rey.png",
+          "atSeconds": 14.667292
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "La mejor del reino",
+          "atSeconds": 15.467291999999999
+        }
+      ]
+    },
+    {
+      "id": "g05-gigante",
+      "layout": "full",
+      "startSeconds": 17.147291999999997,
+      "durationInSeconds": 2.330000000000002,
+      "bgPath": "assets/reel-2951/images/g05-gigante.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "El gigante",
+          "atSeconds": 19.067292000000002
+        }
+      ]
+    },
+    {
+      "id": "g06-biblia",
+      "layout": "full",
+      "startSeconds": 21.201645999999997,
+      "durationInSeconds": 2.4051449999999974,
+      "bgPath": "assets/reel-2951/images/g06-biblia.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "1 Samuel 17",
+          "atSeconds": 22.576790999999997
+        }
+      ]
+    },
+    {
+      "id": "g07-versiculo",
+      "layout": "full",
+      "startSeconds": 25.20102,
+      "durationInSeconds": 2.878999999999998,
+      "bgPath": "assets/reel-2951/images/g07-versiculo.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "1 Samuel 17:38",
+          "atSeconds": 25.38102
+        },
+        {
+          "kind": "verse",
+          "text": "\"Ten mi propia armadura\"",
+          "atSeconds": 26.820019999999996
+        }
+      ]
+    },
+    {
+      "id": "g08-casco-malla",
+      "layout": "full",
+      "startSeconds": 28.080019999999998,
+      "durationInSeconds": 2.5999999999999943,
+      "bgPath": "assets/reel-2951/images/g08-casco-malla.png",
+      "mid": [
+        {
+          "imagePath": "assets/reel-2951/images/cutouts/casco-bronce.png",
           "atSeconds": 28.320019999999996
         },
         {
-          "text": "cota de malla",
+          "imagePath": "assets/reel-2951/images/cutouts/cota-malla.png",
+          "atSeconds": 29.740019999999998
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Casco de bronce",
+          "atSeconds": 28.320019999999996
+        },
+        {
+          "kind": "pill",
+          "text": "Cota de malla",
           "atSeconds": 29.740019999999998
         }
       ]
     },
     {
-      "id": "cita",
-      "kind": "cita",
-      "startSeconds": 36.954145000000004,
-      "durationInSeconds": 4.188103999999996,
-      "title": "David",
-      "body": "No estoy acostumbrado a usarlo.",
-      "note": "no era su armadura",
-      "noteAtSeconds": 39.36224899999999,
-      "reveals": []
+      "id": "g09-le-queda-grande",
+      "layout": "full",
+      "startSeconds": 30.680019999999992,
+      "durationInSeconds": 2.269999999999996,
+      "bgPath": "assets/reel-2951/images/g09-le-queda-grande.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "Le quedaba grande",
+          "atSeconds": 32.32002
+        }
+      ]
     },
     {
-      "id": "tarjetas",
-      "kind": "tarjetas",
-      "startSeconds": 43.80972799999999,
-      "durationInSeconds": 9.424333000000004,
-      "reveals": [
+      "id": "g10-se-la-quita",
+      "layout": "full",
+      "startSeconds": 36.954145000000004,
+      "durationInSeconds": 2.28810399999999,
+      "bgPath": "assets/reel-2951/images/g10-se-la-quita.png",
+      "mid": [],
+      "front": [
         {
-          "text": "Embudo",
-          "atSeconds": 45.25406099999999
-        },
+          "kind": "pill",
+          "text": "No pudo andar",
+          "atSeconds": 37.134145000000004
+        }
+      ]
+    },
+    {
+      "id": "g11-cita",
+      "layout": "full",
+      "startSeconds": 39.242248999999994,
+      "durationInSeconds": 1.8500000000000014,
+      "bgPath": "assets/reel-2951/images/g11-cita.png",
+      "mid": [],
+      "front": [
         {
-          "text": "Estrategia de contenido",
+          "kind": "quote",
+          "text": "No estoy acostumbrado a usarlo",
+          "atSeconds": 39.422248999999994
+        }
+      ]
+    },
+    {
+      "id": "g12-voltear-afuera",
+      "layout": "full",
+      "startSeconds": 42.409727999999994,
+      "durationInSeconds": 2.7243330000000014,
+      "bgPath": "assets/reel-2951/images/g12-voltear-afuera.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "Mirar afuera",
+          "atSeconds": 43.92972799999999
+        }
+      ]
+    },
+    {
+      "id": "g13-embudo",
+      "layout": "full",
+      "startSeconds": 45.134060999999996,
+      "durationInSeconds": 1.6600000000000037,
+      "bgPath": "assets/reel-2951/images/g13-embudo.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Su embudo",
+          "atSeconds": 45.354060999999994
+        }
+      ]
+    },
+    {
+      "id": "g14-contenido",
+      "layout": "full",
+      "startSeconds": 46.794061,
+      "durationInSeconds": 1.8799999999999955,
+      "bgPath": "assets/reel-2951/images/g14-contenido.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Su estrategia de contenido",
           "atSeconds": 46.994060999999995
-        },
+        }
+      ]
+    },
+    {
+      "id": "g15-como-habla",
+      "layout": "full",
+      "startSeconds": 48.674060999999995,
+      "durationInSeconds": 2.940000000000005,
+      "bgPath": "assets/reel-2951/images/g15-como-habla.png",
+      "mid": [],
+      "front": [
         {
+          "kind": "pill",
           "text": "Cómo ve las cosas",
-          "atSeconds": 49.29406099999999
+          "atSeconds": 48.854060999999994
         },
         {
+          "kind": "pill",
           "text": "Cómo habla",
           "atSeconds": 50.594060999999996
-        },
+        }
+      ]
+    },
+    {
+      "id": "g16-personalidad",
+      "layout": "full",
+      "startSeconds": 51.614061,
+      "durationInSeconds": 2.3499999999999943,
+      "bgPath": "assets/reel-2951/images/g16-personalidad.png",
+      "mid": [],
+      "front": [
         {
-          "text": "Personalidad",
+          "kind": "pill",
+          "text": "Su personalidad",
           "atSeconds": 51.914061
         }
       ]
     },
     {
-      "id": "copiar",
-      "kind": "copiar",
+      "id": "g17-copias",
+      "layout": "full",
       "startSeconds": 57.834665,
-      "durationInSeconds": 3.136271000000015,
-      "note": "sin adaptarlo",
-      "noteAtSeconds": 58.154665,
-      "reveals": [
+      "durationInSeconds": 3.0862710000000106,
+      "bgPath": "assets/reel-2951/images/g17-copias.png",
+      "mid": [],
+      "front": [
         {
-          "text": "Copiar",
+          "kind": "key",
+          "text": "⌘C",
+          "atSeconds": 58.014665
+        },
+        {
+          "kind": "key",
+          "text": "⌘V",
           "atSeconds": 59.61466500000001
         },
         {
-          "text": "Pegar",
+          "kind": "pill",
+          "text": "Sin adaptarlo",
           "atSeconds": 60.25466500000001
         }
       ]
     },
     {
-      "id": "preguntas",
-      "kind": "preguntas",
+      "id": "g18-espejo",
+      "layout": "full",
       "startSeconds": 62.57397800000004,
-      "durationInSeconds": 7.217000000000013,
-      "title": "Antes de copiar a otro",
-      "note": "esa es tu armadura",
-      "noteAtSeconds": 67.63927000000005,
-      "reveals": [
+      "durationInSeconds": 2.171354000000008,
+      "bgPath": "assets/reel-2951/images/g18-espejo.png",
+      "mid": [],
+      "front": [
         {
+          "kind": "check",
           "text": "¿Quién eres tú?",
-          "atSeconds": 62.69397800000004
+          "atSeconds": 62.75397800000004
         },
         {
+          "kind": "check",
           "text": "¿A qué te dedicas?",
           "atSeconds": 63.98533200000005
-        },
+        }
+      ]
+    },
+    {
+      "id": "g19-oficio",
+      "layout": "full",
+      "startSeconds": 64.74533200000005,
+      "durationInSeconds": 2.773938000000001,
+      "bgPath": "assets/reel-2951/images/g19-oficio.png",
+      "mid": [],
+      "front": [
         {
+          "kind": "check",
           "text": "¿Qué sabes hacer?",
-          "atSeconds": 65.04533200000006
+          "atSeconds": 64.92533200000005
         },
         {
+          "kind": "check",
           "text": "¿Cuántos años llevas?",
           "atSeconds": 66.32533200000006
         }
       ]
     },
     {
-      "id": "lista-split",
-      "kind": "lista-split",
-      "startSeconds": 69.79097800000005,
-      "durationInSeconds": 8.313229000000021,
-      "title": "Tu armadura real",
-      "reveals": [
+      "id": "g20-tu-armadura",
+      "layout": "full",
+      "startSeconds": 67.51927000000005,
+      "durationInSeconds": 2.271708000000004,
+      "bgPath": "assets/reel-2951/images/g20-tu-armadura.png",
+      "mid": [],
+      "front": [
         {
+          "kind": "title",
+          "text": "Tu armadura",
+          "atSeconds": 68.49927000000005
+        }
+      ]
+    },
+    {
+      "id": "s01-hecho",
+      "layout": "split",
+      "startSeconds": 69.79097800000005,
+      "durationInSeconds": 2.8200000000000074,
+      "bgPath": "assets/reel-2951/images/s01-hecho.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "check",
           "text": "Lo que has hecho",
           "atSeconds": 70.69097800000006
         },
         {
+          "kind": "check",
           "text": "Lo que has construido",
           "atSeconds": 71.79097800000005
-        },
+        }
+      ]
+    },
+    {
+      "id": "s02-errores",
+      "layout": "split",
+      "startSeconds": 72.61097800000006,
+      "durationInSeconds": 3.030000000000001,
+      "bgPath": "assets/reel-2951/images/s02-errores.png",
+      "mid": [],
+      "front": [
         {
+          "kind": "check",
           "text": "Tus errores",
-          "atSeconds": 72.73097800000006
+          "atSeconds": 72.79097800000007
         },
         {
+          "kind": "check",
           "text": "Tus fracasos",
           "atSeconds": 73.51097800000007
         },
         {
+          "kind": "check",
           "text": "Lo que has aprendido",
           "atSeconds": 74.83097800000006
         }
       ]
     },
     {
-      "id": "armas",
-      "kind": "armas",
+      "id": "g21-honda",
+      "layout": "full",
       "startSeconds": 78.10420700000007,
-      "durationInSeconds": 6.781729000000013,
-      "reveals": [
+      "durationInSeconds": 2.8799999999999955,
+      "bgPath": "assets/reel-2951/images/g21-honda.png",
+      "mid": [
         {
-          "text": "honda",
+          "imagePath": "assets/reel-2951/images/cutouts/honda.png",
           "atSeconds": 78.84420700000007
         },
         {
-          "text": "resortera",
+          "imagePath": "assets/reel-2951/images/cutouts/resortera.png",
           "atSeconds": 80.30420700000008
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu honda",
+          "atSeconds": 78.84420700000007
         },
         {
-          "text": "lanza",
-          "atSeconds": 81.70420700000007
-        },
-        {
-          "text": "flecha",
-          "atSeconds": 82.86420700000008
-        },
-        {
-          "text": "escudo",
-          "atSeconds": 84.18593600000008
+          "kind": "pill",
+          "text": "Tu resortera",
+          "atSeconds": 80.30420700000008
         }
       ]
     },
     {
-      "id": "equivocada",
-      "kind": "equivocada",
-      "startSeconds": 90.5541040000001,
-      "durationInSeconds": 7.480000000000018,
-      "title": "Armadura equivocada",
-      "note": "por eso no llegan los resultados",
-      "noteAtSeconds": 93.6741040000001,
-      "reveals": []
+      "id": "g22-lanza",
+      "layout": "full",
+      "startSeconds": 80.98420700000007,
+      "durationInSeconds": 2.5417290000000037,
+      "bgPath": "assets/reel-2951/images/g22-lanza.png",
+      "mid": [
+        {
+          "imagePath": "assets/reel-2951/images/cutouts/lanza.png",
+          "atSeconds": 81.70420700000007
+        },
+        {
+          "imagePath": "assets/reel-2951/images/cutouts/flecha.png",
+          "atSeconds": 82.86420700000008
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu lanza",
+          "atSeconds": 81.70420700000007
+        },
+        {
+          "kind": "pill",
+          "text": "Tu flecha",
+          "atSeconds": 82.86420700000008
+        }
+      ]
     },
     {
-      "id": "cta",
-      "kind": "cta",
+      "id": "g23-escudo",
+      "layout": "full",
+      "startSeconds": 83.52593600000007,
+      "durationInSeconds": 1.8100000000000165,
+      "bgPath": "assets/reel-2951/images/g23-escudo.png",
+      "mid": [
+        {
+          "imagePath": "assets/reel-2951/images/cutouts/escudo.png",
+          "atSeconds": 83.70593600000008
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu escudo",
+          "atSeconds": 83.84593600000008
+        }
+      ]
+    },
+    {
+      "id": "g24-equivocada",
+      "layout": "full",
+      "startSeconds": 90.5541040000001,
+      "durationInSeconds": 2.9000000000000057,
+      "bgPath": "assets/reel-2951/images/g24-equivocada.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "La armadura equivocada",
+          "atSeconds": 93.0341040000001
+        }
+      ]
+    },
+    {
+      "id": "g25-sin-resultados",
+      "layout": "full",
+      "startSeconds": 93.4541040000001,
+      "durationInSeconds": 2.670000000000016,
+      "bgPath": "assets/reel-2951/images/g25-sin-resultados.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Sin resultados",
+          "atSeconds": 95.47410400000011
+        }
+      ]
+    },
+    {
+      "id": "g26-lee",
+      "layout": "full",
       "startSeconds": 99.07189500000011,
-      "durationInSeconds": 6.859834000000021,
-      "title": "1 Samuel 17",
-      "body": "David y Goliat",
-      "note": "léela completa",
-      "noteAtSeconds": 99.59189500000011,
-      "reveals": []
+      "durationInSeconds": 2.979834000000011,
+      "bgPath": "assets/reel-2951/images/g26-lee.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "Lee 1 Samuel 17",
+          "atSeconds": 99.75189500000012
+        }
+      ]
+    },
+    {
+      "id": "g27-historia",
+      "layout": "full",
+      "startSeconds": 102.05172900000012,
+      "durationInSeconds": 1.7000000000000028,
+      "bgPath": "assets/reel-2951/images/g27-historia.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Una historia fascinante",
+          "atSeconds": 103.25172900000013
+        }
+      ]
+    },
+    {
+      "id": "g28-vencio",
+      "layout": "full",
+      "startSeconds": 103.75172900000013,
+      "durationInSeconds": 2.1300000000000097,
+      "bgPath": "assets/reel-2951/images/g28-vencio.png",
+      "mid": [],
+      "front": [
+        {
+          "kind": "title",
+          "text": "David venció",
+          "atSeconds": 103.93172900000013
+        }
+      ]
     }
   ],
   "captionChunks": [
@@ -3065,155 +3414,368 @@
   "jumpCuts": [
     {
       "atSeconds": 0,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 2.708281500000001,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 5.416563000000002,
-      "scale": 1.18
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 6.738584000000003,
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 6.808584000000003,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
-      "atSeconds": 11.138000000000005,
-      "scale": 1.18
+      "atSeconds": 9.058000000000005,
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 11.819625000000002,
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 14.487292,
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 17.147291999999997,
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 19.357291999999998,
-      "scale": 1.04
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
-      "atSeconds": 19.527292,
-      "scale": 1.18
+      "atSeconds": 19.477292,
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 21.201645999999997,
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 21.271645999999997,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 23.563040999999995,
-      "scale": 1.18
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 23.606790999999994,
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 25.20102,
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 25.27102,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 28.080019999999998,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 30.680019999999992,
-      "scale": 1.18
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 30.750019999999992,
-      "scale": 1.04
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 32.95001999999999,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 34.952082499999996,
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 36.954145000000004,
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 37.024145000000004,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 39.242248999999994,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 41.092248999999995,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 41.116457,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
-      "atSeconds": 41.142249,
-      "scale": 1.18
+      "atSeconds": 42.409727999999994,
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 42.479727999999994,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
-      "atSeconds": 53.234061,
-      "scale": 1.18
+      "atSeconds": 45.134060999999996,
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 46.794061,
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 48.674060999999995,
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 51.614061,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 53.964060999999994,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 54.044061,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 54.644060999999994,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 56.239363,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 57.834665,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 57.904665,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 60.894749000000026,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
-      "atSeconds": 60.970936000000016,
-      "scale": 1.04
+      "atSeconds": 60.92093600000001,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 62.57397800000004,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 63.59533200000005,
-      "scale": 1.18
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 64.74533200000005,
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 64.81533200000005,
-      "scale": 1.04
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 65.87533200000006,
-      "scale": 1.18
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 67.51927000000005,
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 67.58927000000006,
-      "scale": 1.04
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
       "atSeconds": 69.79097800000005,
-      "scale": 1.18
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 69.86097800000006,
-      "scale": 1.04
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 72.61097800000006,
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 74.12597800000006,
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 75.64097800000006,
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 75.83781100000007,
-      "scale": 1.18
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 78.10420700000007,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 78.17420700000008,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 80.98420700000007,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 83.52593600000007,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 84.67593600000008,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
-      "atSeconds": 84.88593600000009,
-      "scale": 1.18
+      "atSeconds": 85.33593600000009,
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 87.94502000000008,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 90.5541040000001,
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
       "atSeconds": 90.6241040000001,
-      "scale": 1.04
+      "scale": 1.1,
+      "offsetX": 2
+    },
+    {
+      "atSeconds": 93.4541040000001,
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 96.12410400000012,
+      "scale": 1.04,
+      "offsetX": 0
     },
     {
       "atSeconds": 97.98189500000012,
-      "scale": 1.18
+      "scale": 1.2,
+      "offsetX": -2.5
     },
     {
-      "atSeconds": 98.03410400000011,
-      "scale": 1.04
+      "atSeconds": 99.07189500000011,
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 99.14189500000012,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
     },
     {
-      "atSeconds": 105.93172900000013,
-      "scale": 1.04
+      "atSeconds": 102.05172900000012,
+      "scale": 1.04,
+      "offsetX": 0
+    },
+    {
+      "atSeconds": 103.75172900000013,
+      "scale": 1.2,
+      "offsetX": -2.5
+    },
+    {
+      "atSeconds": 105.88172900000013,
+      "scale": 1.1,
+      "offsetX": 2
     },
     {
       "atSeconds": 105.95085400000013,
-      "scale": 1.18
+      "scale": 1.26,
+      "offsetX": 1.5
+    },
+    {
+      "atSeconds": 107.97542700000007,
+      "scale": 1.04,
+      "offsetX": 0
     }
   ],
   "sfx": {

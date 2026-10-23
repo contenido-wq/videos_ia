@@ -1,79 +1,498 @@
 {
-  "title": { "kicker": "David vs. Goliat", "headline": "La armadura de otro", "toPhrase": "armadura de otro" },
-  "graphics": [
+  "title": {
+    "kicker": "David vs. Goliat",
+    "headline": "La armadura de otro",
+    "toPhrase": "armadura de otro"
+  },
+  "scenes": [
     {
-      "id": "versus", "kind": "versus", "fromPhrase": "Cuando David", "toPhrase": "lo primero que hizo",
-      "reveals": [{ "text": "David", "atPhrase": "David iba" }, { "text": "Goliat", "atPhrase": "Goliat" }],
-      "note": "el gigante", "notePhrase": "enfrentar a Goliat"
-    },
-    {
-      "id": "armadura", "kind": "armadura", "fromPhrase": "Saúl es", "toPhrase": "este gigante",
-      "title": "La armadura del rey", "note": "la mejor del reino", "notePhrase": "la mejor"
-    },
-    {
-      "id": "versiculo", "kind": "versiculo", "fromPhrase": "Esto está en primera", "toPhrase": "una cota de malla",
-      "title": "1 Samuel 17:38",
-      "body": "Ten mi propia armadura: un casco de bronce y una cota de malla.",
-      "reveals": [{ "text": "casco de bronce", "atPhrase": "casco de bronce" }, { "text": "cota de malla", "atPhrase": "cota de malla" }]
-    },
-    {
-      "id": "cita", "kind": "cita", "fromPhrase": "No pudo andar", "toPhrase": "acostumbrado a usarlo",
-      "body": "No estoy acostumbrado a usarlo.", "title": "David", "note": "no era su armadura", "notePhrase": "No estoy"
-    },
-    {
-      "id": "tarjetas", "kind": "tarjetas", "fromPhrase": "voltear afuera", "toPhrase": "personalidad tiene",
-      "reveals": [
-        { "text": "Embudo", "atPhrase": "qué embudo" },
-        { "text": "Estrategia de contenido", "atPhrase": "estrategia de contenido" },
-        { "text": "Cómo ve las cosas", "atPhrase": "viendo la gente" },
-        { "text": "Cómo habla", "atPhrase": "cómo está hablando" },
-        { "text": "Personalidad", "atPhrase": "personalidad" }
-      ]
-    },
-    {
-      "id": "copiar", "kind": "copiar", "fromPhrase": "Pero no lo adaptas", "toPhrase": "como está",
-      "reveals": [{ "text": "Copiar", "atPhrase": "lo copias" }, { "text": "Pegar", "atPhrase": "como está" }],
-      "note": "sin adaptarlo", "notePhrase": "no lo adaptas"
-    },
-    {
-      "id": "preguntas", "kind": "preguntas", "fromPhrase": "¿Quién eres tú?", "toPhrase": "hoy tú tienes",
-      "title": "Antes de copiar a otro",
-      "reveals": [
-        { "text": "¿Quién eres tú?", "atPhrase": "¿Quién eres" },
-        { "text": "¿A qué te dedicas?", "atPhrase": "te dedicas" },
-        { "text": "¿Qué sabes hacer?", "atPhrase": "sabes hacer" },
-        { "text": "¿Cuántos años llevas?", "atPhrase": "años llevas" }
+      "id": "g01-valle",
+      "fromPhrase": "Cuando David iba",
+      "bg": "the Valley of Elah in ancient Israel, two armies on opposite hills, a gigantic armored warrior Goliath standing in the valley floor, dust in the air, epic wide shot",
+      "mid": [
+        {
+          "id": "david-pastor",
+          "kind": "cutout",
+          "prompt": "a young ancient Israelite shepherd boy David, full body, simple wool tunic, leather sling in hand, determined look"
+        }
       ],
-      "note": "esa es tu armadura", "notePhrase": "Eso es la armadura"
-    },
-    {
-      "id": "lista-split", "kind": "lista-split", "fromPhrase": "Hablar de lo que", "toPhrase": "como talento",
-      "title": "Tu armadura real",
-      "reveals": [
-        { "text": "Lo que has hecho", "atPhrase": "has hecho" },
-        { "text": "Lo que has construido", "atPhrase": "has construido" },
-        { "text": "Tus errores", "atPhrase": "tus errores" },
-        { "text": "Tus fracasos", "atPhrase": "tus fracasos" },
-        { "text": "Lo que has aprendido", "atPhrase": "has aprendido" }
+      "front": [
+        {
+          "kind": "pill",
+          "text": "David"
+        },
+        {
+          "kind": "pill",
+          "text": "vs. Goliat",
+          "atPhrase": "Goliat"
+        }
       ]
     },
     {
-      "id": "armas", "kind": "armas", "fromPhrase": "Tal vez esa es tu honda", "toPhrase": "tu escudo",
-      "reveals": [
-        { "text": "honda", "atPhrase": "tu honda" },
-        { "text": "resortera", "atPhrase": "tu resortera" },
-        { "text": "lanza", "atPhrase": "tu lanza" },
-        { "text": "flecha", "atPhrase": "tu flecha" },
-        { "text": "escudo", "atPhrase": "tu escudo" }
+      "id": "g02-campamento",
+      "fromPhrase": "pues él llegó",
+      "bg": "ancient Israelite army camp at dusk, rows of goat-hair tents, campfires, soldiers with spears and shields, smoke and warm firelight",
+      "front": [
+        {
+          "kind": "title",
+          "text": "El campamento de Saúl",
+          "atPhrase": "Saúl"
+        }
       ]
     },
     {
-      "id": "equivocada", "kind": "equivocada", "fromPhrase": "Tal vez tú estás peleando", "toPhrase": "preparado para ti",
-      "title": "Armadura equivocada", "note": "por eso no llegan los resultados", "notePhrase": "por eso"
+      "id": "g03-saul",
+      "fromPhrase": "Pues David",
+      "bg": "King Saul of ancient Israel inside a royal tent, middle-aged bearded king with a simple crown, extending his hand generously toward a young shepherd, oil lamps, rich fabrics",
+      "front": [
+        {
+          "kind": "quote",
+          "text": "Te voy a poner mi armadura",
+          "atPhrase": "te voy a poner"
+        }
+      ]
     },
     {
-      "id": "cta", "kind": "cta", "fromPhrase": "Te invito", "toPhrase": "venció a Goliat",
-      "title": "1 Samuel 17", "body": "David y Goliat", "note": "léela completa", "notePhrase": "que leas"
+      "id": "g04-armadura-rey",
+      "fromPhrase": "que yo tengo",
+      "bg": "inside a royal tent, a polished bronze armor set displayed on a wooden stand, warm lamp light reflecting on metal, dark rich background",
+      "mid": [
+        {
+          "id": "casco-rey",
+          "kind": "cutout",
+          "prompt": "an ancient bronze warrior helmet with a crest, polished, highly detailed"
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "La mejor del reino",
+          "atPhrase": "la mejor"
+        }
+      ]
+    },
+    {
+      "id": "g05-gigante",
+      "fromPhrase": "para que puedas",
+      "bg": "extreme low-angle shot of the giant Philistine warrior Goliath in heavy bronze armor and a huge spear, towering against a dramatic sky, menacing",
+      "front": [
+        {
+          "kind": "title",
+          "text": "El gigante",
+          "atPhrase": "gigante"
+        }
+      ],
+      "toPhrase": "este gigante"
+    },
+    {
+      "id": "g06-biblia",
+      "fromPhrase": "Esto está en primera",
+      "bg": "an old leather Bible open on a rustic wooden table, warm window light, dust particles in the light beam, close-up",
+      "front": [
+        {
+          "kind": "title",
+          "text": "1 Samuel 17",
+          "atPhrase": "Samuel"
+        }
+      ],
+      "toPhrase": "Samuel diecisiete"
+    },
+    {
+      "id": "g07-versiculo",
+      "fromPhrase": "Después Saúl",
+      "bg": "macro close-up of thin Bible pages with soft focus, warm golden light, very shallow depth of field",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "1 Samuel 17:38"
+        },
+        {
+          "kind": "verse",
+          "text": "\"Ten mi propia armadura\"",
+          "atPhrase": "Ten mi propia"
+        }
+      ]
+    },
+    {
+      "id": "g08-casco-malla",
+      "fromPhrase": "un casco de bronce",
+      "bg": "dark interior of an ancient royal tent, warm side light, blurred background with lamps",
+      "mid": [
+        {
+          "id": "casco-bronce",
+          "kind": "cutout",
+          "prompt": "an ancient bronze helmet, side view, polished metal, realistic",
+          "atPhrase": "casco"
+        },
+        {
+          "id": "cota-malla",
+          "kind": "cutout",
+          "prompt": "an ancient chainmail shirt, iron rings, laid flat, realistic",
+          "atPhrase": "cota"
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Casco de bronce",
+          "atPhrase": "casco"
+        },
+        {
+          "kind": "pill",
+          "text": "Cota de malla",
+          "atPhrase": "cota"
+        }
+      ]
+    },
+    {
+      "id": "g09-le-queda-grande",
+      "fromPhrase": "David se lo puso",
+      "toPhrase": "la espada",
+      "bg": "a young slim shepherd boy David wearing an oversized heavy bronze armor that is far too big for him, struggling to walk, the helmet covering his eyes, inside a tent",
+      "front": [
+        {
+          "kind": "title",
+          "text": "Le quedaba grande",
+          "atPhrase": "espada"
+        }
+      ]
+    },
+    {
+      "id": "g10-se-la-quita",
+      "fromPhrase": "No pudo andar",
+      "bg": "the young shepherd David taking off a heavy bronze armor, the armor and helmet dropped on the dusty ground at his feet, relieved expression",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "No pudo andar"
+        }
+      ]
+    },
+    {
+      "id": "g11-cita",
+      "fromPhrase": "No estoy acostumbrado",
+      "toPhrase": "a usarlo",
+      "bg": "close-up portrait of the young shepherd David in a simple tunic, calm confident eyes, golden hour light, shallow depth of field",
+      "front": [
+        {
+          "kind": "quote",
+          "text": "No estoy acostumbrado a usarlo"
+        }
+      ]
+    },
+    {
+      "id": "g12-voltear-afuera",
+      "fromPhrase": "Muchas veces es",
+      "bg": "a latino entrepreneur at night in a small home office scrolling a competitor's Instagram profile on his phone, face lit by the screen, curious and anxious",
+      "front": [
+        {
+          "kind": "title",
+          "text": "Mirar afuera",
+          "atPhrase": "voltear afuera"
+        }
+      ]
+    },
+    {
+      "id": "g13-embudo",
+      "fromPhrase": "qué embudo",
+      "bg": "a laptop on a desk showing a colorful sales funnel analytics dashboard, modern office, blurred background, screen glow",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Su embudo",
+          "atPhrase": "embudo"
+        }
+      ]
+    },
+    {
+      "id": "g14-contenido",
+      "fromPhrase": "qué estrategia de contenido",
+      "bg": "a content creator filming himself with a smartphone on a tripod and a ring light in a cozy studio, behind the scenes shot",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Su estrategia de contenido",
+          "atPhrase": "estrategia"
+        }
+      ]
+    },
+    {
+      "id": "g15-como-habla",
+      "fromPhrase": "cómo está viendo",
+      "bg": "a charismatic speaker talking into a podcast microphone in a professional podcast studio, warm practical lights, mid-sentence gesture",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Cómo ve las cosas"
+        },
+        {
+          "kind": "pill",
+          "text": "Cómo habla",
+          "atPhrase": "cómo está hablando"
+        }
+      ]
+    },
+    {
+      "id": "g16-personalidad",
+      "fromPhrase": "qué personalidad",
+      "toPhrase": "qué decimos",
+      "bg": "a confident stylish influencer portrait smiling, urban rooftop at sunset, magazine-style photo",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Su personalidad",
+          "atPhrase": "personalidad"
+        }
+      ]
+    },
+    {
+      "id": "g17-copias",
+      "fromPhrase": "Pero no lo adaptas",
+      "toPhrase": "como está",
+      "bg": "an office photocopier printing a stack of identical copies of the same document, papers flying out, motion, top-down angle",
+      "front": [
+        {
+          "kind": "key",
+          "text": "⌘C"
+        },
+        {
+          "kind": "key",
+          "text": "⌘V",
+          "atPhrase": "lo copias"
+        },
+        {
+          "kind": "pill",
+          "text": "Sin adaptarlo",
+          "atPhrase": "como está"
+        }
+      ]
+    },
+    {
+      "id": "g18-espejo",
+      "fromPhrase": "¿Quién eres tú?",
+      "bg": "a latino man in his forties looking at his own reflection in a bathroom mirror, thoughtful, soft morning light",
+      "front": [
+        {
+          "kind": "check",
+          "text": "¿Quién eres tú?"
+        },
+        {
+          "kind": "check",
+          "text": "¿A qué te dedicas?",
+          "atPhrase": "te dedicas"
+        }
+      ]
+    },
+    {
+      "id": "g19-oficio",
+      "fromPhrase": "¿Qué sabes hacer?",
+      "bg": "close-up of experienced weathered hands working at a craftsman's workbench with tools, sawdust, warm workshop light",
+      "front": [
+        {
+          "kind": "check",
+          "text": "¿Qué sabes hacer?"
+        },
+        {
+          "kind": "check",
+          "text": "¿Cuántos años llevas?",
+          "atPhrase": "años llevas"
+        }
+      ]
+    },
+    {
+      "id": "g20-tu-armadura",
+      "fromPhrase": "Eso es la armadura",
+      "bg": "a leather shepherd's sling and five smooth stones resting on a rock by a stream, golden hour, shallow depth of field",
+      "front": [
+        {
+          "kind": "title",
+          "text": "Tu armadura",
+          "atPhrase": "armadura"
+        }
+      ]
+    },
+    {
+      "id": "s01-hecho",
+      "fromPhrase": "Hablar de lo que",
+      "layout": "split",
+      "bg": "a small business owner proudly standing in front of his own workshop storefront he built, warm afternoon light",
+      "front": [
+        {
+          "kind": "check",
+          "text": "Lo que has hecho",
+          "atPhrase": "has hecho"
+        },
+        {
+          "kind": "check",
+          "text": "Lo que has construido",
+          "atPhrase": "has construido"
+        }
+      ]
+    },
+    {
+      "id": "s02-errores",
+      "fromPhrase": "tus errores",
+      "toPhrase": "has aprendido",
+      "layout": "split",
+      "bg": "a tired entrepreneur at dawn writing lessons in a notebook at a messy desk with crumpled papers, resilient mood",
+      "front": [
+        {
+          "kind": "check",
+          "text": "Tus errores"
+        },
+        {
+          "kind": "check",
+          "text": "Tus fracasos",
+          "atPhrase": "tus fracasos"
+        },
+        {
+          "kind": "check",
+          "text": "Lo que has aprendido",
+          "atPhrase": "has aprendido"
+        }
+      ]
+    },
+    {
+      "id": "g21-honda",
+      "fromPhrase": "Tal vez esa es tu honda",
+      "bg": "green hills of ancient Judea at golden hour, grazing sheep, shepherd's pasture, soft haze",
+      "mid": [
+        {
+          "id": "honda",
+          "kind": "cutout",
+          "prompt": "an ancient leather shepherd's sling with long braided cords and a pouch",
+          "atPhrase": "tu honda"
+        },
+        {
+          "id": "resortera",
+          "kind": "cutout",
+          "prompt": "a wooden Y-shaped slingshot with rubber band",
+          "atPhrase": "tu resortera"
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu honda",
+          "atPhrase": "tu honda"
+        },
+        {
+          "kind": "pill",
+          "text": "Tu resortera",
+          "atPhrase": "tu resortera"
+        }
+      ]
+    },
+    {
+      "id": "g22-lanza",
+      "fromPhrase": "tal vez esa es tu lanza",
+      "bg": "an ancient armory wall with weapons, warm torch light, blurred background",
+      "mid": [
+        {
+          "id": "lanza",
+          "kind": "cutout",
+          "prompt": "an ancient spear with a bronze spearhead and wooden shaft, diagonal",
+          "atPhrase": "tu lanza"
+        },
+        {
+          "id": "flecha",
+          "kind": "cutout",
+          "prompt": "a single ancient arrow with feather fletching, diagonal",
+          "atPhrase": "tu flecha"
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu lanza",
+          "atPhrase": "tu lanza"
+        },
+        {
+          "kind": "pill",
+          "text": "Tu flecha",
+          "atPhrase": "tu flecha"
+        }
+      ]
+    },
+    {
+      "id": "g23-escudo",
+      "fromPhrase": "tal vez ese es tu escudo",
+      "toPhrase": "No lo sé",
+      "bg": "an ancient Iron Age battlefield in the Valley of Elah at sunrise with morning mist, scattered bronze shields and spears on the ground, dramatic sky, no vehicles, no modern objects",
+      "mid": [
+        {
+          "id": "escudo",
+          "kind": "cutout",
+          "prompt": "an ancient round bronze and leather warrior shield, front view"
+        }
+      ],
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Tu escudo"
+        }
+      ]
+    },
+    {
+      "id": "g24-equivocada",
+      "fromPhrase": "Tal vez tú estás peleando",
+      "bg": "a soldier on a battlefield wearing armor that does not fit him, too big and heavy, exhausted, dust and smoke around",
+      "front": [
+        {
+          "kind": "title",
+          "text": "La armadura equivocada",
+          "atPhrase": "equivocada"
+        }
+      ]
+    },
+    {
+      "id": "g25-sin-resultados",
+      "fromPhrase": "y por eso",
+      "bg": "a frustrated latino entrepreneur at a laptop late at night, head in hands, the laptop screen showing a simple flat declining line chart with no words or numbers, dim desk lamp",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Sin resultados",
+          "atPhrase": "resultados"
+        }
+      ],
+      "toPhrase": "los resultados"
+    },
+    {
+      "id": "g26-lee",
+      "fromPhrase": "Te invito",
+      "bg": "hands opening an old Bible on a wooden table next to a cup of coffee, morning window light, top-down angle",
+      "front": [
+        {
+          "kind": "title",
+          "text": "Lee 1 Samuel 17",
+          "atPhrase": "leas"
+        }
+      ]
+    },
+    {
+      "id": "g27-historia",
+      "fromPhrase": "a contar toda",
+      "bg": "epic wide shot of young David with a sling facing the giant Goliath across the valley, two armies watching from the hills, dramatic golden light",
+      "front": [
+        {
+          "kind": "pill",
+          "text": "Una historia fascinante",
+          "atPhrase": "fascinante"
+        }
+      ]
+    },
+    {
+      "id": "g28-vencio",
+      "fromPhrase": "cómo fue que",
+      "toPhrase": "a Goliat",
+      "bg": "the giant Goliath fallen face down in the dust of the valley, young David standing beside him holding a sling, victorious, cinematic",
+      "front": [
+        {
+          "kind": "title",
+          "text": "David venció"
+        }
+      ]
     }
   ]
 }

@@ -274,63 +274,73 @@ export interface RenderedDocumentalDoodleGuion {
 }
 
 // ---------------------------------------------------------------------------
-// Motion blanco: talking head que alterna con motion graphics sobre fondo
-// blanco hueso (tarjetas, notas a mano, íconos), subtítulos de 1–3 palabras.
+// Motion blanco: talking head que alterna con escenas cortas (2.5–3 s) hechas
+// de fotos reales en capas — fondo, medio (objetos recortados) y frente
+// (textos) — que se mueven en parallax, entran escalonadas con rebote y
+// mantienen micromovimientos mientras están quietas.
 // ---------------------------------------------------------------------------
 
-export type MotionBlancoGraphicKind =
-  | "versus"
-  | "armadura"
-  | "versiculo"
-  | "cita"
-  | "tarjetas"
-  | "copiar"
-  | "preguntas"
-  | "lista-split"
-  | "armas"
-  | "equivocada"
-  | "cta";
+export type MotionBlancoFrontKind = "pill" | "title" | "quote" | "verse" | "check" | "key";
 
-/** Ítem que aparece dentro de un gráfico cuando se dice `atPhrase`. */
-export interface MotionBlancoRevealPlan {
-  text: string;
-  atPhrase: string;
+/** Objeto recortado (PNG con transparencia) de la capa del medio. */
+export interface MotionBlancoMidPlan {
+  id: string;
+  kind: "cutout";
+  /** Qué generar con IA; el fondo blanco se quita después. */
+  prompt: string;
+  atPhrase?: string;
 }
 
-/** Gráfico tal como se escribe a mano: anclado a frases del guion, no a segundos. */
-export interface MotionBlancoGraphicPlan {
+/** Texto de la capa del frente. Sin `atPhrase` entra escalonado desde el inicio de la escena. */
+export interface MotionBlancoFrontPlan {
+  kind: MotionBlancoFrontKind;
+  text: string;
+  atPhrase?: string;
+}
+
+/** Escena tal como se escribe a mano: anclada a frases del guion, no a segundos. */
+export interface MotionBlancoScenePlan {
   id: string;
-  kind: MotionBlancoGraphicKind;
   fromPhrase: string;
-  /** Termina al final de la última palabra de esta frase. */
-  toPhrase: string;
-  title?: string;
-  body?: string;
-  note?: string;
-  notePhrase?: string;
-  reveals?: MotionBlancoRevealPlan[];
+  /** Si la sigue el presentador, termina al final de esta frase; si no, cuando arranca la escena siguiente. */
+  toPhrase?: string;
+  /** "split": foto arriba y presentador abajo. */
+  layout?: "full" | "split";
+  /** Prompt de la foto de fondo (se le agrega el estilo cinematográfico común). */
+  bg: string;
+  mid?: MotionBlancoMidPlan[];
+  front?: MotionBlancoFrontPlan[];
 }
 
 export interface MotionBlancoPlan {
   title: { kicker: string; headline: string; toPhrase: string };
-  graphics: MotionBlancoGraphicPlan[];
+  scenes: MotionBlancoScenePlan[];
 }
 
-export interface RenderedMotionBlancoReveal {
-  text: string;
+export interface RenderedMotionBlancoLayerItem {
+  /** Momento en que entra (ya escalonado si no estaba anclado a una frase). */
   atSeconds: number;
 }
 
-export interface RenderedMotionBlancoGraphic {
+export interface RenderedMotionBlancoMid extends RenderedMotionBlancoLayerItem {
+  /** Ruta relativa a public/ del PNG recortado. */
+  imagePath: string;
+}
+
+export interface RenderedMotionBlancoFront extends RenderedMotionBlancoLayerItem {
+  kind: MotionBlancoFrontKind;
+  text: string;
+}
+
+export interface RenderedMotionBlancoScene {
   id: string;
-  kind: MotionBlancoGraphicKind;
+  layout: "full" | "split";
   startSeconds: number;
   durationInSeconds: number;
-  title?: string;
-  body?: string;
-  note?: string;
-  noteAtSeconds?: number;
-  reveals: RenderedMotionBlancoReveal[];
+  /** Ruta relativa a public/ de la foto de fondo. */
+  bgPath: string;
+  mid: RenderedMotionBlancoMid[];
+  front: RenderedMotionBlancoFront[];
 }
 
 export interface RenderedMotionBlancoGuion {
@@ -339,9 +349,9 @@ export interface RenderedMotionBlancoGuion {
   videoPath: string;
   durationInSeconds: number;
   title: { kicker: string; headline: string; durationInSeconds: number };
-  graphics: RenderedMotionBlancoGraphic[];
+  scenes: RenderedMotionBlancoScene[];
   captionChunks: CaptionChunk[];
-  jumpCuts: { atSeconds: number; scale: number }[];
+  jumpCuts: { atSeconds: number; scale: number; offsetX: number }[];
   sfx: { whooshPath: string; whooshDurationInSeconds: number; popPath: string; popDurationInSeconds: number };
   music?: { path: string; volume: number };
 }
