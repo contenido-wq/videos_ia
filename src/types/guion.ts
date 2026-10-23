@@ -272,3 +272,76 @@ export interface RenderedDocumentalDoodleGuion {
   scenes: RenderedDocumentalDoodleScene[];
   captionChunks: CaptionChunk[];
 }
+
+// ---------------------------------------------------------------------------
+// Motion blanco: talking head que alterna con motion graphics sobre fondo
+// blanco hueso (tarjetas, notas a mano, íconos), subtítulos de 1–3 palabras.
+// ---------------------------------------------------------------------------
+
+export type MotionBlancoGraphicKind =
+  | "versus"
+  | "armadura"
+  | "versiculo"
+  | "cita"
+  | "tarjetas"
+  | "copiar"
+  | "preguntas"
+  | "lista-split"
+  | "armas"
+  | "equivocada"
+  | "cta";
+
+/** Ítem que aparece dentro de un gráfico cuando se dice `atPhrase`. */
+export interface MotionBlancoRevealPlan {
+  text: string;
+  atPhrase: string;
+}
+
+/** Gráfico tal como se escribe a mano: anclado a frases del guion, no a segundos. */
+export interface MotionBlancoGraphicPlan {
+  id: string;
+  kind: MotionBlancoGraphicKind;
+  fromPhrase: string;
+  /** Termina al final de la última palabra de esta frase. */
+  toPhrase: string;
+  title?: string;
+  body?: string;
+  note?: string;
+  notePhrase?: string;
+  reveals?: MotionBlancoRevealPlan[];
+}
+
+export interface MotionBlancoPlan {
+  title: { kicker: string; headline: string; toPhrase: string };
+  graphics: MotionBlancoGraphicPlan[];
+}
+
+export interface RenderedMotionBlancoReveal {
+  text: string;
+  atSeconds: number;
+}
+
+export interface RenderedMotionBlancoGraphic {
+  id: string;
+  kind: MotionBlancoGraphicKind;
+  startSeconds: number;
+  durationInSeconds: number;
+  title?: string;
+  body?: string;
+  note?: string;
+  noteAtSeconds?: number;
+  reveals: RenderedMotionBlancoReveal[];
+}
+
+export interface RenderedMotionBlancoGuion {
+  type: "motion-blanco";
+  slug: string;
+  videoPath: string;
+  durationInSeconds: number;
+  title: { kicker: string; headline: string; durationInSeconds: number };
+  graphics: RenderedMotionBlancoGraphic[];
+  captionChunks: CaptionChunk[];
+  jumpCuts: { atSeconds: number; scale: number }[];
+  sfx: { whooshPath: string; whooshDurationInSeconds: number; popPath: string; popDurationInSeconds: number };
+  music?: { path: string; volume: number };
+}

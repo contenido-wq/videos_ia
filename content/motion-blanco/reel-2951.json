@@ -1,0 +1,79 @@
+{
+  "title": { "kicker": "David vs. Goliat", "headline": "La armadura de otro", "toPhrase": "armadura de otro" },
+  "graphics": [
+    {
+      "id": "versus", "kind": "versus", "fromPhrase": "Cuando David", "toPhrase": "lo primero que hizo",
+      "reveals": [{ "text": "David", "atPhrase": "David iba" }, { "text": "Goliat", "atPhrase": "Goliat" }],
+      "note": "el gigante", "notePhrase": "enfrentar a Goliat"
+    },
+    {
+      "id": "armadura", "kind": "armadura", "fromPhrase": "Saúl es", "toPhrase": "este gigante",
+      "title": "La armadura del rey", "note": "la mejor del reino", "notePhrase": "la mejor"
+    },
+    {
+      "id": "versiculo", "kind": "versiculo", "fromPhrase": "Esto está en primera", "toPhrase": "una cota de malla",
+      "title": "1 Samuel 17:38",
+      "body": "Ten mi propia armadura: un casco de bronce y una cota de malla.",
+      "reveals": [{ "text": "casco de bronce", "atPhrase": "casco de bronce" }, { "text": "cota de malla", "atPhrase": "cota de malla" }]
+    },
+    {
+      "id": "cita", "kind": "cita", "fromPhrase": "No pudo andar", "toPhrase": "acostumbrado a usarlo",
+      "body": "No estoy acostumbrado a usarlo.", "title": "David", "note": "no era su armadura", "notePhrase": "No estoy"
+    },
+    {
+      "id": "tarjetas", "kind": "tarjetas", "fromPhrase": "voltear afuera", "toPhrase": "personalidad tiene",
+      "reveals": [
+        { "text": "Embudo", "atPhrase": "qué embudo" },
+        { "text": "Estrategia de contenido", "atPhrase": "estrategia de contenido" },
+        { "text": "Cómo ve las cosas", "atPhrase": "viendo la gente" },
+        { "text": "Cómo habla", "atPhrase": "cómo está hablando" },
+        { "text": "Personalidad", "atPhrase": "personalidad" }
+      ]
+    },
+    {
+      "id": "copiar", "kind": "copiar", "fromPhrase": "Pero no lo adaptas", "toPhrase": "como está",
+      "reveals": [{ "text": "Copiar", "atPhrase": "lo copias" }, { "text": "Pegar", "atPhrase": "como está" }],
+      "note": "sin adaptarlo", "notePhrase": "no lo adaptas"
+    },
+    {
+      "id": "preguntas", "kind": "preguntas", "fromPhrase": "¿Quién eres tú?", "toPhrase": "hoy tú tienes",
+      "title": "Antes de copiar a otro",
+      "reveals": [
+        { "text": "¿Quién eres tú?", "atPhrase": "¿Quién eres" },
+        { "text": "¿A qué te dedicas?", "atPhrase": "te dedicas" },
+        { "text": "¿Qué sabes hacer?", "atPhrase": "sabes hacer" },
+        { "text": "¿Cuántos años llevas?", "atPhrase": "años llevas" }
+      ],
+      "note": "esa es tu armadura", "notePhrase": "Eso es la armadura"
+    },
+    {
+      "id": "lista-split", "kind": "lista-split", "fromPhrase": "Hablar de lo que", "toPhrase": "como talento",
+      "title": "Tu armadura real",
+      "reveals": [
+        { "text": "Lo que has hecho", "atPhrase": "has hecho" },
+        { "text": "Lo que has construido", "atPhrase": "has construido" },
+        { "text": "Tus errores", "atPhrase": "tus errores" },
+        { "text": "Tus fracasos", "atPhrase": "tus fracasos" },
+        { "text": "Lo que has aprendido", "atPhrase": "has aprendido" }
+      ]
+    },
+    {
+      "id": "armas", "kind": "armas", "fromPhrase": "Tal vez esa es tu honda", "toPhrase": "tu escudo",
+      "reveals": [
+        { "text": "honda", "atPhrase": "tu honda" },
+        { "text": "resortera", "atPhrase": "tu resortera" },
+        { "text": "lanza", "atPhrase": "tu lanza" },
+        { "text": "flecha", "atPhrase": "tu flecha" },
+        { "text": "escudo", "atPhrase": "tu escudo" }
+      ]
+    },
+    {
+      "id": "equivocada", "kind": "equivocada", "fromPhrase": "Tal vez tú estás peleando", "toPhrase": "preparado para ti",
+      "title": "Armadura equivocada", "note": "por eso no llegan los resultados", "notePhrase": "por eso"
+    },
+    {
+      "id": "cta", "kind": "cta", "fromPhrase": "Te invito", "toPhrase": "venció a Goliat",
+      "title": "1 Samuel 17", "body": "David y Goliat", "note": "léela completa", "notePhrase": "que leas"
+    }
+  ]
+}
