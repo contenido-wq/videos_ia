@@ -4,16 +4,29 @@
     "headline": "La armadura de otro",
     "toPhrase": "armadura de otro"
   },
+  "characters": {
+    "david": {
+      "image": "assets/reel-2951/images/characters/david.png",
+      "description": "David, a 17-year-old Israelite shepherd, lean build, wavy shoulder-length brown hair, no beard, light beige rough wool tunic with a rope belt, leather sandals"
+    },
+    "goliat": {
+      "image": "assets/reel-2951/images/characters/goliat.png",
+      "description": "Goliath, a towering Philistine giant warrior in heavy dark bronze plate armor with a crested full-face helmet and a very long spear"
+    }
+  },
   "scenes": [
     {
       "id": "g01-valle",
       "fromPhrase": "Cuando David iba",
-      "bg": "the Valley of Elah in ancient Israel, two armies on opposite hills, a gigantic armored warrior Goliath standing in the valley floor, dust in the air, epic wide shot",
+      "bg": "extreme wide aerial establishing shot of the Valley of Elah in ancient Israel: the Israelite army camped on the left hill and the Philistine army on the right hill, and far away in the middle of the dry valley floor the tiny distant figure of Goliath, dust haze, epic scale, landscape dominates the frame",
       "mid": [
         {
           "id": "david-pastor",
           "kind": "cutout",
-          "prompt": "a young ancient Israelite shepherd boy David, full body, simple wool tunic, leather sling in hand, determined look"
+          "prompt": "David, full body, standing, holding his leather sling, determined look",
+          "refs": [
+            "david"
+          ]
         }
       ],
       "front": [
@@ -23,9 +36,12 @@
         },
         {
           "kind": "pill",
-          "text": "vs. Goliat",
+          "text": "Goliat",
           "atPhrase": "Goliat"
         }
+      ],
+      "refs": [
+        "goliat"
       ]
     },
     {
@@ -43,13 +59,16 @@
     {
       "id": "g03-saul",
       "fromPhrase": "Pues David",
-      "bg": "King Saul of ancient Israel inside a royal tent, middle-aged bearded king with a simple crown, extending his hand generously toward a young shepherd, oil lamps, rich fabrics",
+      "bg": "King Saul of ancient Israel, a tall middle-aged bearded king with a simple gold crown and rich blue and red robes, inside his royal tent, generously extending his hand toward David who stands in front of him, oil lamps, rich fabrics",
       "front": [
         {
           "kind": "quote",
           "text": "Te voy a poner mi armadura",
           "atPhrase": "te voy a poner"
         }
+      ],
+      "refs": [
+        "david"
       ]
     },
     {
@@ -148,24 +167,30 @@
       "id": "g09-le-queda-grande",
       "fromPhrase": "David se lo puso",
       "toPhrase": "la espada",
-      "bg": "a young slim shepherd boy David wearing an oversized heavy bronze armor that is far too big for him, struggling to walk, the helmet covering his eyes, inside a tent",
+      "bg": "medium shot inside a royal tent: David wearing King Saul's bronze armor that is clearly several sizes too big for him, the breastplate hanging loose and wide, the oversized helmet tilted and slipping over one eye, sleeves and straps too long, he looks awkward and uncomfortable trying to lift the heavy sword, his young face clearly visible",
       "front": [
         {
           "kind": "title",
           "text": "Le quedaba grande",
           "atPhrase": "espada"
         }
+      ],
+      "refs": [
+        "david"
       ]
     },
     {
       "id": "g10-se-la-quita",
       "fromPhrase": "No pudo andar",
-      "bg": "the young shepherd David taking off a heavy bronze armor, the armor and helmet dropped on the dusty ground at his feet, relieved expression",
+      "bg": "David outside the royal tent taking off the heavy bronze armor, the helmet and breastplate dropped on the dusty ground at his feet, relieved expression, back in his simple tunic",
       "front": [
         {
           "kind": "pill",
           "text": "No pudo andar"
         }
+      ],
+      "refs": [
+        "david"
       ]
     },
     {
@@ -319,12 +344,12 @@
       "front": [
         {
           "kind": "check",
-          "text": "Lo que has hecho",
+          "text": "Lo que hiciste",
           "atPhrase": "has hecho"
         },
         {
           "kind": "check",
-          "text": "Lo que has construido",
+          "text": "Lo que construiste",
           "atPhrase": "has construido"
         }
       ]
@@ -347,7 +372,7 @@
         },
         {
           "kind": "check",
-          "text": "Lo que has aprendido",
+          "text": "Lo que aprendiste",
           "atPhrase": "has aprendido"
         }
       ]
@@ -473,25 +498,33 @@
     {
       "id": "g27-historia",
       "fromPhrase": "a contar toda",
-      "bg": "epic wide shot of young David with a sling facing the giant Goliath across the valley, two armies watching from the hills, dramatic golden light",
+      "bg": "over-the-shoulder shot from behind David, we see his back, wavy brown hair and beige tunic in the foreground holding his sling, and far ahead across the valley Goliath advancing toward him, the two armies on the hills, low sun, dramatic golden light",
       "front": [
         {
           "kind": "pill",
           "text": "Una historia fascinante",
           "atPhrase": "fascinante"
         }
+      ],
+      "refs": [
+        "david",
+        "goliat"
       ]
     },
     {
       "id": "g28-vencio",
       "fromPhrase": "cómo fue que",
       "toPhrase": "a Goliat",
-      "bg": "the giant Goliath fallen face down in the dust of the valley, young David standing beside him holding a sling, victorious, cinematic",
+      "bg": "Goliath fallen face down in the dust of the valley, his helmet off, David standing beside him holding his sling, victorious, cinematic",
       "front": [
         {
           "kind": "title",
           "text": "David venció"
         }
+      ],
+      "refs": [
+        "david",
+        "goliat"
       ]
     }
   ]

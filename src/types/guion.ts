@@ -289,6 +289,8 @@ export interface MotionBlancoMidPlan {
   /** Qué generar con IA; el fondo blanco se quita después. */
   prompt: string;
   atPhrase?: string;
+  /** Personajes (claves de `characters`) que deben salir idénticos a su referencia. */
+  refs?: string[];
 }
 
 /** Texto de la capa del frente. Sin `atPhrase` entra escalonado desde el inicio de la escena. */
@@ -308,12 +310,22 @@ export interface MotionBlancoScenePlan {
   layout?: "full" | "split";
   /** Prompt de la foto de fondo (se le agrega el estilo cinematográfico común). */
   bg: string;
+  /** Personajes (claves de `characters`) que deben salir idénticos a su referencia. */
+  refs?: string[];
   mid?: MotionBlancoMidPlan[];
   front?: MotionBlancoFrontPlan[];
 }
 
+/** Personaje recurrente: se genera siempre a partir de la misma imagen para que no cambie de cara ni de edad. */
+export interface MotionBlancoCharacter {
+  /** Ruta relativa a public/ de la imagen de referencia. */
+  image: string;
+  description: string;
+}
+
 export interface MotionBlancoPlan {
   title: { kicker: string; headline: string; toPhrase: string };
+  characters?: Record<string, MotionBlancoCharacter>;
   scenes: MotionBlancoScenePlan[];
 }
 
@@ -352,6 +364,5 @@ export interface RenderedMotionBlancoGuion {
   scenes: RenderedMotionBlancoScene[];
   captionChunks: CaptionChunk[];
   jumpCuts: { atSeconds: number; scale: number; offsetX: number }[];
-  sfx: { whooshPath: string; whooshDurationInSeconds: number; popPath: string; popDurationInSeconds: number };
   music?: { path: string; volume: number };
 }

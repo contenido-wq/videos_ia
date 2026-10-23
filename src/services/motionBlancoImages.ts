@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { execFile } from "child_process";
 import { promisify } from "util";
-import { generateImage } from "./kieAiService";
+import { editImage, generateImage, uploadImage } from "./kieAiService";
 import type { MotionBlancoPlan } from "../types/guion";
 
 const execFileAsync = promisify(execFile);
@@ -49,14 +49,47 @@ async function runPool(jobs: Job[]): Promise<void> {
   }
 }
 
+/**
+ * Con personajes de referencia la imagen se genera editando a partir de ellos (nano-banana-edit),
+ * así David, Goliat, etc. mantienen la misma cara, edad y ropa en todo el video.
+ */
+function makeGenerator(plan: MotionBlancoPlan) {
+  const uploads = new Map<string, Promise<string>>();
+  const uploadOnce = (relPath: string) => {
+    if (!uploads.has(relPath)) uploads.set(relPath, uploadImage(path.join(PUBLIC_DIR, relPath)));
+    return uploads.get(relPath)!;
+  };
+  return async (prompt: string, refs: string[] | undefined, outputPath: string, aspectRatio: "9:16" | "1:1") => {
+    if (!refs || refs.length === 0) {
+      await generateImage(prompt, outputPath, { aspectRatio });
+      return;
+    }
+    const characters = refs.map((key) => {
+      const character = plan.characters?.[key];
+      if (!character) throw new Error(`El personaje "${key}" no está definido en characters del plan`);
+      return character;
+    });
+    const urls = await Promise.all(characters.map((c) => uploadOnce(c.image)));
+    const cast = characters.map((c, i) => `Reference image ${i + 1}: ${c.description}.`).join(" ");
+    await editImage(
+      `${prompt}. ${cast} Keep each character exactly as in their reference image: same face, same age, same hair, same build and same clothing. ` +
+        `Create a completely new scene and composition; do not copy the reference background or pose.`,
+      urls,
+      outputPath,
+      { aspectRatio },
+    );
+  };
+}
+
 /** Genera (solo las que falten) las fotos de fondo y los objetos recortados de cada escena. */
 export async function generateMotionBlancoImages(slug: string, plan: MotionBlancoPlan): Promise<void> {
   const jobs: Job[] = [];
+  const generate = makeGenerator(plan);
 
   for (const scene of plan.scenes) {
     const bgAbs = path.join(PUBLIC_DIR, bgRelPath(slug, scene.id));
     if (!fs.existsSync(bgAbs)) {
-      jobs.push({ label: `fondo ${scene.id}`, run: async () => void (await generateImage(`${scene.bg}. ${BG_STYLE}`, bgAbs, { aspectRatio: "9:16" })) });
+      jobs.push({ label: `fondo ${scene.id}`, run: () => generate(`${scene.bg}. ${BG_STYLE}`, scene.refs, bgAbs, "9:16") });
     }
     for (const mid of scene.mid ?? []) {
       const cutAbs = path.join(PUBLIC_DIR, cutoutRelPath(slug, mid.id));
@@ -65,7 +98,7 @@ export async function generateMotionBlancoImages(slug: string, plan: MotionBlanc
       jobs.push({
         label: `recorte ${mid.id}`,
         run: async () => {
-          if (!fs.existsSync(rawAbs)) await generateImage(`${mid.prompt}. ${CUTOUT_STYLE}`, rawAbs, { aspectRatio: "1:1" });
+          if (!fs.existsSync(rawAbs)) await generate(`${mid.prompt}. ${CUTOUT_STYLE}`, mid.refs, rawAbs, "1:1");
           await execFileAsync("python3", [path.join(process.cwd(), "scripts", "cutout_white_bg.py"), rawAbs, cutAbs]);
         },
       });

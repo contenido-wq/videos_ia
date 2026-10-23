@@ -1,7 +1,6 @@
 import {
   AbsoluteFill,
   Audio,
-  Easing,
   Img,
   OffthreadVideo,
   Sequence,
@@ -20,53 +19,55 @@ import type {
   RenderedMotionBlancoScene,
 } from "../types/guion";
 
-const { fontFamily: inter } = loadInter("normal", { weights: ["600", "700", "800"], subsets: ["latin"] });
+const { fontFamily: inter } = loadInter("normal", { weights: ["500", "600", "700"], subsets: ["latin"] });
 const { fontFamily: serif } = loadSerif("normal", { weights: ["400"], subsets: ["latin"] });
 
+// Paleta de la referencia: papel casi blanco, tinta casi negra y un único acento naranja.
+const PAPER = "#FAF9F7";
 const INK = "#1C1B1A";
+const MUTED = "#8C8782";
 const ACCENT = "#E8662A";
-const CARD_SHADOW = "0 18px 50px rgba(0,0,0,0.28), 0 2px 8px rgba(0,0,0,0.18)";
+// Sombras apenas perceptibles, como las tarjetas de la referencia.
+const SOFT_SHADOW = "0 1px 2px rgba(28,27,26,0.06), 0 12px 32px rgba(28,27,26,0.08)";
+const OBJECT_SHADOW = "drop-shadow(0 18px 22px rgba(28,27,26,0.18))";
 
 const SPEAKER_ORIGIN = "50% 28%";
 // En la pantalla dividida se baja el video para que la cara quede en la mitad de abajo.
 const SPLIT_VIDEO_SHIFT = "34%";
 const HOLD_SECONDS = 0.35;
-const WHOOSH_VOLUME = 0.22;
-const POP_VOLUME = 0.08;
 const MUSIC_FADE_SECONDS = 1.5;
 
-// Parallax: cuánto recorre cada capa a lo largo de la escena (px). El frente va más rápido que el fondo.
-const PARALLAX_BG = 36;
-const PARALLAX_MID = 90;
-const PARALLAX_FRONT = 150;
-const PARALLAX_DUST = 240;
-// Micromovimiento constante (px de amplitud) para que nada quede congelado mientras la escena "espera".
-const MICRO_BG = 6;
-const MICRO_MID = 10;
-const MICRO_FRONT = 5;
-// Zoom lento del presentador dentro de cada encuadre, para que el plano respire entre cortes.
-const SPEAKER_BREATH = 0.025;
+// Si los rótulos juntos pasan de este largo no caben en una línea y se apilan.
+const LABELS_ROW_MAX_CHARS = 24;
+// Composición: el gráfico vive entre ~13% y ~60% de la altura y el subtítulo va justo debajo.
+const CARD = { width: 720, height: 900, top: 250 };
+const CAPTION_ON_PAPER_TOP = "64%";
 
-// Rebote al final: el resorte se pasa un poco del destino y vuelve.
-const BOUNCE = { damping: 10, stiffness: 170, mass: 0.7 };
-const BACK_OUT = Easing.bezier(0.34, 1.56, 0.64, 1);
+// Parallax discreto: el papel no se mueve, la foto apenas sube y los objetos del frente un poco más.
+const PARALLAX_CARD = 10;
+const PARALLAX_FRONT = 24;
+// Empuje lento de cámara sobre la foto dentro de la tarjeta, como los zooms de la referencia.
+const CARD_PUSH_IN = 0.05;
+// Micromovimiento casi imperceptible: solo evita que la escena quede congelada.
+const MICRO_PX = 1.5;
+// Zoom lento del presentador dentro de cada encuadre, para que el plano respire entre cortes.
+const SPEAKER_BREATH = 0.02;
+
+// Resorte con un rebote corto al final (se pasa ~4% y vuelve).
+const SETTLE = { damping: 15, stiffness: 150, mass: 0.8 };
 
 type Ctx = { frame: number; fps: number };
 
 const toFrame = (seconds: number, fps: number) => Math.round(seconds * fps);
 
-function bounceIn({ frame, fps }: Ctx, atSeconds: number): number {
-  return spring({ frame: frame - toFrame(atSeconds, fps), fps, config: BOUNCE });
+function settleIn({ frame, fps }: Ctx, atSeconds: number): number {
+  return spring({ frame: frame - toFrame(atSeconds, fps), fps, config: SETTLE });
 }
 
-/** Oscilación suave y continua; `seed` desfasa cada elemento para que no se muevan al unísono. */
-function micro(frame: number, fps: number, amplitude: number, seed: number) {
+/** Oscilación lenta y mínima; `seed` desfasa cada elemento para que no se muevan al unísono. */
+function micro(frame: number, fps: number, seed: number) {
   const t = frame / fps;
-  return {
-    x: Math.sin(t * 1.3 + seed * 1.7) * amplitude,
-    y: Math.cos(t * 1.05 + seed * 2.3) * amplitude,
-    rot: Math.sin(t * 0.9 + seed) * (amplitude / 6),
-  };
+  return { x: Math.sin(t * 0.7 + seed * 1.7) * MICRO_PX, y: Math.cos(t * 0.55 + seed * 2.3) * MICRO_PX };
 }
 
 function findActiveChunk(chunks: CaptionChunk[], seconds: number): CaptionChunk | null {
@@ -94,216 +95,208 @@ function speakerFramingAt(jumpCuts: RenderedMotionBlancoGuion["jumpCuts"], secon
 }
 
 // ---------------------------------------------------------------------------
-// Capa del frente: textos
+// Piezas de texto (siempre sobre el papel, nunca encima de una foto)
 // ---------------------------------------------------------------------------
 
-const FrontItem: React.FC<{ item: RenderedMotionBlancoFront }> = ({ item }) => {
-  switch (item.kind) {
-    case "pill":
-      return (
-        <div style={{ display: "flex", alignItems: "center", gap: 18, background: "white", borderRadius: 999, padding: "20px 38px", boxShadow: CARD_SHADOW }}>
-          <div style={{ width: 20, height: 20, borderRadius: 10, background: ACCENT }} />
-          <p style={{ fontFamily: inter, fontWeight: 700, fontSize: 48, color: INK, margin: 0, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>{item.text}</p>
-        </div>
-      );
-    case "title":
-      return (
-        <p style={{ fontFamily: serif, fontSize: 120, lineHeight: 0.95, color: "white", margin: 0, padding: "0 50px", textAlign: "center", textShadow: "0 6px 40px rgba(0,0,0,0.7)" }}>
-          {item.text}
-        </p>
-      );
-    case "quote":
-      return (
-        <div style={{ textAlign: "center", padding: "0 60px" }}>
-          <p style={{ fontFamily: serif, fontSize: 180, lineHeight: 0.5, color: ACCENT, margin: "0 0 10px" }}>“</p>
-          <p style={{ fontFamily: serif, fontSize: 96, lineHeight: 1.02, color: "white", margin: 0, textShadow: "0 6px 40px rgba(0,0,0,0.75)" }}>{item.text}</p>
-        </div>
-      );
-    case "verse":
-      return (
-        <div style={{ background: "rgba(255,255,255,0.96)", borderRadius: 28, padding: "40px 48px", boxShadow: CARD_SHADOW, maxWidth: 900 }}>
-          <p style={{ fontFamily: serif, fontSize: 84, lineHeight: 1.05, color: INK, margin: 0 }}>{item.text}</p>
-        </div>
-      );
-    case "check":
-      return (
-        <div style={{ display: "flex", alignItems: "center", gap: 22, background: "white", borderRadius: 26, padding: "22px 36px", boxShadow: CARD_SHADOW, minWidth: 640 }}>
-          <svg width={52} height={52} viewBox="0 0 52 52">
-            <rect x={2} y={2} width={48} height={48} rx={14} fill={ACCENT} />
-            <path d="M14 27 L23 35 L39 17" fill="none" stroke="white" strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          <p style={{ fontFamily: inter, fontWeight: 700, fontSize: 46, color: INK, margin: 0, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>{item.text}</p>
-        </div>
-      );
-    case "key":
-      return (
-        <div
-          style={{
-            width: 190, height: 170, borderRadius: 34, background: "white", boxShadow: `0 12px 0 #d6d0c9, ${CARD_SHADOW}`,
-            display: "flex", alignItems: "center", justifyContent: "center", fontFamily: inter, fontWeight: 800, fontSize: 70, color: INK,
-          }}
-        >
-          {item.text}
-        </div>
-      );
-  }
+/** Rótulo arriba de la tarjeta, en serif y tinta oscura; las citas llevan comillas naranjas. */
+const Label: React.FC<{ item: RenderedMotionBlancoFront; separator: boolean }> = ({ item, separator }) => (
+  <p style={{ fontFamily: serif, fontSize: item.kind === "quote" ? 64 : 72, lineHeight: 1, color: INK, margin: 0, whiteSpace: "nowrap" }}>
+    {separator ? <span style={{ color: ACCENT, margin: "0 18px" }}>·</span> : null}
+    {item.kind === "quote" ? <span style={{ color: ACCENT }}>“</span> : null}
+    {item.text}
+    {item.kind === "quote" ? <span style={{ color: ACCENT }}>”</span> : null}
+  </p>
+);
+
+const CheckRow: React.FC<{ text: string; size?: number }> = ({ text, size = 38 }) => (
+  <div style={{ display: "flex", alignItems: "center", gap: 18, padding: "12px 0" }}>
+    <svg width={size} height={size} viewBox="0 0 52 52">
+      <rect x={2} y={2} width={48} height={48} rx={14} fill={ACCENT} />
+      <path d="M14 27 L23 35 L39 17" fill="none" stroke="white" strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+    <p style={{ fontFamily: inter, fontWeight: 600, fontSize: size, color: INK, margin: 0, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>{text}</p>
+  </div>
+);
+
+const Keycap: React.FC<{ text: string }> = ({ text }) => (
+  <div
+    style={{
+      width: 150, height: 130, borderRadius: 28, background: "white", boxShadow: `0 8px 0 #e4dfd9, ${SOFT_SHADOW}`,
+      display: "flex", alignItems: "center", justifyContent: "center", fontFamily: inter, fontWeight: 700, fontSize: 54, color: INK,
+    }}
+  >
+    {text}
+  </div>
+);
+
+/** Elemento que entra con un asentado corto y un leve desplazamiento hacia arriba. */
+const Settle: React.FC<{ ctx: Ctx; at: number; seed: number; children: React.ReactNode; style?: React.CSSProperties }> = ({
+  ctx,
+  at,
+  seed,
+  children,
+  style,
+}) => {
+  const s = settleIn(ctx, at);
+  const m = micro(ctx.frame, ctx.fps, seed);
+  return (
+    <div style={{ opacity: interpolate(s, [0, 0.6], [0, 1], { extrapolateRight: "clamp" }), transform: `translate(${m.x}px, ${(1 - s) * 28 + m.y}px) scale(${0.96 + s * 0.04})`, ...style }}>
+      {children}
+    </div>
+  );
 };
 
-/** Agrupa teclas consecutivas en una misma fila; todo lo demás va apilado. */
-function groupFrontRows(items: RenderedMotionBlancoFront[]): RenderedMotionBlancoFront[][] {
-  const rows: RenderedMotionBlancoFront[][] = [];
-  for (const item of items) {
-    const last = rows[rows.length - 1];
-    if (item.kind === "key" && last && last[0].kind === "key") last.push(item);
-    else rows.push([item]);
-  }
-  return rows;
-}
-
 // ---------------------------------------------------------------------------
-// Escena en capas
+// Escena: papel (fondo) → foto en tarjeta (medio) → objetos y textos (frente)
 // ---------------------------------------------------------------------------
 
-// Partículas de luz del frente: posiciones fijas por índice (render determinista).
-const DUST = Array.from({ length: 16 }, (_, i) => ({
-  x: (i * 137) % 100,
-  y: (i * 61 + 13) % 100,
-  size: 6 + ((i * 7) % 14),
-  speed: 0.6 + ((i * 13) % 10) / 10,
-  blur: 1 + (i % 4),
-}));
-
-// Dónde va cada objeto recortado según cuántos haya en la escena (x/y en %, ancho en px).
-const MID_SLOTS: Record<number, { x: number; y: number; w: number; rot: number }[]> = {
-  1: [{ x: 50, y: 50, w: 640, rot: -3 }],
+// Objetos recortados: se apoyan sobre las esquinas inferiores de la tarjeta, nunca al centro.
+const OBJECT_BOX = 380;
+const OBJECT_SLOTS: Record<number, { left: number; top: number; rot: number }[]> = {
+  1: [{ left: CARD.width / 2 + 110, top: CARD.top + CARD.height - 330, rot: 4 }],
   2: [
-    { x: 30, y: 46, w: 500, rot: -7 },
-    { x: 70, y: 58, w: 500, rot: 6 },
+    { left: 40, top: CARD.top + CARD.height - 330, rot: -5 },
+    { left: 1080 - 40 - OBJECT_BOX, top: CARD.top + CARD.height - 300, rot: 5 },
   ],
 };
 
 const Scene: React.FC<{ scene: RenderedMotionBlancoScene; index: number; ctx: Ctx }> = ({ scene, index, ctx }) => {
   const { frame, fps } = ctx;
-  const startFrame = toFrame(scene.startSeconds, fps);
-  const totalFrames = Math.max(1, toFrame(scene.durationInSeconds, fps));
-  const local = frame - startFrame;
-  const progress = interpolate(local, [0, totalFrames], [-0.5, 0.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  // Cada escena panea hacia el lado contrario de la anterior.
-  const dir = index % 2 === 0 ? 1 : -1;
+  const local = frame - toFrame(scene.startSeconds, fps);
+  const total = Math.max(1, toFrame(scene.durationInSeconds, fps));
+  const progress = interpolate(local, [0, total], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const isSplit = scene.layout === "split";
 
-  const bgIn = interpolate(local, [0, 14], [0, 1], { extrapolateRight: "clamp", easing: BACK_OUT });
-  const bgMicro = micro(frame, fps, MICRO_BG, index);
-  const bgScale = interpolate(bgIn, [0, 1], [1.34, 1.14]) + Math.abs(progress) * 0.02;
-  const bgBlur = interpolate(local, [0, 8], [10, 0], { extrapolateRight: "clamp" });
+  const checks = scene.front.filter((f) => f.kind === "check");
+  const verses = scene.front.filter((f) => f.kind === "verse");
+  // Con versículo, la etiqueta corta va dentro de su tarjeta como referencia y no arriba.
+  const labels = scene.front.filter((f) => f.kind === "title" || f.kind === "quote" || (f.kind === "pill" && verses.length === 0));
+  const keys = scene.front.filter((f) => f.kind === "key");
 
-  const midSlots = MID_SLOTS[Math.min(scene.mid.length, 2)] ?? [];
-  const rows = groupFrontRows(scene.front);
+  const labelsInRow = labels.reduce((n, l) => n + l.text.length, 0) <= LABELS_ROW_MAX_CHARS;
+  const cardIn = settleIn(ctx, scene.startSeconds);
+  const cardMicro = micro(frame, fps, index);
+
+  if (isSplit) {
+    // Pantalla dividida: foto a la izquierda y lista a la derecha, todo en la mitad de arriba.
+    return (
+      <AbsoluteFill style={{ height: "50%", backgroundColor: PAPER, overflow: "hidden" }}>
+        <div
+          style={{
+            position: "absolute", left: 60, top: 170, width: 450, height: 620, borderRadius: 22, overflow: "hidden", boxShadow: SOFT_SHADOW,
+            opacity: interpolate(cardIn, [0, 0.6], [0, 1], { extrapolateRight: "clamp" }),
+            transform: `translate(${cardMicro.x}px, ${(1 - cardIn) * 28 - progress * PARALLAX_CARD + cardMicro.y}px) scale(${0.96 + cardIn * 0.04})`,
+          }}
+        >
+          <Img src={staticFile(scene.bgPath)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 35%", transform: `scale(${1 + CARD_PUSH_IN * progress})` }} />
+        </div>
+        <div style={{ position: "absolute", left: 550, top: 300, transform: `translateY(${-progress * PARALLAX_FRONT}px)` }}>
+          {checks.map((c, i) => (
+            <Settle key={c.text} ctx={ctx} at={c.atSeconds} seed={index * 5 + i}>
+              <CheckRow text={c.text} size={40} />
+            </Settle>
+          ))}
+        </div>
+      </AbsoluteFill>
+    );
+  }
+
+  const objectSlots = OBJECT_SLOTS[Math.min(scene.mid.length, 2)] ?? [];
+  const cardLeft = (1080 - CARD.width) / 2;
+  const overlayTop = CARD.top + CARD.height - 150;
 
   return (
-    <AbsoluteFill style={{ height: isSplit ? "50%" : "100%", overflow: "hidden", backgroundColor: "#0e0b09" }}>
-      {/* Fondo */}
-      <Img
-        src={staticFile(scene.bgPath)}
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          transform: `translate(${dir * progress * PARALLAX_BG + bgMicro.x}px, ${bgMicro.y}px) scale(${bgScale})`,
-          filter: bgBlur > 0.1 ? `blur(${bgBlur}px)` : undefined,
-        }}
-      />
-      {/* Sombra superior e inferior para que textos y subtítulos se lean sobre cualquier foto */}
-      <AbsoluteFill
-        style={{
-          background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)",
-        }}
-      />
-
-      {/* Medio: objetos recortados */}
-      {scene.mid.map((m, i) => {
-        const slot = midSlots[i];
-        if (!slot) return null;
-        const s = bounceIn(ctx, m.atSeconds);
-        const mm = micro(frame, fps, MICRO_MID, index * 3 + i);
-        return (
-          <Img
-            key={m.imagePath}
-            src={staticFile(m.imagePath)}
-            style={{
-              position: "absolute",
-              left: `${slot.x}%`,
-              top: `${slot.y}%`,
-              width: slot.w,
-              opacity: Math.min(1, s * 1.5),
-              transform:
-                `translate(-50%, -50%) translate(${dir * progress * PARALLAX_MID + mm.x}px, ${(1 - s) * 260 + mm.y}px) ` +
-                `rotate(${slot.rot + (1 - s) * -14 + mm.rot}deg) scale(${0.55 + s * 0.45})`,
-              filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.55))",
-            }}
-          />
-        );
-      })}
-
-      {/* Frente: textos apilados, entran uno tras otro con rebote */}
+    <AbsoluteFill style={{ backgroundColor: PAPER }}>
+      {/* Rótulos arriba de la tarjeta */}
       <div
         style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          top: isSplit ? "14%" : scene.mid.length > 0 ? "9%" : "12%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 26,
-          transform: `translateX(${dir * progress * PARALLAX_FRONT}px)`,
+          position: "absolute", left: 60, right: 60, top: 70, height: CARD.top - 100,
+          display: "flex", flexDirection: labelsInRow ? "row" : "column", alignItems: labelsInRow ? "flex-end" : "center", justifyContent: labelsInRow ? "center" : "flex-end", gap: 10,
+          transform: `translateY(${-progress * PARALLAX_FRONT * 0.5}px)`,
         }}
       >
-        {rows.map((row, r) => (
-          <div key={r} style={{ display: "flex", gap: 40 }}>
-            {row.map((item, k) => {
-              const s = bounceIn(ctx, item.atSeconds);
-              const fm = micro(frame, fps, MICRO_FRONT, index * 5 + r * 2 + k);
-              return (
-                <div
-                  key={item.text}
-                  style={{
-                    opacity: Math.min(1, s * 1.6),
-                    transform: `translate(${fm.x}px, ${(1 - s) * 70 + fm.y}px) scale(${0.6 + s * 0.4}) rotate(${fm.rot}deg)`,
-                  }}
-                >
-                  <FrontItem item={item} />
-                </div>
-              );
-            })}
-          </div>
+        {labels.map((l, i) => (
+          <Settle key={l.text} ctx={ctx} at={l.atSeconds} seed={index * 5 + i}>
+            <Label item={l} separator={labelsInRow && i > 0} />
+          </Settle>
         ))}
       </div>
 
-      {/* Polvo de luz: la capa más cercana, la que más rápido se mueve */}
-      {DUST.map((d, i) => {
-        const t = frame / fps;
-        const x = (d.x + dir * progress * (PARALLAX_DUST / 10.8) * d.speed + 100) % 100;
-        const y = (d.y - t * 2.2 * d.speed + 200) % 100;
+      {/* Foto en tarjeta */}
+      <div
+        style={{
+          position: "absolute", left: cardLeft, top: CARD.top, width: CARD.width, height: CARD.height,
+          borderRadius: 24, overflow: "hidden", boxShadow: SOFT_SHADOW,
+          opacity: interpolate(cardIn, [0, 0.6], [0, 1], { extrapolateRight: "clamp" }),
+          transform: `translate(${cardMicro.x}px, ${(1 - cardIn) * 30 - progress * PARALLAX_CARD + cardMicro.y}px) scale(${0.96 + cardIn * 0.04})`,
+        }}
+      >
+        <Img
+          src={staticFile(scene.bgPath)}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 35%", transform: `scale(${1 + CARD_PUSH_IN * progress})` }}
+        />
+      </div>
+
+      {/* Objetos recortados apoyados en la tarjeta */}
+      {scene.mid.map((m, i) => {
+        const slot = objectSlots[i];
+        if (!slot) return null;
         return (
-          <div
-            key={i}
-            style={{
-              position: "absolute",
-              left: `${x}%`,
-              top: `${y}%`,
-              width: d.size,
-              height: d.size,
-              borderRadius: d.size,
-              background: "rgba(255,214,160,0.75)",
-              filter: `blur(${d.blur}px)`,
-              opacity: 0.35 + 0.25 * Math.sin(t * 2 + i),
-            }}
-          />
+          <Settle
+            key={m.imagePath}
+            ctx={ctx}
+            at={m.atSeconds}
+            seed={index * 3 + i + 1}
+            style={{ position: "absolute", left: slot.left, top: slot.top - progress * PARALLAX_FRONT, width: OBJECT_BOX, height: OBJECT_BOX }}
+          >
+            <Img
+              src={staticFile(m.imagePath)}
+              style={{ width: "100%", height: "100%", objectFit: "contain", filter: OBJECT_SHADOW, transform: `rotate(${slot.rot}deg)` }}
+            />
+          </Settle>
         );
       })}
+
+      {/* Tarjetas de texto que se superponen al borde inferior de la foto */}
+      {(checks.length > 0 || verses.length > 0 || keys.length > 0) && (
+        <div
+          style={{
+            position: "absolute", left: 0, right: 0, top: overlayTop, display: "flex", flexDirection: "column", alignItems: "center",
+            transform: `translateY(${-progress * PARALLAX_FRONT}px)`,
+          }}
+        >
+          {checks.length > 0 && (
+            <Settle ctx={ctx} at={checks[0].atSeconds} seed={index * 7}>
+              <div style={{ background: "white", borderRadius: 24, padding: "14px 36px", boxShadow: SOFT_SHADOW, minWidth: 600 }}>
+                {checks.map((c, i) => (
+                  <Settle key={c.text} ctx={ctx} at={c.atSeconds} seed={index * 7 + i + 1}>
+                    <CheckRow text={c.text} />
+                  </Settle>
+                ))}
+              </div>
+            </Settle>
+          )}
+          {verses.map((v, i) => (
+            <Settle key={v.text} ctx={ctx} at={v.atSeconds} seed={index * 7 + i}>
+              <div style={{ background: "white", borderRadius: 24, padding: "30px 40px", boxShadow: SOFT_SHADOW, maxWidth: 800 }}>
+                <p style={{ fontFamily: inter, fontWeight: 600, fontSize: 26, color: MUTED, margin: "0 0 10px", letterSpacing: "0.02em" }}>
+                  {scene.front.find((f) => f.kind === "pill")?.text ?? ""}
+                </p>
+                <p style={{ fontFamily: serif, fontSize: 64, lineHeight: 1.05, color: INK, margin: 0 }}>{v.text}</p>
+              </div>
+            </Settle>
+          ))}
+          {keys.length > 0 && (
+            <div style={{ display: "flex", gap: 36 }}>
+              {keys.map((k, i) => (
+                <Settle key={k.text} ctx={ctx} at={k.atSeconds} seed={index * 7 + i}>
+                  <Keycap text={k.text} />
+                </Settle>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </AbsoluteFill>
   );
 };
@@ -322,20 +315,19 @@ const ShieldMark: React.FC<{ size: number }> = ({ size }) => (
 
 const TitleCard: React.FC<{ kicker: string; headline: string; ctx: Ctx }> = ({ kicker, headline, ctx }) => {
   const words = headline.split(" ");
-  const mark = bounceIn(ctx, 0);
-  const kickerIn = bounceIn(ctx, 0.15 + words.length * 0.1);
-  const m = micro(ctx.frame, ctx.fps, 4, 0);
+  const mark = settleIn(ctx, 0);
+  const kickerIn = settleIn(ctx, 0.15 + words.length * 0.1);
   return (
-    <div style={{ position: "absolute", left: 70, right: 70, top: "56%", transform: `translate(${m.x}px, ${m.y}px)` }}>
+    <div style={{ position: "absolute", left: 70, right: 70, top: "56%" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
-        <div style={{ transform: `scale(${mark}) rotate(${(1 - mark) * -40}deg)` }}>
-          <ShieldMark size={100} />
+        <div style={{ transform: `scale(${mark})` }}>
+          <ShieldMark size={96} />
         </div>
         <p style={{ fontFamily: serif, fontSize: 100, lineHeight: 0.95, color: "white", margin: 0, whiteSpace: "nowrap", textShadow: "0 4px 30px rgba(0,0,0,0.55)" }}>
           {words.map((w, i) => {
-            const s = bounceIn(ctx, 0.1 + i * 0.1);
+            const s = settleIn(ctx, 0.1 + i * 0.1);
             return (
-              <span key={i} style={{ display: "inline-block", opacity: Math.min(1, s * 1.5), transform: `translateY(${(1 - s) * 50}px)`, marginRight: 24 }}>
+              <span key={i} style={{ display: "inline-block", opacity: interpolate(s, [0, 0.6], [0, 1], { extrapolateRight: "clamp" }), transform: `translateY(${(1 - s) * 30}px)`, marginRight: 24 }}>
                 {w}
               </span>
             );
@@ -344,8 +336,8 @@ const TitleCard: React.FC<{ kicker: string; headline: string; ctx: Ctx }> = ({ k
       </div>
       <p
         style={{
-          fontFamily: inter, fontWeight: 600, fontSize: 40, color: "white", margin: "16px 0 0 124px",
-          opacity: Math.min(1, kickerIn * 1.5), transform: `translateY(${(1 - kickerIn) * 30}px)`, textShadow: "0 2px 16px rgba(0,0,0,0.6)",
+          fontFamily: inter, fontWeight: 600, fontSize: 40, color: "white", margin: "16px 0 0 118px",
+          opacity: interpolate(kickerIn, [0, 0.6], [0, 1], { extrapolateRight: "clamp" }), textShadow: "0 2px 16px rgba(0,0,0,0.6)",
         }}
       >
         {kicker}
@@ -354,29 +346,26 @@ const TitleCard: React.FC<{ kicker: string; headline: string; ctx: Ctx }> = ({ k
   );
 };
 
-const Subtitle: React.FC<{ chunk: CaptionChunk; top: string; ctx: Ctx }> = ({ chunk, top, ctx }) => {
-  const s = bounceIn(ctx, chunk.startSeconds);
-  return (
-    <div className="absolute inset-x-0 flex justify-center px-16" style={{ top }}>
-      <p
-        className="text-center"
-        style={{
-          fontFamily: inter,
-          fontWeight: 700,
-          fontSize: 60,
-          lineHeight: 1.1,
-          letterSpacing: "-0.04em",
-          color: "white",
-          textShadow: "0 2px 14px rgba(0,0,0,0.65), 0 0 3px rgba(0,0,0,0.45)",
-          margin: 0,
-          transform: `scale(${0.85 + s * 0.15})`,
-        }}
-      >
-        {chunk.words.map((w) => w.text).join(" ")}
-      </p>
-    </div>
-  );
-};
+/** Subtítulo de 1–3 palabras: blanco sobre el presentador, negro y más chico sobre el papel. */
+const Subtitle: React.FC<{ chunk: CaptionChunk; top: string; onPaper: boolean }> = ({ chunk, top, onPaper }) => (
+  <div className="absolute inset-x-0 flex justify-center px-16" style={{ top }}>
+    <p
+      className="text-center"
+      style={{
+        fontFamily: inter,
+        fontWeight: 700,
+        fontSize: onPaper ? 46 : 56,
+        lineHeight: 1.1,
+        letterSpacing: "-0.04em",
+        color: onPaper ? INK : "white",
+        textShadow: onPaper ? undefined : "0 2px 14px rgba(0,0,0,0.6), 0 0 3px rgba(0,0,0,0.4)",
+        margin: 0,
+      }}
+    >
+      {chunk.words.map((w) => w.text).join(" ")}
+    </p>
+  </div>
+);
 
 // ---------------------------------------------------------------------------
 // Composición
@@ -392,6 +381,7 @@ export const MotionBlanco: React.FC<{ slug: string; guion: RenderedMotionBlancoG
   const activeIndex = guion.scenes.findIndex((s) => seconds >= s.startSeconds && seconds < s.startSeconds + s.durationInSeconds);
   const active = activeIndex >= 0 ? guion.scenes[activeIndex] : null;
   const isSplit = active?.layout === "split";
+  const onPaper = active !== null && !isSplit;
   const showTitle = seconds < guion.title.durationInSeconds;
   const chunk = findActiveChunk(guion.captionChunks, seconds);
   const framing = speakerFramingAt(guion.jumpCuts, seconds);
@@ -406,8 +396,8 @@ export const MotionBlanco: React.FC<{ slug: string; guion: RenderedMotionBlancoG
   };
 
   return (
-    <AbsoluteFill className="bg-black">
-      <AbsoluteFill style={{ overflow: "hidden", opacity: active && !isSplit ? 0 : 1 }}>
+    <AbsoluteFill style={{ backgroundColor: PAPER }}>
+      <AbsoluteFill style={{ overflow: "hidden", opacity: onPaper ? 0 : 1 }}>
         <OffthreadVideo
           src={staticFile(guion.videoPath)}
           style={{
@@ -430,25 +420,13 @@ export const MotionBlanco: React.FC<{ slug: string; guion: RenderedMotionBlancoG
       {showTitle ? (
         <TitleCard kicker={guion.title.kicker} headline={guion.title.headline} ctx={ctx} />
       ) : (
-        chunk && <Subtitle chunk={chunk} ctx={ctx} top={isSplit ? "86%" : active ? "72%" : "60%"} />
+        chunk && <Subtitle chunk={chunk} onPaper={onPaper} top={isSplit ? "86%" : onPaper ? CAPTION_ON_PAPER_TOP : "60%"} />
       )}
 
       {guion.music && (
         <Sequence durationInFrames={durationInFrames} layout="none">
           <Audio src={staticFile(guion.music.path)} volume={musicVolume} loop />
         </Sequence>
-      )}
-      {guion.scenes.map((s) => (
-        <Sequence key={`whoosh-${s.id}`} from={toFrame(s.startSeconds, fps)} durationInFrames={toFrame(guion.sfx.whooshDurationInSeconds, fps)} layout="none">
-          <Audio src={staticFile(guion.sfx.whooshPath)} volume={() => WHOOSH_VOLUME} />
-        </Sequence>
-      ))}
-      {guion.scenes.flatMap((s) =>
-        [...s.mid, ...s.front].map((item, i) => (
-          <Sequence key={`pop-${s.id}-${i}`} from={toFrame(item.atSeconds, fps)} durationInFrames={toFrame(guion.sfx.popDurationInSeconds, fps)} layout="none">
-            <Audio src={staticFile(guion.sfx.popPath)} volume={() => POP_VOLUME} />
-          </Sequence>
-        )),
       )}
     </AbsoluteFill>
   );

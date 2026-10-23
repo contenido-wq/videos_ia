@@ -29,7 +29,7 @@
         },
         {
           "kind": "pill",
-          "text": "vs. Goliat",
+          "text": "Goliat",
           "atSeconds": 8.618584000000002
         }
       ]
@@ -378,12 +378,12 @@
       "front": [
         {
           "kind": "check",
-          "text": "Lo que has hecho",
+          "text": "Lo que hiciste",
           "atSeconds": 70.69097800000006
         },
         {
           "kind": "check",
-          "text": "Lo que has construido",
+          "text": "Lo que construiste",
           "atSeconds": 71.79097800000005
         }
       ]
@@ -408,7 +408,7 @@
         },
         {
           "kind": "check",
-          "text": "Lo que has aprendido",
+          "text": "Lo que aprendiste",
           "atSeconds": 74.83097800000006
         }
       ]
@@ -3778,12 +3778,6 @@
       "offsetX": 0
     }
   ],
-  "sfx": {
-    "whooshPath": "assets/reel-2951/sfx/whoosh.mp3",
-    "whooshDurationInSeconds": 1,
-    "popPath": "assets/reel-2951/sfx/pop.mp3",
-    "popDurationInSeconds": 3
-  },
   "music": {
     "path": "assets/reel-2951/sfx/music.mp3",
     "volume": 0.1

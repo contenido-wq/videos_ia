@@ -172,7 +172,6 @@ async function main() {
   const musicLufs = await measureIntegratedLufs(musicSource);
   const musicVolume = Math.pow(10, (VOICE_TARGET_LUFS - MUSIC_BELOW_VOICE_DB - musicLufs) / 20);
 
-  const sfxSource = path.join(PUBLIC_DIR, "assets", "cortes-documental-prueba", "sfx");
   const guion: RenderedMotionBlancoGuion = {
     type: "motion-blanco",
     slug,
@@ -182,12 +181,6 @@ async function main() {
     scenes,
     captionChunks: buildCaptionChunks(words, 3, 0.35),
     jumpCuts,
-    sfx: {
-      whooshPath: copyAsset(path.join(sfxSource, "whoosh.mp3"), slug, "sfx/whoosh.mp3"),
-      whooshDurationInSeconds: await getVideoDurationInSeconds(path.join(sfxSource, "whoosh.mp3")),
-      popPath: copyAsset(path.join(sfxSource, "hit.mp3"), slug, "sfx/pop.mp3"),
-      popDurationInSeconds: await getVideoDurationInSeconds(path.join(sfxSource, "hit.mp3")),
-    },
     music: {
       path: copyAsset(musicSource, slug, "sfx/music.mp3"),
       volume: musicVolume,
