@@ -44,3 +44,8 @@ public/assets/primeros-humanos-de-noche/
 # derivadas) — regenerable corriendo el comando de nuevo, y a veces es de
 # canales de terceros usados solo como referencia/prueba, no assets propios.
 content/canales/
+
+# assets pesados (solo locales)
+public/assets/c0012-ilustrado/
+public/assets/cortes-documental-prueba/
+public/assets/reel-2951/
