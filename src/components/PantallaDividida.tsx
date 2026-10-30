@@ -94,11 +94,24 @@ const SceneIllustration: React.FC<{ scene: RenderedPantallaDivididaScene; localF
   );
 };
 
-const Caption: React.FC<{ text: string; localFrame: number; fps: number; variant: "bar" | "overlay" }> = ({
+const HIGHLIGHT_COLOR = "#FFD400";
+
+// Divide el texto en [antes, coincidencia, después] alrededor de la primera
+// ocurrencia de highlightWord (case-insensitive), preservando el casing
+// original del texto. Si no hay highlightWord o no matchea, devuelve null.
+function splitAroundHighlight(text: string, highlightWord?: string): [string, string, string] | null {
+  if (!highlightWord) return null;
+  const index = text.toLowerCase().indexOf(highlightWord.toLowerCase());
+  if (index === -1) return null;
+  return [text.slice(0, index), text.slice(index, index + highlightWord.length), text.slice(index + highlightWord.length)];
+}
+
+const Caption: React.FC<{ text: string; localFrame: number; fps: number; variant: "bar" | "overlay"; highlightWord?: string }> = ({
   text,
   localFrame,
   fps,
   variant,
+  highlightWord,
 }) => {
   const entrance = spring({
     frame: localFrame - 2,
@@ -107,11 +120,21 @@ const Caption: React.FC<{ text: string; localFrame: number; fps: number; variant
     durationInFrames: ENTRANCE_FRAMES,
   });
 
+  const parts = splitAroundHighlight(text, highlightWord);
+
   if (variant === "bar") {
     return (
       <div className="absolute inset-x-0 bottom-0 flex justify-center bg-black px-8 py-6" style={{ opacity: entrance }}>
         <p className="text-center text-white" style={{ fontFamily, fontWeight: 700, fontSize: 34, lineHeight: 1.2 }}>
-          {text}
+          {parts ? (
+            <>
+              {parts[0]}
+              <span style={{ color: HIGHLIGHT_COLOR }}>{parts[1]}</span>
+              {parts[2]}
+            </>
+          ) : (
+            text
+          )}
         </p>
       </div>
     );
@@ -165,7 +188,13 @@ export const PantallaDividida: React.FC<{ slug: string; guion: RenderedPantallaD
       {active && isSplit && (
         <div className="absolute inset-x-0 top-0 overflow-hidden" style={{ height: "50%" }}>
           <SceneIllustration scene={active.scene} localFrame={localFrame} fps={fps} />
-          <Caption text={active.scene.displayText} localFrame={localFrame} fps={fps} variant="bar" />
+          <Caption
+            text={active.scene.displayText}
+            localFrame={localFrame}
+            fps={fps}
+            variant="bar"
+            highlightWord={active.scene.highlightWord}
+          />
         </div>
       )}
 

@@ -1,0 +1,3114 @@
+{
+  "type": "cortes-documental",
+  "slug": "cortes-documental-prueba",
+  "topic": "No pelees con la armadura de otro",
+  "videoPath": "assets/cortes-documental-prueba/video/voice-normalized.mov",
+  "durationInSeconds": 110.206,
+  "cutaways": [
+    {
+      "id": "c1",
+      "startSeconds": 1.2486880000000005,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c1-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c2",
+      "startSeconds": 8.038584000000004,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c2-ai.png",
+      "transition": "slide"
+    },
+    {
+      "id": "c3",
+      "startSeconds": 13.439625000000001,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c3-ai.png",
+      "transition": "zoom"
+    },
+    {
+      "id": "c4",
+      "startSeconds": 18.827292,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c4-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c5",
+      "startSeconds": 22.236790999999997,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c5-ai.png",
+      "transition": "slide"
+    },
+    {
+      "id": "c6",
+      "startSeconds": 29.750019999999996,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c6-ai.png",
+      "transition": "zoom"
+    },
+    {
+      "id": "c7",
+      "startSeconds": 32.65001999999999,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c7-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c8",
+      "startSeconds": 37.26414499999999,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c8-ai.png",
+      "transition": "slide"
+    },
+    {
+      "id": "c9",
+      "startSeconds": 47.14406099999999,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c9-ai.png",
+      "transition": "zoom"
+    },
+    {
+      "id": "c10",
+      "startSeconds": 62.92397800000003,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c10-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c11",
+      "startSeconds": 66.15533200000004,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c11-ai.png",
+      "transition": "slide"
+    },
+    {
+      "id": "c12",
+      "startSeconds": 73.62097800000005,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c12-ai.png",
+      "transition": "zoom"
+    },
+    {
+      "id": "c13",
+      "startSeconds": 80.53420700000007,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c13-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c14",
+      "startSeconds": 84.41593600000007,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c14-ai.png",
+      "transition": "slide"
+    },
+    {
+      "id": "c15",
+      "startSeconds": 92.8041040000001,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c15-ai.png",
+      "transition": "zoom"
+    },
+    {
+      "id": "c16",
+      "startSeconds": 105.28172900000011,
+      "durationInSeconds": 2.5,
+      "imagePath": "assets/cortes-documental-prueba/images/c16-ai.png",
+      "transition": "flash"
+    },
+    {
+      "id": "c17",
+      "startSeconds": 109.34029100000015,
+      "durationInSeconds": 3.3657089999998533,
+      "imagePath": "assets/cortes-documental-prueba/images/c17-ai.png",
+      "transition": "slide",
+      "closing": true
+    }
+  ],
+  "titles": [
+    {
+      "id": "t1",
+      "startSeconds": 4.488688000000001,
+      "durationInSeconds": 2.5,
+      "kicker": "No crezcas con",
+      "headline": "la armadura de otro"
+    },
+    {
+      "id": "t2",
+      "startSeconds": 107.82029100000014,
+      "durationInSeconds": 2.3857089999998635,
+      "kicker": "Ya lo sabes",
+      "headline": "usa tu armadura"
+    }
+  ],
+  "captionChunks": [
+    {
+      "words": [
+        {
+          "text": "Uno",
+          "start": 0.1686880000000004,
+          "end": 0.32868800000000054
+        },
+        {
+          "text": "de",
+          "start": 0.36868800000000057,
+          "end": 0.4286880000000002
+        },
+        {
+          "text": "los",
+          "start": 0.4686880000000002,
+          "end": 0.6086880000000008
+        }
+      ],
+      "startSeconds": 0.1686880000000004,
+      "endSeconds": 0.6086880000000008
+    },
+    {
+      "words": [
+        {
+          "text": "errores",
+          "start": 0.6686880000000004,
+          "end": 1.0086880000000003
+        },
+        {
+          "text": "que",
+          "start": 1.0886880000000003,
+          "end": 1.1886880000000009
+        },
+        {
+          "text": "muchos",
+          "start": 1.2486880000000005,
+          "end": 1.5086880000000003
+        }
+      ],
+      "startSeconds": 0.6686880000000004,
+      "endSeconds": 1.5086880000000003
+    },
+    {
+      "words": [
+        {
+          "text": "empresarios",
+          "start": 1.5486880000000003,
+          "end": 1.9886880000000007
+        },
+        {
+          "text": "cometen",
+          "start": 2.0686880000000007,
+          "end": 2.4886880000000007
+        },
+        {
+          "text": "es",
+          "start": 2.648688000000001,
+          "end": 2.7486880000000005
+        }
+      ],
+      "startSeconds": 1.5486880000000003,
+      "endSeconds": 2.7486880000000005
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 2.768688000000001,
+          "end": 2.848688
+        },
+        {
+          "text": "quieren",
+          "start": 2.928688,
+          "end": 3.148688000000001
+        },
+        {
+          "text": "crecer",
+          "start": 3.2086880000000004,
+          "end": 3.5886880000000003
+        }
+      ],
+      "startSeconds": 2.768688000000001,
+      "endSeconds": 3.5886880000000003
+    },
+    {
+      "words": [
+        {
+          "text": "utilizando",
+          "start": 3.648688000000001,
+          "end": 4.188688
+        },
+        {
+          "text": "la",
+          "start": 4.408688000000001,
+          "end": 4.468688000000001
+        },
+        {
+          "text": "armadura",
+          "start": 4.488688000000001,
+          "end": 5.028688
+        }
+      ],
+      "startSeconds": 3.648688000000001,
+      "endSeconds": 5.028688
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 5.068688000000001,
+          "end": 5.128688000000001
+        },
+        {
+          "text": "otro.",
+          "start": 5.168688,
+          "end": 5.3286880000000005
+        },
+        {
+          "text": "Te",
+          "start": 5.466563000000002,
+          "end": 5.526563000000002
+        }
+      ],
+      "startSeconds": 5.068688000000001,
+      "endSeconds": 5.526563000000002
+    },
+    {
+      "words": [
+        {
+          "text": "explico",
+          "start": 5.546563000000002,
+          "end": 5.8865630000000015
+        },
+        {
+          "text": "de",
+          "start": 5.9265630000000025,
+          "end": 5.946563000000002
+        },
+        {
+          "text": "dónde",
+          "start": 5.986563000000001,
+          "end": 6.146563000000001
+        }
+      ],
+      "startSeconds": 5.546563000000002,
+      "endSeconds": 6.146563000000001
+    },
+    {
+      "words": [
+        {
+          "text": "viene",
+          "start": 6.166563000000001,
+          "end": 6.346563000000002
+        },
+        {
+          "text": "esto.",
+          "start": 6.3865630000000015,
+          "end": 6.606563000000002
+        },
+        {
+          "text": "Cuando",
+          "start": 6.858584000000003,
+          "end": 7.118584000000003
+        }
+      ],
+      "startSeconds": 6.166563000000001,
+      "endSeconds": 7.118584000000003
+    },
+    {
+      "words": [
+        {
+          "text": "David",
+          "start": 7.1385840000000025,
+          "end": 7.558584000000002
+        },
+        {
+          "text": "iba",
+          "start": 7.878584000000003,
+          "end": 7.978584000000004
+        },
+        {
+          "text": "a",
+          "start": 7.998584000000004,
+          "end": 8.018584000000004
+        }
+      ],
+      "startSeconds": 7.1385840000000025,
+      "endSeconds": 8.018584000000004
+    },
+    {
+      "words": [
+        {
+          "text": "enfrentar",
+          "start": 8.038584000000004,
+          "end": 8.458584000000002
+        },
+        {
+          "text": "a",
+          "start": 8.498584000000005,
+          "end": 8.578584000000003
+        },
+        {
+          "text": "Goliat,",
+          "start": 8.618584000000002,
+          "end": 8.998584000000005
+        }
+      ],
+      "startSeconds": 8.038584000000004,
+      "endSeconds": 8.998584000000005
+    },
+    {
+      "words": [
+        {
+          "text": "pues",
+          "start": 9.178000000000004,
+          "end": 9.338000000000005
+        },
+        {
+          "text": "él",
+          "start": 9.398000000000005,
+          "end": 9.498000000000005
+        },
+        {
+          "text": "llegó",
+          "start": 9.538000000000004,
+          "end": 9.798000000000004
+        }
+      ],
+      "startSeconds": 9.178000000000004,
+      "endSeconds": 9.798000000000004
+    },
+    {
+      "words": [
+        {
+          "text": "al",
+          "start": 9.818000000000005,
+          "end": 9.878000000000004
+        },
+        {
+          "text": "campamento",
+          "start": 9.958000000000004,
+          "end": 10.458000000000004
+        },
+        {
+          "text": "y",
+          "start": 10.498000000000005,
+          "end": 10.518000000000004
+        }
+      ],
+      "startSeconds": 9.818000000000005,
+      "endSeconds": 10.518000000000004
+    },
+    {
+      "words": [
+        {
+          "text": "lo",
+          "start": 10.538000000000004,
+          "end": 10.618000000000004
+        },
+        {
+          "text": "primero",
+          "start": 10.657000000000005,
+          "end": 10.898000000000005
+        },
+        {
+          "text": "que",
+          "start": 10.958000000000004,
+          "end": 10.998000000000003
+        }
+      ],
+      "startSeconds": 10.538000000000004,
+      "endSeconds": 10.998000000000003
+    },
+    {
+      "words": [
+        {
+          "text": "hizo",
+          "start": 11.018000000000006,
+          "end": 11.218000000000005
+        },
+        {
+          "text": "Saúl",
+          "start": 11.258000000000004,
+          "end": 11.498000000000003
+        },
+        {
+          "text": "es:",
+          "start": 11.558000000000005,
+          "end": 11.658000000000003
+        }
+      ],
+      "startSeconds": 11.018000000000006,
+      "endSeconds": 11.658000000000003
+    },
+    {
+      "words": [
+        {
+          "text": "\"Pues",
+          "start": 11.939625000000001,
+          "end": 12.099625000000001
+        },
+        {
+          "text": "David,",
+          "start": 12.139625000000004,
+          "end": 12.419625000000002
+        },
+        {
+          "text": "te",
+          "start": 12.639625000000004,
+          "end": 12.719625000000002
+        }
+      ],
+      "startSeconds": 11.939625000000001,
+      "endSeconds": 12.719625000000002
+    },
+    {
+      "words": [
+        {
+          "text": "voy",
+          "start": 12.759625000000002,
+          "end": 12.799625000000004
+        },
+        {
+          "text": "a",
+          "start": 12.819625000000004,
+          "end": 12.859625000000003
+        },
+        {
+          "text": "poner",
+          "start": 12.919625000000002,
+          "end": 13.199625000000003
+        }
+      ],
+      "startSeconds": 12.759625000000002,
+      "endSeconds": 13.199625000000003
+    },
+    {
+      "words": [
+        {
+          "text": "la",
+          "start": 13.439625000000001,
+          "end": 13.519625000000003
+        },
+        {
+          "text": "armadura",
+          "start": 13.559625000000002,
+          "end": 14.239625000000002
+        },
+        {
+          "text": "que",
+          "start": 14.607292,
+          "end": 14.707292
+        }
+      ],
+      "startSeconds": 13.439625000000001,
+      "endSeconds": 14.707292
+    },
+    {
+      "words": [
+        {
+          "text": "yo",
+          "start": 14.787291999999999,
+          "end": 14.887292
+        },
+        {
+          "text": "tengo,",
+          "start": 14.967291999999999,
+          "end": 15.207292
+        },
+        {
+          "text": "que",
+          "start": 15.307292000000002,
+          "end": 15.347292000000001
+        }
+      ],
+      "startSeconds": 14.787291999999999,
+      "endSeconds": 15.347292000000001
+    },
+    {
+      "words": [
+        {
+          "text": "es",
+          "start": 15.387292,
+          "end": 15.447292
+        },
+        {
+          "text": "la",
+          "start": 15.467291999999999,
+          "end": 15.547292
+        },
+        {
+          "text": "mejor",
+          "start": 15.607292,
+          "end": 15.907292
+        }
+      ],
+      "startSeconds": 15.387292,
+      "endSeconds": 15.907292
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 15.947292,
+          "end": 15.987292000000002
+        },
+        {
+          "text": "existe",
+          "start": 16.027292000000003,
+          "end": 16.347292000000003
+        },
+        {
+          "text": "en",
+          "start": 16.387292000000002,
+          "end": 16.427292
+        }
+      ],
+      "startSeconds": 15.947292,
+      "endSeconds": 16.427292
+    },
+    {
+      "words": [
+        {
+          "text": "el",
+          "start": 16.467292,
+          "end": 16.547292
+        },
+        {
+          "text": "reino,",
+          "start": 16.607292,
+          "end": 16.887292000000002
+        },
+        {
+          "text": "para",
+          "start": 17.267291999999998,
+          "end": 17.427292
+        }
+      ],
+      "startSeconds": 16.467292,
+      "endSeconds": 17.427292
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 17.467292,
+          "end": 17.587291999999998
+        },
+        {
+          "text": "puedas",
+          "start": 17.627291999999997,
+          "end": 17.827292
+        },
+        {
+          "text": "enfrentar",
+          "start": 17.907291999999998,
+          "end": 18.467292
+        }
+      ],
+      "startSeconds": 17.467292,
+      "endSeconds": 18.467292
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 18.747292,
+          "end": 18.787292
+        },
+        {
+          "text": "este",
+          "start": 18.827292,
+          "end": 19.027292000000003
+        },
+        {
+          "text": "gigante\".",
+          "start": 19.067292000000002,
+          "end": 19.327292
+        }
+      ],
+      "startSeconds": 18.747292,
+      "endSeconds": 19.327292
+    },
+    {
+      "words": [
+        {
+          "text": "Te",
+          "start": 19.407291999999998,
+          "end": 19.487292000000004
+        },
+        {
+          "text": "voy",
+          "start": 19.507292,
+          "end": 19.527292000000003
+        },
+        {
+          "text": "a",
+          "start": 19.547292,
+          "end": 19.587291999999998
+        }
+      ],
+      "startSeconds": 19.407291999999998,
+      "endSeconds": 19.587291999999998
+    },
+    {
+      "words": [
+        {
+          "text": "decir",
+          "start": 19.587291999999998,
+          "end": 19.727292
+        },
+        {
+          "text": "lo",
+          "start": 19.767291999999998,
+          "end": 19.847292000000003
+        },
+        {
+          "text": "que",
+          "start": 19.887292000000002,
+          "end": 19.967292
+        }
+      ],
+      "startSeconds": 19.587291999999998,
+      "endSeconds": 19.967292
+    },
+    {
+      "words": [
+        {
+          "text": "dice",
+          "start": 20.007292,
+          "end": 20.287292
+        },
+        {
+          "text": "en",
+          "start": 20.641645999999998,
+          "end": 20.701645999999997
+        },
+        {
+          "text": "esta",
+          "start": 20.761646,
+          "end": 21.001645999999997
+        }
+      ],
+      "startSeconds": 20.007292,
+      "endSeconds": 21.001645999999997
+    },
+    {
+      "words": [
+        {
+          "text": "parte.",
+          "start": 21.041645999999997,
+          "end": 21.281646
+        },
+        {
+          "text": "Esto",
+          "start": 21.321645999999998,
+          "end": 21.441646
+        },
+        {
+          "text": "está",
+          "start": 21.481645999999998,
+          "end": 21.741646
+        }
+      ],
+      "startSeconds": 21.041645999999997,
+      "endSeconds": 21.741646
+    },
+    {
+      "words": [
+        {
+          "text": "en",
+          "start": 22.116790999999996,
+          "end": 22.196790999999997
+        },
+        {
+          "text": "primera",
+          "start": 22.236790999999997,
+          "end": 22.436790999999996
+        },
+        {
+          "text": "de",
+          "start": 22.456790999999996,
+          "end": 22.516790999999998
+        }
+      ],
+      "startSeconds": 22.116790999999996,
+      "endSeconds": 22.516790999999998
+    },
+    {
+      "words": [
+        {
+          "text": "Samuel",
+          "start": 22.576790999999997,
+          "end": 22.856790999999998
+        },
+        {
+          "text": "diecisiete.",
+          "start": 22.896790999999997,
+          "end": 23.456790999999996
+        },
+        {
+          "text": "Te",
+          "start": 23.613040999999996,
+          "end": 23.673040999999994
+        }
+      ],
+      "startSeconds": 22.576790999999997,
+      "endSeconds": 23.673040999999994
+    },
+    {
+      "words": [
+        {
+          "text": "voy",
+          "start": 23.693040999999994,
+          "end": 23.733040999999993
+        },
+        {
+          "text": "a",
+          "start": 23.753040999999993,
+          "end": 23.773040999999996
+        },
+        {
+          "text": "leer",
+          "start": 23.813040999999995,
+          "end": 23.913040999999993
+        }
+      ],
+      "startSeconds": 23.693040999999994,
+      "endSeconds": 23.913040999999993
+    },
+    {
+      "words": [
+        {
+          "text": "lo",
+          "start": 23.953040999999995,
+          "end": 24.013040999999994
+        },
+        {
+          "text": "que",
+          "start": 24.053040999999993,
+          "end": 24.093040999999996
+        },
+        {
+          "text": "es",
+          "start": 24.133040999999995,
+          "end": 24.193040999999994
+        }
+      ],
+      "startSeconds": 23.953040999999995,
+      "endSeconds": 24.193040999999994
+    },
+    {
+      "words": [
+        {
+          "text": "versículo",
+          "start": 24.273040999999996,
+          "end": 24.733040999999993
+        },
+        {
+          "text": "treinta",
+          "start": 24.793040999999995,
+          "end": 25.033040999999994
+        },
+        {
+          "text": "y",
+          "start": 25.053040999999993,
+          "end": 25.073040999999993
+        }
+      ],
+      "startSeconds": 24.273040999999996,
+      "endSeconds": 25.073040999999993
+    },
+    {
+      "words": [
+        {
+          "text": "ocho.",
+          "start": 25.113040999999996,
+          "end": 25.373040999999997
+        },
+        {
+          "text": "Después,",
+          "start": 25.551019999999998,
+          "end": 25.871019999999998
+        },
+        {
+          "text": "Saúl",
+          "start": 25.931019999999993,
+          "end": 26.151019999999992
+        }
+      ],
+      "startSeconds": 25.113040999999996,
+      "endSeconds": 26.151019999999992
+    },
+    {
+      "words": [
+        {
+          "text": "le",
+          "start": 26.171019999999995,
+          "end": 26.251019999999993
+        },
+        {
+          "text": "dijo",
+          "start": 26.291019999999993,
+          "end": 26.451019999999996
+        },
+        {
+          "text": "a",
+          "start": 26.491019999999995,
+          "end": 26.51101999999999
+        }
+      ],
+      "startSeconds": 26.171019999999995,
+      "endSeconds": 26.51101999999999
+    },
+    {
+      "words": [
+        {
+          "text": "David:",
+          "start": 26.551019999999998,
+          "end": 26.911019999999997
+        },
+        {
+          "text": "\"Ten",
+          "start": 27.050019999999993,
+          "end": 27.230019999999993
+        },
+        {
+          "text": "mi",
+          "start": 27.27001999999999,
+          "end": 27.370019999999993
+        }
+      ],
+      "startSeconds": 26.551019999999998,
+      "endSeconds": 27.370019999999993
+    },
+    {
+      "words": [
+        {
+          "text": "propia",
+          "start": 27.410019999999992,
+          "end": 27.63001999999999
+        },
+        {
+          "text": "armadura,",
+          "start": 27.650019999999994,
+          "end": 28.070019999999996
+        },
+        {
+          "text": "un",
+          "start": 28.430019999999995,
+          "end": 28.510019999999994
+        }
+      ],
+      "startSeconds": 27.410019999999992,
+      "endSeconds": 28.510019999999994
+    },
+    {
+      "words": [
+        {
+          "text": "casco",
+          "start": 28.550019999999993,
+          "end": 28.81001999999999
+        },
+        {
+          "text": "de",
+          "start": 28.85001999999999,
+          "end": 28.930019999999995
+        },
+        {
+          "text": "bronce,",
+          "start": 28.970019999999995,
+          "end": 29.35001999999999
+        }
+      ],
+      "startSeconds": 28.550019999999993,
+      "endSeconds": 29.35001999999999
+    },
+    {
+      "words": [
+        {
+          "text": "una",
+          "start": 29.750019999999996,
+          "end": 29.910019999999992
+        },
+        {
+          "text": "cota",
+          "start": 29.970019999999995,
+          "end": 30.190019999999993
+        },
+        {
+          "text": "de",
+          "start": 30.21001999999999,
+          "end": 30.31001999999999
+        }
+      ],
+      "startSeconds": 29.750019999999996,
+      "endSeconds": 30.31001999999999
+    },
+    {
+      "words": [
+        {
+          "text": "malla\".",
+          "start": 30.370019999999993,
+          "end": 30.650019999999994
+        },
+        {
+          "text": "David",
+          "start": 31.03001999999999,
+          "end": 31.250019999999996
+        },
+        {
+          "text": "se",
+          "start": 31.290019999999995,
+          "end": 31.370019999999993
+        }
+      ],
+      "startSeconds": 30.370019999999993,
+      "endSeconds": 31.370019999999993
+    },
+    {
+      "words": [
+        {
+          "text": "lo",
+          "start": 31.410019999999992,
+          "end": 31.550019999999993
+        },
+        {
+          "text": "puso,",
+          "start": 31.590019999999992,
+          "end": 31.870019999999993
+        },
+        {
+          "text": "se",
+          "start": 32.05001999999999,
+          "end": 32.170019999999994
+        }
+      ],
+      "startSeconds": 31.410019999999992,
+      "endSeconds": 32.170019999999994
+    },
+    {
+      "words": [
+        {
+          "text": "ciñó",
+          "start": 32.210019999999986,
+          "end": 32.41001999999999
+        },
+        {
+          "text": "la",
+          "start": 32.49001999999999,
+          "end": 32.51002
+        },
+        {
+          "text": "espada",
+          "start": 32.55001999999999,
+          "end": 33.03001999999999
+        }
+      ],
+      "startSeconds": 32.210019999999986,
+      "endSeconds": 33.03001999999999
+    },
+    {
+      "words": [
+        {
+          "text": "y",
+          "start": 33.090019999999996,
+          "end": 33.15002
+        },
+        {
+          "text": "probó",
+          "start": 33.19001999999999,
+          "end": 33.43002
+        },
+        {
+          "text": "dar",
+          "start": 33.47001999999999,
+          "end": 33.57002
+        }
+      ],
+      "startSeconds": 33.090019999999996,
+      "endSeconds": 33.57002
+    },
+    {
+      "words": [
+        {
+          "text": "unos",
+          "start": 33.61001999999999,
+          "end": 33.810019999999994
+        },
+        {
+          "text": "pasos",
+          "start": 33.87002,
+          "end": 34.11001999999999
+        },
+        {
+          "text": "porque",
+          "start": 34.170019999999994,
+          "end": 34.43002
+        }
+      ],
+      "startSeconds": 33.61001999999999,
+      "endSeconds": 34.43002
+    },
+    {
+      "words": [
+        {
+          "text": "nunca",
+          "start": 34.49001999999999,
+          "end": 34.79002
+        },
+        {
+          "text": "antes",
+          "start": 34.85001999999999,
+          "end": 35.43002
+        },
+        {
+          "text": "se",
+          "start": 35.51002,
+          "end": 35.57002
+        }
+      ],
+      "startSeconds": 34.49001999999999,
+      "endSeconds": 35.57002
+    },
+    {
+      "words": [
+        {
+          "text": "había",
+          "start": 35.590019999999996,
+          "end": 35.77001999999999
+        },
+        {
+          "text": "vestido",
+          "start": 35.810019999999994,
+          "end": 36.170019999999994
+        },
+        {
+          "text": "con",
+          "start": 36.210019999999986,
+          "end": 36.310019999999994
+        }
+      ],
+      "startSeconds": 35.590019999999996,
+      "endSeconds": 36.310019999999994
+    },
+    {
+      "words": [
+        {
+          "text": "algo",
+          "start": 36.37002,
+          "end": 36.57002
+        },
+        {
+          "text": "semejante.",
+          "start": 36.63001999999999,
+          "end": 37.10037399999999
+        },
+        {
+          "text": "\"No",
+          "start": 37.26414499999999,
+          "end": 37.44414499999999
+        }
+      ],
+      "startSeconds": 36.37002,
+      "endSeconds": 37.44414499999999
+    },
+    {
+      "words": [
+        {
+          "text": "pudo",
+          "start": 37.50414499999999,
+          "end": 37.64414499999999
+        },
+        {
+          "text": "andar",
+          "start": 37.70414499999999,
+          "end": 37.92414499999999
+        },
+        {
+          "text": "con",
+          "start": 37.98414499999999,
+          "end": 38.14414499999999
+        }
+      ],
+      "startSeconds": 37.50414499999999,
+      "endSeconds": 38.14414499999999
+    },
+    {
+      "words": [
+        {
+          "text": "todo",
+          "start": 38.18414499999999,
+          "end": 38.40414499999999
+        },
+        {
+          "text": "esto\",",
+          "start": 38.46414499999999,
+          "end": 38.62414499999999
+        },
+        {
+          "text": "le",
+          "start": 38.68414499999999,
+          "end": 38.74414499999999
+        }
+      ],
+      "startSeconds": 38.18414499999999,
+      "endSeconds": 38.74414499999999
+    },
+    {
+      "words": [
+        {
+          "text": "dijo",
+          "start": 38.76414499999999,
+          "end": 38.92414499999999
+        },
+        {
+          "text": "a",
+          "start": 38.96414499999999,
+          "end": 39.02414499999999
+        },
+        {
+          "text": "Saúl.",
+          "start": 39.06414499999999,
+          "end": 39.36414499999999
+        }
+      ],
+      "startSeconds": 38.76414499999999,
+      "endSeconds": 39.36414499999999
+    },
+    {
+      "words": [
+        {
+          "text": "\"No",
+          "start": 39.59224899999998,
+          "end": 39.65224899999998
+        },
+        {
+          "text": "estoy",
+          "start": 39.69224899999998,
+          "end": 39.91224899999998
+        },
+        {
+          "text": "acostumbrado",
+          "start": 39.972248999999984,
+          "end": 40.65224899999998
+        }
+      ],
+      "startSeconds": 39.59224899999998,
+      "endSeconds": 40.65224899999998
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 40.69224899999998,
+          "end": 40.73224899999998
+        },
+        {
+          "text": "usarlo\".",
+          "start": 40.77224899999999,
+          "end": 41.17224899999999
+        },
+        {
+          "text": "¿Qué",
+          "start": 41.396456999999984,
+          "end": 41.51645699999999
+        }
+      ],
+      "startSeconds": 40.69224899999998,
+      "endSeconds": 41.51645699999999
+    },
+    {
+      "words": [
+        {
+          "text": "quiero",
+          "start": 41.536456999999984,
+          "end": 41.61645699999998
+        },
+        {
+          "text": "decirte",
+          "start": 41.636456999999986,
+          "end": 42.01645699999999
+        },
+        {
+          "text": "con",
+          "start": 42.05645699999999,
+          "end": 42.176456999999985
+        }
+      ],
+      "startSeconds": 41.536456999999984,
+      "endSeconds": 42.176456999999985
+    },
+    {
+      "words": [
+        {
+          "text": "esto?",
+          "start": 42.25645699999998,
+          "end": 42.47645699999999
+        },
+        {
+          "text": "Muchas",
+          "start": 42.75972799999998,
+          "end": 43.03972799999998
+        },
+        {
+          "text": "veces",
+          "start": 43.07972799999998,
+          "end": 43.319727999999984
+        }
+      ],
+      "startSeconds": 42.25645699999998,
+      "endSeconds": 43.319727999999984
+    },
+    {
+      "words": [
+        {
+          "text": "es",
+          "start": 43.379727999999986,
+          "end": 43.47972799999998
+        },
+        {
+          "text": "muy",
+          "start": 43.519727999999986,
+          "end": 43.65972799999998
+        },
+        {
+          "text": "fácil",
+          "start": 43.779727999999984,
+          "end": 44.139727999999984
+        }
+      ],
+      "startSeconds": 43.379727999999986,
+      "endSeconds": 44.139727999999984
+    },
+    {
+      "words": [
+        {
+          "text": "voltear",
+          "start": 44.15972799999998,
+          "end": 44.47972799999998
+        },
+        {
+          "text": "afuera",
+          "start": 44.53972799999998,
+          "end": 44.879727999999986
+        },
+        {
+          "text": "y",
+          "start": 44.919727999999985,
+          "end": 44.959727999999984
+        }
+      ],
+      "startSeconds": 44.15972799999998,
+      "endSeconds": 44.959727999999984
+    },
+    {
+      "words": [
+        {
+          "text": "ver",
+          "start": 45.019727999999986,
+          "end": 45.323560999999984
+        },
+        {
+          "text": "qué",
+          "start": 45.48406099999998,
+          "end": 45.544060999999985
+        },
+        {
+          "text": "embudo",
+          "start": 45.584060999999984,
+          "end": 45.88406099999998
+        }
+      ],
+      "startSeconds": 45.019727999999986,
+      "endSeconds": 45.88406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "están",
+          "start": 45.92406099999998,
+          "end": 46.14406099999999
+        },
+        {
+          "text": "haciendo,",
+          "start": 46.20406099999998,
+          "end": 46.824060999999986
+        },
+        {
+          "text": "qué",
+          "start": 47.14406099999999,
+          "end": 47.20406099999998
+        }
+      ],
+      "startSeconds": 45.92406099999998,
+      "endSeconds": 47.20406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "estrategia",
+          "start": 47.224060999999985,
+          "end": 47.70406099999998
+        },
+        {
+          "text": "de",
+          "start": 47.74406099999998,
+          "end": 47.824060999999986
+        },
+        {
+          "text": "contenido,",
+          "start": 47.88406099999998,
+          "end": 48.64406099999999
+        }
+      ],
+      "startSeconds": 47.224060999999985,
+      "endSeconds": 48.64406099999999
+    },
+    {
+      "words": [
+        {
+          "text": "cómo",
+          "start": 49.02406099999998,
+          "end": 49.224060999999985
+        },
+        {
+          "text": "está",
+          "start": 49.264060999999984,
+          "end": 49.48406099999998
+        },
+        {
+          "text": "viendo",
+          "start": 49.52406099999998,
+          "end": 49.78406099999999
+        }
+      ],
+      "startSeconds": 49.02406099999998,
+      "endSeconds": 49.78406099999999
+    },
+    {
+      "words": [
+        {
+          "text": "la",
+          "start": 49.824060999999986,
+          "end": 49.904060999999984
+        },
+        {
+          "text": "gente",
+          "start": 49.98406099999998,
+          "end": 50.24406099999998
+        },
+        {
+          "text": "las",
+          "start": 50.28406099999999,
+          "end": 50.444060999999984
+        }
+      ],
+      "startSeconds": 49.824060999999986,
+      "endSeconds": 50.444060999999984
+    },
+    {
+      "words": [
+        {
+          "text": "cosas,",
+          "start": 50.504060999999986,
+          "end": 50.74406099999998
+        },
+        {
+          "text": "cómo",
+          "start": 50.824060999999986,
+          "end": 50.96406099999999
+        },
+        {
+          "text": "está",
+          "start": 51.004060999999986,
+          "end": 51.16406099999998
+        }
+      ],
+      "startSeconds": 50.504060999999986,
+      "endSeconds": 51.16406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "hablando,",
+          "start": 51.20406099999998,
+          "end": 51.64406099999999
+        },
+        {
+          "text": "qué",
+          "start": 51.96406099999999,
+          "end": 52.084060999999984
+        },
+        {
+          "text": "personalidad",
+          "start": 52.14406099999999,
+          "end": 52.74406099999998
+        }
+      ],
+      "startSeconds": 51.20406099999998,
+      "endSeconds": 52.74406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "tiene",
+          "start": 52.78406099999999,
+          "end": 53.264060999999984
+        },
+        {
+          "text": "y",
+          "start": 53.324060999999986,
+          "end": 53.38406099999998
+        },
+        {
+          "text": "¿qué",
+          "start": 53.404060999999984,
+          "end": 53.52406099999998
+        }
+      ],
+      "startSeconds": 52.78406099999999,
+      "endSeconds": 53.52406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "decimos?",
+          "start": 53.56406099999998,
+          "end": 54.044060999999985
+        },
+        {
+          "text": "¡Ah!",
+          "start": 54.324060999999986,
+          "end": 54.56406099999998
+        },
+        {
+          "text": "Como",
+          "start": 54.92406099999998,
+          "end": 55.10406099999998
+        }
+      ],
+      "startSeconds": 53.56406099999998,
+      "endSeconds": 55.10406099999998
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 55.12406099999999,
+          "end": 55.14406099999999
+        },
+        {
+          "text": "él",
+          "start": 55.18306099999999,
+          "end": 55.24406099999998
+        },
+        {
+          "text": "le",
+          "start": 55.263060999999986,
+          "end": 55.32306099999999
+        }
+      ],
+      "startSeconds": 55.12406099999999,
+      "endSeconds": 55.32306099999999
+    },
+    {
+      "words": [
+        {
+          "text": "está",
+          "start": 55.34406099999999,
+          "end": 55.52406099999998
+        },
+        {
+          "text": "funcionando,",
+          "start": 55.584060999999984,
+          "end": 56.12406099999999
+        },
+        {
+          "text": "entonces",
+          "start": 56.16406099999998,
+          "end": 56.504060999999986
+        }
+      ],
+      "startSeconds": 55.34406099999999,
+      "endSeconds": 56.504060999999986
+    },
+    {
+      "words": [
+        {
+          "text": "voy",
+          "start": 56.56406099999999,
+          "end": 56.66406099999998
+        },
+        {
+          "text": "a",
+          "start": 56.70406099999999,
+          "end": 56.76406099999998
+        },
+        {
+          "text": "ver",
+          "start": 56.80406099999998,
+          "end": 56.98406099999999
+        }
+      ],
+      "startSeconds": 56.56406099999999,
+      "endSeconds": 56.98406099999999
+    },
+    {
+      "words": [
+        {
+          "text": "cómo",
+          "start": 57.04406099999998,
+          "end": 57.20406099999999
+        },
+        {
+          "text": "eso",
+          "start": 57.24406099999998,
+          "end": 57.40406099999998
+        },
+        {
+          "text": "lo",
+          "start": 57.42406099999999,
+          "end": 57.48406099999999
+        }
+      ],
+      "startSeconds": 57.04406099999998,
+      "endSeconds": 57.48406099999999
+    },
+    {
+      "words": [
+        {
+          "text": "hago",
+          "start": 57.504060999999986,
+          "end": 57.64406099999999
+        },
+        {
+          "text": "yo.",
+          "start": 57.70406099999999,
+          "end": 57.864060999999985
+        },
+        {
+          "text": "Pero",
+          "start": 58.18466499999999,
+          "end": 58.344665
+        }
+      ],
+      "startSeconds": 57.504060999999986,
+      "endSeconds": 58.344665
+    },
+    {
+      "words": [
+        {
+          "text": "no",
+          "start": 58.38466499999999,
+          "end": 58.484665
+        },
+        {
+          "text": "lo",
+          "start": 58.52466499999999,
+          "end": 58.564665
+        },
+        {
+          "text": "adaptas",
+          "start": 58.644664999999996,
+          "end": 59.10466499999999
+        }
+      ],
+      "startSeconds": 58.38466499999999,
+      "endSeconds": 59.10466499999999
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 59.16466499999999,
+          "end": 59.224664999999995
+        },
+        {
+          "text": "ti,",
+          "start": 59.264665,
+          "end": 59.344665
+        },
+        {
+          "text": "sino",
+          "start": 59.404665,
+          "end": 59.624665
+        }
+      ],
+      "startSeconds": 59.16466499999999,
+      "endSeconds": 59.624665
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 59.66466499999999,
+          "end": 59.784665
+        },
+        {
+          "text": "lo",
+          "start": 59.844665,
+          "end": 59.96466499999999
+        },
+        {
+          "text": "copias",
+          "start": 60.044665,
+          "end": 60.44466499999999
+        }
+      ],
+      "startSeconds": 59.66466499999999,
+      "endSeconds": 60.44466499999999
+    },
+    {
+      "words": [
+        {
+          "text": "como",
+          "start": 60.484665,
+          "end": 60.66466499999999
+        },
+        {
+          "text": "está.",
+          "start": 60.704665,
+          "end": 61.000936
+        },
+        {
+          "text": "En",
+          "start": 61.17474900000001,
+          "end": 61.234749000000015
+        }
+      ],
+      "startSeconds": 60.484665,
+      "endSeconds": 61.234749000000015
+    },
+    {
+      "words": [
+        {
+          "text": "este",
+          "start": 61.27474900000001,
+          "end": 61.47474900000001
+        },
+        {
+          "text": "caso,",
+          "start": 61.514749000000016,
+          "end": 61.75474900000001
+        },
+        {
+          "text": "quiero",
+          "start": 61.79474900000002,
+          "end": 61.97474900000001
+        }
+      ],
+      "startSeconds": 61.27474900000001,
+      "endSeconds": 61.97474900000001
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 61.99474900000002,
+          "end": 62.11474900000001
+        },
+        {
+          "text": "pienses",
+          "start": 62.15474900000002,
+          "end": 62.454749000000014
+        },
+        {
+          "text": "algo:",
+          "start": 62.55474900000001,
+          "end": 62.804332000000024
+        }
+      ],
+      "startSeconds": 61.99474900000002,
+      "endSeconds": 62.804332000000024
+    },
+    {
+      "words": [
+        {
+          "text": "¿Quién",
+          "start": 62.92397800000003,
+          "end": 63.08397800000002
+        },
+        {
+          "text": "eres",
+          "start": 63.143978000000025,
+          "end": 63.363978000000024
+        },
+        {
+          "text": "tú?",
+          "start": 63.44397800000002,
+          "end": 63.58397800000002
+        }
+      ],
+      "startSeconds": 62.92397800000003,
+      "endSeconds": 63.58397800000002
+    },
+    {
+      "words": [
+        {
+          "text": "¿A",
+          "start": 63.875332000000036,
+          "end": 63.99533200000004
+        },
+        {
+          "text": "qué",
+          "start": 64.01533200000003,
+          "end": 64.15533200000004
+        },
+        {
+          "text": "te",
+          "start": 64.21533200000005,
+          "end": 64.27533200000005
+        }
+      ],
+      "startSeconds": 63.875332000000036,
+      "endSeconds": 64.27533200000005
+    },
+    {
+      "words": [
+        {
+          "text": "dedicas?",
+          "start": 64.31533200000004,
+          "end": 64.79533200000003
+        },
+        {
+          "text": "¿Qué",
+          "start": 65.09533200000004,
+          "end": 65.21533200000005
+        },
+        {
+          "text": "sabes",
+          "start": 65.27533200000005,
+          "end": 65.51533200000003
+        }
+      ],
+      "startSeconds": 64.31533200000004,
+      "endSeconds": 65.51533200000003
+    },
+    {
+      "words": [
+        {
+          "text": "hacer?",
+          "start": 65.57533200000003,
+          "end": 65.87533200000004
+        },
+        {
+          "text": "¿Cuántos",
+          "start": 66.15533200000004,
+          "end": 66.49533200000005
+        },
+        {
+          "text": "años",
+          "start": 66.55533200000005,
+          "end": 66.73533200000003
+        }
+      ],
+      "startSeconds": 65.57533200000003,
+      "endSeconds": 66.73533200000003
+    },
+    {
+      "words": [
+        {
+          "text": "llevas",
+          "start": 66.75533200000004,
+          "end": 66.95533200000003
+        },
+        {
+          "text": "trabajando?",
+          "start": 67.01533200000003,
+          "end": 67.45533200000003
+        }
+      ],
+      "startSeconds": 66.75533200000004,
+      "endSeconds": 67.45533200000003
+    },
+    {
+      "words": [
+        {
+          "text": "Eso",
+          "start": 67.86927000000004,
+          "end": 68.10927000000004
+        },
+        {
+          "text": "es",
+          "start": 68.20927000000005,
+          "end": 68.58927000000004
+        },
+        {
+          "text": "la",
+          "start": 68.64927000000004,
+          "end": 68.68927000000005
+        }
+      ],
+      "startSeconds": 67.86927000000004,
+      "endSeconds": 68.68927000000005
+    },
+    {
+      "words": [
+        {
+          "text": "armadura",
+          "start": 68.72927000000004,
+          "end": 69.12927000000005
+        },
+        {
+          "text": "que",
+          "start": 69.16927000000004,
+          "end": 69.22927000000004
+        },
+        {
+          "text": "hoy",
+          "start": 69.24927000000004,
+          "end": 69.34927000000005
+        }
+      ],
+      "startSeconds": 68.72927000000004,
+      "endSeconds": 69.34927000000005
+    },
+    {
+      "words": [
+        {
+          "text": "tú",
+          "start": 69.38927000000004,
+          "end": 69.48927000000005
+        },
+        {
+          "text": "tienes.",
+          "start": 69.54927000000005,
+          "end": 69.88927000000004
+        },
+        {
+          "text": "Hablar",
+          "start": 70.14097800000005,
+          "end": 70.42097800000005
+        }
+      ],
+      "startSeconds": 69.38927000000004,
+      "endSeconds": 70.42097800000005
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 70.46097800000005,
+          "end": 70.52097800000004
+        },
+        {
+          "text": "lo",
+          "start": 70.56097800000005,
+          "end": 70.64097800000005
+        },
+        {
+          "text": "que",
+          "start": 70.68097800000005,
+          "end": 70.80097800000004
+        }
+      ],
+      "startSeconds": 70.46097800000005,
+      "endSeconds": 70.80097800000004
+    },
+    {
+      "words": [
+        {
+          "text": "tú",
+          "start": 70.84097800000005,
+          "end": 70.90097800000005
+        },
+        {
+          "text": "has",
+          "start": 70.92097800000005,
+          "end": 71.04097800000005
+        },
+        {
+          "text": "hecho,",
+          "start": 71.12097800000005,
+          "end": 71.36097800000005
+        }
+      ],
+      "startSeconds": 70.84097800000005,
+      "endSeconds": 71.36097800000005
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 71.62097800000005,
+          "end": 71.68097800000005
+        },
+        {
+          "text": "lo",
+          "start": 71.72097800000004,
+          "end": 71.78097800000005
+        },
+        {
+          "text": "que",
+          "start": 71.82097800000005,
+          "end": 71.92097800000005
+        }
+      ],
+      "startSeconds": 71.62097800000005,
+      "endSeconds": 71.92097800000005
+    },
+    {
+      "words": [
+        {
+          "text": "tú",
+          "start": 71.96097800000005,
+          "end": 72.00097800000005
+        },
+        {
+          "text": "has",
+          "start": 72.02097800000004,
+          "end": 72.14097800000005
+        },
+        {
+          "text": "construido,",
+          "start": 72.18097800000005,
+          "end": 72.76097800000005
+        }
+      ],
+      "startSeconds": 71.96097800000005,
+      "endSeconds": 72.76097800000005
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 72.82097800000005,
+          "end": 72.90097800000005
+        },
+        {
+          "text": "tus",
+          "start": 72.96097800000005,
+          "end": 73.10097800000005
+        },
+        {
+          "text": "errores,",
+          "start": 73.18097800000005,
+          "end": 73.58097800000004
+        }
+      ],
+      "startSeconds": 72.82097800000005,
+      "endSeconds": 73.58097800000004
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 73.62097800000005,
+          "end": 73.70097800000005
+        },
+        {
+          "text": "tus",
+          "start": 73.74097800000006,
+          "end": 73.86097800000005
+        },
+        {
+          "text": "fracasos,",
+          "start": 73.90097800000005,
+          "end": 74.46097800000005
+        }
+      ],
+      "startSeconds": 73.62097800000005,
+      "endSeconds": 74.46097800000005
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 74.78097800000005,
+          "end": 74.84097800000005
+        },
+        {
+          "text": "lo",
+          "start": 74.88097800000004,
+          "end": 74.94097800000004
+        },
+        {
+          "text": "que",
+          "start": 74.98097800000005,
+          "end": 75.02097800000004
+        }
+      ],
+      "startSeconds": 74.78097800000005,
+      "endSeconds": 75.02097800000004
+    },
+    {
+      "words": [
+        {
+          "text": "has",
+          "start": 75.06097800000005,
+          "end": 75.14097800000005
+        },
+        {
+          "text": "aprendido.",
+          "start": 75.22097800000004,
+          "end": 75.72097800000004
+        },
+        {
+          "text": "Eso",
+          "start": 76.11781100000006,
+          "end": 76.33781100000006
+        }
+      ],
+      "startSeconds": 75.06097800000005,
+      "endSeconds": 76.33781100000006
+    },
+    {
+      "words": [
+        {
+          "text": "es",
+          "start": 76.41781100000006,
+          "end": 76.47781100000006
+        },
+        {
+          "text": "lo",
+          "start": 76.49781100000006,
+          "end": 76.57781100000005
+        },
+        {
+          "text": "que",
+          "start": 76.61781100000006,
+          "end": 76.71781100000005
+        }
+      ],
+      "startSeconds": 76.41781100000006,
+      "endSeconds": 76.71781100000005
+    },
+    {
+      "words": [
+        {
+          "text": "Dios",
+          "start": 76.73781100000005,
+          "end": 76.91781100000006
+        },
+        {
+          "text": "te",
+          "start": 76.95781100000006,
+          "end": 77.05781100000006
+        },
+        {
+          "text": "puso",
+          "start": 77.09781100000006,
+          "end": 77.25781100000006
+        }
+      ],
+      "startSeconds": 76.73781100000005,
+      "endSeconds": 77.25781100000006
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 77.29781100000005,
+          "end": 77.33781100000006
+        },
+        {
+          "text": "ti",
+          "start": 77.37781100000005,
+          "end": 77.47781100000006
+        },
+        {
+          "text": "como",
+          "start": 77.51781100000005,
+          "end": 77.73781100000005
+        }
+      ],
+      "startSeconds": 77.29781100000005,
+      "endSeconds": 77.73781100000005
+    },
+    {
+      "words": [
+        {
+          "text": "talento.",
+          "start": 77.77781100000006,
+          "end": 78.23781100000005
+        },
+        {
+          "text": "Tal",
+          "start": 78.45420700000007,
+          "end": 78.55420700000006
+        },
+        {
+          "text": "vez",
+          "start": 78.59420700000007,
+          "end": 78.69420700000006
+        }
+      ],
+      "startSeconds": 77.77781100000006,
+      "endSeconds": 78.69420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "esa",
+          "start": 78.75420700000006,
+          "end": 78.87420700000007
+        },
+        {
+          "text": "es",
+          "start": 78.89420700000007,
+          "end": 79.01420700000007
+        },
+        {
+          "text": "tu",
+          "start": 79.07420700000006,
+          "end": 79.15420700000007
+        }
+      ],
+      "startSeconds": 78.75420700000006,
+      "endSeconds": 79.15420700000007
+    },
+    {
+      "words": [
+        {
+          "text": "honda,",
+          "start": 79.21420700000006,
+          "end": 79.51420700000007
+        },
+        {
+          "text": "tal",
+          "start": 79.59420700000007,
+          "end": 79.69420700000006
+        },
+        {
+          "text": "vez",
+          "start": 79.73420700000007,
+          "end": 79.85420700000006
+        }
+      ],
+      "startSeconds": 79.21420700000006,
+      "endSeconds": 79.85420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "esa",
+          "start": 79.93420700000006,
+          "end": 80.07420700000006
+        },
+        {
+          "text": "es",
+          "start": 80.09420700000007,
+          "end": 80.47420700000006
+        },
+        {
+          "text": "tu",
+          "start": 80.53420700000007,
+          "end": 80.61420700000006
+        }
+      ],
+      "startSeconds": 79.93420700000006,
+      "endSeconds": 80.61420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "resortera,",
+          "start": 80.65420700000007,
+          "end": 81.25420700000006
+        },
+        {
+          "text": "tal",
+          "start": 81.33420700000006,
+          "end": 81.43420700000006
+        },
+        {
+          "text": "vez",
+          "start": 81.47420700000006,
+          "end": 81.57420700000006
+        }
+      ],
+      "startSeconds": 80.65420700000007,
+      "endSeconds": 81.57420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "esa",
+          "start": 81.65420700000007,
+          "end": 81.77420700000006
+        },
+        {
+          "text": "es",
+          "start": 81.79420700000007,
+          "end": 81.89420700000007
+        },
+        {
+          "text": "tu",
+          "start": 81.93420700000006,
+          "end": 82.01420700000007
+        }
+      ],
+      "startSeconds": 81.65420700000007,
+      "endSeconds": 82.01420700000007
+    },
+    {
+      "words": [
+        {
+          "text": "lanza,",
+          "start": 82.07420700000006,
+          "end": 82.45420700000007
+        },
+        {
+          "text": "tal",
+          "start": 82.53420700000007,
+          "end": 82.63420700000006
+        },
+        {
+          "text": "vez",
+          "start": 82.67420700000007,
+          "end": 82.77420700000006
+        }
+      ],
+      "startSeconds": 82.07420700000006,
+      "endSeconds": 82.77420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "esa",
+          "start": 82.83420700000006,
+          "end": 82.95420700000007
+        },
+        {
+          "text": "es",
+          "start": 82.97420700000006,
+          "end": 83.05420700000006
+        },
+        {
+          "text": "tu",
+          "start": 83.09420700000007,
+          "end": 83.19420700000006
+        }
+      ],
+      "startSeconds": 82.83420700000006,
+      "endSeconds": 83.19420700000006
+    },
+    {
+      "words": [
+        {
+          "text": "flecha,",
+          "start": 83.25420700000006,
+          "end": 83.59420700000007
+        },
+        {
+          "text": "tal",
+          "start": 83.87593600000007,
+          "end": 83.97593600000006
+        },
+        {
+          "text": "vez",
+          "start": 83.99593600000007,
+          "end": 84.09593600000007
+        }
+      ],
+      "startSeconds": 83.25420700000006,
+      "endSeconds": 84.09593600000007
+    },
+    {
+      "words": [
+        {
+          "text": "ese",
+          "start": 84.15593600000007,
+          "end": 84.27593600000007
+        },
+        {
+          "text": "es",
+          "start": 84.29593600000007,
+          "end": 84.37593600000007
+        },
+        {
+          "text": "tu",
+          "start": 84.41593600000007,
+          "end": 84.47593600000006
+        }
+      ],
+      "startSeconds": 84.15593600000007,
+      "endSeconds": 84.47593600000006
+    },
+    {
+      "words": [
+        {
+          "text": "escudo.",
+          "start": 84.51593600000007,
+          "end": 84.91593600000007
+        },
+        {
+          "text": "No",
+          "start": 84.95593600000007,
+          "end": 85.03593600000006
+        },
+        {
+          "text": "lo",
+          "start": 85.07593600000007,
+          "end": 85.19593600000007
+        }
+      ],
+      "startSeconds": 84.51593600000007,
+      "endSeconds": 85.19593600000007
+    },
+    {
+      "words": [
+        {
+          "text": "sé,",
+          "start": 85.25593600000006,
+          "end": 85.41593600000007
+        },
+        {
+          "text": "pero",
+          "start": 85.73927000000008,
+          "end": 85.89927000000009
+        },
+        {
+          "text": "no",
+          "start": 85.93927000000008,
+          "end": 86.03927000000007
+        }
+      ],
+      "startSeconds": 85.25593600000006,
+      "endSeconds": 86.03927000000007
+    },
+    {
+      "words": [
+        {
+          "text": "tienes",
+          "start": 86.07927000000008,
+          "end": 86.27927000000008
+        },
+        {
+          "text": "que",
+          "start": 86.29927000000008,
+          "end": 86.33927000000008
+        },
+        {
+          "text": "estar",
+          "start": 86.37927000000008,
+          "end": 86.59927000000008
+        }
+      ],
+      "startSeconds": 86.07927000000008,
+      "endSeconds": 86.59927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "buscando",
+          "start": 86.63927000000008,
+          "end": 87.05927000000008
+        },
+        {
+          "text": "lo",
+          "start": 87.09927000000008,
+          "end": 87.17927000000007
+        },
+        {
+          "text": "que",
+          "start": 87.21927000000008,
+          "end": 87.27927000000008
+        }
+      ],
+      "startSeconds": 86.63927000000008,
+      "endSeconds": 87.27927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "hacen",
+          "start": 87.29927000000008,
+          "end": 87.49927000000008
+        },
+        {
+          "text": "los",
+          "start": 87.51927000000008,
+          "end": 87.61927000000009
+        },
+        {
+          "text": "demás",
+          "start": 87.65927000000008,
+          "end": 88.23927000000008
+        }
+      ],
+      "startSeconds": 87.29927000000008,
+      "endSeconds": 88.23927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "para",
+          "start": 88.29927000000008,
+          "end": 88.49927000000008
+        },
+        {
+          "text": "tú",
+          "start": 88.55927000000008,
+          "end": 88.63927000000008
+        },
+        {
+          "text": "apropiártelo",
+          "start": 88.67927000000007,
+          "end": 89.29927000000008
+        }
+      ],
+      "startSeconds": 88.29927000000008,
+      "endSeconds": 89.29927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "y",
+          "start": 89.33927000000008,
+          "end": 89.35927000000008
+        },
+        {
+          "text": "tratar",
+          "start": 89.39927000000009,
+          "end": 89.65927000000008
+        },
+        {
+          "text": "de",
+          "start": 89.67927000000007,
+          "end": 89.73927000000008
+        }
+      ],
+      "startSeconds": 89.33927000000008,
+      "endSeconds": 89.73927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "buscar",
+          "start": 89.77927000000008,
+          "end": 90.01927000000008
+        },
+        {
+          "text": "el",
+          "start": 90.05927000000008,
+          "end": 90.09927000000008
+        },
+        {
+          "text": "resultado.",
+          "start": 90.13927000000008,
+          "end": 90.65927000000008
+        }
+      ],
+      "startSeconds": 89.77927000000008,
+      "endSeconds": 90.65927000000008
+    },
+    {
+      "words": [
+        {
+          "text": "Tal",
+          "start": 90.90410400000009,
+          "end": 91.0241040000001
+        },
+        {
+          "text": "vez",
+          "start": 91.0641040000001,
+          "end": 91.2041040000001
+        },
+        {
+          "text": "tú",
+          "start": 91.24410400000009,
+          "end": 91.2841040000001
+        }
+      ],
+      "startSeconds": 90.90410400000009,
+      "endSeconds": 91.2841040000001
+    },
+    {
+      "words": [
+        {
+          "text": "estás",
+          "start": 91.32410400000009,
+          "end": 91.62410400000009
+        },
+        {
+          "text": "peleando",
+          "start": 91.68410400000009,
+          "end": 91.96410400000009
+        },
+        {
+          "text": "una",
+          "start": 92.0041040000001,
+          "end": 92.12410400000009
+        }
+      ],
+      "startSeconds": 91.32410400000009,
+      "endSeconds": 92.12410400000009
+    },
+    {
+      "words": [
+        {
+          "text": "batalla",
+          "start": 92.1641040000001,
+          "end": 92.5841040000001
+        },
+        {
+          "text": "con",
+          "start": 92.6441040000001,
+          "end": 92.76410400000009
+        },
+        {
+          "text": "la",
+          "start": 92.8041040000001,
+          "end": 92.84410400000009
+        }
+      ],
+      "startSeconds": 92.1641040000001,
+      "endSeconds": 92.84410400000009
+    },
+    {
+      "words": [
+        {
+          "text": "armadura",
+          "start": 92.8841040000001,
+          "end": 93.2241040000001
+        },
+        {
+          "text": "equivocada",
+          "start": 93.26410400000009,
+          "end": 93.76410400000009
+        },
+        {
+          "text": "y",
+          "start": 93.8041040000001,
+          "end": 93.8641040000001
+        }
+      ],
+      "startSeconds": 92.8841040000001,
+      "endSeconds": 93.8641040000001
+    },
+    {
+      "words": [
+        {
+          "text": "por",
+          "start": 93.90410400000009,
+          "end": 93.98410400000009
+        },
+        {
+          "text": "eso",
+          "start": 94.04410400000009,
+          "end": 94.18410400000009
+        },
+        {
+          "text": "no",
+          "start": 94.2041040000001,
+          "end": 94.24410400000009
+        }
+      ],
+      "startSeconds": 93.90410400000009,
+      "endSeconds": 94.24410400000009
+    },
+    {
+      "words": [
+        {
+          "text": "estás",
+          "start": 94.2841040000001,
+          "end": 94.5041040000001
+        },
+        {
+          "text": "consiguiendo",
+          "start": 94.54410400000009,
+          "end": 95.4241040000001
+        },
+        {
+          "text": "los",
+          "start": 95.5041040000001,
+          "end": 95.6441040000001
+        }
+      ],
+      "startSeconds": 94.2841040000001,
+      "endSeconds": 95.6441040000001
+    },
+    {
+      "words": [
+        {
+          "text": "resultados",
+          "start": 95.7041040000001,
+          "end": 96.2041040000001
+        },
+        {
+          "text": "que",
+          "start": 96.24410400000009,
+          "end": 96.32410400000009
+        },
+        {
+          "text": "realmente",
+          "start": 96.3641040000001,
+          "end": 96.76410400000009
+        }
+      ],
+      "startSeconds": 95.7041040000001,
+      "endSeconds": 96.76410400000009
+    },
+    {
+      "words": [
+        {
+          "text": "Dios",
+          "start": 96.8041040000001,
+          "end": 97.0041040000001
+        },
+        {
+          "text": "tiene",
+          "start": 97.0241040000001,
+          "end": 97.2241040000001
+        },
+        {
+          "text": "preparado",
+          "start": 97.26410400000009,
+          "end": 97.62410400000009
+        }
+      ],
+      "startSeconds": 96.8041040000001,
+      "endSeconds": 97.62410400000009
+    },
+    {
+      "words": [
+        {
+          "text": "para",
+          "start": 97.6641040000001,
+          "end": 97.84410400000009
+        },
+        {
+          "text": "ti.",
+          "start": 97.90410400000009,
+          "end": 98.0641040000001
+        },
+        {
+          "text": "¿Quieres",
+          "start": 98.26189500000011,
+          "end": 98.48189500000011
+        }
+      ],
+      "startSeconds": 97.6641040000001,
+      "endSeconds": 98.48189500000011
+    },
+    {
+      "words": [
+        {
+          "text": "saber",
+          "start": 98.5218950000001,
+          "end": 98.7418950000001
+        },
+        {
+          "text": "más",
+          "start": 98.7818950000001,
+          "end": 98.90189500000011
+        },
+        {
+          "text": "de",
+          "start": 98.9218950000001,
+          "end": 98.98189500000011
+        }
+      ],
+      "startSeconds": 98.5218950000001,
+      "endSeconds": 98.98189500000011
+    },
+    {
+      "words": [
+        {
+          "text": "la",
+          "start": 99.0218950000001,
+          "end": 99.04189500000011
+        },
+        {
+          "text": "historia?",
+          "start": 99.0818950000001,
+          "end": 99.3618950000001
+        },
+        {
+          "text": "Te",
+          "start": 99.4218950000001,
+          "end": 99.4418950000001
+        }
+      ],
+      "startSeconds": 99.0218950000001,
+      "endSeconds": 99.4418950000001
+    },
+    {
+      "words": [
+        {
+          "text": "invito",
+          "start": 99.48189500000011,
+          "end": 99.7018950000001
+        },
+        {
+          "text": "a",
+          "start": 99.7418950000001,
+          "end": 99.7818950000001
+        },
+        {
+          "text": "que",
+          "start": 99.8218950000001,
+          "end": 99.90189500000011
+        }
+      ],
+      "startSeconds": 99.48189500000011,
+      "endSeconds": 99.90189500000011
+    },
+    {
+      "words": [
+        {
+          "text": "leas",
+          "start": 99.98189500000011,
+          "end": 100.2218950000001
+        },
+        {
+          "text": "primera",
+          "start": 100.52172900000012,
+          "end": 100.76172900000012
+        },
+        {
+          "text": "de",
+          "start": 100.80172900000012,
+          "end": 100.86172900000011
+        }
+      ],
+      "startSeconds": 99.98189500000011,
+      "endSeconds": 100.86172900000011
+    },
+    {
+      "words": [
+        {
+          "text": "Samuel",
+          "start": 100.92172900000011,
+          "end": 101.16172900000012
+        },
+        {
+          "text": "diecisiete",
+          "start": 101.18172900000012,
+          "end": 101.96172900000012
+        },
+        {
+          "text": "y",
+          "start": 102.02172900000012,
+          "end": 102.06172900000011
+        }
+      ],
+      "startSeconds": 100.92172900000011,
+      "endSeconds": 102.06172900000011
+    },
+    {
+      "words": [
+        {
+          "text": "ahí",
+          "start": 102.10172900000012,
+          "end": 102.18172900000012
+        },
+        {
+          "text": "te",
+          "start": 102.22172900000011,
+          "end": 102.30172900000012
+        },
+        {
+          "text": "va",
+          "start": 102.34172900000011,
+          "end": 102.38172900000012
+        }
+      ],
+      "startSeconds": 102.10172900000012,
+      "endSeconds": 102.38172900000012
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 102.40172900000012,
+          "end": 102.44172900000012
+        },
+        {
+          "text": "contar",
+          "start": 102.48172900000012,
+          "end": 102.88172900000012
+        },
+        {
+          "text": "toda",
+          "start": 102.96172900000012,
+          "end": 103.08172900000011
+        }
+      ],
+      "startSeconds": 102.40172900000012,
+      "endSeconds": 103.08172900000011
+    },
+    {
+      "words": [
+        {
+          "text": "la",
+          "start": 103.12172900000012,
+          "end": 103.14172900000011
+        },
+        {
+          "text": "historia",
+          "start": 103.16172900000012,
+          "end": 103.44172900000012
+        },
+        {
+          "text": "fascinante",
+          "start": 103.50172900000011,
+          "end": 103.94172900000012
+        }
+      ],
+      "startSeconds": 103.12172900000012,
+      "endSeconds": 103.94172900000012
+    },
+    {
+      "words": [
+        {
+          "text": "de",
+          "start": 103.96172900000012,
+          "end": 104.04172900000012
+        },
+        {
+          "text": "cómo",
+          "start": 104.10172900000012,
+          "end": 104.32172900000012
+        },
+        {
+          "text": "fue",
+          "start": 104.40172900000012,
+          "end": 104.86172900000011
+        }
+      ],
+      "startSeconds": 103.96172900000012,
+      "endSeconds": 104.86172900000011
+    },
+    {
+      "words": [
+        {
+          "text": "que",
+          "start": 104.92172900000011,
+          "end": 105.00172900000011
+        },
+        {
+          "text": "David",
+          "start": 105.04172900000012,
+          "end": 105.24172900000012
+        },
+        {
+          "text": "venció",
+          "start": 105.28172900000011,
+          "end": 105.52172900000012
+        }
+      ],
+      "startSeconds": 104.92172900000011,
+      "endSeconds": 105.52172900000012
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "start": 105.56172900000011,
+          "end": 105.60172900000012
+        },
+        {
+          "text": "Goliat.",
+          "start": 105.64172900000011,
+          "end": 105.96172900000012
+        },
+        {
+          "text": "Ya",
+          "start": 106.23085400000012,
+          "end": 106.33085400000013
+        }
+      ],
+      "startSeconds": 105.56172900000011,
+      "endSeconds": 106.33085400000013
+    },
+    {
+      "words": [
+        {
+          "text": "lo",
+          "start": 106.37085400000012,
+          "end": 106.45085400000012
+        },
+        {
+          "text": "sabes,",
+          "start": 106.51085400000012,
+          "end": 106.79085400000012
+        },
+        {
+          "text": "prepárate,",
+          "start": 107.10029100000014,
+          "end": 107.72029100000015
+        }
+      ],
+      "startSeconds": 106.37085400000012,
+      "endSeconds": 107.72029100000015
+    },
+    {
+      "words": [
+        {
+          "text": "usa",
+          "start": 107.82029100000014,
+          "end": 108.00029100000015
+        },
+        {
+          "text": "tu",
+          "start": 108.04029100000014,
+          "end": 108.08029100000014
+        },
+        {
+          "text": "armadura",
+          "start": 108.10029100000014,
+          "end": 108.88029100000014
+        }
+      ],
+      "startSeconds": 107.82029100000014,
+      "endSeconds": 108.88029100000014
+    },
+    {
+      "words": [
+        {
+          "text": "y",
+          "start": 108.94029100000014,
+          "end": 109.02029100000014
+        },
+        {
+          "text": "pelea",
+          "start": 109.06029100000015,
+          "end": 109.30029100000014
+        },
+        {
+          "text": "contra",
+          "start": 109.34029100000015,
+          "end": 109.60029100000014
+        }
+      ],
+      "startSeconds": 108.94029100000014,
+      "endSeconds": 109.60029100000014
+    },
+    {
+      "words": [
+        {
+          "text": "tu",
+          "start": 109.66029100000014,
+          "end": 109.74029100000014
+        },
+        {
+          "text": "Goliat",
+          "start": 109.78029100000015,
+          "end": 110.12029100000014
+        }
+      ],
+      "startSeconds": 109.66029100000014,
+      "endSeconds": 110.12029100000014
+    }
+  ],
+  "outroSeconds": 2.5,
+  "jumpCuts": [
+    {
+      "atSeconds": 3.7486880000000005,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 7.1385840000000025,
+      "scale": 1
+    },
+    {
+      "atSeconds": 10.538584000000004,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 15.939625000000001,
+      "scale": 1
+    },
+    {
+      "atSeconds": 21.327292,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 24.736790999999997,
+      "scale": 1
+    },
+    {
+      "atSeconds": 28.550019999999993,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 32.25001999999999,
+      "scale": 1
+    },
+    {
+      "atSeconds": 35.15001999999999,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 39.76414499999999,
+      "scale": 1
+    },
+    {
+      "atSeconds": 43.379727999999986,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 49.64406099999999,
+      "scale": 1
+    },
+    {
+      "atSeconds": 52.78406099999999,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 56.56406099999999,
+      "scale": 1
+    },
+    {
+      "atSeconds": 59.66466499999999,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 65.42397800000003,
+      "scale": 1
+    },
+    {
+      "atSeconds": 68.65533200000004,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 71.96097800000005,
+      "scale": 1
+    },
+    {
+      "atSeconds": 76.12097800000005,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 79.21420700000006,
+      "scale": 1
+    },
+    {
+      "atSeconds": 83.03420700000007,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 86.91593600000007,
+      "scale": 1
+    },
+    {
+      "atSeconds": 90.90410400000009,
+      "scale": 1.3
+    },
+    {
+      "atSeconds": 95.3041040000001,
+      "scale": 1
+    },
+    {
+      "atSeconds": 98.5218950000001,
+      "scale": 1.16
+    },
+    {
+      "atSeconds": 102.10172900000012,
+      "scale": 1
+    },
+    {
+      "atSeconds": 107.78172900000011,
+      "scale": 1.3
+    }
+  ],
+  "sfx": {
+    "whooshPath": "assets/cortes-documental-prueba/sfx/whoosh.mp3",
+    "whooshDurationInSeconds": 1.0448979591836736,
+    "hitPath": "assets/cortes-documental-prueba/sfx/hit.mp3",
+    "hitDurationInSeconds": 3.030204081632653
+  },
+  "music": {
+    "path": "assets/cortes-documental-prueba/sfx/background-music.mp3",
+    "volume": 0.1778279410038923
+  }
+}

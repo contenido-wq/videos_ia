@@ -1,0 +1,115 @@
+{
+  "type": "cortes-documental",
+  "slug": "cortes-documental-prueba",
+  "topic": "No pelees con la armadura de otro",
+  "rawVideoPath": "content/raw/cortes-documental-prueba.mov",
+  "cutaways": [
+    {
+      "id": "c1",
+      "text": "muchos empresarios cometen",
+      "visual": "a heavy ancient bronze suit of armor standing alone on a stone floor, dramatic side light"
+    },
+    {
+      "id": "c2",
+      "text": "enfrentar a Goliat",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, standing small and determined facing the giant Goliath across a dusty battlefield valley, wide shot, ancient Israel"
+    },
+    {
+      "id": "c3",
+      "text": "la armadura que yo tengo",
+      "visual": "King Saul, a tall bearded man in his fifties in a dark red robe, placing a heavy bronze breastplate on David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, inside a large tent",
+      "basedOn": "c2"
+    },
+    {
+      "id": "c4",
+      "text": "este gigante",
+      "visual": "a towering giant warrior in bronze armor seen from a low angle against a stormy sky"
+    },
+    {
+      "id": "c5",
+      "text": "primera de Samuel diecisiete",
+      "visual": "an open old leather Bible on a wooden table lit by candlelight, close-up of the pages"
+    },
+    {
+      "id": "c6",
+      "text": "una cota de malla",
+      "visual": "close-up of chainmail links and a bronze helmet on a rough wooden table"
+    },
+    {
+      "id": "c7",
+      "text": "se ciñó la espada",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, trying on a heavy oversized sword that is too big for him, inside an ancient tent",
+      "basedOn": "c2"
+    },
+    {
+      "id": "c8",
+      "text": "No pudo andar con todo esto",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, stumbling forward weighed down by heavy oversized bronze armor that does not fit him, dusty ground",
+      "basedOn": "c2"
+    },
+    {
+      "id": "c9",
+      "text": "qué estrategia de contenido",
+      "visual": "a laptop showing a marketing funnel dashboard in a dark office, blue screen glow on a man's face"
+    },
+    {
+      "id": "c10",
+      "text": "Quién eres tú",
+      "visual": "a man looking at his own reflection in an old mirror, thoughtful, moody window light"
+    },
+    {
+      "id": "c11",
+      "text": "Cuántos años llevas trabajando",
+      "visual": "weathered hands of a craftsman working in a workshop, years of experience, warm light"
+    },
+    {
+      "id": "c12",
+      "text": "de tus fracasos",
+      "visual": "a man sitting alone with head bowed on a couch holding a notebook, reflective mood, window light"
+    },
+    {
+      "id": "c13",
+      "text": "tu resortera",
+      "visual": "an open palm holding a leather sling and smooth river stones, shallow depth of field"
+    },
+    {
+      "id": "c14",
+      "text": "tu escudo",
+      "visual": "an ancient round wooden shield with a bronze rim leaning against a rock at golden hour"
+    },
+    {
+      "id": "c15",
+      "text": "la armadura equivocada",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, standing alone on a battlefield at dusk wearing ill-fitting heavy bronze armor",
+      "basedOn": "c2"
+    },
+    {
+      "id": "c16",
+      "text": "venció a Goliat",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt standing over the fallen giant Goliath in a valley at sunrise, epic wide shot, ancient Israel",
+      "basedOn": "c2"
+    },
+    {
+      "id": "c17",
+      "text": "contra tu Goliat",
+      "visual": "David, a lean 17-year-old shepherd boy with short dark curly hair, olive skin and a rough brown wool tunic with a leather belt, standing on a rocky hill at sunrise with arms raised in triumph holding a sling, epic wide shot, golden light",
+      "basedOn": "c2",
+      "closing": true
+    }
+  ],
+  "titles": [
+    {
+      "id": "t1",
+      "text": "armadura de otro",
+      "kicker": "No crezcas con",
+      "headline": "la armadura de otro"
+    },
+    {
+      "id": "t2",
+      "text": "usa tu armadura",
+      "kicker": "Ya lo sabes",
+      "headline": "usa tu armadura"
+    }
+  ],
+  "backgroundMusicPath": "content/musica/motivation-paulyudin.mp3"
+}

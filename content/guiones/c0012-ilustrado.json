@@ -1,0 +1,93 @@
+{
+  "type": "pantalla-dividida",
+  "slug": "c0012-ilustrado",
+  "topic": "Ánimo para quien ya subió su primer video pero le da miedo seguir",
+  "rawVideoPath": "content/raw/c0012.MP4",
+  "removeOtherSpeakers": true,
+  "backgroundMusicPath": "content/musica/motivation-paulyudin.mp3",
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Hay días donde todo parece complicado y pueden agobiarte, pero hoy quiero que me escuches.",
+      "act": "split",
+      "visual": "a young overwhelmed person sitting at a desk with head in hands, surrounded by swirling chaotic icons of notifications, clocks and tangled arrows floating around them",
+      "highlightWord": "escuches"
+    },
+    {
+      "id": "s2",
+      "text": "Sé que has tenido días pesados en los que dudas y has pensado si todo esto que has hecho vale la pena.",
+      "act": "split",
+      "visual": "a person looking down at a smartphone with a worried expression, a faint question mark thought bubble above their head",
+      "highlightWord": "vale la pena"
+    },
+    {
+      "id": "s3",
+      "text": "Pero hoy quiero que sepas algo. Ya has dado un paso enorme.",
+      "act": "split",
+      "visual": "a single giant glowing footprint on a path, radiating light forward, symbolizing a huge first step",
+      "highlightWord": "paso enorme"
+    },
+    {
+      "id": "s4",
+      "text": "Ya te atreviste a hacer el primer video para redes sociales para tu negocio y eso es algo de aplaudir, es algo grandioso,",
+      "act": "split",
+      "visual": "a confident person recording themselves on a smartphone mounted on a small tripod with a ring light, small sparkle and star icons floating around celebrating the moment",
+      "highlightWord": "aplaudir"
+    },
+    {
+      "id": "s5",
+      "text": "ya que no es fácil ponerte frente a la cámara y entiendo que te da pena,",
+      "act": "split",
+      "visual": "a shy nervous person partially covering their face with one hand while standing in front of a camera on a tripod",
+      "highlightWord": "pena"
+    },
+    {
+      "id": "s6",
+      "text": "pero la verdad es que las personas necesitan conocerte, necesitan saber lo que ofreces y más aún cómo puedes ayudarles.",
+      "act": "split",
+      "visual": "a small crowd of diverse simple silhouette people reaching their hands toward a warm glowing central figure standing on a small stage",
+      "highlightWord": "necesitan conocerte"
+    },
+    {
+      "id": "s7",
+      "text": "Es natural tener miedo al principio, pero si no lo haces, ¿cómo vas a crecer? ¿Cómo vas a dejar ese legado que tanto sueñas?",
+      "act": "split",
+      "visual": "a small plant sprout growing in stages into a tall strong tree, shown as a simple upward growth sequence",
+      "highlightWord": "crecer"
+    },
+    {
+      "id": "s8",
+      "text": "Yo creo en ti y para eso estoy aquí, para decirte que todo lo que estás haciendo tiene un propósito.",
+      "act": "split",
+      "visual": "a glowing compass pointing forward toward a bright shining star on the horizon",
+      "highlightWord": "propósito"
+    },
+    {
+      "id": "s9",
+      "text": "Cada paso, cada video te acerca más a esos sueños que Dios te dio.",
+      "act": "split",
+      "visual": "a winding pathway of footprints leading up a hill toward a bright glowing sun rising on the horizon",
+      "highlightWord": "sueños"
+    },
+    {
+      "id": "s10",
+      "text": "Así que te animo a que sigas dando pasos así sean pequeños.",
+      "act": "split",
+      "visual": "small footprints on a forward path, shown getting gradually closer together and lighter, symbolizing small steady steps",
+      "highlightWord": "pasos"
+    },
+    {
+      "id": "s11",
+      "text": "No dejes que el miedo te frene porque sé que puedes lograrlo.",
+      "act": "split",
+      "visual": "a confident person breaking through a cracked wall silhouette, light bursting through the cracks",
+      "highlightWord": "lograrlo"
+    },
+    {
+      "id": "s12",
+      "text": "Y si alguna vez te sientes solo, recuerda que aquí estoy para apoyarte. Estoy para ayudarte a crecer, para ayudarte a dejar esa huella.",
+      "act": "closing",
+      "displayText": "\"SIGUE ADELANTE\""
+    }
+  ]
+}

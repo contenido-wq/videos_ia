@@ -4,6 +4,7 @@ import { parseFile } from "music-metadata";
 import { generateSoundEffect, transcribeWithTimestamps } from "./elevenlabsService";
 import { generateSpeech } from "./ai33Service";
 import { generateImage, editImage, uploadImage } from "./kieAiService";
+import { generatePollinationsImage } from "./pollinationsService";
 import { findRealImageUrls, downloadImageFromUrl } from "./apifyService";
 import { findWikimediaImageUrls } from "./wikimediaService";
 import { findSimpleIconSvg, renderSimpleIconToPng } from "./simpleIconsService";
@@ -11,6 +12,8 @@ import { findLogoDevUrl } from "./logoDevService";
 import { matchItemTimestamps, matchSceneTimestamps, type TranscribedWord } from "./checklistSyncService";
 import { buildCaptionChunks } from "./captionChunkService";
 import { prepareTrimmedVideo } from "./rawVideoCleaningService";
+import { resolveCutawayTimings, computeJumpCuts } from "./cortesDocumentalTiming";
+import { measureIntegratedLufs, normalizeVideoAudio } from "./ffmpegService";
 import type {
   Guion,
   VoxGuion,
@@ -26,6 +29,11 @@ import type {
   DocumentalDoodleGuion,
   RenderedDocumentalDoodleScene,
   RenderedDocumentalDoodleGuion,
+  CortesDocumentalGuion,
+  CortesDocumentalTransition,
+  RenderedCortesDocumentalCutaway,
+  RenderedCortesDocumentalTitle,
+  RenderedCortesDocumentalGuion,
   GuionScene,
   RenderedGuion,
   RenderedScene,
@@ -37,6 +45,11 @@ const PUBLIC_DIR = path.join(process.cwd(), "public");
 // Ningún corte visual dura más de esto: si la narración es más larga,
 // se generan varias imágenes que se van cortando dentro de la misma escena.
 const MAX_CUT_SECONDS = 2.5;
+
+// Sufijo de estilo fijo para ilustraciones IA en escenas "split" de
+// pantalla-dividida sin localImagePaths (ver PantallaDivididaScene.visual).
+const PANTALLA_DIVIDIDA_AI_STYLE_SUFFIX =
+  "flat vector illustration, clean modern minimalist style, bold rounded shapes, warm optimistic color palette of orange, cream and deep teal, soft gradient lighting, inspirational and uplifting mood, no text or letters in the image";
 
 // Cadencia propia de youtube-noticias-avatar (no confundir con MAX_CUT_SECONDS,
 // que usan vox/pantalla-dividida): una imagen de fondo nueva cada 4 segundos.
@@ -429,12 +442,15 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
   for (const { scene, durationInSeconds: sceneDuration } of matches) {
     if (scene.act !== "split") continue;
     if (scene.localImagePaths && scene.localImagePaths.length > 0) continue;
+    if (scene.visual) continue;
     const numCuts = Math.max(1, Math.ceil(sceneDuration / MAX_CUT_SECONDS));
-    missing.push(`  [${scene.id}] necesita ${numCuts} imagen(es) en "localImagePaths" (dura ${sceneDuration.toFixed(1)}s)`);
+    missing.push(
+      `  [${scene.id}] necesita ${numCuts} imagen(es) en "localImagePaths" o un prompt en "visual" (dura ${sceneDuration.toFixed(1)}s)`,
+    );
   }
   if (missing.length > 0) {
     throw new Error(
-      `Faltan imágenes locales para ${missing.length} escena(s) antes de generar el video:\n${missing.join("\n")}`,
+      `Faltan imágenes para ${missing.length} escena(s) antes de generar el video:\n${missing.join("\n")}`,
     );
   }
 
@@ -448,21 +464,47 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
 
     const images: SceneImage[] = [];
     if (scene.act === "split") {
-      const localImagePaths = scene.localImagePaths as string[];
       const numCuts = Math.max(1, Math.ceil(sceneDuration / MAX_CUT_SECONDS));
       const cutDuration = sceneDuration / numCuts;
-      for (let i = 0; i < numCuts; i++) {
-        const sourcePath = localImagePaths[i % localImagePaths.length];
-        const ext = path.extname(sourcePath) || ".png";
-        const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-local${i}${ext}`);
-        if (fs.existsSync(imageAbsPath)) {
-          console.log(`[${scene.id}] corte ${i} ya existe, se reutiliza`);
-        } else {
-          console.log(`[${scene.id}] copiando corte ${i}: ${sourcePath}`);
-          fs.mkdirSync(path.dirname(imageAbsPath), { recursive: true });
-          fs.copyFileSync(sourcePath, imageAbsPath);
+
+      if (scene.localImagePaths && scene.localImagePaths.length > 0) {
+        const localImagePaths = scene.localImagePaths;
+        for (let i = 0; i < numCuts; i++) {
+          const sourcePath = localImagePaths[i % localImagePaths.length];
+          const ext = path.extname(sourcePath) || ".png";
+          const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-local${i}${ext}`);
+          if (fs.existsSync(imageAbsPath)) {
+            console.log(`[${scene.id}] corte ${i} ya existe, se reutiliza`);
+          } else {
+            console.log(`[${scene.id}] copiando corte ${i}: ${sourcePath}`);
+            fs.mkdirSync(path.dirname(imageAbsPath), { recursive: true });
+            fs.copyFileSync(sourcePath, imageAbsPath);
+          }
+          images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
         }
-        images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+      } else if (scene.visual) {
+        for (let i = 0; i < numCuts; i++) {
+          const imageAbsPath = path.join(PUBLIC_DIR, "assets", guion.slug, "images", `${scene.id}-ai${i}.png`);
+          if (fs.existsSync(imageAbsPath)) {
+            console.log(`[${scene.id}] corte ${i} (ai) ya existe, se reutiliza`);
+          } else {
+            const subject =
+              numCuts > 1
+                ? `${scene.visual}, alternate camera angle / closer framing, cut ${i + 1} of ${numCuts} in the same illustrated sequence, same subject and art style`
+                : scene.visual;
+            const prompt = `${subject}, ${PANTALLA_DIVIDIDA_AI_STYLE_SUFFIX}`;
+            console.log(`[${scene.id}] generando corte ${i} (ai)...`);
+            try {
+              await generateImage(prompt, imageAbsPath, { aspectRatio: "16:9" });
+            } catch (err) {
+              console.log(
+                `[${scene.id}] kie.ai falló (${(err as Error).message}), usando fallback gratuito (pollinations.ai)...`,
+              );
+              await generatePollinationsImage(prompt, imageAbsPath, { width: 1024, height: 576 });
+            }
+          }
+          images.push({ path: toPublicRelPath(imageAbsPath), durationInSeconds: cutDuration });
+        }
       }
     }
 
@@ -475,6 +517,7 @@ async function generatePantallaDivididaAssets(guion: PantallaDivididaGuion): Pro
       matched,
       images,
       displayText: scene.displayText ?? scene.text,
+      highlightWord: scene.highlightWord,
     });
   }
 
@@ -722,6 +765,249 @@ async function generateDocumentalDoodleAssets(guion: DocumentalDoodleGuion): Pro
   );
 }
 
+// Sufijo de estilo fijo para imágenes IA de cortes-documental (visual sin localImagePath).
+const CORTES_DOCUMENTAL_AI_STYLE_SUFFIX =
+  "vertical 9:16 documentary archive photograph, photorealistic, natural film grain, warm cinematic tones, shallow depth of field, authentic candid moment, no text or letters in the image";
+
+// Prefijo para cortes con `basedOn`: la imagen del corte referenciado fija el personaje.
+const CORTES_DOCUMENTAL_CHARACTER_PREFIX =
+  "Use the reference image as the character reference: keep the EXACT same person (same face, same age, same hair, same clothing) in a new scene. New scene: ";
+
+const CORTES_DOCUMENTAL_TITLE_SECONDS = 2.5;
+// Cola después de la última palabra: el corte de cierre sigue sobre ella y se funde a negro.
+const CORTES_DOCUMENTAL_OUTRO_SECONDS = 2.5;
+// La voz se lleva a este nivel (el video de referencia está en -10.9 LUFS) y la música queda debajo.
+const CORTES_DOCUMENTAL_VOICE_LUFS = -13;
+const CORTES_DOCUMENTAL_MUSIC_BELOW_VOICE_DB = 14;
+const CORTES_DOCUMENTAL_TRANSITIONS: CortesDocumentalTransition[] = ["flash", "slide", "zoom"];
+
+async function generateCortesDocumentalAssets(guion: CortesDocumentalGuion): Promise<void> {
+  const titles = guion.titles ?? [];
+  console.log(
+    `Generando recursos para "${guion.topic}" (cortes-documental, ${guion.cutaways.length} corte(s), ${titles.length} título(s))`,
+  );
+
+  const missingImage = guion.cutaways.filter((c) => !c.localImagePath && !c.visual);
+  if (missingImage.length > 0) {
+    throw new Error(
+      `Faltan imágenes para ${missingImage.length} corte(s): ${missingImage
+        .map((c) => `[${c.id}] necesita "localImagePath" o un prompt en "visual"`)
+        .join("; ")}`,
+    );
+  }
+  guion.cutaways.forEach((c, i) => {
+    if (c.basedOn && !guion.cutaways.slice(0, i).some((other) => other.id === c.basedOn)) {
+      throw new Error(`[${c.id}] "basedOn" apunta a "${c.basedOn}", que no existe o no aparece antes en la lista.`);
+    }
+  });
+  if (guion.cutaways.filter((c) => c.closing).length > 1) {
+    throw new Error('Solo un corte puede tener "closing": true.');
+  }
+
+  const trimmed = await prepareTrimmedVideo({
+    slug: guion.slug,
+    rawVideoPath: guion.rawVideoPath,
+    removeOtherSpeakers: guion.removeOtherSpeakers,
+  });
+  const { words, durationInSeconds } = trimmed;
+
+  // Voz a nivel de referencia: el crudo del celular suele quedar ~19 dB por debajo.
+  const trimmedAbsPath = path.join(PUBLIC_DIR, trimmed.videoPath);
+  const normalizedAbsPath = path.join(path.dirname(trimmedAbsPath), `voice-normalized${path.extname(trimmedAbsPath)}`);
+  if (fs.existsSync(normalizedAbsPath)) {
+    console.log("voz ya normalizada, se reutiliza");
+  } else {
+    console.log(`normalizando voz a ${CORTES_DOCUMENTAL_VOICE_LUFS} LUFS...`);
+    await normalizeVideoAudio(trimmedAbsPath, normalizedAbsPath, CORTES_DOCUMENTAL_VOICE_LUFS);
+  }
+  const videoPath = toPublicRelPath(normalizedAbsPath);
+
+  const cutawayMatches = matchSceneTimestamps(words, guion.cutaways, durationInSeconds);
+  const titleMatches = matchSceneTimestamps(words, titles, durationInSeconds);
+
+  const unmatched = [...cutawayMatches, ...titleMatches].filter((m) => !m.matched);
+  if (unmatched.length > 0) {
+    throw new Error(
+      `No se encontró en la transcripción el texto de ${unmatched.length} elemento(s):\n${unmatched
+        .map((m) => `  [${m.scene.id}] "${m.scene.text}"`)
+        .join("\n")}\nCopia la frase EXACTA de public/assets/${guion.slug}/transcript.json.`,
+    );
+  }
+
+  const hasClosing = guion.cutaways.some((c) => c.closing);
+  const outroSeconds = hasClosing ? CORTES_DOCUMENTAL_OUTRO_SECONDS : 0;
+
+  const { resolved, dropped } = resolveCutawayTimings(
+    cutawayMatches.map((m) => ({
+      id: m.scene.id,
+      startSeconds: m.startSeconds,
+      durationSeconds: m.scene.durationSeconds,
+      closing: m.scene.closing,
+    })),
+    durationInSeconds,
+    outroSeconds,
+  );
+  for (const d of dropped) {
+    console.log(`[${d.id}] corte descartado: ${d.reason}`);
+  }
+
+  const imagesDir = path.join(PUBLIC_DIR, "assets", guion.slug, "images");
+  const imageAbsPaths = new Map<string, string>();
+
+  // Devuelve la ruta absoluta de la imagen del corte, generándola (o copiándola) si falta.
+  // Con `basedOn` genera primero la imagen base y la usa como referencia del personaje.
+  const ensureCutawayImage = async (cutawayId: string): Promise<string> => {
+    const known = imageAbsPaths.get(cutawayId);
+    if (known) return known;
+    const cutaway = guion.cutaways.find((c) => c.id === cutawayId)!;
+
+    let imageAbsPath: string;
+    if (cutaway.localImagePath) {
+      const ext = path.extname(cutaway.localImagePath) || ".png";
+      imageAbsPath = path.join(imagesDir, `${cutaway.id}-local${ext}`);
+      if (fs.existsSync(imageAbsPath)) {
+        console.log(`[${cutaway.id}] imagen ya existe, se reutiliza`);
+      } else {
+        console.log(`[${cutaway.id}] copiando imagen: ${cutaway.localImagePath}`);
+        fs.mkdirSync(imagesDir, { recursive: true });
+        fs.copyFileSync(cutaway.localImagePath, imageAbsPath);
+      }
+    } else {
+      imageAbsPath = path.join(imagesDir, `${cutaway.id}-ai.png`);
+      if (fs.existsSync(imageAbsPath)) {
+        console.log(`[${cutaway.id}] imagen (ai) ya existe, se reutiliza`);
+      } else {
+        const styled = `${cutaway.visual}, ${CORTES_DOCUMENTAL_AI_STYLE_SUFFIX}`;
+        let done = false;
+        if (cutaway.basedOn) {
+          try {
+            const baseAbsPath = await ensureCutawayImage(cutaway.basedOn);
+            console.log(`[${cutaway.id}] generando imagen (ai) con personaje de referencia ${cutaway.basedOn}...`);
+            const referenceUrl = await uploadImage(baseAbsPath);
+            await editImage(`${CORTES_DOCUMENTAL_CHARACTER_PREFIX}${styled}`, [referenceUrl], imageAbsPath, { aspectRatio: "9:16" });
+            done = true;
+          } catch (err) {
+            console.log(`[${cutaway.id}] con referencia falló (${(err as Error).message}), se genera sin referencia...`);
+          }
+        }
+        if (!done) {
+          console.log(`[${cutaway.id}] generando imagen (ai)...`);
+          try {
+            await generateImage(styled, imageAbsPath, { aspectRatio: "9:16" });
+          } catch (err) {
+            console.log(
+              `[${cutaway.id}] kie.ai falló (${(err as Error).message}), usando fallback gratuito (pollinations.ai)...`,
+            );
+            await generatePollinationsImage(styled, imageAbsPath, { width: 576, height: 1024 });
+          }
+        }
+      }
+    }
+
+    imageAbsPaths.set(cutawayId, imageAbsPath);
+    return imageAbsPath;
+  };
+
+  const cutaways: RenderedCortesDocumentalCutaway[] = [];
+  for (const [index, timing] of resolved.entries()) {
+    const imageAbsPath = await ensureCutawayImage(timing.id);
+    cutaways.push({
+      id: timing.id,
+      startSeconds: timing.startSeconds,
+      durationInSeconds: timing.durationSeconds,
+      imagePath: toPublicRelPath(imageAbsPath),
+      transition: CORTES_DOCUMENTAL_TRANSITIONS[index % CORTES_DOCUMENTAL_TRANSITIONS.length],
+      closing: guion.cutaways.find((c) => c.id === timing.id)?.closing,
+    });
+  }
+
+  const renderedTitles: RenderedCortesDocumentalTitle[] = titleMatches.map((m) => {
+    const wanted = m.scene.durationSeconds ?? CORTES_DOCUMENTAL_TITLE_SECONDS;
+    return {
+      id: m.scene.id,
+      startSeconds: m.startSeconds,
+      durationInSeconds: Math.max(0, Math.min(wanted, durationInSeconds - m.startSeconds)),
+      kicker: m.scene.kicker,
+      headline: m.scene.headline,
+    };
+  });
+
+  const sfxDir = path.join(PUBLIC_DIR, "assets", guion.slug, "sfx");
+  fs.mkdirSync(sfxDir, { recursive: true });
+
+  const whooshAbsPath = path.join(sfxDir, "whoosh.mp3");
+  if (fs.existsSync(whooshAbsPath)) {
+    console.log("whoosh ya existe, se reutiliza");
+  } else {
+    console.log("generando whoosh...");
+    await generateSoundEffect(
+      guion.soundDesign?.whooshPrompt ?? "short fast cinematic whoosh transition, airy swoosh with a soft impact at the end, no music",
+      whooshAbsPath,
+    );
+  }
+  const hitAbsPath = path.join(sfxDir, "hit.mp3");
+  if (fs.existsSync(hitAbsPath)) {
+    console.log("hit ya existe, se reutiliza");
+  } else {
+    console.log("generando hit...");
+    await generateSoundEffect(
+      guion.soundDesign?.hitPrompt ?? "deep cinematic impact hit with sub bass boom and a short reverb tail, trailer style",
+      hitAbsPath,
+    );
+  }
+
+  let music: RenderedCortesDocumentalGuion["music"];
+  if (guion.backgroundMusicPath) {
+    const musicAbsPath = path.join(sfxDir, "background-music.mp3");
+    if (!fs.existsSync(musicAbsPath)) {
+      console.log(`copiando música de fondo desde ${guion.backgroundMusicPath}...`);
+      fs.copyFileSync(guion.backgroundMusicPath, musicAbsPath);
+    }
+    const musicLufs = await measureIntegratedLufs(musicAbsPath);
+    const targetLufs = CORTES_DOCUMENTAL_VOICE_LUFS - CORTES_DOCUMENTAL_MUSIC_BELOW_VOICE_DB;
+    const volume = Math.min(1, Math.pow(10, (targetLufs - musicLufs) / 20));
+    console.log(`música: ${musicLufs.toFixed(1)} LUFS, volumen ${volume.toFixed(2)} para quedar a ${targetLufs} LUFS`);
+    music = { path: toPublicRelPath(musicAbsPath), volume };
+  } else {
+    console.log("sin música de fondo (no se especificó backgroundMusicPath)");
+  }
+
+  const captionChunks = buildCaptionChunks(words, 3, 0.4);
+  const jumpCuts = computeJumpCuts(
+    captionChunks.map((chunk) => chunk.startSeconds),
+    cutaways.filter((c) => !c.closing).map((c) => ({ startSeconds: c.startSeconds, durationSeconds: c.durationInSeconds })),
+    durationInSeconds,
+  );
+
+  const rendered: RenderedCortesDocumentalGuion = {
+    type: "cortes-documental",
+    slug: guion.slug,
+    topic: guion.topic,
+    videoPath,
+    durationInSeconds,
+    cutaways,
+    titles: renderedTitles,
+    captionChunks,
+    outroSeconds,
+    jumpCuts,
+    sfx: {
+      whooshPath: toPublicRelPath(whooshAbsPath),
+      whooshDurationInSeconds: await getAudioDurationInSeconds(whooshAbsPath),
+      hitPath: toPublicRelPath(hitAbsPath),
+      hitDurationInSeconds: await getAudioDurationInSeconds(hitAbsPath),
+    },
+    music,
+  };
+
+  const dataDir = path.join(PUBLIC_DIR, "data");
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(path.join(dataDir, `${guion.slug}.json`), JSON.stringify(rendered, null, 2));
+
+  console.log(
+    `\nListo. Duración: ${durationInSeconds.toFixed(1)}s (+${outroSeconds}s de cierre), ${cutaways.length} corte(s) (${dropped.length} descartado(s)), ${renderedTitles.length} título(s), ${jumpCuts.length} jump cut(s).`,
+  );
+}
+
 async function main() {
   const guionPath = process.argv[2];
   if (!guionPath) {
@@ -748,6 +1034,11 @@ async function main() {
 
   if (guion.type === "documental-doodle") {
     await generateDocumentalDoodleAssets(guion);
+    return;
+  }
+
+  if (guion.type === "cortes-documental") {
+    await generateCortesDocumentalAssets(guion);
     return;
   }
 

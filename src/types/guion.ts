@@ -40,7 +40,7 @@ export interface GuionScene {
 
 export type VisualStyle = "neon" | "collage";
 
-export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida" | "youtube-noticias-avatar" | "documental-doodle";
+export type GuionType = "vox" | "social-checklist" | "youtube" | "pantalla-dividida" | "youtube-noticias-avatar" | "documental-doodle" | "cortes-documental";
 
 export interface VoxGuion {
   type?: "vox";
@@ -75,7 +75,7 @@ export interface SocialChecklistGuion {
   removeOtherSpeakers?: boolean;
 }
 
-export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion | YoutubeNoticiasAvatarGuion | DocumentalDoodleGuion;
+export type Guion = VoxGuion | SocialChecklistGuion | PantallaDivididaGuion | YoutubeNoticiasAvatarGuion | DocumentalDoodleGuion | CortesDocumentalGuion;
 
 export interface SceneImage {
   path: string;
@@ -123,10 +123,18 @@ export interface PantallaDivididaScene {
   /** Solo aplica a act "split". Imágenes ya generadas a mano (ChatGPT), en orden.
    * Se ciclan cada MAX_CUT_SECONDS dentro de la duración real de la escena. */
   localImagePaths?: string[];
+  /** Solo aplica a act "split", si no hay localImagePaths: prompt para generar
+   * la ilustración con IA (kie.ai). Se le agrega automáticamente un sufijo de
+   * estilo fijo (flat vector illustration). Si la escena dura más de
+   * MAX_CUT_SECONDS se generan varios cortes con encuadres alternos. */
+  visual?: string;
   /** Texto que se muestra en pantalla, si difiere del texto real matcheado
    * contra la transcripción (ej. mostrar solo la palabra clave en vez de la
    * frase completa). Si no está, se muestra `text` tal cual. */
   displayText?: string;
+  /** Substring exacto (case-insensitive) dentro del texto mostrado a resaltar
+   * en amarillo dentro de la barra de texto. Solo aplica a act "split". */
+  highlightWord?: string;
 }
 
 export interface PantallaDivididaGuion {
@@ -164,6 +172,8 @@ export interface RenderedPantallaDivididaScene {
   images: SceneImage[];
   /** Texto a mostrar en pantalla; ya resuelto a `text` si el guion no definía uno distinto. */
   displayText: string;
+  /** Substring a resaltar en amarillo dentro de displayText, si el guion lo definió. */
+  highlightWord?: string;
 }
 
 export interface RenderedPantallaDivididaGuion {
@@ -271,6 +281,97 @@ export interface RenderedDocumentalDoodleGuion {
   durationInSeconds: number;
   scenes: RenderedDocumentalDoodleScene[];
   captionChunks: CaptionChunk[];
+}
+
+export interface CortesDocumentalCutaway {
+  id: string;
+  /** Frase literal de la transcripción real donde arranca el corte. */
+  text: string;
+  /** Imagen ya preparada por el usuario (9:16), ej. "content/personajes/<slug>/c1.png". */
+  localImagePath?: string;
+  /** Si no hay localImagePath: prompt para generar la imagen con IA (kie.ai, fallback pollinations). */
+  visual?: string;
+  /** 1.5–3 s; default 2.5. */
+  durationSeconds?: number;
+  /** Id de otro corte cuya imagen ya generada se usa como referencia para mantener el mismo personaje
+   * (misma cara, edad y ropa). El corte referenciado debe aparecer ANTES en la lista. */
+  basedOn?: string;
+  /** Último corte: dura hasta el final del video (más la cola), con fundido a negro. Solo uno. */
+  closing?: boolean;
+}
+
+export interface CortesDocumentalTitle {
+  id: string;
+  /** Frase literal de la transcripción real donde aparece el título. */
+  text: string;
+  /** Línea pequeña sobre el título, ej. "El que vive". */
+  kicker?: string;
+  /** Línea enorme, ej. "del aplauso". */
+  headline: string;
+  /** Default 2.5 s. */
+  durationSeconds?: number;
+}
+
+export interface CortesDocumentalGuion {
+  type: "cortes-documental";
+  slug: string;
+  topic: string;
+  /** Ruta al video crudo del presentador, ej. "content/raw/<slug>.mov". */
+  rawVideoPath: string;
+  removeOtherSpeakers?: boolean;
+  cutaways: CortesDocumentalCutaway[];
+  titles?: CortesDocumentalTitle[];
+  /** Música de fondo con licencia ya aprobada por el usuario, ej. "content/musica/motivation-paulyudin.mp3". */
+  backgroundMusicPath?: string;
+  /** Prompts de whoosh (entrada de cada corte) y hit (títulos y cierre); opcionales. */
+  soundDesign?: { whooshPrompt?: string; hitPrompt?: string };
+}
+
+export type CortesDocumentalTransition = "flash" | "slide" | "zoom";
+
+export interface RenderedCortesDocumentalCutaway {
+  id: string;
+  startSeconds: number;
+  durationInSeconds: number;
+  /** Ruta relativa a public/. */
+  imagePath: string;
+  /** Overlay/animación con que entra la imagen. */
+  transition: CortesDocumentalTransition;
+  closing?: boolean;
+}
+
+export interface RenderedCortesDocumentalTitle {
+  id: string;
+  startSeconds: number;
+  durationInSeconds: number;
+  kicker?: string;
+  headline: string;
+}
+
+export interface RenderedCortesDocumentalGuion {
+  type: "cortes-documental";
+  slug: string;
+  topic: string;
+  videoPath: string;
+  durationInSeconds: number;
+  cutaways: RenderedCortesDocumentalCutaway[];
+  titles: RenderedCortesDocumentalTitle[];
+  captionChunks: CaptionChunk[];
+  /** Cola extra después del video (el corte de cierre sigue sobre ella y se funde a negro). */
+  outroSeconds: number;
+  /** Encuadres del presentador (jump cuts): zoom que cambia de golpe en cada punto. */
+  jumpCuts: { atSeconds: number; scale: number }[];
+  sfx: {
+    whooshPath: string;
+    whooshDurationInSeconds: number;
+    hitPath: string;
+    hitDurationInSeconds: number;
+  };
+  music?: {
+    path: string;
+    /** Volumen lineal ya calculado para quedar bajo la voz. */
+    volume: number;
+  };
 }
 
 // ---------------------------------------------------------------------------

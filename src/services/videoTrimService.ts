@@ -76,7 +76,7 @@ export async function detectSilenceRanges(
   // measureMaxVolumeDb) — evita decodificar 4K completo solo para leer audio.
   const { stderr } = await execFileAsync("ffmpeg", [
     "-i", videoPath,
-    "-map", "0:a",
+    "-map", "0:a:0",
     "-af", `silencedetect=noise=${noiseFloorDb}dB:d=${SILENCE_MIN_DURATION_SECONDS}`,
     "-f", "null", "-",
   ]);
@@ -308,7 +308,7 @@ export async function trimVideoToSegments(
   const filterParts: string[] = [];
   segments.forEach((seg, i) => {
     filterParts.push(`[0:v]trim=start=${seg.start}:end=${seg.end},setpts=PTS-STARTPTS[v${i}]`);
-    filterParts.push(`[0:a]atrim=start=${seg.start}:end=${seg.end},asetpts=PTS-STARTPTS[a${i}]`);
+    filterParts.push(`[0:a:0]atrim=start=${seg.start}:end=${seg.end},asetpts=PTS-STARTPTS[a${i}]`);
   });
   const concatInputs = segments.map((_, i) => `[v${i}][a${i}]`).join("");
   filterParts.push(`${concatInputs}concat=n=${segments.length}:v=1:a=1[outv][outa]`);

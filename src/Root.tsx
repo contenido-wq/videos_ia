@@ -5,6 +5,7 @@ import { SocialChecklistComposition } from "./SocialChecklistComposition";
 import { PantallaDivididaComposition } from "./PantallaDivididaComposition";
 import { YoutubeNoticiasAvatarComposition } from "./YoutubeNoticiasAvatarComposition";
 import { DocumentalDoodleComposition } from "./DocumentalDoodleComposition";
+import { CortesDocumentalComposition } from "./CortesDocumentalComposition";
 import { MotionBlancoComposition } from "./MotionBlancoComposition";
 
 export const RemotionRoot: React.FC = () => {
@@ -21,12 +22,14 @@ export const RemotionRoot: React.FC = () => {
       <PantallaDivididaComposition id="PantallaDividida" slug="pantalla-dividida" />
       <PantallaDivididaComposition id="PantallaDivididaDemo" slug="pantalla-dividida-demo" />
       <PantallaDivididaComposition id="C0012" slug="c0012" />
+      <PantallaDivididaComposition id="C0012Ilustrado" slug="c0012-ilustrado" />
       <PantallaDivididaComposition id="C0006" slug="c0006" />
       <PantallaDivididaComposition id="PastorJhonatan" slug="pastor-jhonatan" />
       <YoutubeNoticiasAvatarComposition id="YoutubeNoticiasAvatarDemo" slug="youtube-noticias-avatar-demo" />
       <YoutubeNoticiasAvatarComposition id="NepalGlaciar" slug="nepal" />
       <DocumentalDoodleComposition id="DocumentalDoodleDemo" slug="documental-doodle-demo" />
       <DocumentalDoodleComposition id="PrimerosHumanosDeNoche" slug="primeros-humanos-de-noche" />
+      <CortesDocumentalComposition id="CortesDocumentalPrueba" slug="cortes-documental-prueba" />
       <MotionBlancoComposition id="ArmaduraDeOtro" slug="reel-2951" />
     </>
   );
